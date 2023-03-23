@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "DiceyDungeonType.proto";
+import "DiceyDungeonInfo.proto";
+message DiceyDungeonActivityRoomEndReq {
+    optional uint32 tale_id = 1;
+    optional uint32 activity_id = 2;
+    required DiceyDungeonInfo dungeon_info = 3;
+    optional Status status = 4;
+    optional DiceyDungeonType dungeon_type = 5;
+    optional uint32 battle_time = 6;
+    optional uint32 battle_round = 7;
+
+    enum Status {
+        WIN = 0;
+        LOSE = 1;
+        SKIP = 2;
+    }
+    enum CmdId {
+        CMD_ID = 6510;
+    }
+}

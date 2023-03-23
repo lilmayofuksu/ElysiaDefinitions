@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ClientReportBinType {
+    CLIENT_REPORT_BIN_INVALID = 0;
+    CLIENT_REPORT_BIN_AVATAR_DETAIL = 1;
+    CLIENT_REPORT_BIN_ATTACK_SNAPSHOT = 2;
+}

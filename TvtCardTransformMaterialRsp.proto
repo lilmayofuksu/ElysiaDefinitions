@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "GenericItemNum.proto";
+import "Material.proto";
+message TvtCardTransformMaterialRsp {
+    required Retcode retcode = 1;
+    repeated Material transformed_material_list = 2;
+    repeated GenericItemNum item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3318;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LOCKED = 2;
+    }
+}

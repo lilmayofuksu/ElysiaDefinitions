@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message FinishOpenworldEndlessInvasionMonsterReq {
+    optional uint32 id = 1;
+    optional uint32 battle_id = 2;
+    optional string transaction_str = 3;
+
+    enum CmdId {
+        CMD_ID = 3430;
+    }
+}

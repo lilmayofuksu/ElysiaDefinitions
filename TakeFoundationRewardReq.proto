@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message TakeFoundationRewardReq {
+    optional string product_name = 1;
+    optional uint32 level = 2;
+
+    enum CmdId {
+        CMD_ID = 963;
+    }
+}

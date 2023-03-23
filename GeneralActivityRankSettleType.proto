@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum GeneralActivityRankSettleType {
+    GENERAL_ACTIVITY_RANK_SETTLE_TYPE_DEFAULT = 0;
+    GENERAL_ACTIVITY_RANK_SETTLE_TYPE_ACTIVITY = 1;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "WarshipBgmPlayMode.proto";
+import "WarshipSettingType.proto";
+message SetWarshipSettingReq {
+    optional uint32 warship_id = 1;
+    optional WarshipSettingType setting_type = 2;
+    optional WarshipBgmPlayMode bgm_play_mode = 3;
+    optional bool is_weather_fixed = 4;
+    optional uint32 weather_idx = 5;
+
+    enum CmdId {
+        CMD_ID = 5460;
+    }
+}

@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ShopGoodsPoolSwitchData {
+    optional uint32 pool_id = 1;
+}

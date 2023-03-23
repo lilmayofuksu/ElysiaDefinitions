@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum WarshipSettingType {
+    WARSHIP_SETTING_BGM_PLAY_MODE = 1;
+    WARSHIP_SETTING_BGM_WEATHER = 2;
+}

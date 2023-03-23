@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "Material.proto";
+message MonsterCardFragmentOverflowNotify {
+    optional uint32 activity_id = 1;
+    required Material overflow_cost_material = 2;
+    repeated Material return_material_list = 3;
+
+    enum CmdId {
+        CMD_ID = 5935;
+    }
+}

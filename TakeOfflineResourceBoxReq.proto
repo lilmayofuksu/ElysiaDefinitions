@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message TakeOfflineResourceBoxReq {
+    optional uint32 resource_type = 1;
+    optional uint32 box_id = 2;
+    optional uint32 box_num = 3;
+
+    enum CmdId {
+        CMD_ID = 4213;
+    }
+}

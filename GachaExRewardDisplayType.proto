@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum GachaExRewardDisplayType {
+    GACHA_EX_REWARD_DISPLAY_NONE = 0;
+    GACHA_EX_REWARD_DISPLAY_BRIEF = 1;
+    GACHA_EX_REWARD_DISPLAY_DETAIL = 2;
+    GACHA_EX_REWARD_DISPLAY_SHINING = 3;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message AntiAddictNotify {
+    optional AntiAddictMsgType msg_type = 1;
+    optional string msg = 2;
+    optional string level = 3;
+
+    enum CmdId {
+        CMD_ID = 5004;
+    }
+    enum AntiAddictMsgType {
+        ANTI_ADDICT_MSG_ERROR = 0;
+        ANTI_ADDICT_MSG_ANTI_ADDICT = 1;
+        ANTI_ADDICT_MSG_SHOULD_BIND_ACCOUNT = 2;
+    }
+}

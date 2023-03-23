@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message MpBadge {
+    required uint64 unique_id_u64 = 1;
+    required uint32 badge_id = 2;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "PhoneEventStatus.proto";
+message CityActivityPhoneEvent {
+    optional uint32 role_id = 1;
+    optional uint32 phone_event_id = 2;
+    optional PhoneEventStatus status = 3;
+}

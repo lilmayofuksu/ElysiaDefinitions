@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message RefreshScDLCDailyQuestReq {
+
+    enum CmdId {
+        CMD_ID = 6318;
+    }
+}

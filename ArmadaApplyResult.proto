@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+message ArmadaApplyResult {
+    optional uint32 uid = 1;
+    required PlayerFriendBriefData brief_data = 2;
+    optional bool agree = 3;
+}

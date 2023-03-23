@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message JigsawMovePieceInJigsawAreaReq {
+    optional uint32 activity_id = 1;
+    optional uint32 jigsaw_id = 2;
+    optional uint32 source_x = 3;
+    optional uint32 source_y = 4;
+    optional uint32 target_x = 5;
+    optional uint32 target_y = 6;
+
+    enum CmdId {
+        CMD_ID = 4279;
+    }
+}

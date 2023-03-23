@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RewardItemData.proto";
+message ElfTakeCompensationRsp {
+    required Retcode retcode = 1;
+    repeated RewardItemData item_list = 2;
+
+    enum CmdId {
+        CMD_ID = 2126;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+    }
+}

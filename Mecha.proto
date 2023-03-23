@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message Mecha {
+    optional uint32 unique_id = 1;
+    optional uint32 id = 2;
+}

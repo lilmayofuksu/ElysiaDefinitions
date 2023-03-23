@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message MpRaidRankData {
+    optional uint32 uid = 1;
+    optional uint32 score = 2;
+    optional uint32 rank = 3;
+    optional string nickname = 4;
+    optional uint32 armada_id = 5;
+    optional string armada_name = 6;
+}

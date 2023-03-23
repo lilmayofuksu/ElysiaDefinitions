@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ArmadaLabel {
+    optional uint32 prefix_id = 1;
+    repeated uint32 label_id_list = 2;
+    optional string recruit = 3;
+}

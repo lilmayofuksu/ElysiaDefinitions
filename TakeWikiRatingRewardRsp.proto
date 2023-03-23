@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeWikiRatingRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    required uint32 rating_id = 3;
+
+    enum CmdId {
+        CMD_ID = 1196;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TKAE = 3;
+        SCORE_LACK = 4;
+    }
+}

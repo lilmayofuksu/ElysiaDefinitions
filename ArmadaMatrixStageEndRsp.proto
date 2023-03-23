@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixStageEndRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    repeated DropItem drop_item_list = 2;
+    repeated DropItem matrix_drop_item_list = 3;
+    optional uint32 discovery_value = 4;
+    optional uint32 honkai_energy = 5;
+    optional uint32 fund_reward = 6;
+
+    enum CmdId {
+        CMD_ID = 2743;
+    }
+}

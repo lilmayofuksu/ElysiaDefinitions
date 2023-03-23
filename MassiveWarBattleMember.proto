@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "LineupBriefInfo.proto";
+message MassiveWarBattleMember {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 total_damage = 3;
+    optional uint32 rank = 4;
+    required LineupBriefInfo lineup_info = 5;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "InviterActivity.proto";
+message GetInviteActivityInviterDataRsp {
+    required Retcode retcode = 1;
+    optional string my_invite_code = 2;
+    repeated InviterActivity inviter_activity_info_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1691;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+        FEATURE_CLOSED = 3;
+    }
+}

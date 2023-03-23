@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "ClientData.proto";
+import "ClientDataType.proto";
+message GetClientDataRsp {
+    required Retcode retcode = 1;
+    optional ClientDataType type = 2;
+    optional uint32 id = 3;
+    repeated ClientData client_data_list = 4;
+
+    enum CmdId {
+        CMD_ID = 1587;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_FOUND = 2;
+    }
+}

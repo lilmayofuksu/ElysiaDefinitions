@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GardenHarvestReq {
+    repeated uint32 site_list = 1;
+
+    enum CmdId {
+        CMD_ID = 4289;
+    }
+}

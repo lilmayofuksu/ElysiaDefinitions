@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeExtraStoryChallengeModeChapterRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData chapter_reward = 2;
+
+    enum CmdId {
+        CMD_ID = 808;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        LEVEL_LIMIT = 3;
+        DIFFICULTY_NOT_OPEN = 4;
+        NOT_FINISHED = 5;
+        HAS_TAKEN = 6;
+        NO_CHAPTER_REWARD = 7;
+    }
+}

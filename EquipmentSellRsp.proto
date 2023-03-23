@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+message EquipmentSellRsp {
+    required Retcode retcode = 1;
+    optional uint32 scoin_add = 2;
+    optional uint32 purple_jade_add = 4;
+    optional uint32 cost_vitality = 5;
+
+    enum CmdId {
+        CMD_ID = 34;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CONSUME_ITEM_NOT_EXIST = 2;
+        CONSUME_ITEM_IN_USE = 3;
+        CONSUME_ITEM_REPEAT = 4;
+        CONSUME_ITEM_PROTECTED = 5;
+        COST_GACHA_TICKET = 6;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 7;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 8;
+        SELL_PRICE = 9;
+        CONSUME_ITEM_GRAND_KEY = 10;
+        CONSUME_ITEM_IN_FACILITY = 11;
+        LACK_VITALITY = 12;
+        CONTAINS_EQUIP_CAN_NOT_SELL = 13;
+        GREEN_STONE_QUANTITY_LIMIT = 14;
+        PURPLE_JADE_QUANTITY_LIMIT = 15;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 16;
+    }
+}

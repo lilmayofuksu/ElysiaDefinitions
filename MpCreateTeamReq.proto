@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "MpTeamMember.proto";
+message MpCreateTeamReq {
+    required MpTeamMember member = 1;
+
+    enum CmdId {
+        CMD_ID = 348;
+    }
+}

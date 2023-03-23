@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message NewbieLevelRushPurchaseReq {
+
+    enum CmdId {
+        CMD_ID = 5881;
+    }
+}

@@ -1,0 +1,56 @@
+syntax = "proto2";
+
+import "Medal.proto";
+import "WaitDelMaterialData.proto";
+import "WarshipThemeData.proto";
+import "WarshipAvatarData.proto";
+import "ChatworldActivityInfo.proto";
+import "VideoPopupData.proto";
+import "AntiAddict.proto";
+message GetMainDataRsp {
+    required Retcode retcode = 1;
+    optional string nickname = 2;
+    optional uint32 level = 3;
+    optional uint32 exp = 4;
+    optional uint32 hcoin = 5;
+    optional uint32 scoin = 6;
+    optional uint32 stamina = 7;
+    optional uint32 stamina_recover_left_time = 8;
+    optional uint32 stamina_recover_config_time = 9;
+    optional uint32 equipment_size_limit = 14;
+    optional string self_desc = 16;
+    optional uint32 pay_hcoin = 17;
+    optional uint32 free_hcoin = 18;
+    optional uint32 assistant_avatar_id = 19;
+    optional bool is_allow_cost_senior_equip_on_cur_device = 20;
+    optional uint32 birthday = 21;
+    optional uint32 month_recharge_price = 22;
+    optional uint32 wait_del_hcoin = 23;
+    optional uint32 on_medal_id = 24;
+    required AntiAddict anti_addict = 25;
+    optional uint32 today_recharge_price = 26;
+    optional uint32 use_frame_id = 27;
+    optional bool is_all = 28;
+    optional uint32 mcoin = 29;
+    repeated uint32 open_panel_activity_list = 30;
+    repeated VideoPopupData video_popup_list = 31;
+    optional uint32 on_phone_pendant_id = 32;
+    optional uint32 next_evaluate_time = 33;
+    required ChatworldActivityInfo chatworld_activity_info = 34;
+    optional uint32 level_lock_id = 35;
+    required WarshipAvatarData warship_avatar = 37;
+    optional uint32 custom_head_id = 38;
+    optional uint32 total_login_days = 39;
+    optional uint32 register_time = 40;
+    required WarshipThemeData warship_theme = 41;
+    repeated WaitDelMaterialData wait_del_material_list = 42;
+    required Medal on_medal = 43;
+
+    enum CmdId {
+        CMD_ID = 11;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

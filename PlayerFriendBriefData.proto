@@ -1,0 +1,39 @@
+syntax = "proto2";
+
+import "Medal.proto";
+import "AvatarSubSkillDetailData.proto";
+message PlayerFriendBriefData {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 level = 3;
+    optional uint32 avatar_id = 4;
+    optional uint32 avatar_star = 5;
+    optional uint32 avatar_combat = 6;
+    optional uint32 avatar_level = 7;
+    repeated AvatarSubSkillDetailData main_sub_skill_list = 8;
+    optional uint32 last_login_time = 10;
+    optional uint32 dress_id = 11;
+    optional uint32 armada_id = 12;
+    optional string armada_name = 13;
+    optional uint32 bond = 14;
+    optional uint32 on_medal_id = 15;
+    required Medal on_medal = 19;
+    optional uint32 frame_id = 16;
+    optional uint32 mp_level = 17;
+    optional uint32 custom_head_id = 18;
+    optional bool is_allow_visit = 30;
+    optional uint32 visit_avatar = 31;
+    optional uint32 be_liked_num = 32;
+    optional uint32 show_house = 33;
+    optional uint32 comfort_value = 34;
+    optional uint32 house_level = 35;
+    optional string house_name = 36;
+    optional bool is_goback = 37;
+    optional uint32 avatar_sub_star = 38;
+    optional uint32 last_logout_time = 39;
+    optional uint32 online_status = 40;
+    optional uint32 season_id = 41;
+    optional uint32 season_group_id = 42;
+    optional uint32 season_level = 43;
+    optional bool is_logoff = 44;
+}

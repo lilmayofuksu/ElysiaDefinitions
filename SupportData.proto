@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SupportData {
+    optional uint32 support_index = 1;
+    optional bool is_take_share_reward = 2;
+    optional uint32 support_end_time = 3;
+    optional uint32 support_begin_time = 4;
+    optional uint32 count_down_time = 5;
+}

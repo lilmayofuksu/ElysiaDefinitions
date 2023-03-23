@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message InLevelContext {
+    optional ContextType type = 1;
+    optional string context_string = 2;
+
+    enum ContextType {
+        INVALID = 0;
+        NORMAL = 1;
+        ENDLESS = 2;
+        OPENWORLD_ENDLESS = 3;
+        EXBOSS = 4;
+    }
+}

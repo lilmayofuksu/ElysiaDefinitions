@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "AvatarSuite.proto";
+import "SealedMatchPlayer.proto";
+message SealedModeStartMatchReq {
+    optional uint32 event_id = 1;
+    required SealedMatchPlayer player = 2;
+    optional double elo_score = 3;
+    optional uint32 ticket_id = 4;
+    optional uint32 round = 5;
+    optional uint32 rank_level = 6;
+    optional uint32 rank_star = 7;
+    optional uint32 ticket_time = 8;
+    repeated AvatarSuite avatar_suite_list = 9;
+
+    enum CmdId {
+        CMD_ID = 701;
+    }
+}

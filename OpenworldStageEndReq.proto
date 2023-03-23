@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "OpenworldStageAvatarInfo.proto";
+import "StageCheatData.proto";
+import "StageEndStatus.proto";
+message OpenworldStageEndReq {
+    required StageEndStatus end_status = 1;
+    optional uint32 cheat_type = 2;
+    repeated StageCheatData cheat_data_list = 3;
+    repeated OpenworldStageAvatarInfo avatar_list = 4;
+    repeated uint32 sp_recover_avatar_list = 5;
+    optional uint32 map_id = 6;
+    optional uint32 mecha_lost_hp_percent = 7;
+    optional uint32 mecha_lost_sp_percent = 8;
+    repeated DropItem drop_item_list = 10;
+    optional uint32 map_energy = 11;
+    optional uint32 sc_dlc_fever_score = 12;
+    optional uint32 sc_dlc_climax_score = 13;
+    optional uint32 area_id = 14;
+    optional string report_ext = 15;
+
+    enum CmdId {
+        CMD_ID = 4464;
+    }
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message ChooseBossRushBuffRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 pool_id = 3;
+    optional uint32 buff_id = 4;
+
+    enum CmdId {
+        CMD_ID = 499;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        ACTIVITY_ERROR = 3;
+        POOL_ID_ERROR = 4;
+        BUFF_ID_ERROR = 5;
+        TIME_LIMIT = 6;
+    }
+}

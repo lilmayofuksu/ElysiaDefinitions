@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message BackEquipmentReq {
+    optional uint32 unique_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3663;
+    }
+}

@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "ArmadaStageScorePlayerScore.proto";
+import "ArmadaStageScore.proto";
+message GetArmadaStageScoreActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 has_take_self_score = 3;
+    optional uint32 has_take_armada_score = 4;
+    repeated ArmadaStageScore stage_score_list = 5;
+    repeated ArmadaStageScorePlayerScore armada_score_list = 6;
+
+    enum CmdId {
+        CMD_ID = 2822;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        NOT_OPEN = 3;
+    }
+}

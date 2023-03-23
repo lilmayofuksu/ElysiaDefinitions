@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum FishRewardSrc {
+    FISH_REWARD_SRC_NONE = 0;
+    FISH_REWARD_SRC_NORMAL = 1;
+    FISH_REWARD_SRC_GET_MISSED = 2;
+    FISH_REWARD_SRC_ASSIST = 3;
+    FISH_REWARD_SRC_LIKE = 4;
+}

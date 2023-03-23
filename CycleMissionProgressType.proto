@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum CycleMissionProgressType {
+    CYCLE_MISSION_PROGRESS_ALL = 1;
+    CYCLE_MISSION_PROGRESS_ONE_BY_ONE = 2;
+}

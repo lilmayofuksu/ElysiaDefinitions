@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "GratuityStageMeta.proto";
+import "GratuityPlayerInfo.proto";
+import "GratuityAcceptType.proto";
+message AcceptGratuityStageReq {
+    optional GratuityAcceptType accept_type = 1;
+    required GratuityPlayerInfo player_info = 2;
+    repeated GratuityStageMeta stage_meta_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4102;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GreedyEndlessTakeRankRewardReq {
+
+    enum CmdId {
+        CMD_ID = 3460;
+    }
+}

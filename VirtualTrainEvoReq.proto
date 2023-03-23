@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message VirtualTrainEvoReq {
+    optional uint32 group_id = 1;
+    optional uint32 evo_avatar_id = 2;
+    optional bool is_quick_evo = 3;
+
+    enum CmdId {
+        CMD_ID = 3522;
+    }
+}

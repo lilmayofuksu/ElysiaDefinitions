@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GeneralActivityStageAvatarBonusType {
+    GENERAL_ACTIVITY_STAGE_AVATAR_BONUS_NONE = 0;
+    GENERAL_ACTIVITY_STAGE_AVATAR_BONUS_ONCE = 1;
+    GENERAL_ACTIVITY_STAGE_AVATAR_BONUS_ALL = 2;
+}

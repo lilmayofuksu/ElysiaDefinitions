@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "TileNpcInfo.proto";
+import "TilePlayerInfo.proto";
+message TileEntity {
+    optional uint32 unique_id = 1;
+    optional uint32 entity_type = 2;
+    optional uint32 position = 3;
+    optional uint32 direction = 4;
+    optional uint32 reset_tag = 5;
+    required TilePlayerInfo player_info = 11;
+    required TileNpcInfo npc_info = 12;
+}

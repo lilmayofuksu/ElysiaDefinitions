@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message SetDormNameRsp {
+    required Retcode retcode = 1;
+    optional uint32 cd_end_time = 2;
+
+    enum CmdId {
+        CMD_ID = 616;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HOUSE_NOT_EXIST = 2;
+        ROOM_NOT_EXIST = 3;
+        FORMAT_ERROR = 4;
+        SENSITIVE_WORDS = 5;
+        NAME_REPEAT = 6;
+        IN_AUDIT = 7;
+        IN_CD = 8;
+    }
+}

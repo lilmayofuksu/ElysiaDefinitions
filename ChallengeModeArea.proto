@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ChallengeModeAvatar.proto";
+message ChallengeModeArea {
+    optional uint32 area_id = 1;
+    repeated ChallengeModeAvatar avatar_list = 2;
+    repeated uint32 weapon_uid_list = 3;
+    repeated uint32 stigmata_uid_list = 4;
+}

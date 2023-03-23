@@ -1,0 +1,37 @@
+syntax = "proto2";
+
+import "Material.proto";
+message ForgeEquipmentRsp {
+    required Retcode retcode = 1;
+    optional uint32 forge_id = 2;
+    repeated Material return_material_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3653;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LIMIT = 2;
+        NO_TIMES = 3;
+        CONSUME_ITEM_NOT_EXIST = 4;
+        CONSUME_ITEM_IN_USE = 5;
+        CONSUME_ITEM_REPEAT = 6;
+        CONSUME_ITEM_PROTECTED = 7;
+        COST_GACHA_TICKET = 8;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 9;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 10;
+        CONSUME_ITEM_GRAND_KEY = 11;
+        CONSUME_ITEM_IN_FACILITY = 12;
+        CURRENCY_LACK = 13;
+        CONSUME_ITEM_MATCHING_REDUNDANT = 14;
+        CONSUME_ITEM_MATCHING_LACK = 15;
+        CONSUME_WEAPON_LOCKED = 16;
+        QUANTUM_WEAPON_NUM_LIMIT = 17;
+        QUANTUM_FORGE_CLOSED = 18;
+        WAIT_SELECTED_RUNE = 19;
+        NO_RUNE = 20;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 21;
+        FEATURE_CLOSED = 22;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "MpTeamMember.proto";
+message MpEnterTeamReq {
+    optional uint32 team_id = 1;
+    required MpTeamMember member = 2;
+    optional uint32 uid = 3;
+
+    enum CmdId {
+        CMD_ID = 350;
+    }
+}

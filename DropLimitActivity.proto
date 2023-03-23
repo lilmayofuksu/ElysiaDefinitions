@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "DropLimitItem.proto";
+message DropLimitActivity {
+    optional uint32 activity_id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    repeated DropLimitItem drop_limit_got_num_list = 4;
+}

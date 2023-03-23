@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message GetGodWarTeleportEventRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    optional uint32 tale_id = 3;
+    repeated uint32 teleport_id_list = 4;
+
+    enum CmdId {
+        CMD_ID = 6198;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FEATURE_CLOSE = 2;
+        NOT_OPEN = 3;
+        FORCE_SETTLE = 4;
+    }
+}

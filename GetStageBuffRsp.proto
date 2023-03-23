@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "ActivityBuff.proto";
+import "StageBuff.proto";
+message GetStageBuffRsp {
+    required Retcode retcode = 1;
+    repeated StageBuff stage_buff_list = 2;
+    repeated ActivityBuff activity_buff_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1529;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

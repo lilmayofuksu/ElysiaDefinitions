@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ActivateOpenworldMapRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4505;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_ACTIVATE = 2;
+        STATUS_ERROR = 3;
+    }
+}

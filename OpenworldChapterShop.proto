@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "OpenworldChapterShopGoods.proto";
+message OpenworldChapterShop {
+    optional uint32 shop_id = 1;
+    repeated OpenworldChapterShopGoods goods_list = 2;
+}

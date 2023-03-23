@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message DressVirtualEquipmentReq {
+    optional uint32 group_id = 1;
+    optional uint32 virtual_avatar_id = 2;
+    optional uint32 equip_type = 3;
+    optional uint32 slot = 4;
+    optional uint32 virtual_equip_id = 5;
+
+    enum CmdId {
+        CMD_ID = 3506;
+    }
+}

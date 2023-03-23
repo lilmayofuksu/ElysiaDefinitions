@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum ReclaimEquipmentType {
+    RECLAIM_NONE = 0;
+    RECLAIM_AVATAR = 1;
+    RECLAIM_WEAPON = 2;
+    RECLAIM_STIGMATA = 3;
+}

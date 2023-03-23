@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message OpenworldChapterEndlessTowerTakeRewardReq {
+    optional uint32 site_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4581;
+    }
+}

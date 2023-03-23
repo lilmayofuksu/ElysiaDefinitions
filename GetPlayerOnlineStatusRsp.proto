@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "PlayerOnlineStatusInfo.proto";
+message GetPlayerOnlineStatusRsp {
+    required Retcode retcode = 1;
+    repeated PlayerOnlineStatusInfo online_status_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1577;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

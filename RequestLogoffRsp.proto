@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message RequestLogoffRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 1671;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

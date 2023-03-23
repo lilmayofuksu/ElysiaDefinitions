@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message EquipForgeSwitchData {
+    optional uint32 equip_forge_id = 1;
+}

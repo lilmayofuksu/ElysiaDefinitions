@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum PlayerCardMsgConfig {
+    CARD_MSG_ALL = 0;
+    CARD_MSG_FRIEND = 1;
+    CARD_MSG_FORBIDDEN = 2;
+}

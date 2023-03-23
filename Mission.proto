@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "MissionStatus.proto";
+message Mission {
+    required uint32 mission_id = 1;
+    required MissionStatus status = 2;
+    required uint32 progress = 3;
+    optional uint32 begin_time = 4;
+    optional uint32 end_time = 5;
+    optional uint32 priority = 6;
+    optional uint32 finished_times = 7;
+    optional uint32 finished_times_limit = 8;
+    optional uint32 cycle_id = 9;
+}

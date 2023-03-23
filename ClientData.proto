@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "ClientDataType.proto";
+message ClientData {
+    optional ClientDataType type = 1;
+    optional uint32 id = 2;
+    optional bytes data = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "EquipmentItemList.proto";
+message EquipSynthesisRsp {
+    required Retcode retcode = 1;
+    required EquipmentItemList equip_list = 2;
+
+    enum CmdId {
+        CMD_ID = 479;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FRAG_ERROR = 2;
+        BAG_FULL = 3;
+    }
+}

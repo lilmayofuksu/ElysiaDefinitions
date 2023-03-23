@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GrandKeyContrastReq {
+    optional uint32 unique_id = 1;
+
+    enum CmdId {
+        CMD_ID = 761;
+    }
+}

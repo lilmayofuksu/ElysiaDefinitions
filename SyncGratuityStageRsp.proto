@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "GratuityStageMessage.proto";
+import "GratuityStage.proto";
+message SyncGratuityStageRsp {
+    required Retcode retcode = 1;
+    required GratuityStage stage = 2;
+    repeated GratuityStageMessage message_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4113;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

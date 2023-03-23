@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "HuntActivityMapData.proto";
+message OpenworldHuntActivityGetMapDataRsp {
+    required Retcode retcode = 1;
+    required HuntActivityMapData map_data = 2;
+
+    enum CmdId {
+        CMD_ID = 4603;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_NOT_OPEN = 2;
+        PROCESS_NOT_ENOUGH = 3;
+        ACTIVITY_NOT_OPEN = 4;
+        MAP_NOT_EXIST = 5;
+    }
+}

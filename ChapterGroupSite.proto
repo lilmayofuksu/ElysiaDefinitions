@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "ChapterGroupSiteStatus.proto";
+message ChapterGroupSite {
+    optional uint32 site_id = 1;
+    optional uint32 chapter_id = 2;
+    optional ChapterGroupSiteStatus status = 3;
+}

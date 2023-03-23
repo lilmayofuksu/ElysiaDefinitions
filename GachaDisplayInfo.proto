@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+import "SpecialCommonGachaData.proto";
+import "SpEquipGachaData.proto";
+import "AdventureEquipGachaData.proto";
+import "AdventureGachaData.proto";
+import "OptionalGachaData.proto";
+import "ControllableBoxGachaData.proto";
+import "PrayGachaData.proto";
+import "BoxGachaData.proto";
+import "UniqueGachaData.proto";
+import "CustomGachaData.proto";
+import "ActivityGachaData.proto";
+import "FriendsPointGachaData.proto";
+import "HcoinGachaData.proto";
+import "GachaDisplayCommonData.proto";
+import "GachaType.proto";
+message GachaDisplayInfo {
+    optional GachaType gacha_type = 1;
+    required GachaDisplayCommonData common_data = 2;
+    required HcoinGachaData hcoin_gacha_data = 3;
+    required FriendsPointGachaData friends_point_gacha_data = 4;
+    required ActivityGachaData activity_gacha_data = 5;
+    required CustomGachaData custom_gacha_data = 6;
+    required UniqueGachaData unique_gacha_data = 7;
+    required BoxGachaData box_gacha_data = 8;
+    required PrayGachaData pray_gacha_data = 9;
+    required ControllableBoxGachaData controllable_box_gacha_data = 10;
+    required OptionalGachaData optional_gacha_data = 11;
+    required AdventureGachaData adventure_gacha_data = 12;
+    required AdventureEquipGachaData adventure_equip_gacha_data = 13;
+    required SpEquipGachaData sp_equip_gacha_data = 14;
+    required SpecialCommonGachaData special_gacha_data = 15;
+}

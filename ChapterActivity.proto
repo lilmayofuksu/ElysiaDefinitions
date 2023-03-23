@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ChapterActivityStage.proto";
+import "ChapterActivityBoss.proto";
+message ChapterActivity {
+    optional uint32 chapter_id = 1;
+    optional uint32 level = 2;
+    optional uint32 level_exp = 3;
+    repeated uint32 has_take_reward_level_list = 4;
+    optional bool is_take_daily_reward = 5;
+    repeated ChapterActivityBoss boss_list = 6;
+    optional uint32 player_level = 7;
+    optional uint32 daily_reward_id = 8;
+    repeated ChapterActivityStage stage_list = 10;
+}

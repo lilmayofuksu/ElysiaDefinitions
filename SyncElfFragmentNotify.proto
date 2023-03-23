@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ElfFragment.proto";
+message SyncElfFragmentNotify {
+    repeated ElfFragment elf_fragment_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2103;
+    }
+}

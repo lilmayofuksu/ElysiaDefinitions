@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetRoomDataReq {
+
+    enum CmdId {
+        CMD_ID = 3150;
+    }
+}

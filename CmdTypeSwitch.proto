@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum CmdTypeSwitch {
+    CMD_SWITCH_DATA_NOTIFY = 3700;
+    CMD_SWITCH_CHANGE_DATA_NOTIFY = 3701;
+}

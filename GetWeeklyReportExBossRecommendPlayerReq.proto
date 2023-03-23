@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GetWeeklyReportExBossRecommendPlayerReq {
+    optional uint32 schedule_id = 1;
+    optional uint32 rank_reward_id = 2;
+
+    enum CmdId {
+        CMD_ID = 5104;
+    }
+}

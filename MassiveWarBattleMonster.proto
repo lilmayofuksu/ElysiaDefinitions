@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message MassiveWarBattleMonster {
+    optional uint32 message_id = 1;
+    optional uint32 monster_id = 2;
+    optional uint32 total_hp = 3;
+    optional uint32 left_hp = 4;
+}

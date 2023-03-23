@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message GetStageRecommendAvatarCourseInfoRsp {
+    required Retcode retcode = 1;
+    optional string course_info = 2;
+
+    enum CmdId {
+        CMD_ID = 1631;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "EquipmentItemList.proto";
+message LevelUpStigmataTitleReq {
+    required uint32 unique_id = 1;
+    required EquipmentItemList consume_item_list = 2;
+
+    enum CmdId {
+        CMD_ID = 324;
+    }
+}

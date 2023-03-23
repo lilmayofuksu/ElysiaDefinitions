@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+import "ArmadaMatrixLocationType.proto";
+message ArmadaMatrixGetLocationReq {
+    optional ArmadaMatrixLocationType location_type = 1;
+    optional uint32 uid = 2;
+    optional uint32 level = 3;
+    required ArmadaMatrixGridPos pos = 4;
+
+    enum CmdId {
+        CMD_ID = 2819;
+    }
+}

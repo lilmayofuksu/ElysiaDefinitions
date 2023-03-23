@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "InviterActivityType.proto";
+message TakeInviteActivityInviterProgressRewardRsp {
+    required Retcode retcode = 1;
+    optional InviterActivityType activity_type = 2;
+    optional uint32 taken_reward_progress = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 1693;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_REWARD = 2;
+        FEATURE_CLOSED = 3;
+    }
+}

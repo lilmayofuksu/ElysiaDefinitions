@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "GachaItem.proto";
+import "BoxGachaItemData.proto";
+message BoxGachaDisplayData {
+    repeated BoxGachaItemData item_list = 1;
+    repeated GachaItem show_list = 2;
+    optional uint32 pre_gacha_id = 3;
+    optional string web_link = 4;
+    optional uint32 link_type = 5;
+    optional string link_para = 6;
+    optional string link_para_str = 7;
+}

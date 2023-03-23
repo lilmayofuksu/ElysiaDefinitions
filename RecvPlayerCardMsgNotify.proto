@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "PlayerCardMsg.proto";
+message RecvPlayerCardMsgNotify {
+    repeated PlayerCardMsg msg_list = 1;
+    optional uint32 target_uid = 2;
+
+    enum CmdId {
+        CMD_ID = 487;
+    }
+}

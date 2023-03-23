@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message TownPath {
+    optional uint32 position = 1;
+    optional uint32 next_position = 2;
+}

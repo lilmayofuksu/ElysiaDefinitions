@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message AddTechExpReq {
+    required uint32 material_id = 1;
+    required uint32 material_num = 2;
+    optional uint32 map_id = 3;
+
+    enum CmdId {
+        CMD_ID = 538;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message GrandKeyBreachRsp {
+    required Retcode retcode = 1;
+    optional uint32 key_id = 2;
+    optional uint32 breach_level = 3;
+
+    enum CmdId {
+        CMD_ID = 758;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        WEAPON_LIMIT = 2;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ResetAvatarMissionAvatarReq {
+
+    enum CmdId {
+        CMD_ID = 3008;
+    }
+}

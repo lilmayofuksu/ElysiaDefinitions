@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+import "ArmadaLabel.proto";
+import "PlayerFriendBriefData.proto";
+message ArmadaBriefData {
+    optional uint32 id = 1;
+    optional string name = 2;
+    optional uint32 level = 3;
+    optional string bulletin = 4;
+    optional uint32 apply_level = 5;
+    optional bool auto_pass = 6;
+    optional uint32 auto_pass_level = 7;
+    optional uint32 fund = 8;
+    optional uint32 fund_cap = 9;
+    optional uint32 ap = 10;
+    optional uint32 ap_cap = 11;
+    optional uint32 popl = 12;
+    optional uint32 popl_cap = 13;
+    optional uint32 member_num = 14;
+    optional uint32 member_cap = 15;
+    optional uint32 leader_id = 16;
+    optional string leader_name = 17;
+    optional string contact = 18;
+    optional uint32 contribution = 19;
+    optional bool is_low_popl = 20;
+    optional uint32 recent_contribution = 21;
+    optional uint32 active_level = 23;
+    optional uint32 active_member_num = 24;
+    repeated uint32 friend_uid_list = 25;
+    required PlayerFriendBriefData leader_brief_data = 26;
+    required ArmadaLabel label = 27;
+}

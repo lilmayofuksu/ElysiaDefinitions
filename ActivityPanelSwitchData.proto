@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ActivityPanelSwitchData {
+    optional uint32 panel_id = 1;
+}

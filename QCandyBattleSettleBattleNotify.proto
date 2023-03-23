@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "QCandyBattleMemberSettleInfo.proto";
+message QCandyBattleSettleBattleNotify {
+    optional uint32 activity_id = 1;
+    optional uint32 lobby_id = 2;
+    optional uint32 map_id = 3;
+    repeated QCandyBattleMemberSettleInfo settle_info_list = 4;
+    optional uint32 battle_id = 5;
+    optional uint32 fightserver_ip = 6;
+    optional uint32 settle_time = 7;
+
+    enum CmdId {
+        CMD_ID = 6608;
+    }
+}

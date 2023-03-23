@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ChatworldDishReward {
+    optional uint32 reward_id = 1;
+    optional uint32 taken_times = 2;
+    optional uint32 last_take_time = 3;
+}

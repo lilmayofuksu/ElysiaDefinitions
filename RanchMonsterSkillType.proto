@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum RanchMonsterSkillType {
+    RANCH_MONSTER_SKILL_ACTIVE = 1;
+    RANCH_MONSTER_SKILL_PASSIVE = 2;
+    RANCH_MONSTER_SKILL_FAST_PRODUCTION = 3;
+    RANCH_MONSTER_SKILL_RARITY_UP = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetGachaProbReq {
+    optional uint32 gacha_type = 1;
+
+    enum CmdId {
+        CMD_ID = 4708;
+    }
+}

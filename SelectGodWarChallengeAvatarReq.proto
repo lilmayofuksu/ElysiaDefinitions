@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message SelectGodWarChallengeAvatarReq {
+    optional uint32 god_war_id = 1;
+    optional uint32 tale_id = 2;
+    repeated uint32 avatar_id_list = 3;
+    repeated uint32 support_avatar_id_list = 4;
+    optional uint32 elf_id = 5;
+    optional uint32 extra_item_id = 6;
+    optional bool is_use_virtual_avatar = 7;
+    repeated uint32 boon_buff_id_list = 8;
+    optional uint32 step_level = 9;
+    optional uint32 assistant_extra_item_id = 10;
+
+    enum CmdId {
+        CMD_ID = 6152;
+    }
+}

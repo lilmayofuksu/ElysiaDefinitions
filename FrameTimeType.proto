@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum FrameTimeType {
+    FRAME_TIME_FOREVER = 0;
+    FRAME_TIME_LIMIT = 1;
+}

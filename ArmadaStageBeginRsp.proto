@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+message ArmadaStageBeginRsp {
+    required Retcode retcode = 1;
+    optional bool is_fight_body = 2;
+    optional bool is_mp_mode = 3;
+
+    enum CmdId {
+        CMD_ID = 2670;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        NOT_OPEN = 3;
+        BOSS_DEAD = 4;
+        FIGHT_INTERVAL = 5;
+        NOT_BEGIN = 6;
+        AVATAR_ERROR = 7;
+        FIGHT_TIMES_LACK = 8;
+        BOSS_NO_DEAD = 9;
+        HAS_FIGHT = 10;
+        LEVEL_LACK = 11;
+        FEATURE_CLOSED = 12;
+    }
+}

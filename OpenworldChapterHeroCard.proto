@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message OpenworldChapterHeroCard {
+    optional uint32 card_id = 1;
+    optional uint32 card_level = 2;
+    optional uint32 card_exp = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "PvzBattleEndStatus.proto";
+message PvzBattleEndReq {
+    optional uint32 activity_id = 1;
+    optional PvzBattleEndStatus end_status = 2;
+    optional uint32 finish_wave = 3;
+    optional uint32 tower_id = 4;
+    optional uint32 floor_id = 5;
+    optional uint32 cost_time = 6;
+    optional uint32 left_hp = 7;
+    optional uint32 used_coin_num = 8;
+
+    enum CmdId {
+        CMD_ID = 6554;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GlobalWarPointRankType {
+    GLOBAL_WAR_POINT_RANK_NONE = 0;
+    GLOBAL_WAR_POINT_RANK_CURRENCY = 1;
+    GLOBAL_WAR_POINT_RANK_SCORE = 2;
+}

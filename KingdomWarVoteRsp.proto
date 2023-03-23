@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message KingdomWarVoteRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_point = 2;
+
+    enum CmdId {
+        CMD_ID = 3055;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PHASE_ERROR = 2;
+        TIME_ERROR = 3;
+        POINT_ERROR = 4;
+        HAS_VOTE = 5;
+        SCORE_LACK = 6;
+    }
+}

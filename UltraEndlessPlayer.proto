@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "LineupBriefInfo.proto";
+message UltraEndlessPlayer {
+    optional uint32 uid = 1;
+    optional uint32 group_level = 2;
+    optional uint32 cup_num = 3;
+    optional uint32 max_stage_score = 4;
+    optional uint32 score_update_time = 5;
+    required LineupBriefInfo lineup_info = 6;
+}

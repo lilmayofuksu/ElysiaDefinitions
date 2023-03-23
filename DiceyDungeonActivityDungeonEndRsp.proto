@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message DiceyDungeonActivityDungeonEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 dungeon_id = 3;
+    optional Status status = 4;
+    required RewardData reward_data = 5;
+    optional uint32 total_dicey_battle_score = 7;
+    repeated DropItem daily_drop_item_list = 8;
+
+    enum CmdId {
+        CMD_ID = 6507;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        DUNGEON_NOT_BEGIN = 3;
+        ROLE_ERROR = 4;
+        WEAPON_ERROR = 5;
+        DUNGEON_ROOM_ERROR = 6;
+    }
+    enum Status {
+        WIN = 0;
+        LOSE = 1;
+        ABANDON = 2;
+    }
+}

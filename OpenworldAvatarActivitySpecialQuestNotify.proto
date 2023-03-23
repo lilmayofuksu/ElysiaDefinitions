@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message OpenworldAvatarActivitySpecialQuestNotify {
+    optional uint32 activity_id = 1;
+    repeated OpenworldQuest quest_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4564;
+    }
+}

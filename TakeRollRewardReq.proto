@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message TakeRollRewardReq {
+    optional uint32 avatar_id = 1;
+    optional uint32 reward_group_id = 2;
+
+    enum CmdId {
+        CMD_ID = 645;
+    }
+}

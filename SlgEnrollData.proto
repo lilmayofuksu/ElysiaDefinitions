@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SlgEnrollData {
+    optional uint32 enroll_battle_schedule_id = 1;
+    optional uint32 enroll_begin_time = 2;
+    optional uint32 enroll_end_time = 3;
+    optional bool is_enrolled = 4;
+}

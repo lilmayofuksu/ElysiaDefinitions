@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "WishWellData.proto";
+import "SettingDict.proto";
+import "GachaExRewardInfo.proto";
+import "ProtectEntry.proto";
+import "GachaType.proto";
+message ActivityGachaData {
+    optional uint32 ticket_hcoin_cost = 2;
+    optional uint32 ticket_material_id = 3;
+    optional uint32 cost_material_id = 4;
+    optional uint32 cost_material_num = 5;
+    optional uint32 baodi_times = 6;
+    optional GachaType gacha_type = 9;
+    optional uint32 gacha_times = 10;
+    repeated ProtectEntry display_protect_entry_list = 11;
+    optional bool is_protect_recycle = 12;
+    optional uint32 display_protect_times = 13;
+    optional uint32 no_protect_gacha_times = 14;
+    required GachaExRewardInfo gacha_ex_reward_info = 15;
+    required SettingDict display_setting_dict = 16;
+    required WishWellData wish_well_data = 17;
+}

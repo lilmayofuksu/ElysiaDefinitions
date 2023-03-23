@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "TileEntity.proto";
+message TileUpdateMapRsp {
+    required Retcode retcode = 1;
+    repeated TileEntity created_entity_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4903;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GeneralActivityScoreRewardNotify {
+    optional uint32 activity_id = 1;
+    optional uint32 id = 2;
+    repeated RewardData reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4000;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "FeatureSwitchType.proto";
+message SwitchData {
+    optional FeatureSwitchType type = 1;
+    optional bytes data = 2;
+    optional uint32 min_level = 3;
+    optional uint32 max_level = 4;
+}

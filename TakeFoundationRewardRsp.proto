@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeFoundationRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    optional string product_name = 3;
+    repeated uint32 has_take_reward_level_list = 4;
+
+    enum CmdId {
+        CMD_ID = 964;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_BUY = 2;
+        LEVEL_LACK = 3;
+        HAS_TAKE = 4;
+        PRODUCT_INVALID = 5;
+    }
+}

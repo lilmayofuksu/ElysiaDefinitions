@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaImpeachStatus {
+    ARMADA_IMPEACH_STATUS_NORMAL = 0;
+    ARMADA_IMPEACH_STATUS_IMPEACH = 1;
+    ARMADA_IMPEACH_STATUS_ELECTION = 2;
+}

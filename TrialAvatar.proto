@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message TrialAvatar {
+    optional uint32 sample_id = 1;
+    optional uint32 end_time = 2;
+    optional bool is_first_show = 3;
+}

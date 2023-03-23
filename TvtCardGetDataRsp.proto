@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "TvtCardSuite.proto";
+import "TvtCard.proto";
+message TvtCardGetDataRsp {
+    required Retcode retcode = 1;
+    repeated TvtCard card_list = 2;
+    repeated TvtCardSuite suite_list = 3;
+    optional uint32 selected_suite_idx = 4;
+    optional bool is_take_season_return = 5;
+
+    enum CmdId {
+        CMD_ID = 3310;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LOCKED = 2;
+    }
+}

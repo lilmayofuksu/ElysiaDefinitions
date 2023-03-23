@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum MasterPupilOpType {
+    MASTER_PUPIL_OP_NONE = 0;
+    MASTER_PUPIL_OP_AGREE = 1;
+    MASTER_PUPIL_OP_REJECT = 2;
+    MASTER_PUPIL_OP_DISMISS = 3;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message TownEvent {
+    optional uint32 position = 1;
+    optional uint32 event_id = 2;
+}

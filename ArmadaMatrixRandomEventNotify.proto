@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixRandomEvent.proto";
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixRandomEventNotify {
+    required ArmadaMatrixGridPos pos = 1;
+    required ArmadaMatrixRandomEvent random_event = 2;
+
+    enum CmdId {
+        CMD_ID = 2770;
+    }
+}

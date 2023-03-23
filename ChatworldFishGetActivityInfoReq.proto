@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ChatworldFishGetActivityInfoReq {
+
+    enum CmdId {
+        CMD_ID = 2445;
+    }
+}

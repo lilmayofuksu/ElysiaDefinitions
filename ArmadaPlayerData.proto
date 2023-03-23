@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaPlayerData {
+    optional uint32 uid = 1;
+    repeated uint32 take_achievement_id_list = 2;
+}

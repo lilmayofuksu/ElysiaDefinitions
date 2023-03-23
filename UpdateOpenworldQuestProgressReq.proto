@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "OpenworldQuestFinishWay.proto";
+message UpdateOpenworldQuestProgressReq {
+    optional OpenworldQuestFinishWay finish_way = 1;
+    optional string finish_para_str = 2;
+    optional uint32 progress_add = 3;
+    optional string report_ext = 4;
+
+    enum CmdId {
+        CMD_ID = 4544;
+    }
+}

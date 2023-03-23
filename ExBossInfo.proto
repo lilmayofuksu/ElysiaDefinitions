@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "ExBossSingleBossScoreReward.proto";
+import "ExBossIdInfo.proto";
+message ExBossInfo {
+    optional uint32 enter_times = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 rank_id = 3;
+    repeated ExBossIdInfo boss_id_list = 4;
+    optional uint32 now_schedule_id = 5;
+    repeated ExBossIdInfo ex_boss_list = 6;
+    optional uint32 max_sweep_level = 7;
+    repeated ExBossSingleBossScoreReward single_boss_score_reward_list = 8;
+}

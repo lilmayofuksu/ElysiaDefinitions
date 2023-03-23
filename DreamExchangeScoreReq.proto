@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message DreamExchangeScoreReq {
+    optional uint32 activity_id = 1;
+    optional uint32 dream_id = 2;
+    optional uint32 num = 3;
+
+    enum CmdId {
+        CMD_ID = 5756;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message VideoPopupData {
+    optional uint32 id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional string middle_image_path = 4;
+    optional string video_icon = 5;
+    optional string video_link = 6;
+    optional uint32 video_link_open_type = 7;
+    optional uint32 max_times = 8;
+}

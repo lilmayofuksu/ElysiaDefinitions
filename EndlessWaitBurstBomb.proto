@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EndlessWaitBurstBomb {
+    required uint32 item_id = 1;
+    required uint32 burst_time = 2;
+}

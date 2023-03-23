@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message OpenworldChapterLevelUpTalentReq {
+    optional uint32 map_id = 1;
+    optional uint32 talent_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4661;
+    }
+}

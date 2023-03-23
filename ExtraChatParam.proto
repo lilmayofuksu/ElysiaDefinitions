@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "BattleChatParam.proto";
+import "GroupChatParam.proto";
+import "PrivateChatParam.proto";
+import "RoomChatParam.proto";
+message ExtraChatParam {
+    required RoomChatParam room_chat_param = 1;
+    required PrivateChatParam private_chat_param = 2;
+    required GroupChatParam group_chat_param = 3;
+    required BattleChatParam battle_chat_param = 4;
+}

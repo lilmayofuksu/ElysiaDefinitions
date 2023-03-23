@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message UserRankWeeklyReportUltraEndless {
+    optional uint32 group_level = 1;
+    optional uint32 cup_num_before = 2;
+    optional uint32 cup_num_after_schedule_settle = 3;
+    optional uint32 battle_config_id = 4;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum DropLimitRefreshType {
+    DROP_LIMIT_REFRESH_WEEK_DAY = 1;
+    DROP_LIMIT_REFRESH_MONTH = 2;
+}

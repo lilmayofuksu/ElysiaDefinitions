@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SyncTimeReq {
+    optional uint32 seq = 1;
+
+    enum CmdId {
+        CMD_ID = 803;
+    }
+}

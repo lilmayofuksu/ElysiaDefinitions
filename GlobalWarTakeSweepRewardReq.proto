@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GlobalWarTakeSweepRewardReq {
+    repeated uint32 point_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 3959;
+    }
+}

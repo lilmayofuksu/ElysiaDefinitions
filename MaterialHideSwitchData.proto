@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message MaterialHideSwitchData {
+    optional uint32 material_id = 1;
+}

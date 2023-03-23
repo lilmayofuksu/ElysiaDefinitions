@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message RpgTaleEvent {
+    optional uint32 event_id = 1;
+    optional uint32 event_type = 2;
+    repeated uint32 event_param_list = 3;
+    required RewardData reward_data = 4;
+}

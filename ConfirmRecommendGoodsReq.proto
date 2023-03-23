@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ConfirmRecommendGoodsReq {
+    optional uint32 recommend_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1539;
+    }
+}

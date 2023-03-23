@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum OpenworldStageType {
+    OPENWORLD_STAGE_TYPE_NONE = 0;
+    OPENWORLD_STAGE_TYPE_MAINLINE = 1;
+    OPENWORLD_STAGE_TYPE_EXPORE = 2;
+}

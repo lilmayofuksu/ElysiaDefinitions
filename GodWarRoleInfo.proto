@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "GodWarAvatarExpUp.proto";
+import "GodWarRoleRelation.proto";
+message GodWarRoleInfo {
+    repeated GodWarRoleRelation role_relation_list = 1;
+    required GodWarAvatarExpUp avatar_exp_up = 2;
+    repeated uint32 main_avatar_id_list = 3;
+    repeated uint32 support_avatar_id_list = 4;
+}

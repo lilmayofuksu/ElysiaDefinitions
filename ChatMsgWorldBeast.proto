@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ChatMsgWorldBeast {
+    optional uint32 chatworld_id = 1;
+    optional uint32 scene_id = 2;
+    optional uint64 beast_unique_id_u64 = 3;
+    optional uint32 stage_id = 4;
+}

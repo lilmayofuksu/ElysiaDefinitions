@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GratuityAcceptType {
+    GRATUITY_ACCEPT_NONE = 0;
+    GRATUITY_ACCEPT_FREE = 1;
+    GRATUITY_ACCEPT_ACTIVITY = 2;
+}

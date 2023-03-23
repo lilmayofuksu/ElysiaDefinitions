@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "StageEndStatus.proto";
+message FrontEndlessActivityBattleEndReq {
+    optional uint32 activity_id = 1;
+    optional uint32 stage_id = 2;
+    optional uint32 floor = 3;
+    optional uint32 score = 4;
+    optional StageEndStatus end_status = 5;
+    optional uint32 cost_time = 6;
+
+    enum CmdId {
+        CMD_ID = 4066;
+    }
+}

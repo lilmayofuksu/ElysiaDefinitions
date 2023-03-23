@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message UltraEndlessReportSiteFloorReq {
+    optional uint32 site_id = 1;
+    optional uint32 floor = 2;
+    optional uint32 score = 3;
+    optional uint32 cost_time = 4;
+    optional uint32 total_cost_time = 5;
+    repeated uint32 avatar_id_list = 6;
+    repeated uint32 elf_id_list = 7;
+    optional bool is_up_floor = 8;
+
+    enum CmdId {
+        CMD_ID = 5206;
+    }
+}

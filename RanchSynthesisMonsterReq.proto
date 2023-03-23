@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message RanchSynthesisMonsterReq {
+    optional uint32 activity_id = 1;
+    optional uint32 synthesis_id = 2;
+    optional uint32 main_unique_id = 3;
+    optional uint32 assist_unique_id = 4;
+
+    enum CmdId {
+        CMD_ID = 5835;
+    }
+}

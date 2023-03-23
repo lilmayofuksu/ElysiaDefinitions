@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SealedModeGetTotalRewardScoreInfoReq {
+
+    enum CmdId {
+        CMD_ID = 738;
+    }
+}

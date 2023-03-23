@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message UnlockGobackFundReq {
+
+    enum CmdId {
+        CMD_ID = 1651;
+    }
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message AddToBlackListRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+
+    enum CmdId {
+        CMD_ID = 1597;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ALREADY_IN_LIST = 2;
+        LIST_FULL = 3;
+        TARGET_NOT_EXIST = 4;
+    }
+}

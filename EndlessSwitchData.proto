@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EndlessSwitchData {
+    optional uint32 endless_type = 1;
+    optional uint32 player_group = 2;
+}

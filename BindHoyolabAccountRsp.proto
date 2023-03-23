@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message BindHoyolabAccountRsp {
+    required Retcode retcode = 1;
+    optional string hoyolab_account_uid = 2;
+
+    enum CmdId {
+        CMD_ID = 1659;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ALREADY_BIND = 2;
+        BIND_BY_OTHER = 3;
+    }
+}

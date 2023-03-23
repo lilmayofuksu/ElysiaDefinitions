@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetSignInRewardReq {
+
+    enum CmdId {
+        CMD_ID = 123;
+    }
+}

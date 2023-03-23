@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message QCandyBattleEnterBattleReq {
+
+    enum CmdId {
+        CMD_ID = 6570;
+    }
+}

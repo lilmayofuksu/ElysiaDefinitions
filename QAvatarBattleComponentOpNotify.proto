@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message QAvatarBattleComponentOpNotify {
+    optional uint32 trigger_entity_id = 1;
+    optional uint32 component_type = 2;
+    optional ComponentOpType op_type = 3;
+
+    enum CmdId {
+        CMD_ID = 5611;
+    }
+    enum ComponentOpType {
+        COMPONENT_OP_NONE = 0;
+        COMPONENT_OP_ADD = 1;
+        COMPONENT_OP_DEL = 2;
+    }
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message CardProductInfo {
+    optional string product_name = 1;
+    optional uint32 expire_time = 2;
+    optional uint32 reward_num = 3;
+    optional uint32 hcoin = 4;
+    optional uint32 take_reward_days = 5;
+    optional uint32 last_daily_reward_time = 6;
+    optional uint32 bonus_need_days = 7;
+    optional uint32 bonus_hcoin = 8;
+    optional uint32 bonus_max_save_days = 9;
+    optional uint32 card_left_days = 10;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "TvtMemberStat.proto";
+message TvtBattleResult {
+    optional uint32 battle_stage_id = 1;
+    optional uint32 begin_time = 2;
+    optional BattleStatus battle_status = 3;
+    repeated TvtMemberStat lhs_member_stat_list = 4;
+    repeated TvtMemberStat rhs_member_stat_list = 5;
+    optional uint32 battle_type = 6;
+    optional bool is_robot_match = 7;
+    optional uint32 end_time = 8;
+
+    enum BattleStatus {
+        INVALID = 0;
+        LEFT_WIN = 1;
+        RIGHT_WIN = 2;
+    }
+}

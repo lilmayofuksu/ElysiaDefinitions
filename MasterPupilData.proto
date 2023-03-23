@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+import "MasterPupilStatus.proto";
+import "MasterPupilCard.proto";
+import "MasterPupilType.proto";
+message MasterPupilData {
+    optional uint32 uid = 1;
+    optional MasterPupilType type = 2;
+    required MasterPupilCard card = 3;
+    optional uint32 level = 4;
+    optional string nickname = 5;
+    optional uint32 teacher_rank = 6;
+    optional uint32 last_online_time = 7;
+    optional uint32 avatar_id = 8;
+    optional uint32 dress_id = 9;
+    optional MasterPupilStatus status = 10;
+    optional uint32 relation_time = 11;
+    required PlayerFriendBriefData brief_data = 12;
+    optional uint32 score = 13;
+    optional bool is_logoff = 14;
+}

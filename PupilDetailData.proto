@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "MasterPupilStatus.proto";
+message PupilDetailData {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional MasterPupilStatus status = 3;
+}

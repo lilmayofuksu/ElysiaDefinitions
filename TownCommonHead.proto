@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message TownCommonHead {
+    optional uint32 town_id = 1;
+    optional uint32 tower_id = 2;
+    optional uint32 game_round = 3;
+}

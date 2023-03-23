@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "OpenworldChapterStageBeginInfo.proto";
+import "OpenworldStageType.proto";
+message OpenworldStageBeginReq {
+    repeated uint32 avatar_id_list = 1;
+    optional uint32 area_id = 2;
+    optional uint32 map_id = 3;
+    repeated uint32 elf_id_list = 4;
+    optional OpenworldStageType openworld_stage_type = 5;
+    optional uint32 stage_id = 6;
+    optional uint32 support_avatar_id = 7;
+    required OpenworldChapterStageBeginInfo chapter_ow_info = 8;
+    optional string report_ext = 9;
+
+    enum CmdId {
+        CMD_ID = 4462;
+    }
+}

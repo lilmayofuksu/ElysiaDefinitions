@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TimeLimitAddUpUpdateNotify {
+    required uint32 add_up_value = 1;
+
+    enum CmdId {
+        CMD_ID = 258;
+    }
+}

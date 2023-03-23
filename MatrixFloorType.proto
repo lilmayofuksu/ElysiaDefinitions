@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum MatrixFloorType {
+    MATRIX_FLOOR_INVALID = 0;
+    MATRIX_FLOOR_NORMAL = 1;
+    MATRIX_FLOOR_EXPLORE = 2;
+    MATRIX_FLOOR_MONOPOLY = 3;
+}

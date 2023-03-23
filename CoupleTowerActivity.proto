@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "CoupleTowerScore.proto";
+message CoupleTowerActivity {
+    optional uint32 max_floor = 1;
+    repeated CoupleTowerScore floor_score_list = 2;
+    optional bool is_settled = 3;
+}

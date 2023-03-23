@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message QCandyBattleTriggerEntityReq {
+    optional uint32 entity_id = 1;
+    optional uint32 cur_state = 2;
+
+    enum CmdId {
+        CMD_ID = 6580;
+    }
+}

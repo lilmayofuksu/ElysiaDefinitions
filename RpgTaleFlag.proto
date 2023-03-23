@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "RpgTaleFlagType.proto";
+message RpgTaleFlag {
+    optional RpgTaleFlagType type = 1;
+    repeated uint32 param_list = 2;
+}

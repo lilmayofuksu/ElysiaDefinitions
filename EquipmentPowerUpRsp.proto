@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+import "Material.proto";
+import "EquipmentItem.proto";
+message EquipmentPowerUpRsp {
+    required Retcode retcode = 1;
+    required EquipmentItem main_item = 2;
+    optional uint32 boost_rate = 3;
+    repeated Material return_material_list = 4;
+
+    enum CmdId {
+        CMD_ID = 32;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAIN_ITEM_NOT_EXIST = 2;
+        MAIN_ITEM_LEVEL_FULL = 3;
+        CONSUME_ITEM_NOT_EXIST = 4;
+        CONSUME_ITEM_IN_USE = 5;
+        CONSUME_ITEM_REPEAT = 6;
+        MAIN_ITEM_IN_CONSUME_ITEM_LIST = 7;
+        SCOIN_LACK = 8;
+        CONSUME_ITEM_PROTECTED = 9;
+        MAIN_ITEM_AFFIX_NOT_IDENTIFY = 10;
+        COST_GACHA_TICKET = 11;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 12;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 13;
+        CONSUME_ITEM_IN_FACILITY = 14;
+        CONSUME_ITEM_GRAND_KEY = 15;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 16;
+    }
+}

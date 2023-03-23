@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message MassiveWarRoomMember {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 score_rank = 3;
+    optional uint32 player_group_id = 4;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ArmadaMatrixPlayerAvatarInfo.proto";
+message ArmadaMatrixPlayerAvatarSyncNotify {
+    repeated ArmadaMatrixPlayerAvatarInfo avatar_list = 1;
+
+    enum CmdId {
+        CMD_ID = 2750;
+    }
+}

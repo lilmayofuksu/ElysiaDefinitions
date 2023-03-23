@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum TvtBattleJudgeType {
+    TVT_BATTLE_JUDGE_NONE = 0;
+    TVT_BATTLE_JUDGE_WIN_WHEN_ZERO = 1;
+    TVT_BATTLE_JUDGE_LOSE_WHEN_ZERO = 2;
+}

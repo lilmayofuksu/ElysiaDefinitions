@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetOfflineFriendsPointNotify {
+    required uint32 friends_point = 1;
+
+    enum CmdId {
+        CMD_ID = 81;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ClearStageActivity.proto";
+message GetClearStageActivityRsp {
+    required Retcode retcode = 1;
+    required ClearStageActivity activity = 2;
+
+    enum CmdId {
+        CMD_ID = 454;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

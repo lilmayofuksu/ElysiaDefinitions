@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message InviterActivity {
+    optional uint32 schedule_id = 1;
+    optional uint32 invite_num = 2;
+    optional uint32 taken_reward_progress = 3;
+    optional uint32 accept_invite_num = 4;
+}

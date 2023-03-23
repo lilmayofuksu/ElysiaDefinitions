@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ItemUseSwitchData {
+    optional uint32 use_id = 1;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message GetAuthkeyReq {
+    optional string auth_appid = 1;
+    optional uint32 sign_type = 2;
+    optional uint32 authkey_ver = 3;
+
+    enum CmdId {
+        CMD_ID = 5010;
+    }
+}

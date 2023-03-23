@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message CustomAvatarTeam {
+    required uint32 team_id = 1;
+    optional string name = 2;
+    repeated uint32 avatar_id_list = 3;
+    repeated uint32 elf_id_list = 4;
+
+    enum Enum {
+        MIN_TEAM_ID = 1;
+        MAX_TEAM_ID = 10;
+        MAX_NAME_LEN = 24;
+    }
+}

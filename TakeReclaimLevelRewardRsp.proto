@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeReclaimLevelRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 level = 2;
+    repeated RewardData reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1170;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_LEVEL = 2;
+        HAVE_TAKE = 3;
+        NO_REWARD = 4;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message WaveRushLevelUpBuffRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 5966;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        CANNOT_UNLOCK_BY_LEVEL_UP = 3;
+        BUFF_ERROR = 4;
+        NOT_MEET_CONDITION = 5;
+        MATERIAL_LACK = 6;
+    }
+}

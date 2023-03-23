@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum VipRewardStatus {
+    VIP_REWARD_LOCKED = 1;
+    VIP_REWARD_NOT_GET = 2;
+    VIP_REWARD_HAS_GOT = 3;
+    VIP_REWARD_HAS_GOT_BUT_SPECIAL = 4;
+}

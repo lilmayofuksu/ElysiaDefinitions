@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixTransportNotify {
+    required ArmadaMatrixGridPos target_pos = 1;
+
+    enum CmdId {
+        CMD_ID = 2796;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message SlgBattleRank {
+    optional bool is_all = 1;
+    optional uint32 country_id = 2;
+    optional uint32 total_num = 3;
+    required RankShowData rank_data = 4;
+}

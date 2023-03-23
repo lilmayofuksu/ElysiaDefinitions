@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "ArmadaMatrixTemporaryDeposit.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetTemporaryDepositRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    repeated ArmadaMatrixTemporaryDeposit deposit_list = 2;
+    repeated uint32 choosen_idx_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2787;
+    }
+}

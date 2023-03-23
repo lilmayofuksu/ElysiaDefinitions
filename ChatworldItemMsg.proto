@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ChatworldItem.proto";
+message ChatworldItemMsg {
+    repeated ChatworldItem update_item_list = 1;
+    repeated uint32 delete_item_list = 2;
+}

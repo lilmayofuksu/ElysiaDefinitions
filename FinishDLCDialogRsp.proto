@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message FinishDLCDialogRsp {
+    required Retcode retcode = 1;
+    optional uint32 dialog_id = 2;
+    optional uint32 add_support_point = 3;
+
+    enum CmdId {
+        CMD_ID = 3579;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_SUPPORT_DIALOG = 2;
+        ALREADY_TAKEN = 3;
+    }
+}

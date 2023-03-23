@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message SealedModeGetTotalRewardScoreInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 total_reward_score = 2;
+    repeated uint32 reward_taken_total_score_list = 3;
+
+    enum CmdId {
+        CMD_ID = 739;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

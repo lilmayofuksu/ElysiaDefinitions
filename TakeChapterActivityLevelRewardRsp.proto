@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeChapterActivityLevelRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 chapter_id = 2;
+    repeated uint32 level_list = 3;
+    repeated RewardData reward_list = 4;
+    optional bool is_take_all = 5;
+
+    enum CmdId {
+        CMD_ID = 4203;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_LEVEL = 2;
+        HAVE_TAKE = 3;
+        NO_REWARD = 4;
+    }
+}

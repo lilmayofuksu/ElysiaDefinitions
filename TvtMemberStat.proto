@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "TvtMember.proto";
+message TvtMemberStat {
+    required TvtMember member = 1;
+    optional uint32 total_score = 2;
+    optional bool is_mvp = 3;
+    optional uint32 old_division = 4;
+    optional uint32 old_division_star = 5;
+    optional double battle_points_in_stage = 6;
+    optional uint32 stage_scoin_num = 7;
+    optional bool is_team_match = 8;
+}

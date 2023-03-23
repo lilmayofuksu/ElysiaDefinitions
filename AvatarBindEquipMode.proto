@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum AvatarBindEquipMode {
+    AVATAR_BIND_EQUIP_COMMON = 0;
+    AVATAR_BIND_EQUIP_EXTRA_STORY = 1;
+}

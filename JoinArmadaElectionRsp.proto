@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "ArmadaImpeachData.proto";
+message JoinArmadaElectionRsp {
+    required Retcode retcode = 1;
+    required ArmadaImpeachData impeach_data = 2;
+
+    enum CmdId {
+        CMD_ID = 2694;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        IMPEACH_NOT_START = 3;
+        IN_OPTIONAL_LIST = 4;
+        LEVEL_LACK = 5;
+        ACCOUNT_NONE = 6;
+    }
+}

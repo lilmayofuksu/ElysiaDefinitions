@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GeneralActivityRankType {
+    GENERAL_ACTIVITY_RANK_TYPE_NONE = 0;
+    GENERAL_ACTIVITY_RANK_TYPE_ABS = 1;
+    GENERAL_ACTIVITY_RANK_TYPE_PERCENT = 2;
+}

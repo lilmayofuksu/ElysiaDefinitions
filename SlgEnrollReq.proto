@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message SlgEnrollReq {
+    optional uint32 battle_schedule_id = 1;
+    optional uint32 group_id = 2;
+    optional uint32 match_score = 3;
+    optional string region_name = 4;
+
+    enum CmdId {
+        CMD_ID = 6055;
+    }
+}

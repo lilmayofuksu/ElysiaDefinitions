@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ElfTalent.proto";
+message SyncElfTalentNotify {
+    repeated ElfTalent elf_talent_list = 4;
+
+    enum CmdId {
+        CMD_ID = 2104;
+    }
+}

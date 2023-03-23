@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EndlessSingleModeItem {
+    optional uint32 item_id = 1;
+    optional uint32 item_num = 2;
+}

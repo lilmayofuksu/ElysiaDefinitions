@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "KingdomWarData.proto";
+message GetKingdomWarRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 display_begin_time = 3;
+    optional uint32 display_end_time = 4;
+    optional uint32 begin_time = 5;
+    optional uint32 end_time = 6;
+    required KingdomWarData kingdom_war = 7;
+    optional uint32 kingdom_id = 8;
+    optional uint32 activity_stamina = 9;
+    optional uint32 last_recover_stamina_time = 10;
+
+    enum CmdId {
+        CMD_ID = 3051;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

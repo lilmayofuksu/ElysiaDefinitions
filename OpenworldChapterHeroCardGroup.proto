@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "OpenworldChapterHeroCardSlot.proto";
+message OpenworldChapterHeroCardGroup {
+    optional uint32 hero_id = 1;
+    optional string group_name = 2;
+    optional bool is_active = 3;
+    repeated OpenworldChapterHeroCardSlot slot_list = 4;
+}

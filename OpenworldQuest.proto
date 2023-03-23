@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "OpenworldQuestStatus.proto";
+message OpenworldQuest {
+    optional uint32 id = 2;
+    optional OpenworldQuestStatus status = 3;
+    optional uint32 buff_id = 4;
+    optional uint32 debuff_id = 5;
+    optional uint32 position = 6;
+    repeated uint32 finish_challenge_list = 7;
+    optional uint32 progress = 8;
+    optional uint32 rarity_reward_id = 9;
+    optional uint32 quest_activity_id = 10;
+    optional uint32 special_timeout_sec = 11;
+}

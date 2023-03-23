@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixAnswerQuestionReq {
+    required ArmadaMatrixGridPos pos = 1;
+    optional uint32 question_id = 2;
+    repeated uint32 answer_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2832;
+    }
+}

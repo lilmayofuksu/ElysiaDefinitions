@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message GetArmadaDiscoveryRsp {
+    required Retcode retcode = 1;
+    optional uint32 armada_week_discovery = 2;
+    optional uint32 self_week_discovery = 3;
+    optional uint32 next_refresh_time = 4;
+    optional uint32 cur_time = 5;
+    optional uint32 join_time = 6;
+    optional uint32 join_armada_week_discovery = 7;
+
+    enum CmdId {
+        CMD_ID = 2664;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+    }
+}

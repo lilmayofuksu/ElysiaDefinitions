@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ArmadaMatrixDialogEventNotify {
+    optional uint32 dialog_event_id = 1;
+
+    enum CmdId {
+        CMD_ID = 2795;
+    }
+}

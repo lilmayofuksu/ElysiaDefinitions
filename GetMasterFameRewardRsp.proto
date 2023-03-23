@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "MasterPupilRetcode.proto";
+message GetMasterFameRewardRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    optional uint32 level = 2;
+    repeated RewardData reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 577;
+    }
+}

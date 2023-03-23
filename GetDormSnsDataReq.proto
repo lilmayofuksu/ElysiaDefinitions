@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetDormSnsDataReq {
+
+    enum CmdId {
+        CMD_ID = 637;
+    }
+}

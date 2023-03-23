@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GachaProtectDisplayInfo {
+    optional ProtectDisplayType protect_display_type = 1;
+    optional uint32 display_key_avatar = 2;
+    repeated uint32 display_key_item_list = 3;
+    repeated uint32 droped_up_item_list = 4;
+    optional uint32 no_protect_gacha_times = 5;
+
+    enum ProtectDisplayType {
+        NO_DISPLAY = 0;
+        AVATAR_DISPLAY = 1;
+        EQUIP_DISPLAY = 2;
+    }
+}

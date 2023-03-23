@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "MonsterCardRandomTalentConfirmData.proto";
+import "MonsterCardRandomTalentConfirmType.proto";
+message MonsterCardConfirmRandomTalentRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional MonsterCardRandomTalentConfirmType type = 3;
+    required MonsterCardRandomTalentConfirmData confirm_data = 4;
+
+    enum CmdId {
+        CMD_ID = 5934;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

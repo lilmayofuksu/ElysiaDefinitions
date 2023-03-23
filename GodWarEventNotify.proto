@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "GodWarEventInfo.proto";
+message GodWarEventNotify {
+    optional uint32 god_war_id = 1;
+    optional uint32 tale_id = 2;
+    repeated GodWarEventInfo event_list = 3;
+    optional uint32 trigger_type = 4;
+    repeated uint32 trigger_param_list = 5;
+
+    enum CmdId {
+        CMD_ID = 6160;
+    }
+}

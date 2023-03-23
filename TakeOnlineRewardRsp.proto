@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeOnlineRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+    optional uint32 id = 3;
+
+    enum CmdId {
+        CMD_ID = 4199;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        LEVEL_NOT_SATISFY = 3;
+        NOT_REACH = 4;
+        HAS_TAKE = 5;
+    }
+}

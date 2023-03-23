@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ResetConsignedOrderReq {
+
+    enum CmdId {
+        CMD_ID = 2645;
+    }
+}

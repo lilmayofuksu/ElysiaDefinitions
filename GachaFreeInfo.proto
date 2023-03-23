@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "GachaFreeType.proto";
+message GachaFreeInfo {
+    optional GachaFreeType free_type = 1;
+    optional uint32 free_times = 2;
+    optional uint32 total_free_times = 3;
+    optional uint32 next_auto_refresh_time = 4;
+}

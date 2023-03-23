@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message DreamOpenDreamReq {
+    optional uint32 activity_id = 1;
+    optional uint32 dream_id = 2;
+    optional uint32 select_dream_reward_id = 3;
+
+    enum CmdId {
+        CMD_ID = 5752;
+    }
+}

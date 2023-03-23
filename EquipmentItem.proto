@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "EquipmentType.proto";
+message EquipmentItem {
+    optional EquipmentType type = 1;
+    optional uint32 id_or_unique_id = 2;
+    optional uint32 num = 3;
+}

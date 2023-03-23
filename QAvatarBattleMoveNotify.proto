@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message QAvatarBattleMoveNotify {
+    optional float speed_x = 1;
+    optional float speed_y = 2;
+    optional float rotation_x = 3;
+    optional float rotation_y = 4;
+
+    enum CmdId {
+        CMD_ID = 5603;
+    }
+}

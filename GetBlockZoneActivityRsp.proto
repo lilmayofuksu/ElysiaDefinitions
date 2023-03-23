@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message GetBlockZoneActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 season_id = 2;
+    optional uint32 tale_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4345;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

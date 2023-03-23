@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum RoomClientStatus {
+    ROOM_CLIENT_NONE = 0;
+    ROOM_CLIENT_SELECTING_MAP = 1;
+    ROOM_CLIENT_EQUIPING = 2;
+}

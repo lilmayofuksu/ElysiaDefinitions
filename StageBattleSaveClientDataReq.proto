@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message StageBattleSaveClientDataReq {
+    optional uint32 stage_id = 1;
+    optional uint32 act_id = 2;
+    optional string client_data = 3;
+
+    enum CmdId {
+        CMD_ID = 829;
+    }
+}

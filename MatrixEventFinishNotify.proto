@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MatrixEventType.proto";
+import "RewardData.proto";
+import "MatrixGridPos.proto";
+message MatrixEventFinishNotify {
+    required MatrixGridPos pos = 1;
+    optional uint32 event_id = 2;
+    required RewardData reward_data = 3;
+    optional MatrixEventType display_type = 4;
+    optional uint32 display_id = 5;
+
+    enum CmdId {
+        CMD_ID = 2335;
+    }
+}

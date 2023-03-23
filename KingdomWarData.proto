@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "KingdomWarKingdom.proto";
+import "KingdomWarPhase.proto";
+message KingdomWarData {
+    repeated KingdomWarPhase phase_list = 1;
+    repeated KingdomWarKingdom kingdom_list = 2;
+    optional uint32 cur_phase = 3;
+    optional bool is_over = 4;
+    optional uint32 has_take_max_score = 5;
+    optional uint32 has_get_currency_num = 6;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum BattlePassTicketType {
+    BATTLE_PASS_TICKET_NONE = 0;
+    BATTLE_PASS_TICKET_NORMAL = 1;
+    BATTLE_PASS_TICKET_ADVANCED = 2;
+    BATTLE_PASS_TICKET_LUXURY = 3;
+}

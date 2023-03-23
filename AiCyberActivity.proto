@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "AiCyberArea.proto";
+message AiCyberActivity {
+    optional uint32 activity_id = 1;
+    optional uint32 progress = 2;
+    repeated AiCyberArea area_list = 3;
+    optional uint32 schedule_id = 4;
+}

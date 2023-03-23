@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "SlgBattleRank.proto";
+message SlgGetBattleRankRsp {
+    required Retcode retcode = 1;
+    required SlgBattleRank rank = 2;
+    optional uint32 battle_schedule_id = 3;
+
+    enum CmdId {
+        CMD_ID = 6063;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+        NOT_IN_BATTLE = 3;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GodWarNpcType {
+    GOD_WAR_NPC_NONE = 0;
+    GOD_WAR_NPC_MAIN_LINE = 1;
+    GOD_WAR_NPC_BRANCH_LINE = 2;
+}

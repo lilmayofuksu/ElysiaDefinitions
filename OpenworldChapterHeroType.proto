@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum OpenworldChapterHeroType {
+    OPENWORLD_CHAPTER_CARD_HERO = 1;
+    OPENWORLD_CHAPTER_NORMAL_HERO = 2;
+}

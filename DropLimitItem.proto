@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message DropLimitItem {
+    optional uint32 limit_id = 1;
+    optional uint32 got_num = 2;
+}

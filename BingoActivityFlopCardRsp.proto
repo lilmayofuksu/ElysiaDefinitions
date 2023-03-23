@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message BingoActivityFlopCardRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 bingo_id = 3;
+    optional uint32 card_id = 4;
+    repeated RewardData reward_list = 5;
+    repeated DropItem drop_item_list = 6;
+    optional bool is_all_finished = 7;
+
+    enum CmdId {
+        CMD_ID = 4160;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        ITEMS_LACK = 3;
+        HAS_FINISED = 4;
+        HAS_FLOPED = 5;
+    }
+}

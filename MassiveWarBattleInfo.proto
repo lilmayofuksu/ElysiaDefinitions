@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "MassiveWarFieldProgress.proto";
+import "MassiveWarBattleMember.proto";
+import "MassiveWarBattleMonster.proto";
+import "MassiveWarMonsterDamage.proto";
+message MassiveWarBattleInfo {
+    optional uint32 battle_begin_time = 1;
+    optional uint32 stage_id = 2;
+    optional uint32 battle_uniq_id = 3;
+    optional uint32 auto_lose_hp_time_id = 4;
+    optional uint32 battle_status = 5;
+    optional uint32 total_member = 6;
+    optional uint32 self_rank = 7;
+    repeated MassiveWarMonsterDamage self_monster_damage_list = 8;
+    repeated MassiveWarBattleMonster monster_list = 9;
+    repeated MassiveWarBattleMember top_member_list = 10;
+    optional uint32 monster_hard_level = 11;
+    optional uint32 self_buff_progress = 12;
+    required MassiveWarFieldProgress field_progress = 13;
+}

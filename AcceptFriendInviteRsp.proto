@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message AcceptFriendInviteRsp {
+    required Retcode retcode = 1;
+    optional uint32 invite_uid = 2;
+
+    enum CmdId {
+        CMD_ID = 228;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        INVITE_CODE_ERROR = 2;
+        LEVEL_LACK = 3;
+        INVITE_FULL = 4;
+        INVITE_INVALID_REGION = 5;
+    }
+}

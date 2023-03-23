@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetOtherMasterPupilReq {
+    repeated uint32 uid_list = 1;
+
+    enum CmdId {
+        CMD_ID = 664;
+    }
+}

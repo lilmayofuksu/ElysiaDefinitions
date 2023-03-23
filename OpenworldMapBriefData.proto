@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "OpenworldStat.proto";
+message OpenworldMapBriefData {
+    optional uint32 map_id = 1;
+    optional uint32 status = 2;
+    repeated OpenworldStat stat_list = 3;
+    optional uint32 cycle = 4;
+    optional uint32 quest_level = 5;
+    optional uint32 has_take_finish_reward_cycle = 6;
+}

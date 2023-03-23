@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GratuityPlayerInfo {
+    optional string nickname = 1;
+    optional uint32 level = 2;
+    optional uint32 frame_id = 3;
+    optional uint32 custom_head_id = 4;
+}

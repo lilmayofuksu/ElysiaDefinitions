@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RoomInfo.proto";
+import "RoomMember.proto";
+import "RoomMode.proto";
+message RoomInvitationNotify {
+    optional uint32 target_uid = 1;
+    optional RoomMode room_mode = 2;
+    optional uint32 room_id = 3;
+    required RoomMember from_player = 4;
+    required RoomInfo room_info = 5;
+
+    enum CmdId {
+        CMD_ID = 3162;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message AssignRestaurantWorkReq {
+    optional uint32 activity_id = 1;
+    optional uint32 room_id = 2;
+    optional uint32 avatar_id = 3;
+    optional uint32 material_id = 4;
+
+    enum CmdId {
+        CMD_ID = 5864;
+    }
+}

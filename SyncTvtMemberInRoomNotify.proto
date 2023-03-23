@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "TvtMember.proto";
+message SyncTvtMemberInRoomNotify {
+    repeated TvtMember member_list = 1;
+
+    enum CmdId {
+        CMD_ID = 3304;
+    }
+}

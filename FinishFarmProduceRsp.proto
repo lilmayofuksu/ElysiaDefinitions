@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "Material.proto";
+message FinishFarmProduceRsp {
+    required Retcode retcode = 1;
+    optional uint32 slot_id = 2;
+    optional bool is_finish_all = 3;
+    optional uint32 reward_farm_exp = 4;
+    repeated Material produce_material_list = 5;
+    required RewardData reward_data = 6;
+
+    enum CmdId {
+        CMD_ID = 1392;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SLOT_LOCKED = 2;
+        NOT_IN_PRODUCE = 3;
+        NOT_FINISH = 4;
+    }
+}

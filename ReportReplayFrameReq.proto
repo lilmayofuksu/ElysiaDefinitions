@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ReplayFrame.proto";
+message ReportReplayFrameReq {
+    optional string key = 1;
+    required ReplayFrame replay_frame = 2;
+
+    enum CmdId {
+        CMD_ID = 5404;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SealedModeUseItem {
+    optional uint32 unique_id = 1;
+    optional uint32 item_id = 2;
+    optional uint32 from_uid = 3;
+    optional uint32 to_uid = 4;
+}

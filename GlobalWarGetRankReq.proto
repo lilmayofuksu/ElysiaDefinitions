@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GlobalWarGetRankReq {
+    optional uint32 point_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3957;
+    }
+}

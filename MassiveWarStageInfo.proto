@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message MassiveWarStageInfo {
+    optional uint32 stage_id = 1;
+    optional uint32 sub_schedule_id = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+    optional uint32 max_damage_level_score = 5;
+    optional uint32 max_rank_score = 6;
+    optional uint32 basic_damage_score = 7;
+    optional uint32 min_rank_ratio = 8;
+    optional uint32 min_damage_level = 9;
+    optional uint32 max_total_damage = 10;
+}

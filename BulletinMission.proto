@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message BulletinMission {
+    optional uint32 mission_id = 1;
+    repeated BulletinMissionCycle cycle_list = 2;
+    message BulletinMissionCycle {
+        optional uint32 cycle_id = 1;
+        optional uint32 begin_time = 2;
+        optional uint32 end_time = 3;
+    }
+}

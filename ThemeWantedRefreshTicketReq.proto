@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ThemeWantedRefreshTicketReq {
+
+    enum CmdId {
+        CMD_ID = 5794;
+    }
+}

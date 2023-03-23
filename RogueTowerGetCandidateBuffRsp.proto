@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message RogueTowerGetCandidateBuffRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+    optional uint32 pool_id = 3;
+    repeated uint32 buff_id_list = 4;
+
+    enum CmdId {
+        CMD_ID = 4363;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_SELECT = 2;
+        NO_LEFT_TIMES = 3;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ChatworldEnterType {
+    CHATWORLD_ENTER_TYPE_NONE = 0;
+    CHATWORLD_ENTER_TYPE_WORLD = 1;
+    CHATWORLD_ENTER_TYPE_ARMADA = 2;
+}

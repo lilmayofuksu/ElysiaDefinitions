@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum OpenworldQuestRewardType {
+    OW_QUEST_REWARD_A_AVATAR_FRAGMENT = 1;
+    OW_QUEST_REWARD_SP_AVATAR_FRAGMENT = 2;
+    OW_QUEST_REWARD_PURPLEJADE = 3;
+    OW_QUEST_REWARD_NORMAL = 4;
+    OW_QUEST_REWARD_ARTIFACT = 5;
+}

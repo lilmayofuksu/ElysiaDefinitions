@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ThemeData {
+    optional uint32 theme_id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 bonus_drop_times = 4;
+    optional uint32 total_bonus_score = 5;
+}

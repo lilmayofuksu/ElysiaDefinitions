@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TakeDormLikesDropReq {
+
+    enum CmdId {
+        CMD_ID = 1008;
+    }
+}

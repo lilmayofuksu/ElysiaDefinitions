@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message TakeOpenworldEventRewardReq {
+    optional uint32 event_id = 1;
+    repeated DropItem drop_item_list = 2;
+    optional uint32 map_id = 3;
+    optional string report_ext = 4;
+
+    enum CmdId {
+        CMD_ID = 4458;
+    }
+}

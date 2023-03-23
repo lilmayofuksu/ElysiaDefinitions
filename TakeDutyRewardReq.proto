@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "DutyType.proto";
+message TakeDutyRewardReq {
+    optional DutyType duty_type = 1;
+    repeated uint32 duty_id_list = 2;
+
+    enum CmdId {
+        CMD_ID = 288;
+    }
+}

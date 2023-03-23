@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "GodWarNpc.proto";
+message GetGodWarLobbyRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    optional uint32 lobby_id = 3;
+    repeated GodWarNpc npc_list = 4;
+
+    enum CmdId {
+        CMD_ID = 6202;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        FEATURE_CLOSE = 3;
+    }
+}

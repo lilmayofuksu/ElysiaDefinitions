@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ArmadaMatrixAdvancePath.proto";
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixAdvanceReq {
+    required ArmadaMatrixGridPos from = 1;
+    required ArmadaMatrixGridPos to = 2;
+    repeated ArmadaMatrixAdvancePath path_list = 3;
+    optional uint32 cur_schedule_id = 4;
+    optional uint32 level = 5;
+    optional uint32 map_id = 6;
+
+    enum CmdId {
+        CMD_ID = 2738;
+    }
+}

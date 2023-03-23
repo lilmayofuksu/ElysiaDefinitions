@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "PvzSiteInfo.proto";
+import "PvzQAvatar.proto";
+message PvzActivity {
+    optional uint32 activity_id = 1;
+    repeated PvzQAvatar unlocked_qavatar_list = 2;
+    repeated PvzSiteInfo site_info_list = 3;
+    optional uint32 challenge_max_finish_wave = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message SetTransferPwdRsp {
+    required Retcode retcode = 1;
+    optional string transfer_code = 2;
+    optional uint32 transfer_pwd_expire_time = 3;
+
+    enum CmdId {
+        CMD_ID = 246;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PWD_FORMAT_ERROR = 2;
+    }
+}

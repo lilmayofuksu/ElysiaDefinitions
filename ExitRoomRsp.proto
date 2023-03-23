@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ExitRoomRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3158;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ROOM = 2;
+        TOO_FREQUENT = 3;
+    }
+}

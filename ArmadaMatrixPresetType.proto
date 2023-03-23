@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum ArmadaMatrixPresetType {
+    ARMADA_MATRIX_PRESET_TYPE_NONE = 0;
+    ARMADA_MATRIX_PRESET_TYPE_ARMADA_BOSS = 100;
+}

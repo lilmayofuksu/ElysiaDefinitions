@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "SlgBossType.proto";
+message SlgBattlePointBossData {
+    optional uint32 boss_id = 1;
+    optional SlgBossType type = 2;
+    optional bool is_alive = 3;
+    optional uint32 boss_schedule_id = 4;
+}

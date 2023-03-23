@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "StigmataRune.proto";
+message StigmataRuneGroup {
+    optional uint32 unique_id = 1;
+    repeated StigmataRune rune_list = 2;
+}

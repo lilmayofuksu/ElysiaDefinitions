@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "MatrixFloorMapInfo.proto";
+import "MatrixFloorBriefInfo.proto";
+message SyncMatrixFloorNotify {
+    optional uint32 floor_id = 1;
+    required MatrixFloorBriefInfo floor_brief_info = 2;
+    required MatrixFloorMapInfo floor_map_info = 3;
+
+    enum CmdId {
+        CMD_ID = 2328;
+    }
+}

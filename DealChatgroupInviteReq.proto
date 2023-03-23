@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message DealChatgroupInviteReq {
+    optional uint32 chatgroup_id = 1;
+    optional InviteAction action = 2;
+
+    enum CmdId {
+        CMD_ID = 2214;
+    }
+    enum InviteAction {
+        INVITE_NONE = 0;
+        INVITE_AGREE = 1;
+        INVITE_REJECT = 2;
+    }
+}

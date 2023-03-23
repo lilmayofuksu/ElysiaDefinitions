@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "GeneralActivityStageGroupScheduleInfo.proto";
+message CrisisModeActivity {
+    repeated GeneralActivityStageGroupScheduleInfo stage_group_schedule_list = 1;
+    repeated uint32 stage_reward_taken_list = 2;
+}

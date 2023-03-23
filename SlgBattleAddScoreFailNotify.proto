@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SlgBattleAddScoreFailNotify {
+    optional uint32 point_id = 1;
+
+    enum CmdId {
+        CMD_ID = 6061;
+    }
+}

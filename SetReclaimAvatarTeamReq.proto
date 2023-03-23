@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SetReclaimAvatarTeamReq {
+    repeated uint32 reclaim_avatar_team_list = 1;
+
+    enum CmdId {
+        CMD_ID = 1171;
+    }
+}

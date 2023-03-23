@@ -1,0 +1,35 @@
+syntax = "proto2";
+
+import "FacilityLevel.proto";
+import "AdventureDecorationSlot.proto";
+import "CabinLevel.proto";
+import "AdventureGroupAvailableQuest.proto";
+import "AdventureGroupQuest.proto";
+import "AdventureGroupAvatar.proto";
+message GetAdventureGroupRsp {
+    required Retcode retcode = 1;
+    optional uint32 level = 2;
+    optional uint32 badge = 3;
+    optional uint32 last_examination = 4;
+    repeated AdventureGroupAvatar avatar_list = 5;
+    repeated AdventureGroupQuest quest_list = 6;
+    repeated AdventureGroupAvailableQuest available_quest_list = 7;
+    optional uint32 grain = 8;
+    optional uint32 has_take_reward_level = 9;
+    optional uint32 next_scoin_add_time = 10;
+    optional uint32 storage_scoin = 11;
+    optional uint32 storage_stamina = 12;
+    repeated uint32 has_take_compensation_list = 13;
+    repeated CabinLevel cabin_level_list = 14;
+    repeated AdventureDecorationSlot decoration_slot_list = 15;
+    repeated FacilityLevel facility_level_list = 16;
+    optional uint32 today_reset_quest_num = 17;
+
+    enum CmdId {
+        CMD_ID = 3901;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetWebActivityInfoReq {
+
+    enum CmdId {
+        CMD_ID = 1601;
+    }
+}

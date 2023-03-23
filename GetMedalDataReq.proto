@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetMedalDataReq {
+    repeated uint32 medal_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 449;
+    }
+}

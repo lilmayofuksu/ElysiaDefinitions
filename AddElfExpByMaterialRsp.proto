@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message AddElfExpByMaterialRsp {
+    required Retcode retcode = 1;
+    optional uint32 old_level = 2;
+    optional uint32 old_exp = 3;
+
+    enum CmdId {
+        CMD_ID = 2108;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ELF_NOT_EXIST = 2;
+        ELF_LEVEL_FULL = 3;
+        MATERIAL_NOT_ENOUGH = 4;
+        MATERIAL_CAN_NOT_ADD_EXP = 5;
+        SCOIN_LACK = 6;
+    }
+}

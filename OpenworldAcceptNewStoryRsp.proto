@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message OpenworldAcceptNewStoryRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    repeated uint32 story_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4570;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

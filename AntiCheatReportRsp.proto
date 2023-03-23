@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message AntiCheatReportRsp {
+    required Retcode retcode = 1;
+    optional uint32 cheat_type = 2;
+    optional ProgressWay progress_way = 3;
+
+    enum CmdId {
+        CMD_ID = 218;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+    enum ProgressWay {
+        IGNORE = 1;
+        EXIT_GAME = 2;
+    }
+}

@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+import "EquipmentItem.proto";
+message EquipmentEvoRsp {
+    required Retcode retcode = 1;
+    required EquipmentItem new_item = 2;
+
+    enum CmdId {
+        CMD_ID = 38;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAIN_ITEM_NOT_EXIST = 2;
+        MAIN_ITEM_LEVEL_NOT_FULL = 3;
+        CONSUME_ITEM_NOT_EXIST = 4;
+        CONSUME_ITEM_IN_USE = 5;
+        CONSUME_ITEM_REPEAT = 6;
+        CONSUME_ITEM_UN_NECESSARY = 7;
+        CONSUME_ITEM_LACK = 8;
+        MAIN_ITEM_IN_CONSUME_ITEM_LIST = 9;
+        SCOIN_LACK = 10;
+        CONSUME_ITEM_PROTECTED = 11;
+        MAIN_ITEM_AFFIX_NOT_IDENTIFY = 12;
+        COST_GACHA_TICKET = 13;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 14;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 15;
+        CONSUME_ITEM_GRAND_KEY = 16;
+        CONSUME_ITEM_IN_FACILITY = 17;
+        MAIN_ITEM_IN_FACILITY = 18;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 19;
+    }
+}

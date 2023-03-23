@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaDiscoveryRewardConfig {
+    required uint32 discovery = 1;
+    required uint32 reward_id = 2;
+}

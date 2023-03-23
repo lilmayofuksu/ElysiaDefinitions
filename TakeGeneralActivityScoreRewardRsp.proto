@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeGeneralActivityScoreRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+    optional uint32 activity_id = 3;
+    optional uint32 score_id = 4;
+
+    enum CmdId {
+        CMD_ID = 4035;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKEN = 2;
+        NOT_REACH = 3;
+        NOT_OPEN = 4;
+    }
+}

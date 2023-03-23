@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ElfFragment {
+    optional uint32 elf_id = 1;
+    optional uint32 fragment_num = 2;
+}

@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum AvatarSuiteSelectionSystem {
+    SYSTEM_SEALED_MODE = 1;
+}

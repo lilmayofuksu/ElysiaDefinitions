@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "VirtualTrainItemDrop.proto";
+message VirtualTrainItemDropNotify {
+    optional uint32 group_id = 1;
+    optional DropSrcType drop_src_type = 2;
+    repeated VirtualTrainItemDrop item_drop_list = 3;
+    optional uint32 stage_id = 4;
+
+    enum CmdId {
+        CMD_ID = 3524;
+    }
+    enum DropSrcType {
+        DROP_SRC_NONE = 0;
+        DROP_SRC_RPG_STAGE = 1;
+        DROP_SRC_RPG_MISSION = 2;
+        DROP_SRC_RPG_QAVATAR = 3;
+        DROP_SRC_GM = 10;
+    }
+}

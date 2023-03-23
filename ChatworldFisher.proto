@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ChatworldFishInfo.proto";
+import "ChatworldFisherStatus.proto";
+message ChatworldFisher {
+    optional uint32 uid = 1;
+    optional uint32 seat_idx = 2;
+    optional ChatworldFisherStatus fisher_status = 3;
+    optional uint64 status_start_time_ms_u64 = 4;
+    optional uint32 wait_assist_fish_hard_level = 5;
+    repeated uint32 assist_uid_list = 6;
+    repeated uint32 like_uid_list = 7;
+    optional uint32 last_get_fish_id = 8;
+    optional uint64 last_get_fish_time_ms_u64 = 9;
+    required ChatworldFishInfo fish_info = 10;
+}

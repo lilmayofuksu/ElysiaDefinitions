@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message CommandCDSwitchData {
+    optional uint32 cmd_id = 1;
+}

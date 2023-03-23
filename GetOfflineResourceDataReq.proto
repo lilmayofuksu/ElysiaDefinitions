@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetOfflineResourceDataReq {
+
+    enum CmdId {
+        CMD_ID = 4211;
+    }
+}

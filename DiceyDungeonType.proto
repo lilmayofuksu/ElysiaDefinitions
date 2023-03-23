@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum DiceyDungeonType {
+    DICEY_DUNGEON_NONE = 0;
+    DICEY_DUNGEON_STORY = 1;
+    DICEY_DUNGEON_SCHEDULE = 2;
+    DICEY_DUNGEON_ENDLESS = 3;
+}

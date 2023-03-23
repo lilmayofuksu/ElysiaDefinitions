@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GalInteractBubbleType {
+    GALINTERACT_BUBBLE_NO = 0;
+    GALINTERACT_BUBBLE_YES = 1;
+    GALINTERACT_BUBBLE_PLACEHOLD = 2;
+}

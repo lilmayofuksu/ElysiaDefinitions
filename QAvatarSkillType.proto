@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum QAvatarSkillType {
+    QAVATAR_SKILL_NONE = 0;
+    QAVATAR_SKILL_ATK = 1;
+    QAVATAR_SKILL_SKL01 = 2;
+    QAVATAR_SKILL_SKL02 = 3;
+}

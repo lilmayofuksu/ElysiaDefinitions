@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ArmadaMatrixLevelBrief {
+    optional uint32 level = 1;
+    optional uint32 map_id = 2;
+    optional uint32 buff_id = 3;
+}

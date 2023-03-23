@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message McoinBuySwitchData {
+    optional uint32 account_type = 1;
+}

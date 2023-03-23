@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ChapterActivityStage {
+    optional uint32 stage_id = 1;
+    optional uint32 max_floor = 2;
+    optional uint32 pass_times = 3;
+    optional uint32 max_score = 4;
+}

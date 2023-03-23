@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message FrontEndlessActivityBattleEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 cur_floor = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4067;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_CUR_FLOOR = 2;
+    }
+}

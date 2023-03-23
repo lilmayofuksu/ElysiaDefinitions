@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SlgBossType {
+    SLG_BOSS_TYPE_NONE = 0;
+    SLG_BOSS_TYPE_SMALL_BOSS = 1;
+    SLG_BOSS_TYPE_BIG_BOSS = 2;
+}

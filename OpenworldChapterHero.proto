@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldChapterHero {
+    optional uint32 hero_id = 1;
+    optional uint32 hero_level = 2;
+}

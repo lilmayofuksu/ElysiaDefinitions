@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message GetCollaborationScheduleRsp {
+    required Retcode retcode = 1;
+    repeated Schedule schedule_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5832;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+    message Schedule {
+        optional uint32 id = 1;
+        optional uint32 begin_time = 2;
+        optional uint32 end_time = 3;
+    }
+}

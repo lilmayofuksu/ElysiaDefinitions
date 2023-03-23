@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "ChallengeWarStage.proto";
+import "GeneralActivityStageGroupScheduleInfo.proto";
+message ChallengeWarActivity {
+    repeated GeneralActivityStageGroupScheduleInfo stage_group_schedule_list = 1;
+    repeated StageAvatarTeam team_list = 2;
+    repeated ChallengeWarStage stage_list = 3;
+    message StageAvatarTeam {
+        optional uint32 stage_id = 1;
+        repeated uint32 avatar_id_list = 2;
+        repeated uint32 support_avatar_id_list = 3;
+    }
+}

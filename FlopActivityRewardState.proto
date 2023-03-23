@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum FlopActivityRewardState {
+    FLOP_ACTIVITY_REWARD_STATE_LOCK = 0;
+    FLOP_ACTIVITY_REWARD_STATE_UNLOCK = 1;
+    FLOP_ACTIVITY_REWARD_STATE_HAS_GOT = 2;
+}

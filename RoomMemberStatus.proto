@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum RoomMemberStatus {
+    ROOM_UNREADY = 1;
+    ROOM_READY = 2;
+    ROOM_IN_BATTLE = 3;
+}

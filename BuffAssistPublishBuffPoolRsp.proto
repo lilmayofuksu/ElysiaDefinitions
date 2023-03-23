@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message BuffAssistPublishBuffPoolRsp {
+    required Retcode retcode = 1;
+    optional uint32 pool_id = 2;
+
+    enum CmdId {
+        CMD_ID = 5948;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        ASSIST_WORD_ERROR = 3;
+        POOL_ERROR = 4;
+        BUFF_SCHEDULE_ERROR = 5;
+        BUFF_POOL_FULL = 6;
+        LACK_TIMES = 7;
+        REPEATED_PUBLISH = 8;
+    }
+}

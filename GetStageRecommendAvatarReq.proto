@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "AvatarRecommendType.proto";
+message GetStageRecommendAvatarReq {
+    repeated string id_list = 1;
+    optional AvatarRecommendType type = 2;
+
+    enum CmdId {
+        CMD_ID = 1541;
+    }
+}

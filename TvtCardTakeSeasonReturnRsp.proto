@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RewardItemData.proto";
+message TvtCardTakeSeasonReturnRsp {
+    required Retcode retcode = 1;
+    repeated RewardItemData return_item_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3316;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LOCKED = 2;
+        HAS_TAKE = 3;
+    }
+}

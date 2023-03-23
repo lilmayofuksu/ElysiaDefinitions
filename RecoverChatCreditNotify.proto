@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message RecoverChatCreditNotify {
+    optional uint32 lost_chat_credit = 1;
+
+    enum CmdId {
+        CMD_ID = 1162;
+    }
+}

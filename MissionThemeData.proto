@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message MissionThemeData {
+    optional uint32 theme_id = 1;
+    optional bool is_theme_upgrade = 2;
+    repeated uint32 has_take_extra_reward_mission_list = 3;
+    optional bool is_has_take_all_extra_reward = 4;
+}

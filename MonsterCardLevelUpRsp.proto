@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message MonsterCardLevelUpRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 unique_id = 3;
+    optional uint32 target_level = 4;
+
+    enum CmdId {
+        CMD_ID = 5923;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        LEVEL_LIMIT = 3;
+        TARGET_LEVEL_ERROR = 4;
+    }
+}

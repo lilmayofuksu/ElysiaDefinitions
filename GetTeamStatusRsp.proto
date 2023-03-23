@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MpTeamData.proto";
+message GetTeamStatusRsp {
+    required Retcode retcode = 1;
+    repeated MpTeamData team_data_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1554;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SERVER_BUSY = 2;
+    }
+}

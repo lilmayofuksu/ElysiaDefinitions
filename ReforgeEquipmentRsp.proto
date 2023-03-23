@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+message ReforgeEquipmentRsp {
+    required Retcode retcode = 1;
+    optional uint32 unique_id = 2;
+    optional uint32 remain_reforge_times = 3;
+
+    enum CmdId {
+        CMD_ID = 3658;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        JUST_SUPPORT_WEAPON = 2;
+        CONSUME_ITEM_NOT_EXIST = 3;
+        CONSUME_ITEM_IN_USE = 4;
+        CONSUME_ITEM_PROTECTED = 5;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 6;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 7;
+        EQUIPMENT_NOT_EXTRACTED = 8;
+        ACTIVITY_NOT_OPEN = 9;
+        EQUIPMENT_NOT_OPEN = 10;
+        TIMES_LACK = 11;
+        CONSUME_ITEM_IN_FACILITY = 12;
+        TARGET_NOT_FITTED = 13;
+        CONSUME_ITEM_GRAND_KEY = 14;
+        CONSUME_ITEM_REPEAT = 15;
+        COST_GACHA_TICKET = 16;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 17;
+    }
+}

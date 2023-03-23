@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message QAvatarBattleSpeedComponent {
+    optional float speed_x = 1;
+    optional float speed_y = 2;
+}

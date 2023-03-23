@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ReportBirthdayReq {
+    required uint32 birthday = 1;
+
+    enum CmdId {
+        CMD_ID = 299;
+    }
+}

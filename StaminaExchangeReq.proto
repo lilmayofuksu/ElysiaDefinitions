@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message StaminaExchangeReq {
+
+    enum CmdId {
+        CMD_ID = 18;
+    }
+}

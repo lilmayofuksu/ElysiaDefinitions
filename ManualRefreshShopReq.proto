@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ManualRefreshShopReq {
+    required uint32 shop_id = 1;
+
+    enum CmdId {
+        CMD_ID = 205;
+    }
+}

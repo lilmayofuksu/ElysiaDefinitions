@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "ReunionCookHistory.proto";
+message ReunionCookActivity {
+    optional uint32 cur_schedule_id = 1;
+    optional uint32 start_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 cook_score = 4;
+    optional uint32 last_settle_reward_score = 5;
+    repeated ReunionCookHistory cook_history = 6;
+    optional uint32 score_reward_group = 7;
+    optional uint32 group_id = 8;
+}

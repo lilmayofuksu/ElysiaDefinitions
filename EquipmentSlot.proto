@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum EquipmentSlot {
+    EQUIPMENT_SLOT_WEAPON_1 = 1;
+    EQUIPMENT_SLOT_STIGMATA_1 = 2;
+    EQUIPMENT_SLOT_STIGMATA_2 = 3;
+    EQUIPMENT_SLOT_STIGMATA_3 = 4;
+}

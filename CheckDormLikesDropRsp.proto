@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message CheckDormLikesDropRsp {
+    required Retcode retcode = 1;
+    optional bool has_likes_drop = 2;
+    optional uint32 yesterday_be_liked_num = 3;
+
+    enum CmdId {
+        CMD_ID = 1011;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LIMIT = 2;
+    }
+}

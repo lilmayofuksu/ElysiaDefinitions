@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message BuyGoodsReq {
+    required uint32 shop_id = 1;
+    required uint32 goods_id = 2;
+    optional uint32 coupon_material_id = 3;
+    optional uint32 coupon_num = 4;
+    optional uint32 mcoin_coupon_material_id = 5;
+    optional uint32 goods_num = 6;
+    optional uint32 gift_pack_select_reward_id = 7;
+    optional uint32 discount_save_num = 8;
+
+    enum CmdId {
+        CMD_ID = 203;
+    }
+}

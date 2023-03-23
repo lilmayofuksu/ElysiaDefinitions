@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "ChatworldSkillDamageMsg.proto";
+message ChatworldSkillDamageJudgeRsp {
+    required Retcode retcode = 1;
+    required ChatworldSkillDamageMsg damage_msg = 2;
+    optional uint32 score = 3;
+
+    enum CmdId {
+        CMD_ID = 2421;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_CHATWORLD = 2;
+        HIT_NOT_IN_CHATWORLD = 3;
+        NO_ATTACK = 4;
+        EXCEED_RANGE = 5;
+        CAN_NOT_HIT = 6;
+        INVALID_PATH = 7;
+        DAMAGE_FREE = 8;
+        NOT_ENEMY = 9;
+        IS_DEAD = 10;
+    }
+}

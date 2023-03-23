@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "ArmadaApplyResult.proto";
+import "ArmadaApply.proto";
+message GetArmadaManageDataRsp {
+    required Retcode retcode = 1;
+    repeated ArmadaApply apply_list = 2;
+    repeated ArmadaApplyResult apply_result_list = 3;
+    optional uint32 apply_level = 4;
+    optional bool auto_pass = 5;
+    optional uint32 auto_pass_level = 6;
+    optional uint32 build_owner = 7;
+    optional uint32 build_ownership_time = 8;
+
+    enum CmdId {
+        CMD_ID = 2612;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_GRANTED = 2;
+        NOT_IN_ARMADA = 3;
+    }
+}

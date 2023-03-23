@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "Furniture.proto";
+message DormRoom {
+    optional uint32 id = 1;
+    optional string name = 2;
+    repeated Furniture furniture_list = 3;
+    repeated uint32 avatar_list = 4;
+}

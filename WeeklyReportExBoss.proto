@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "WeeklyReportExBossGroup.proto";
+message WeeklyReportExBoss {
+    optional uint32 schedule_id = 1;
+    optional uint32 rank_id = 2;
+    optional uint32 times_score = 3;
+    repeated WeeklyReportExBossGroup boss_group_list = 4;
+    optional uint32 rank_percent = 5;
+    optional uint32 rank = 6;
+    optional uint32 begin_time = 7;
+    optional uint32 end_time = 8;
+    repeated uint32 reward_id_list = 9;
+}

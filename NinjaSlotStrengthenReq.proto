@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message NinjaSlotStrengthenReq {
+    optional uint32 slot_id = 1;
+    optional uint32 material_id = 2;
+    optional uint32 cost_num = 3;
+
+    enum CmdId {
+        CMD_ID = 4402;
+    }
+}

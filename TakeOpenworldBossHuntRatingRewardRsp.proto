@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeOpenworldBossHuntRatingRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 rating_id = 3;
+    repeated RewardData reward_data_list = 4;
+
+    enum CmdId {
+        CMD_ID = 4529;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_KILL_ALL = 2;
+        NO_REWARD = 3;
+        NO_RATING = 4;
+        RATING_DISMATCH = 5;
+        HAVE_TAKE = 6;
+    }
+}

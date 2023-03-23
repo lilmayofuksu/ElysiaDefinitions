@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetAdventureStorySweepInfoReq {
+
+    enum CmdId {
+        CMD_ID = 3914;
+    }
+}

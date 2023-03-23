@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+import "MasterPupilRetcode.proto";
+message GetMasterRankRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    required RankShowData rank_data = 2;
+    optional uint32 refresh_time = 3;
+
+    enum CmdId {
+        CMD_ID = 663;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetWorldMapDataReq {
+
+    enum CmdId {
+        CMD_ID = 1012;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message OpenChatworldTreasureReq {
+    optional uint32 chatworld_id = 1;
+    optional uint32 treasure_id = 2;
+    optional uint32 cur_treasure_schedule_id = 3;
+    optional bool is_gs_check = 4;
+
+    enum CmdId {
+        CMD_ID = 2417;
+    }
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message PrivilegeRightInfo {
+    optional uint32 right_id = 1;
+    optional uint32 type = 2;
+    optional uint32 total_used_times = 3;
+    optional uint32 max_use_times = 4;
+    optional uint32 use_times = 5;
+    optional uint32 next_auto_refresh_time = 6;
+}

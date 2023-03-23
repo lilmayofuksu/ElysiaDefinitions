@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ChatReport {
+    optional uint32 target_uid = 1;
+    optional uint32 report_type = 2;
+    optional string report_detail = 3;
+    optional uint32 reporter_uid = 4;
+}

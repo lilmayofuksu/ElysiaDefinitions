@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ClientReportBinType.proto";
+message ClientReportBinReq {
+    optional ClientReportBinType report_type = 1;
+    repeated bytes report_bin_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5012;
+    }
+}

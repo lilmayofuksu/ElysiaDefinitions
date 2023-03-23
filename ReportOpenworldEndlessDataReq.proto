@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "OpenworldEndlessReprotBattle.proto";
+import "OpenworldEndlessReprotInvasion.proto";
+import "OpenworldEndlessDataType.proto";
+message ReportOpenworldEndlessDataReq {
+    optional OpenworldEndlessDataType type = 1;
+    required OpenworldEndlessReprotInvasion invasion = 2;
+    required OpenworldEndlessReprotBattle battle = 3;
+
+    enum CmdId {
+        CMD_ID = 3434;
+    }
+}

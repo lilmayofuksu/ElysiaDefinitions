@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "ConsignedOrder.proto";
+message ChooseConsignedOrderRsp {
+    required Retcode retcode = 1;
+    required ConsignedOrder choosen_order = 2;
+
+    enum CmdId {
+        CMD_ID = 2642;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        STATUS_ERROR = 3;
+        INDEX_ERROR = 4;
+        TIMES_LIMIT = 5;
+    }
+}

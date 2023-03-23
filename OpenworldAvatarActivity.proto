@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message OpenworldAvatarActivity {
+    optional uint32 map_id = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 level = 3;
+    optional uint32 exp = 4;
+    repeated OpenworldQuest daily_quest_list = 5;
+    optional uint32 daily_accept_quest_times = 6;
+    optional uint32 daily_refresh_quest_times = 7;
+    repeated OpenworldQuest special_quest_list = 8;
+    repeated Talent talent_list = 9;
+    repeated Cultivate cultivate_list = 10;
+    repeated uint32 unlock_avatar_id_list = 11;
+    repeated uint32 finished_quest_id_list = 12;
+    optional uint32 total_daily_quest_currency_num = 13;
+    optional uint32 schedule_id = 14;
+    message Talent {
+        optional uint32 talent_id = 1;
+        optional uint32 level = 2;
+    }
+    message Cultivate {
+        optional uint32 id = 1;
+        optional uint32 level = 2;
+    }
+}

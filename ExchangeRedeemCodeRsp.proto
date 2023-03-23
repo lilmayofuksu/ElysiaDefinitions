@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ExchangeRedeemCodeRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    optional string redeem_code = 3;
+
+    enum CmdId {
+        CMD_ID = 214;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        REDEEM_CODE_ERROR = 2;
+        REDEEM_CODE_NUM_LACK = 3;
+        REDEEM_TAKE_NUM_LACK = 4;
+        REDEEM_CODE_EXPIRED = 5;
+        REDEEM_HAS_TAKEN = 6;
+        NOT_PERMITTED = 7;
+        EQUIPMENT_FULL = 8;
+        REDEEM_FREQ_LIMIT = 9;
+    }
+}

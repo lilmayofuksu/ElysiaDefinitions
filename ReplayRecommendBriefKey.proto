@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "ReplayType.proto";
+message ReplayRecommendBriefKey {
+    optional ReplayType type = 1;
+    optional uint32 stage_or_boss_id = 2;
+    optional uint32 rank = 3;
+}

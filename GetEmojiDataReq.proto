@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetEmojiDataReq {
+
+    enum CmdId {
+        CMD_ID = 1245;
+    }
+}

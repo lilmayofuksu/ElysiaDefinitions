@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message BingoCard {
+    optional uint32 card_id = 1;
+    optional BingoCardStatus card_status = 2;
+
+    enum BingoCardStatus {
+        CARD_STATUS_WRONG = 0;
+        CARD_STATUS_CORRECT = 1;
+    }
+}

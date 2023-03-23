@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "MpStageVoteInfo.proto";
+message MpStageMemberVoteNotify {
+    repeated MpStageVoteInfo vote_info_list = 1;
+
+    enum CmdId {
+        CMD_ID = 1038;
+    }
+}

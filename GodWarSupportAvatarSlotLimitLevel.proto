@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GodWarSupportAvatarSlotLimitLevel {
+    GOD_WAR_SUPPORT_AVATAR_SLOT_SPECIFIC = 1;
+    GOD_WAR_SUPPORT_AVATAR_SLOT_NORMAL = 2;
+    GOD_WAR_SUPPORT_AVATAR_SLOT_LOCK = 3;
+}

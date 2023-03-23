@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixLevelBriefData.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetLevelBriefDataRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    repeated ArmadaMatrixLevelBriefData level_data_list = 2;
+
+    enum CmdId {
+        CMD_ID = 2775;
+    }
+}

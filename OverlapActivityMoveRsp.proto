@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "OverlapGrid.proto";
+message OverlapActivityMoveRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    required OverlapGrid from_grid = 3;
+    required OverlapGrid to_grid = 4;
+
+    enum CmdId {
+        CMD_ID = 4222;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

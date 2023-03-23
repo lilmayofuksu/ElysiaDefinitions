@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "MatrixGridPos.proto";
+message MatrixMoveObjectRsp {
+    required Retcode retcode = 1;
+    repeated MatrixGridPos pos_list = 2;
+    optional uint32 event_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2340;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        POS_INVALID = 2;
+        OBJECT_NOT_EXIST = 3;
+        BLOCK = 4;
+        IN_FLOOR_EVENT = 5;
+    }
+}

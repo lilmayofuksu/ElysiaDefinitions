@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+enum CabinType {
+    CABIN_POWER = 1;
+    CABIN_ENHANCE_KIANA = 2;
+    CABIN_COLLECT = 3;
+    CABIN_MISC = 4;
+    CABIN_VENTURE = 5;
+    CABIN_ENHANCE_MEI = 6;
+    CABIN_ENHANCE_BRONYA = 7;
+    CABIN_ENHANCE_HIMEKO = 8;
+    CABIN_ENHANCE_THERESA = 9;
+    CABIN_ENHANCE_FUKA = 10;
+}

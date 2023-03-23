@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message RefreshGodWarTicketInfo {
+    optional uint32 ticket_id = 1;
+    optional uint32 material_id = 2;
+    optional uint32 add_num = 3;
+}

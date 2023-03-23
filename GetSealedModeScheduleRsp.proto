@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message GetSealedModeScheduleRsp {
+    required Retcode retcode = 1;
+    optional uint32 open_time = 2;
+    optional uint32 close_time = 3;
+    optional uint32 id = 4;
+
+    enum CmdId {
+        CMD_ID = 595;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

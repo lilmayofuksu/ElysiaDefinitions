@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message GetMyCardAuthCodeReq {
+    optional string fac_trade_seq = 1;
+    optional string product_name = 2;
+    optional string amount = 3;
+
+    enum CmdId {
+        CMD_ID = 368;
+    }
+}

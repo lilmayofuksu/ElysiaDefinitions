@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message AntiCheatReportReq {
+    required uint32 cheat_type = 1;
+    optional string ext = 2;
+
+    enum CmdId {
+        CMD_ID = 217;
+    }
+    enum CheatType {
+        EMPTY = 0;
+        CHEATER = 1;
+        EMULATOR = 2;
+        HASH_CHANGED = 3;
+        MEMORY_SCAN = 4;
+        JAIL_BREAK = 5;
+    }
+}

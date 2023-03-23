@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message RanchAssignMonsterRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated uint32 unique_id_list = 3;
+    optional uint32 area_id = 4;
+
+    enum CmdId {
+        CMD_ID = 5840;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MONSTER_NOT_EXIST = 2;
+        UNIQUE_ID_REPEATED = 3;
+        AREA_NOT_EXIST = 4;
+        MONSTER_ALREADY_ASSIGNED = 5;
+        SLOT_NOT_ENOUGH = 6;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ReplayBeginReq {
+    optional string key = 1;
+
+    enum CmdId {
+        CMD_ID = 5400;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetCardProductInfoReq {
+
+    enum CmdId {
+        CMD_ID = 1142;
+    }
+}

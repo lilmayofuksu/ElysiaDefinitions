@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum FlopActivityCardState {
+    FLOP_ACTIVITY_CARD_STATE_NOT_FLOP = 0;
+    FLOP_ACTIVITY_CARD_STATE_FLOP = 1;
+    FLOP_ACTIVITY_CARD_STATE_REWARD_UNLOCK = 2;
+}

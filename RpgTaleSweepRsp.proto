@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message RpgTaleSweepRsp {
+    required Retcode retcode = 1;
+    optional uint32 stage_id = 2;
+    optional uint32 times = 3;
+    required RewardData reward_data = 4;
+    optional uint32 tale_id = 5;
+    optional uint32 max_floor = 6;
+
+    enum CmdId {
+        CMD_ID = 2377;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_MATERIAL = 2;
+        STAGE_ERROR = 3;
+        NO_REWARD = 4;
+        ENTER_TIMES_LACK = 5;
+        CHALLENGE_NUM_LACK = 6;
+    }
+}

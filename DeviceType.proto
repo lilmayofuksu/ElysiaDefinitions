@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum DeviceType {
+    DEVICE_TYPE_NONE = 0;
+    DEVICE_TYPE_ANDROID = 1;
+    DEVICE_TYPE_IOS = 2;
+    DEVICE_TYPE_PC = 3;
+}

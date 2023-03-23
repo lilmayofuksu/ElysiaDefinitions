@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message UniqueGachaSelectItemPool {
+    repeated uint32 select_item_list = 1;
+}

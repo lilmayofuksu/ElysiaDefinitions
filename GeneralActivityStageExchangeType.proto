@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GeneralActivityStageExchangeType {
+    GENERAL_ACTIVITY_EXCHANGE_TYPE_NONE = 0;
+    GENERAL_ACTIVITY_EXCHANGE_TYPE_TIMES = 1;
+    GENERAL_ACTIVITY_EXCHANGE_TYPE_RESET = 2;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "QCandyBattleSettleInfo.proto";
+message QCandyBattleBeginNotify {
+    optional uint32 lobby_id = 1;
+    optional uint32 battle_id = 2;
+    optional uint32 map_id = 3;
+    optional uint32 fightserver_ip = 4;
+    optional uint32 fightserver_port = 5;
+    optional uint32 activity_id = 6;
+    required QCandyBattleSettleInfo best_record = 7;
+
+    enum CmdId {
+        CMD_ID = 6603;
+    }
+}

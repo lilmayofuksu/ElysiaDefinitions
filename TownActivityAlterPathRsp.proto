@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityAlterPathRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+    optional uint32 position = 3;
+    optional uint32 next_position = 4;
+
+    enum CmdId {
+        CMD_ID = 6479;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_ALTER = 2;
+        NOT_MEET_CONDITION = 3;
+    }
+}

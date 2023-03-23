@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+enum MissionStatus {
+    MISSION_STATUS_NONE = 0;
+    MISSION_NOT_BEGIN = 1;
+    MISSION_DOING = 2;
+    MISSION_FINISH = 3;
+    MISSION_TIMEOUT = 4;
+    MISSION_CLOSE = 5;
+    MISSION_WAIT_DELETE = 6;
+}

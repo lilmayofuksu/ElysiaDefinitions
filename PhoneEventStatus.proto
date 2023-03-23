@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum PhoneEventStatus {
+    PHONE_EVENT_NONE = 0;
+    PHONE_EVENT_FINISH = 1;
+    PHONE_EVENT_REFUSE = 2;
+    PHONE_EVENT_HOLD = 3;
+    PHONE_EVENT_OVER = 4;
+}

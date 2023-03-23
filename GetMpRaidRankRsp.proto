@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message GetMpRaidRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    required RankShowData rank_data = 3;
+
+    enum CmdId {
+        CMD_ID = 550;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ArmadaStageScorePlayerScore {
+    optional uint32 uid = 1;
+    optional uint32 score = 2;
+    repeated uint32 avatar_list = 3;
+}

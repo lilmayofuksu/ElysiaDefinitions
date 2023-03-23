@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeOpenworldStoryRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    optional uint32 story_id = 3;
+    repeated uint32 accept_story_id_list = 4;
+    optional bool is_accept_follow_story = 5;
+
+    enum CmdId {
+        CMD_ID = 4457;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STORY_NOT_FOUND = 2;
+    }
+}

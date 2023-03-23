@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum GodWarTriggerType {
+    GOD_WAR_TRIGGER_NORMAL = 0;
+    GOD_WAR_TRIGGER_STAGE_REPORT = 1;
+    GOD_WAR_TRIGGER_NPC_ACTION = 2;
+    GOD_WAR_TRIGGER_OVERALL_REPORT = 3;
+}

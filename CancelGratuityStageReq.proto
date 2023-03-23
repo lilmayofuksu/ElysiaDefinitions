@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message CancelGratuityStageReq {
+    optional uint32 stage_unique_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4106;
+    }
+}

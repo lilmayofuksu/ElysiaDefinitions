@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message AdventureGachaData {
+    optional uint32 ticket_hcoin_cost = 1;
+    optional uint32 ticket_material_id = 2;
+    optional bool is_enable_baodi = 3;
+    optional uint32 gacha_times = 4;
+    optional bool is_protect_display = 5;
+    optional uint32 display_max_times = 6;
+    optional uint32 no_protect_gacha_times = 7;
+    optional bool is_got_s_avatar_protect = 8;
+    optional double new_s_avatar_prob = 9;
+    optional uint32 next_s_avatar_assure_gacha_times = 10;
+    optional uint32 next_s_avatar_assure_new_need_times = 11;
+    optional uint32 free_gacha_times = 12;
+}

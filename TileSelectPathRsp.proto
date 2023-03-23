@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message TileSelectPathRsp {
+    required Retcode retcode = 1;
+    optional uint32 tower_id = 2;
+    optional uint32 next_path_cell_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4916;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_CANDIDATE = 2;
+    }
+}

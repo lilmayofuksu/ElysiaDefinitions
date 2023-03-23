@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "GlobalWarIsolatePoint.proto";
+import "GlobalWarMember.proto";
+import "GlobalWarPoint.proto";
+message GlobalWarActivity {
+    optional uint32 cur_schedule_id = 1;
+    optional uint32 display_begin_time = 2;
+    optional uint32 display_end_time = 3;
+    optional uint32 begin_time = 4;
+    optional uint32 end_time = 5;
+    optional uint32 total_get_currency = 6;
+    optional uint32 last_daily_get_currency = 7;
+    optional uint32 total_cost_ticket_num = 8;
+    repeated uint32 take_point_reward_list = 9;
+    repeated GlobalWarPoint global_war_point_list = 10;
+    repeated GlobalWarMember member_list = 11;
+    optional uint32 buff_level = 13;
+    repeated GlobalWarIsolatePoint global_war_isolate_point_list = 14;
+}

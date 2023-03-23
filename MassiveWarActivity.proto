@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "MassiveWarStageInfo.proto";
+message MassiveWarActivity {
+    optional uint32 cur_schedule_id = 1;
+    optional uint32 start_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 open_day_time = 4;
+    optional uint32 close_day_time = 5;
+    optional uint32 battle_times = 6;
+    optional uint32 cur_battle_uniq_id = 7;
+    repeated MassiveWarStageInfo stage_info_list = 8;
+    optional uint32 player_group_id = 9;
+    optional uint32 last_settle_reward_score = 10;
+}

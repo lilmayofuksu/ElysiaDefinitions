@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message VirtualTrainRoleCustomLevelUpRsp {
+    required Retcode retcode = 1;
+    optional uint32 group_id = 2;
+    optional uint32 virtual_role_id = 3;
+    optional uint32 custom_id = 4;
+    optional uint32 level = 5;
+
+    enum CmdId {
+        CMD_ID = 3519;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_NOT_ENOUGH = 2;
+        LEVEL_MAX = 3;
+        ROLE_NOT_EXIST = 4;
+        STAGE_NOT_FINISH = 5;
+        PRE_CUSTOM_LEVEL_LACK = 6;
+    }
+}

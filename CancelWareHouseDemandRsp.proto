@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message CancelWareHouseDemandRsp {
+    required Retcode retcode = 1;
+    optional uint32 demand_id = 2;
+    optional bool is_auto_cancel = 3;
+
+    enum CmdId {
+        CMD_ID = 2652;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        STATUS_ERROR = 3;
+    }
+}

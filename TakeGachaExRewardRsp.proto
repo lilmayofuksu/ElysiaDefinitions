@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "GachaType.proto";
+message TakeGachaExRewardRsp {
+    required Retcode retcode = 1;
+    optional GachaType gacha_type = 2;
+    optional uint32 gacha_id = 3;
+    optional uint32 ex_reward_gacha_times = 4;
+    required RewardData reward = 5;
+
+    enum CmdId {
+        CMD_ID = 4715;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKEN = 2;
+        GACHA_TIMES_LACK = 3;
+        NO_REWARD = 4;
+        GACHA_ID_ERROR = 5;
+    }
+}

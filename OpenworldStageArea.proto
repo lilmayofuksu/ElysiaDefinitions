@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message OpenworldStageArea {
+    optional uint32 area_id = 1;
+    repeated uint32 avatar_list = 2;
+    repeated uint32 weapon_uid_list = 3;
+    repeated uint32 stigmata_uid_list = 4;
+}

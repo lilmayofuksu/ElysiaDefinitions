@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum EmojiUnlockType {
+    EMOJI_UNLOCK_TYPE_DEFAULT = 1;
+    EMOJI_UNLOCK_TYPE_ITEM_DROP = 2;
+}

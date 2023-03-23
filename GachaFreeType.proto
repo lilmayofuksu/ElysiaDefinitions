@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GachaFreeType {
+    GACHA_FREE_NONE = 0;
+    GACHA_FREE_ONE_PULL = 1;
+    GACHA_FREE_TEN_PULLS = 2;
+}

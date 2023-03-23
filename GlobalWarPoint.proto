@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GlobalWarPoint {
+    optional uint32 point_id = 1;
+    optional uint32 cur_hp = 2;
+    optional uint32 point_status = 3;
+    optional uint32 last_refresh_member_num = 4;
+    optional uint32 point_finish_time = 5;
+    optional uint32 last_take_sweep_reward_time = 6;
+}

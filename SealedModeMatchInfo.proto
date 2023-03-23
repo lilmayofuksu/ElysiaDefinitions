@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message SealedModeMatchInfo {
+    optional uint32 event_id = 1;
+    optional uint32 match_begin_time = 2;
+}

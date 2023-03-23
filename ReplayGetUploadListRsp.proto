@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "Replay.proto";
+message ReplayGetUploadListRsp {
+    required Retcode retcode = 1;
+    repeated Replay replay_list = 2;
+    optional uint32 today_upload_num = 3;
+
+    enum CmdId {
+        CMD_ID = 5415;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message EvaluateExaminationReq {
+    optional uint32 examination_id = 1;
+    optional bool is_like = 2;
+
+    enum CmdId {
+        CMD_ID = 4329;
+    }
+}

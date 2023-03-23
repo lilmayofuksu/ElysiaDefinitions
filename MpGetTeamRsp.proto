@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "MpTeamData.proto";
+message MpGetTeamRsp {
+    required Retcode retcode = 1;
+    required MpTeamData team_data = 2;
+
+    enum CmdId {
+        CMD_ID = 347;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+        DISCONNECT = 3;
+        KICK = 4;
+    }
+}

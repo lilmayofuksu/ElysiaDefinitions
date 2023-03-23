@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "ClientMailInfo.proto";
+import "ClientMailFilterType.proto";
+import "ClientMail.proto";
+message GetClientMailDataRsp {
+    optional Retcode retcode = 1;
+    repeated ClientMail mail_list = 2;
+    optional bool is_end = 3;
+    optional uint32 start = 5;
+    repeated ClientMail notice_mail_list = 6;
+    optional ClientMailFilterType filter_type = 7;
+    required ClientMailInfo client_mail_info = 8;
+
+    enum CmdId {
+        CMD_ID = 3801;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        POS_INVALID = 2;
+        REPEATED_REQ = 3;
+    }
+}

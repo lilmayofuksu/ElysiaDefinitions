@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum OuterRewardType {
+    OUTER_REWARD_TYPE_NONE = 0;
+    OUTER_REWARD_TYPE_REDEEM = 1;
+}

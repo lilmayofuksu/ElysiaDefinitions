@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "ChatworldBox.proto";
+import "ChatworldBeast.proto";
+import "ChatworldQuestion.proto";
+import "ChatworldFishSpot.proto";
+import "ChatworldStance.proto";
+import "ChatworldItem.proto";
+import "ChatworldPlayerInfo.proto";
+import "ChatworldPosition.proto";
+message ChatworldEntity {
+    optional uint32 unique_id = 1;
+    optional uint32 entity_type = 2;
+    optional uint32 camp_tag = 3;
+    required ChatworldPosition position = 4;
+    required ChatworldPlayerInfo player_info = 16;
+    required ChatworldItem chatworld_item = 17;
+    required ChatworldStance chatworld_stance = 18;
+    required ChatworldFishSpot chatworld_fish_spot = 19;
+    required ChatworldQuestion chatworld_question = 20;
+    required ChatworldBeast chatworld_beast = 21;
+    required ChatworldBox chatworld_box = 22;
+}

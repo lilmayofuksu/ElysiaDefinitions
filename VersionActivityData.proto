@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message VersionActivityData {
+    optional uint32 id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional bool is_take_reward = 4;
+}

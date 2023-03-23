@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ChatworldPrayRsp {
+    required Retcode retcode = 1;
+    optional uint32 pray_id = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 2454;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_CHATWORLD = 2;
+        PRAYED = 3;
+        NOT_OPEN = 4;
+    }
+}

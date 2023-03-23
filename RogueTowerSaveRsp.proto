@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message RogueTowerSaveRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+    optional uint32 index = 3;
+
+    enum CmdId {
+        CMD_ID = 4373;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SAVE_LIMIT = 2;
+    }
+}

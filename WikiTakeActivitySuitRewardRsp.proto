@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message WikiTakeActivitySuitRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 suit_id = 2;
+    required RewardData reward = 3;
+
+    enum CmdId {
+        CMD_ID = 1593;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+        NOT_GET = 3;
+    }
+}

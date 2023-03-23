@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum MasterPupilType {
+    MASTER_PUPIL_NONE_TYPE = 0;
+    MASTER_PUPIL_MASTER_TYPE = 1;
+    MASTER_PUPIL_PUPIL_TYPE = 2;
+    MASTER_PUPIL_NEITHER_ALL = 4;
+}

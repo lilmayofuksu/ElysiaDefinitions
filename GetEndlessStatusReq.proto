@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GetEndlessStatusReq {
+    optional uint32 level = 1;
+    optional bool is_finish_front = 2;
+
+    enum CmdId {
+        CMD_ID = 3432;
+    }
+}

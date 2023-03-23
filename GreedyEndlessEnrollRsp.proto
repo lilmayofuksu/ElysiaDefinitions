@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GreedyEndlessEnrollRsp {
+    required Retcode retcode = 1;
+    optional uint32 new_group_id = 2;
+
+    enum CmdId {
+        CMD_ID = 3454;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ALREADY_ENROLL = 2;
+    }
+}

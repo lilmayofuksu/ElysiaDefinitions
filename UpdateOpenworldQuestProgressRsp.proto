@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "OpenworldQuestFinishWay.proto";
+message UpdateOpenworldQuestProgressRsp {
+    required Retcode retcode = 1;
+    optional OpenworldQuestFinishWay finish_way = 2;
+    optional string finish_para_str = 3;
+
+    enum CmdId {
+        CMD_ID = 4545;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FINISH_WAY_ERROR = 2;
+    }
+}

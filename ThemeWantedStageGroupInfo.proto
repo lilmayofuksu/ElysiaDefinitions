@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ThemeWantedStageGroupInfo {
+    optional uint32 stage_group_id = 1;
+    optional uint32 progress = 2;
+    repeated uint32 not_pass_progress_list = 3;
+    repeated uint32 unlock_mp_progress_list = 4;
+}

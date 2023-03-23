@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "MasterPupilType.proto";
+import "MasterPupilOpType.proto";
+message DealMasterPupilReq {
+    optional uint32 uid = 1;
+    optional MasterPupilOpType op = 2;
+    optional MasterPupilType type = 3;
+    optional uint32 time = 4;
+    optional string nickname = 5;
+
+    enum CmdId {
+        CMD_ID = 572;
+    }
+}

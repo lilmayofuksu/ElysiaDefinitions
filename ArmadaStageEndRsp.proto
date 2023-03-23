@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+import "StageEndReqBody.proto";
+import "StageEndStatus.proto";
+message ArmadaStageEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 add_scoin = 2;
+    optional StageEndStatus end_status = 3;
+    optional bool is_fight_body = 5;
+    optional StageEndReqBody body = 6;
+
+    enum CmdId {
+        CMD_ID = 2672;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        NOT_OPEN = 3;
+        BOSS_DEAD = 4;
+        FIGHT_INTERVAL = 5;
+        STAGE_ERROR = 6;
+        STAGE_FAIL = 7;
+        FIGHT_TIMES_LACK = 8;
+        BOSS_NO_DEAD = 9;
+        HAS_FIGHT = 10;
+    }
+}

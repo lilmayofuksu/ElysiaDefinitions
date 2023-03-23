@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetClientSettingReq {
+    optional uint32 client_setting_type = 1;
+
+    enum CmdId {
+        CMD_ID = 1270;
+    }
+}

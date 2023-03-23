@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+message GodWarGoods {
+    optional GoodsType goods_type = 1;
+    optional uint32 goods_num = 2;
+    optional uint32 goods_idx = 3;
+    optional uint32 coin_cost = 4;
+    required BuffGoods buff_goods = 21;
+    required LevelUpBuffGoods levelup_buff_goods = 22;
+
+    enum GoodsType {
+        GOODS_TYPE_NONE = 0;
+        GOODS_TYPE_BUFF = 1;
+        GOODS_TYPE_LEVEL_UP_BUFF = 2;
+    }
+    message BuffGoods {
+        optional uint32 buff_id = 1;
+        optional uint32 buff_init_level = 2;
+    }
+    message LevelUpBuffGoods {
+        optional uint32 buff_id = 1;
+        optional uint32 buff_cur_level = 2;
+    }
+}

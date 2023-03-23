@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message GetSnsShowDataReq {
+    optional uint32 sns_show_type = 1;
+    optional uint32 target_uid = 2;
+    optional bool is_friend = 3;
+    optional uint32 ex_boss_schedule_id = 4;
+
+    enum CmdId {
+        CMD_ID = 1266;
+    }
+}

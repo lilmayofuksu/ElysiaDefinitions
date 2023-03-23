@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ReportRpgTaleStageReq {
+    optional uint32 stage_id = 1;
+    optional uint32 cur_floor = 2;
+    optional string client_data = 3;
+    optional uint32 tale_id = 4;
+    optional uint32 score = 5;
+    repeated uint32 monster_unique_id_list = 6;
+    repeated uint32 monster_card_unique_id_list = 7;
+
+    enum CmdId {
+        CMD_ID = 2374;
+    }
+}

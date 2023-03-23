@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum FastPassType {
+    FAST_PASS_TYPE_NONE = 0;
+    FAST_PASS_TYPE_OW = 1;
+    FAST_PASS_TYPE_WEEKDAY = 2;
+}

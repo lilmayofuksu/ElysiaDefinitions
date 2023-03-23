@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum DiceType {
+    DICE_TYPE_NONE = 0;
+    DICE_TYPE_RANDOM = 1;
+    DICE_TYPE_FIXED = 2;
+    DICE_TYPE_FORWARD = 3;
+}

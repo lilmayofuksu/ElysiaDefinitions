@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message MpStageMvpReward {
+    optional uint32 extra_coin = 1;
+    optional uint32 extra_avatar_exp = 2;
+    optional uint32 extra_mp_exp = 3;
+}

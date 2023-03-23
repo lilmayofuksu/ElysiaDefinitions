@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "ActivityWorldChatroomType.proto";
+message EnterWorldChatroomReq {
+    required uint32 chatroom_id = 1;
+    optional ActivityWorldChatroomType activity_type = 2;
+    optional uint32 para = 3;
+    optional uint32 player_level = 4;
+    optional string player_region = 5;
+
+    enum CmdId {
+        CMD_ID = 2231;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ChatworldBeast {
+    optional uint64 beast_unique_id_u64 = 1;
+    optional uint32 beast_id = 2;
+    optional uint32 stage_id = 4;
+    optional uint32 left_hp = 5;
+    optional Status status = 6;
+    repeated uint32 wait_take_treasure_uid_list = 7;
+    optional uint32 expire_time = 8;
+    optional uint32 challenger_num = 9;
+    optional uint32 treasure_rank_id = 10;
+
+    enum Status {
+        CHALLENGE = 1;
+        TREASURE = 2;
+    }
+}

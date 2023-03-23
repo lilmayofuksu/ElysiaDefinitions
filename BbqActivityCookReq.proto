@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message BbqActivityCookReq {
+    optional uint32 activity_id = 1;
+    optional uint32 bonus_level = 2;
+
+    enum CmdId {
+        CMD_ID = 4252;
+    }
+}

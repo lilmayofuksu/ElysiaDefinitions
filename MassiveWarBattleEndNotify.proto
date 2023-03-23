@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message MassiveWarBattleEndNotify {
+    optional uint32 battle_uniq_id = 1;
+    optional string transaction_str = 2;
+    optional uint32 total_damage = 3;
+    optional uint32 damage_level = 4;
+    optional uint32 rank = 5;
+    optional uint32 total_damage_score = 6;
+    optional uint32 rank_score = 7;
+    optional uint32 basic_damage_score = 8;
+    optional uint32 total_member_num = 9;
+    optional uint32 battle_cost_time = 10;
+
+    enum CmdId {
+        CMD_ID = 4810;
+    }
+}

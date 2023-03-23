@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message InLevelBaseActorSnapshot {
+    optional float base_max_hp = 1;
+    optional float base_max_sp = 2;
+    optional float max_hp = 3;
+    optional float max_sp = 4;
+    optional float hp = 5;
+    optional float sp = 6;
+    optional uint32 level = 7;
+    optional float attack = 8;
+    optional float defense = 9;
+    optional bool is_alive = 10;
+    optional float total_overkill_damage = 11;
+}

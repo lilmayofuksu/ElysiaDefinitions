@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetFastPassDataReq {
+    optional uint32 fast_pass_type = 1;
+
+    enum CmdId {
+        CMD_ID = 1555;
+    }
+}

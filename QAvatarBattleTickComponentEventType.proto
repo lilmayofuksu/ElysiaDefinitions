@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum QAvatarBattleTickComponentEventType {
+    QAVATAR_BATTLE_TICK_EVENT_TYPE_ENABLE = 1;
+    QAVATAR_BATTLE_TICK_EVENT_TYPE_INTERVAL = 2;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "OpenworldAreaInfo.proto";
+message ReportOpenworldAreaInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 area_id = 3;
+    repeated OpenworldAreaInfo area_info_list = 4;
+
+    enum CmdId {
+        CMD_ID = 4539;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

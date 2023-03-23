@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message EndlessSingleModeActivityBattleBeginReq {
+    optional uint32 activity_id = 1;
+    optional uint32 map_id = 2;
+    optional uint32 area_id = 3;
+    optional uint32 battle_id = 4;
+    optional uint32 group_level = 5;
+    optional uint32 monster_group_id = 6;
+    optional uint32 layer_number = 7;
+
+    enum CmdId {
+        CMD_ID = 4042;
+    }
+}

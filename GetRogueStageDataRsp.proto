@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "RogueStageAvatar.proto";
+message GetRogueStageDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 max_next_hard_level = 2;
+    optional uint32 next_able_reset_time = 3;
+    optional uint32 hard_level = 4;
+    optional uint32 progress = 5;
+    optional uint32 random_seed = 6;
+    repeated RogueStageAvatar avatar_list = 7;
+    optional uint32 cost_ratio = 8;
+    optional uint32 drop_ratio = 9;
+
+    enum CmdId {
+        CMD_ID = 276;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_JOIN_ARMADA = 2;
+        LEVEL_LACK = 3;
+        NOT_OPEN = 4;
+    }
+}

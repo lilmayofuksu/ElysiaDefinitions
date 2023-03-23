@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message RegionUidRange {
+    optional string region_name = 1;
+    optional uint32 start_uid = 2;
+    optional uint32 end_uid = 3;
+}

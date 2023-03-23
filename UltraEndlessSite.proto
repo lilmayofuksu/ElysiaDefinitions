@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "UltraEndlessFloor.proto";
+message UltraEndlessSite {
+    optional uint32 site_id = 1;
+    repeated UltraEndlessFloor floor_list = 2;
+    optional uint32 max_score_cost_time = 3;
+}

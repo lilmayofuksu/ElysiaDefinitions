@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ArmadaMatrixGrantScoreRewardNotify {
+    repeated RewardData reward_list = 1;
+    optional uint32 id = 2;
+
+    enum CmdId {
+        CMD_ID = 2777;
+    }
+}

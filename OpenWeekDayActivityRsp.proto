@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message OpenWeekDayActivityRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 535;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        IS_OPEN = 2;
+        HAS_OPEN = 3;
+        VALID_OPEN = 4;
+        MATERIAL_LACK = 5;
+        SCOIN_LACK = 6;
+    }
+}

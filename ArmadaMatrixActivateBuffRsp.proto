@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message ArmadaMatrixActivateBuffRsp {
+    required Retcode retcode = 1;
+    optional uint32 buff_id = 2;
+    optional bool activated = 3;
+
+    enum CmdId {
+        CMD_ID = 2754;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVATE_LIMIT = 2;
+        NO_BUFF = 3;
+        SAME_STATUS = 4;
+        NO_ARMADA = 5;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "FastPassParaWeekday.proto";
+import "FastPassParaOw.proto";
+message FinishFastPassReq {
+    optional uint32 fast_pass_type = 1;
+    required FastPassParaOw fast_pass_para_ow = 2;
+    required FastPassParaWeekday fast_pass_para_weekday = 3;
+
+    enum CmdId {
+        CMD_ID = 1490;
+    }
+}

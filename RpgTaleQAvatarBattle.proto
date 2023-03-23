@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RpgTaleQAvatarSettleGotMaterial.proto";
+message RpgTaleQAvatarBattle {
+    optional uint32 cur_score = 1;
+    optional uint32 has_take_reward_score = 2;
+    optional uint32 choose_virtual_avatar_id = 3;
+    optional uint32 win_num = 4;
+    optional uint32 win_streak = 5;
+    optional uint32 virtual_avatar_drop_num = 6;
+    repeated RpgTaleQAvatarSettleGotMaterial got_material_list = 7;
+}

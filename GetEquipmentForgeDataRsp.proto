@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "EquipmentForge.proto";
+message GetEquipmentForgeDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    repeated EquipmentForge has_forge_list = 3;
+    repeated uint32 forge_list = 4;
+
+    enum CmdId {
+        CMD_ID = 3651;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

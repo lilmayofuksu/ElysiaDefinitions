@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "StigmataRune.proto";
+message StigmataDetailData {
+    optional uint32 id = 1;
+    optional uint32 level = 2;
+    repeated StigmataRune rune_list = 3;
+    optional uint32 title_level = 4;
+    optional uint32 title_exp = 5;
+    optional uint32 title_id = 6;
+    optional uint32 unique_id = 7;
+}

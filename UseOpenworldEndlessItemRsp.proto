@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "OpenworldEndlessItem.proto";
+message UseOpenworldEndlessItemRsp {
+    required Retcode retcode = 1;
+    optional uint32 new_invasion_id = 2;
+    optional uint32 item_id = 3;
+    optional uint32 battle_id = 4;
+    repeated OpenworldEndlessItem effect_item_list = 5;
+    optional uint32 old_invaison_id = 6;
+    optional uint32 target_id = 7;
+    optional uint32 invasion_buff_num = 8;
+
+    enum CmdId {
+        CMD_ID = 3423;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ITEM_LACK = 2;
+        INVASION_AVATAR_ERROR = 3;
+        TARGET_ERROR = 4;
+        TARGET_GROUP_ERROR = 5;
+        OUT_OF_RANGE = 6;
+        INVASION_FULL = 7;
+        INVASION_ID_ERROR = 8;
+        ENDLESS_STATUS_ERROR = 9;
+        NOT_JOIN = 10;
+        TRAP_FULL = 11;
+    }
+}

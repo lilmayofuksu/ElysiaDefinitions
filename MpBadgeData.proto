@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "MpBadge.proto";
+message MpBadgeData {
+    optional uint64 equiped_badge_uid_u64 = 1;
+    repeated MpBadge badge_list = 2;
+}

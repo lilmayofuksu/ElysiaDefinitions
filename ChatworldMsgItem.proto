@@ -1,0 +1,56 @@
+syntax = "proto2";
+
+import "ChatworldEntityHp.proto";
+import "ChatworldEntityMsg.proto";
+import "ChatworldSkillCancelMsg.proto";
+import "ChatworldSkillDamageMsg.proto";
+import "ChatworldSkillAttackMsg.proto";
+import "ChatworldTreasureMsg.proto";
+import "CommonChatworldRedEnvelopeMsg.proto";
+import "ChatworldMsgAction.proto";
+import "ChatworldMsgInteract.proto";
+import "ChatworldMsgUseItem.proto";
+import "ChatMsgItem.proto";
+import "ChatworldEntity.proto";
+message ChatworldMsgItem {
+    optional ChatworldMsgType type = 1;
+    required ChatworldEntity player_info = 2;
+    optional int32 msg_int = 5;
+    optional bytes client_msg = 6;
+    required ChatMsgItem normal_msg = 7;
+    required ChatworldMsgUseItem use_item_msg = 8;
+    required ChatworldMsgInteract interact_msg = 10;
+    required ChatworldMsgAction action_msg = 11;
+    required CommonChatworldRedEnvelopeMsg red_envelope_msg = 12;
+    required ChatworldTreasureMsg chatworld_treasure_msg = 13;
+    required ChatworldSkillAttackMsg skill_attack_msg = 14;
+    required ChatworldSkillDamageMsg skill_damage_msg = 15;
+    required ChatworldSkillCancelMsg skill_cancel_msg = 17;
+    required ChatworldEntityMsg entity_msg = 20;
+    required ChatworldEntityHp entity_hp_msg = 21;
+
+    enum ChatworldMsgType {
+        STR_MSG = 1;
+        ENTER_CHATWORLD = 2;
+        MOVE_IN_CHATWORLD = 3;
+        LEAVE_CHATWORLD = 4;
+        INT_MSG = 5;
+        CLIENT_MSG = 6;
+        NORMAL_MSG = 7;
+        USE_ITEM = 8;
+        CHANGE_AVATAR = 9;
+        INTERACT_MSG = 10;
+        ACTION_MSG = 11;
+        SEND_RED_ENVELOPE = 12;
+        RED_ENVELOPE_TAKEN_OVER = 13;
+        TREASURE_MSG = 14;
+        SKILL_ATTACK_MSG = 15;
+        SKILL_DAMAGE_MSG = 16;
+        PLAYER_REBORN_MSG = 17;
+        BUFF_MSG = 18;
+        SKILL_CANCEL_MSG = 20;
+        PLAYER_BATTLE_MSG = 21;
+        ENTITY_MSG = 23;
+        ENTITY_HP_MSG = 24;
+    }
+}

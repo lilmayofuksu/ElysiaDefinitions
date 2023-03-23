@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ScDLCTowerStageBeginReq {
+    repeated uint32 avatar_id_list = 1;
+    optional uint32 support_avatar_id = 2;
+    optional string report_ext = 3;
+
+    enum CmdId {
+        CMD_ID = 6334;
+    }
+}

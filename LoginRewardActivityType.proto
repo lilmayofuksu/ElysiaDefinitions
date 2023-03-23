@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum LoginRewardActivityType {
+    LOGIN_REWARD_ACTIVITY_NONE = 0;
+    LOGIN_REWARD_ACTIVITY_NORMAL = 1;
+    LOGIN_REWARD_ACTIVITY_NEWBIE = 2;
+}

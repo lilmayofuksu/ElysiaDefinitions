@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "MpStageSettle.proto";
+message MpStageSettleNotify {
+    optional uint32 team_id = 1;
+    repeated MpStageSettle settle_list = 2;
+
+    enum CmdId {
+        CMD_ID = 391;
+    }
+}

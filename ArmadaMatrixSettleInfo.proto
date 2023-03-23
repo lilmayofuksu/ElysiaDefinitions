@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "ArmadaMatrixSettleWinner.proto";
+message ArmadaMatrixSettleInfo {
+    optional uint32 explore_value = 1;
+    optional uint32 total_explore_value = 2;
+    required ArmadaMatrixSettleWinner explore_winner = 3;
+    required ArmadaMatrixSettleWinner monster_winner = 4;
+    required ArmadaMatrixSettleWinner honkai_energy_winner = 5;
+    optional uint32 floor_id = 6;
+    optional uint32 monster_defeated = 7;
+    optional uint32 boss_defeated = 8;
+    optional uint32 treasure_found = 9;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message GardenCrop {
+    optional uint32 crop_id = 1;
+    optional uint32 harvest_num = 2;
+}

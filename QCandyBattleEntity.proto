@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "QCandyBattleComponentSet.proto";
+import "QCandyBattleEntityType.proto";
+message QCandyBattleEntity {
+    optional uint32 entity_id = 1;
+    optional QCandyBattleEntityType type = 2;
+    required QCandyBattleComponentSet component_set = 3;
+    optional uint32 prop_id = 4;
+    optional uint32 owner_entity_id = 5;
+    optional uint32 state = 6;
+}

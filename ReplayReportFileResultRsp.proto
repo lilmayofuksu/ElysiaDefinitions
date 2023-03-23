@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ReplayReportFileResultRsp {
+    required Retcode retcode = 1;
+    optional uint64 replay_id_u64 = 2;
+
+    enum CmdId {
+        CMD_ID = 5413;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_MATCH = 2;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum MpLeaveTeamReason {
+    LEAVE_TEAM_REASON_NONE = 0;
+    LEAVE_TEAM_REASON_KICK = 1;
+}

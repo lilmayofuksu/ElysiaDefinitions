@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "PlayerCardAvatarData.proto";
+import "PlayerCardMedalData.proto";
+message PlayerCardDataChangeNotify {
+    optional uint32 uid = 1;
+    optional uint32 msg_config = 2;
+    required PlayerCardMedalData medal = 3;
+    required PlayerCardAvatarData avatar = 4;
+
+    enum CmdId {
+        CMD_ID = 492;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "QAvatarBattleSkillInfo.proto";
+message QAvatarBattleSkillComponent {
+    repeated QAvatarBattleSkillInfo skill_info_list = 1;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "ChatworldPosition.proto";
+message ChatworldSkillAttackMsg {
+    repeated uint32 skill_unique_id_list = 1;
+    optional uint32 skill_id = 2;
+    required ChatworldPosition attack_pos = 3;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "GodWarSiteStatus.proto";
+message GodWarSite {
+    optional uint32 site_id = 1;
+    optional GodWarSiteStatus site_status = 2;
+}

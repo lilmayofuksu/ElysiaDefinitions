@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "TileEntity.proto";
+import "TileMapCell.proto";
+message TileMapUpdateNotify {
+    optional uint32 tower_id = 1;
+    optional uint32 floor_id = 2;
+    repeated TileMapCell cell_list = 3;
+    repeated TileEntity entity_list = 4;
+
+    enum CmdId {
+        CMD_ID = 4923;
+    }
+}

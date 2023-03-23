@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message SanctuaryStageEndNotify {
+    optional uint32 total_add_exp = 1;
+    optional uint32 bonus_add_exp = 2;
+    optional uint32 old_level = 3;
+    optional uint32 old_exp = 4;
+
+    enum CmdId {
+        CMD_ID = 4314;
+    }
+}

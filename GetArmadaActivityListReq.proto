@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetArmadaActivityListReq {
+
+    enum CmdId {
+        CMD_ID = 2825;
+    }
+}

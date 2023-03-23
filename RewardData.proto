@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RewardItemData.proto";
+message RewardData {
+    optional uint32 exp = 1;
+    optional uint32 scoin = 2;
+    optional uint32 hcoin = 3;
+    optional uint32 stamina = 4;
+    optional uint32 friends_point = 6;
+    repeated RewardItemData item_list = 7;
+    optional uint32 exp_convert_scoin = 9;
+}

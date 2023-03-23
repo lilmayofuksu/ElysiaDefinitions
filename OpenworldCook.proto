@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldCook {
+    optional uint32 cook_id = 1;
+    optional uint32 eat_num = 2;
+}

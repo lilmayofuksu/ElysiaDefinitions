@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message OpenworldBoss {
+    optional uint32 boss_id = 1;
+    optional uint32 left_hp = 2;
+    optional uint32 clue_progress = 3;
+    optional uint32 search_time = 4;
+    optional uint32 battle_time = 5;
+    optional bool is_take_kill_reward = 6;
+    optional uint32 location_idx = 7;
+    repeated uint32 boss_killed_avatar_list = 9;
+    optional uint32 mp_left_hp = 10;
+    optional uint32 min_kill_time = 11;
+}

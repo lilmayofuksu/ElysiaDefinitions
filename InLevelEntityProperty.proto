@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message InLevelEntityProperty {
+    optional string name = 1;
+    optional float value = 2;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message DiceyDungeonActivityWeaponGachaRsp {
+    required Retcode retcode = 1;
+    optional uint32 weapon_id = 2;
+    optional bool is_new = 3;
+    optional uint32 gacha_random = 4;
+    optional uint32 activity_id = 5;
+
+    enum CmdId {
+        CMD_ID = 6515;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        MATERIAL_LACK = 3;
+        ALL_WEAPON_GETTED = 4;
+    }
+}

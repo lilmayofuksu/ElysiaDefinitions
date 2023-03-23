@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ResetRogueStageRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 280;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_JOIN_ARMADA = 2;
+        NOT_INIT = 3;
+        RESET_TIMES_LACK = 4;
+        NOT_OPEN = 5;
+    }
+}

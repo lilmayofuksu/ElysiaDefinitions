@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "DanmakuSlotBriefInfo.proto";
+message GetDanmakuBriefInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 danmaku_slot = 2;
+    required DanmakuSlotBriefInfo brief_info = 3;
+
+    enum CmdId {
+        CMD_ID = 1548;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        DANMAKU_CLOSED = 2;
+    }
+}

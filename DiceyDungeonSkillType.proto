@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum DiceyDungeonSkillType {
+    DICEY_DUNGEON_SKILL_NONE = 0;
+    DICEY_DUNGEON_SKILL_INITIATIVE = 1;
+    DICEY_DUNGEON_SKILL_PASSIVE = 2;
+}

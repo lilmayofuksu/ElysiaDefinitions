@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message GobackActivityLoginReward {
+    optional uint32 take_days = 1;
+    repeated uint32 take_reward_list = 2;
+    repeated uint32 take_bonus_reward_list = 3;
+}

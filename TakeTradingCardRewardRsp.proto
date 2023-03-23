@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeTradingCardRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+    optional uint32 trade_num = 3;
+
+    enum CmdId {
+        CMD_ID = 4265;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        NOT_JOIN_ARMADA = 3;
+        TRADE_NUM_LIMIT = 4;
+        LACK_MATERIAL = 5;
+    }
+}

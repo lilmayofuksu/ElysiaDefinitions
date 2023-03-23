@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message OpenworldChapterLevelUpHeroRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4584;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HERO_ERROR = 2;
+        HERO_LOCKED = 3;
+        MATERIAL_LACK = 4;
+        TARGET_LEVEL_ERROR = 5;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "GodWar.proto";
+message GetGodWarRsp {
+    required Retcode retcode = 1;
+    repeated GodWar god_war_list = 2;
+
+    enum CmdId {
+        CMD_ID = 6151;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

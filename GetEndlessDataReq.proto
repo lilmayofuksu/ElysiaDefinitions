@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetEndlessDataReq {
+    optional uint32 level = 1;
+
+    enum CmdId {
+        CMD_ID = 3400;
+    }
+}

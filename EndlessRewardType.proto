@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum EndlessRewardType {
+    ENDLESS_PROMOTE = 1;
+    ENDLESS_NORMAL = 2;
+    ENDLESS_DEMOTE = 3;
+}

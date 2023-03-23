@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "StageCheatData.proto";
+message TeamAssaultActivityBossEndReq {
+    optional uint32 activity_id = 1;
+    optional uint32 boss_idx = 2;
+    optional uint32 pass_time = 3;
+    optional float hp_percentage = 4;
+    optional uint32 cheat_type = 5;
+    repeated StageCheatData cheat_data_list = 6;
+    optional string client_data = 7;
+
+    enum CmdId {
+        CMD_ID = 4026;
+    }
+}

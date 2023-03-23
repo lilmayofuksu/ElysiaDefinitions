@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MedalTimeType {
+    MEDAL_TIME_FOREVER = 1;
+    MEDAL_TIME_DURATION = 2;
+    MEDAL_TIME_UNTIL = 3;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeGobackFundRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+
+    enum CmdId {
+        CMD_ID = 1654;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ALREADY_TAKEN = 2;
+        NO_REWARD = 3;
+        FUND_LOCKED = 4;
+    }
+}

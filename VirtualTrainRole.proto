@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "VirtualTrainCustom.proto";
+message VirtualTrainRole {
+    optional uint32 virtual_role_id = 1;
+    repeated VirtualTrainCustom custom_list = 2;
+}

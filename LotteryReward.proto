@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message LotteryReward {
+    optional uint32 lottery_id = 1;
+    optional uint32 lottery_number = 2;
+    required RewardData reward_data = 3;
+    optional uint32 reward_type = 4;
+}

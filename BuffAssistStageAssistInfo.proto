@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "BuffAssistBuffSlot.proto";
+message BuffAssistStageAssistInfo {
+    optional uint32 producer_uid = 1;
+    optional uint32 peer_uid = 2;
+    optional uint32 peer_assist_level = 3;
+    optional uint32 assist_stage_id = 4;
+    repeated uint32 assist_word_id_list = 5;
+    repeated BuffAssistBuffSlot buff_slot_list = 6;
+    optional uint32 buff_pool_unique_id = 7;
+}

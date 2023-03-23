@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "QCandyBattleSettleInfo.proto";
+message QCandyBattleFinishBattleNotify {
+    optional uint32 uid = 1;
+    optional bool is_over = 3;
+    required QCandyBattleSettleInfo settle_info = 4;
+
+    enum CmdId {
+        CMD_ID = 6591;
+    }
+}

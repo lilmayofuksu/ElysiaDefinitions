@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message OpenworldMechaDefenseBeginRsp {
+    required Retcode retcode = 1;
+    optional uint32 hard_level = 2;
+
+    enum CmdId {
+        CMD_ID = 4511;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        MAP_NOT_OPEN = 3;
+        TIMES_LIMIT = 4;
+        MECHA_NUM_ERROR = 5;
+    }
+}

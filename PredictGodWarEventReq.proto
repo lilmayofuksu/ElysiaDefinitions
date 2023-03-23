@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message PredictGodWarEventReq {
+    optional uint32 god_war_id = 1;
+    optional uint32 tale_id = 2;
+    repeated uint32 event_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 6191;
+    }
+}

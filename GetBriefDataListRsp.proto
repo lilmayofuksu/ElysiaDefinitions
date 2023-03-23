@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+message GetBriefDataListRsp {
+    required Retcode retcode = 1;
+    repeated PlayerFriendBriefData uid_brief_data_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1375;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        UID_NUM_LIMIT = 2;
+        TOO_FREQUENT = 3;
+    }
+}

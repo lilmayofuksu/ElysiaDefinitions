@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ClientMailType.proto";
+message ClientMailKey {
+    optional ClientMailType type = 1;
+    optional uint32 id = 2;
+}

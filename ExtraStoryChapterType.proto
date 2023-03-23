@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ExtraStoryChapterType {
+    EXTRA_STORY_CHAPTER_INVALID = 0;
+    EXTRA_STORY_CHAPTER_NORMAL = 1;
+    EXTRA_STORY_CHAPTER_LINE = 2;
+}

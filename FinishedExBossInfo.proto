@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ElfBriefInfo.proto";
+import "AvatarBriefInfo.proto";
+message FinishedExBossInfo {
+    optional uint32 boss_id = 1;
+    optional uint32 score = 2;
+    repeated AvatarBriefInfo avatar_info_list = 3;
+    repeated ElfBriefInfo elf_info_list = 4;
+}

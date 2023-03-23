@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "TvtStageSchedule.proto";
+message TvtGetStageScheduleRsp {
+    required Retcode retcode = 1;
+    optional uint32 type = 2;
+    repeated TvtStageSchedule schedule_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3308;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+    }
+}

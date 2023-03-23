@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SlgScoreRewardType {
+    SLG_SCORE_REWARD_TYPE_NONE = 0;
+    SLG_SCORE_REWARD_TYPE_PERSONAL_TOTAL = 1;
+    SLG_SCORE_REWARD_TYPE_COUNTRY = 2;
+}

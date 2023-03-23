@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ReplayType.proto";
+message ReplayGetRecommendListReq {
+    optional ReplayType type = 1;
+    optional uint32 stage_or_boss_id = 2;
+    optional uint32 rank = 3;
+    optional uint32 start_idx = 4;
+    optional uint32 end_idx = 5;
+    optional bool is_random = 6;
+
+    enum CmdId {
+        CMD_ID = 5416;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum DiceyDungeonGachaType {
+    DICEY_DUNGEON_GACHA_WEAPON = 1;
+    DICEY_DUNGEON_GACHA_ORNAMENT_INITIATIVE = 2;
+    DICEY_DUNGEON_GACHA_ORNAMENT_PASSIVE = 3;
+}

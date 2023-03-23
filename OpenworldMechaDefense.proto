@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message OpenworldMechaDefense {
+    optional uint32 last_enter_time = 1;
+    optional uint32 left_enter_times = 2;
+    optional uint32 last_rating = 3;
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message CoupleTowerActivityFinishFloorRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 1372;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        JUMP_FLOOR = 2;
+    }
+}

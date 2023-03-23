@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChatworldItem {
+    optional uint32 item_id = 1;
+    optional uint32 item_hp = 2;
+}

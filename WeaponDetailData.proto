@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message WeaponDetailData {
+    optional uint32 id = 1;
+    optional uint32 level = 2;
+    optional uint32 unique_id = 3;
+    optional uint32 sub_weapon_id = 4;
+}

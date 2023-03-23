@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "TvtBattleResult.proto";
+message TvtBattleRobotSettleNotify {
+    required TvtBattleResult battle_result = 1;
+
+    enum CmdId {
+        CMD_ID = 3363;
+    }
+}

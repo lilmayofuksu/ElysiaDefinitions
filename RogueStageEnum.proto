@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum RogueStageEnum {
+    ROGUE_STAGE_HARD_LEVEL_NUM = 4;
+    ROGUE_STAGE_AVATAR_POSITION_NUM = 9;
+}

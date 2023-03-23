@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldChapterShopBuyGoodsRsp {
+    required Retcode retcode = 1;
+    optional uint32 shop_id = 2;
+    optional uint32 goods_id = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 4578;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_MAP = 2;
+        SOLD = 3;
+        LACK_MATERIAL = 4;
+    }
+}

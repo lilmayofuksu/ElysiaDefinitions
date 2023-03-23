@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message AvatarEquipSuite {
+    optional uint32 suite_id = 1;
+    optional uint32 weapon_unique_id = 2;
+    optional uint32 stigmata_unique_id_1 = 3;
+    optional uint32 stigmata_unique_id_2 = 4;
+    optional uint32 stigmata_unique_id_3 = 5;
+    optional string suite_name = 6;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message QAvatarBattleRefreshGadgetForecastNotify {
+    optional uint32 refresh_id = 1;
+    optional uint64 refresh_time_ms_u64 = 2;
+    repeated uint32 spawn_point_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 5622;
+    }
+}

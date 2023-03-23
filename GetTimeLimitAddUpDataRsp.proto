@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "TimeLimitAddUpReward.proto";
+import "TimeLimitAddUpType.proto";
+message GetTimeLimitAddUpDataRsp {
+    required Retcode retcode = 1;
+    optional TimeLimitAddUpType type = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+    optional uint32 add_up_value = 5;
+    repeated TimeLimitAddUpReward reward_list = 6;
+
+    enum CmdId {
+        CMD_ID = 256;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

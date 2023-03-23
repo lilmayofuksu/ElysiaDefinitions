@@ -1,0 +1,37 @@
+syntax = "proto2";
+
+import "GachaExFragment.proto";
+import "GetGachaDisplayRsp.proto";
+import "GachaItem.proto";
+message GachaRsp {
+    required Retcode retcode = 1;
+    repeated GachaItem item_list = 2;
+    optional uint32 gacha_random = 4;
+    required GetGachaDisplayRsp display = 5;
+    required GachaExFragment ex_fragment = 6;
+    optional bool is_use_free_gacha = 7;
+
+    enum CmdId {
+        CMD_ID = 4701;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FRIENDS_POINT_LACK = 2;
+        TICKET_LACK = 3;
+        EQUIPMENT_FULL = 4;
+        GACHA_CLOSED = 5;
+        HCOIN_LACK = 6;
+        EQUIPMENT_MATERIAL_LIMIT = 7;
+        EQUIPMENT_FRAGMENT_LIMIT = 8;
+        MAX_TIMES_LIMIT = 9;
+        GACHA_FINISHED = 10;
+        USE_HCOIN_FORBID = 11;
+        REQUIRE_SELECT = 12;
+        NOT_NEWBIE = 13;
+        FEATURE_CLOSED = 14;
+        DAILY_TIMES_LIMIT = 15;
+        NOT_GOBACK = 16;
+        FREE_TYPE_MISMATCH = 17;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message OpenworldChapterDigSiteAccelerateRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4672;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        BUILDING_ERROR = 3;
+        NOT_IN_PROGRESS = 4;
+        PROGRAM_FINISHED = 5;
+        MATERIAL_ERROR = 6;
+        MATERIAL_LACK = 7;
+    }
+}

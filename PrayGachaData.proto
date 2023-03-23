@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "PrayGachaItemData.proto";
+import "GachaItem.proto";
+message PrayGachaData {
+    optional uint32 ticket_hcoin_cost = 2;
+    optional uint32 ticket_material_id = 3;
+    optional uint32 cost_material_id = 4;
+    optional uint32 cost_material_num = 5;
+    optional uint32 max_gacha_times = 8;
+    optional uint32 gacha_times = 9;
+    optional bool is_finished = 10;
+    repeated GachaItem protect_item_list = 11;
+    repeated PrayGachaItemData pool_item_list = 12;
+    optional uint32 gacha_id = 13;
+    optional uint32 pray_value_per_gacha = 14;
+}

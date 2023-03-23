@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum CustomHeadTimeType {
+    CUSTOM_HEAD_TIME_FOREVER = 1;
+    CUSTOM_HEAD_TIME_DURATION = 2;
+    CUSTOM_HEAD_TIME_UNTIL = 3;
+}

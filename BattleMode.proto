@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum BattleMode {
+    BATTLE_MODE_NONE = 0;
+    BATTLE_MODE_QAVATAR_BATTLE = 1;
+}

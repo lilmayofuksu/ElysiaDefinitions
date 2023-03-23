@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "PrivilegeRightInfo.proto";
+message PrivilegeInfo {
+    optional uint32 privilege_id = 1;
+    optional uint32 expire_time = 2;
+    repeated PrivilegeRightInfo right_info_list = 3;
+}

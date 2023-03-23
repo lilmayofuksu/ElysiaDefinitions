@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetScDLCTowerRankReq {
+
+    enum CmdId {
+        CMD_ID = 6338;
+    }
+}

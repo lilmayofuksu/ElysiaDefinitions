@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "SealedModeRoundRank.proto";
+import "SealedPlayerRankLevel.proto";
+message SealedModeGetRankInfoRsp {
+    required Retcode retcode = 1;
+    required SealedPlayerRankLevel rank_level = 2;
+    repeated SealedModeRoundRank round_rank_list = 3;
+    repeated uint32 reward_taken_level_list = 4;
+
+    enum CmdId {
+        CMD_ID = 725;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "AvatarArtifactDetail.proto";
+import "AvatarSkillDetailData.proto";
+import "StigmataDetailData.proto";
+import "WeaponDetailData.proto";
+message AvatarDetailData {
+    optional uint32 avatar_id = 1;
+    optional uint32 avatar_star = 2;
+    optional uint32 avatar_level = 3;
+    required WeaponDetailData weapon = 4;
+    required StigmataDetailData stigmata_1 = 5;
+    required StigmataDetailData stigmata_2 = 6;
+    required StigmataDetailData stigmata_3 = 7;
+    repeated AvatarSkillDetailData skill_list = 8;
+    optional uint32 dress_id = 9;
+    optional uint32 avatar_combat = 10;
+    required AvatarArtifactDetail avatar_artifact = 12;
+    optional uint32 avatar_sub_star = 13;
+}

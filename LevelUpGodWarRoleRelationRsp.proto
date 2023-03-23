@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message LevelUpGodWarRoleRelationRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+
+    enum CmdId {
+        CMD_ID = 6180;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ROLE_ERROR = 2;
+        MATERIAL_LACK = 3;
+        EXP_LACK = 4;
+        FEATURE_CLOSE = 5;
+    }
+}

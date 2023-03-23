@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetPupilEvalDataReq {
+
+    enum CmdId {
+        CMD_ID = 659;
+    }
+}

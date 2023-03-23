@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetVipRewardReq {
+    repeated uint32 vip_level_list = 1;
+
+    enum CmdId {
+        CMD_ID = 199;
+    }
+}

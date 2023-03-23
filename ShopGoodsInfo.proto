@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ShopGoodsInfo {
+    optional uint32 goods_id = 1;
+    optional uint32 sell_num = 2;
+}

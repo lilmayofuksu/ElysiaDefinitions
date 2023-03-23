@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "BuyGoodsCost.proto";
+message GoodsDiscount {
+    optional uint32 begin_time = 1;
+    optional uint32 end_time = 2;
+    optional uint32 discount = 3;
+    required BuyGoodsCost goods_cost = 4;
+}

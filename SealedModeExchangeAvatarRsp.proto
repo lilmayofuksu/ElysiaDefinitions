@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "AvatarSuite.proto";
+message SealedModeExchangeAvatarRsp {
+    required Retcode retcode = 1;
+    repeated AvatarSuite avatar_suite_list = 2;
+
+    enum CmdId {
+        CMD_ID = 708;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+enum MpDataType {
+    MP_DATA_ALL = 0;
+    MP_DATA_LEVEL = 1;
+    MP_DATA_EXP = 2;
+    MP_DATA_SKILL_POINT = 3;
+    MP_DATA_SKILL = 4;
+    MP_DATA_AVATAR = 5;
+    MP_DATA_PUNISH_TIME = 6;
+}

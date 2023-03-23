@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message DrawRaffleTicketReq {
+    optional uint32 raffle_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3896;
+    }
+}

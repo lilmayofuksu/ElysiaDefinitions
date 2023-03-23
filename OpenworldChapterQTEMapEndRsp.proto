@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "Material.proto";
+message OpenworldChapterQTEMapEndRsp {
+    required Retcode retcode = 1;
+    required Material normal_drop_material = 2;
+    required Material last_reward_material = 3;
+
+    enum CmdId {
+        CMD_ID = 4684;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        QTE_MAP_ERROR = 3;
+    }
+}

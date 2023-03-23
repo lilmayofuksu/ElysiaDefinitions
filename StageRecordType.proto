@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum StageRecordType {
+    STAGE_RECORD_SCORE = 1;
+    STAGE_RECORD_TIME = 2;
+    STAGE_RECORD_TOTAL_SCORE = 3;
+    STAGE_RECORD_BATTLE_SCORE = 4;
+    STAGE_RECORD_BATTLE_SCORE_NO_COIN = 5;
+}

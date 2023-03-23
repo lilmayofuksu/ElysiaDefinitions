@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ControllableBoxGachaSelectableGroup.proto";
+import "ControllableBoxGachaItem.proto";
+message ControllableBoxGachaItemData {
+    repeated ControllableBoxGachaItem item_list = 1;
+    repeated uint32 has_got_item_list = 2;
+    repeated ControllableBoxGachaSelectableGroup selecetable_group_list = 3;
+}

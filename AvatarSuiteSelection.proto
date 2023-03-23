@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "AvatarSuite.proto";
+import "AvatarSuiteSelectionStep.proto";
+import "AvatarSuiteSelectionSystem.proto";
+import "AvatarSuiteSelectionStatus.proto";
+message AvatarSuiteSelection {
+    optional AvatarSuiteSelectionStatus status = 1;
+    optional AvatarSuiteSelectionSystem sys_id = 2;
+    optional uint32 begin_time = 3;
+    optional AvatarSuiteSelectionStep cur_step = 4;
+    repeated uint32 choice_list = 5;
+    required AvatarSuite avatar_suite = 6;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "RoomMode.proto";
+message StartRoomMatchReq {
+    optional RoomMode room_mode = 1;
+
+    enum CmdId {
+        CMD_ID = 3165;
+    }
+}

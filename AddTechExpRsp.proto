@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message AddTechExpRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 539;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TECH_NOT_OPEN = 2;
+        TECH_LEVEL_FULL = 3;
+        MATERAIL_NOT_ENOUGH = 4;
+        MATERAIL_CAN_NOT_ADD_EXP = 5;
+    }
+}

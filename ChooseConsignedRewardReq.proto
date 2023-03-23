@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChooseConsignedRewardReq {
+    repeated uint32 optional_reward_list = 1;
+
+    enum CmdId {
+        CMD_ID = 521;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message DepotFurniture {
+    optional uint32 id = 1;
+    optional uint32 num = 2;
+}

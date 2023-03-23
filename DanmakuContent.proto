@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message DanmakuContent {
+    optional string danmaku_id = 1;
+    optional uint32 sender_uid = 2;
+    optional string nickname = 3;
+    optional uint32 send_time = 4;
+    optional string content = 5;
+    optional uint32 kingdom_id = 6;
+}

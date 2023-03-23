@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "BuffAssistBuffPool.proto";
+message BuffAssistPublishBuffPoolReq {
+    optional uint32 pool_id = 1;
+    repeated uint32 assist_word_id_list = 2;
+    required BuffAssistBuffPool buff_pool = 3;
+    optional bool is_anonymous = 4;
+
+    enum CmdId {
+        CMD_ID = 5947;
+    }
+}

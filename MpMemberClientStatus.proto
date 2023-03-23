@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MpMemberClientStatus {
+    MP_MEMBER_CLIENT_NONE = 0;
+    MP_MEMBER_CLIENT_IN_TEAM = 1;
+    MP_MEMBER_CLIENT_IN_LOBBY = 2;
+}

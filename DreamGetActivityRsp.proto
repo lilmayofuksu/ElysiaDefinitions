@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "DreamActivity.proto";
+message DreamGetActivityRsp {
+    required Retcode retcode = 1;
+    required DreamActivity activity = 2;
+
+    enum CmdId {
+        CMD_ID = 5751;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

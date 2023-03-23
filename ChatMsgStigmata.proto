@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "StigmataDetailData.proto";
+message ChatMsgStigmata {
+    optional uint32 unique_id = 1;
+    required StigmataDetailData stigmata = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GreedyEndless {
+    optional bool is_need_enroll = 1;
+    optional uint32 floor_config_id = 2;
+    optional uint32 reward_config_id = 3;
+    optional uint32 cur_floor = 4;
+    optional uint32 max_finish_floor = 5;
+    repeated uint32 finish_challenge_id_list = 6;
+}

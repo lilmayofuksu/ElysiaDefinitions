@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message UpgradeMissionThemeRsp {
+    required Retcode retcode = 1;
+    optional uint32 theme_id = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4208;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HCOIN_LACK = 3;
+        MCOIN_LACK = 4;
+        MATERIAL_LACK = 5;
+    }
+}

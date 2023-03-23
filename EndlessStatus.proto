@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "LineupBriefInfo.proto";
+import "EndlessType.proto";
+message EndlessStatus {
+    optional EndlessType endless_type = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 close_time = 4;
+    optional uint32 sin_type = 5;
+    optional uint32 progress_or_score = 6;
+    optional uint32 group_level = 7;
+    required LineupBriefInfo last_lineup_info = 8;
+    optional bool can_join_in = 9;
+    optional uint32 pre_general_activity_id = 10;
+    repeated uint32 replace_endless_group_list = 11;
+    required LineupBriefInfo max_score_lineup_info = 12;
+    optional uint32 greedy_max_finish_floor = 13;
+}

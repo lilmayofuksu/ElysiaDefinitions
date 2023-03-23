@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message SwitchAvatarSubSkillRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 254;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        SKILL_NOT_EXIST = 3;
+        SUB_SKILL_NOT_EXIST = 4;
+        SUB_SKILL_CAN_NOT_SWITCH = 5;
+    }
+}

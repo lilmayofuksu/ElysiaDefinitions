@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message RogueTowerSaveReq {
+    optional uint32 id = 1;
+    optional uint32 index = 2;
+    optional uint32 stage_pass_count = 3;
+    optional uint32 score = 4;
+
+    enum CmdId {
+        CMD_ID = 4372;
+    }
+}

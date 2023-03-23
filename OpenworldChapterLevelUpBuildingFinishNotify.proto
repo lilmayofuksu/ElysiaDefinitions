@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message OpenworldChapterLevelUpBuildingFinishNotify {
+    optional uint32 main_id = 1;
+    optional uint32 level = 2;
+    optional uint32 map_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4638;
+    }
+}

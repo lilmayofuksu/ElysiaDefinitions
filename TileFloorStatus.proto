@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum TileFloorStatus {
+    TILE_FLOOR_STATUS_NONE = 0;
+    TILE_FLOOR_STATUS_LOCKED = 1;
+    TILE_FLOOR_STATUS_UNLOCKED = 2;
+    TILE_FLOOR_STATUS_VISTIED = 3;
+}

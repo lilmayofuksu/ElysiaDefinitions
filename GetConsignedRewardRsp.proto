@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GetConsignedRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData required_reward_list = 2;
+    repeated RewardData optional_reward_list = 3;
+    optional uint32 my_credit = 4;
+    optional uint32 total_credit = 5;
+    repeated uint32 my_optional_reward_list = 6;
+
+    enum CmdId {
+        CMD_ID = 520;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+    }
+}

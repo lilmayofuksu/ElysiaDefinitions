@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message RanchMonsterWiki {
+    optional uint32 monster_id = 1;
+    optional uint32 unlock_time = 2;
+    optional uint32 battle_times = 3;
+    optional uint32 catch_times = 4;
+    repeated uint32 skill_id_list = 5;
+}

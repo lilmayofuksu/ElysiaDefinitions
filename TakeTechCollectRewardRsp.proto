@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeTechCollectRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    optional uint32 map_id = 3;
+
+    enum CmdId {
+        CMD_ID = 541;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TECH_LEVEL_LIMIT = 2;
+        IN_CD_TIME = 3;
+    }
+}

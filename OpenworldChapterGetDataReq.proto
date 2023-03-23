@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message OpenworldChapterGetDataReq {
+    optional uint32 map_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4565;
+    }
+}

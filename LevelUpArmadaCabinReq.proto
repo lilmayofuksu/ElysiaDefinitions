@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaCabinType.proto";
+message LevelUpArmadaCabinReq {
+    required ArmadaCabinType type = 1;
+    required uint32 cabin_id = 2;
+    required uint32 grid_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2631;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetWikiDataReq {
+
+    enum CmdId {
+        CMD_ID = 1193;
+    }
+}

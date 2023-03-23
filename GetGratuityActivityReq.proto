@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GetGratuityActivityReq {
+    repeated uint32 stage_unique_id_list = 1;
+    repeated uint32 invite_stage_unique_id_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4100;
+    }
+}

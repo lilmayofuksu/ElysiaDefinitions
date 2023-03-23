@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetGobackReq {
+
+    enum CmdId {
+        CMD_ID = 364;
+    }
+}

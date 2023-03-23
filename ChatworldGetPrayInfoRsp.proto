@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ChatworldGetPrayInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 pray_id = 2;
+    optional bool is_has_prayed = 3;
+
+    enum CmdId {
+        CMD_ID = 2452;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

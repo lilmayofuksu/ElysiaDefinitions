@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message BuyGodWarShopGoodsRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    optional uint32 tale_id = 3;
+    optional uint32 goods_idx = 4;
+
+    enum CmdId {
+        CMD_ID = 6186;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        GOODS_ERROR = 2;
+        MATERIAL_LACK = 3;
+        FEATURE_CLOSE = 4;
+        NOT_OPEN = 5;
+    }
+}

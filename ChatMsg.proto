@@ -1,0 +1,59 @@
+syntax = "proto2";
+
+import "GachaType.proto";
+import "SystemChatMsgType.proto";
+import "ChatMsgSensitiveCheckResult.proto";
+import "MasterPupilType.proto";
+import "ChatMsgContent.proto";
+message ChatMsg {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 time = 3;
+    optional string msg = 4;
+    optional uint32 avatar_id = 5;
+    optional uint32 dress_id = 6;
+    required ChatMsgContent content = 7;
+    optional MsgChannel channel = 8;
+    optional uint32 frame_id = 9;
+    optional bool is_sensitive = 10;
+    optional bool is_goback = 11;
+    optional uint32 channel_id = 12;
+    optional uint32 custom_head_id = 13;
+    optional MasterPupilType master_pupil_tag = 14;
+    required SystemChatMsg system_msg = 15;
+    optional uint32 target_uid = 16;
+    optional uint32 season_id = 17;
+    optional uint32 season_group_id = 18;
+    optional uint32 season_level = 19;
+    optional uint32 mode = 20;
+    optional uint32 mode_para = 21;
+    optional bool is_armada_leader = 22;
+    optional bool is_team_leader = 23;
+    required ChatMsgSensitiveCheckResult check_result = 24;
+    optional bool is_lobby_invite = 25;
+
+    enum MsgChannel {
+        DEFAULT = 0;
+        WORLD = 1;
+        FRIEND = 2;
+        ARMADA = 3;
+        PLAYER_CARD = 4;
+        LOBBY = 5;
+        MASTER_PUPIL = 6;
+        COMMON_CHATWORLD = 7;
+        GROUP = 8;
+        TEAM = 9;
+        CAMPAIGN = 10;
+        ROOM = 11;
+        WORLD_ACTIVITY = 12;
+        PRIVATE = 13;
+        BATTLE = 14;
+    }
+    message SystemChatMsg {
+        optional SystemChatMsgType type = 1;
+        optional uint32 item_id = 2;
+        optional uint32 item_level = 3;
+        optional uint32 item_num = 4;
+        optional GachaType gacha_type = 5;
+    }
+}

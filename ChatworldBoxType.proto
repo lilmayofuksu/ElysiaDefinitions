@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ChatworldBoxType {
+    CHATWORLD_BOX_TYPE_NONE = 0;
+    CHATWORLD_BOX_TYPE_REWARD = 1;
+    CHATWORLD_BOX_TYPE_BATTLE = 2;
+}

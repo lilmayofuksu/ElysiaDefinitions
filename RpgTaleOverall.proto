@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message RpgTaleOverall {
+    optional uint32 overall_id = 1;
+    optional uint32 value = 2;
+}

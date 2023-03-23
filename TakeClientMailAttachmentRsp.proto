@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "ClientMailAttachmentItem.proto";
+import "MailAttachment.proto";
+import "ClientMailKey.proto";
+message TakeClientMailAttachmentRsp {
+    optional Retcode retcode = 1;
+    repeated ClientMailKey succ_mail_key_list = 2;
+    optional bool is_show_attachment = 3;
+    required MailAttachment mail_attachment = 4;
+    optional bool is_take_all = 5;
+    repeated ClientMailAttachmentItem fail_mail_list = 6;
+
+    enum CmdId {
+        CMD_ID = 3803;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        REPEATED_REQ = 2;
+        PART_FAIL = 3;
+    }
+}

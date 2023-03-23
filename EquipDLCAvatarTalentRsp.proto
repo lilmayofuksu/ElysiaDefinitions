@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message EquipDLCAvatarTalentRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3555;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        TALENT_NOT_EXIST = 3;
+        TALENT_TYPE_ERROR = 4;
+        TALENT_TAG_REPEAT = 5;
+    }
+}

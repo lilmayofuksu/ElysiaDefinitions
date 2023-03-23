@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ChatworldEntityHp {
+    optional uint32 hit_unique_id = 1;
+    optional uint32 old_hp = 2;
+    optional uint32 left_hp = 3;
+}

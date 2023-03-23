@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message GrandKeyResetRsp {
+    required Retcode retcode = 1;
+    repeated uint32 key_id_list = 2;
+
+    enum CmdId {
+        CMD_ID = 756;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

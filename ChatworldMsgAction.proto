@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChatworldMsgAction {
+    optional uint32 action_id = 1;
+    optional uint32 target_uid = 2;
+}

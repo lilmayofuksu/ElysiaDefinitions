@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "RanchStage.proto";
+import "RanchArea.proto";
+import "RanchMonster.proto";
+message RanchGetActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated RanchMonster monster_list = 3;
+    repeated RanchArea area_list = 4;
+    optional uint32 next_refresh_time = 5;
+    repeated RanchStage stage_list = 6;
+    repeated uint32 battle_unique_id_list = 7;
+
+    enum CmdId {
+        CMD_ID = 5834;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

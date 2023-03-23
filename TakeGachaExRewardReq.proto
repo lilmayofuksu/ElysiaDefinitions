@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "GachaType.proto";
+message TakeGachaExRewardReq {
+    optional GachaType gacha_type = 1;
+    optional uint32 gacha_id = 2;
+    optional uint32 ex_reward_gacha_times = 3;
+
+    enum CmdId {
+        CMD_ID = 4714;
+    }
+}

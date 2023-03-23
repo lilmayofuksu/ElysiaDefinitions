@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "EffectiveGiftGoodsData.proto";
+import "Shop.proto";
+message GetShoppingMallListRsp {
+    required Retcode retcode = 1;
+    repeated Shop shop_list = 2;
+    repeated EffectiveGiftGoodsData effective_gift_goods_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1158;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

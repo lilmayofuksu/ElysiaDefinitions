@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message UnlockDLCPhotoReq {
+    optional uint32 unique_monster_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3586;
+    }
+}

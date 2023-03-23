@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message VirtualTrainRoleCustomChooseRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3521;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LOCKED = 2;
+        ROLE_NOT_EXIST = 3;
+    }
+}

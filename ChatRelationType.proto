@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ChatRelationType {
+    CHAT_RELATION_TYPE_NONE = 0;
+    CHAT_RELATION_TYPE_FRIEND = 1;
+    CHAT_RELATION_TYPE_MASTER_PUPIL = 2;
+}

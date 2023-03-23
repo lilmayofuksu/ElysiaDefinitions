@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "ChatRelationType.proto";
+message PrivateChatParam {
+    optional ChatRelationType relation_type = 1;
+}

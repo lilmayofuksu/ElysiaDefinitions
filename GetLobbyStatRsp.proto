@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "LobbyStat.proto";
+message GetLobbyStatRsp {
+    required Retcode retcode = 1;
+    repeated LobbyStat lobby_stat_list = 2;
+    required LobbyStat lobby_total_stat = 3;
+
+    enum CmdId {
+        CMD_ID = 1103;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

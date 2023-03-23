@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message AddGodWarRoleRelationExpReq {
+    optional uint32 god_war_id = 1;
+    optional uint32 role_id = 2;
+    optional uint32 exp_material_num = 3;
+
+    enum CmdId {
+        CMD_ID = 6177;
+    }
+}

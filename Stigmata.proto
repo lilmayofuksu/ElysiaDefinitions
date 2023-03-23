@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "StigmataRuneGroup.proto";
+import "StigmataRune.proto";
+message Stigmata {
+    required uint32 unique_id = 1;
+    optional uint32 id = 2;
+    optional uint32 level = 3;
+    optional uint32 exp = 4;
+    optional bool is_protected = 5;
+    optional bool is_affix_identify = 6;
+    optional uint32 cancel_protect_time = 7;
+    optional uint32 slot_num = 8;
+    repeated StigmataRune rune_list = 9;
+    repeated StigmataRune wait_select_rune_list = 10;
+    optional uint32 refine_value = 11;
+    optional uint32 promote_times = 12;
+    optional uint32 title_level = 13;
+    optional uint32 title_exp = 14;
+    optional uint32 title_id = 15;
+    repeated StigmataRuneGroup wait_select_rune_group_list = 16;
+}

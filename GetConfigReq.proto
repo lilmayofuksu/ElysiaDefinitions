@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetConfigReq {
+
+    enum CmdId {
+        CMD_ID = 110;
+    }
+}

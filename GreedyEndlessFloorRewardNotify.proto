@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GreedyEndlessFloorRewardNotify {
+    required RewardData reward_data = 1;
+    optional uint32 max_finish_floor = 2;
+    repeated uint32 finish_challenge_id_list = 6;
+
+    enum CmdId {
+        CMD_ID = 3457;
+    }
+}

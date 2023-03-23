@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message DreamOpenDreamRsp {
+    required Retcode retcode = 1;
+    optional uint32 unlock_id = 2;
+
+    enum CmdId {
+        CMD_ID = 5753;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        DREAM_NOT_EXIST = 3;
+        REWARD_NOT_EXIST = 4;
+        HAS_OPEN_DREAM = 5;
+        LOCKED = 6;
+        REWARD_TAKEN = 7;
+    }
+}

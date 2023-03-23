@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message WaveRushStageScore {
+    optional uint32 stage_id = 1;
+    optional uint32 score = 2;
+}

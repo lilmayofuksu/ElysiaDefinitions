@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message SkipGodWarStoryNodeRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    optional uint32 node_id = 3;
+
+    enum CmdId {
+        CMD_ID = 6208;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FEATURE_CLOSE = 2;
+        NODE_NOT_EXIST = 3;
+        CHAPTER_MISMATCH = 4;
+        MATERIAL_LACK = 5;
+        NODE_SKIP_INVALID = 6;
+        MISSION_STATUS_ERROR = 7;
+    }
+}

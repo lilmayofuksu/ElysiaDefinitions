@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GachaProtectType {
+    GACHA_PROTECT_NONE = 0;
+    GACHA_PROTECT_UP = 1;
+    GACHA_PROTECT_NO_UP = 2;
+}

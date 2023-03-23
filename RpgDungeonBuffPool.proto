@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message RpgDungeonBuffPool {
+    optional uint32 pool_id = 1;
+    optional uint32 left_times = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "PlayerCardMsgConfig.proto";
+import "PlayerCardSlot.proto";
+import "PlayerCardType.proto";
+message ChangePlayerCardReq {
+    optional PlayerCardType type = 1;
+    repeated PlayerCardSlot slot_list = 2;
+    optional PlayerCardMsgConfig msg_config = 3;
+
+    enum CmdId {
+        CMD_ID = 482;
+    }
+}

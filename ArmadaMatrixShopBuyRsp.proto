@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ArmadaMatrixShopBuyRsp {
+    required Retcode retcode = 1;
+    optional uint32 goods_id = 2;
+    optional bool is_sold = 3;
+
+    enum CmdId {
+        CMD_ID = 2769;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SOLD_OUT = 2;
+        LACK_MONEY = 3;
+        NO_ARMADA = 4;
+    }
+}

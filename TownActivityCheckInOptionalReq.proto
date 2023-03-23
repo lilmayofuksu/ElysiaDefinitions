@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityCheckInOptionalReq {
+    required TownCommonHead head = 1;
+    optional uint32 building_unique_id = 2;
+    optional uint32 avatar_id = 3;
+
+    enum CmdId {
+        CMD_ID = 6474;
+    }
+}

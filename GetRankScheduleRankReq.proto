@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetRankScheduleRankReq {
+    optional uint32 schedule_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4235;
+    }
+}

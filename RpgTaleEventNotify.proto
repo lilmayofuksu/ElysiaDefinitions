@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RpgTaleEvent.proto";
+message RpgTaleEventNotify {
+    required RpgTaleEvent event_data = 1;
+    optional uint32 tale_id = 2;
+
+    enum CmdId {
+        CMD_ID = 2312;
+    }
+}

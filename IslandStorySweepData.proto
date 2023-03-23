@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message IslandStorySweepData {
+    optional uint32 sweep_id = 1;
+    optional uint32 over_time = 2;
+    optional bool is_finished = 3;
+    optional bool is_sieged = 4;
+    repeated uint32 avatar_id_list = 5;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "GardenActivityData.proto";
+message GardenHarvestRsp {
+    required Retcode retcode = 1;
+    required GardenActivityData garden = 2;
+
+    enum CmdId {
+        CMD_ID = 4290;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        DAILY_HARVEST_LIMIT = 3;
+    }
+}

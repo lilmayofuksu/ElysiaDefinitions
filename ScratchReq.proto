@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ScratchReq {
+    optional uint32 x_pos = 1;
+    optional uint32 y_pos = 2;
+    optional uint32 activity_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4152;
+    }
+}

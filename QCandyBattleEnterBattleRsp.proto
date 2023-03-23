@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "QCandyBattlePropData.proto";
+import "QCandyBattleMember.proto";
+import "QCandyBattleType.proto";
+message QCandyBattleEnterBattleRsp {
+    required Retcode retcode = 1;
+    optional QCandyBattleType battle_type = 2;
+    repeated QCandyBattleMember member_list = 3;
+    repeated QCandyBattlePropData prop_data_list = 5;
+
+    enum CmdId {
+        CMD_ID = 6571;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        BATTLE_NOT_EXIST = 2;
+    }
+}

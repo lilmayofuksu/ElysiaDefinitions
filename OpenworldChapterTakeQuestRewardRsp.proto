@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldChapterTakeQuestRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 quest_id = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4652;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        QUEST_NOT_EXIST = 2;
+        NOT_FINISH = 3;
+        MAP_ERROR = 4;
+    }
+}

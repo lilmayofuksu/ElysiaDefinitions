@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message GetExBossRankRsp {
+    required Retcode retcode = 1;
+    required RankShowData rank_data = 2;
+    optional uint32 rank_id = 3;
+    optional bool is_filtered = 4;
+    optional uint32 boss_id = 5;
+
+    enum CmdId {
+        CMD_ID = 528;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        RANK_ERROR = 3;
+        NOT_JOIN = 4;
+        SCHEDULE_DISMATCH = 5;
+        FEATURE_CLOSED = 6;
+    }
+}

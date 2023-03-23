@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+enum WikiDetailType {
+    WIKI_UNKNOWN = 0;
+    WIKI_ALL = 1;
+    WIKI_STIGMATA = 2;
+    WIKI_WEAPON = 3;
+    WIKI_DORM = 4;
+    WIKI_CG = 5;
+    WIKI_MEDAL = 6;
+    WIKI_ACHIEVEMENT = 7;
+    WIKI_SKIN = 8;
+    WIKI_EMOJI = 9;
+    WIKI_AVATAR = 10;
+}

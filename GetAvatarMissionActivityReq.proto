@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetAvatarMissionActivityReq {
+
+    enum CmdId {
+        CMD_ID = 3000;
+    }
+}

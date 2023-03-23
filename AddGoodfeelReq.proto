@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message AddGoodfeelReq {
+    required uint32 avatar_id = 1;
+    required int32 add_goodfeel = 2;
+    required uint32 add_goodfeel_type = 3;
+
+    enum CmdId {
+        CMD_ID = 154;
+    }
+    enum AddGoodfeelType {
+        TOUCH = 1;
+        STAGE = 2;
+        DORM = 3;
+    }
+}

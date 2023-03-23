@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TeamAssaultActivityInfo {
+    optional uint32 enter_times = 1;
+    repeated uint32 avatar_id_list = 2;
+    repeated uint32 score_list = 3;
+    optional uint32 boss_idx = 4;
+    repeated uint32 pass_time_list = 5;
+}

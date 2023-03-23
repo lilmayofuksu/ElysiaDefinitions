@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message VirtualGachaReq {
+    optional uint32 box_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3508;
+    }
+}

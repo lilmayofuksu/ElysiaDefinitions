@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message ChatReportNotify {
+    optional uint32 report_uid = 1;
+    optional uint32 target_uid = 2;
+    optional uint32 report_type = 3;
+    optional uint32 lost_chat_credit = 4;
+    optional uint32 chat_forbid_times = 5;
+
+    enum CmdId {
+        CMD_ID = 1152;
+    }
+}

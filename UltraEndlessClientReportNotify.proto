@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message UltraEndlessClientReportNotify {
+    optional ClientReportType client_report_type = 1;
+    optional string client_transaction_str = 2;
+    optional string report_msg = 3;
+
+    enum CmdId {
+        CMD_ID = 5219;
+    }
+    enum ClientReportType {
+        CLIENT_REPORT_TYPE_NONE = 0;
+        CLIENT_REPORT_TYPE_STAGE_BEGIN = 1;
+    }
+}

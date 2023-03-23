@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message UnlockAvatarSkillRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 89;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        HAS_UNLOCK = 3;
+        AVATAR_LEVEL_LACK = 4;
+        AVATAR_STAR_LACK = 5;
+        MATERIAL_LACK = 6;
+    }
+}

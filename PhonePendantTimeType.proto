@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum PhonePendantTimeType {
+    PHONE_PENDANT_TIME_FOREVER = 1;
+    PHONE_PENDANT_TIME_LIMIT = 2;
+}

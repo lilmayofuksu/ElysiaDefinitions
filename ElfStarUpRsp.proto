@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message ElfStarUpRsp {
+    required Retcode retcode = 1;
+    optional uint32 elf_id = 2;
+    optional bool is_unlock = 3;
+
+    enum CmdId {
+        CMD_ID = 2106;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ELF_NOT_EXIST = 2;
+        FRAGMENT_LACK = 3;
+        STAR_FULL = 4;
+        LEVEL_LACK = 5;
+        FEATURE_CLOSED = 6;
+    }
+}

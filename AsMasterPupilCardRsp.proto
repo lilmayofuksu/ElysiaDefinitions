@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "MasterPupilRetcode.proto";
+message AsMasterPupilCardRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    optional uint32 cd_end_time = 2;
+
+    enum CmdId {
+        CMD_ID = 567;
+    }
+}

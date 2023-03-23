@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "GachaItem.proto";
+message GachaLog {
+    required uint32 time = 1;
+    required GachaItem item = 2;
+}

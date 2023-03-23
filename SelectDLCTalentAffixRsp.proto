@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message SelectDLCTalentAffixRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3585;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_NEW_AFFIX = 2;
+    }
+}

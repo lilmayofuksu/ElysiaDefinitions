@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message QAvatarBattleEvadeComponent {
+    optional float speed_x = 1;
+    optional float speed_y = 2;
+    optional uint64 expire_time_ms_u64 = 3;
+}

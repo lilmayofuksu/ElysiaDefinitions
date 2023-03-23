@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "MasterPupilApplyMsg.proto";
+import "MasterPupilType.proto";
+import "MasterPupilRetcode.proto";
+message GetMasterPupilApplyRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    optional MasterPupilType type = 2;
+    repeated MasterPupilApplyMsg msg_list = 3;
+    repeated MasterPupilApplyMsg send_msg_list = 4;
+
+    enum CmdId {
+        CMD_ID = 654;
+    }
+}

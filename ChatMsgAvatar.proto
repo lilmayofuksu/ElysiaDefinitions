@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "AvatarDetailData.proto";
+message ChatMsgAvatar {
+    optional uint32 id = 1;
+    required AvatarDetailData avatar = 2;
+}

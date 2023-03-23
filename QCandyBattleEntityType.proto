@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum QCandyBattleEntityType {
+    QCANDY_BATTLE_ENTITY_TYPE_NONE = 0;
+    QCANDY_BATTLE_ENTITY_TYPE_PLAYER = 1;
+    QCANDY_BATTLE_ENTITY_TYPE_PROP = 2;
+}

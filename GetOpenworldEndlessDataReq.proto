@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "EndlessType.proto";
+message GetOpenworldEndlessDataReq {
+    optional uint32 level = 1;
+    optional EndlessType type = 2;
+    optional bool is_finish_front = 3;
+
+    enum CmdId {
+        CMD_ID = 3419;
+    }
+}

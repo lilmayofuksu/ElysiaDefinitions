@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "OpenworldChapterChallengeGroup.proto";
+message OpenworldChapterGetChallengeDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 challenge_schedule_id = 3;
+    repeated uint32 open_group_list = 4;
+    repeated OpenworldChapterChallengeGroup group_list = 5;
+    optional uint32 schedule_end_time = 6;
+
+    enum CmdId {
+        CMD_ID = 4594;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+    }
+}

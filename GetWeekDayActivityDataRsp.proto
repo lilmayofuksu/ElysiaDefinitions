@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "ActivitySeries.proto";
+import "WeekDayActivity.proto";
+message GetWeekDayActivityDataRsp {
+    required Retcode retcode = 1;
+    repeated WeekDayActivity activity_list = 2;
+    optional bool is_whole_data = 3;
+    repeated ActivitySeries series_list = 5;
+
+    enum CmdId {
+        CMD_ID = 126;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

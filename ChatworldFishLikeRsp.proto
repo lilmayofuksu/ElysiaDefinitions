@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ChatworldFishLikeRsp {
+    required Retcode retcode = 1;
+    optional uint32 fish_spot_id = 2;
+    optional uint32 target_uid = 3;
+
+    enum CmdId {
+        CMD_ID = 2440;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CURRENCY_LIMIT = 2;
+    }
+}

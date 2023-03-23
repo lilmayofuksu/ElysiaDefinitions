@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message TriggerBurdenAlleviationReq {
+    optional uint32 alleviation_id = 1;
+    repeated uint32 para_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4354;
+    }
+}

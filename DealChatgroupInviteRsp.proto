@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message DealChatgroupInviteRsp {
+    required Retcode retcode = 1;
+    optional uint32 chatgroup_id = 2;
+
+    enum CmdId {
+        CMD_ID = 2215;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        INVITE_NOT_EXIST = 2;
+        ALREADY_IN = 3;
+        JOIN_MAX = 4;
+        CHATGROUP_FULL = 5;
+    }
+}

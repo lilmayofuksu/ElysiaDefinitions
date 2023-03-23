@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message GlobalWarIsolatePoint {
+    optional uint32 point_id = 1;
+    optional uint32 point_status = 2;
+}

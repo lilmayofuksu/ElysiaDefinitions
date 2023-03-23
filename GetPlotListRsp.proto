@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message GetPlotListRsp {
+    required Retcode retcode = 1;
+    repeated uint32 plot_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1383;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

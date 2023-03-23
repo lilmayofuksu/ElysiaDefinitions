@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum FurnitureDirection {
+    FURNITURE_DIRECTION_DOWN = 0;
+    FURNITURE_DIRECTION_LEFT = 1;
+    FURNITURE_DIRECTION_UP = 2;
+    FURNITURE_DIRECTION_RIGHT = 3;
+}

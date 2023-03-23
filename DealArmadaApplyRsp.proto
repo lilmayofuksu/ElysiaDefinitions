@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message DealArmadaApplyRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    optional bool agree = 3;
+
+    enum CmdId {
+        CMD_ID = 2610;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        NOT_GRANTED = 3;
+        NOT_TARGET = 4;
+        ARMADA_FULL = 5;
+    }
+}

@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message QAvatarBattleStigmata {
+    optional uint32 stigmata_id = 1;
+}

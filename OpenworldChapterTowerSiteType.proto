@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum OpenworldChapterTowerSiteType {
+    OPENWORLD_CHAPTER_TOWER_SITE_STAGE = 1;
+    OPENWORLD_CHAPTER_TOWER_SITE_PLOT = 2;
+}

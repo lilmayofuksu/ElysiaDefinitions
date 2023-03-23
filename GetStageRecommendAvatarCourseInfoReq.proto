@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "AvatarRecommendType.proto";
+message GetStageRecommendAvatarCourseInfoReq {
+    optional string id = 1;
+    optional AvatarRecommendType type = 2;
+    optional uint32 recommend_style = 3;
+    optional uint32 rank = 4;
+
+    enum CmdId {
+        CMD_ID = 1630;
+    }
+}

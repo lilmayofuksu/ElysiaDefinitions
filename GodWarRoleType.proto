@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum GodWarRoleType {
+    GOD_WAR_ROLE_NONE = 0;
+    GOD_WAR_ROLE_MEMORY_DEPRECATED = 1;
+    GOD_WAR_ROLE_AVATAR = 2;
+    GOD_WAR_ROLE_MEMORY = 3;
+}

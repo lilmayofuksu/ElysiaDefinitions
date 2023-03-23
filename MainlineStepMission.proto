@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message MainlineStepMission {
+    optional bool is_update = 1;
+    repeated uint32 cur_mainline_step_list = 2;
+    repeated uint32 finished_mainline_step_list = 3;
+}

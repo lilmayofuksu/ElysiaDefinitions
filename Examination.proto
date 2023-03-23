@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message Examination {
+    optional uint32 id = 1;
+    optional uint32 last_answer = 2;
+    optional bool is_finished = 3;
+    repeated uint32 answer_list = 4;
+    optional bool is_evaluated = 5;
+}

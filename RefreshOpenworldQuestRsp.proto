@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message RefreshOpenworldQuestRsp {
+    required Retcode retcode = 1;
+    repeated OpenworldQuest quest_list = 2;
+    optional uint32 refresh_left_times = 3;
+    optional uint32 next_refresh_cost = 4;
+    optional uint32 map_id = 5;
+
+    enum CmdId {
+        CMD_ID = 4481;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_CHOOSE = 2;
+        HCOIN_LACK = 3;
+        MAP_NOT_FOUND = 4;
+    }
+}

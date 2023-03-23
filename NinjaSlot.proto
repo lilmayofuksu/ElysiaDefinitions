@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message NinjaSlot {
+    optional uint32 slot_id = 1;
+    optional uint32 level = 2;
+    optional uint32 exp = 3;
+    optional uint32 choosed_effect_id = 4;
+}

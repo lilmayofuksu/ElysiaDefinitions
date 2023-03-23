@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetDropLimitActivityReq {
+
+    enum CmdId {
+        CMD_ID = 4297;
+    }
+}

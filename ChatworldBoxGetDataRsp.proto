@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ChatworldBoxActivity.proto";
+message ChatworldBoxGetDataRsp {
+    required Retcode retcode = 1;
+    repeated ChatworldBoxActivity box_activity_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2468;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message RogueTowerRefreshBuffRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+
+    enum CmdId {
+        CMD_ID = 4369;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_LEFT_TIMES = 2;
+        COIN_LACK = 3;
+        NOT_IN_CANDIDATE = 4;
+    }
+}

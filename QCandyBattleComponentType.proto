@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum QCandyBattleComponentType {
+    QCANDY_BATTLE_COMPONENT_TYPE_NONE = 0;
+    QCANDY_BATTLE_COMPONENT_TYPE_POSITION = 1;
+}

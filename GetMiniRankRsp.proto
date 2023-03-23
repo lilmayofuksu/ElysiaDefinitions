@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message GetMiniRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 type = 2;
+    optional uint32 stage_id = 3;
+    required RankShowData rank_data = 4;
+    optional uint32 activity_id = 5;
+    optional uint32 avatar_id = 6;
+    optional uint32 challenge_id = 7;
+
+    enum CmdId {
+        CMD_ID = 1604;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

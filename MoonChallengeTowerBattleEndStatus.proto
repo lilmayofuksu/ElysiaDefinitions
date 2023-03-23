@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MoonChallengeTowerBattleEndStatus {
+    MOON_CHALLENGE_TOWER_BATTLE_END_INVALID = 0;
+    MOON_CHALLENGE_TOWER_BATTLE_END_SUCC = 1;
+    MOON_CHALLENGE_TOWER_BATTLE_END_FAIL = 2;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RpgTaleSite.proto";
+message SyncRpgTaleSiteNotify {
+    repeated RpgTaleSite site_list = 1;
+    optional uint32 tale_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2302;
+    }
+}

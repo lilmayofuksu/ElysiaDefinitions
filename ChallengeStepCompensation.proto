@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "StepCompensation.proto";
+message ChallengeStepCompensation {
+    optional uint32 compensation_id = 1;
+    optional bool is_take_compensation = 2;
+    repeated StepCompensation new_challenge_step_compensation_list = 3;
+    repeated StepCompensation old_challenge_step_compensation_list = 4;
+    repeated StepCompensation mainline_step_compensation_list = 5;
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message DrawRaffleTicketRsp {
+    required Retcode retcode = 1;
+    optional uint32 raffle_id = 2;
+    optional uint32 ticket = 3;
+    optional uint32 draw_idx = 4;
+
+    enum CmdId {
+        CMD_ID = 3897;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 3;
+        CANNOT_DRAW = 4;
+        TIMES_LIMIT = 5;
+        MATERIAL_NOT_ENOUGH = 6;
+        TOO_FREQUENT = 7;
+    }
+}

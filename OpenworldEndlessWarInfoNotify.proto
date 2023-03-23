@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "OpenworldEndlessWarInfo.proto";
+message OpenworldEndlessWarInfoNotify {
+    required OpenworldEndlessWarInfo war_info = 1;
+
+    enum CmdId {
+        CMD_ID = 3442;
+    }
+}

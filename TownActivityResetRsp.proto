@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message TownActivityResetRsp {
+    required Retcode retcode = 1;
+    optional uint32 town_id = 2;
+
+    enum CmdId {
+        CMD_ID = 6477;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message SealedModeStartMatchRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 702;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_BEGUN = 2;
+    }
+}

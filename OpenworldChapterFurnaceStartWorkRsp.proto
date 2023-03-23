@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message OpenworldChapterFurnaceStartWorkRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4654;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        BUILDING_LOCKED = 3;
+        MATERIAL_LACK = 4;
+        FORMULA_ERROR = 5;
+        FORMULA_NUM_ERROR = 6;
+        FORMULA_TIMES_ERROR = 7;
+    }
+}

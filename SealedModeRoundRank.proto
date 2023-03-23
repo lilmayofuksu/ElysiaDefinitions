@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message SealedModeRoundRank {
+    optional uint32 round = 1;
+    optional uint32 rank = 2;
+}

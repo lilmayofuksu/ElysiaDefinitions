@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "AddFriendAction.proto";
+message AddFriendRsp {
+    required Retcode retcode = 1;
+    optional AddFriendAction action = 2;
+    repeated uint32 target_uid_list = 3;
+
+    enum CmdId {
+        CMD_ID = 67;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TARGET_NOT_EXIST = 2;
+        FRIEND_FULL = 3;
+        TARGET_FRIEND_FULL = 4;
+        IS_SELF = 5;
+        IS_FRIEND = 6;
+        ASK_TOO_OFTEN = 7;
+        TARGET_ASK_LIST_FULL = 8;
+        TARGET_IN_ASK_LIST = 9;
+        REDIS_MULTI_ERROR = 10;
+        NOT_ALLOW_CROSS_REGION_FRIEND = 11;
+        CROSS_REGION_FRIEND_FULL = 12;
+        FEATURE_LIMIT = 13;
+        FORBIDDEN = 14;
+        FEATURE_CLOSED = 15;
+    }
+}

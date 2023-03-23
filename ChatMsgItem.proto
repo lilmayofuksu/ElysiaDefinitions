@@ -1,0 +1,42 @@
+syntax = "proto2";
+
+import "ChatMsgWorldBeast.proto";
+import "ChatRedEnvelopeTakeOver.proto";
+import "ChatMsgElf.proto";
+import "ChatTakeRedEnvelope.proto";
+import "ChatSendRedEnvelope.proto";
+import "ChatMsgInternal.proto";
+import "ChatMsgLobby.proto";
+import "ChatMsgAvatar.proto";
+import "ChatMsgStigmata.proto";
+import "ChatMsgWeapon.proto";
+message ChatMsgItem {
+    optional ChatMsgType type = 1;
+    optional string msg_str = 2;
+    required ChatMsgWeapon weapon = 3;
+    required ChatMsgStigmata stigmata = 4;
+    required ChatMsgAvatar avatar = 5;
+    required ChatMsgLobby lobby = 6;
+    required ChatMsgInternal internal = 7;
+    required ChatSendRedEnvelope send_red_envelope = 8;
+    required ChatTakeRedEnvelope take_red_envelope = 9;
+    optional uint32 emoji_id = 10;
+    required ChatMsgElf elf = 11;
+    required ChatRedEnvelopeTakeOver red_envelope_take_over = 12;
+    required ChatMsgWorldBeast chatworld_beast = 13;
+
+    enum ChatMsgType {
+        STR_MSG = 1;
+        WEAPON_MSG = 2;
+        STIGMATA_MSG = 3;
+        AVATAR_MSG = 4;
+        LOBBY_MSG = 5;
+        INTERNAL_MSG = 6;
+        SEND_RED_ENVELOPE_MSG = 7;
+        TAKE_RED_ENVELOPE_MSG = 8;
+        EMOJI = 9;
+        ELF_MSG = 10;
+        RED_ENVELOPE_TAKE_OVER_MSG = 11;
+        CHATWORLD_BEAST_MSG = 12;
+    }
+}

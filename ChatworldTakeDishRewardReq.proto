@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "DishRewardType.proto";
+message ChatworldTakeDishRewardReq {
+    optional DishRewardType reward_type = 1;
+    optional uint32 reward_id = 2;
+
+    enum CmdId {
+        CMD_ID = 2458;
+    }
+}

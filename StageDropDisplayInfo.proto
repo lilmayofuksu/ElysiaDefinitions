@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "RewardItemData.proto";
+message StageDropDisplayInfo {
+    required uint32 stage_id = 1;
+    repeated uint32 drop_item_id_list = 2;
+    repeated uint32 first_drop_item_id_list = 3;
+    optional bool double_drop = 4;
+    repeated uint32 bonus_drop_item_id_list = 5;
+    repeated string battle_buff_list = 6;
+    repeated uint32 bonus_equip_need_list = 7;
+    optional uint32 battle_display_id = 8;
+    repeated string battle_attr_list = 9;
+    repeated RewardItemData first_drop_item_data_list = 10;
+}

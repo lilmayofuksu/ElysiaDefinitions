@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "GratuityPlayer.proto";
+message GratuityBattle {
+    optional uint32 stage_unique_id = 1;
+    required GratuityPlayer player_info = 2;
+    optional uint32 damage = 3;
+    optional uint32 stage_begin_time = 4;
+    optional bool is_bonus = 5;
+    optional uint32 stage_id = 6;
+}

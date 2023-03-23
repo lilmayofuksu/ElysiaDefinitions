@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message RechargeFinishNotify {
+    required Retcode retcode = 1;
+    optional string product_name = 2;
+    optional uint32 pay_hcoin = 3;
+    optional uint32 free_hcoin = 4;
+    optional string product_desc = 5;
+    repeated RewardData box_reward_list = 6;
+    optional uint32 product_price = 7;
+    optional string channel_name = 8;
+    optional string channel_order_no = 9;
+    optional bool is_add_hcoin = 10;
+    optional uint32 mcoin = 11;
+    optional uint32 goods_id = 12;
+    optional string pay_currency = 13;
+    optional string pay_price = 14;
+
+    enum CmdId {
+        CMD_ID = 83;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ORDER_REPEAT = 2;
+        ITUNES_RECEIPT_ERROR = 3;
+        DUPLICATE_FAIL = 4;
+    }
+}

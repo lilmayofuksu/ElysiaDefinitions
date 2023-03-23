@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message TakeChapterChallengeRewardReq {
+    optional uint32 chapter_id = 1;
+    optional uint32 challenge_num_index = 2;
+
+    enum CmdId {
+        CMD_ID = 967;
+    }
+}

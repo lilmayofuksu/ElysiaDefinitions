@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ResetStageEnterTimesRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 109;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HCOIN_LACK = 2;
+        TIMES_LACK = 3;
+        NOT_NEED_RESET = 4;
+        STAGE_ID_ERROR = 5;
+        MATERIAL_LACK = 6;
+    }
+}

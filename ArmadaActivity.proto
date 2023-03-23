@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ArmadaActivityType.proto";
+message ArmadaActivity {
+    optional ArmadaActivityType type = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+    optional uint32 open_day_time = 5;
+    optional uint32 close_day_time = 6;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message SetOpenworldStoryProgressRsp {
+    required Retcode retcode = 1;
+    optional uint32 story_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4455;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STORY_NOT_FOUND = 2;
+    }
+}

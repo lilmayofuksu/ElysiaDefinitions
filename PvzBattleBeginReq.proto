@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message PvzBattleBeginReq {
+    optional uint32 activity_id = 1;
+    optional uint32 tower_id = 2;
+    optional uint32 floor_id = 3;
+    repeated uint32 qavatar_id_list = 4;
+
+    enum CmdId {
+        CMD_ID = 6552;
+    }
+}

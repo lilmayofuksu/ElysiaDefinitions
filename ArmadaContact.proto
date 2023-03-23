@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ArmadaContact {
+    optional uint32 id = 1;
+    optional uint32 level = 2;
+    repeated uint32 member_list = 3;
+}

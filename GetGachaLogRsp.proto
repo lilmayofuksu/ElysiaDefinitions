@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "GachaLog.proto";
+import "GachaType.proto";
+message GetGachaLogRsp {
+    required Retcode retcode = 1;
+    repeated GachaLogInfo log_info_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4707;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+    message GachaLogInfo {
+        optional GachaType gacha_type = 1;
+        repeated GachaLog log_list = 2;
+    }
+}

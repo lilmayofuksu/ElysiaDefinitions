@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+message MpEnterTeamRsp {
+    required Retcode retcode = 1;
+    optional uint32 team_id = 2;
+    optional uint32 stage_id = 3;
+
+    enum CmdId {
+        CMD_ID = 351;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TEAM_NOT_EXIST = 2;
+        TEAM_FULL = 3;
+        TEAM_ENTER_LOBBY = 4;
+        TEAM_IN_LOBBY = 5;
+        TEAM_IN_FIGHT = 6;
+        ALREADY_IN_TEAM = 7;
+        CLIENT_VERSION_ERROR = 8;
+        SERVER_BUSY = 9;
+        IN_SQUAD = 10;
+        IN_SQUAD_MATCH = 11;
+        IN_ROOM = 12;
+        CONDITION_NOT_MEET = 13;
+        FEATURE_LIMIT = 14;
+        DATA_VERSION_CONFLICT = 15;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "SettingDict.proto";
+message UrgencyMsgNotify {
+    required string msg = 1;
+    required SettingDict client_setting = 2;
+
+    enum CmdId {
+        CMD_ID = 187;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message RpgTaleTotalScoreDrop {
+    optional uint32 material_id = 1;
+    optional uint32 daily_num = 2;
+}

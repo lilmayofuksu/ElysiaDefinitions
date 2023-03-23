@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum KingdomWarPointType {
+    KINGDOM_WAR_POINT_NONE = 0;
+    KINGDOM_WAR_POINT_NORMAL = 1;
+    KINGDOM_WAR_POINT_CHATWORLD = 2;
+    KINGDOM_WAR_POINT_MAIN_CITY = 3;
+    KINGDOM_WAR_POINT_BOSS = 4;
+}

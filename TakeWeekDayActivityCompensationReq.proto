@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TakeWeekDayActivityCompensationReq {
+
+    enum CmdId {
+        CMD_ID = 1668;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "TileFloorStatus.proto";
+message TileFloor {
+    optional uint32 floor_id = 1;
+    optional TileFloorStatus floor_status = 2;
+}

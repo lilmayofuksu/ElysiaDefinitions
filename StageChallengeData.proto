@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message StageChallengeData {
+    required uint32 challenge_index = 1;
+    required RewardData reward = 2;
+}

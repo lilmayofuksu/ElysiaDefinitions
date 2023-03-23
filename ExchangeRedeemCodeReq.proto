@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ExchangeRedeemCodeReq {
+    required string redeem_code = 1;
+
+    enum CmdId {
+        CMD_ID = 213;
+    }
+}

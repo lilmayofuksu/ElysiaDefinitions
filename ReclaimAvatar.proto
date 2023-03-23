@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ReclaimAvatar {
+    optional uint32 reclaim_avatar_id = 1;
+    optional uint32 reclaim_weapon_id = 2;
+    optional uint32 reclaim_stigmata_id_1 = 3;
+    optional uint32 reclaim_stigmata_id_2 = 4;
+    optional uint32 reclaim_stigmata_id_3 = 5;
+}

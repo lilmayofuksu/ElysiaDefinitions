@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ChatworldBattleItemEffectTarget {
+    CHATWORLD_BATTLE_ITEM_EFFECT_ALL = 0;
+    CHATWORLD_BATTLE_ITEM_EFFECT_ENEMY_CAMP = 1;
+    CHATWORLD_BATTLE_ITEM_EFFECT_SELF_CAMP = 2;
+}

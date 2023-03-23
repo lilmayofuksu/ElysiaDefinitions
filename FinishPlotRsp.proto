@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message FinishPlotRsp {
+    required Retcode retcode = 1;
+    optional uint32 plot_type = 2;
+    optional uint32 plot_id = 4;
+    optional uint32 dialog_id = 5;
+    repeated RewardData reward_list = 6;
+    repeated DropItem drop_item_list = 7;
+
+    enum CmdId {
+        CMD_ID = 1379;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PLOT_ERROR = 2;
+        PLOT_FINISHED = 3;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "EquipmentForgeConsume.proto";
+message GetEquipmentBackRsp {
+    required Retcode retcode = 1;
+    repeated EquipmentForgeConsume consume_equip_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3662;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

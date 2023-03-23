@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message FrontEndlessActivity {
+    optional uint32 cur_floor = 1;
+    repeated FloorScore floor_score_list = 2;
+    message FloorScore {
+        optional uint32 floor = 1;
+        optional uint32 score = 2;
+    }
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ChooseOpenworldBossReq {
+    optional uint32 map_id = 1;
+    optional uint32 boss_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4520;
+    }
+}

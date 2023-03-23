@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message StageSwitchData {
+    optional uint32 stage_id = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message RefreshGodWarTicketReq {
+    optional uint32 god_war_id = 1;
+
+    enum CmdId {
+        CMD_ID = 6189;
+    }
+}

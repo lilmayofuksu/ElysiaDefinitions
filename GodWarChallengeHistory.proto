@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GodWarChallengeHistory {
+    optional uint32 avatar_id = 1;
+    optional bool is_challenge_succ = 2;
+    optional uint32 max_punish_level = 3;
+    repeated uint32 pass_step_level_list = 4;
+    optional uint32 max_challenge_score = 5;
+}

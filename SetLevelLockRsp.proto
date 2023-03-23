@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message SetLevelLockRsp {
+    required Retcode retcode = 1;
+    optional uint32 level_lock_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1489;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_MEET_MAX_LEVEL = 2;
+        NOT_NEXT_ID = 3;
+    }
+}

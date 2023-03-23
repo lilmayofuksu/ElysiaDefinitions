@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "GeneralActivityStageGroupScheduleInfo.proto";
+message ScheduledMapSiteActivity {
+    repeated GeneralActivityStageGroupScheduleInfo stage_group_schedule_list = 1;
+    optional uint32 enter_times = 2;
+}

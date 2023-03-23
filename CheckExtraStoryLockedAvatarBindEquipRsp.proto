@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message CheckExtraStoryLockedAvatarBindEquipRsp {
+    required Retcode retcode = 1;
+    optional bool need_switch = 2;
+
+    enum CmdId {
+        CMD_ID = 1001;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

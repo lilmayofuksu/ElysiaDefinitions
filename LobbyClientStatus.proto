@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum LobbyClientStatus {
+    LOBBY_CLIENT_NONE = 0;
+    LOBBY_CLIENT_CHOOSING_AVATAR = 1;
+    LOBBY_CLIENT_CHOOSING_WEAPON = 2;
+    LOBBY_CLIENT_CHOOSING_STIGMATA = 3;
+}

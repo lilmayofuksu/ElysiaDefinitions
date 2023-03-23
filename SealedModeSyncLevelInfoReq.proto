@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message SealedModeSyncLevelInfoReq {
+    optional uint32 seq = 1;
+    optional uint32 level = 2;
+    repeated uint32 block_item_unique_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 715;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MasterPupilTagSwitch.proto";
+import "AvatarArtifactSwitch.proto";
+import "SnsShowPriviledge.proto";
+message UpdateClientSettingReq {
+    optional uint32 client_setting_type = 1;
+    optional bool is_weekly_guide_switch_on = 2;
+    repeated SnsShowPriviledge sns_show_priviledge_list = 3;
+    required AvatarArtifactSwitch avatar_artifact_switch = 4;
+    required MasterPupilTagSwitch master_pupil_tag_switch = 5;
+
+    enum CmdId {
+        CMD_ID = 1271;
+    }
+}

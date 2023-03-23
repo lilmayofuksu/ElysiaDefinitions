@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum QCandyBattleType {
+    QCANDY_BATTLE_TYPE_NONE = 0;
+    QCANDY_BATTLE_TYPE_RACING = 1;
+    QCANDY_BATTLE_TYPE_SURVIVE = 2;
+    QCANDY_BATTLE_TYPE_SCORE = 3;
+}

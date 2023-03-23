@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message DLCTowerStageEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 progress = 2;
+    required RewardData reward_data = 3;
+    optional uint32 end_progress = 4;
+    optional uint32 score = 5;
+    optional bool is_new_record = 6;
+
+    enum CmdId {
+        CMD_ID = 3566;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        NOT_BEGIN = 3;
+        PROGRESS_ERROR = 4;
+        PRODUCE_NUM_ERROR = 5;
+        AVATAR_ERROR = 6;
+    }
+}

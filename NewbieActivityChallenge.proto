@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message NewbieActivityChallenge {
+    optional bool is_take_challenge_reward = 1;
+    repeated uint32 has_finished_stage_list = 2;
+    optional uint32 enter_times = 3;
+}

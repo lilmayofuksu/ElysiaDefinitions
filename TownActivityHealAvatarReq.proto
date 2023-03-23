@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityHealAvatarReq {
+    required TownCommonHead head = 1;
+    optional uint32 avatar_id = 2;
+
+    enum CmdId {
+        CMD_ID = 6460;
+    }
+}

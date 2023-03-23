@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixMsgPos {
+    required ArmadaMatrixGridPos pos = 1;
+    repeated Message msg_list = 2;
+    message Message {
+        optional uint32 uid = 1;
+        optional uint32 msg_idx = 2;
+    }
+}

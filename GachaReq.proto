@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "GachaType.proto";
+message GachaReq {
+    required GachaType type = 1;
+    required uint32 num = 2;
+    optional bool is_use_hcoin = 3;
+    optional uint32 gacha_random = 4;
+    optional uint32 simulate_magic = 5;
+    optional bool is_use_free_gacha = 6;
+
+    enum CmdId {
+        CMD_ID = 4700;
+    }
+}

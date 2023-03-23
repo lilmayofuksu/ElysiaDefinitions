@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "RoomMode.proto";
+import "ChatMsg.proto";
+message SendRoomChatMsgNotify {
+    required ChatMsg chat_msg = 1;
+    optional bool is_broadcast_msg = 2;
+    optional RoomMode room_mode = 3;
+    repeated uint32 target_uid_list = 4;
+
+    enum CmdId {
+        CMD_ID = 3163;
+    }
+}

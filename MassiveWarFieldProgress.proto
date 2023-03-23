@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message MassiveWarFieldProgress {
+    optional uint32 field_progress_ratio = 1;
+    optional uint32 in_field_member_num = 2;
+}

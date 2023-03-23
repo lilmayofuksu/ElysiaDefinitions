@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "UltraEndlessSettleInfo.proto";
+message UltraEndlessLastSettleRewardNotify {
+    required UltraEndlessSettleInfo settle_info = 1;
+    required RewardData settle_reward_data = 2;
+    required RewardData group_level_reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 5205;
+    }
+}

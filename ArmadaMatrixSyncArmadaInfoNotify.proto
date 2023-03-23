@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ArmadaMatrixSyncArmadaInfoNotify {
+    optional uint32 schedule_id = 1;
+    optional uint32 total_explore_value = 2;
+
+    enum CmdId {
+        CMD_ID = 2816;
+    }
+}

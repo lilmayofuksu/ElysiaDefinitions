@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message MonopolyBuyGoodsRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3862;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_MATERIAL = 2;
+        BUY_TIMES_LACK = 3;
+        INVALID_POSITION = 4;
+        STATUS_ERROR = 5;
+    }
+}

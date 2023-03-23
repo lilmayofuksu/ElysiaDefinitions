@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message LikeDormRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    optional uint32 friends_point = 3;
+
+    enum CmdId {
+        CMD_ID = 640;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LIMIT = 2;
+        HAS_LIKED = 3;
+        SEND_LIKE_LIMIT = 4;
+        RECEIVE_LIKE_LIMIT = 5;
+    }
+}

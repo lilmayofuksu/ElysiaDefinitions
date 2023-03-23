@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "InviteeActivity.proto";
+message GetInviteActivityInviteeDataRsp {
+    required Retcode retcode = 1;
+    repeated InviteeActivity invitee_activity_info_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1695;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FEATURE_CLOSED = 2;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message MatrixEnterRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2325;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

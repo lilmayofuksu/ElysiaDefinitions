@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "DiceyDungeonType.proto";
+import "DiceyDungeonInfo.proto";
+message DiceyDungeonActivitySelectOrnamentReq {
+    optional uint32 tale_id = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 select_ornament_id = 3;
+    optional uint32 replace_ornament_id = 4;
+    optional bool is_abandon = 5;
+    required DiceyDungeonInfo dungeon_info = 6;
+    optional DiceyDungeonType dungeon_type = 7;
+
+    enum CmdId {
+        CMD_ID = 6516;
+    }
+}

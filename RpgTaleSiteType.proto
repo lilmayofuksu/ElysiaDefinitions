@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum RpgTaleSiteType {
+    RPG_TALE_SITE_TYPE_STORY = 1;
+    RPG_TALE_SITE_TYPE_CLUE = 2;
+    RPG_TALE_SITE_TYPE_CYCLE = 3;
+    RPG_TALE_SITE_TYPE_RANK = 4;
+    RPG_TALE_SITE_TYPE_ENDLESS = 5;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ChatworldInteractType {
+    CHATWORLD_INTERACT_TYPE_NONE = 0;
+    CHATWORLD_INTERACT_TYPE_HOLD = 1;
+    CHATWORLD_INTERACT_TYPE_UNHOLD = 2;
+}

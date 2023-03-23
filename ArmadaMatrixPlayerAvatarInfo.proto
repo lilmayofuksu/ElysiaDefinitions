@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "ArmadaMatrixAvatarState.proto";
+message ArmadaMatrixPlayerAvatarInfo {
+    optional uint32 avatar_id = 1;
+    optional ArmadaMatrixAvatarState state = 2;
+    optional uint32 cur_fatigue = 3;
+}

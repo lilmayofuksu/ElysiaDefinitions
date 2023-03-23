@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaMatrixSyncNotifyType {
+    ARMADA_MATRIX_NOTIFY_UNKNOWN = 0;
+    ARMADA_MATRIX_NOTIFY_ADVANCE = 1;
+    ARMADA_MATRIX_NOTIFY_TRANSPORT = 2;
+}

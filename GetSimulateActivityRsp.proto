@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "SimulatePlayerData.proto";
+message GetSimulateActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 percent = 3;
+    repeated SimulatePlayerData player_list = 4;
+    repeated uint32 best_avatar_id_list = 5;
+
+    enum CmdId {
+        CMD_ID = 485;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        ACTIVITY_ERROR = 3;
+    }
+}

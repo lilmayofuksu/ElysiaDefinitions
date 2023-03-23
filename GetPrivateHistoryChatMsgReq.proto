@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetPrivateHistoryChatMsgReq {
+    repeated uint32 uid_list = 1;
+
+    enum CmdId {
+        CMD_ID = 2237;
+    }
+}

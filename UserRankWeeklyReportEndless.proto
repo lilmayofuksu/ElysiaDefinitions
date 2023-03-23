@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "EndlessRewardType.proto";
+message UserRankWeeklyReportEndless {
+    optional uint32 final_boss_id = 1;
+    optional EndlessRewardType reward_type = 3;
+    optional uint32 battle_config_id = 4;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message GetGardenScheduleRsp {
+    required Retcode retcode = 1;
+    optional uint32 garden_id = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+    optional bool is_garden_opened = 5;
+
+    enum CmdId {
+        CMD_ID = 4296;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message PlayerCardMedalData {
+    optional uint32 index = 1;
+    optional uint32 medal_id = 2;
+    optional int32 extra_param = 3;
+}

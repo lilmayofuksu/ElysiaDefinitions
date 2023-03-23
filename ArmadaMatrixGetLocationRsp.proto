@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "ArmadaMatrixMapInfo.proto";
+import "ArmadaMatrixStageConfig.proto";
+import "ArmadaMatrixMemberPos.proto";
+import "ArmadaMatrixGridPos.proto";
+import "ArmadaMatrixLocationType.proto";
+message ArmadaMatrixGetLocationRsp {
+    required Retcode retcode = 1;
+    optional ArmadaMatrixLocationType location_type = 2;
+    optional uint32 level = 3;
+    required ArmadaMatrixGridPos pos = 4;
+    required ArmadaMatrixMemberPos player_info = 5;
+    required ArmadaMatrixStageConfig stage_info = 6;
+    required ArmadaMatrixMapInfo map_info = 7;
+
+    enum CmdId {
+        CMD_ID = 2820;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        NO_PLAYER = 3;
+        NO_MONSTER = 4;
+        MONSTER_DEAD = 5;
+        NOT_ARMADA_BOSS = 6;
+        NOT_JOIN = 7;
+    }
+}

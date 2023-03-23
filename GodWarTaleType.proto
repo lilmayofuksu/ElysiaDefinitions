@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum GodWarTaleType {
+    GOD_WAR_TALE_STORY_CHALLENGE = 1;
+    GOD_WAR_TALE_AVATAR_CHALLENGE = 2;
+    GOD_WAR_TALE_WEEKLY_CHALLENGE = 3;
+    GOD_WAR_TALE_LOBBY = 4;
+}

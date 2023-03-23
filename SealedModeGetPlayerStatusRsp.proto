@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "SealedModeMatchInfo.proto";
+import "SealedModePlayerStatus.proto";
+message SealedModeGetPlayerStatusRsp {
+    required Retcode retcode = 1;
+    optional SealedModePlayerStatus status = 2;
+    required SealedModeMatchInfo match_info = 3;
+
+    enum CmdId {
+        CMD_ID = 721;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

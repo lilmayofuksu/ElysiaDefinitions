@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "GardenCrop.proto";
+import "GardenSite.proto";
+message GardenActivityData {
+    optional uint32 garden_id = 1;
+    repeated GardenSite site_list = 2;
+    repeated GardenCrop crop_list = 3;
+    optional uint32 daily_harvest_num = 4;
+    optional uint32 last_grow_time = 5;
+}

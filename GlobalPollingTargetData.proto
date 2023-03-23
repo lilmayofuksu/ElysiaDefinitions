@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message GlobalPollingTargetData {
+    optional uint32 id = 1;
+    optional uint64 score_u64 = 2;
+    optional uint32 vote_num = 3;
+}

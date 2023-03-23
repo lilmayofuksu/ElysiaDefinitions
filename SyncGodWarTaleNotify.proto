@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "GodWarTale.proto";
+message SyncGodWarTaleNotify {
+    required GodWarTale tale = 1;
+
+    enum CmdId {
+        CMD_ID = 6156;
+    }
+}

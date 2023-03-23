@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message UltraEndlessTopRankRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 rank = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 5216;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_RANK = 2;
+        ALREADY_TAKEN = 3;
+    }
+}

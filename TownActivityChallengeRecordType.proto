@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum TownActivityChallengeRecordType {
+    TOWN_ACTIVITY_CHALLENGE_RECORD_IN_GAME = 1;
+    TOWN_ACTIVITY_CHALLENGE_RECORD_SETTLE_GAME = 2;
+}

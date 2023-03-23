@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message WeekDayActivity {
+    required uint32 activity_id = 1;
+    repeated uint32 stage_id_list = 2;
+    optional uint32 enter_times = 3;
+    optional uint32 begin_time = 4;
+    optional uint32 end_time = 5;
+    optional uint32 activity_end_time = 6;
+    optional uint32 exchange_times = 7;
+    optional uint32 mp_raid_next_refresh_time = 8;
+    optional uint32 mp_raid_reset_times = 9;
+    optional uint32 mp_member_today_enter_times = 10;
+    repeated uint32 challenge_reward_granted_list = 11;
+    optional uint32 activity_begin_time = 12;
+    optional uint32 force_open_time = 13;
+    optional uint32 mp_raid_score_sum = 14;
+    optional bool is_get_mp_raid_special_reward = 15;
+    repeated uint32 raid_score_reward_list = 16;
+    optional uint32 schedule_id = 17;
+}

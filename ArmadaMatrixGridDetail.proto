@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ArmadaMatrixShopInfo.proto";
+import "ArmadaMatrixStageConfig.proto";
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixGridDetail {
+    required ArmadaMatrixGridPos pos = 1;
+    required ArmadaMatrixStageConfig stage_info = 2;
+    required ArmadaMatrixShopInfo shop_info = 3;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum AvatarTeamType {
+    AVATAR_TEAM_NORMAL = 1;
+    AVATAR_TEAM_VIRTUAL = 2;
+    AVATAR_TEAM_DLC = 3;
+    AVATAR_TEAM_SC_DLC = 4;
+}

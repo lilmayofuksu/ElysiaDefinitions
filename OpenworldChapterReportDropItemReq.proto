@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message OpenworldChapterReportDropItemReq {
+    optional uint32 map_id = 1;
+    repeated DropItem drop_item_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4685;
+    }
+}

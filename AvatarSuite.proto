@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ObjSelected.proto";
+message AvatarSuite {
+    required ObjSelected avatar = 1;
+    required ObjSelected weapon = 2;
+    repeated ObjSelected stigmata_list = 3;
+    required ObjSelected skill = 4;
+}

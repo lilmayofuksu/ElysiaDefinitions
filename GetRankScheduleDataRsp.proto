@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "RankScheduleData.proto";
+message GetRankScheduleDataRsp {
+    required Retcode retcode = 1;
+    repeated RankScheduleData rank_schedule_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4234;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

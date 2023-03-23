@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RpgTaleEvent.proto";
+message TriggerRpgTaleStageEventRsp {
+    required Retcode retcode = 1;
+    required RpgTaleEvent event_data = 2;
+    optional uint32 tale_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2318;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

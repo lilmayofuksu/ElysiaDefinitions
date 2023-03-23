@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "HuntActivityEntityType.proto";
+message OpenworldHuntActivityCommonStateChangeReq {
+    optional HuntActivityEntityType type = 1;
+    optional uint32 wanted_state = 2;
+    optional uint32 map_id = 3;
+    optional uint32 entity_id = 4;
+    optional string report_ext = 5;
+
+    enum CmdId {
+        CMD_ID = 4604;
+    }
+}

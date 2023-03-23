@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum RanchSynthesisType {
+    RANCH_SYNSHESIS_WITHOUT_FORMULA = 1;
+    RANCH_SYNSHESIS_WITH_FORMULA = 2;
+}

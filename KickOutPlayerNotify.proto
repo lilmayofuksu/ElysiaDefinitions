@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message KickOutPlayerNotify {
+    optional KickOutReason reason = 1;
+
+    enum CmdId {
+        CMD_ID = 5007;
+    }
+    enum KickOutReason {
+        REASON_NONE = 0;
+        REASON_MTP_ERROR = 1;
+        REASON_PLATFORM_ERROR = 2;
+        REASON_SQUEEZE = 3;
+        REASON_LOGIN_UNFINISH = 4;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "Shop.proto";
+message GetSingleShopWithoutRefreshRsp {
+    required Retcode retcode = 1;
+    required Shop shop = 2;
+
+    enum CmdId {
+        CMD_ID = 1618;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

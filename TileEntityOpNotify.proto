@@ -1,0 +1,40 @@
+syntax = "proto2";
+
+import "TileWaitSelectPath.proto";
+import "TileEntity.proto";
+import "TileTrigger.proto";
+import "TileMapCell.proto";
+import "TileMoveType.proto";
+message TileEntityOpNotify {
+    optional uint32 tower_id = 1;
+    optional uint32 floor_id = 2;
+    repeated TileEntityOp entity_op_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4914;
+    }
+    message StatusOp {
+        optional uint32 status = 1;
+    }
+    message MoveOp {
+        repeated uint32 path_cell_id_list = 1;
+        optional TileMoveType move_type = 2;
+        optional uint32 direction = 3;
+    }
+    message UpdateCellOp {
+        repeated TileMapCell cell_list = 1;
+        repeated TileTrigger trigger_list = 2;
+    }
+    message UpdateEntityOp {
+        repeated TileEntity create_entity_list = 1;
+        repeated uint32 delete_entity_list = 2;
+    }
+    message TileEntityOp {
+        optional uint32 unique_id = 1;
+        required MoveOp move = 2;
+        required TileWaitSelectPath wait_select_path = 3;
+        required UpdateCellOp update_cell = 4;
+        required UpdateEntityOp update_entity = 5;
+        required StatusOp status = 6;
+    }
+}

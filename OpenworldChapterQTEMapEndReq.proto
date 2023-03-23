@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "QTEMapEndStatus.proto";
+message OpenworldChapterQTEMapEndReq {
+    optional uint32 map_id = 1;
+    optional uint32 qte_map_id = 2;
+    optional uint32 normal_drop_num = 3;
+    optional bool is_got_last_reward = 4;
+    optional QTEMapEndStatus end_status = 5;
+    optional string report_ext = 6;
+
+    enum CmdId {
+        CMD_ID = 4683;
+    }
+}

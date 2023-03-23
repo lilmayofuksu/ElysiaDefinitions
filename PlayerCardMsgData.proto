@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "PlayerCardMsg.proto";
+message PlayerCardMsgData {
+    optional uint32 msg_index = 1;
+    optional uint32 msg_config = 2;
+    repeated PlayerCardMsg msg_list = 3;
+}

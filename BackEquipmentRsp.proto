@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "Material.proto";
+message BackEquipmentRsp {
+    required Retcode retcode = 1;
+    repeated uint32 unique_id_list = 2;
+    repeated Material material_list = 3;
+    optional uint32 remain_back_times = 4;
+
+    enum CmdId {
+        CMD_ID = 3664;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        CONSUME_ITEM_NOT_EXIST = 3;
+        CONSUME_ITEM_IN_USE = 4;
+        CONSUME_ITEM_PROTECTED = 5;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 6;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 7;
+        EQUIPMENT_NOT_OPEN = 8;
+        TIMES_LACK = 9;
+        CONSUME_ITEM_IN_FACILITY = 10;
+        CONSUME_ITEM_GRAND_KEY = 11;
+        CONSUME_ITEM_REPEAT = 12;
+        COST_GACHA_TICKET = 13;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 14;
+    }
+}

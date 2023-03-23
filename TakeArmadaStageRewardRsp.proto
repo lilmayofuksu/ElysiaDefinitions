@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeArmadaStageRewardRsp {
+    required Retcode retcode = 1;
+    repeated uint32 reward_id_list = 2;
+    repeated RewardData reward_list = 3;
+    optional uint32 kill_reward_material_id = 4;
+    optional uint32 kill_reward_material_num = 5;
+
+    enum CmdId {
+        CMD_ID = 2676;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        TIME_INVALID = 3;
+        NO_BOSS = 4;
+        HAS_TAKE = 5;
+        NOT_FIGHT = 6;
+        BOSS_NOT_FINISH = 7;
+    }
+}

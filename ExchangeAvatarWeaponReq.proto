@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ExchangeAvatarWeaponReq {
+    required uint32 avatar_id_1 = 1;
+    required uint32 avatar_id_2 = 2;
+
+    enum CmdId {
+        CMD_ID = 135;
+    }
+}

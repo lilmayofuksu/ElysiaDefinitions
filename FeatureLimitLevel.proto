@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum FeatureLimitLevel {
+    LIMIT_LEVEL_ALL = 0;
+    LIMIT_LEVEL_MAIN = 100;
+    LIMIT_LEVEL_CHAT = 200;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum InviteeActivityType {
+    INVITEE_ACTIVITY_TYPE_NONE = 0;
+    INVITEE_ACTIVITY_TYPE_NEWBIE = 1;
+    INVITEE_ACTIVITY_TYPE_GOBACK = 2;
+}

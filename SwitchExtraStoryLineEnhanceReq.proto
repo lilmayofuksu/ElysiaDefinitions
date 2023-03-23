@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SwitchExtraStoryLineEnhanceReq {
+
+    enum CmdId {
+        CMD_ID = 1039;
+    }
+}

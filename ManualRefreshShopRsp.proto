@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message ManualRefreshShopRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 206;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SHOP_NOT_EXIST = 2;
+        REFRESH_TIMES_LACK = 3;
+        HCOIN_LACK = 4;
+        SHOP_CLOSE = 5;
+        NO_NEED_REFRESH = 6;
+        MATERIAL_LACK = 7;
+    }
+}

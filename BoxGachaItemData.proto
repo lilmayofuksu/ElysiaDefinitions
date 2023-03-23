@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message BoxGachaItemData {
+    optional uint32 id = 1;
+    optional uint32 total_num = 2;
+    optional uint32 gacha_num = 3;
+    optional uint32 item_num_per_drop = 4;
+}

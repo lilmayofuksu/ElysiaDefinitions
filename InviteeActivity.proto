@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "InviteeActivityType.proto";
+message InviteeActivity {
+    optional uint32 schedule_id = 1;
+    optional InviteeActivityType activity_type = 2;
+    optional uint32 taken_invitee_reward_id = 3;
+    optional uint32 end_time = 4;
+}

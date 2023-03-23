@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeGodWarRoleStoryRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    optional uint32 story_id = 3;
+    required RewardData reward = 4;
+
+    enum CmdId {
+        CMD_ID = 6188;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        RELATION_LEVEL_LACK = 2;
+        MISSION_UNFINISH = 3;
+        HAS_TAKE = 4;
+        FEATURE_CLOSE = 5;
+    }
+}

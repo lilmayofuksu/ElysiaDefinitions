@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "Material.proto";
+message ExchangeRaffleMaterialRsp {
+    required Retcode retcode = 1;
+    repeated Material get_material_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3891;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_NOT_ENOUGH = 2;
+        NOT_OPEN = 3;
+    }
+}

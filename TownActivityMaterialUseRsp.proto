@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityMaterialUseRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+    optional uint32 material_id = 3;
+
+    enum CmdId {
+        CMD_ID = 6471;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        NOT_USABLE = 3;
+        INVALID_TARGET = 4;
+        FORBID = 5;
+    }
+}

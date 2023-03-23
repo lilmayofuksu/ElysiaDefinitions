@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaMatrixItemType {
+    ARMADA_MATRIX_NONE = 0;
+    ARMADA_MATRIX_ITEM = 2;
+    ARMADA_MATRIX_BUFF = 3;
+}

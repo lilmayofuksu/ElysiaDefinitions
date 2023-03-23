@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message TeamAssaultActivityBeginRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4021;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        REPEAT_REQ = 3;
+        LACK_TIMES = 4;
+        AVATAR_RESTRICT = 5;
+    }
+}

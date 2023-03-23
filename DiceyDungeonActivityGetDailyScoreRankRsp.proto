@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message DiceyDungeonActivityGetDailyScoreRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 dungeon_id = 3;
+    required RankShowData rank_data = 4;
+    optional uint32 rank_percent = 5;
+
+    enum CmdId {
+        CMD_ID = 6521;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        SCHEDULE_ERROR = 3;
+    }
+}

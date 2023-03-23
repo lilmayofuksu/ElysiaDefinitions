@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ChooseVirtualDefaultAvatarNotify {
+    optional uint32 group_id = 1;
+    repeated uint32 candidate_avatar_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3516;
+    }
+}

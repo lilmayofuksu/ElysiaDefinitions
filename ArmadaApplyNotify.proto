@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ArmadaApplyNotifyType.proto";
+message ArmadaApplyNotify {
+    optional ArmadaApplyNotifyType type = 1;
+    optional uint32 target_uid = 2;
+
+    enum CmdId {
+        CMD_ID = 2682;
+    }
+}

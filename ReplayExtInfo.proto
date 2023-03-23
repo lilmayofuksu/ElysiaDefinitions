@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "ReplayExBossInfo.proto";
+message ReplayExtInfo {
+    required ReplayExBossInfo ex_boss_info = 1;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ReportOpenworldSpawnPointRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional string point_info = 3;
+
+    enum CmdId {
+        CMD_ID = 4487;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_ERROR = 2;
+    }
+}

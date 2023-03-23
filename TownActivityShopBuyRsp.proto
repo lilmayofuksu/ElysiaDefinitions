@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityShopBuyRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+    optional uint32 goods_id = 3;
+    optional uint32 left_buy_times = 4;
+
+    enum CmdId {
+        CMD_ID = 6469;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        COIN_LACK = 2;
+        SOLD = 3;
+        FORBID = 4;
+    }
+}

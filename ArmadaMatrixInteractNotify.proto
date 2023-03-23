@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ArmadaMatrixInteractNotify {
+    optional InteractType type = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 interact_uid = 3;
+    optional uint32 supply_add = 4;
+    optional uint32 explore_add = 5;
+
+    enum CmdId {
+        CMD_ID = 2813;
+    }
+    enum InteractType {
+        INTERACT_TYPE_NONE = 0;
+        INTERACT_TYPE_SUPPLY = 1;
+        INTERACT_TYPE_BOSS = 2;
+    }
+}

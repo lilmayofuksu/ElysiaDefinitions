@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "DormVisitRecord.proto";
+message GetDormSnsDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 be_liked_num = 2;
+    repeated DormVisitRecord record_list = 3;
+    optional uint32 be_visit_num = 4;
+
+    enum CmdId {
+        CMD_ID = 638;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LIMIT = 2;
+    }
+}

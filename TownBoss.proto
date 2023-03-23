@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message TownBoss {
+    optional uint32 monster_id = 1;
+    optional uint32 unique_id = 2;
+    optional uint32 strength = 3;
+    optional uint32 left_hp_ratio = 4;
+    optional uint32 born_round = 5;
+    optional uint32 next_boss_born_round = 6;
+    optional uint32 next_boss_monster_id = 7;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ExBossSingleBossScoreReward {
+    optional uint32 boss_id = 1;
+    optional uint32 max_settle_score = 2;
+}

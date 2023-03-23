@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum MechaSlot {
+    MECHA_SLOT_NONE = 0;
+    MECHA_SLOT_LEFT_1 = 1;
+    MECHA_SLOT_LEFT_2 = 2;
+    MECHA_SLOT_CENTER = 3;
+    MECHA_SLOT_RIGHT_2 = 4;
+    MECHA_SLOT_RIGHT_1 = 5;
+}

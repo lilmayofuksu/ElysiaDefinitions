@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldHuntActivityFinishQuestRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 quest_id = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 4609;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        QUEST_NOT_EXIST = 2;
+        QUEST_NOT_DOING = 3;
+        MAP_NOT_EXIST = 4;
+        NOT_IN_MAP = 5;
+    }
+}

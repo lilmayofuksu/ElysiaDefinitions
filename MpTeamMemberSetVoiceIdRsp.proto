@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message MpTeamMemberSetVoiceIdRsp {
+    required Retcode retcode = 1;
+    optional uint32 uid = 2;
+    optional uint32 voice_id = 3;
+
+    enum CmdId {
+        CMD_ID = 397;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+    }
+}

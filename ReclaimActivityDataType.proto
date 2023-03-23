@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ReclaimActivityDataType {
+    RECLAIM_ACTIVITY_DATA_ALL = 0;
+    RECLAIM_ACTIVITY_DATA_AVATAR = 1;
+    RECLAIM_ACTIVITY_DATA_LEVEL = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetExtraStoryAchieveRewardReq {
+    required uint32 achieve_id = 1;
+
+    enum CmdId {
+        CMD_ID = 237;
+    }
+}

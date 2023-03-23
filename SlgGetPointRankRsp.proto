@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "UserRankData.proto";
+message SlgGetPointRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 battle_schedule_id = 2;
+    optional uint32 point_id = 3;
+    optional uint32 player_score = 4;
+    repeated UserRankData rank_list = 5;
+
+    enum CmdId {
+        CMD_ID = 6065;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+        NOT_IN_BATTLE = 3;
+        POINT_ERROR = 4;
+    }
+}

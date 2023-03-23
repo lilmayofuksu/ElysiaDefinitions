@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "TvtBattleResult.proto";
+message TvtBattleSettleNotify {
+    optional string transaction_str = 1;
+    optional uint32 battle_id = 2;
+    required TvtBattleResult battle_result = 3;
+
+    enum CmdId {
+        CMD_ID = 3354;
+    }
+}

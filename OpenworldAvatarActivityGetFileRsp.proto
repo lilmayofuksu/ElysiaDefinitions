@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message OpenworldAvatarActivityGetFileRsp {
+    required Retcode retcode = 1;
+    repeated uint32 file_id_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4563;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

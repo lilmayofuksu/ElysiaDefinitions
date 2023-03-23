@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum PrivilegeProductType {
+    PRIVILEGE_PRODUCT_ALL = 0;
+    PRIVILEGE_PRODUCT_NEWBIE = 1;
+    PRIVILEGE_PRODUCT_GOBACK = 2;
+    PRIVILEGE_PRODUCT_ADVENTURE = 3;
+}

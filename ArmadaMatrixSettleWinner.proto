@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaMatrixSettleWinner {
+    optional uint32 uid = 1;
+    optional uint32 value = 2;
+}

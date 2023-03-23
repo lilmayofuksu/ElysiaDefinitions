@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum GodWarWeightType {
+    GOD_WAR_WEIGHT_NUM = 1;
+    GOD_WAR_WEIGHT_OVERALL = 2;
+}

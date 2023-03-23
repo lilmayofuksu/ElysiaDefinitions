@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ArmadaMatrixTeamInfo.proto";
+message ArmadaMatrixSetAvatarTeamReq {
+    optional uint32 index = 1;
+    required ArmadaMatrixTeamInfo team_info = 2;
+
+    enum CmdId {
+        CMD_ID = 2746;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GetHasGotFurnitureIdListRsp {
+    required Retcode retcode = 1;
+    repeated uint32 furniture_id_list = 2;
+    repeated uint32 has_unlock_furniture_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 620;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

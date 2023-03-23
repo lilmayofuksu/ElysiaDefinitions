@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeOpenworldCycleFinishRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    optional uint32 map_id = 3;
+    optional uint32 cycle = 4;
+
+    enum CmdId {
+        CMD_ID = 4491;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STORY_NOT_FINISH = 2;
+        CYCLE_NOT_MATCH = 3;
+        MAP_NOT_FOUND = 4;
+    }
+}

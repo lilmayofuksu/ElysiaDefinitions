@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "MasterPupilType.proto";
+import "MasterPupilOpType.proto";
+import "MasterPupilRetcode.proto";
+message DealMasterPupilRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    optional uint32 uid = 2;
+    optional MasterPupilOpType op = 3;
+    optional MasterPupilType type = 4;
+
+    enum CmdId {
+        CMD_ID = 573;
+    }
+}

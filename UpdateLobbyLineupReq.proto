@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "ScDLCMpAvatar.proto";
+import "ReclaimMpAvatar.proto";
+import "MpTeamMemberInfo.proto";
+message UpdateLobbyLineupReq {
+    optional uint32 avatar_id = 1;
+    required MpTeamMemberInfo member_info = 2;
+    optional uint32 avatar_trial_id = 4;
+    optional uint32 reclaim_avatar_id = 5;
+    required ReclaimMpAvatar reclaim_avatar_info = 6;
+    optional uint32 elf_id = 7;
+    repeated uint32 backup_avatar_id_list = 8;
+    optional uint32 sc_dlc_avatar_id = 9;
+    required ScDLCMpAvatar sc_dlc_avatar_info = 10;
+
+    enum CmdId {
+        CMD_ID = 307;
+    }
+}

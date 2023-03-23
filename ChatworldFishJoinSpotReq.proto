@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ChatworldFishInfo.proto";
+message ChatworldFishJoinSpotReq {
+    optional uint32 fish_spot_id = 1;
+    optional uint32 seat_idx = 2;
+    required ChatworldFishInfo fish_info = 3;
+
+    enum CmdId {
+        CMD_ID = 2429;
+    }
+}

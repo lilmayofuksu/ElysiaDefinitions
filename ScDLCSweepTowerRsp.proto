@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ScDLCSweepTowerRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 6348;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CANNOT_SWEEP = 2;
+    }
+}

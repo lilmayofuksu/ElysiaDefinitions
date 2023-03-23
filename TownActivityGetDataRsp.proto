@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "TownActivity.proto";
+message TownActivityGetDataRsp {
+    required Retcode retcode = 1;
+    required TownActivity town = 2;
+
+    enum CmdId {
+        CMD_ID = 6451;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

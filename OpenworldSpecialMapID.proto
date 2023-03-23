@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum OpenworldSpecialMapID {
+    OPENWORLD_SAKURA_MAP_ID = 1;
+    OPENWORLD_TM_MAP_ID = 2;
+    OPENWORLD_DLC_MAP_ID = 401;
+    OPENWORLD_SC_DLC_MAP_ID = 601;
+    OPENWORLD_CHAPTER_29_OW = 801;
+    OPENWORLD_CHAPTER_31_OW = 1001;
+}

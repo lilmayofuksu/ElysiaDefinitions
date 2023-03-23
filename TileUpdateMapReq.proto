@@ -1,0 +1,37 @@
+syntax = "proto2";
+
+import "TileMark.proto";
+import "TileEntity.proto";
+import "TileTrigger.proto";
+import "TileMapCell.proto";
+message TileUpdateMapReq {
+    optional uint32 tower_id = 1;
+    optional uint32 floor_id = 2;
+    repeated TileMapCell cell_list = 3;
+    repeated TileTrigger trigger_list = 4;
+    repeated TileEntity create_entity_list = 5;
+    repeated MoveEntity move_entity_list = 6;
+    repeated uint32 delete_entity_list = 7;
+    repeated TileMark mark_list = 8;
+    repeated OuterValue outer_value_list = 9;
+
+    enum OuterValue {
+        NONE = 0;
+        RPG_OVERALL = 1;
+    }
+    enum CmdId {
+        CMD_ID = 4902;
+    }
+    message MoveEntity {
+        optional uint32 unique_id = 1;
+        optional uint32 to_position = 2;
+        repeated uint32 path_cell_id_list = 3;
+        optional uint32 direction = 4;
+        optional uint32 saved_position = 5;
+    }
+    message OuterValue {
+        optional OuterValue type = 1;
+        optional uint32 key = 2;
+        optional uint32 value = 3;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeChapterCompensationRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1675;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKEN = 2;
+        NO_REWARD = 3;
+        CHAPTER_NOT_FINISH = 4;
+    }
+}

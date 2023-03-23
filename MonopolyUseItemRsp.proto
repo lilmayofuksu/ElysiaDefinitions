@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message MonopolyUseItemRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3859;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_MATERIAL = 2;
+        INVALID_AREA = 3;
+    }
+}

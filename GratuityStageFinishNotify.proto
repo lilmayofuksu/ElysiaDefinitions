@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "GratuityStage.proto";
+message GratuityStageFinishNotify {
+    optional uint32 schedule_id = 1;
+    required GratuityStage stage = 2;
+
+    enum CmdId {
+        CMD_ID = 4121;
+    }
+}

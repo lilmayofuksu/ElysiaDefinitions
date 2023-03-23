@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldAvatarActivityTakeQuestRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+    optional uint32 map_id = 3;
+    optional uint32 quest_id = 4;
+
+    enum CmdId {
+        CMD_ID = 4557;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        QUEST_NOT_EXIST = 2;
+        NOT_FINISH = 3;
+    }
+}

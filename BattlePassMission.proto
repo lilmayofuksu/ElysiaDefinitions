@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message BattlePassMission {
+    optional uint32 mission_id = 1;
+    optional uint32 mission_finish_times = 2;
+}

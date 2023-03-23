@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message MonsterCardStarUpRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 unique_id = 3;
+
+    enum CmdId {
+        CMD_ID = 5925;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FRAGMENT_LACK = 2;
+        LEVEL_LACK = 3;
+        STAR_LIMIT = 4;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message DLCTowerStageBeginRsp {
+    required Retcode retcode = 1;
+    optional uint32 progress = 2;
+
+    enum CmdId {
+        CMD_ID = 3564;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_BEGIN = 2;
+        PROGRESS_FULL = 3;
+        AVATAR_ERROR = 4;
+        AVATAR_DIE = 5;
+    }
+}

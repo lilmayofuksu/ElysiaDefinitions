@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message OpenworldAvatarActivityCultivateRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4559;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        CONDITION_NOT_MEET = 3;
+        MAX_LEVEL = 4;
+    }
+}

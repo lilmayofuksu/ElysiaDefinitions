@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaMatrixRankItem {
+    optional uint32 uid = 1;
+    optional uint32 explore_value = 2;
+}

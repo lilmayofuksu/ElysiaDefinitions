@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message AvatarEquipBuff {
+    optional uint32 avatar_id = 1;
+    optional string buff_name = 2;
+    optional uint32 buff_num = 3;
+}

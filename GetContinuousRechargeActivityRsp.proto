@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message GetContinuousRechargeActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 progress = 3;
+    optional uint32 today_vip_point = 4;
+    repeated uint32 has_take_reward_progress_list = 5;
+    optional uint32 last_refresh_time = 6;
+
+    enum CmdId {
+        CMD_ID = 4168;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

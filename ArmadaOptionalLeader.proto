@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaOptionalLeader {
+    required uint32 id = 1;
+    required uint32 contribution = 2;
+}

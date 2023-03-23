@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ChatMsg.proto";
+import "RoomMode.proto";
+message RecvRoomChatMsgNotify {
+    optional RoomMode room_mode = 1;
+    required ChatMsg chat_msg = 2;
+
+    enum CmdId {
+        CMD_ID = 3164;
+    }
+}

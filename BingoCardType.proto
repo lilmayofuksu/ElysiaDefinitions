@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum BingoCardType {
+    BINGO_CARD_WRONG = 0;
+    BINGO_CARD_CORRECT = 1;
+}

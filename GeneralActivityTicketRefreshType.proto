@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GeneralActivityTicketRefreshType {
+    GENERAL_ACTIVITY_TICKET_REFRESH_NONE = 0;
+    GENERAL_ACTIVITY_TICKET_REFRESH_DAILY = 1;
+    GENERAL_ACTIVITY_TICKET_REFRESH_WEEKLY = 2;
+}

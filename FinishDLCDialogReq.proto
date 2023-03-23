@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message FinishDLCDialogReq {
+    optional uint32 dialog_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3578;
+    }
+}

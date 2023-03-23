@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum RpgTaleRoleStatus {
+    RPG_TALE_ROLE_STATUS_INVALID = 0;
+    RPG_TALE_ROLE_STATUS_LOCKED = 1;
+    RPG_TALE_ROLE_STATUS_UNLOCKED = 2;
+    RPG_TALE_ROLE_STATUS_AWAY = 3;
+}

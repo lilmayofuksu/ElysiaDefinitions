@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message CommonCdCheckNotify {
+    optional uint32 end_time = 1;
+
+    enum CmdId {
+        CMD_ID = 5003;
+    }
+}

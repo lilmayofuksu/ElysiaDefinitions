@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message TileLoadSavedPositionRsp {
+    required Retcode retcode = 1;
+    optional uint32 position = 2;
+
+    enum CmdId {
+        CMD_ID = 4922;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_SAVED = 2;
+    }
+}

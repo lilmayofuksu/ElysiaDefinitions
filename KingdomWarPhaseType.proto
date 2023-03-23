@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum KingdomWarPhaseType {
+    KINGDOM_WAR_PHASE_NONE = 0;
+    KINGDOM_WAR_PHASE_OCCUPY_POINT = 1;
+    KINGDOM_WAR_PHASE_ATTACK_AND_DEFENSE = 2;
+    KINGDOM_WAR_PHASE_BATTLE_LINE = 3;
+}

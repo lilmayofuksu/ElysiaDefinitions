@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+message LobbyStageBeginRsp {
+    required Retcode retcode = 1;
+    optional string fight_server_ip = 2;
+    optional uint32 fight_server_port = 3;
+    optional uint32 lobby_id = 4;
+    repeated uint32 uid_list = 5;
+    optional uint32 leader_uid = 6;
+
+    enum CmdId {
+        CMD_ID = 312;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_LOBBY = 2;
+        LOBBY_FIGHTING = 3;
+        NOT_LEADER = 4;
+        MEMBER_STATUS_ERROR = 5;
+        SYSTEM_ERROR = 6;
+        MEMBER_NOT_ENTER_LOBBY = 7;
+        MEMBER_NOT_ONLINE = 8;
+        MEMBER_DUPLICATE = 9;
+        MEMBER_NOT_ENOUGH = 10;
+    }
+}

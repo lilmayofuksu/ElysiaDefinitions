@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message OpenworldChapterMoonChallengeTower {
+    optional uint32 tower_id = 1;
+    optional uint32 max_score = 2;
+    optional uint32 save_point_floor = 3;
+    optional uint32 max_finish_floor = 4;
+}

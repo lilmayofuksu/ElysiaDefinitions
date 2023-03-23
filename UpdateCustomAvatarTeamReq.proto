@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "CustomAvatarTeam.proto";
+message UpdateCustomAvatarTeamReq {
+    required CustomAvatarTeam team = 1;
+
+    enum CmdId {
+        CMD_ID = 269;
+    }
+}

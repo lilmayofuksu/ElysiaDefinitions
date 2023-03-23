@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message RogueTowerLevelUpBuffRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+    optional uint32 buff_id = 3;
+    optional uint32 buff_level = 4;
+
+    enum CmdId {
+        CMD_ID = 4371;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_BUFF = 2;
+        COIN_LACK = 3;
+        LEVEL_LIMIT = 4;
+    }
+}

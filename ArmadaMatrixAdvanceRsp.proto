@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixAdvanceRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    required ArmadaMatrixGridPos cur_pos = 2;
+
+    enum CmdId {
+        CMD_ID = 2739;
+    }
+}

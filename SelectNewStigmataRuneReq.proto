@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "StigmataRefineTimesType.proto";
+message SelectNewStigmataRuneReq {
+    optional uint32 unique_id = 1;
+    required bool is_select = 2;
+    optional StigmataRefineTimesType times_type = 3;
+    optional uint32 select_unique_id = 4;
+
+    enum CmdId {
+        CMD_ID = 195;
+    }
+}

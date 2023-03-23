@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "GardenSite.proto";
+message GardenRefreshSiteRsp {
+    required Retcode retcode = 1;
+    optional uint32 garden_id = 2;
+    repeated GardenSite site_list = 3;
+    optional uint32 last_grow_time = 4;
+
+    enum CmdId {
+        CMD_ID = 4294;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

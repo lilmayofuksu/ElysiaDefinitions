@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message AddGoodfeelRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 155;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+    }
+}

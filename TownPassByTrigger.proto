@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message TownPassByTrigger {
+    optional uint32 position = 1;
+    optional uint32 skill_id = 2;
+    optional uint32 building_unique_id = 3;
+}

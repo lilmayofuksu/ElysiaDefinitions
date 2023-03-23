@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum ChatworldType {
+    CHATWORLD_TYPE_NONE = 0;
+    CHATWORLD_TYPE_PLAIN = 1;
+    CHATWORLD_TYPE_KINGDOM_WAR = 2;
+    CHATWORLD_TYPE_BRAWL = 3;
+    CHATWORLD_TYPE_STANCE = 4;
+}

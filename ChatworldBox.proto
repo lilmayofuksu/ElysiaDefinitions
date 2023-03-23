@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ChatworldBox {
+    optional uint32 box_series_id = 1;
+    optional uint32 schedule_id = 3;
+    optional uint32 expire_time = 4;
+}

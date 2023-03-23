@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message InviteRoomRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3161;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ROOM = 2;
+        ROOM_IN_MATCHING = 3;
+        IS_IN_BATTLE = 4;
+        TOO_FREQUENT = 5;
+        INVITE_SELF = 6;
+        NO_SCHEDULE = 7;
+    }
+}

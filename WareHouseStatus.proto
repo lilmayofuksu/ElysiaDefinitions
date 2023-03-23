@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum WareHouseStatus {
+    WAREHOUSE_STATUS_NONE = 0;
+    WAREHOUSE_STATUS_NORMAL = 1;
+    WAREHOUSE_STATUS_DEMANDING = 2;
+    WAREHOUSE_STATUS_FINISH = 3;
+    WAREHOUSE_STATUS_CD = 4;
+}

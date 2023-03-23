@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+import "RpgTaleStageEnterTimesLimit.proto";
+import "RpgTaleQAvatarBattle.proto";
+import "RpgTaleAbility.proto";
+import "RpgTaleTotalScoreDrop.proto";
+import "RpgTaleStage.proto";
+import "RpgTaleOverall.proto";
+import "RpgTaleArea.proto";
+import "RpgTaleSite.proto";
+message RpgTaleData {
+    optional uint32 tale_id = 1;
+    repeated RpgTaleSite site_list = 2;
+    optional uint32 cur_site_id = 3;
+    repeated uint32 reward_taken_collection_count_list = 4;
+    optional uint32 end_time = 5;
+    repeated uint32 finished_event_id_list = 8;
+    repeated RpgTaleArea area_list = 9;
+    repeated RpgTaleOverall overall_list = 10;
+    optional uint32 schedule_id = 11;
+    repeated RpgTaleStage stage_list = 12;
+    repeated RpgTaleTotalScoreDrop total_score_drop_list = 13;
+    repeated RpgTaleAbility ability_list = 14;
+    optional uint32 site_refresh_num = 15;
+    optional uint32 last_reset_site_refresh_num_time = 16;
+    required RpgTaleQAvatarBattle qavatar_battle = 17;
+    repeated RpgTaleStageEnterTimesLimit stage_enter_times_limit_list = 18;
+}

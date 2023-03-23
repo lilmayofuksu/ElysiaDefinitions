@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldChapterTalent {
+    optional uint32 talent_id = 1;
+    optional uint32 talent_level = 2;
+}

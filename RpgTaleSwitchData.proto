@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message RpgTaleSwitchData {
+    optional uint32 tale_id = 1;
+    optional uint32 site_id = 2;
+}

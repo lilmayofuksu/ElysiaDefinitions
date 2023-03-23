@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message DelFriendRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+
+    enum CmdId {
+        CMD_ID = 69;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TARGET_NOT_FRIEND = 2;
+        REDIS_MULTI_ERROR = 3;
+        MASTER_PUPIL = 4;
+    }
+}

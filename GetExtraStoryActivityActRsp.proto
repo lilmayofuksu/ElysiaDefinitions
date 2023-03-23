@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ExtraStoryAct.proto";
+message GetExtraStoryActivityActRsp {
+    required Retcode retcode = 1;
+    repeated ExtraStoryAct act_list = 2;
+
+    enum CmdId {
+        CMD_ID = 234;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CHAPTER_NOT_EXIST = 2;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ExitRoomReq {
+
+    enum CmdId {
+        CMD_ID = 3157;
+    }
+}

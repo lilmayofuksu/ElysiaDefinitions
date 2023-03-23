@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum StigmataPosition {
+    STIGMATA_UP = 1;
+    STIGMATA_MID = 2;
+    STIGMATA_DOWN = 3;
+    STIGMATA_MAX = 4;
+}

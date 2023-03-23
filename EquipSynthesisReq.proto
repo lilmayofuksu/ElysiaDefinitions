@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "EquipmentItem.proto";
+import "Material.proto";
+message EquipSynthesisReq {
+    required Material material = 1;
+    required EquipmentItem equip_item = 2;
+
+    enum CmdId {
+        CMD_ID = 478;
+    }
+}

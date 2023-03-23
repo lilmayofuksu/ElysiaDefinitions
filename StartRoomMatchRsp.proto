@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "RoomMode.proto";
+message StartRoomMatchRsp {
+    required Retcode retcode = 1;
+    optional RoomMode room_mode = 2;
+
+    enum CmdId {
+        CMD_ID = 3166;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TOO_FREQUENT = 2;
+        ALREADY_IN_MATCH = 3;
+        IS_IN_BATTLE = 4;
+        IN_CD = 5;
+        TIMES_LACK = 6;
+        STAGE_NOT_IN_SCHEDULE = 7;
+        IS_NOT_READY = 8;
+        NO_SCHEDULE = 9;
+        FEATURE_LIMIT = 10;
+        PUNISHED = 11;
+    }
+}

@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+message SetChatgroupRsp {
+    required Retcode retcode = 1;
+    optional uint32 chatgroup_id = 2;
+    optional string name = 3;
+    optional string notice = 4;
+    optional uint32 icon_id = 5;
+    repeated uint32 label_id_list = 6;
+    optional string old_name = 7;
+    optional string old_notice = 8;
+    optional string audit_name = 9;
+    optional string audit_notice = 10;
+    optional uint32 cd_end_time = 11;
+
+    enum CmdId {
+        CMD_ID = 2207;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_CREATER = 2;
+        SENSITIVE_WORD = 3;
+        LABEL_ERROR = 4;
+        NAME_FORMAT_ERROR = 5;
+        NOTICE_FORMAT_ERROR = 6;
+        FORBIDDEN = 7;
+        IN_CD = 8;
+        IN_AUDIT = 9;
+    }
+}

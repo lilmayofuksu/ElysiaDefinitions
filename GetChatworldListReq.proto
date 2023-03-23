@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message GetChatworldListReq {
+    optional uint32 start_id = 1;
+    optional uint32 end_id = 2;
+    optional uint32 scene_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2411;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardItemData.proto";
+import "CompensationType.proto";
+message TakeAdventureCompensationRsp {
+    required Retcode retcode = 1;
+    repeated CompensationType type_list = 2;
+    repeated RewardItemData item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3919;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+    }
+}

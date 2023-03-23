@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message BossChallengeActivityGetStageRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 rank = 2;
+    optional uint32 rank_ratio = 3;
+
+    enum CmdId {
+        CMD_ID = 4063;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

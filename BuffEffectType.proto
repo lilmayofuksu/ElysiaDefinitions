@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum BuffEffectType {
+    BUFF_EFFECT_COMMANDER_EXP = 1;
+    BUFF_EFFECT_AVATAR_EXP = 2;
+    BUFF_EFFECT_SCOIN = 3;
+    BUFF_EFFECT_NEWBIE = 4;
+    BUFF_EFFECT_GOBACK = 5;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum PhonePendantOpType {
+    PHONE_PENDANT_WEAR = 1;
+    PHONE_PENDANT_OFF = 2;
+}

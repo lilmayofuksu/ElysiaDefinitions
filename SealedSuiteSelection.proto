@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "AvatarSuite.proto";
+import "SealedSuiteSelectionStep.proto";
+import "SealedSuiteSelectionStatus.proto";
+message SealedSuiteSelection {
+    optional SealedSuiteSelectionStatus status = 1;
+    optional uint32 begin_time = 2;
+    optional SealedSuiteSelectionStep step = 3;
+    repeated uint32 choice_list = 4;
+    repeated AvatarSuite avatar_suite_list = 5;
+}

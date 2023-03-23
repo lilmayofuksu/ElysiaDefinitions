@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ReportOpenworldAreaInfoReq {
+    optional uint32 map_id = 1;
+    optional uint32 area_id = 2;
+    optional string area_info = 3;
+
+    enum CmdId {
+        CMD_ID = 4538;
+    }
+}

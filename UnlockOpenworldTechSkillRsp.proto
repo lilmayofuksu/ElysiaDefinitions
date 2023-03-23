@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message UnlockOpenworldTechSkillRsp {
+    required Retcode retcode = 1;
+    optional int32 param = 2;
+
+    enum CmdId {
+        CMD_ID = 4503;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TECH_LOCK = 2;
+        LEVEL_LACK = 3;
+        STORY_LOCK = 4;
+        PRE_SKILL_LOCK = 5;
+        SKILL_POINT_LACK = 6;
+        ALREADA_UNLOCK = 7;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "VirtualGacha.proto";
+message GetVirtualGachaStatusRsp {
+    required Retcode retcode = 1;
+    repeated VirtualGacha gacha_list = 2;
+    optional uint32 group_id = 3;
+    optional uint32 candidate_gacha_box_id = 4;
+    repeated uint32 candidate_item_id_list = 5;
+    optional uint32 candidate_gacha_pool_id = 6;
+
+    enum CmdId {
+        CMD_ID = 3511;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

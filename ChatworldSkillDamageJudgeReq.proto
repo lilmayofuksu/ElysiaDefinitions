@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ChatworldPosition.proto";
+message ChatworldSkillDamageJudgeReq {
+    optional uint32 skill_unique_id = 1;
+    repeated uint32 hit_unique_id_list = 2;
+    required ChatworldPosition damage_pos = 3;
+
+    enum CmdId {
+        CMD_ID = 2420;
+    }
+}

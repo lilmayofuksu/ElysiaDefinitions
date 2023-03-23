@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "MasterPupilRetcode.proto";
+message RecallMasterPupilApplicationRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 971;
+    }
+}

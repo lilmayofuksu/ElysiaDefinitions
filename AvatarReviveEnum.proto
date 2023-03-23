@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum AvatarReviveEnum {
+    AVATAR_REVIVE_TIMES_UN_LIMIT = 65535;
+}

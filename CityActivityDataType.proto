@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum CityActivityDataType {
+    CITY_ACTIVITY_DATA_ALL = 0;
+    CITY_ACTIVITY_DATA_EVENT = 1;
+    CITY_ACTIVITY_DATA_PHONE_EVENT = 2;
+    CITY_ACTIVITY_DATA_PHOTO = 3;
+}

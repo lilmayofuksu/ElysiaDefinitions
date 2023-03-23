@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum QTEMapEndStatus {
+    QTE_MAP_END_STATUS_SUCC = 0;
+    QTE_MAP_END_STATUS_EXIT = 1;
+    QTE_MAP_END_STATUS_EXHAUSTED = 2;
+}

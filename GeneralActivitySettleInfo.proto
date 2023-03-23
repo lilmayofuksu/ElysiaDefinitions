@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GeneralActivitySettleInfo {
+    optional uint32 activity_id = 1;
+    optional uint32 rank_type = 2;
+    optional uint32 rank = 3;
+    repeated RewardData reward_list = 4;
+}

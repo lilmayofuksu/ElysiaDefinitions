@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message MailItem {
+    required uint32 item_id = 1;
+    required uint32 level = 2;
+    optional uint32 num = 3;
+    optional uint32 split_fragment_num = 4;
+}

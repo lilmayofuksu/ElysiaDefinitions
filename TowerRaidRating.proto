@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum TowerRaidRating {
+    TOWER_RAID_RATING_NONE = 0;
+    TOWER_RAID_RATING_DEGRADE = 1;
+    TOWER_RAID_RATING_KEEP = 2;
+    TOWER_RAID_RATING_UPGRADE = 3;
+}

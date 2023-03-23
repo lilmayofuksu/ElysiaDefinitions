@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "MasterPupilData.proto";
+import "MasterPupilRetcode.proto";
+message GetMasterPupilDataRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    optional uint32 type = 2;
+    repeated MasterPupilData data_list = 3;
+
+    enum CmdId {
+        CMD_ID = 569;
+    }
+}

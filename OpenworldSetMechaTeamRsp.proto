@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message OpenworldSetMechaTeamRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4507;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        INDEX_ERROR = 2;
+        MECHA_NUM_ERROR = 3;
+        MECHA_REPEAT = 4;
+        MECHA_NOT_EXIST = 5;
+        MECHA_POS_ERROR = 6;
+        POS_REPEAT = 7;
+        CLASS_REPEAT = 8;
+        NOT_OPEN = 9;
+    }
+}

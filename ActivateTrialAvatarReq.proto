@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ActivateTrialAvatarReq {
+    optional uint32 sample_id = 1;
+
+    enum CmdId {
+        CMD_ID = 583;
+    }
+}

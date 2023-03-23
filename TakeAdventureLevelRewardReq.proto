@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TakeAdventureLevelRewardReq {
+
+    enum CmdId {
+        CMD_ID = 3908;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message StigmataRune {
+    optional uint32 rune_id = 1;
+    optional uint32 strength_percent = 2;
+}

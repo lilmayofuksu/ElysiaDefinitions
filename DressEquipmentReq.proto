@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "EquipmentSlot.proto";
+message DressEquipmentReq {
+    required uint32 avatar_id = 1;
+    required EquipmentSlot slot = 2;
+    required uint32 unique_id = 3;
+
+    enum CmdId {
+        CMD_ID = 39;
+    }
+}

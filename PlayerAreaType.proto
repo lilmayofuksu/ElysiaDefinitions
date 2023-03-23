@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+enum PlayerAreaType {
+    AREA_NO_LIMIT = 0;
+    AREA_NORTH_CHINA = 1;
+    AREA_NORTH_EAST = 2;
+    AREA_EAST_CHINA = 3;
+    AREA_CENTRAL_CHINA = 4;
+    AREA_CENTRAL_SOUTH = 5;
+    AREA_NORTH_WEST = 6;
+    AREA_SOUTH_WEST = 7;
+    AREA_HK_MC_TW = 8;
+}

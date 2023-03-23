@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message EndlessSingleModeActivityUseItemReq {
+    optional uint32 activity_id = 1;
+    optional uint32 item_id = 2;
+    optional uint32 item_num = 3;
+
+    enum CmdId {
+        CMD_ID = 4048;
+    }
+}

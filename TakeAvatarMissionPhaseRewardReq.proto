@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeAvatarMissionPhaseRewardReq {
+    optional uint32 days = 1;
+
+    enum CmdId {
+        CMD_ID = 3006;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message WaveRushLevelUpBuffReq {
+    optional uint32 buff_id = 1;
+
+    enum CmdId {
+        CMD_ID = 5965;
+    }
+}

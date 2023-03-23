@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityBossAttackNotify {
+    required TownCommonHead head = 1;
+    repeated uint32 attacked_position_list = 2;
+
+    enum CmdId {
+        CMD_ID = 6465;
+    }
+}

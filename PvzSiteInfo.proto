@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "PvzSiteDropMaterial.proto";
+import "PvzSiteType.proto";
+message PvzSiteInfo {
+    optional uint32 site_id = 1;
+    optional uint32 tower_id = 2;
+    optional PvzSiteType site_type = 4;
+    repeated PvzSiteDropMaterial has_drop_material_list = 5;
+}

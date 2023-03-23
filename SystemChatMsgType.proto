@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum SystemChatMsgType {
+    CHAT_MSG_NONE = 0;
+    CHAT_MSG_GACHA = 1;
+    CHAT_MSG_LOBBY = 2;
+    CHAT_MSG_FORGE = 3;
+    CHAT_MSG_SCRATCH = 4;
+}

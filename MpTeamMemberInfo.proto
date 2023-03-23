@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "PlayerCardData.proto";
+import "PlayerDetailData.proto";
+message MpTeamMemberInfo {
+    required PlayerDetailData detail = 1;
+    required PlayerCardData card = 3;
+}

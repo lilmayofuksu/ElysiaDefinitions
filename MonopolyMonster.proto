@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message MonopolyMonster {
+    optional uint32 unique_id = 1;
+    optional uint32 monster_id = 2;
+}

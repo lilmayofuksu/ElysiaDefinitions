@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RewardLineActivity.proto";
+message GetRewardLineActivityRsp {
+    required Retcode retcode = 1;
+    repeated RewardLineActivity reward_line_activity_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5891;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CLOSED = 2;
+        ACTIVITY_NOT_EXIST = 3;
+    }
+}

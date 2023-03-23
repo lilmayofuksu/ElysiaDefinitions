@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TvtCardTakeSeasonReturnReq {
+
+    enum CmdId {
+        CMD_ID = 3315;
+    }
+}

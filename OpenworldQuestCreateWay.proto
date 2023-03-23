@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum OpenworldQuestCreateWay {
+    OPENWORLD_QUEST_CREATE_WAY_RARITY = 1;
+    OPENWORLD_QUEST_CREATE_WAY_MAP_LEVEL = 2;
+}

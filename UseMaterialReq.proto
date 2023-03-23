@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "EquipmentItemList.proto";
+message UseMaterialReq {
+    required uint32 material_id = 1;
+    optional uint32 num = 2;
+    optional uint32 parameter = 3;
+    optional uint32 simulate_magic = 4;
+    required EquipmentItemList consume_item_list = 5;
+
+    enum CmdId {
+        CMD_ID = 251;
+    }
+}

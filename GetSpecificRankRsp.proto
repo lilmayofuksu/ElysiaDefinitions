@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+import "SpecificRankType.proto";
+message GetSpecificRankRsp {
+    required Retcode retcode = 1;
+    optional SpecificRankType type = 2;
+    optional uint32 param = 3;
+    required RankShowData rank_data = 4;
+
+    enum CmdId {
+        CMD_ID = 1685;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

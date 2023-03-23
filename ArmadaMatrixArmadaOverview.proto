@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ArmadaMatrixArmadaOverview {
+    optional uint32 member_num = 1;
+    optional uint32 deep_level = 2;
+    optional uint32 deep_level_uid = 3;
+    optional uint32 total_explore_value = 4;
+}

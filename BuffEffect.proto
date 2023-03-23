@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message BuffEffect {
+    optional uint32 effect_id = 1;
+    optional uint32 end_time = 2;
+    optional uint32 max_during = 3;
+    optional uint32 total_contri_num = 4;
+}

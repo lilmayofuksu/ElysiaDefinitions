@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetEquipmentBackReq {
+
+    enum CmdId {
+        CMD_ID = 3661;
+    }
+}

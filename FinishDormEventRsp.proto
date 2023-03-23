@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message FinishDormEventRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    repeated DropItem drop_item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 618;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CONDITION_LIMIT = 2;
+    }
+}

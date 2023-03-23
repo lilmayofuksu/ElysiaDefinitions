@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message ArmadaMatrixFireBossItemRsp {
+    required Retcode retcode = 1;
+    optional uint32 explore_add = 2;
+    optional uint32 lay_uid = 3;
+    optional uint32 boss_left_hp = 4;
+
+    enum CmdId {
+        CMD_ID = 2815;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        IS_SELF = 2;
+        NO_ITEM = 3;
+        BOSS_DEAD = 4;
+    }
+}

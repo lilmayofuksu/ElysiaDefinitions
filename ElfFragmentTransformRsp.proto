@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message ElfFragmentTransformRsp {
+    required Retcode retcode = 1;
+    optional uint32 add_material_id = 2;
+    optional uint32 add_material_num = 3;
+
+    enum CmdId {
+        CMD_ID = 2122;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STAR_LACK = 2;
+        FRAGMENT_LACK = 3;
+        MATERIAL_FULL = 4;
+        FEATURE_CLOSED = 5;
+    }
+}

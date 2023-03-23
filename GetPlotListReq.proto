@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetPlotListReq {
+
+    enum CmdId {
+        CMD_ID = 1382;
+    }
+}

@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "LoginActivityRewardType.proto";
+import "RewardData.proto";
+message TakeLoginActivityRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+    optional uint32 take_days = 3;
+    repeated RewardData reward_list = 4;
+    optional LoginActivityRewardType reward_type = 5;
+
+    enum CmdId {
+        CMD_ID = 4195;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+        HAS_TAKE = 3;
+        LOGIN_DAYS_LACK = 4;
+        NOT_NEWBIE = 5;
+        DURATION_END = 6;
+    }
+}

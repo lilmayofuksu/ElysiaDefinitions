@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ReportChapterActivityStageRsp {
+    required Retcode retcode = 1;
+    optional uint32 chapter_id = 2;
+    optional uint32 stage_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4391;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        STAGE_NOT_EXIST = 3;
+    }
+}

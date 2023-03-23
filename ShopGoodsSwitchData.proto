@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ShopGoodsSwitchData {
+    optional uint32 goods_id = 1;
+}

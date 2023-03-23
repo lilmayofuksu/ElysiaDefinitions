@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SetWarshipReq {
+    optional uint32 warship_id = 1;
+
+    enum CmdId {
+        CMD_ID = 5456;
+    }
+}

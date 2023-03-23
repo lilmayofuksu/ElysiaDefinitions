@@ -1,0 +1,46 @@
+syntax = "proto2";
+
+import "MasterPupilType.proto";
+import "Medal.proto";
+import "PlayerAdventureData.proto";
+import "ElfDetailData.proto";
+import "GrandKey.proto";
+import "AvatarDetailData.proto";
+message PlayerDetailData {
+    optional uint32 uid = 1;
+    required string nickname = 2;
+    optional uint32 level = 3;
+    required AvatarDetailData leader_avatar = 4;
+    required string self_desc = 5;
+    optional uint32 armada_id = 6;
+    optional string armada_name = 7;
+    optional uint32 mp_level = 8;
+    optional uint32 on_medal_id = 9;
+    optional bool is_newbie = 10;
+    optional bool is_goback = 11;
+    optional uint32 mp_like_num = 12;
+    repeated GrandKey grand_key_list = 13;
+    required ElfDetailData leader_elf = 14;
+    optional uint32 custom_head_id = 15;
+    optional uint32 frame_id = 16;
+    required PlayerAdventureData adventure = 17;
+    repeated AvatarDetailData backup_avatar_list = 18;
+    required Medal on_medal = 19;
+    optional bool is_allow_visit = 30;
+    optional uint32 visit_avatar = 31;
+    optional uint32 be_liked_num = 32;
+    optional uint32 show_house = 33;
+    optional uint32 comfort_value = 34;
+    optional uint32 house_level = 35;
+    optional string house_name = 36;
+    optional uint32 total_wiki_score = 37;
+    optional uint32 total_achievement_num_get = 38;
+    optional uint32 total_achievement_num = 39;
+    optional uint32 chat_forbid_finish_time = 40;
+    optional uint32 master_uid = 41;
+    optional MasterPupilType master_pupil_tag = 42;
+    optional uint32 season_id = 43;
+    optional uint32 season_group_id = 44;
+    optional uint32 season_level = 45;
+    optional bool is_logoff = 46;
+}

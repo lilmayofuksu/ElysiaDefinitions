@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message LotteryPlayerInfo {
+    optional uint32 uid = 1;
+    optional uint32 level = 2;
+    optional uint32 vip_point = 3;
+    optional uint32 vip_level = 4;
+    optional uint32 account_type = 5;
+    optional uint32 tag = 6;
+    optional uint32 first_reward_num = 7;
+    optional bool is_last_schedule_get_rare_reward = 8;
+}

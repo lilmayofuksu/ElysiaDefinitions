@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message WeeklyReportBlockZone {
+    optional uint32 total_score = 1;
+    repeated uint32 reward_id_list = 2;
+}

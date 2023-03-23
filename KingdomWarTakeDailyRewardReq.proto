@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message KingdomWarTakeDailyRewardReq {
+    optional uint32 kingdom_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3060;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message FacilityLevel {
+    optional uint32 facility_type = 1;
+    optional uint32 level = 2;
+}

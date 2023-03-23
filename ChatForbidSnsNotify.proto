@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ChatForbidSnsNotify {
+    optional uint32 credit_bound = 1;
+    optional uint32 chat_forbid_finish_time = 2;
+    optional uint32 chat_forbid_times = 3;
+
+    enum CmdId {
+        CMD_ID = 1161;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message QCandyBattleInfo {
+    optional uint32 battle_id = 1;
+    optional uint32 remain_life_times = 2;
+    optional uint32 score = 3;
+    optional uint32 uid = 4;
+}

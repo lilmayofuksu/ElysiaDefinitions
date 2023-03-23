@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message EndlessSingleModeActivityBattleEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 map_id = 3;
+    optional uint32 area_id = 4;
+    optional uint32 battle_id = 5;
+    optional uint32 monster_group_id = 6;
+
+    enum CmdId {
+        CMD_ID = 4045;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

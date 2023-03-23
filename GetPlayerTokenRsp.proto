@@ -1,0 +1,45 @@
+syntax = "proto2";
+
+message GetPlayerTokenRsp {
+    required Retcode retcode = 1;
+    optional uint32 uid = 2;
+    optional string token = 3;
+    optional uint32 account_type = 4;
+    optional string account_uid = 5;
+    optional int32 tag = 6;
+    optional string transfer_code = 15;
+    optional uint32 transfer_pwd_expire_time = 16;
+    optional bool is_bind_access = 17;
+    optional uint32 fightserver_ip = 18;
+    optional uint32 fightserver_port = 19;
+    optional string msg = 20;
+    optional uint32 black_list_end_time = 21;
+    optional uint32 user_type = 22;
+    optional uint32 limit_level = 23;
+    optional bytes security_cmd_buffer = 24;
+    optional string hoyolab_account_uid = 26;
+
+    enum CmdId {
+        CMD_ID = 5;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        REGISTER_CLOSED = 2;
+        ACCOUNT_VERIFY_ERROR = 3;
+        TOKEN_REPEAT = 4;
+        ACCOUNT_TYPE_ERROR = 5;
+        SERVER_FULL = 6;
+        INVALID_APK = 7;
+        TRANSFER_CODE_ERROR = 8;
+        IN_BLACK_LIST = 9;
+        SERVER_STOP = 10;
+        ACCOUNT_LOCKED = 11;
+        SERVER_BUSY = 12;
+        DEVICE_TYPE_ERROR = 13;
+        FORBID_VISITOR = 14;
+        FORBID_TAG_SMURF_VISITOR = 15;
+        ANTI_ADDICT_LOGIN = 16;
+        GAME_NOT_AVAILABLE = 17;
+    }
+}

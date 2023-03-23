@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "OpenworldChapterShop.proto";
+message OpenworldChapterGetShopDataRsp {
+    required Retcode retcode = 1;
+    required OpenworldChapterShop shop = 2;
+
+    enum CmdId {
+        CMD_ID = 4576;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

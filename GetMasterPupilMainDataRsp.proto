@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "PupilMainData.proto";
+import "MasterMainData.proto";
+import "MasterPupilType.proto";
+import "MasterPupilRetcode.proto";
+message GetMasterPupilMainDataRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    optional MasterPupilType type = 2;
+    required MasterMainData master = 3;
+    required PupilMainData pupil = 4;
+
+    enum CmdId {
+        CMD_ID = 658;
+    }
+}

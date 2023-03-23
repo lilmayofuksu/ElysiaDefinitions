@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message ResetScratchTicketPlateRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4155;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        TIMES_LIMIT = 3;
+        MATERIAL_LACK = 4;
+        CORE_PLATE = 5;
+        ACTIVITY_LIMIT = 6;
+    }
+}

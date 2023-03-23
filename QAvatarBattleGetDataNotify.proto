@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message QAvatarBattleGetDataNotify {
+
+    enum CmdId {
+        CMD_ID = 5614;
+    }
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "GlobalPollingTargetData.proto";
+message GlobalPollingGetDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 last_support_time = 3;
+    optional uint32 support_target_id = 4;
+    optional uint32 vote_begin_time = 5;
+    repeated GlobalPollingTargetData target_data_list = 6;
+
+    enum CmdId {
+        CMD_ID = 5812;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 3;
+        FEATURE_CLOSED = 4;
+    }
+}

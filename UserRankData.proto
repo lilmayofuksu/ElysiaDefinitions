@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+import "MonsterCardActivityRankInfo.proto";
+import "RanchMonsterBriefInfo.proto";
+import "UserRankSlgBattle.proto";
+import "UserRankWeeklyReportUltraEndless.proto";
+import "UserRankWeeklyReportExBoss.proto";
+import "UserRankWeeklyReportEndless.proto";
+import "ElfBriefInfo.proto";
+import "AvatarBriefInfo.proto";
+message UserRankData {
+    optional uint32 uid = 1;
+    optional uint32 score = 2;
+    optional uint32 rank = 3;
+    optional string nick_name = 4;
+    optional uint32 armada_id = 5;
+    optional string armada_name = 6;
+    optional uint32 avatar_id = 7;
+    optional uint32 dress_id = 8;
+    optional uint32 frame_id = 9;
+    optional string house_name = 10;
+    optional uint32 custom_head_id = 11;
+    optional bool is_logoff = 12;
+    repeated AvatarBriefInfo avatar_info_list = 31;
+    repeated ElfBriefInfo elf_info_list = 32;
+    optional string dlc_name = 33;
+    required UserRankWeeklyReportEndless weekly_report_endless_info = 34;
+    required UserRankWeeklyReportExBoss weekly_report_ex_boss_info = 35;
+    optional uint32 ultra_endless_group_level = 36;
+    required UserRankWeeklyReportUltraEndless weekly_report_ultra_endless_info = 37;
+    required UserRankSlgBattle slg_battle_info = 39;
+    repeated RanchMonsterBriefInfo monster_info_list = 40;
+    required MonsterCardActivityRankInfo monster_card_rank_info = 41;
+}

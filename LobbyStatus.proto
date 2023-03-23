@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum LobbyStatus {
+    LOBBY_NONE = 0;
+    LOBBY_PREPARING = 1;
+    LOBBY_CONNECTING = 2;
+    LOBBY_FIGHTING = 3;
+    LOBBY_FINISHING = 4;
+    LOBBY_WAIT_DESTROY = 5;
+}

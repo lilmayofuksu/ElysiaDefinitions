@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message SendChatRedEnvelopeReq {
+    optional uint32 item_id = 1;
+    optional uint32 channel = 2;
+    optional string msg = 3;
+    optional string nickname = 4;
+    optional uint32 armada_id = 5;
+    optional uint32 red_envelope_id = 6;
+
+    enum CmdId {
+        CMD_ID = 1163;
+    }
+}

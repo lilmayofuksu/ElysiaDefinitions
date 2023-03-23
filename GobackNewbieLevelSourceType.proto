@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum GobackNewbieLevelSourceType {
+    GOBACK_NEWBIE_LEVEL_SOURCE_GOBACK_NEWBIE_LEVEL = 0;
+    GOBACK_NEWBIE_LEVEL_SOURCE_GOBACK_LEVEL = 1;
+}

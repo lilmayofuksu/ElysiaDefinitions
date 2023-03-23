@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message JigsawBlockData {
+    optional uint32 block_id = 1;
+    optional uint32 piece_id = 2;
+}

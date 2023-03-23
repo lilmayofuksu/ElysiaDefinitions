@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MpTeamStatus {
+    TEAM_STATUS_NONE = 0;
+    TEAM_STATUS_IN_TEAM = 1;
+    TEAM_STATUS_IN_LOBBY = 2;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GetExtraStoryAchieveRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 achieve_id = 2;
+    repeated RewardData reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 238;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACHIEVE_NOT_EXIST = 2;
+        ACHIEVE_NOT_FINISH = 3;
+        ACHIEVE_HAS_TAKEN = 4;
+    }
+}

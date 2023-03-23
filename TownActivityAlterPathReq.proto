@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityAlterPathReq {
+    required TownCommonHead head = 1;
+    optional uint32 position = 2;
+
+    enum CmdId {
+        CMD_ID = 6478;
+    }
+}

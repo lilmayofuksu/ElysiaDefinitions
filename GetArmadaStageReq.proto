@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetArmadaStageReq {
+
+    enum CmdId {
+        CMD_ID = 2667;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ClientMailFilterType.proto";
+message GetClientMailDataReq {
+    optional uint32 start = 1;
+    optional uint32 stop = 2;
+    optional ClientMailFilterType filter_type = 3;
+
+    enum CmdId {
+        CMD_ID = 3800;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum RaidActiveType {
+    RAID_ACTIVE_NONE = 0;
+    RAID_ACTIVE_DAILY_RAID = 1;
+    RAID_ACTIVE_WEEKLY_RAID = 2;
+}

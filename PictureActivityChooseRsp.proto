@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "PictureStep.proto";
+import "RewardData.proto";
+message PictureActivityChooseRsp {
+    required Retcode retcode = 1;
+    required RewardData reward = 2;
+    required PictureStep step = 3;
+
+    enum CmdId {
+        CMD_ID = 4269;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HAS_CHOOSE = 3;
+        SCORE_LACK = 4;
+        PRE_NOT_CHOOSE = 5;
+    }
+}

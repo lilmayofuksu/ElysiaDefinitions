@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message ChatworldBeastGetActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 daily_senior_challenge_times = 2;
+    optional uint32 daily_junior_challenge_times = 3;
+    optional uint32 daily_senior_treasure_times = 4;
+    optional uint32 daily_junior_treasure_times = 5;
+    optional uint32 refresh_begin_time = 6;
+    optional uint32 refresh_end_time = 7;
+    optional uint32 refresh_interval = 8;
+
+    enum CmdId {
+        CMD_ID = 2466;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

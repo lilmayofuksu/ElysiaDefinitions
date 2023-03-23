@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message ReplayCommonInfo {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 create_time = 3;
+    optional uint32 stage_id = 4;
+    optional string file_md5 = 5;
+    optional string download_url = 6;
+    optional string version = 7;
+    optional uint32 timespan = 8;
+}

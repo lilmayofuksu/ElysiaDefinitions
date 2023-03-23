@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "CustomAvatarTeam.proto";
+import "AvatarTeam.proto";
+message GetAvatarTeamDataRsp {
+    required Retcode retcode = 1;
+    repeated AvatarTeam avatar_team_list = 2;
+    repeated CustomAvatarTeam custom_avatar_team_list = 3;
+
+    enum CmdId {
+        CMD_ID = 48;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

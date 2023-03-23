@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "TownCommonHead.proto";
+message TownActivityAttackEnemyBuffNotify {
+    required TownCommonHead head = 1;
+    repeated Attack attack_list = 2;
+    repeated DropItem drop_item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 6480;
+    }
+    message Attack {
+        optional uint32 building_unique_id = 1;
+        optional uint32 skill_id = 2;
+        repeated uint32 attacked_unique_id_list = 3;
+    }
+}

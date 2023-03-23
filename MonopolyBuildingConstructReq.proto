@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message MonopolyBuildingConstructReq {
+    optional uint32 area_id = 1;
+    optional uint32 building_type = 2;
+
+    enum CmdId {
+        CMD_ID = 3854;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldChapterEndlessChallengeEndRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+
+    enum CmdId {
+        CMD_ID = 4635;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CHALLENGE_ERROR = 2;
+        MAP_ERROR = 3;
+        MATERIAL_LACK = 4;
+        NOT_BEGIN = 5;
+    }
+}

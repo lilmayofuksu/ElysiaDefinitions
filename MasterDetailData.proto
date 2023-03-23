@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "MasterPupilCard.proto";
+message MasterDetailData {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 level = 3;
+    required MasterPupilCard card = 4;
+}

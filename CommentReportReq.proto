@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "CommentType.proto";
+message CommentReportReq {
+    required CommentType comment = 1;
+    optional uint32 times = 2;
+
+    enum CmdId {
+        CMD_ID = 229;
+    }
+}

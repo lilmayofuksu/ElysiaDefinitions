@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message SlgBattleSettleNotify {
+    optional uint32 schedule_id = 1;
+    optional uint32 battle_schedule_id = 2;
+    required RewardData reward_data = 3;
+    optional uint32 rank = 5;
+
+    enum CmdId {
+        CMD_ID = 6066;
+    }
+}

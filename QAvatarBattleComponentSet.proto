@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "QAvatarBattleBuffComponent.proto";
+import "QAvatarBattleEvadeComponent.proto";
+import "QAvatarBattleSkillComponent.proto";
+import "QAvatarBattleSpeedComponent.proto";
+import "QAvatarBattlePositionComponent.proto";
+message QAvatarBattleComponentSet {
+    required QAvatarBattlePositionComponent position_component = 1;
+    required QAvatarBattleSpeedComponent speed_component = 2;
+    required QAvatarBattleSkillComponent skill_component = 3;
+    required QAvatarBattleEvadeComponent evade_component = 4;
+    required QAvatarBattleBuffComponent buff_component = 5;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message MasterPupilMission {
+    optional uint32 id = 1;
+    optional uint32 status = 2;
+
+    enum MissionStatus {
+        DOING = 1;
+        FINISH = 2;
+    }
+}

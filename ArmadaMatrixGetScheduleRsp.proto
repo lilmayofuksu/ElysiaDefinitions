@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetScheduleRsp {
+    required ArmadaMatrixRetcode.Retcode retcode = 1;
+    optional uint32 open_time = 2;
+    optional uint32 close_time = 3;
+    optional uint32 settle_time = 4;
+    optional uint32 open_day_time = 5;
+    optional uint32 close_day_time = 6;
+    optional uint32 group_id = 7;
+    optional uint32 schedule_id = 8;
+
+    enum CmdId {
+        CMD_ID = 2735;
+    }
+}

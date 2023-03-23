@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChatgroupSettingMsg {
+    optional uint32 operator_uid = 1;
+    optional string name = 2;
+    optional string notice = 3;
+    optional uint32 icon_id = 4;
+    repeated uint32 label_id_list = 5;
+}

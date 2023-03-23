@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RoomMode.proto";
+message SyncRoomMatchDataNotify {
+    optional RoomMode room_mode = 1;
+    optional bool is_in_matching = 2;
+    optional uint32 match_start_time = 3;
+    optional uint32 estimate_match_cost_time = 4;
+    optional Reason reason = 5;
+
+    enum CmdId {
+        CMD_ID = 3169;
+    }
+    enum Reason {
+        SUCC = 0;
+        CANCEL = 1;
+        TIMEOUT = 2;
+        MATCH_SUCC = 3;
+    }
+}

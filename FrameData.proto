@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message FrameData {
+    optional uint32 id = 1;
+    optional uint32 expire_time = 2;
+
+    enum EvaluationType {
+        Evaluate = 0;
+        Playback = 1;
+    }
+}

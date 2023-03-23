@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum BuffAssistBuffProducerType {
+    BUFF_ASSIST_BUFF_PRODUCER_PLAYER = 1;
+    BUFF_ASSIST_BUFF_PRODUCER_NPC = 2;
+    BUFF_ASSIST_BUFF_PRODUCER_ROBOT = 3;
+}

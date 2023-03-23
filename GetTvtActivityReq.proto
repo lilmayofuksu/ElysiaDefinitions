@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetTvtActivityReq {
+
+    enum CmdId {
+        CMD_ID = 3300;
+    }
+}

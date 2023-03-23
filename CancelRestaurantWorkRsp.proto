@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message CancelRestaurantWorkRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 room_id = 3;
+
+    enum CmdId {
+        CMD_ID = 5867;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ROOM_NOT_EXIST = 2;
+        WORK_NOT_BEGIN = 3;
+    }
+}

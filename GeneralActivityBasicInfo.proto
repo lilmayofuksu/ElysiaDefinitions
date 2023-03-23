@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GeneralActivityBasicInfo {
+    optional uint32 activity_id = 1;
+    optional uint32 cur_score = 2;
+    repeated uint32 series_activity_id = 3;
+    repeated uint32 score_reward_taken_list = 4;
+    optional uint32 schedule_id = 5;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message DissolveArmadaRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2626;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_GRANTED = 2;
+        NOT_IN_ARMADA = 3;
+        IN_DISSOLVE = 4;
+        IN_ARMADA_WAR = 5;
+    }
+}

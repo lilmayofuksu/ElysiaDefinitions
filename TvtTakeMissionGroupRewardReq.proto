@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TvtTakeMissionGroupRewardReq {
+    optional uint32 mission_group_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3305;
+    }
+}

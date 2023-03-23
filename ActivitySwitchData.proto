@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ActivitySwitchData {
+    optional uint32 activity_type = 1;
+}

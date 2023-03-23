@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "SettingDict.proto";
+message ControllableBoxGachaItem {
+    optional uint32 drop_id = 1;
+    optional uint32 item_id = 2;
+    optional uint32 item_level = 3;
+    optional uint32 item_num = 4;
+    optional bool is_shining = 5;
+    optional bool is_core = 6;
+    required SettingDict display_setting_dict = 9;
+}

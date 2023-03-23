@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldMechaTeamMember {
+    optional uint32 pos = 1;
+    optional uint32 mecha_unique_id = 2;
+}

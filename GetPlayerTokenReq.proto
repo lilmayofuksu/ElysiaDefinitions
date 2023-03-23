@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "DeviceType.proto";
+message GetPlayerTokenReq {
+    required uint32 account_type = 1;
+    optional string account_uid = 2;
+    optional string account_token = 3;
+    optional string account_ext = 4;
+    optional string token = 5;
+    optional string version = 6;
+    optional string device = 7;
+    optional int32 tag = 8;
+    optional uint32 uid = 9;
+    optional string system_info = 10;
+    optional string ipv4_str = 11;
+    optional string ipv6_str = 12;
+    optional string cps = 13;
+    optional string device_uuid = 14;
+    optional string transfer_code = 15;
+    optional string transfer_pwd = 16;
+    optional string ip_info_str = 17;
+    optional DeviceType device_type = 20;
+    optional bool is_allow_device_register = 21;
+    optional uint32 combo_channel_id = 22;
+    optional string combo_token = 23;
+    optional string user_ip_str = 24;
+
+    enum CmdId {
+        CMD_ID = 4;
+    }
+}

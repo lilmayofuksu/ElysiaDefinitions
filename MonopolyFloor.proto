@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MonopolyRoundStatus.proto";
+import "MonopolyMonster.proto";
+message MonopolyFloor {
+    optional uint32 floor_id = 1;
+    repeated Building building_list = 2;
+    repeated MonopolyMonster monster_list = 3;
+    optional MonopolyRoundStatus round_status = 4;
+    message Building {
+        optional uint32 location = 1;
+        optional uint32 type = 2;
+        optional uint32 level = 3;
+        optional uint32 product_num = 4;
+    }
+}

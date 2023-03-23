@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message MassiveWarExitBattleReq {
+    optional uint32 battle_uniq_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4808;
+    }
+}

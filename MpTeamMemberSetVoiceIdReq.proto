@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message MpTeamMemberSetVoiceIdReq {
+    optional uint32 voice_id = 1;
+
+    enum CmdId {
+        CMD_ID = 396;
+    }
+}

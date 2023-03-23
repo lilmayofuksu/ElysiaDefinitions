@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum EventJudgeType {
+    EVENT_JUDGE_TYPE_NONT = 0;
+    EVENT_JUDGE_TYPE_COLLECT = 1;
+    EVENT_JUDGE_TYPE_MONSTER = 2;
+    EVENT_JUDGE_TYPE_EMERGENCY = 3;
+}

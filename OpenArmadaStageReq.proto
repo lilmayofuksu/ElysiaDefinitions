@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message OpenArmadaStageReq {
+    optional uint32 hard_level = 1;
+
+    enum CmdId {
+        CMD_ID = 2799;
+    }
+}

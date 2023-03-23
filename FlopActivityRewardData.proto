@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message FlopActivityRewardData {
+    optional uint32 index = 1;
+    optional uint32 state = 2;
+}

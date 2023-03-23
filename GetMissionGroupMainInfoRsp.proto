@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message GetMissionGroupMainInfoRsp {
+    required Retcode retcode = 1;
+    repeated uint32 has_take_reward_mission_group_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4347;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

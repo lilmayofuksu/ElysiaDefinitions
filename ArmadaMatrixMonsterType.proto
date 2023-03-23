@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum ArmadaMatrixMonsterType {
+    ARMADA_MATRIX_MONSTER_TYPE_NONE = 0;
+    ARMADA_MATRIX_MONSTER_TYPE_1 = 1;
+    ARMADA_MATRIX_MONSTER_TYPE_2 = 2;
+    ARMADA_MATRIX_MONSTER_TYPE_3 = 3;
+}

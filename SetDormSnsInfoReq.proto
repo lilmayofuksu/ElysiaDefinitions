@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message SetDormSnsInfoReq {
+    optional uint32 show_house = 1;
+    optional uint32 show_room = 2;
+    optional uint32 visit_avatar = 3;
+    optional bool is_allow_visit = 4;
+
+    enum CmdId {
+        CMD_ID = 635;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetVersionActivityReq {
+
+    enum CmdId {
+        CMD_ID = 4223;
+    }
+}

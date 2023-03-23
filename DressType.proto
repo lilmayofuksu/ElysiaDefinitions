@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum DressType {
+    DRESS_BATTLE = 1;
+    DRESS_SUIT = 2;
+    DRESS_ARTIFACT = 4;
+}

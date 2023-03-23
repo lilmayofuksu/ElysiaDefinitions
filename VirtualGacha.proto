@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "VirtualGachaPool.proto";
+message VirtualGacha {
+    optional uint32 box_id = 1;
+    optional Status status = 2;
+    repeated VirtualGachaPool pool_list = 3;
+
+    enum Status {
+        NORMAL = 0;
+        EMPTY = 1;
+    }
+}

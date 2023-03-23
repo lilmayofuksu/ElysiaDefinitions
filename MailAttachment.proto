@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "MailItem.proto";
+message MailAttachment {
+    repeated MailItem item_list = 1;
+    optional uint32 hcoin = 2;
+    optional uint32 scoin = 3;
+    optional uint32 stamina = 4;
+    optional uint32 exp = 5;
+    optional uint32 exp_convert_scoin = 6;
+    optional uint32 mcoin = 7;
+}

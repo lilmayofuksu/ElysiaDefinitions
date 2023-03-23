@@ -1,0 +1,51 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message UseMaterialRsp {
+    required Retcode retcode = 1;
+    repeated RewardData gift_reward_list = 2;
+    repeated DropItem drop_item_list = 3;
+    optional uint32 material_id = 4;
+    optional uint32 num = 5;
+    optional uint32 overflow_item_id = 6;
+
+    enum CmdId {
+        CMD_ID = 252;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        EQUIPMENT_FULL = 3;
+        EQUIPMENT_MATERIAL_LIMIT = 4;
+        EQUIPMENT_FRAGMENT_LIMIT = 5;
+        STAMINA_FULL = 6;
+        LEVEL_LACK = 7;
+        EXTRA_STORY_CLOSED = 8;
+        EQUIPMENT_EXPIRE = 9;
+        BUFF_MATERIAL_FAIL = 10;
+        ACTIVATE_AVATAR_REPEATE_FAIL = 11;
+        ACTIVATE_AVATAR_LEVEL_LIMIT = 12;
+        NO_ARMADA = 13;
+        MATRIX_CLOSE = 14;
+        EXPLORE_POWER_LIMIT = 15;
+        INVALID_NUM = 16;
+        TEAM_NOT_EXIST = 17;
+        TEAM_FULL_ENERGE = 18;
+        VITALITY_FULL = 19;
+        FEATURE_CLOSED = 20;
+        ACTIVITY_NOT_OPEN = 21;
+        AVATAR_NEED = 22;
+        CONSUME_ITEM_NOT_EXIST = 23;
+        CONSUME_ITEM_IN_USE = 24;
+        CONSUME_ITEM_REPEAT = 25;
+        CONSUME_ITEM_PROTECTED = 26;
+        COST_GACHA_TICKET = 27;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 28;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 29;
+        CONSUME_ITEM_IN_FACILITY = 30;
+        CONSUME_ITEM_GRAND_KEY = 31;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 32;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum RestaurantWorkStatus {
+    RESTAURANT_WORK_NOT_BEGIN = 1;
+    RESTAURANT_WORK_DOING = 2;
+    RESTAURANT_WORK_PAUSE = 3;
+}

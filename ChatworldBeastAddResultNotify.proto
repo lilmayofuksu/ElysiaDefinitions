@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ChatworldBeastAddResultNotify {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2460;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_POSITION = 2;
+        ROOM_LIMIT = 3;
+    }
+}

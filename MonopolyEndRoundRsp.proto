@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message MonopolyEndRoundRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3857;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STATUS_ERROR = 2;
+    }
+}

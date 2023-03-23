@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetWeekDayActivityDataReq {
+
+    enum CmdId {
+        CMD_ID = 125;
+    }
+}

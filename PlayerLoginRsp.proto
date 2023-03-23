@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "CGType.proto";
+message PlayerLoginRsp {
+    required Retcode retcode = 1;
+    optional string msg = 2;
+    optional bool is_first_login = 4;
+    optional uint32 last_client_packet_id = 5;
+    optional string region_name = 6;
+    optional CGType cg_type = 9;
+    optional uint32 last_logout_time = 10;
+    optional uint32 region_id = 11;
+    optional bool is_valid_reconnect = 12;
+    optional uint32 account_type = 13;
+    optional string account_uid = 14;
+    optional uint32 login_session_token = 15;
+
+    enum CmdId {
+        CMD_ID = 7;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        REPEAT_LOGIN = 2;
+        IN_BLACK_LIST = 3;
+        WAIT_STOP_ANOTHER_LOGIN = 4;
+        ANTI_ADDICT_LOGIN = 5;
+        SQUEEZE_CD = 6;
+    }
+}

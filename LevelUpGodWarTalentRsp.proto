@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "GodWarTalent.proto";
+message LevelUpGodWarTalentRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    required GodWarTalent talent = 3;
+    optional uint32 max_support_point = 4;
+
+    enum CmdId {
+        CMD_ID = 6173;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TALENT_ERROR = 2;
+        TARGET_LEVEL_ERROR = 3;
+        MATERIAL_LACK = 4;
+        FLAG_INVALID = 5;
+        FEATURE_CLOSE = 6;
+    }
+}

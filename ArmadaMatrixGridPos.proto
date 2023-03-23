@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaMatrixGridPos {
+    optional uint32 row_index = 1;
+    optional uint32 col_index = 2;
+}

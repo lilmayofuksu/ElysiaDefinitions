@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ArmadaMatrixExitConditionStatus.proto";
+message ArmadaMatrixExitCondition {
+    optional uint32 floor_id = 1;
+    optional uint32 exit_condition_id = 2;
+    optional uint32 progress = 3;
+    optional ArmadaMatrixExitConditionStatus status = 4;
+}

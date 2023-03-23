@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "LotteryReward.proto";
+message LotteryTakeRewardRsp {
+    required Retcode retcode = 1;
+    repeated LotteryReward lottery_reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4184;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_LOTTERY_NUMBER = 2;
+        REWARD_TAKEN = 3;
+        NO_REWARD = 4;
+        NOT_OPEN = 5;
+    }
+}

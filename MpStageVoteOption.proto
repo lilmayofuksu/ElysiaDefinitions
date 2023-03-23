@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MpStageVoteOption {
+    MP_STAGE_VOTE_OPTION_STAY_IN_TEAM = 0;
+    MP_STAGE_VOTE_OPTION_STAGE_AGAIN = 1;
+    MP_STAGE_VOTE_OPTION_NEXT_STAGE = 2;
+}

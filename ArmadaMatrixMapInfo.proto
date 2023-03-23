@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+import "ArmadaMatrixRandomGrid.proto";
+import "ArmadaMatrixGridDetail.proto";
+import "ArmadaMatrixMsgPos.proto";
+import "ArmadaMatrixMemberPos.proto";
+import "ArmadaMatrixGridPos.proto";
+import "ArmadaMatrixGrid.proto";
+message ArmadaMatrixMapInfo {
+    repeated ArmadaMatrixGrid vision_grid_list = 1;
+    optional uint32 cur_level = 2;
+    required ArmadaMatrixGridPos current_pos = 3;
+    repeated ArmadaMatrixMemberPos member_pos_list = 4;
+    optional uint32 map_id = 5;
+    optional uint32 width = 6;
+    optional uint32 height = 7;
+    optional bool is_all = 8;
+    optional uint32 floor_id = 9;
+    optional uint32 floor_buff_id = 10;
+    repeated ArmadaMatrixMsgPos msg_pos_list = 11;
+    optional uint32 item_temp_buff = 12;
+    optional bool is_locked = 13;
+    repeated uint32 event_temp_buff_list = 14;
+    repeated ArmadaMatrixGrid flare_grid_list = 15;
+    repeated ArmadaMatrixGridDetail grid_detail_list = 16;
+    repeated ArmadaMatrixRandomGrid random_grid_list = 17;
+}

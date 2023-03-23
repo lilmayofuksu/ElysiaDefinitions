@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "AvatarAttrType.proto";
+message CabinTechAddAttr {
+    required AvatarAttrType attr_type = 1;
+    optional float add_ratio = 2;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message DLCTowerAvatarInfo {
+    optional uint32 avatar_id = 1;
+    optional uint32 hp_percent = 2;
+    optional uint32 sp_percent = 3;
+}

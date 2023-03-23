@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message EnterArmadaChatroomReq {
+
+    enum CmdId {
+        CMD_ID = 2657;
+    }
+}

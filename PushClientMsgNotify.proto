@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message PushClientMsgNotify {
+    repeated string platform_list = 1;
+    repeated string uid_list = 2;
+    repeated string tag_list = 3;
+    repeated string tag_and_list = 4;
+    repeated string tag_not_list = 5;
+    optional string content = 6;
+
+    enum CmdId {
+        CMD_ID = 801;
+    }
+}

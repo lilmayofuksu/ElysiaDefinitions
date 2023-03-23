@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message RoomSwitchMemberStatusRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3174;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

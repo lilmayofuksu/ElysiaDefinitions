@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum FeatureSwitchOpType {
+    FEATURE_SWITCH_OP_NONE = 0;
+    FEATURE_SWITCH_OP_ADD = 1;
+    FEATURE_SWITCH_OP_DEL = 2;
+}

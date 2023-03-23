@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message CommonChatworldRedEnvelope {
+    optional uint32 red_envelope_id = 1;
+    optional uint32 expire_time = 2;
+    optional uint32 sender_uid = 3;
+    optional uint32 item_id = 4;
+}

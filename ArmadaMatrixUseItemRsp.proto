@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+message ArmadaMatrixUseItemRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+    repeated uint32 target_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2763;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK = 2;
+        EMPTY_MSG = 3;
+        MSG_ERROR = 4;
+        POS_ERROR = 5;
+        SAME_TEMP_BUFF = 6;
+        OUT_EFFECTIVE_RANGE = 7;
+        NO_ARMADA = 8;
+        FATIGUE_FULL = 9;
+        TARGET_SELF = 10;
+        HAVE_ANSWER = 11;
+        BOSS_DEAD = 12;
+        HAVE_USE_ITEM = 13;
+    }
+}

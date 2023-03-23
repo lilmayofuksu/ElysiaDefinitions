@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum GodWarSiteStatus {
+    GOD_WAR_SITE_STATUS_INVALID = 0;
+    GOD_WAR_SITE_STATUS_HIDE = 1;
+    GOD_WAR_SITE_STATUS_SHOW = 2;
+    GOD_WAR_SITE_STATUS_UNLOCKED = 3;
+    GOD_WAR_SITE_STATUS_CLOSED = 4;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "ChatworldPlayerScene.proto";
+import "ChatworldPlayerInfo.proto";
+message EnterCommonChatworldReq {
+    optional uint32 chatworld_id = 1;
+    required ChatworldPlayerInfo player_info = 2;
+    optional uint32 scene_id = 3;
+    required ChatworldPlayerScene scene_data = 4;
+    optional uint32 last_chatworld_id = 5;
+    optional uint32 camp_tag = 6;
+    optional uint32 last_scene_id = 7;
+
+    enum CmdId {
+        CMD_ID = 2400;
+    }
+}

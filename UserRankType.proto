@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum UserRankType {
+    USER_RANK_NONE = 0;
+    USER_RANK_NORMAL = 1;
+    USER_RANK_PERCENT = 2;
+}

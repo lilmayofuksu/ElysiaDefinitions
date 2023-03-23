@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message FinishRpgTalePlotReq {
+    optional uint32 plot_id = 1;
+    optional uint32 dialog_id = 2;
+    optional uint32 tale_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2305;
+    }
+}

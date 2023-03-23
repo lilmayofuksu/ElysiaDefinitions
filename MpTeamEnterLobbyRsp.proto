@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+message MpTeamEnterLobbyRsp {
+    optional Retcode retcode = 1;
+    optional int32 sub_retcode = 2;
+    optional uint32 error_uid = 3;
+    optional uint32 stage_id = 4;
+    optional uint32 team_id = 5;
+    optional string team_name = 6;
+
+    enum CmdId {
+        CMD_ID = 357;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+        MEMBER_EXCEED_MAX = 3;
+        MEMBER_OFFLINE = 4;
+        IN_ENTER_LOBBY = 5;
+        ENTER_TIME_OUT = 6;
+        STAGE_ERROR = 7;
+        NOT_LEADER = 8;
+        MEMBER_NOT_ENTER_TEAM_UI = 9;
+        NO_AVAILABLE_AVATAR = 10;
+        TEAM_NOT_SATIFY_RAID = 11;
+        NOT_ALLOW_CROSS_REGION = 12;
+        TEAM_NAME_ERROR = 13;
+        DEFAULT_TEAM_NAME_ERROR = 14;
+    }
+}

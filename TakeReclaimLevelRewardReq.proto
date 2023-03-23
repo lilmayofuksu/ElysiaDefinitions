@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeReclaimLevelRewardReq {
+    optional uint32 level = 1;
+
+    enum CmdId {
+        CMD_ID = 1169;
+    }
+}

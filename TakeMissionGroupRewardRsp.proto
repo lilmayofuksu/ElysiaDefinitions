@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeMissionGroupRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+
+    enum CmdId {
+        CMD_ID = 4349;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKEN = 2;
+        NO_REWARD = 3;
+        NOT_FINISH = 4;
+    }
+}

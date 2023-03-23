@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message OpenworldAvatarActivityAcceptDailyQuestRsp {
+    optional Retcode retcode = 1;
+    required OpenworldQuest quest = 2;
+
+    enum CmdId {
+        CMD_ID = 4551;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        DAILY_LIMIT = 2;
+        QUEST_LIMIT = 3;
+        STAMINA_LACK = 4;
+        FUNCTION_LOCK = 5;
+        CURRENCY_FULL = 6;
+    }
+}

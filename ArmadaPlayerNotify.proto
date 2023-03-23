@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ArmadaMember.proto";
+import "ArmadaPlayerNotifyType.proto";
+message ArmadaPlayerNotify {
+    optional ArmadaPlayerNotifyType type = 1;
+    optional uint32 target_uid = 2;
+    required ArmadaMember member = 3;
+    repeated uint32 member_list = 5;
+    optional string new_name = 6;
+
+    enum CmdId {
+        CMD_ID = 2681;
+    }
+}

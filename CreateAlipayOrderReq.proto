@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message CreateAlipayOrderReq {
+    optional string product_name = 1;
+    optional string total_fee = 2;
+    optional string notify_url = 3;
+    optional string body = 4;
+    optional TradeType trade_type = 5;
+
+    enum CmdId {
+        CMD_ID = 1494;
+    }
+    enum TradeType {
+        NONE = 0;
+        APP = 1;
+        QR_CODE = 2;
+        HUA_BEI = 3;
+    }
+}

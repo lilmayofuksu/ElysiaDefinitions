@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "MasterPupilMission.proto";
+message PupilFinishExamMissionMsg {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    required MasterPupilMission mission = 3;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TakeTowerRaidRewardReq {
+
+    enum CmdId {
+        CMD_ID = 4187;
+    }
+}

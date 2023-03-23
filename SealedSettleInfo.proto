@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "AvatarSuite.proto";
+message SealedSettleInfo {
+    optional uint32 uid = 1;
+    optional uint32 level = 2;
+    optional uint32 score = 3;
+    optional uint32 time_cost = 4;
+    optional uint32 bonus_points = 5;
+    optional uint32 total_bonus_points = 6;
+    repeated AvatarSuite avatar_suite_list = 7;
+}

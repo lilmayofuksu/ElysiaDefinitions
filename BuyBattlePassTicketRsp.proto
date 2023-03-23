@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message BuyBattlePassTicketRsp {
+    required Retcode retcode = 1;
+    repeated RewardData advanced_reward_list = 2;
+    repeated RewardData luxury_reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3753;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        TYPE_ERROR = 3;
+        HAS_GOT = 4;
+        LACK_MCOIN = 5;
+        FEATURE_CLOSED = 6;
+    }
+}

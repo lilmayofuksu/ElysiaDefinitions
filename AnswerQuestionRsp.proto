@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "Question.proto";
+message AnswerQuestionRsp {
+    required Retcode retcode = 1;
+    required Question question = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4261;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        NO_QUESTION = 3;
+        HAVE_ANSWER = 4;
+        NO_ANSWER = 5;
+        NOT_JOIN_ARMADA = 6;
+    }
+}

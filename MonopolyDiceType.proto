@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MonopolyDiceType {
+    MONOPOLY_DICE_NONE = 0;
+    MONOPOLY_DICE_NORMAL = 1;
+    MONOPOLY_DICE_BUILDING_PRIORITY = 2;
+}

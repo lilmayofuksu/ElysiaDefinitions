@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message SealedModeWinBattleReq {
+    optional uint32 level = 1;
+    optional uint32 score = 2;
+
+    enum CmdId {
+        CMD_ID = 736;
+    }
+}

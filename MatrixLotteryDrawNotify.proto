@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "MatrixLottery.proto";
+message MatrixLotteryDrawNotify {
+    required MatrixLottery lottery = 1;
+    optional uint32 win_num = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 2353;
+    }
+}

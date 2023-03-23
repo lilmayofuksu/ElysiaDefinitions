@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum StigmataType {
+    STIGMATA_SLOT_1 = 1;
+    STIGMATA_SLOT_2 = 2;
+    STIGMATA_SLOT_3 = 3;
+}

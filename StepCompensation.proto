@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "StepMissionCompensation.proto";
+message StepCompensation {
+    optional uint32 step_id = 1;
+    optional uint32 step_reward_id = 2;
+    repeated StepMissionCompensation mission_list = 3;
+}

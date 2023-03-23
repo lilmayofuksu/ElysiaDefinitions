@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "DLCAvatar.proto";
+message SyncDLCAvatarNotify {
+    repeated DLCAvatar avatar_list = 1;
+
+    enum CmdId {
+        CMD_ID = 3556;
+    }
+}

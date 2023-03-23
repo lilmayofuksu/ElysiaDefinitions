@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeBattlePassLevelRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData basic_reward_list = 2;
+    repeated RewardData advanced_reward_list = 3;
+    repeated RewardData luxury_reward_list = 4;
+
+    enum CmdId {
+        CMD_ID = 3755;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HAS_TAKE = 3;
+        FEATURE_CLOSED = 4;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message WebActivity {
+    optional uint32 activity_id = 1;
+    optional uint32 show_type = 2;
+}

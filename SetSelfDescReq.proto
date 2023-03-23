@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SetSelfDescReq {
+    required string self_desc = 1;
+
+    enum CmdId {
+        CMD_ID = 78;
+    }
+}

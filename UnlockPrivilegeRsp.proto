@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message UnlockPrivilegeRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 1643;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+        NEWBIE_SCHEDULE_ERROR = 3;
+        NEWBIE_DAY_LACK = 4;
+        BUY_TIMES_LACK = 5;
+        MCOIN_LACK = 6;
+    }
+}

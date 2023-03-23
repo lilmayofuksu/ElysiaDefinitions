@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaReunionMission {
+    optional uint32 mission_id = 1;
+    optional uint32 finish_times = 2;
+}

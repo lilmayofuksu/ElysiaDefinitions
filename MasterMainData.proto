@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message MasterMainData {
+    optional uint32 exp = 1;
+    optional uint32 level = 2;
+    repeated uint32 reward_level = 3;
+    optional uint32 last_dismiss_time = 4;
+    optional uint32 score = 5;
+    optional uint32 period_master_medal_num = 6;
+}

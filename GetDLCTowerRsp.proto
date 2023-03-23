@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "DLCTowerFloorMaxScore.proto";
+import "DLCTowerAvatarInfo.proto";
+message GetDLCTowerRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 progress = 3;
+    repeated DLCTowerAvatarInfo avatar_info_list = 4;
+    optional uint32 tower_cost_time = 5;
+    optional uint32 max_progress = 6;
+    optional uint32 avatar_revive_times = 7;
+    repeated DLCTowerFloorMaxScore floor_max_score_list = 8;
+
+    enum CmdId {
+        CMD_ID = 3575;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

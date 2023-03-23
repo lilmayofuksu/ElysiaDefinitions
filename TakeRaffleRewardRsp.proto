@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeRaffleRewardRsp {
+    required Retcode retcode = 1;
+    repeated uint32 raffle_id_list = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 3895;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAVE_TAKEN = 2;
+        NOT_OPEN = 3;
+        NOT_DRAW = 4;
+        NOT_EXIST = 5;
+    }
+}

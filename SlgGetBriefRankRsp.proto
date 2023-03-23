@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message SlgGetBriefRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 all_country_rank = 2;
+    optional uint32 self_country_rank = 3;
+
+    enum CmdId {
+        CMD_ID = 6072;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_BATTLE = 2;
+    }
+}

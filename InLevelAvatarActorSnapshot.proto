@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "InLevelAvatarSkillInfo.proto";
+message InLevelAvatarActorSnapshot {
+    optional uint32 avatar_id = 1;
+    repeated InLevelAvatarSkillInfo skill_list = 2;
+    optional uint32 weapon_id = 3;
+    optional uint32 weapon_level = 4;
+    optional uint32 stigmata_1_id = 5;
+    optional uint32 stigmata_1_level = 6;
+    optional uint32 stigmata_2_id = 7;
+    optional uint32 stigmata_2_level = 8;
+    optional uint32 stigmata_3_id = 9;
+    optional uint32 stigmata_3_level = 10;
+}

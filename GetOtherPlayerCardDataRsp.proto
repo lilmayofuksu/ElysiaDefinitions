@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "PlayerDetailData.proto";
+import "PlayerCardData.proto";
+message GetOtherPlayerCardDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    required PlayerCardData card_data = 3;
+    required PlayerDetailData player_data = 4;
+
+    enum CmdId {
+        CMD_ID = 491;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_SAME_IDC = 2;
+        HAS_LOGOFF = 3;
+    }
+}

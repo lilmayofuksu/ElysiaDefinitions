@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum FastPassLimitType {
+    FAST_PASS_LIMIT_NONE = 0;
+    FAST_PASS_LIMIT_DAILY = 1;
+    FAST_PASS_LIMIT_WEEKLY = 2;
+}

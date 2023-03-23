@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ArmadaMatrixRetcode {
+
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_ERROR = 2;
+        STAMINA_EXCHANGE_LIMIT = 3;
+        STAMINA_LACK = 4;
+        EXPLORE_POWER_LIMIT = 5;
+        GRID_LOCKED = 6;
+        CONDITION_LACK = 7;
+        SUPPLY_LACK = 8;
+    }
+}

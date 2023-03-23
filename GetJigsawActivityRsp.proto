@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "JigsawData.proto";
+message GetJigsawActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated JigsawData jigsaw_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4274;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

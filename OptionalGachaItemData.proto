@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "GachaDisplayCommonData.proto";
+message OptionalGachaItemData {
+    optional uint32 sub_gacha_id = 1;
+    optional string choose_image = 2;
+    optional bool is_recommend = 3;
+    required GachaDisplayCommonData common_data = 4;
+}

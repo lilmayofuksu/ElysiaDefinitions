@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ChooseBossRushBuffReq {
+    optional uint32 activity_id = 1;
+    optional uint32 pool_id = 2;
+    optional uint32 buff_id = 3;
+
+    enum CmdId {
+        CMD_ID = 498;
+    }
+}

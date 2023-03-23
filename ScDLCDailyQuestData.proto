@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message ScDLCDailyQuestData {
+    repeated OpenworldQuest quest_list = 1;
+    optional uint32 left_accept_times = 2;
+    optional uint32 refresh_left_times = 3;
+    optional uint32 refresh_cost_material_id = 4;
+    optional uint32 refresh_cost_material_num = 5;
+}

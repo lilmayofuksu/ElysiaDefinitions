@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum StorySweepGroupType {
+    STORY_SWEEP_GROUP_AVATAR_FRAGMENT = 1;
+    STORY_SWEEP_GROUP_MATERIAL = 2;
+    STORY_SWEEP_GROUP_ACTIVITY = 3;
+    STORY_SWEEP_GROUP_MATERIAL_NEW = 4;
+}

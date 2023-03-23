@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EndlessNtrAvatar {
+    required uint32 avatar_id = 1;
+    required uint32 target_uid = 2;
+}

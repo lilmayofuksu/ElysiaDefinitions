@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ChatworldPosition.proto";
+message ChatworldPosResetNotify {
+    required ChatworldPosition reset_pos = 1;
+
+    enum CmdId {
+        CMD_ID = 2424;
+    }
+}

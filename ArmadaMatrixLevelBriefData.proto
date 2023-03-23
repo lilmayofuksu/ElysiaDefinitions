@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ArmadaMatrixLevelBriefData {
+    optional uint32 level = 1;
+    optional uint32 monster_left = 2;
+    optional uint32 treasure_left = 3;
+    optional uint32 shop_num = 4;
+}

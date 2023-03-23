@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message KingdomWarGetRankRsp {
+    required Retcode retcode = 1;
+    required RankShowData rank_data = 2;
+    optional uint32 kingdom_id = 3;
+
+    enum CmdId {
+        CMD_ID = 3059;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        KINGDOM_ERROR = 3;
+    }
+}

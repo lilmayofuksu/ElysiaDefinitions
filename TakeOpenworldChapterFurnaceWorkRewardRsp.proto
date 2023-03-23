@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeOpenworldChapterFurnaceWorkRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4660;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        NO_REWARD = 3;
+        FORMULA_ERROR = 4;
+    }
+}

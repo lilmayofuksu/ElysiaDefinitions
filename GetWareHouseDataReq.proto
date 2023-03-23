@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetWareHouseDataReq {
+
+    enum CmdId {
+        CMD_ID = 2647;
+    }
+}

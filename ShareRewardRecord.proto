@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ShareRewardRecord {
+    optional uint32 share_id = 1;
+    optional uint32 last_take_time = 2;
+}

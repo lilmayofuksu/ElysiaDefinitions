@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "MasterPupilOpType.proto";
+import "MasterPupilType.proto";
+message MasterPupilDealMsg {
+    optional uint32 target_uid = 1;
+    optional MasterPupilType type = 2;
+    optional MasterPupilOpType op = 3;
+    optional string nickname = 4;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GetScDLCTowerRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 rank_percent = 2;
+    optional uint32 rank = 3;
+
+    enum CmdId {
+        CMD_ID = 6339;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

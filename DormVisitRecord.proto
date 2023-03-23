@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message DormVisitRecord {
+    optional uint32 visit_time = 1;
+    optional uint32 visit_uid = 2;
+    optional uint32 visit_avatar = 3;
+    optional uint32 level = 4;
+    optional string name = 5;
+}

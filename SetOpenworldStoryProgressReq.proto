@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message SetOpenworldStoryProgressReq {
+    optional uint32 story_id = 1;
+    optional uint32 story_progress = 2;
+
+    enum CmdId {
+        CMD_ID = 4454;
+    }
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "OpenworldStageAvatarInfo.proto";
+message ReportOpenworldSpawnPointReq {
+    optional string point_info = 1;
+    repeated OpenworldStageAvatarInfo avatar_list = 2;
+    optional bool is_ld_sp_recover = 3;
+    repeated uint32 sp_recover_avatar_list = 4;
+    optional uint32 map_id = 5;
+
+    enum CmdId {
+        CMD_ID = 4486;
+    }
+}

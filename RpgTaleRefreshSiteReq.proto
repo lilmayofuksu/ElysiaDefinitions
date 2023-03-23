@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message RpgTaleRefreshSiteReq {
+    optional uint32 tale_id = 1;
+
+    enum CmdId {
+        CMD_ID = 2388;
+    }
+}

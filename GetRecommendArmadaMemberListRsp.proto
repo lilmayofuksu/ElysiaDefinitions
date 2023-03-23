@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+message GetRecommendArmadaMemberListRsp {
+    required Retcode retcode = 1;
+    repeated PlayerFriendBriefData recommend_list = 2;
+
+    enum CmdId {
+        CMD_ID = 2804;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        TOO_FREQUENT = 3;
+        NOT_LEADER = 4;
+        ZERO = 5;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message VerifyItunesOrderNotify {
+    required string receipt_data = 1;
+    optional string device_uuid = 2;
+    optional bool is_auto_reissue = 3;
+    optional string currency_code = 4;
+    optional string price_amount = 5;
+
+    enum CmdId {
+        CMD_ID = 82;
+    }
+}

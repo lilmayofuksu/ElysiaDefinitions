@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "CardProductInfo.proto";
+message GetCardProductInfoRsp {
+    required Retcode retcode = 1;
+    repeated CardProductInfo card_product_info_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1143;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

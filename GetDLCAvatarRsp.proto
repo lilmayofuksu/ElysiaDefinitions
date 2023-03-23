@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "DLCAvatar.proto";
+message GetDLCAvatarRsp {
+    required Retcode retcode = 1;
+    repeated DLCAvatar avatar_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3560;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

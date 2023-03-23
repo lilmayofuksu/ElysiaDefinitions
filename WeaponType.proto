@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+enum WeaponType {
+    WEAPON_DOUBLE_GUN = 1;
+    WEAPON_SWORD = 2;
+    WEAPON_HAND_GUN = 3;
+    WEAPON_HEAVY_SWORD = 4;
+    WEAPON_TAIL = 5;
+    WEAPON_FIST = 6;
+    WEAPON_SCYTHE = 7;
+    WEAPON_LANCE = 8;
+    WEAPON_BOW = 9;
+    BladeRing = 10;
+}

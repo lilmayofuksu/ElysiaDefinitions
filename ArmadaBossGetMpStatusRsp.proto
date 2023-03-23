@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ArmadaBossMemberStatus.proto";
+message ArmadaBossGetMpStatusRsp {
+    required Retcode retcode = 1;
+    repeated ArmadaBossMemberStatus member_status_list = 2;
+
+    enum CmdId {
+        CMD_ID = 555;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+    }
+}

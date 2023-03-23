@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ScDLCTowerScheduleRewardNotify {
+    optional uint32 score = 1;
+    required RewardData reward_data = 2;
+
+    enum CmdId {
+        CMD_ID = 6340;
+    }
+}

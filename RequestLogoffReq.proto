@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message RequestLogoffReq {
+
+    enum CmdId {
+        CMD_ID = 1670;
+    }
+}

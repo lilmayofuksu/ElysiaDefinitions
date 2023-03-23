@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message ExBossSweepRsp {
+    required Retcode retcode = 1;
+    optional uint32 boss_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1656;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LIMIT = 2;
+        ENTER_TIMES_LACK = 3;
+        FEATURE_LIMIT = 4;
+        FEATURE_CLOSED = 5;
+        FINISHED = 6;
+        NOT_OPEN = 7;
+    }
+}

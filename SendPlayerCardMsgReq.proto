@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "ChatMsg.proto";
+message SendPlayerCardMsgReq {
+    required uint32 target_uid = 1;
+    optional string msg = 2;
+    required ChatMsg chat_msg = 3;
+    optional uint32 msg_num_limit = 4;
+    optional bool is_friend = 5;
+
+    enum CmdId {
+        CMD_ID = 486;
+    }
+}

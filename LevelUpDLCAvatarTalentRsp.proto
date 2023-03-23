@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message LevelUpDLCAvatarTalentRsp {
+    required Retcode retcode = 1;
+    optional uint32 talent_id = 2;
+
+    enum CmdId {
+        CMD_ID = 3553;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        TARGET_LEVEL_ERROR = 3;
+        PRE_TALENT_LACK = 4;
+        MATERIAL_LACK = 5;
+        DLC_LEVEL_LACK = 6;
+        PRE_AVATAR_LOCK = 7;
+        WAIT_SELECT_AFFIX_SET_NOT_EMPTY = 8;
+    }
+}

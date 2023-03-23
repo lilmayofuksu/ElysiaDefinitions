@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "TownCommonHead.proto";
+message TownActivityBattleRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+    repeated DropItem drop_item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 6457;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_ERROR = 2;
+        AVATAR_TEAM_NUM_ERROR = 3;
+        POSITION_ERROR = 4;
+        MONSTER_NOT_EXIST = 5;
+    }
+}

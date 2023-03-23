@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ArmadaStageFightInfo {
+    optional uint32 uid = 1;
+    optional uint32 total_damage = 2;
+    optional bool is_fight_body = 3;
+    optional uint32 kill_reward_material_num = 4;
+}

@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "OpenworldMechaPort.proto";
+import "OpenworldTechData.proto";
+import "OpenworldCook.proto";
+import "OpenworldMapBriefData.proto";
+import "OpenworldDataType.proto";
+message GetNewOpenworldRsp {
+    required Retcode retcode = 1;
+    optional OpenworldDataType data_type = 2;
+    repeated OpenworldMapBriefData map_list = 3;
+    optional uint32 next_refresh_time = 4;
+    optional uint32 global_random_seed = 6;
+    optional uint32 close_time = 7;
+    repeated OpenworldCook cook_list = 8;
+    optional uint32 quest_theme_index = 9;
+    repeated OpenworldTechData tech = 10;
+    repeated OpenworldMechaPort mecha_port_list = 11;
+    optional uint32 quest_level = 12;
+    optional uint32 quest_star = 13;
+    optional uint32 max_quest_level = 14;
+
+    enum CmdId {
+        CMD_ID = 4497;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CYCLE_NOT_OPEN = 2;
+    }
+}

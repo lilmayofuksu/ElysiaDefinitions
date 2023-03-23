@@ -1,0 +1,61 @@
+syntax = "proto2";
+
+import "ChallengeModeAvatar.proto";
+import "RogueBuff.proto";
+message RogueTowerGetActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+    required RogueTowerChallengeStatus challenge_status = 3;
+    required RogueTowerBuffStatus buff_status = 4;
+    required RogueTowerCandidate buff_candidate = 5;
+    required RogueTowerEndlessStatus endless_status = 6;
+    repeated RogueTowerSnapshot save_list = 7;
+    optional uint32 left_support_avatar_levelup_times = 8;
+
+    enum CmdId {
+        CMD_ID = 4361;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+    message WaitPool {
+        optional uint32 pool_id = 1;
+        optional uint32 left_times = 2;
+    }
+    message RandomSiteStage {
+        optional uint32 site_id = 1;
+        optional uint32 stage_id = 2;
+    }
+    message RogueTowerCandidate {
+        optional uint32 cur_pool_id = 1;
+        repeated uint32 cur_candidate_id_list = 3;
+        repeated WaitPool wait_pool_list = 2;
+    }
+    message RogueTowerBuffStatus {
+        optional uint32 refresh_buff_times = 1;
+        repeated RogueBuff buff_list = 2;
+    }
+    message RogueTowerChallengeStatus {
+        repeated ChallengeModeAvatar avatar_list = 1;
+        optional bool is_challenge_fail = 2;
+        optional uint32 cur_area_id = 3;
+        repeated RandomSiteStage site_stage_list = 4;
+    }
+    message RogueTowerEndlessScore {
+        optional uint32 avatar_id = 1;
+        optional uint32 score = 2;
+    }
+    message RogueTowerEndlessStatus {
+        optional uint32 endless_score = 1;
+        optional uint32 last_settle_reward_score = 2;
+        optional uint32 endless_floor = 3;
+        repeated RogueTowerEndlessScore avatar_max_score_list = 4;
+    }
+    message RogueTowerSnapshot {
+        optional uint32 stage_pass_count = 1;
+        optional uint32 score = 2;
+        repeated uint32 avatar_id_list = 3;
+        repeated RogueBuff selected_buff_list = 4;
+    }
+}

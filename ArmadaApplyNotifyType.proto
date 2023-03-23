@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaApplyNotifyType {
+    ARMADA_APPLY_NOTIFY_NEW = 1;
+    ARMADA_APPLY_NOTIFY_APPROVE = 2;
+    ARMADA_APPLY_NOTIFY_REJECT = 3;
+}

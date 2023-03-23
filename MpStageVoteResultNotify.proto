@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message MpStageVoteResultNotify {
+    optional uint32 option = 1;
+
+    enum CmdId {
+        CMD_ID = 1032;
+    }
+}

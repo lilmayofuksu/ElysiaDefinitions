@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message OpenworldEvent {
+    optional uint32 event_id = 1;
+    repeated DropItem drop_item_list = 2;
+}

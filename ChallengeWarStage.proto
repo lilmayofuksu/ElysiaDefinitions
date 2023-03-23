@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ChallengeWarStage {
+    optional uint32 stage_id = 1;
+    repeated StageFloorScore floor_score_list = 2;
+    optional uint32 max_finish_floor = 3;
+    message StageFloorScore {
+        optional uint32 floor = 1;
+        optional uint32 score = 2;
+    }
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldPeriodSettleData {
+    optional uint32 map_id = 1;
+    optional uint32 settle_level = 2;
+    optional uint32 old_level = 3;
+    optional uint32 old_star = 4;
+    optional uint32 cur_level = 5;
+    optional uint32 cur_star = 6;
+    optional uint32 sub_star = 7;
+    required RewardData normal_reward = 8;
+    required RewardData up_reward = 9;
+}

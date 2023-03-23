@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetExaminationActivityReq {
+
+    enum CmdId {
+        CMD_ID = 4323;
+    }
+}

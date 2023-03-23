@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum OpenworldQuestStatus {
+    OPENWORLD_QUEST_NONE = 0;
+    OPENWORLD_QUEST_DOING = 1;
+    OPENWORLD_QUEST_FINISH = 2;
+    OPENWORLD_QUEST_CLOSE = 3;
+}

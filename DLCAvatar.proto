@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "DLCAvatarTalent.proto";
+message DLCAvatar {
+    optional uint32 avatar_id = 1;
+    repeated DLCAvatarTalent talent_list = 2;
+    repeated uint32 equip_talent_list = 3;
+}

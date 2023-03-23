@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ChatgroupMember.proto";
+message ChatgroupJoinMsg {
+    optional uint32 inviter_uid = 1;
+    repeated ChatgroupMember member_list = 2;
+}

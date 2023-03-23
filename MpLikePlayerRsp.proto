@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message MpLikePlayerRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    optional uint32 from_uid = 3;
+    optional uint32 target_like_num = 4;
+    optional uint32 add_friends_point = 5;
+
+    enum CmdId {
+        CMD_ID = 393;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+        HAS_LIKE = 3;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum AdventureQuestStatus {
+    ADVENTURE_QUEST_STATUS_NONE = 0;
+    ADVENTURE_QUEST_STATUS_DOING = 1;
+    ADVENTURE_QUEST_STATUS_FINISHED = 2;
+}

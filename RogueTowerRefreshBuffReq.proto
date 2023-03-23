@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message RogueTowerRefreshBuffReq {
+    optional uint32 id = 1;
+
+    enum CmdId {
+        CMD_ID = 4368;
+    }
+}

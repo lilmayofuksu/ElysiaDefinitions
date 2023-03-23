@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message RogueTowerLevelupSupportAvatarRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4375;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_TIMES = 2;
+        MAX_LEVEL = 3;
+        AVATAR_LOCKED = 4;
+    }
+}

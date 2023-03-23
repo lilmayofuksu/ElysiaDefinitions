@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message ChatworldTreasureRewardNotify {
+    optional uint32 chatworld_id = 1;
+    optional uint32 treasure_id = 2;
+    repeated DropItem drop_item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2419;
+    }
+}

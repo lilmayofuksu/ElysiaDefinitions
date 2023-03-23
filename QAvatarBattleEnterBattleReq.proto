@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message QAvatarBattleEnterBattleReq {
+
+    enum CmdId {
+        CMD_ID = 5601;
+    }
+}

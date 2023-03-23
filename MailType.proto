@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MailType {
+    MAIL_INNER = 1;
+    MAIL_OUTER = 2;
+    MAIL_NOTICE = 3;
+}

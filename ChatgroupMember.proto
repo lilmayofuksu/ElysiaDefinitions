@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+import "ChatgroupPosition.proto";
+message ChatgroupMember {
+    optional uint32 uid = 1;
+    optional ChatgroupPosition position = 2;
+    required PlayerFriendBriefData brief_data = 3;
+}

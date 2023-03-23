@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message ChooseStageBuffRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_buff_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1531;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

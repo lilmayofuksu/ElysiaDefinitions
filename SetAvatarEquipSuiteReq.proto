@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "AvatarEquipSuite.proto";
+message SetAvatarEquipSuiteReq {
+    optional uint32 avatar_id = 1;
+    optional uint32 suite_id = 2;
+    required AvatarEquipSuite suite = 3;
+
+    enum CmdId {
+        CMD_ID = 1456;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message ConsignedOrder {
+    optional uint32 id = 1;
+    optional uint32 consigner_uid = 2;
+    optional uint32 reward_id = 3;
+    optional uint32 progress = 4;
+    optional uint32 unique_id = 5;
+    optional uint32 order_level = 6;
+    repeated RewardData reward_list = 7;
+    repeated DropItem drop_item_list = 8;
+    optional uint32 order_credit = 9;
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message Weapon {
+    required uint32 unique_id = 1;
+    optional uint32 id = 2;
+    required uint32 level = 3;
+    required uint32 exp = 4;
+    optional bool is_protected = 5;
+    optional uint32 cancel_protect_time = 6;
+    optional bool is_extracted = 7;
+    optional uint32 sub_weapon_id = 8;
+    repeated uint32 quantum_branch_list = 9;
+}

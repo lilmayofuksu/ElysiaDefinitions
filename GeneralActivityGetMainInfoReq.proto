@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GeneralActivityGetMainInfoReq {
+    repeated uint32 activity_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 4005;
+    }
+}

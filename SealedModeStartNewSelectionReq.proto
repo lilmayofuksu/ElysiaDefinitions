@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SealedModeStartNewSelectionReq {
+
+    enum CmdId {
+        CMD_ID = 727;
+    }
+}

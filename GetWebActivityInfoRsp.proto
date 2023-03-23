@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "WebActivity.proto";
+message GetWebActivityInfoRsp {
+    required Retcode retcode = 1;
+    repeated WebActivity web_activity_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1602;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

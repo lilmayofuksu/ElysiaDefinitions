@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message AbandonOpenworldQuestRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4485;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        IS_CLOSE = 2;
+        REWARD_NOT_TAKE = 3;
+        NOT_FOUND = 4;
+        NOT_DOING = 5;
+        HAS_ABANDAN = 6;
+        MAP_NOT_FOUND = 7;
+        CANNOT_ABANDON = 8;
+    }
+}

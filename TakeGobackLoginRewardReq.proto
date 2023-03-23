@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message TakeGobackLoginRewardReq {
+    optional uint32 take_days = 1;
+    optional uint32 reward_type = 2;
+    repeated uint32 reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 366;
+    }
+}

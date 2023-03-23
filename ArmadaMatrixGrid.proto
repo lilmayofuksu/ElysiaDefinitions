@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "ArmadaMatrixArmadaBoss.proto";
+import "ArmadaMatrixGridState.proto";
+import "ArmadaMatrixGridType.proto";
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixGrid {
+    required ArmadaMatrixGridPos pos = 1;
+    optional ArmadaMatrixGridType type = 2;
+    optional ArmadaMatrixGridState state = 3;
+    optional bool is_visited = 4;
+    optional bool is_win = 5;
+    optional uint32 preset_id = 6;
+    optional uint32 show_type = 7;
+    required ArmadaMatrixArmadaBoss armada_boss = 8;
+    optional uint32 expire_time = 9;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ElfDetailData.proto";
+message PlayerCardElfData {
+    optional uint32 index = 1;
+    required ElfDetailData elf = 2;
+}

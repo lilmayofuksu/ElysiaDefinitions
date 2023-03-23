@@ -1,0 +1,59 @@
+syntax = "proto2";
+
+import "StageEndStatus.proto";
+import "RewardData.proto";
+import "AccountBuffReward.proto";
+import "DropItem.proto";
+import "MpStageMvpReward.proto";
+import "StageSpecialChallengeData.proto";
+import "StageChallengeData.proto";
+message StageEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 stage_id = 2;
+    optional uint32 player_exp_reward = 3;
+    optional uint32 avatar_exp_reward = 4;
+    optional uint32 scoin_reward = 5;
+    repeated StageChallengeData challenge_list = 6;
+    optional uint32 friends_point_add = 7;
+    optional uint32 progress = 8;
+    repeated StageSpecialChallengeData special_challenge_list = 9;
+    required MpStageMvpReward mvp_reward = 10;
+    repeated DropItem mp_drop_item_list = 11;
+    optional uint32 mp_exp_reward = 12;
+    optional uint32 exp_convert_scoin = 13;
+    optional uint32 bond_add_friends_point = 14;
+    required AccountBuffReward buff_reward = 16;
+    optional uint32 world_boss_score = 17;
+    optional uint32 rank_scoin = 18;
+    required RewardData line_enhance_reward_data = 19;
+    optional uint32 dungeons_evaluation = 20;
+    repeated DropItem dungeons_drop_item_list = 21;
+    optional StageEndStatus end_status = 22;
+    optional uint32 bonus_score = 24;
+    repeated DropItem bonus_drop_list = 25;
+    repeated DropItem gratuity_drop_list = 26;
+    repeated RewardData extra_reward_data_list = 27;
+    repeated DropItem extra_drop_list = 28;
+    optional bool is_new_max_score = 29;
+    repeated DropItem theme_wanted_drop_item_list = 31;
+    repeated DropItem theme_wanted_show_extra_drop_item_list = 32;
+    optional bool is_theme_wanted_extra_drop_taken_by_first_pass = 33;
+    optional uint32 god_war_challenge_score = 34;
+
+    enum CmdId {
+        CMD_ID = 46;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STAGE_ERROR = 2;
+        DROP_ERROR = 3;
+        CHALLENGE_ERROR = 4;
+        STAGE_TIME_ERROR = 5;
+        ALREADY_OPEN_DUNGEONS = 6;
+        NOT_MEET_FAST = 22;
+        COST_MATERIAL_LACK = 40;
+        NOT_IN_TEAM = 62;
+        SLG_BATTLE_NOT_OPEN = 63;
+    }
+}

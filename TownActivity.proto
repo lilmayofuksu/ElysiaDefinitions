@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "TownPath.proto";
+import "TownChallenge.proto";
+import "TownPassByTrigger.proto";
+import "TownBuff.proto";
+import "TownBoss.proto";
+import "TownEvent.proto";
+import "TownMonster.proto";
+import "TownBuilding.proto";
+import "TownAvatar.proto";
+message TownActivity {
+    optional uint32 town_id = 1;
+    optional uint32 tower_id = 2;
+    optional uint32 game_round = 3;
+    repeated TownAvatar avatar_list = 4;
+    repeated uint32 brick_id_list = 5;
+    optional uint32 next_brick_round = 6;
+    repeated TownBuilding building_list = 7;
+    repeated uint32 valid_building_id_list = 8;
+    repeated TownMonster monster_list = 9;
+    repeated TownEvent event_list = 10;
+    required TownBoss boss = 11;
+    repeated TownBuff buff_list = 12;
+    repeated TownPassByTrigger trigger_list = 13;
+    repeated TownChallenge challenge_list = 14;
+    repeated uint32 finished_tower_id_list = 15;
+    optional bool is_game_end = 16;
+    repeated TownPath path_list = 17;
+    optional string transaction_str = 18;
+}

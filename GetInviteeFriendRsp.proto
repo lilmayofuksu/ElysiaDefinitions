@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "InviteeFriendRewardData.proto";
+message GetInviteeFriendRsp {
+    required Retcode retcode = 1;
+    optional string invitee_code = 2;
+    repeated InviteeFriendRewardData invitee_reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 226;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+    }
+}

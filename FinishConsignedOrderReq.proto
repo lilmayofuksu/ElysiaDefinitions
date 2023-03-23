@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "ConsignedOrder.proto";
+import "EquipmentItem.proto";
+message FinishConsignedOrderReq {
+    required EquipmentItem item = 1;
+    optional uint32 unique_id = 2;
+    optional uint32 consign_id = 3;
+    optional uint32 progress = 4;
+    optional uint32 order_level = 5;
+    required ConsignedOrder order = 6;
+    required ConsignedOrder next_order = 7;
+    optional uint32 reliable_id = 8;
+
+    enum CmdId {
+        CMD_ID = 2643;
+    }
+}

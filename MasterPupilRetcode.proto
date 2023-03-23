@@ -1,0 +1,51 @@
+syntax = "proto2";
+
+message MasterPupilRetcode {
+
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PUPIL_LEVEL_LIMIT = 2;
+        MASTER_LEVEL_LIMIT = 3;
+        APPLY_NUM_LIMIT = 6;
+        TARGET_APPLY_NUM_LIMIT = 7;
+        INVALID_UID = 8;
+        IS_EVALED = 9;
+        EXAM_MISSION_UNFINISH = 10;
+        FAME_LEVEL_LIMIT = 12;
+        FAME_LEVEL_REWARDED = 13;
+        CONTENT_STR_INVALID = 14;
+        MASTER_PUPIL_TYPE_ERROR = 16;
+        APPLY_REPEATE = 17;
+        HAS_RELATION = 18;
+        NO_RELATION = 19;
+        RELATION_CD_LIMIT = 21;
+        HAS_STEP_UNFINISH = 22;
+        NO_STEP_DOING = 23;
+        DAILY_REFRESH_TIMES_LIMIT = 24;
+        SAME_DAY_TIME = 25;
+        RECOMMEND_CD = 26;
+        INVALID_STAR = 27;
+        NOT_OPEN = 28;
+        NOT_ALLOW_CROSS_REGION_MASTER_PUPIL = 29;
+        FEATURE_LIMIT = 30;
+        SELF_PUPIL_NUM_LIMIT = 101;
+        SELF_HAS_MASTER = 102;
+        SELF_STEP_ERROR = 103;
+        SELF_DISMISS_TIME_LIMIT = 104;
+        SELF_IS_GRADUATED = 105;
+        SELF_MONTH_PUPIL_NUM_LIMIT = 106;
+        SELF_IS_MASTER = 107;
+        TARGET_PUPIL_NUM_LIMIT = 201;
+        TARGET_HAS_MASTER = 202;
+        TARGET_STEP_ERROR = 203;
+        TARGET_DISMISS_TIME_LIMIT = 204;
+        TARGET_IS_GRADUATED = 205;
+        TARGET_MONTH_PUPIL_NUM_LIMIT = 206;
+        TARGET_IS_MASTER = 207;
+        DECLARATION_IN_CD = 208;
+        DECLARATION_IN_AUDIT = 209;
+        FEATURE_CLOSED = 210;
+        TARGET_RECALLED = 211;
+    }
+}

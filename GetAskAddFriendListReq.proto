@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetAskAddFriendListReq {
+
+    enum CmdId {
+        CMD_ID = 70;
+    }
+}

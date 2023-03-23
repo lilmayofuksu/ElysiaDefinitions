@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "DormRoomAvatar.proto";
+message SetDormAvatarReq {
+    optional uint32 house_id = 1;
+    repeated DormRoomAvatar room_avatar_list = 2;
+
+    enum CmdId {
+        CMD_ID = 611;
+    }
+}

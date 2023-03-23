@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaMatrixTreasureType {
+    ARMADA_MATRIX_TREASURE_ITEM = 1;
+    ARMADA_MATRIX_TREASURE_DEPOSIT = 2;
+    ARMADA_MATRIX_TREASURE_OUTER_ITEM = 3;
+}

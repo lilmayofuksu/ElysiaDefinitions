@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "OpenworldEndlessWarInfo.proto";
+message GetOpenworldEndlessPlayerWarInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    repeated OpenworldEndlessWarInfo war_info_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3444;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

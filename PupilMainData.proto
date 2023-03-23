@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+import "PupilStep.proto";
+message PupilMainData {
+    repeated PupilStep step_list = 1;
+    optional uint32 last_dismiss_time = 2;
+    optional uint32 pupil_id = 3;
+    optional string nickname = 4;
+    optional uint32 cur_step_id = 5;
+    optional uint32 left_assistant_times = 6;
+    optional uint32 left_frozen_time = 7;
+    required PlayerFriendBriefData master_brief = 8;
+    optional uint32 pool_fame_num = 9;
+    optional bool is_graduated = 10;
+}

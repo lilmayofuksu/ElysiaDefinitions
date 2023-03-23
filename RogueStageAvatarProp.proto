@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message RogueStageAvatarProp {
+    required uint32 prop_id = 1;
+    required uint32 value = 2;
+}

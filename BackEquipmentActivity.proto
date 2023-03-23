@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message BackEquipmentActivity {
+    repeated uint32 mainid_list = 1;
+    optional uint32 remain_back_times = 2;
+}

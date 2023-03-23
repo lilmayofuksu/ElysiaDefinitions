@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TownActivityGetDataReq {
+    optional uint32 town_id = 1;
+
+    enum CmdId {
+        CMD_ID = 6450;
+    }
+}

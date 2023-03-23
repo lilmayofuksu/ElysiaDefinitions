@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "AvatarBindEquipMode.proto";
+message SwitchExtraStoryLockedAvatarBindEquipRsp {
+    required Retcode retcode = 1;
+    optional uint32 succ_cnt = 2;
+    optional AvatarBindEquipMode mode = 3;
+
+    enum CmdId {
+        CMD_ID = 1003;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

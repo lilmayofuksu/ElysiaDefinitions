@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum CycleMissionSolveType {
+    CYCLE_MISSION_SOLVE_CLOSE = 0;
+    CYCLE_MISSION_SOLVE_RESERVE = 1;
+}

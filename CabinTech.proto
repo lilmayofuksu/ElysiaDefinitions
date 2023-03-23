@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message CabinTech {
+    optional int32 pos_x = 1;
+    optional int32 pos_y = 2;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ChatworldBattleCampTag {
+    CHATWORLD_BATTLE_CAMP_TAG_NONE = 0;
+    CHATWORLD_BATTLE_CAMP_TAG_1 = 1;
+    CHATWORLD_BATTLE_CAMP_TAG_2 = 2;
+}

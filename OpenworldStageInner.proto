@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldStageInner {
+    optional uint32 condition_type = 1;
+    optional uint32 condition_value = 2;
+}

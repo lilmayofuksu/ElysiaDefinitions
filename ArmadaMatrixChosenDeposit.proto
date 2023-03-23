@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ArmadaMatrixTemporaryDeposit.proto";
+message ArmadaMatrixChosenDeposit {
+    optional uint32 index = 1;
+    required ArmadaMatrixTemporaryDeposit deposit = 2;
+}

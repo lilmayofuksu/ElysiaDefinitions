@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetFarmActivityDataReq {
+
+    enum CmdId {
+        CMD_ID = 1385;
+    }
+}

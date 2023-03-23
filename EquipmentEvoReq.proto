@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "EquipmentItemList.proto";
+import "EquipmentItem.proto";
+message EquipmentEvoReq {
+    required EquipmentItem main_item = 1;
+    required EquipmentItemList consume_item_list = 2;
+
+    enum CmdId {
+        CMD_ID = 37;
+    }
+}

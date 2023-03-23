@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message OpenArmadaStageRsp {
+    required Retcode retcode = 1;
+    optional uint32 hard_level = 2;
+
+    enum CmdId {
+        CMD_ID = 2800;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        NOT_LEADER = 3;
+        TIME_LIMIT = 4;
+        BOSS_NOT_FOUND = 5;
+        LEVEL_LOCK = 6;
+        POPL_LACK = 7;
+        HAS_OPEN = 8;
+        NOT_FINISH = 9;
+    }
+}

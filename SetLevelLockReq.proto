@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SetLevelLockReq {
+    optional uint32 level_lock_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1488;
+    }
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "QCandyBattleSettleInfo.proto";
+message QCandyBattleGetActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 today_currency_got_num = 3;
+    optional uint32 rank_score = 4;
+    optional uint32 max_rank_score = 5;
+    optional uint32 last_avatar_id = 6;
+    repeated uint32 unlocked_avatar_list = 7;
+    repeated QCandyBattleSettleInfo settle_record_list = 8;
+
+    enum CmdId {
+        CMD_ID = 6602;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

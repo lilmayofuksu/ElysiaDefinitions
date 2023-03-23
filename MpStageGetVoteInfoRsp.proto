@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "MpStageVoteInfo.proto";
+message MpStageGetVoteInfoRsp {
+    required Retcode retcode = 1;
+    repeated MpStageVoteInfo vote_info_list = 2;
+    optional uint32 vote_end_time = 3;
+
+    enum CmdId {
+        CMD_ID = 1037;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+        NOT_IN_VOTING = 3;
+    }
+}

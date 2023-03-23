@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "ActivityWorldChatroomType.proto";
+import "ChatMsg.proto";
+message EnterWorldChatroomRsp {
+    required Retcode retcode = 1;
+    optional uint32 chatroom_id = 2;
+    repeated ChatMsg his_chat_msg_list = 3;
+    optional ActivityWorldChatroomType activity_type = 4;
+    optional uint32 player_num = 5;
+
+    enum CmdId {
+        CMD_ID = 2232;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+        CHATROOM_ID_ERROR = 3;
+        CHATROOM_FULL = 4;
+        NO_KINGDOM = 5;
+        TOO_OFTEN = 6;
+        FEATURE_CLOSED = 7;
+    }
+}

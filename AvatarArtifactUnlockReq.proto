@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message AvatarArtifactUnlockReq {
+    optional uint32 avatar_id = 1;
+    optional uint32 artifact_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1444;
+    }
+}

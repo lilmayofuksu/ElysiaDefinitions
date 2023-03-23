@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+message OpenworldEndlessWarInfo {
+    optional uint32 uid = 1;
+    optional Type type = 2;
+    optional uint32 item_id = 3;
+    optional uint32 battle_id = 4;
+    optional uint32 target_id = 5;
+    optional uint32 from_who = 6;
+    optional uint32 invasion_id = 7;
+    optional uint32 score = 8;
+    optional uint32 scene_gear = 9;
+    optional uint32 time = 10;
+
+    enum Type {
+        NONE = 0;
+        SET_TRAP = 1;
+        TRIGGER_TRAP = 2;
+        SCENE_GEAR = 3;
+        INVASION = 4;
+        INVASION_SUB_SCORE = 5;
+        FINISH_INVASION = 6;
+    }
+}

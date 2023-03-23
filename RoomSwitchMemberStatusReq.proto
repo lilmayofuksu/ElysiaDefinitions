@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RoomClientStatus.proto";
+import "RoomMemberStatus.proto";
+message RoomSwitchMemberStatusReq {
+    optional RoomMemberStatus status = 1;
+    optional RoomClientStatus client_status = 2;
+
+    enum CmdId {
+        CMD_ID = 3173;
+    }
+}

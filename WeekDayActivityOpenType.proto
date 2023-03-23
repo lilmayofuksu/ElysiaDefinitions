@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum WeekDayActivityOpenType {
+    WEEK_DAY_ACTIVITY_OPEN_DAILY = 0;
+    WEEK_DAY_ACTIVITY_OPEN_WEEK_DAY = 1;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message CityActivityEvent {
+    optional uint32 site_id = 1;
+    repeated uint32 event_id_list = 2;
+}

@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message DiceyDungeonActivityRoomEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 dungeon_id = 3;
+    optional uint32 dungeon_room_id = 4;
+
+    enum CmdId {
+        CMD_ID = 6511;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        DUNGEON_NOT_BEGIN = 3;
+        DUNGEON_ROOM_ERROR = 4;
+        ROLE_ERROR = 5;
+        WEAPON_ERROR = 6;
+        CHECK_EVENT_FAIL = 7;
+    }
+}

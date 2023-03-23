@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityCheckInOptionalRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+
+    enum CmdId {
+        CMD_ID = 6475;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_LIST = 2;
+        CHECKED_IN = 3;
+    }
+}

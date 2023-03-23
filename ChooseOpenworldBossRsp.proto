@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message ChooseOpenworldBossRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 boss_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4521;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STAMINA_LACK = 2;
+        BOSS_NOT_KILL = 3;
+        BOSS_NOT_EXIST = 4;
+        TIME_LIMIT = 5;
+    }
+}

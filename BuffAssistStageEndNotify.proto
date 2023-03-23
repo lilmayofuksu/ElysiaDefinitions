@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "BuffAssistBuffPool.proto";
+message BuffAssistStageEndNotify {
+    optional uint32 stage_id = 1;
+    repeated BuffAssistBuffPool cur_stage_buff_pool_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5949;
+    }
+}

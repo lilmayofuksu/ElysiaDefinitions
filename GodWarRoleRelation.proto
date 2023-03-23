@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GodWarRoleRelation {
+    optional uint32 role_id = 1;
+    optional uint32 level = 2;
+    optional uint32 exp = 3;
+    optional uint32 reward_has_take_level = 4;
+    repeated uint32 reward_has_take_story_list = 5;
+}

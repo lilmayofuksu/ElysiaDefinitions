@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "DormRoom.proto";
+message DormHouse {
+    optional uint32 id = 1;
+    optional string name = 2;
+    repeated DormRoom room_list = 3;
+    optional uint32 level = 4;
+}

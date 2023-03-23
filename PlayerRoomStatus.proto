@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "RoomMode.proto";
+message PlayerRoomStatus {
+    optional RoomMode room_mode = 1;
+    optional uint32 room_id = 2;
+}

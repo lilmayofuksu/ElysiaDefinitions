@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message LoginWishGetMainDataReq {
+
+    enum CmdId {
+        CMD_ID = 1607;
+    }
+}

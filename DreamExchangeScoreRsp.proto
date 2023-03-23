@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message DreamExchangeScoreRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 5757;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        DREAM_NOT_EXIST = 3;
+        TIMES_NOT_ENOUGH = 4;
+        HCOIN_NOT_ENOUGH = 5;
+        SCORE_FULL = 6;
+    }
+}

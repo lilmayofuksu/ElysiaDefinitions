@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message CommentReportRsp {
+    required Retcode retcode = 1;
+    optional uint32 next_evaluate_time = 2;
+
+    enum CmdId {
+        CMD_ID = 230;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

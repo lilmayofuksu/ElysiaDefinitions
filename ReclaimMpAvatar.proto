@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ReclaimAvatar.proto";
+message ReclaimMpAvatar {
+    required ReclaimAvatar reclaim_avatar = 1;
+    optional uint32 reclaim_level = 2;
+    repeated uint32 reclaim_avatar_id_list = 3;
+    optional uint32 avatar_id = 4;
+}

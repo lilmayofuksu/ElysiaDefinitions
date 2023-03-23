@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetClearStageActivityReq {
+
+    enum CmdId {
+        CMD_ID = 453;
+    }
+}

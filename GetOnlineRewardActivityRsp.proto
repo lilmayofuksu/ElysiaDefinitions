@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+message GetOnlineRewardActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 min_level = 4;
+    repeated OnlineReward reward_list = 5;
+
+    enum CmdId {
+        CMD_ID = 4197;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        LEVEL_NOT_SATISFY = 3;
+    }
+    message OnlineReward {
+        optional uint32 id = 1;
+        optional uint32 take_time = 2;
+        optional bool is_taken = 3;
+    }
+}

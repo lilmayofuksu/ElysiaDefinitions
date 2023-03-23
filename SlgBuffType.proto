@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum SlgBuffType {
+    SLG_BUFF_TYPE_NONE = 0;
+    SLG_BUFF_TYPE_ACTIVITY_STAMINA_COST = 1;
+    SLG_BUFF_TYPE_STAGE_SCORE = 2;
+    SLG_BUFF_TYPE_SETTLE_SCORE = 3;
+    SLG_BUFF_TYPE_STAGE = 4;
+}

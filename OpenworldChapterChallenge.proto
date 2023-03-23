@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldChapterChallenge {
+    optional uint32 today_challenge_times = 1;
+    optional uint32 last_challenge_time = 2;
+}

@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message RanchSynthesisMonsterRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 synthesis_id = 3;
+    optional uint32 main_unique_id = 4;
+    optional uint32 assist_unique_id = 5;
+    optional uint32 output_unique_id = 6;
+
+    enum CmdId {
+        CMD_ID = 5836;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MONSTER_NOT_EXIST = 2;
+        UNIQUE_ID_REPEATED = 3;
+        MONSTER_ALREADY_ASSIGNED = 4;
+        MATERIAL_LACK = 5;
+        MONSTER_NOT_MATCH = 6;
+    }
+}

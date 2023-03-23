@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message RankScheduleData {
+    optional uint32 schedule_id = 1;
+    optional uint32 type = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum GodWarDataSourceType {
+    GOD_WAR_DATA_SOURCE_CUR_TALE = 1;
+    GOD_WAR_DATA_SOURCE_SPECIFIC_TALE = 2;
+}

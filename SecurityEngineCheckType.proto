@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SecurityEngineCheckType {
+    SECURITY_ENGINE_CHECK_NONE = 0;
+    SECURITY_ENGINE_CHECK_LOGIN = 1;
+    SECURITY_ENGINE_CHECK_STAGE = 2;
+}

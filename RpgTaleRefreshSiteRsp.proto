@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message RpgTaleRefreshSiteRsp {
+    required Retcode retcode = 1;
+    optional uint32 tale_id = 2;
+
+    enum CmdId {
+        CMD_ID = 2389;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HCOIN_LACK = 2;
+        MATERIAL_LACK = 3;
+        REFRESH_TIME_LACK = 4;
+        SITE_NOT_FINISH = 5;
+    }
+}

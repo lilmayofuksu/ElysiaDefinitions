@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message ChangeGodWarChallengeSupportAvatarRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    optional uint32 tale_id = 3;
+    repeated uint32 support_avatar_id_list = 4;
+    optional uint32 extra_item_id = 5;
+    optional uint32 assistant_extra_item_id = 6;
+
+    enum CmdId {
+        CMD_ID = 6155;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SUPPORT_AVATAR_ERROR = 2;
+        FEATURE_CLOSE = 3;
+        NOT_OPEN = 4;
+        EXTRA_ITEM_ERROR = 5;
+    }
+}

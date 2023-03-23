@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "EndlessType.proto";
+message EndlessSelectTypeRsp {
+    required Retcode retcode = 1;
+    optional EndlessType endless_type = 2;
+
+    enum CmdId {
+        CMD_ID = 3463;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        IN_ULTRA = 2;
+        NOT_IN_NEXT_SCHEDULE = 3;
+        LACK_LEVEL = 4;
+    }
+}

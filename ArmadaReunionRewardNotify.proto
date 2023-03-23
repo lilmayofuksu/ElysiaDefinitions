@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "ArmadaReunionMission.proto";
+message ArmadaReunionRewardNotify {
+    required ArmadaReunionMission mission = 1;
+    required RewardData reward_data = 2;
+
+    enum CmdId {
+        CMD_ID = 2836;
+    }
+}

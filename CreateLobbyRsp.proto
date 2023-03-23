@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+import "LobbyEnterType.proto";
+message CreateLobbyRsp {
+    optional Retcode retcode = 1;
+    optional int32 sub_retcode = 2;
+    optional uint32 lobby_id = 3;
+    optional uint32 stage_id = 4;
+    optional uint32 min_level = 5;
+    optional LobbyEnterType lobby_enter_type = 6;
+    optional uint32 max_level = 7;
+    optional string team_name = 8;
+
+    enum CmdId {
+        CMD_ID = 302;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STAGE_ERROR = 2;
+        SERVER_BUSY = 3;
+        BAD_NETWORK = 4;
+        CLIENT_VERSION_ERROR = 5;
+        NOT_ALLOWED = 6;
+        NO_AVAILABLE_AVATAR = 7;
+        TEAM_NAME_ERROR = 8;
+        IN_SQUAD = 9;
+        IN_SQUAD_MATCH = 10;
+        IN_ROOM = 12;
+        FEATURE_LIMIT = 13;
+        MEMBER_LIMIT = 14;
+        DEFAULT_TEAM_NAME_ERROR = 15;
+    }
+}

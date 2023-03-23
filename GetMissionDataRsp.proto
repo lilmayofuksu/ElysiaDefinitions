@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "MainlineStepMission.proto";
+import "ChallengeMissionData.proto";
+import "Mission.proto";
+message GetMissionDataRsp {
+    required Retcode retcode = 1;
+    repeated Mission mission_list = 2;
+    optional bool is_all = 7;
+    optional bool is_in_activity = 8;
+    required ChallengeMissionData challenge_mission = 9;
+    repeated uint32 close_mission_list = 10;
+    required MainlineStepMission mainline_step = 11;
+
+    enum CmdId {
+        CMD_ID = 113;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

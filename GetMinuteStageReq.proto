@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetMinuteStageReq {
+
+    enum CmdId {
+        CMD_ID = 542;
+    }
+}

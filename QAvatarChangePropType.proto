@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum QAvatarChangePropType {
+    QAVATAR_CHANGE_PROP_NONE = 0;
+    QAVATAR_CHANGE_PROP_HP = 1;
+    QAVATAR_CHANGE_PROP_SP = 2;
+}

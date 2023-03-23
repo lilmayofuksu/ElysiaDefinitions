@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message TakeDormLikesDropRsp {
+    required Retcode retcode = 1;
+    repeated DropItem drop_item_list = 2;
+    optional uint32 yesterday_be_liked_num = 3;
+
+    enum CmdId {
+        CMD_ID = 1009;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LIMIT = 2;
+        NO_DROP = 3;
+        HAVE_TAKEN = 4;
+    }
+}

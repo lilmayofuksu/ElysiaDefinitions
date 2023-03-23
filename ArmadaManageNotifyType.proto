@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaManageNotifyType {
+    ARMADA_MANAGE_NOTIFY_LEADER = 1;
+    ARMADA_MANAGE_NOTIFY_VICE_LEADER_SET = 2;
+    ARMADA_MANAGE_NOTIFY_VICE_LEADER_CANCEL = 3;
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message ChatworldFishKickPlayerNotify {
+    optional KickReason kick_reason = 1;
+
+    enum CmdId {
+        CMD_ID = 2444;
+    }
+    enum KickReason {
+        KICK_NONE = 0;
+        KICK_CURRENCY_FULL = 1;
+        KICK_NO_ACTION = 2;
+    }
+}

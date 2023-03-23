@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChatworldPrayReq {
+    optional uint32 scene_id = 1;
+
+    enum CmdId {
+        CMD_ID = 2453;
+    }
+}

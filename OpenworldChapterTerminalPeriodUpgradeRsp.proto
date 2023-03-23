@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message OpenworldChapterTerminalPeriodUpgradeRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4642;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        TERMINAL_ERROR = 3;
+        MATERIAL_LACK = 4;
+        TALENT_LACK = 5;
+        TERMINAL_PERIOD_UPGRADED = 6;
+        TERMINAL_LEVEL_ERROR = 7;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message PictureActivityShareRsp {
+    required Retcode retcode = 1;
+    required RewardData reward = 2;
+
+    enum CmdId {
+        CMD_ID = 4271;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HAS_TAKE = 3;
+        NOT_SHARE = 4;
+        NOT_FINISH = 5;
+    }
+}

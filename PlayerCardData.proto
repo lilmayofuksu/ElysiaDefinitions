@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "PlayerCardElfData.proto";
+import "PlayerCardMsgData.proto";
+import "PlayerCardMedalData.proto";
+import "PlayerCardAvatarData.proto";
+message PlayerCardData {
+    optional uint32 uid = 1;
+    repeated PlayerCardAvatarData avatar_list = 2;
+    repeated PlayerCardMedalData medal_list = 3;
+    required PlayerCardMsgData msg_data = 4;
+    optional uint32 island_like_num = 5;
+    optional uint32 on_phone_pendant_id = 6;
+    repeated PlayerCardElfData elf_list = 7;
+}

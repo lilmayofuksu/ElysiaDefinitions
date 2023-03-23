@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "ArmadaGrid.proto";
+import "ArmadaData.proto";
+import "ArmadaBuildNotifyType.proto";
+message ArmadaBuildNotify {
+    optional ArmadaBuildNotifyType type = 1;
+    required ArmadaData armada_data = 2;
+    repeated ArmadaGrid grid_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2678;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message TakeRestaurantOrderRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+
+    enum CmdId {
+        CMD_ID = 5869;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ORDER_LIST_EMPTY = 2;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message QAvatarBattleDiscardStigmataReq {
+    optional uint32 stigmata_id = 1;
+
+    enum CmdId {
+        CMD_ID = 5612;
+    }
+}

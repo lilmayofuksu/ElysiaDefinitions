@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "OfflineResource.proto";
+import "RewardData.proto";
+message TakeOfflineResourceBoxRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_data_list = 2;
+    required OfflineResource offline_resource_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4214;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+        EQUIPMENT_FULL = 3;
+        EQUIPMENT_MATERIAL_LIMIT = 4;
+        STAMINA_LACK = 5;
+        HCOIN_LACK = 6;
+        MATERIAL_LACK = 7;
+        BOX_LACK = 8;
+    }
+}

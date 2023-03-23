@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ChapterActivity.proto";
+message GetChapterActivityDataRsp {
+    required Retcode retcode = 1;
+    repeated ChapterActivity chapter_activity_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4201;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

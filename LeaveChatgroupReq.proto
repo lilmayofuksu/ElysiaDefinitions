@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message LeaveChatgroupReq {
+    optional uint32 chatgroup_id = 1;
+
+    enum CmdId {
+        CMD_ID = 2208;
+    }
+}

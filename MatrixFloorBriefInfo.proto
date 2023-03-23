@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "MatrixFloorStatus.proto";
+message MatrixFloorBriefInfo {
+    optional uint32 floor_id = 1;
+    optional MatrixFloorStatus floor_status = 2;
+}

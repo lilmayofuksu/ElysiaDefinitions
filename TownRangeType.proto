@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum TownRangeType {
+    TOWN_RANGE_NONE = 0;
+    TOWN_RANGE_CROSS = 1;
+    TOWN_RANGE_ROUND = 2;
+}

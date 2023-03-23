@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message EatOpenworldCookReq {
+    optional uint32 cook_id = 1;
+    optional uint32 avatar_id = 2;
+    optional uint32 map_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4492;
+    }
+}

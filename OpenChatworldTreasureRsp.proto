@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message OpenChatworldTreasureRsp {
+    required Retcode retcode = 1;
+    optional uint32 chatworld_id = 2;
+    optional uint32 treasure_id = 3;
+    repeated DropItem drop_item_list = 4;
+    optional bool is_take_reward = 5;
+    optional uint32 cur_treasure_schedule_id = 6;
+    repeated uint32 open_uid_list = 7;
+
+    enum CmdId {
+        CMD_ID = 2418;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        OPEN_NUM_LIMIT = 2;
+        MATERIAL_LACK = 3;
+        HAS_OPEN = 4;
+        HAS_TAKEN = 5;
+        TREASURE_EXPIRE = 6;
+        NOT_IN_CHATWORLD = 7;
+    }
+}

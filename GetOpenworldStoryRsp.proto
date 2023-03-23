@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "OpenworldStory.proto";
+message GetOpenworldStoryRsp {
+    required Retcode retcode = 1;
+    repeated uint32 finish_story_id_list = 2;
+    repeated OpenworldStory cur_story_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4501;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

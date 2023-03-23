@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "InLevelActorSnapshot.proto";
+import "InLevelAttackDataSnapshot.proto";
+message InLevelAttackSnapshot {
+    optional uint32 time = 1;
+    required InLevelAttackDataSnapshot attack_data_created = 2;
+    required InLevelAttackDataSnapshot attack_data_resoved = 3;
+    repeated InLevelActorSnapshot actor_list = 4;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message SetVirtualAvatarTeamRsp {
+    required Retcode retcode = 1;
+    optional uint32 group_id = 2;
+    repeated uint32 avatar_team_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3505;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        AVATAR_REPEATED = 3;
+        AVATAR_EMPTY = 4;
+        TEAM_SIZE_LIMIT = 5;
+        LOCK = 6;
+    }
+}

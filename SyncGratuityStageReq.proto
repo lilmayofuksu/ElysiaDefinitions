@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "GratuityStageMessage.proto";
+message SyncGratuityStageReq {
+    optional uint32 stage_unique_id = 1;
+    repeated GratuityStageMessage message_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4112;
+    }
+}

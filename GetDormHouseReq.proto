@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetDormHouseReq {
+    repeated uint32 house_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 603;
+    }
+}

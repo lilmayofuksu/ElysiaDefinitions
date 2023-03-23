@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetBlackListReq {
+    optional bool is_only_uid = 1;
+
+    enum CmdId {
+        CMD_ID = 1594;
+    }
+}

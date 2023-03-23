@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeExtraStoryLineStoryFinishRewardReq {
+    optional uint32 line_id = 1;
+
+    enum CmdId {
+        CMD_ID = 836;
+    }
+}

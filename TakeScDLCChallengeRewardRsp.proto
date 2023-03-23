@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeScDLCChallengeRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 6329;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_REWARD = 2;
+    }
+}

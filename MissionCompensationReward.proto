@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message MissionCompensationReward {
+    optional uint32 mission_id = 1;
+    optional uint32 mission_compensation_reward_id = 2;
+}

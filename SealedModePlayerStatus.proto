@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SealedModePlayerStatus {
+    SEALED_MODE_PLAYER_STATUS_NONE = 0;
+    SEALED_MODE_PLAYER_STATUS_IN_MATCH = 1;
+    SEALED_MODE_PLAYER_STATUS_IN_ROOM = 2;
+}

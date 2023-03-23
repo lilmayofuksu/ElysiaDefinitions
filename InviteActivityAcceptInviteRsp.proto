@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "InviteeActivityType.proto";
+message InviteActivityAcceptInviteRsp {
+    required Retcode retcode = 1;
+    optional uint32 invite_uid = 2;
+    optional InviteeActivityType invite_type = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 1697;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        INVITE_CODE_ERROR = 2;
+        LEVEL_LACK = 3;
+        INVITE_FULL = 4;
+        INVITE_INVALID_REGION = 5;
+        INVITE_CONDITION_ERROR = 6;
+        NO_ACTIVITY = 7;
+        ALREADY_INVITED = 8;
+        INVITE_DAILY_LIMIT = 9;
+        FEATURE_CLOSED = 10;
+    }
+}

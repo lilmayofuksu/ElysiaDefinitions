@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message GetWeeklyReportUltraEndlessRecommendPlayerRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 group_id = 3;
+    required RankShowData rank_data = 4;
+
+    enum CmdId {
+        CMD_ID = 5107;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

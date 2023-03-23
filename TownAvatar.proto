@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "TownBuff.proto";
+message TownAvatar {
+    optional uint32 avatar_id = 1;
+    optional uint32 tile_unique_id = 2;
+    optional uint32 left_step = 3;
+    optional uint32 tile_position = 4;
+    optional uint32 left_hp_ratio = 5;
+    optional Status status = 6;
+    optional uint32 status_begin_round = 7;
+    optional uint32 check_in_building_unique_id = 8;
+    repeated TownBuff buff_list = 9;
+    optional uint32 speed_up_heal_times = 10;
+
+    enum Status {
+        NORMAL = 0;
+        HEALING = 1;
+        DEAD = 2;
+    }
+}

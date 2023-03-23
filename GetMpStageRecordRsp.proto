@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "MpStageRecord.proto";
+message GetMpStageRecordRsp {
+    required Retcode retcode = 1;
+    repeated MpStageRecord record_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1019;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

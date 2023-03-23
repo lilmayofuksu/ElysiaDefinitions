@@ -1,0 +1,38 @@
+syntax = "proto2";
+
+import "GachaProtectDisplayInfo.proto";
+import "GachaExRewardInfo.proto";
+import "CustomGachaItemData.proto";
+import "GachaType.proto";
+message CustomGachaData {
+    optional uint32 ticket_hcoin_cost = 2;
+    optional uint32 ticket_material_id = 3;
+    optional uint32 cost_material_id = 4;
+    optional uint32 cost_material_num = 5;
+    optional bool is_enable_baodi = 6;
+    optional GachaType gacha_type = 9;
+    optional uint32 total_gacha_times = 10;
+    optional uint32 gacha_times = 11;
+    repeated CustomGachaItemData item_list = 12;
+    optional uint32 display_max_times = 13;
+    optional uint32 no_protect_gacha_times = 14;
+    optional ProtectDisplayType protect_display_type = 15;
+    optional uint32 display_key_avatar = 16;
+    optional uint32 display_video_avatar = 17;
+    repeated uint32 droped_up_item_list = 18;
+    optional uint32 shining_type = 19;
+    optional uint32 gacha_panel_type = 20;
+    repeated uint32 display_key_item_list = 21;
+    optional string display_extra_para = 22;
+    optional uint32 ex_id = 23;
+    optional uint32 ex_energy = 24;
+    optional uint32 ex_gacha_num = 25;
+    required GachaExRewardInfo gacha_ex_reward_info = 26;
+    required GachaProtectDisplayInfo protect_display_info = 27;
+
+    enum ProtectDisplayType {
+        NO_DISPLAY = 0;
+        AVATAR_DISPLAY = 1;
+        EQUIP_DISPLAY = 2;
+    }
+}

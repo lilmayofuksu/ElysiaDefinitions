@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SlgBattleInSettleNotify {
+
+    enum CmdId {
+        CMD_ID = 6070;
+    }
+}

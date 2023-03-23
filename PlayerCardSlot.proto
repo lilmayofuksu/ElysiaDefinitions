@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message PlayerCardSlot {
+    optional uint32 index = 1;
+    optional uint32 target_id = 2;
+}

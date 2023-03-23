@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaImpeachOperation {
+    START_IMPEACH = 1;
+    END_IMPEACH = 2;
+    CANCEL_IMPEACH = 3;
+}

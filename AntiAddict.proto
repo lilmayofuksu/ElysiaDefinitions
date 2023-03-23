@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message AntiAddict {
+    optional uint32 child_age = 1;
+    optional uint32 teenage_age = 2;
+    optional uint32 age = 3;
+    optional uint32 max_today_recharge_price = 4;
+    optional bool is_max_game_time = 5;
+    optional bool is_force_kick = 6;
+    optional uint32 warning_today_recharge_price = 7;
+    optional uint32 warning_game_time = 8;
+    optional bool is_warning_game_time = 9;
+    optional uint32 max_game_time = 10;
+    optional bool is_force_kick_for_latest_time = 11;
+    optional bool is_force_kick_for_max_time = 12;
+    optional string teenager_login_latest_time = 13;
+    optional string teenager_login_earliest_time = 14;
+    optional bool is_lastest_time = 15;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message GetDanmakuListReq {
+    optional uint32 danmaku_slot = 1;
+    optional uint32 start_idx = 2;
+    optional uint32 end_idx = 3;
+
+    enum CmdId {
+        CMD_ID = 1545;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ScratchRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4153;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        POS_ERROR = 3;
+        POS_REPEAT = 4;
+        MATERIAL_LACK = 5;
+    }
+}

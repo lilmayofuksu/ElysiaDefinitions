@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SlgBattleRankType {
+    SLG_BATTLE_RANK_NORMAL_POINT = 1;
+    SLG_BATTLE_RANK_BIG_BOSS = 2;
+    SLG_BATTLE_RANK_COUNTRY = 3;
+}

@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+import "Chatgroup.proto";
+message CreateChatgroupRsp {
+    required Retcode retcode = 1;
+    required Chatgroup chatgroup = 2;
+    optional string audit_name = 3;
+    optional string audit_notice = 4;
+
+    enum CmdId {
+        CMD_ID = 2201;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CREATE_MAX = 2;
+        JOIN_MAX = 3;
+        SENSITIVE_WORD = 4;
+        LEVEL_LACK = 5;
+        LABEL_ERROR = 6;
+        NAME_FORMAT_ERROR = 7;
+        NOTICE_FORMAT_ERROR = 8;
+        FEATURE_LIMIT = 9;
+        IN_AUDIT = 10;
+    }
+}

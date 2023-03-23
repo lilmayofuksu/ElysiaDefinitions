@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message SetDressReq {
+    required uint32 avatar_id = 1;
+    required uint32 dress_id = 2;
+
+    enum CmdId {
+        CMD_ID = 248;
+    }
+}

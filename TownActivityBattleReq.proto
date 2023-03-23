@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityBattleReq {
+    required TownCommonHead head = 1;
+    optional BattleEndStatus end_status = 2;
+    repeated AvatarBattleResult avatar_result_list = 3;
+    required MonsterBattleResult monster_result = 4;
+
+    enum CmdId {
+        CMD_ID = 6456;
+    }
+    enum BattleEndStatus {
+        WIN = 1;
+        ALL_DEAD = 2;
+    }
+    message AvatarBattleResult {
+        optional uint32 avatar_id = 1;
+        optional uint32 left_hp_ratio = 2;
+    }
+    message MonsterBattleResult {
+        optional uint32 monster_unique_id = 1;
+        optional uint32 left_hp_ratio = 2;
+    }
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ChooseAvatarMissionAvatarRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 sample_id = 3;
+
+    enum CmdId {
+        CMD_ID = 3003;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HAVE_CHOOSEN = 3;
+    }
+}

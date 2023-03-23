@@ -1,0 +1,44 @@
+syntax = "proto2";
+
+message GetMainDataReq {
+    repeated DataType type_list = 1;
+
+    enum CmdId {
+        CMD_ID = 10;
+    }
+    enum DataType {
+        ALL = 0;
+        NICKNAME = 2;
+        LEVEL = 3;
+        EXP = 4;
+        HCOIN = 5;
+        SCOIN = 6;
+        STAMINA = 7;
+        STAMINA_RECOVER_LEFT_TIME = 8;
+        STAMINA_RECOVER_CONFIG_TIME = 9;
+        EQUIPMENT_SIZE_LIMIT = 14;
+        SELF_DESC = 16;
+        PAY_HCOIN = 17;
+        FREE_HCOIN = 18;
+        ASSISTANT_AVATAR_ID = 19;
+        IS_ALLOW_COST_SENIOR_EQUIP_ON_CUR_DEVICE = 20;
+        BIRTHDAY = 21;
+        RECHARGE_PRICE = 22;
+        WAIT_DEL_HCOIN = 23;
+        ON_MEDAL_ID = 24;
+        ANTI_ADDICT = 25;
+        USE_FRAME_ID = 26;
+        MCOIN = 27;
+        PANEL_ACTIVITY = 28;
+        VIDEO_POPUP = 29;
+        ON_PHONE_PENDANT_ID = 30;
+        STORE_EVALUATE = 31;
+        CHATWORLD_ACTIVITY = 32;
+        LEVEL_LOCK = 33;
+        WARSHIP_AVATAR = 35;
+        USE_CUSTOM_HEAD = 36;
+        TOTAL_LOGIN_DAYS = 37;
+        WARSHIP_THEME = 38;
+        WAIT_DEL_MATERIAL = 39;
+    }
+}

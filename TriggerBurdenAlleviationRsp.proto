@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message TriggerBurdenAlleviationRsp {
+    required Retcode retcode = 1;
+    optional uint32 alleviation_id = 2;
+    repeated uint32 para_list = 3;
+    required RewardData reward_data = 4;
+    repeated DropItem drop_item_list = 5;
+
+    enum CmdId {
+        CMD_ID = 4355;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        PLAYER_LEVEL_LIMIT = 3;
+        TIMES_LIMIT = 4;
+        STAMINA_LACK = 5;
+        STAGE_NOT_EXIST = 6;
+        EQUIPMENT_FULL = 7;
+        NO_ENTER_TIMES = 8;
+        EXTRA_MATERIAL_LACK = 9;
+        RAID_IS_PASS = 10;
+        WEEKDAY_STAGE_ID_NOT_MATCH = 11;
+        ACTIVITY_NOT_OPEN = 12;
+    }
+}

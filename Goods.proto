@@ -1,0 +1,45 @@
+syntax = "proto2";
+
+import "GoodsDiscount.proto";
+message Goods {
+    required uint32 goods_id = 1;
+    optional uint32 buy_times = 2;
+    optional bool can_be_refresh = 3;
+    optional RefreshTimeType refresh_time_type = 4;
+    optional bool is_backpack_restrict = 5;
+    optional uint32 begin_time = 6;
+    optional uint32 end_time = 7;
+    optional ShowType show_type = 8;
+    optional string unlock_tips = 9;
+    optional uint32 prepare_time = 10;
+    optional uint32 sort_id = 11;
+    optional string product_name = 12;
+    optional uint32 product_id = 13;
+    optional uint32 product_price = 14;
+    optional string show_setting_str = 15;
+    optional uint32 show_new_tag = 16;
+    repeated uint32 mall_anchor_list = 17;
+    optional bool is_ignore = 18;
+    optional uint32 unlock_type = 19;
+    optional uint32 unlock_para_int = 20;
+    optional string unlock_para_str = 21;
+    optional uint32 prepare_level = 22;
+    optional uint32 min_level = 23;
+    optional uint32 max_level = 24;
+    required GoodsDiscount discount = 25;
+    optional bool is_popup = 26;
+    optional bool is_hide_price = 27;
+
+    enum RefreshTimeType {
+        SHOP_TYPE = 0;
+        DAY_TYPE = 1;
+        WEEK_TYPE = 2;
+        MONTH_TYPE = 3;
+        VERSION_TYPE = 4;
+        DOUBLE_WEEK_TYPE = 5;
+    }
+    enum ShowType {
+        NORMAL_SHOW = 1;
+        LOCK_SHOW = 2;
+    }
+}

@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "FarmSlotDetail.proto";
+message StartFarmProduceRsp {
+    required Retcode retcode = 1;
+    optional uint32 slot_id = 2;
+    optional uint32 produce_material_id = 3;
+    required FarmSlotDetail slot_detail = 4;
+
+    enum CmdId {
+        CMD_ID = 1390;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SLOT_LOCKED = 2;
+        SLOT_IN_PRODUCE = 3;
+        EQUIPMENT_MATERIAL_LIMIT = 4;
+        PRODUCE_MATERIAL_LIMIT = 5;
+        PRODUCE_TIMES_LIMIT = 6;
+    }
+}

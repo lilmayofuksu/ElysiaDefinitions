@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+import "ArmadaImpeachData.proto";
+import "ArmadaPlayerData.proto";
+import "ArmadaCabinType.proto";
+import "ArmadaBossroom.proto";
+import "ArmadaExchequer.proto";
+import "ArmadaWorkshop.proto";
+import "ArmadaHangar.proto";
+import "ArmadaContact.proto";
+import "ArmadaGrid.proto";
+import "ArmadaPosition.proto";
+import "ArmadaMember.proto";
+import "ArmadaBriefData.proto";
+message ArmadaData {
+    required ArmadaBriefData brief = 1;
+    repeated ArmadaMember member_list = 2;
+    optional ArmadaPosition position = 3;
+    repeated ArmadaGrid grid_list = 4;
+    repeated ArmadaContact contact_list = 5;
+    repeated ArmadaHangar hangar_list = 6;
+    repeated ArmadaWorkshop workshop_list = 7;
+    repeated ArmadaExchequer exchequer_list = 8;
+    repeated ArmadaBossroom bossroom_list = 9;
+    optional ArmadaCabinType level_up_cabin_type = 10;
+    optional uint32 level_up_cabin_id = 11;
+    optional uint32 level_up_end_time = 12;
+    optional uint32 dissolve_time = 13;
+    required ArmadaPlayerData armada_player_data = 14;
+    required ArmadaImpeachData impeach_data = 15;
+    optional bool is_armada_change_name_free = 16;
+}

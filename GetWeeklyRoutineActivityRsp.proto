@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "WeeklyRoutineMission.proto";
+message GetWeeklyRoutineActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 cur_schedule_id = 2;
+    repeated WeeklyRoutineMission weekly_routine_mission_list = 3;
+    repeated uint32 has_take_routine_reward_id_list = 4;
+    optional uint32 weekly_routine_contribution = 5;
+
+    enum CmdId {
+        CMD_ID = 4230;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+    }
+}

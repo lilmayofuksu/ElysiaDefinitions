@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "LoginWish.proto";
+message LoginWishActivity {
+    optional uint32 activity_id = 1;
+    optional uint32 show_begin_time = 2;
+    optional uint32 show_end_time = 3;
+    optional uint32 begin_time = 4;
+    optional uint32 end_time = 5;
+    optional uint32 login_days = 6;
+    repeated uint32 has_take_reward_login_day_list = 7;
+    repeated uint32 has_take_reward_special_day_list = 8;
+    repeated LoginWish has_made_wish_list = 9;
+}

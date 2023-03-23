@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message CancelAdventureQuestRsp {
+    required Retcode retcode = 1;
+    optional uint32 pool_id = 2;
+
+    enum CmdId {
+        CMD_ID = 3923;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_SELECTED = 2;
+        OVER_TIME = 3;
+    }
+}

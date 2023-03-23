@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "Furniture.proto";
+message EditDormRoomReq {
+    optional uint32 house_id = 1;
+    optional uint32 room_id = 2;
+    repeated Furniture furniture_list = 3;
+
+    enum CmdId {
+        CMD_ID = 605;
+    }
+}

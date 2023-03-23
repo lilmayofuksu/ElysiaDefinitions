@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "DiceyDungeonType.proto";
+import "DiceyDungeonInfo.proto";
+message DiceyDungeonActivityRefreshOrnamentReq {
+    optional uint32 tale_id = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 refresh_ornament_random = 3;
+    required DiceyDungeonInfo dungeon_info = 4;
+    optional DiceyDungeonType dungeon_type = 5;
+
+    enum CmdId {
+        CMD_ID = 6518;
+    }
+}

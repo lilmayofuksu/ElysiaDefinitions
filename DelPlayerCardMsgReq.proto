@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message DelPlayerCardMsgReq {
+    optional uint32 target_uid = 1;
+    repeated uint32 index_list = 2;
+
+    enum CmdId {
+        CMD_ID = 489;
+    }
+}

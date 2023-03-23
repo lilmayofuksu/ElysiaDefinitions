@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OverlapGrid {
+    optional uint32 id = 1;
+    optional uint32 summon_id = 2;
+}

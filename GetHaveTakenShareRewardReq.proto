@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetHaveTakenShareRewardReq {
+
+    enum CmdId {
+        CMD_ID = 4239;
+    }
+}

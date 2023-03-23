@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message VirtualAvatar {
+    optional uint32 virtual_avatar_id = 1;
+    optional uint32 virtual_weapon_id = 2;
+    optional uint32 virtual_stigmata_id_1 = 3;
+    optional uint32 virtual_stigmata_id_2 = 4;
+    optional uint32 virtual_stigmata_id_3 = 5;
+    optional uint32 virtual_buff_id = 6;
+}

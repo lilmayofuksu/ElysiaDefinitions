@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "HuntActivityHunterState.proto";
+message HuntActivityHunter {
+    optional uint32 hunter_id = 1;
+    optional HuntActivityHunterState state = 2;
+    optional string spawn_point = 3;
+}

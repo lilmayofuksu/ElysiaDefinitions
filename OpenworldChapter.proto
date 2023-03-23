@@ -1,0 +1,41 @@
+syntax = "proto2";
+
+import "OpenworldChapterDigSite.proto";
+import "OpenworldChapterTalent.proto";
+import "OpenworldChapterFurnace.proto";
+import "OpenworldChapterQuestData.proto";
+import "OpenworldChapterTerminal.proto";
+import "OpenworldChapterBuilding.proto";
+import "OpenworldChapterEndlessChallenge.proto";
+import "OpenworldChapterAchievementMission.proto";
+import "OpenworldChapterHeroCardGroup.proto";
+import "OpenworldChapterHeroCard.proto";
+import "OpenworldChapterHero.proto";
+import "OpenworldChapterEndlessTowerSite.proto";
+import "OpenworldChapterChallenge.proto";
+import "OpenworldChapterBuff.proto";
+import "OpenworldChapterSlot.proto";
+message OpenworldChapter {
+    optional uint32 map_id = 1;
+    repeated OpenworldChapterSlot slot_list = 2;
+    optional uint32 max_equip_cost = 4;
+    repeated OpenworldChapterBuff buff_list = 5;
+    optional uint32 max_reward_take_num = 6;
+    optional uint32 fame = 7;
+    optional uint32 fame_level = 8;
+    required OpenworldChapterChallenge challenge = 9;
+    repeated OpenworldChapterEndlessTowerSite endless_tower_site_list = 10;
+    repeated OpenworldChapterHero hero_list = 11;
+    repeated OpenworldChapterHeroCard hero_card_list = 14;
+    repeated OpenworldChapterHeroCardGroup hero_card_group_list = 15;
+    repeated OpenworldChapterAchievementMission achievement_mission_list = 16;
+    repeated OpenworldChapterEndlessChallenge endless_challenge_list = 17;
+    repeated OpenworldChapterBuilding building_list = 18;
+    required OpenworldChapterTerminal terminal = 19;
+    required OpenworldChapterQuestData quest_data = 20;
+    required OpenworldChapterFurnace furnace = 21;
+    repeated OpenworldChapterTalent talent_list = 22;
+    repeated uint32 active_talent_id_list = 23;
+    repeated OpenworldChapterDigSite dig_site_list = 24;
+    repeated uint32 got_last_reward_special_qte_map_list = 25;
+}

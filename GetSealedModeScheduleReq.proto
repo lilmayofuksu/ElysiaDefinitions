@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetSealedModeScheduleReq {
+
+    enum CmdId {
+        CMD_ID = 594;
+    }
+}

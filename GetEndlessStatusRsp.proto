@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "EndlessStatus.proto";
+message GetEndlessStatusRsp {
+    required Retcode retcode = 1;
+    required EndlessStatus cur_status = 2;
+    repeated EndlessStatus next_status_list = 3;
+    optional uint32 selected_endless_type = 4;
+
+    enum CmdId {
+        CMD_ID = 3433;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

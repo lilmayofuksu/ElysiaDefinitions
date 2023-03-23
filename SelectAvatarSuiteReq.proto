@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message SelectAvatarSuiteReq {
+    optional uint32 sys_id = 1;
+    optional uint32 step = 2;
+    optional uint32 index = 3;
+    optional uint32 id = 4;
+
+    enum CmdId {
+        CMD_ID = 580;
+    }
+}

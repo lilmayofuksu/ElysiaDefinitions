@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message GachaExFragment {
+    optional uint32 ex_id = 1;
+    optional uint32 ex_energy = 2;
+    optional uint32 ex_num = 3;
+    optional uint32 ex_energy_add = 4;
+    optional uint32 fragment_add = 5;
+    optional uint32 ex_energy_add_orig = 6;
+    optional uint32 ex_energy_add_bonus = 7;
+    optional uint32 avatar_id = 8;
+}

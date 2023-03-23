@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "AssistantFrozen.proto";
+message GetAssistantFrozenListRsp {
+    required Retcode retcode = 1;
+    repeated AssistantFrozen frozen_list = 2;
+
+    enum CmdId {
+        CMD_ID = 101;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

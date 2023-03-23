@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TowerRaidAvatar {
+    optional uint32 avatar_id = 1;
+    optional uint32 enter_times = 2;
+    optional uint32 weapon_id = 3;
+    repeated uint32 stigmata_id_list = 4;
+}

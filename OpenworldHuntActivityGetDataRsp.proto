@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "OpenworldTalent.proto";
+import "HuntActivityMapData.proto";
+message OpenworldHuntActivityGetDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    repeated HuntActivityMapData map_data_list = 3;
+    repeated OpenworldTalent talent_list = 4;
+
+    enum CmdId {
+        CMD_ID = 4601;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+    }
+}

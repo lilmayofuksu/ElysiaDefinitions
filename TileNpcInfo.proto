@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message TileNpcInfo {
+    optional uint32 id = 1;
+}

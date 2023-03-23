@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivitySaveRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+
+    enum CmdId {
+        CMD_ID = 6453;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

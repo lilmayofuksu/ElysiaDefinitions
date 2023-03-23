@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message IslandAvatarPos {
+    required uint32 avatar_class = 1;
+    required uint32 pos_type = 2;
+    repeated uint32 event_id_list = 3;
+}

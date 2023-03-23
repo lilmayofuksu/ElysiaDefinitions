@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum DisjoinType {
+    DISJOIN_TOTAL = 1;
+    DISJOIN_TITLE = 2;
+    DISJOIN_EX = 3;
+}

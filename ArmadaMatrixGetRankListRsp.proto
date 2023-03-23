@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixRankItem.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetRankListRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    repeated ArmadaMatrixRankItem rank_item_list = 2;
+
+    enum CmdId {
+        CMD_ID = 2781;
+    }
+}

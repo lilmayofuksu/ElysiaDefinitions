@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SnsShowTowerRaidData {
+    optional uint32 hard_level = 1;
+    optional uint32 max_hard_level = 2;
+    optional uint32 total_enter_times = 3;
+    optional uint32 total_battle_during_time = 4;
+}

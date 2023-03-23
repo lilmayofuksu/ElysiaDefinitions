@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SealedModeGetRankInfoReq {
+    optional uint32 unique_ticket_id = 1;
+
+    enum CmdId {
+        CMD_ID = 724;
+    }
+}

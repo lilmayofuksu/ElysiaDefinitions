@@ -1,0 +1,40 @@
+syntax = "proto2";
+
+import "EquipmentItem.proto";
+import "DropItem.proto";
+import "RewardData.proto";
+message FinishConsignedOrderRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    repeated DropItem drop_item_list = 3;
+    required EquipmentItem item = 4;
+    optional uint32 consign_id = 5;
+    optional uint32 reliable_id = 8;
+    optional uint32 progress = 9;
+    optional uint32 finish_order_times = 10;
+
+    enum CmdId {
+        CMD_ID = 2644;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        IN_CD_TIME = 3;
+        TIMES_LACK = 4;
+        CONSUME_ITEM_NOT_EXIST = 5;
+        CONSUME_ITEM_IN_USE = 6;
+        CONSUME_ITEM_REPEAT = 7;
+        CONSUME_ITEM_PROTECTED = 8;
+        COST_GACHA_TICKET = 9;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 10;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 11;
+        ITEM_LACK = 12;
+        STATUS_ERROR = 13;
+        ORDER_FINISHED = 14;
+        ORDER_PROGRESS_CHANGE = 15;
+        CONSUME_ITEM_IN_FACILITY = 16;
+        CONSUME_ITEM_GRAND_KEY = 17;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 18;
+    }
+}

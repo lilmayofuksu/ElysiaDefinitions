@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "ArmadaCabinType.proto";
+message ArmadaGrid {
+    optional uint32 id = 1;
+    optional ArmadaCabinType type = 2;
+    optional uint32 cabin_id = 3;
+}

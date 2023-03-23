@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "AvatarArtifactDetail.proto";
+import "AvatarBindEquipMode.proto";
+import "AvatarSkill.proto";
+message Avatar {
+    required uint32 avatar_id = 1;
+    optional uint32 star = 2;
+    required uint32 level = 3;
+    required uint32 exp = 4;
+    required uint32 fragment = 5;
+    required uint32 weapon_unique_id = 6;
+    required uint32 stigmata_unique_id_1 = 7;
+    required uint32 stigmata_unique_id_2 = 8;
+    required uint32 stigmata_unique_id_3 = 9;
+    repeated AvatarSkill skill_list = 10;
+    optional uint32 touch_goodfeel = 11;
+    optional uint32 today_has_add_goodfeel = 12;
+    optional uint32 stage_goodfeel = 13;
+    repeated uint32 dress_list = 14;
+    optional uint32 dress_id = 15;
+    optional AvatarBindEquipMode mode = 17;
+    required AvatarArtifactDetail avatar_artifact = 18;
+    optional uint32 sub_star = 19;
+}

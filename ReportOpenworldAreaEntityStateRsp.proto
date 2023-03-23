@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "OpenworldAreaEntityState.proto";
+message ReportOpenworldAreaEntityStateRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 area_id = 3;
+    optional uint32 entity_id = 4;
+    repeated OpenworldAreaEntityState area_entity_state_list = 5;
+
+    enum CmdId {
+        CMD_ID = 4543;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        AREA_ERROR = 3;
+        ENTITY_ID_ERROR = 4;
+        ENTITY_STATE_ERROR = 5;
+    }
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "BossChallengeScDLCStatus.proto";
+import "BossChallengeAvatar.proto";
+message BossChallengeStage {
+    optional uint32 stage_id = 1;
+    optional uint32 unlock_time = 2;
+    optional uint32 max_reward_idx = 3;
+    optional uint32 cur_floor = 4;
+    optional uint32 cur_stage_cost_time = 5;
+    optional uint32 min_stage_cost_time = 6;
+    repeated BossChallengeAvatar avatar_list = 7;
+    required BossChallengeScDLCStatus sc_dlc_status = 8;
+}

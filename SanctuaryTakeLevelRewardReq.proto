@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SanctuaryTakeLevelRewardReq {
+
+    enum CmdId {
+        CMD_ID = 4307;
+    }
+}

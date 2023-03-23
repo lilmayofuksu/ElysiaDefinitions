@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum RoomMode {
+    ROOM_MODE_INVALID = 0;
+    ROOM_MODE_TVT = 1;
+    ROOM_MODE_MASSIVE_WAR = 2;
+    ROOM_MODE_QAVATAR_BATTLE = 3;
+    ROOM_MODE_QCANDY_BATTLE = 4;
+}

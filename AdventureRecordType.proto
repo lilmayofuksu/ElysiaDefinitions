@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum AdventureRecordType {
+    ADVENTURE_RECORD_NONE = 0;
+    ADVENTURE_RECORD_GROWTH = 1;
+    ADVENTURE_RECORD_GROWTH_STAGE = 2;
+    ADVENTURE_RECORD_SKILL_STAGE = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeOpenworldChapterFurnaceWorkRewardReq {
+    optional uint32 map_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4659;
+    }
+}

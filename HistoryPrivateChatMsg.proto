@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ChatMsg.proto";
+message HistoryPrivateChatMsg {
+    optional uint32 uid = 1;
+    repeated ChatMsg chat_msg_list = 2;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SlgBroadcastType {
+    SLG_BROADCAST_TYPE_OCCUPY = 1;
+    SLG_BROADCAST_TYPE_SCORE_STREAK = 2;
+    SLG_BROADCAST_TYPE_OCCUPY_STREAK = 3;
+}

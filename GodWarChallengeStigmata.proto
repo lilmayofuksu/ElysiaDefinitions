@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "StigmataRune.proto";
+message GodWarChallengeStigmata {
+    optional uint32 id = 1;
+    optional uint32 level = 2;
+    repeated StigmataRune rune_list = 3;
+}

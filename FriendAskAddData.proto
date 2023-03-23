@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+message FriendAskAddData {
+    required PlayerFriendBriefData brief = 1;
+    optional uint32 ask_time = 2;
+}

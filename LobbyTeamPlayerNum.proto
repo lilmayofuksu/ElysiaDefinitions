@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "LobbyStatus.proto";
+message LobbyTeamPlayerNum {
+    optional LobbyStatus status = 1;
+    optional uint32 player_num = 2;
+}

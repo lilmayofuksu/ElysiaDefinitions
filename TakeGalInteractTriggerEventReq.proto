@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message TakeGalInteractTriggerEventReq {
+    optional uint32 avatar_id = 1;
+    optional uint32 event_id = 2;
+
+    enum CmdId {
+        CMD_ID = 815;
+    }
+}

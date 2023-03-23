@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message GetProductRecommendListRsp {
+    required Retcode retcode = 1;
+    repeated uint32 recommend_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1479;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

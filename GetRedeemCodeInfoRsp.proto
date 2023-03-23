@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GetRedeemCodeInfoRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    optional string desc = 3;
+    optional string redeem_code = 4;
+
+    enum CmdId {
+        CMD_ID = 212;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        REDEEM_CODE_ERROR = 2;
+    }
+}

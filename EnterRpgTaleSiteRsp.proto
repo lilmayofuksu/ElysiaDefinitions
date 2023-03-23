@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message EnterRpgTaleSiteRsp {
+    required Retcode retcode = 1;
+    optional uint32 site_id = 2;
+    optional uint32 tale_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2304;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_PASS_CUR_SITE = 2;
+        SITE_LOCKED = 3;
+    }
+}

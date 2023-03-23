@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MassiveWarBattleMember.proto";
+message MassiveWarGetRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 battle_uniq_id = 2;
+    repeated MassiveWarBattleMember member_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4805;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ActivitySeries {
+    optional uint32 series_id = 1;
+    optional uint32 available_sweep_num = 2;
+}

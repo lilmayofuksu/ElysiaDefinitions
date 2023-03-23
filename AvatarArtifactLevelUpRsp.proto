@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "AvatarDetailData.proto";
+message AvatarArtifactLevelUpRsp {
+    required Retcode retcode = 1;
+    optional uint32 avatar_id = 2;
+    optional uint32 artifact_id = 3;
+    required AvatarDetailData avatar_detail = 4;
+    required RewardData reward_data = 5;
+
+    enum CmdId {
+        CMD_ID = 1447;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_LEVEL_LACK = 2;
+        AVATAR_STAR_LACK = 3;
+        MATERIAL_LACK = 4;
+        FEATURE_CLOSED = 5;
+    }
+}

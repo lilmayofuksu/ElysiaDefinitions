@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message ResetExtraStoryChallengeModeRsp {
+    required Retcode retcode = 1;
+    optional uint32 chapter_id = 2;
+    optional uint32 difficulty = 3;
+
+    enum CmdId {
+        CMD_ID = 505;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TIME_LIMIT = 2;
+        EXTRA_STORY_NOT_OPEN = 3;
+        RESET_TIMES_LACK = 4;
+        DIFFICULTY_NOT_OPEN = 5;
+        LEVEL_LIMIT = 6;
+    }
+}

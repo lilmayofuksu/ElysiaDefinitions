@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeBattlePassThemeLevelRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3763;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+        NOT_OPEN = 3;
+        FEATURE_CLOSED = 4;
+    }
+}

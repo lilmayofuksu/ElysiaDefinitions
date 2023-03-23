@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "StageChapterExclusive.proto";
+import "StageChapterBoss.proto";
+message StageChapterInfo {
+    optional uint32 chapter_id = 1;
+    optional uint64 has_take_challenge = 2;
+    optional uint32 enter_player_level = 3;
+    repeated StageChapterBoss boss_list = 4;
+    repeated StageChapterExclusive exclusive_stage_list = 5;
+}

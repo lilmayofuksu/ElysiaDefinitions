@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ArmadaMatrixGetMainInfoReq {
+    optional uint32 cur_schedule_id = 1;
+    optional uint32 level = 2;
+    optional bool is_schedule_refresh = 3;
+
+    enum CmdId {
+        CMD_ID = 2736;
+    }
+}

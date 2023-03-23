@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ClientData.proto";
+message SetClientDataReq {
+    required ClientData client_data = 1;
+
+    enum CmdId {
+        CMD_ID = 1588;
+    }
+}

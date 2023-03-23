@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "WaveRushBuffSuite.proto";
+import "WaveRushBuff.proto";
+import "WaveRushStageScore.proto";
+message WaveRushActivity {
+    optional uint32 schedule_id = 1;
+    repeated WaveRushStageScore stage_score_list = 2;
+    repeated WaveRushBuff buff_list = 3;
+    repeated WaveRushBuffSuite buff_suite_list = 4;
+    optional uint32 active_buff_suite_id = 5;
+    optional uint32 cur_daily_stage_id = 6;
+    optional uint32 daily_drop_material_num = 7;
+    optional uint32 daily_drop_limit_num = 8;
+}

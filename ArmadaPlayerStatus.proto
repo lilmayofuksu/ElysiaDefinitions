@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum ArmadaPlayerStatus {
+    ARMADA_PLAYER_NOT_JOIN = 1;
+    ARMADA_PLAYER_APPLY = 2;
+    ARMADA_PLAYER_CHOOSE_CONTACT = 3;
+    ARMADA_PLAYER_JOINED = 4;
+}

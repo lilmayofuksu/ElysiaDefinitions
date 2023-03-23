@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "Material.proto";
+message EquipmentForgeConsume {
+    optional uint32 unique_id = 1;
+    repeated ConsumeEquip equip_list = 2;
+    repeated Material material_list = 3;
+    message ConsumeEquip {
+        optional uint32 id = 1;
+        optional uint32 level = 2;
+        optional uint32 exp = 3;
+    }
+}

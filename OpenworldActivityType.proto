@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum OpenworldActivityType {
+    OPENWORLD_BOSS_HUNT_ACTIVITY = 1;
+}

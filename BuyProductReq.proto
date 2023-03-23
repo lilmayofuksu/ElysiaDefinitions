@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message BuyProductReq {
+    optional string name = 1;
+    optional uint32 price = 2;
+    optional string currency_code = 3;
+    optional string format_price = 4;
+
+    enum CmdId {
+        CMD_ID = 805;
+    }
+}

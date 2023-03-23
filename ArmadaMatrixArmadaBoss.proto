@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ArmadaMatrixItemLay.proto";
+message ArmadaMatrixArmadaBoss {
+    optional uint32 max_hp = 1;
+    optional uint32 left_hp = 2;
+    repeated ArmadaMatrixItemLay item_lay_list = 3;
+    repeated uint32 damage_uid_list = 4;
+}

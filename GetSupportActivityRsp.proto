@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "SupportData.proto";
+message GetSupportActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    required SupportData support_data = 3;
+    optional bool is_take_global_reward = 4;
+
+    enum CmdId {
+        CMD_ID = 4333;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

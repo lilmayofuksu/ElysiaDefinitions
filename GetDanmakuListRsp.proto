@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "DanmakuContent.proto";
+message GetDanmakuListRsp {
+    required Retcode retcode = 1;
+    optional uint32 danmaku_slot = 2;
+    optional uint32 danmaku_slot_status = 3;
+    optional uint32 start_idx = 4;
+    optional uint32 end_idx = 5;
+    repeated DanmakuContent danmaku_list = 6;
+
+    enum CmdId {
+        CMD_ID = 1546;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        DANMAKU_CLOSED = 2;
+    }
+}

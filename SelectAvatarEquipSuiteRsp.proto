@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message SelectAvatarEquipSuiteRsp {
+    required Retcode retcode = 1;
+    optional uint32 succ_num = 2;
+    optional uint32 suite_id = 3;
+
+    enum CmdId {
+        CMD_ID = 1459;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_LOCK = 2;
+        SLOT_WEAPON = 3;
+        SLOT_STIGMATA_1 = 4;
+        SLOT_STIGMATA_2 = 5;
+        SLOT_STIGMATA_3 = 6;
+    }
+}

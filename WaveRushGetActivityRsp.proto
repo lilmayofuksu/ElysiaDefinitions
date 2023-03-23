@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "WaveRushActivity.proto";
+message WaveRushGetActivityRsp {
+    required Retcode retcode = 1;
+    required WaveRushActivity activity = 2;
+
+    enum CmdId {
+        CMD_ID = 5962;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

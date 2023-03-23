@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "RpgTaleStageScoreDrop.proto";
+message RpgTaleStage {
+    optional uint32 stage_id = 1;
+    optional uint32 max_floor = 2;
+    optional uint32 max_score = 3;
+    required RpgTaleStageScoreDrop score_drop = 5;
+}

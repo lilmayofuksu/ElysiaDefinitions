@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "Material.proto";
+message ReunionCookData {
+    optional uint32 book_id = 1;
+    optional uint32 cook_times = 2;
+    repeated Material recycle_material_list = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "FriendRemark.proto";
+message GetFriendRemarkListRsp {
+    required Retcode retcode = 1;
+    repeated FriendRemark friend_remark_list = 2;
+
+    enum CmdId {
+        CMD_ID = 975;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum OpenworldEventRefreshType {
+    OPENWORLD_EVENT_REFRESH_CYCLE = 1;
+    OPENWORLD_EVENT_REFRESH_ONCE = 2;
+    OPENWORLD_EVENT_REFRESH_TIME = 3;
+}

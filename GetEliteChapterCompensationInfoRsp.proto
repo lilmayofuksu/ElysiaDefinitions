@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "EliteChapterCompensationInfo.proto";
+message GetEliteChapterCompensationInfoRsp {
+    required Retcode retcode = 1;
+    repeated EliteChapterCompensationInfo chapter_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1637;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

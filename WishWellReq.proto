@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "GachaType.proto";
+import "WishCostEquip.proto";
+message WishWellReq {
+    optional uint32 wish_id = 1;
+    repeated WishCostEquip cost_equip_list = 2;
+    optional GachaType gacha_type = 3;
+    optional bool is_force_set = 4;
+
+    enum CmdId {
+        CMD_ID = 4710;
+    }
+}

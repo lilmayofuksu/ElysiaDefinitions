@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "MatrixGridPos.proto";
+message MatrixAdvanceRsp {
+    required Retcode retcode = 1;
+    required MatrixGridPos cur_pos = 2;
+    repeated MatrixGridPos pos_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2327;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PATH_NOT_VALID = 2;
+        IN_FLOOR_EVENT = 3;
+    }
+}

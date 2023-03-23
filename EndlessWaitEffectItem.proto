@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message EndlessWaitEffectItem {
+    required uint32 item_id = 1;
+    optional uint32 effect_times = 2;
+    optional uint32 expire_time = 3;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message DormPowerBonus {
+    optional uint32 house_id = 1;
+    optional uint32 bonus = 2;
+}

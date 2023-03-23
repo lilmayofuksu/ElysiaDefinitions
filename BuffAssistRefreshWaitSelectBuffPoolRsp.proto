@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "BuffAssistBuffPool.proto";
+message BuffAssistRefreshWaitSelectBuffPoolRsp {
+    required Retcode retcode = 1;
+    required BuffAssistBuffPool buff_pool = 2;
+
+    enum CmdId {
+        CMD_ID = 5944;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        NO_VALID_POOL = 3;
+        REFRESH_TIMES_LACK = 4;
+        SYSTEM_BUSY = 5;
+    }
+}

@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum GodWarRefreshTicketType {
+    GOD_WAR_REFRESH_TICKET_WEEK_DAY = 1;
+}

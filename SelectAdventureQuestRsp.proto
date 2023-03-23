@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message SelectAdventureQuestRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3903;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_FINISHED = 2;
+        HAS_TAKE = 3;
+        LACK_GRAIN = 4;
+        LACK_STAMINA = 5;
+        AVATAR_LOCK = 6;
+        AVATAR_IN_QUEST = 7;
+        AVATAR_NUM_ERROR = 8;
+        ELF_LOCK = 9;
+        ELF_IN_QUEST = 10;
+        SKILL_LACK = 11;
+    }
+}

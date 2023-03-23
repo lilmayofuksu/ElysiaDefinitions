@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message AiCyberSetBlessReq {
+    optional uint32 activity_id = 1;
+    optional string bless = 2;
+
+    enum CmdId {
+        CMD_ID = 6656;
+    }
+}

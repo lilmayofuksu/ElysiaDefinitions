@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message SetMechaPortRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4519;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        EQUIPPED = 2;
+        CAN_NOT_RIDE = 3;
+        NOT_EXIST = 4;
+        CLASS_REPEAT = 5;
+        NOT_OPEN = 6;
+    }
+}

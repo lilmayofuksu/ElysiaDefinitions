@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message SetArmadaApplyRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2614;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_GRANTED = 2;
+        NOT_IN_ARMADA = 3;
+        LEVEL_ERROR = 4;
+    }
+}

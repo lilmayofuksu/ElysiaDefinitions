@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message SpeedUpFarmProduceRsp {
+    required Retcode retcode = 1;
+    optional uint32 slot_id = 2;
+    optional uint32 speed_up_material_id = 3;
+    optional uint32 speed_up_material_num = 4;
+
+    enum CmdId {
+        CMD_ID = 1394;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_PRODUCE = 2;
+        MATERIAL_LACK = 3;
+    }
+}

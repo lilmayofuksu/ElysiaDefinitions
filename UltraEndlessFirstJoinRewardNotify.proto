@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message UltraEndlessFirstJoinRewardNotify {
+    required RewardData medal_reward = 1;
+    required RewardData promote_reward = 2;
+
+    enum CmdId {
+        CMD_ID = 5220;
+    }
+}

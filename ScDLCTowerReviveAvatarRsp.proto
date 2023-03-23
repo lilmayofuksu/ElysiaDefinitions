@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ScDLCTowerReviveAvatarRsp {
+    required Retcode retcode = 1;
+    optional uint32 revive_times = 2;
+
+    enum CmdId {
+        CMD_ID = 6344;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        REVIVE_TIMES_LACK = 2;
+        NOT_IN_TOWER = 3;
+        MATERIAL_LACK = 4;
+    }
+}

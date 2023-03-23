@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "EndlessType.proto";
+import "PlayerFriendBriefData.proto";
+import "OpenworldEndlessPlayer.proto";
+message OpenworldEndlessPlayerUpdateNotify {
+    required OpenworldEndlessPlayer player_data = 1;
+    required PlayerFriendBriefData brief_data = 2;
+    optional EndlessType type = 3;
+
+    enum CmdId {
+        CMD_ID = 3445;
+    }
+}

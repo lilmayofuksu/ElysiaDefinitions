@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message StageInnerElfData {
+    optional uint32 elf_id = 1;
+    optional uint32 elf_star = 2;
+    optional uint32 elf_level = 3;
+    optional uint32 attack_times = 4;
+    optional uint32 hit_times = 5;
+    optional uint32 total_output = 6;
+    optional uint32 normal_output = 7;
+    optional uint32 ultra_output = 8;
+    optional uint32 total_sp_recover = 9;
+    optional uint32 skill_use_times = 10;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "DiceyDungeonOrnament.proto";
+import "DiceyDungeonWeapon.proto";
+import "DiceyDungeonRole.proto";
+message DiceyDungeonInfo {
+    optional uint32 dungeon_id = 1;
+    optional uint32 floor = 2;
+    optional uint32 dungeon_room_id = 3;
+    required DiceyDungeonRole role = 4;
+    optional uint32 health = 5;
+    required DiceyDungeonWeapon weapon = 6;
+    repeated uint32 passed_room_id_list = 7;
+    repeated DiceyDungeonOrnament ornament_list = 8;
+    repeated uint32 wait_select_ornament_id_list = 9;
+    repeated uint32 random_dicey_num_list = 10;
+    optional uint32 left_refresh_ornament_times = 11;
+    optional uint32 dicey_battle_score = 12;
+    optional uint32 total_dicey_battle_score = 13;
+}

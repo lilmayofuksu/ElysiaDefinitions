@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "CabinTech.proto";
+message Cabin {
+    required uint32 type = 1;
+    required uint32 level = 2;
+    required uint32 extend_grade = 3;
+    optional uint32 level_up_end_time = 4;
+    repeated CabinTech tech_list = 5;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum StageEndStatus {
+    STAGE_WIN = 1;
+    STAGE_NOT_MEET_CONDITION = 2;
+    STAGE_All_DEAD = 3;
+    STAGE_EXIT = 4;
+}

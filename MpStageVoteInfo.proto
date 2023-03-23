@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message MpStageVoteInfo {
+    optional uint32 uid = 1;
+    optional uint32 option = 2;
+}

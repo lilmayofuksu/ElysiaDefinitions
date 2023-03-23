@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GrandKeyResetReq {
+    repeated uint32 key_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 755;
+    }
+}

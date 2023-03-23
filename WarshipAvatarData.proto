@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message WarshipAvatarData {
+    optional uint32 warship_first_avatar_id = 1;
+    optional uint32 warship_second_avatar_id = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message GetTeamListReq {
+    repeated uint32 stage_id_list = 1;
+    repeated uint32 team_id_list = 2;
+    optional bool is_select_in_order = 3;
+    optional uint32 level = 4;
+
+    enum CmdId {
+        CMD_ID = 1215;
+    }
+}

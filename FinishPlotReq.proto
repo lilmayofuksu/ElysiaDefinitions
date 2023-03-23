@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message FinishPlotReq {
+    optional uint32 plot_type = 1;
+    optional uint32 plot_id = 3;
+    optional uint32 dialog_id = 4;
+    repeated uint32 avatar_id_list = 5;
+    optional uint32 visual_novel_id = 6;
+
+    enum CmdId {
+        CMD_ID = 1378;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixStageBeginRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    repeated DropItem drop_item_list = 2;
+
+    enum CmdId {
+        CMD_ID = 2741;
+    }
+}

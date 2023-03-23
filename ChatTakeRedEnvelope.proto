@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "Material.proto";
+import "DropItem.proto";
+message ChatTakeRedEnvelope {
+    optional uint32 sender_uid = 1;
+    optional string sender_nickname = 2;
+    optional uint32 item_id = 3;
+    optional uint32 take_scoin = 4;
+    repeated DropItem drop_item_list = 5;
+    optional string msg = 6;
+    required Material take_material = 7;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message StageChapterBoss {
+    optional uint32 boss_stage_id = 1;
+    optional uint32 left_hp = 2;
+}

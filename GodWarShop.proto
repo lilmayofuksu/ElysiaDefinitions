@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "GodWarGoods.proto";
+message GodWarShop {
+    repeated GodWarGoods goods_list = 1;
+    optional bool is_can_change_state = 2;
+    optional bool is_can_recover = 3;
+    optional uint32 change_state_event_id = 4;
+    optional uint32 recover_event_id = 5;
+    optional uint32 special_discount = 6;
+    optional uint32 refresh_shop_cost = 7;
+    optional uint32 refresh_shop_random = 8;
+    optional uint32 shopping_cost = 9;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message SettingDict {
+    repeated DictItem dict_item_list = 1;
+
+    enum ValueType {
+        INT = 1;
+        FLOAT = 2;
+        STRING = 3;
+    }
+    message DictItem {
+        optional string key = 1;
+        optional ValueType type = 2;
+        optional string value = 3;
+    }
+}

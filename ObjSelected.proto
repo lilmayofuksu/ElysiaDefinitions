@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ObjSelected {
+    optional uint32 id = 1;
+}

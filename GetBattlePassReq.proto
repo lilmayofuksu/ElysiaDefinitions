@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetBattlePassReq {
+
+    enum CmdId {
+        CMD_ID = 3750;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message LotteryDrawNumberReq {
+    optional uint32 lottery_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4181;
+    }
+}

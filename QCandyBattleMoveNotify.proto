@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "QCandyBattleVector3.proto";
+message QCandyBattleMoveNotify {
+    required QCandyBattleVector3 pos = 1;
+    required QCandyBattleVector3 forward = 2;
+
+    enum CmdId {
+        CMD_ID = 6574;
+    }
+}

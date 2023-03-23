@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "LoginActivityRewardType.proto";
+message TakeLoginActivityRewardReq {
+    optional uint32 id = 1;
+    optional uint32 take_days = 2;
+    optional LoginActivityRewardType reward_type = 3;
+
+    enum CmdId {
+        CMD_ID = 4194;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ChapterActivityBoss {
+    optional uint32 boss_stage_id = 1;
+    optional uint32 left_hp = 2;
+    optional uint32 cur_section_id = 3;
+}

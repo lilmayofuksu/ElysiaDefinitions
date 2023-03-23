@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message WorldMapData {
+    optional uint32 world_map_id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 high_light_min_level = 4;
+    optional uint32 high_light_max_level = 5;
+    optional uint32 weight = 6;
+    optional uint32 advance_time = 7;
+    optional uint32 id = 8;
+}

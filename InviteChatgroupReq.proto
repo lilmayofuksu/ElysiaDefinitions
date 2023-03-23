@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message InviteChatgroupReq {
+    optional uint32 chatgroup_id = 1;
+    repeated uint32 friend_list = 2;
+    repeated uint32 master_pupil_list = 3;
+    repeated uint32 stranger_uid_list = 4;
+
+    enum CmdId {
+        CMD_ID = 2202;
+    }
+}

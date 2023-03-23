@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ChatworldFishEndReq {
+    optional FishEndStatus fish_end_status = 1;
+    optional uint32 fish_spot_id = 2;
+    optional uint32 fish_group_id = 3;
+    optional uint32 fish_hard_level = 4;
+
+    enum CmdId {
+        CMD_ID = 2435;
+    }
+    enum FishEndStatus {
+        FISH_END_SUCC = 0;
+        FISH_END_WAIT_ASSIST = 1;
+        FISH_END_FAIL = 2;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message UltraEndlessCommonNotify {
+    optional EventType event_type = 1;
+
+    enum CmdId {
+        CMD_ID = 5298;
+    }
+    enum EventType {
+        EVENT_NONE = 0;
+        EVENT_IN_SETTLE = 1;
+    }
+}

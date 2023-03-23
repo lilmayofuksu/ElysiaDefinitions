@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChatworldFishLeaveSpotReq {
+    optional uint32 fish_spot_id = 1;
+
+    enum CmdId {
+        CMD_ID = 2431;
+    }
+}

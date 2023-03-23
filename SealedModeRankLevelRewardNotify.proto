@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message SealedModeRankLevelRewardNotify {
+    optional uint32 rank_level = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 726;
+    }
+}

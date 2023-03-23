@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "StigmataRefineTimesType.proto";
+import "EquipmentItemList.proto";
+import "StigmataRefineType.proto";
+message RefineStigmataRuneReq {
+    optional StigmataRefineType type = 1;
+    required uint32 unique_id = 2;
+    required EquipmentItemList consume_item_list = 3;
+    optional uint32 special_id = 4;
+    optional uint32 lock_rune_index = 5;
+    optional bool is_retry = 6;
+    optional StigmataRefineTimesType times_type = 7;
+
+    enum CmdId {
+        CMD_ID = 193;
+    }
+}

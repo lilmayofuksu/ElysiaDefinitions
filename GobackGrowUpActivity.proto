@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message GobackGrowUpActivity {
+    repeated uint32 joined_rank_id_list = 1;
+}

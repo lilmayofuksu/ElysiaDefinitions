@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ExtraStoryAct.proto";
+message ExtraStoryArea {
+    required uint32 area_id = 1;
+    repeated ExtraStoryAct act_list = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+}

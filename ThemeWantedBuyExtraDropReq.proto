@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ThemeWantedBuyExtraDropReq {
+
+    enum CmdId {
+        CMD_ID = 5792;
+    }
+}

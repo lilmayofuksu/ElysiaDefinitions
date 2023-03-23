@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "GratuityStage.proto";
+message GetGratuityActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 cur_schedule_id = 2;
+    repeated GratuityStage stage_list = 3;
+    optional uint32 today_left_free_stage_num = 4;
+    repeated GratuityStage invite_stage_list = 5;
+
+    enum CmdId {
+        CMD_ID = 4101;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

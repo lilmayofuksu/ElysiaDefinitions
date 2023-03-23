@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message AiCyberSetBlessRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional string bless = 3;
+
+    enum CmdId {
+        CMD_ID = 6657;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

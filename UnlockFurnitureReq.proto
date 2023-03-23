@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message UnlockFurnitureReq {
+    optional uint32 furniture_id = 1;
+
+    enum CmdId {
+        CMD_ID = 680;
+    }
+}

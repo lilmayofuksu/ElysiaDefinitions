@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message DiceyDungeonActivityWeaponGachaReq {
+    optional uint32 tale_id = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 gacha_random = 3;
+
+    enum CmdId {
+        CMD_ID = 6514;
+    }
+}

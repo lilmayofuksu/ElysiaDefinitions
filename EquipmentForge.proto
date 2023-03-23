@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EquipmentForge {
+    optional uint32 forge_id = 1;
+    optional uint32 times = 2;
+}

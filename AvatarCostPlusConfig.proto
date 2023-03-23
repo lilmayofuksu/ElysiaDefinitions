@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message AvatarCostPlusConfig {
+    required uint32 star = 1;
+    required uint32 cost_plus = 2;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message GetBattlePassThemeRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+    optional uint32 level = 3;
+    optional uint32 exp = 4;
+    optional uint32 has_take_reward_level = 5;
+    optional uint32 begin_time = 6;
+    optional uint32 end_time = 7;
+
+    enum CmdId {
+        CMD_ID = 3761;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

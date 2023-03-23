@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum EndlessSingleModeActivityType {
+    ENDLESS_SINGLE_MODE_ACTIVITY_TYPE_NONE = 0;
+    ENDLESS_SINGLE_MODE_ACTIVITY_TYPE_NORMAL = 1;
+    ENDLESS_SINGLE_MODE_ACTIVITY_TYPE_OW = 2;
+}

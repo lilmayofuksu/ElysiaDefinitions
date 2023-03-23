@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message ConfirmRecommendGoodsRsp {
+    required Retcode retcode = 1;
+    optional uint32 recommend_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1540;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

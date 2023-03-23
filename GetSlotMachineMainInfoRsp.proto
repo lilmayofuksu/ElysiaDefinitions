@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message GetSlotMachineMainInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 cur_gacha_id = 3;
+    optional uint32 gacha_times = 4;
+    optional uint32 has_take_reward_progress = 5;
+    optional bool is_next_super_gacha = 6;
+
+    enum CmdId {
+        CMD_ID = 4316;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+    }
+}

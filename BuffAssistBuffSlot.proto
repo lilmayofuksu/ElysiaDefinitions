@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message BuffAssistBuffSlot {
+    optional uint32 slot_id = 1;
+    optional uint32 buff_id = 2;
+    optional bool is_used = 3;
+}

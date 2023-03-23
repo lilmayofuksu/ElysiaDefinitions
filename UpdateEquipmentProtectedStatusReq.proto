@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message UpdateEquipmentProtectedStatusReq {
+    required bool is_protected = 1;
+    repeated uint32 weapon_unique_id_list = 2;
+    repeated uint32 stigmata_unique_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 74;
+    }
+}

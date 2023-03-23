@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message UltraEndlessReportSiteFloorRsp {
+    required Retcode retcode = 1;
+    optional uint32 site_id = 2;
+    optional uint32 floor = 3;
+    optional bool is_up_floor = 4;
+
+    enum CmdId {
+        CMD_ID = 5207;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PRE_NOT_FINISH = 2;
+        NOT_IN_SCHEDULE = 3;
+    }
+}

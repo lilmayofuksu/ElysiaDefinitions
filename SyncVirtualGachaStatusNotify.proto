@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "VirtualGacha.proto";
+message SyncVirtualGachaStatusNotify {
+    optional uint32 group_id = 1;
+    required VirtualGacha gacha = 2;
+
+    enum CmdId {
+        CMD_ID = 3517;
+    }
+}

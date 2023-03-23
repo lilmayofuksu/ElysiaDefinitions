@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "MonopolyShopGoods.proto";
+import "MonopolyArea.proto";
+message GetMonopolyActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 monopoly_id = 2;
+    repeated MonopolyArea area_list = 3;
+    repeated MonopolyShopGoods goods_list = 4;
+
+    enum CmdId {
+        CMD_ID = 3851;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

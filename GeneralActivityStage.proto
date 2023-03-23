@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "GeneralActivityStageGroupScheduleInfo.proto";
+message GeneralActivityStage {
+    optional uint32 enter_times = 1;
+    optional uint32 exchange_times = 2;
+    optional uint32 cur_score = 3;
+    repeated uint32 stage_reward_taken_list = 4;
+    optional uint32 bonus_score_times = 5;
+    repeated GeneralActivityStageGroupScheduleInfo stage_group_schedule_list = 6;
+    repeated uint32 stage_group_reward_taken_list = 7;
+}

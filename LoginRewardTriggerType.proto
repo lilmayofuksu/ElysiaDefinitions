@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum LoginRewardTriggerType {
+    LOGIN_REWARD_TRIGGER_TYPE_NONE = 0;
+    LOGIN_REWARD_TRIGGER_TYPE_ONCE = 1;
+    LOGIN_REWARD_TRIGGER_TYPE_ALWAYS = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message UnbindAccountReq {
+    optional uint32 account_type = 1;
+    optional string account_uid = 2;
+    optional string account_token = 3;
+    optional string token = 4;
+
+    enum CmdId {
+        CMD_ID = 961;
+    }
+}

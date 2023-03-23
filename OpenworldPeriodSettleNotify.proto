@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "OpenworldPeriodSettleData.proto";
+message OpenworldPeriodSettleNotify {
+    repeated OpenworldPeriodSettleData settle_map_list = 1;
+
+    enum CmdId {
+        CMD_ID = 4450;
+    }
+}

@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message OpenworldChapterMoonChallengeTowerBattleBeginRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 tower_id = 3;
+    optional uint32 cur_floor = 4;
+    optional uint32 cur_score = 5;
+
+    enum CmdId {
+        CMD_ID = 4676;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        TOWER_ERROR = 3;
+        DAILY_TIMES_LACK = 4;
+        NOT_OPEN = 5;
+        FLOOR_ERROR = 6;
+    }
+}

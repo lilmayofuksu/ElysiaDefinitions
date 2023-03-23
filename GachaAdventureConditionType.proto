@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GachaAdventureConditionType {
+    GACHA_ADVENTURE_CONDITION_NONE = 0;
+    GACHA_ADVENTURE_CONDITION_CONDITION_ID = 1;
+    GACHA_ADVENTURE_CONDITION_ITEM_ID = 2;
+}

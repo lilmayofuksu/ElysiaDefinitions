@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "PvzQAvatar.proto";
+message PvzBattleBeginRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 tower_id = 3;
+    optional uint32 floor_id = 4;
+    repeated PvzQAvatar qavatar_list = 5;
+    optional uint32 game_type = 6;
+
+    enum CmdId {
+        CMD_ID = 6553;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        QAVATAR_ERROR = 2;
+        INVALID_TILE = 3;
+        RPG_SITE_CANNOT_ENTER = 4;
+        LACK_TICKET = 5;
+        TILE_SITE_MISMATCH = 6;
+    }
+}

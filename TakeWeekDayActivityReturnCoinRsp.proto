@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message TakeWeekDayActivityReturnCoinRsp {
+    required Retcode retcode = 1;
+    optional uint32 num = 2;
+    optional bool is_coin_full_after_taken = 3;
+
+    enum CmdId {
+        CMD_ID = 1035;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_RETURN = 2;
+        COIN_LIMIT = 3;
+    }
+}

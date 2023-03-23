@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "SealedSuiteSelection.proto";
+import "AvatarSuiteSelection.proto";
+import "AvatarSuite.proto";
+message GetSealedModeInfoRsp {
+    required Retcode retcode = 1;
+    repeated AvatarSuite avatar_suite_list = 2;
+    required AvatarSuiteSelection avatar_suite_selection = 3;
+    optional uint32 left_times = 4;
+    required SealedSuiteSelection selection_suite = 5;
+
+    enum CmdId {
+        CMD_ID = 597;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

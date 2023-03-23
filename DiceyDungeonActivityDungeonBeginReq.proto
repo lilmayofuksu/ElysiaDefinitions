@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "DiceyDungeonType.proto";
+import "DiceyDungeonInfo.proto";
+message DiceyDungeonActivityDungeonBeginReq {
+    optional uint32 tale_id = 1;
+    optional uint32 activity_id = 2;
+    required DiceyDungeonInfo dungeon_info = 3;
+    optional DiceyDungeonType dungeon_type = 4;
+
+    enum CmdId {
+        CMD_ID = 6504;
+    }
+}

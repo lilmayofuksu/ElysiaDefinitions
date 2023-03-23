@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message GetOtherDormDataReq {
+    optional uint32 target_uid = 1;
+    optional uint32 visit_avatar = 2;
+    optional uint32 level = 3;
+    optional string name = 4;
+
+    enum CmdId {
+        CMD_ID = 633;
+    }
+}

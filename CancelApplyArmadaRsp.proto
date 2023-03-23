@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message CancelApplyArmadaRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2630;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

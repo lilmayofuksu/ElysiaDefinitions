@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ArmadaMatrixStageConfig.proto";
+message ArmadaMatrixGetRandomInfoRsp {
+    required Retcode retcode = 1;
+    repeated ArmadaMatrixStageConfig stage_list = 2;
+
+    enum CmdId {
+        CMD_ID = 2818;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

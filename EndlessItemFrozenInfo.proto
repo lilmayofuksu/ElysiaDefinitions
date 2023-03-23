@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EndlessItemFrozenInfo {
+    required uint32 target_uid = 1;
+    required uint32 frozen_time = 2;
+}

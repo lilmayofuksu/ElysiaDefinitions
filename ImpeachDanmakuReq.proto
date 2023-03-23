@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ImpeachDanmakuReq {
+    optional uint32 danmaku_slot = 1;
+    optional uint32 sender_uid = 2;
+    optional string danmaku_id = 3;
+
+    enum CmdId {
+        CMD_ID = 1549;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message OpenworldEndlessPlayerInvasionData {
+    optional uint32 id = 1;
+    optional uint32 invader_id = 2;
+    optional uint32 active_time = 3;
+    repeated uint32 buff_list = 4;
+    optional uint32 sub_score = 5;
+    optional uint32 battle_id = 6;
+    optional uint32 invasion_id = 7;
+}

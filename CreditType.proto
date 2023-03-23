@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum CreditType {
+    CREDIT_NONE = 0;
+    CREDIT_TVT = 1;
+}

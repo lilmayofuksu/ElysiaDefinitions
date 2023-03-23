@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+import "ArmadaPosition.proto";
+message ArmadaMember {
+    optional uint32 uid = 1;
+    optional ArmadaPosition position = 2;
+    required PlayerFriendBriefData brief_data = 3;
+    optional uint32 week_popl = 4;
+    optional uint32 total_popl = 5;
+    optional uint32 week_fund = 6;
+    optional uint32 total_fund = 7;
+    optional uint32 week_contribution = 8;
+    optional uint32 total_contribution = 9;
+}

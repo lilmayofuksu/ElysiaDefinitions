@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "FriendAskAddData.proto";
+message GetAskAddFriendListRsp {
+    required Retcode retcode = 1;
+    repeated FriendAskAddData ask_list = 2;
+
+    enum CmdId {
+        CMD_ID = 71;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "EquipmentSlot.proto";
+message SealedModeExchangeEquipReq {
+    required SealedModeEquip equip_from = 1;
+    required SealedModeEquip equip_to = 2;
+
+    enum CmdId {
+        CMD_ID = 732;
+    }
+    message SealedModeEquip {
+        optional uint32 index = 1;
+        optional uint32 avatar_object_id = 2;
+        optional EquipmentSlot slot = 3;
+        optional uint32 equip_object_id = 4;
+    }
+}

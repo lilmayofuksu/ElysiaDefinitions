@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message TakeAdventureStorySweepRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 sweep_id = 2;
+    optional uint32 siege_stage_id = 3;
+    repeated DropItem drop_item_list = 4;
+    optional uint32 player_exp_reward = 5;
+    optional uint32 exp_convert_scoin = 6;
+    optional uint32 scoin_reward = 7;
+    optional uint32 rank_scoin = 8;
+    optional bool is_take_all = 9;
+    repeated uint32 sweep_group_type_list = 10;
+
+    enum CmdId {
+        CMD_ID = 3917;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_EXIST = 2;
+        NOT_FINISHED = 3;
+    }
+}

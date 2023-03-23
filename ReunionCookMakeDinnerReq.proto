@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ReunionCookData.proto";
+import "ReunionCookBookType.proto";
+import "Material.proto";
+message ReunionCookMakeDinnerReq {
+    optional uint32 book_id = 1;
+    repeated Material recycle_material_list = 2;
+    optional ReunionCookBookType book_type = 3;
+    repeated ReunionCookData cook_data = 4;
+
+    enum CmdId {
+        CMD_ID = 4382;
+    }
+}

@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+import "RogueStageBuff.proto";
+import "DropItem.proto";
+message RogueStageBeginRsp {
+    required Retcode retcode = 1;
+    optional uint32 energy = 2;
+    optional uint32 random_seed = 3;
+    repeated DropItem drop_item_list = 4;
+    optional uint32 hard_level = 5;
+    optional uint32 progress = 6;
+    repeated RogueStageBuff buff_list = 7;
+
+    enum CmdId {
+        CMD_ID = 282;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_JOIN_ARMADA = 2;
+        NOT_INIT = 3;
+        ITEM_LACK = 4;
+        AVATAR_DIE = 5;
+        AVATAR_ERROR = 6;
+        PROGRESS_FULL = 7;
+        NOT_OPEN = 8;
+    }
+}

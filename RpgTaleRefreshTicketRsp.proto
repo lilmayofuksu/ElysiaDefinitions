@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RpgTaleTicketRefreshInfo.proto";
+message RpgTaleRefreshTicketRsp {
+    required Retcode retcode = 1;
+    optional uint32 tale_id = 2;
+    repeated RpgTaleTicketRefreshInfo ticket_refresh_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2381;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

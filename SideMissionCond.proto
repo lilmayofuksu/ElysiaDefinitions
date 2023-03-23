@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum SideMissionCond {
+    SIDE_MISSION_COND_AVATAR_GOODFEEL = 1;
+}

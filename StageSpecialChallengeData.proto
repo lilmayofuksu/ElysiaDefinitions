@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message StageSpecialChallengeData {
+    required uint32 challenge_index = 1;
+    required DropItem drop_item = 2;
+}

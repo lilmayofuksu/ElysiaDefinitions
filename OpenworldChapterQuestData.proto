@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message OpenworldChapterQuestData {
+    repeated OpenworldQuest quest_list = 1;
+    optional uint32 quest_accept_times = 2;
+    optional uint32 quest_refresh_times = 3;
+    optional uint32 special_quest_finished_num = 4;
+}

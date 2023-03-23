@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message InviteToMultiChatgroupRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    repeated uint32 chatgroup_id_list = 3;
+    optional bool is_stranger = 4;
+
+    enum CmdId {
+        CMD_ID = 2217;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        JOIN_MAX_NUM = 2;
+        FEATURE_CLOSED = 3;
+    }
+}

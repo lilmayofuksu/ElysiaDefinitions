@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ElfUpgradeLevelPeriodRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2110;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ELF_NOT_EXIST = 2;
+        MATERIAL_NOT_ENOUGH = 3;
+        EXP_NOT_ENOUGH = 4;
+        LEVEL_CAN_NOT_UPGRADE_PERIOD = 5;
+        PLAYER_LEVEL_NOT_ENOUGH = 6;
+    }
+}

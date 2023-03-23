@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "ArmadaMatrixArmadaBoss.proto";
+import "ArmadaMatrixMonster.proto";
+message ArmadaMatrixStageConfig {
+    optional uint32 preset_id = 1;
+    optional uint32 hard_level = 2;
+    repeated ArmadaMatrixMonster monster_list = 3;
+    repeated uint32 monster_buff_list = 4;
+    optional uint32 discovery_value = 5;
+    optional uint32 honkai_energy = 6;
+    optional uint32 fund_reward = 7;
+    repeated uint32 displayer_drop_list = 8;
+    optional uint32 supply_cost = 9;
+    required ArmadaMatrixArmadaBoss armada_boss = 10;
+    optional uint32 armada_discovery_value = 11;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetRogueStageDataReq {
+
+    enum CmdId {
+        CMD_ID = 275;
+    }
+}

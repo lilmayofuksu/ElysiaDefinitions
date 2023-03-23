@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "OpenworldChapterHeroCardSlot.proto";
+message OpenworldChapterEquipCardGroupReq {
+    optional uint32 group_idx = 1;
+    optional uint32 hero_id = 2;
+    repeated OpenworldChapterHeroCardSlot slot_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4585;
+    }
+}

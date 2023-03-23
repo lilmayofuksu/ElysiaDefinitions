@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message CityActivityAffinityDropInfo {
+    optional uint32 max_daily_affinity_drop_in_stage = 1;
+    optional uint32 today_affinity_drop_in_stage = 2;
+}

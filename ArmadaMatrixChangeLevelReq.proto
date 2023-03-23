@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ArmadaMatrixChangeLevelReq {
+    optional uint32 level = 1;
+    optional uint32 cur_schedule_id = 2;
+
+    enum CmdId {
+        CMD_ID = 2772;
+    }
+}

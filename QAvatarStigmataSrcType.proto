@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum QAvatarStigmataSrcType {
+    QAVATAR_STIGMATA_SRC_NONE = 0;
+    QAVATAR_STIGMATA_SRC_DEFAULT = 1;
+    QAVATAR_STIGMATA_SRC_DROP = 2;
+}

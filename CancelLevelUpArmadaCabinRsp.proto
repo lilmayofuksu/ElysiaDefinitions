@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message CancelLevelUpArmadaCabinRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2634;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CABIN_NOT_IN_LEVELUP = 2;
+        NOT_GRANTED = 3;
+        NOT_IN_ARMADA = 4;
+        NO_OWNERSHIP = 5;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ReplayGetUploadListReq {
+
+    enum CmdId {
+        CMD_ID = 5414;
+    }
+}

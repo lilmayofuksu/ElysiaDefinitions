@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetMonopolyActivityReq {
+    optional uint32 monopoly_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3850;
+    }
+}

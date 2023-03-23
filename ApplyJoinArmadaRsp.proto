@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message ApplyJoinArmadaRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2608;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STATUS_ERROR = 2;
+        ARMADA_NOT_EXIST = 3;
+        LEVEL_LACK = 4;
+        MEMBER_FULL = 5;
+        APPLY_FULL = 6;
+        IN_CD_TIME = 7;
+        APPLY_LIMIT = 8;
+        HAS_APPLYED = 9;
+        IN_LOW_POPL_CD_TIME = 10;
+        FEATURE_CLOSED = 11;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetCustomHeadDataReq {
+
+    enum CmdId {
+        CMD_ID = 1523;
+    }
+}

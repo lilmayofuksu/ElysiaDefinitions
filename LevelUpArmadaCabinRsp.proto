@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+import "ArmadaCabinType.proto";
+message LevelUpArmadaCabinRsp {
+    required Retcode retcode = 1;
+    optional ArmadaCabinType type = 2;
+    optional uint32 cabin_id = 3;
+    optional uint32 grid_id = 4;
+    optional uint32 level_up_end_time = 5;
+
+    enum CmdId {
+        CMD_ID = 2632;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ARMADA_LEVEL_LACK = 2;
+        FUND_LACK = 3;
+        POPL_LACK = 4;
+        BUSY = 5;
+        LEVEL_LACK = 6;
+        CABIN_NOT_EXIST = 7;
+        CABIN_FULL = 8;
+        GRID_ERROR = 9;
+        NOT_GRANTED = 10;
+        NOT_IN_ARMADA = 11;
+        NO_OWNERSHIP = 12;
+    }
+}

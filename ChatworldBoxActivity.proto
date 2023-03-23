@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChatworldBoxActivity {
+    optional uint32 schedule_id = 1;
+    repeated uint64 open_box_unique_id_u64_list = 2;
+}

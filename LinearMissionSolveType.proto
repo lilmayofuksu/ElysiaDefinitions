@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum LinearMissionSolveType {
+    LINEAR_MISSION_SOLVE_CLOSE = 0;
+    LINEAR_MISSION_SOLVE_RESERVE = 1;
+    LINEAR_MISSION_SOLVE_AUTO = 2;
+}

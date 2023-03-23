@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "SlgBroadcastPlayer.proto";
+message SlgBattleBroadcast {
+    optional uint32 broadcast_id = 1;
+    optional uint32 trigger_time = 2;
+    optional uint32 point_id = 3;
+    optional uint32 para = 4;
+    required SlgBroadcastPlayer trigger_player = 5;
+}

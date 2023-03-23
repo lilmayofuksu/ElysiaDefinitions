@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message MonopolyAddMonsterRsp {
+    required Retcode retcode = 1;
+    optional uint32 monster_id = 2;
+    optional uint32 position = 3;
+    optional uint32 direction = 4;
+    optional uint32 unique_id = 5;
+    optional uint32 entity_type = 6;
+    optional uint32 tile_entity_id = 7;
+
+    enum CmdId {
+        CMD_ID = 3868;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ALREADY_ADD = 2;
+    }
+}

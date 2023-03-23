@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "TvtBattleResult.proto";
+message TvtBattleHistory {
+    required TvtBattleResult battle_result = 1;
+}

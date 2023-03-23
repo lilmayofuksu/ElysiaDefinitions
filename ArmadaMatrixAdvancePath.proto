@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixAdvancePath {
+    required ArmadaMatrixGridPos path_from = 1;
+    required ArmadaMatrixGridPos path_to = 2;
+}

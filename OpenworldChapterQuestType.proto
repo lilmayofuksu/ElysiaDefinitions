@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum OpenworldChapterQuestType {
+    OPENWORLD_CHAPTER_NORMAL_QUEST = 1;
+    OPENWORLD_CHAPTER_SPECIAL_QUEST = 2;
+}

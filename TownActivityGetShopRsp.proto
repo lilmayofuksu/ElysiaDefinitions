@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityGetShopRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+    optional uint32 building_unique_id = 3;
+    repeated ShopGoods goods_list = 4;
+
+    enum CmdId {
+        CMD_ID = 6467;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+    message ShopGoods {
+        optional uint32 goods_id = 1;
+        optional uint32 material_id = 2;
+        optional uint32 left_buy_times = 3;
+        optional uint32 cost_material_id = 4;
+        optional uint32 cost_num = 5;
+        optional uint32 limit_type = 6;
+    }
+}

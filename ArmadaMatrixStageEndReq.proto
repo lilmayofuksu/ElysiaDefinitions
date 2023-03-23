@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "StageCheatData.proto";
+import "StageEndStatus.proto";
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixStageEndReq {
+    required ArmadaMatrixGridPos pos = 1;
+    optional StageEndStatus end_status = 2;
+    repeated StageCheatData cheat_data_list = 3;
+    repeated DropItem drop_item_list = 4;
+    optional uint32 boss_lose_hp_percent = 5;
+
+    enum CmdId {
+        CMD_ID = 2742;
+    }
+}

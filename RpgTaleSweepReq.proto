@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message RpgTaleSweepReq {
+    optional uint32 stage_id = 1;
+    optional uint32 times = 2;
+    optional uint32 tale_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2376;
+    }
+}

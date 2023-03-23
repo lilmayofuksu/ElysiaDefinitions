@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "NewbieLevelRush.proto";
+import "NewbiePrivilegeInfo.proto";
+import "NewbieActivityChallenge.proto";
+message GetNewbieActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 end_time = 3;
+    repeated uint32 taken_reward_level_list = 4;
+    required NewbieActivityChallenge challenge = 5;
+    required NewbiePrivilegeInfo privilege = 6;
+    required NewbieLevelRush level_rush = 7;
+
+    enum CmdId {
+        CMD_ID = 4249;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_NEWBIE = 2;
+    }
+}

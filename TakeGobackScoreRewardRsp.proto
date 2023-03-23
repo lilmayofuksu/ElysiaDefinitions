@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeGobackScoreRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 score_id = 2;
+    repeated RewardData reward_list = 3;
+    optional uint32 score = 4;
+
+    enum CmdId {
+        CMD_ID = 1449;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SCORE_LACK = 2;
+        NOT_GOBACK = 3;
+        HAS_TAKE = 4;
+    }
+}

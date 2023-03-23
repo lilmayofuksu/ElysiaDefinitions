@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "ScratchTicketPoint.proto";
+message GetScratchTicketRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 plate_id = 3;
+    repeated ScratchTicketPoint point_list = 4;
+    optional uint32 reset_times = 5;
+    optional uint32 round = 6;
+    optional uint32 core_plate_end_round = 7;
+    optional bool has_got_core_plate = 8;
+
+    enum CmdId {
+        CMD_ID = 4151;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message TileMark {
+    optional uint32 mark_id = 1;
+    optional uint32 mark_value = 2;
+}

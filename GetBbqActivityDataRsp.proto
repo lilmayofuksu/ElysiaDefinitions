@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message GetBbqActivityDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 bbq_level = 3;
+    optional uint32 bbq_exp = 4;
+    optional uint32 max_reward_taken_level = 5;
+    optional uint32 can_use_bbq_count = 6;
+
+    enum CmdId {
+        CMD_ID = 4251;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

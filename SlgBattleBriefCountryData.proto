@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message SlgBattleBriefCountryData {
+    optional uint32 country_id = 1;
+    optional uint32 country_score = 2;
+}

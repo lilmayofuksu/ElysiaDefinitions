@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+message GetBlackListRsp {
+    required Retcode retcode = 1;
+    repeated PlayerFriendBriefData black_list = 2;
+    optional bool is_whole_data = 3;
+    optional bool is_only_uid = 4;
+
+    enum CmdId {
+        CMD_ID = 1595;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

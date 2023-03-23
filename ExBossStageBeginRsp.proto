@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+message ExBossStageBeginRsp {
+    required Retcode retcode = 1;
+    optional string stage_transaction_str = 2;
+
+    enum CmdId {
+        CMD_ID = 530;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_ERROR = 3;
+        DUP_AVATAR = 4;
+        ENTER_TIMES_LACK = 5;
+        EX_BOSS_LACK_SCORE = 6;
+        ELF_ERROR = 7;
+        ELF_CARRY_LEVEL_LIMIT = 8;
+        NEED_FINISH_NORMAL = 9;
+        FEATURE_LIMIT = 10;
+        FEATURE_CLOSED = 11;
+        NOT_OPEN = 12;
+        NOT_ALLOW_TURBO = 13;
+        NO_AVAILABLE_BOSS = 14;
+        LACK_LOCK_SLOT = 15;
+        PRE_BOSS_NOT_FINISH = 16;
+    }
+}

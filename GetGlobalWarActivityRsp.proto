@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "GlobalWarActivity.proto";
+message GetGlobalWarActivityRsp {
+    required Retcode retcode = 1;
+    required GlobalWarActivity global_war_activity = 2;
+
+    enum CmdId {
+        CMD_ID = 3951;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

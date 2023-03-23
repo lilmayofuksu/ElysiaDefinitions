@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message GachaCoinTransferData {
+    optional uint32 gacha_type = 1;
+}

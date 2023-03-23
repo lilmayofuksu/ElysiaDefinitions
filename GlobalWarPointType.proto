@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum GlobalWarPointType {
+    GLOBAL_WAR_POINT_TYPE_NONE = 0;
+    GLOBAL_WAR_POINT_TYPE_NORMAL = 1;
+    GLOBAL_WAR_POINT_TYPE_CRITICAL = 2;
+    GLOBAL_WAR_POINT_TYPE_BOSS = 3;
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message AddElfExpByMaterialReq {
+    optional uint32 elf_id = 1;
+    optional uint32 material_id = 2;
+    optional uint32 material_num = 3;
+
+    enum CmdId {
+        CMD_ID = 2107;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message BindAccountReq {
+    required uint32 account_type = 1;
+    required string account_uid = 2;
+    required string account_token = 3;
+    optional string account_ext = 4;
+
+    enum CmdId {
+        CMD_ID = 119;
+    }
+}

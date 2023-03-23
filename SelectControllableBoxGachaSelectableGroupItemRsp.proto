@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "ControllableBoxGachaSelectableGroup.proto";
+message SelectControllableBoxGachaSelectableGroupItemRsp {
+    required Retcode retcode = 1;
+    optional uint32 gacha_id = 2;
+    required ControllableBoxGachaSelectableGroup group_info = 3;
+
+    enum CmdId {
+        CMD_ID = 4719;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        GACHA_ID_ERROR = 2;
+        GROUP_ID_ERROR = 3;
+        ITEM_ID_ERROR = 4;
+        FIRST_IS_TAKEN = 5;
+    }
+}

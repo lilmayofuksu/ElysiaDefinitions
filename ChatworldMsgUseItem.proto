@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChatworldMsgUseItem {
+    optional uint32 material_id = 1;
+    optional uint32 num = 2;
+    repeated uint32 target_uid_list = 3;
+    optional string msg = 4;
+    optional bytes extra_data = 5;
+}

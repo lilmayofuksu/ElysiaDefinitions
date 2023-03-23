@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message AiCyberArea {
+    optional uint32 area_id = 1;
+    optional bool is_puzzle_reward_taken = 2;
+    optional uint32 cur_daily_stage_id = 3;
+}

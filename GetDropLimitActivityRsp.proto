@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "DropLimitActivity.proto";
+message GetDropLimitActivityRsp {
+    required Retcode retcode = 1;
+    repeated DropLimitActivity drop_limit_activity_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4298;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

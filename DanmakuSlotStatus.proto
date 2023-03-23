@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum DanmakuSlotStatus {
+    DANMAKU_SLOT_STATUS_NONE = 0;
+    DANMAKU_SLOT_STATUS_CLOSE = 1;
+    DANMAKU_SLOT_STATUS_FAKE = 2;
+}

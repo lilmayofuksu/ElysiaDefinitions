@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "RoomClientStatus.proto";
+import "RoomMemberStatus.proto";
+message RoomMember {
+    optional uint32 uid = 1;
+    optional string region_name = 2;
+    optional string nickname = 3;
+    optional uint32 level = 4;
+    optional uint32 head_avatar_id = 5;
+    optional uint32 frame_id = 6;
+    optional uint32 dress_id = 7;
+    optional RoomMemberStatus status = 8;
+    optional MemberPosition position = 9;
+    optional bytes mode_bytes = 10;
+    optional uint32 custom_head_id = 11;
+    optional RoomClientStatus client_status = 12;
+    optional uint32 voice_id = 13;
+
+    enum MemberPosition {
+        NORMAL = 1;
+        LEADER = 2;
+    }
+}

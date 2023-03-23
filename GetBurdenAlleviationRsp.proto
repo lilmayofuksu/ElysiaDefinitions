@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "BurdenAlleviationActivity.proto";
+message GetBurdenAlleviationRsp {
+    required Retcode retcode = 1;
+    required BurdenAlleviationActivity activity_data = 2;
+
+    enum CmdId {
+        CMD_ID = 4353;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

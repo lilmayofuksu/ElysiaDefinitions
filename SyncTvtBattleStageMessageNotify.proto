@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "TvtBattleStageMessage.proto";
+message SyncTvtBattleStageMessageNotify {
+    repeated TvtBattleStageMessage message_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3356;
+    }
+}

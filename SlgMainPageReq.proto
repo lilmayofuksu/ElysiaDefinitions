@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SlgMainPageReq {
+    optional bool is_in_main_page = 1;
+
+    enum CmdId {
+        CMD_ID = 6069;
+    }
+}

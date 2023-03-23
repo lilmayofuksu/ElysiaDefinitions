@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum EndlessItemType {
+    ENDLESS_EMPTY = 0;
+    ENDLESS_MEDICINE_SELF = 1;
+    ENDLESS_MEDICINE_TO_OTHER = 2;
+    ENDLESS_TRAP = 3;
+    ENDLESS_BOMB = 4;
+    ENDLESS_HIDDEN = 5;
+}

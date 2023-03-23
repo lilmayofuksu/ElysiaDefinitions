@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message DanmakuBlacklistNotify {
+    optional uint32 blacklist_expire_time = 1;
+
+    enum CmdId {
+        CMD_ID = 1551;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RoomMember.proto";
+message RoomGetStatusReq {
+    optional uint32 room_id = 1;
+    required RoomMember member_data = 2;
+
+    enum CmdId {
+        CMD_ID = 3181;
+    }
+}

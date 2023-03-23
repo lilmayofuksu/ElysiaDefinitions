@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message PvzGetActivityReq {
+    optional uint32 activity_id = 1;
+
+    enum CmdId {
+        CMD_ID = 6550;
+    }
+}

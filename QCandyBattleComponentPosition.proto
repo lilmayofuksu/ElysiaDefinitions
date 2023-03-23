@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "QCandyBattleVector3.proto";
+message QCandyBattleComponentPosition {
+    required QCandyBattleVector3 postion = 1;
+    required QCandyBattleVector3 forward = 2;
+}

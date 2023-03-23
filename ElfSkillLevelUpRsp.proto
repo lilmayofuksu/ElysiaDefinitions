@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "ElfSkill.proto";
+message ElfSkillLevelUpRsp {
+    required Retcode retcode = 1;
+    required ElfSkill elf_skill = 2;
+
+    enum CmdId {
+        CMD_ID = 2124;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ELF_LOCKED = 2;
+        SCOIN_LACK = 3;
+        MATERIAL_NOT_ENOUGH = 4;
+        LEVEL_FULL = 5;
+        ELF_STAR_NOT_ENOUGH = 6;
+        PRE_SKILL_LEVEL_NOT_ENOUGH = 7;
+        ELF_LEVEL_NOT_ENOUGH = 8;
+    }
+}

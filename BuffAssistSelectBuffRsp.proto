@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message BuffAssistSelectBuffRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 5946;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        NO_BUFF = 3;
+        BUFF_SLOT_ERROR = 4;
+        BUFF_SLOT_REPLACED = 5;
+        WAIT_SELECT_BUFF_SLOT_ERROR = 6;
+        SELECT_TIMES_LACK = 7;
+        BUFF_SLOT_LOCKED = 8;
+    }
+}

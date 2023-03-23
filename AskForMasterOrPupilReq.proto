@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "MasterPupilType.proto";
+message AskForMasterOrPupilReq {
+    optional MasterPupilType type = 1;
+    optional uint32 ask_uid = 2;
+    optional uint32 time = 3;
+
+    enum CmdId {
+        CMD_ID = 570;
+    }
+}

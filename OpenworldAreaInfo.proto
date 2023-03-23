@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldAreaInfo {
+    optional uint32 area_id = 1;
+    repeated string info_list = 2;
+}

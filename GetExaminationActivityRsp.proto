@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "Examination.proto";
+message GetExaminationActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 cur_examination_idx = 3;
+    optional uint32 finished_round = 4;
+    repeated Examination examination_list = 5;
+    optional uint32 examination_stage_id = 6;
+
+    enum CmdId {
+        CMD_ID = 4324;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

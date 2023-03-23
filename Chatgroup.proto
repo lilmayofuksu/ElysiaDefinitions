@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ChatgroupMember.proto";
+message Chatgroup {
+    optional uint32 chatgroup_id = 1;
+    optional string name = 2;
+    optional string notice = 3;
+    optional uint32 icon_id = 4;
+    repeated ChatgroupMember member_list = 5;
+    repeated uint32 label_id_list = 6;
+}

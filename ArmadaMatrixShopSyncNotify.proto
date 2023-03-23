@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+import "PlayerMatrixShop.proto";
+message ArmadaMatrixShopSyncNotify {
+    required PlayerMatrixShop shop = 1;
+    required ArmadaMatrixGridPos pos = 2;
+
+    enum CmdId {
+        CMD_ID = 2767;
+    }
+}

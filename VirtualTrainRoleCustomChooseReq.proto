@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message VirtualTrainRoleCustomChooseReq {
+    optional uint32 group_id = 1;
+    optional uint32 virtual_role_id = 2;
+    optional uint32 custom_id = 3;
+    optional uint32 index = 4;
+
+    enum CmdId {
+        CMD_ID = 3520;
+    }
+}

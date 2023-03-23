@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "ArmadaOptionalLeader.proto";
+message ArmadaImpeachData {
+    required uint32 impeach_status = 1;
+    repeated ArmadaOptionalLeader optional_leader_list = 2;
+    optional uint32 election_end_time = 3;
+}

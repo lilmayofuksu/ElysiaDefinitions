@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message GetPediaRsp {
+    required Retcode retcode = 1;
+    repeated uint32 black_list = 2;
+
+    enum CmdId {
+        CMD_ID = 465;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

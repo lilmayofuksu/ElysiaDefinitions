@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message VirtualTrainEvoRsp {
+    required Retcode retcode = 1;
+    optional uint32 group_id = 2;
+    optional uint32 evo_avatar_id = 3;
+
+    enum CmdId {
+        CMD_ID = 3523;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        NO_NEXT_AVATAR = 3;
+        CAN_NOT_EVO = 4;
+        MATERIAL_LACK = 5;
+        EVO_LIMIT = 6;
+    }
+}

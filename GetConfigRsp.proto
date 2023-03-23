@@ -1,0 +1,107 @@
+syntax = "proto2";
+
+import "ArmadaDiscoveryRewardConfig.proto";
+import "BulletinActivityConfig.proto";
+import "AvatarCostPlusConfig.proto";
+message GetConfigRsp {
+    required Retcode retcode = 1;
+    required uint32 stamina_recover_config_time = 2;
+    required uint32 avatar_revive_hcoin_cost = 4;
+    required uint32 same_type_power_up_rate = 5;
+    required uint32 day_time_offset = 6;
+    required uint32 server_cur_time = 7;
+    required uint32 power_up_scoin_cost_rate = 8;
+    required uint32 max_friend_num = 9;
+    required uint32 endless_min_player_level = 10;
+    optional uint32 avatar_max_add_goodfeel = 12;
+    repeated AvatarCostPlusConfig avatar_cost_plus_config_list = 13;
+    optional uint32 endless_use_item_cd_time = 14;
+    optional uint32 disjoin_equipment_back_exp_percent = 15;
+    repeated GachaTicket gacha_ticket_list = 31;
+    optional string region_name = 32;
+    optional uint32 min_invite_level = 33;
+    repeated DiscountScheduleConfig discount_schedule_config_list = 35;
+    optional uint32 island_event_refresh_interval = 36;
+    optional uint32 spaceship_begin_time = 37;
+    optional uint32 spaceship_end_time = 38;
+    optional uint32 spaceship_id = 39;
+    optional bool is_random_box_product_open = 40;
+    optional uint32 scoin_limit = 41;
+    optional uint32 friends_point_limit = 42;
+    optional uint32 product_random_box_begin_time = 43;
+    optional uint32 product_random_box_end_time = 44;
+    optional uint32 week_day_activity_coin_item_id = 45;
+    optional uint32 island_visit_max_help_num = 46;
+    optional uint32 cost_senior_equip_after_cancel_protect_min_time_diff = 47;
+    optional uint32 rogue_stage_cost_item_id = 48;
+    optional uint32 rogue_stage_max_progress = 49;
+    repeated BulletinActivityConfig bulletin_activity_list = 50;
+    repeated ArmadaDiscoveryRewardConfig armada_discovery_reward_list = 51;
+    optional uint32 rogue_stage_open_level = 52;
+    optional uint32 armada_begin_time = 53;
+    optional uint32 armada_end_time = 54;
+    optional string armada_custom_content = 55;
+    optional uint32 stigmata_rune_open_level = 56;
+    optional uint32 stigmata_title_open_level = 57;
+    optional uint32 stigmata_disjoin_title_back_exp_percent = 58;
+    optional uint32 stigmata_promote_max_times = 59;
+    optional uint32 stigmata_rune_combat_ratio = 60;
+    optional uint32 stigmata_disjoin_back_exp_percent = 61;
+    optional uint32 stigmata_refine_value_back_percent = 62;
+    repeated uint32 stigmata_title_exp_material_list = 63;
+    optional uint32 scoin_convert_per_exp = 64;
+    optional uint32 mp_reset_skill_hcoin_cost = 65;
+    optional uint32 mp_member_max_times_for_all_act = 66;
+    optional uint32 mp_member_exhausted_drop_ratio = 67;
+    repeated FriendBondLevelConfig friend_bond_level_config_list = 68;
+    optional uint32 mp_punish_mp_exp_reduce_rate = 69;
+    optional uint32 friend_assistant_add_bond = 70;
+    optional uint32 armada_manage_mail_length = 72;
+    optional uint32 armada_contact_length = 73;
+    optional uint32 armada_manage_mail_cd = 74;
+    optional uint32 armada_bulletin_length = 75;
+    optional uint32 openworld_judge_para_type1 = 76;
+    optional uint32 openworld_judge_para_type2 = 77;
+    optional uint32 openworld_judge_para_type3 = 78;
+    optional uint32 openworld_judge_para_type4 = 79;
+    optional uint32 trial_avatar_player_min_level = 80;
+    optional uint32 disjoin_equipment_max_batch_num = 81;
+    optional uint32 equip_disjoint_unlock_level = 82;
+    repeated uint32 stage_type_limit_avatar_fight_in_venture_list = 83;
+    optional uint32 armada_boss_stage_open_level = 84;
+    required AntiCheatStageCheckConfig anti_cheat_stage_check_config = 85;
+    optional bool is_can_gal_touch = 87;
+    optional bool is_resistance_open = 88;
+    optional uint32 next_day_begin_time = 90;
+
+    enum CmdId {
+        CMD_ID = 111;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+    message GachaTicket {
+        required uint32 material_id = 1;
+        required uint32 hcoin_cost = 2;
+    }
+    message DiscountScheduleConfig {
+        required uint32 type = 1;
+        required uint32 discount = 2;
+        required uint32 begin_time = 3;
+        required uint32 end_time = 4;
+        repeated uint32 para_int_list = 5;
+    }
+    message FriendBondLevelConfig {
+        optional uint32 level = 1;
+        optional uint32 min_bond = 2;
+        optional uint32 assist_cd_reduce_rate = 3;
+        optional uint32 invite_add_friends_point = 4;
+        optional uint32 extra_add_mp_exp_rate = 5;
+        optional uint32 extra_mp_add_friends_point = 6;
+    }
+    message AntiCheatStageCheckConfig {
+        repeated uint32 check_stage_id_list = 1;
+        repeated uint32 check_stage_type_list = 2;
+    }
+}

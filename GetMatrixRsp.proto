@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MatrixFloorBriefInfo.proto";
+message GetMatrixRsp {
+    required Retcode retcode = 1;
+    repeated MatrixFloorBriefInfo floor_brief_info_list = 2;
+    optional uint32 cur_floor_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2321;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

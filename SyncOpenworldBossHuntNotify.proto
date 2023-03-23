@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "OpenworldBossHunt.proto";
+message SyncOpenworldBossHuntNotify {
+    required OpenworldBossHunt boss_hunt = 1;
+
+    enum CmdId {
+        CMD_ID = 4530;
+    }
+}

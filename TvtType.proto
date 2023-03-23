@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum TvtType {
+    TVT_NONE = 0;
+    TVT_NORMAL = 1;
+    TVT_RANKING = 2;
+}

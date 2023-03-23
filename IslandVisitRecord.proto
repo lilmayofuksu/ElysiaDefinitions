@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "IslandVisitRecordType.proto";
+message IslandVisitRecord {
+    required IslandVisitRecordType record_type = 1;
+    optional uint32 visit_time = 2;
+    optional uint32 visit_uid = 3;
+    optional uint32 visit_event_id = 4;
+    repeated RewardData reward_list = 5;
+}

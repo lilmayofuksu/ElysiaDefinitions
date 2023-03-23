@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message TileWaitSelectPath {
+    repeated uint32 candidate_path_cell_id_list = 1;
+    optional uint32 left_step_num = 2;
+}

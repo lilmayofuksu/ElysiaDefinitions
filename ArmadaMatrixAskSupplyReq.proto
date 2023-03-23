@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ArmadaMatrixAskSupplyReq {
+
+    enum CmdId {
+        CMD_ID = 2810;
+    }
+}

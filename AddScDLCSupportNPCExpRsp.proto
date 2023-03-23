@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message AddScDLCSupportNPCExpRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 6309;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        NPC_ERROR = 3;
+        MATERIAL_ERROR = 4;
+    }
+}

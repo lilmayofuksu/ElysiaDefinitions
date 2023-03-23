@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "MonsterCardActivityRankInfo.proto";
+import "RankShowData.proto";
+message MonsterCardGetBossRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 stage_id = 3;
+    optional uint32 num = 4;
+    required RankShowData rank_data = 5;
+    optional uint32 rank_percent = 6;
+    required MonsterCardActivityRankInfo self_rank_data = 7;
+
+    enum CmdId {
+        CMD_ID = 5932;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

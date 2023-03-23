@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+enum ArmadaCabinType {
+    ARMADA_CABIN_NONE = 0;
+    ARMADA_CABIN_MAIN = 1;
+    ARMADA_CABIN_CONTACT = 2;
+    ARMADA_CABIN_HANGAR = 3;
+    ARMADA_CABIN_WORKSHOP = 4;
+    ARMADA_CABIN_EXCHEQUER = 5;
+    ARMADA_CABIN_BOSS = 6;
+}

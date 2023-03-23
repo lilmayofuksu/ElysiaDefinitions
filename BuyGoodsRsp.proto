@@ -1,0 +1,36 @@
+syntax = "proto2";
+
+message BuyGoodsRsp {
+    required Retcode retcode = 1;
+    optional uint32 shop_id = 2;
+    optional uint32 goods_id = 3;
+    optional uint32 goods_buy_times = 4;
+    optional uint32 item_id = 5;
+    optional uint32 level = 6;
+    optional uint32 num = 7;
+    optional uint32 gift_pack_select_reward_id = 8;
+
+    enum CmdId {
+        CMD_ID = 204;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        GOODS_NOT_EXIST = 2;
+        BUY_TIMES_LACK = 3;
+        MONEY_LACK = 4;
+        EQUIPMENT_FULL = 5;
+        SHOP_CLOSE = 6;
+        SHOP_OVERDUE = 7;
+        GIFT_GOODS_EFFECT = 8;
+        GOODS_LOCKED = 9;
+        COUPON_ERROR = 10;
+        COUPON_LACK = 11;
+        FEATURE_CLOSED = 12;
+        MCOIN_LIMIT = 13;
+        GLOBAL_GOODS_NUM_LIMIT = 14;
+        NOT_IN_DISCOUNT = 15;
+        IN_DISCOUNT = 16;
+        DISCOUNT_ERROR = 17;
+    }
+}

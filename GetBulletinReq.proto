@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message GetBulletinReq {
+    optional ReqBulletinType type = 1;
+    repeated uint32 bulletin_id_list = 2;
+
+    enum CmdId {
+        CMD_ID = 137;
+    }
+    enum ReqBulletinType {
+        BULLETIN_ALL = 0;
+        BULLETIN_UPDATE_TIME = 1;
+        BULLETIN_TITLE = 2;
+        BULLETIN_CONTENT = 3;
+    }
+}

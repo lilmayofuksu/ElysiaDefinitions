@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message WarshipItemReturnMaterialNotify {
+    optional uint32 warship_item_id = 1;
+    optional uint32 convert_num = 2;
+    optional uint32 return_material_id = 3;
+    optional uint32 return_material_num = 4;
+
+    enum CmdId {
+        CMD_ID = 5462;
+    }
+}

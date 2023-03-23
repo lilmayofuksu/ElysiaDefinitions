@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message AvatarRoll {
+    optional uint32 avatar_id = 1;
+    optional uint32 progress = 2;
+    repeated uint32 has_take_group_list = 3;
+    optional bool is_unlock = 4;
+}

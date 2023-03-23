@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message UnlockDormHouseReq {
+    optional uint32 house_id = 1;
+
+    enum CmdId {
+        CMD_ID = 609;
+    }
+}

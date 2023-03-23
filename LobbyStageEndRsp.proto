@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message LobbyStageEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 lobby_id = 2;
+
+    enum CmdId {
+        CMD_ID = 314;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_LOBBY = 2;
+        LOBBY_NOT_FIGHTING = 3;
+        NOT_LEADER = 4;
+        SYSTEM_ERROR = 5;
+    }
+}

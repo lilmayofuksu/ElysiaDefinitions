@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "MasterPupilData.proto";
+message MasterPupilDetailData {
+    required MasterPupilData master = 1;
+    repeated MasterPupilData pupil_list = 2;
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "MasterPupilCard.proto";
+import "MasterPupilType.proto";
+message MasterPupilApplyMsg {
+    optional uint32 uid = 1;
+    optional MasterPupilType type = 2;
+    required MasterPupilCard card = 3;
+    optional uint32 level = 4;
+    optional string nickname = 5;
+    optional uint32 teacher_rank = 6;
+    optional uint32 last_online_time = 7;
+    optional uint32 avatar_id = 8;
+    optional uint32 dress_id = 9;
+    optional uint32 score = 10;
+    optional uint32 frame_id = 11;
+    optional uint32 custom_head_id = 12;
+    optional uint32 last_logout_time = 13;
+    optional uint32 online_status = 14;
+    optional bool is_logoff = 15;
+}

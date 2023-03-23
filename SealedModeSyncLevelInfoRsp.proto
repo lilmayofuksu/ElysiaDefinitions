@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "SealedModeUseItem.proto";
+message SealedModeSyncLevelInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 level = 2;
+    repeated SealedModeUseItem use_item_list = 3;
+    optional uint32 seq = 4;
+
+    enum CmdId {
+        CMD_ID = 716;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

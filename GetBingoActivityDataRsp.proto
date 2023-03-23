@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "BingoData.proto";
+message GetBingoActivityDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated BingoData bingo_data_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4158;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixSetCurAvatarTeamRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    optional uint32 cur_team_index = 2;
+
+    enum CmdId {
+        CMD_ID = 2752;
+    }
+}

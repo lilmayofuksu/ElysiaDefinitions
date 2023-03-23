@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+message ChatgroupInvite {
+    optional uint32 chatgroup_id = 1;
+    optional string name = 2;
+    optional string notice = 3;
+    optional uint32 icon_id = 4;
+    optional uint32 inviter_uid = 5;
+    required PlayerFriendBriefData inviter_info = 6;
+    optional uint32 invite_time = 7;
+    optional uint32 chatgroup_member_num = 8;
+}

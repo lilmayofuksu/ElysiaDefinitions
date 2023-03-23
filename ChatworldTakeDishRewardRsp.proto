@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "DishRewardType.proto";
+message ChatworldTakeDishRewardRsp {
+    required Retcode retcode = 1;
+    optional DishRewardType reward_type = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 2459;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAVE_TAKEN = 2;
+        NOT_OPEN = 3;
+        NO_REWARD = 4;
+        IN_CD_TIME = 5;
+    }
+}

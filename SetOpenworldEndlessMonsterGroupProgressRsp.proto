@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "EndlessType.proto";
+import "OpenworldEndlessMonsterGroup.proto";
+message SetOpenworldEndlessMonsterGroupProgressRsp {
+    required Retcode retcode = 1;
+    repeated OpenworldEndlessMonsterGroup monster_group_list = 2;
+    optional EndlessType type = 3;
+
+    enum CmdId {
+        CMD_ID = 3449;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        GROUP_ERROR = 2;
+        PROGRESS_ERROR = 3;
+        HAS_FINISHED = 4;
+    }
+}

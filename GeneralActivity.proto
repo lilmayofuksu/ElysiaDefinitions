@@ -1,0 +1,32 @@
+syntax = "proto2";
+
+import "FrontEndlessActivity.proto";
+import "BossChallengeActivity.proto";
+import "ScheduledMapSiteActivity.proto";
+import "CrisisModeActivity.proto";
+import "ChallengeWarActivity.proto";
+import "OptionalBuffActivity.proto";
+import "SingleRaidActivity.proto";
+import "EndlessSingleModeActivity.proto";
+import "CoupleTowerActivity.proto";
+import "GeneralActivityStage.proto";
+import "TeamAssaultActivityInfo.proto";
+import "PushTowerActivityInfo.proto";
+import "GeneralActivitySettleInfo.proto";
+import "GeneralActivityBasicInfo.proto";
+message GeneralActivity {
+    required GeneralActivityBasicInfo general_basic_info = 1;
+    required GeneralActivitySettleInfo settle_info = 2;
+    required PushTowerActivityInfo push_tower_info = 3;
+    required TeamAssaultActivityInfo team_assault_info = 4;
+    required GeneralActivityStage activity_stage = 5;
+    required CoupleTowerActivity couple_tower = 6;
+    required EndlessSingleModeActivity endless_single = 7;
+    required SingleRaidActivity single_raid = 8;
+    required OptionalBuffActivity optional_buff = 9;
+    required ChallengeWarActivity challenge_war = 10;
+    required CrisisModeActivity crisis_mode = 11;
+    required ScheduledMapSiteActivity scheduled_map_site = 12;
+    required BossChallengeActivity boss_challenge = 13;
+    required FrontEndlessActivity front_endless = 14;
+}

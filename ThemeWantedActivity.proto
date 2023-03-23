@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "Material.proto";
+import "ThemeWantedStageGroupInfo.proto";
+message ThemeWantedActivity {
+    optional uint32 schedule_id = 1;
+    optional uint32 activity_id = 2;
+    repeated uint32 open_stage_group_id_list = 3;
+    repeated ThemeWantedStageGroupInfo stage_group_info_list = 4;
+    repeated Material taken_weekly_assist_material_list = 5;
+    optional uint32 end_time = 6;
+}

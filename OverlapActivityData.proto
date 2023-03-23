@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "OverlapGrid.proto";
+message OverlapActivityData {
+    optional uint32 activity_id = 1;
+    repeated OverlapGrid grid_list = 2;
+    repeated uint32 has_take_reward_id_list = 3;
+    optional uint32 overlap_id = 4;
+}

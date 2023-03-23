@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "TakeChatRedEnvelopePlayer.proto";
+message GetChatRedEnvelopeInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 sender_uid = 2;
+    optional uint32 red_envelope_id = 3;
+    optional uint32 taken_num = 4;
+    optional uint32 expire_time = 5;
+    repeated TakeChatRedEnvelopePlayer take_red_envelope_list = 6;
+
+    enum CmdId {
+        CMD_ID = 1503;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

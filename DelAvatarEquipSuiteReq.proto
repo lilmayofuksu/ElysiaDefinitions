@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message DelAvatarEquipSuiteReq {
+    optional uint32 avatar_id = 1;
+    optional uint32 suite_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1620;
+    }
+}

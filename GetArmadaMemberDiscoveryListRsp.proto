@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "ArmadaMemberDiscovery.proto";
+message GetArmadaMemberDiscoveryListRsp {
+    required Retcode retcode = 1;
+    optional uint32 armada_week_discovery = 2;
+    repeated ArmadaMemberDiscovery member_discovery_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2666;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+    }
+}

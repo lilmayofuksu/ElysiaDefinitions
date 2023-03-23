@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "QAvatarBuffType.proto";
+message QAvatarBattleBuff {
+    optional uint32 buff_id = 1;
+    optional QAvatarBuffType buff_type = 2;
+    optional uint64 expire_time_ms_u64 = 4;
+    optional uint32 num = 5;
+}

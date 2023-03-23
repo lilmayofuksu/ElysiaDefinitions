@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum IslandVisitRecordType {
+    ISLAND_RECORD_HELP_FRIEND = 1;
+    ISLAND_RECORD_BE_HELPED = 2;
+    ISLAND_RECORD_LIKE = 3;
+    ISLAND_RECORD_BE_LIKED = 4;
+}

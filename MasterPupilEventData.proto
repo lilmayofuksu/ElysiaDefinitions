@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "MasterPupilEvalMsg.proto";
+import "MasterPupilDealMsg.proto";
+import "MasterPupilApplyMsg.proto";
+import "MasterPupilMission.proto";
+message MasterPupilEventData {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    required MasterPupilMission mission = 3;
+    required MasterPupilApplyMsg apply = 4;
+    required MasterPupilDealMsg deal = 5;
+    required MasterPupilEvalMsg eval = 6;
+    repeated CompanyMission company_mission_list = 7;
+    message CompanyMission {
+        optional uint32 mission_id = 1;
+        optional uint32 time = 2;
+    }
+}

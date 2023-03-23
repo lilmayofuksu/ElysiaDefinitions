@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "GachaType.proto";
+message GetGachaDisplayReq {
+    optional bool is_all = 1;
+    optional GachaType type = 2;
+
+    enum CmdId {
+        CMD_ID = 4702;
+    }
+}

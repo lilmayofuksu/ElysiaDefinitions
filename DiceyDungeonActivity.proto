@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "DiceyDungeonHasGotDailyMaterial.proto";
+import "DiceyDungeonInfo.proto";
+import "DiceyDungeonWeapon.proto";
+import "DiceyDungeonRole.proto";
+message DiceyDungeonActivity {
+    optional uint32 activity_id = 1;
+    repeated DiceyDungeonRole role_list = 2;
+    repeated DiceyDungeonWeapon weapon_list = 3;
+    required DiceyDungeonInfo story_dicey_dungeon_info = 4;
+    required DiceyDungeonInfo schedule_dicey_dungeon_info = 5;
+    required DiceyDungeonInfo endless_dicey_dungeon_info = 6;
+    repeated uint32 passed_endless_dungeon_room_id_list = 7;
+    optional uint32 cur_schedule_id = 8;
+    optional uint32 refresh_ornament_random = 9;
+    repeated DiceyDungeonHasGotDailyMaterial has_got_daily_material_list = 11;
+}

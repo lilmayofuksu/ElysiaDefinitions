@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "PrivilegeInfo.proto";
+message GetPrivilegeInfoRsp {
+    required Retcode retcode = 1;
+    repeated PrivilegeInfo privilege_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1647;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

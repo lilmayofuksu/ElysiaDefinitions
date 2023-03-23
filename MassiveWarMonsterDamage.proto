@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message MassiveWarMonsterDamage {
+    optional uint32 message_id = 1;
+    optional uint32 total_damage = 2;
+}

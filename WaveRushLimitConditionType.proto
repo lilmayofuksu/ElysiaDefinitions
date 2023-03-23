@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum WaveRushLimitConditionType {
+    WAVE_RUSH_LIMIT_CONDITION_NONE = 0;
+    WAVE_RUSH_LIMIT_CONDITION_PRE_SITE = 1;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "BossChallengeStage.proto";
+message BossChallengeActivity {
+    repeated BossChallengeStage stage_list = 1;
+}

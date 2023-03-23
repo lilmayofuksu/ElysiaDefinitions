@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message QCandyBattleAvatarLifeTimesChangeNotify {
+    optional uint32 life_times = 1;
+
+    enum CmdId {
+        CMD_ID = 6582;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message NewbieLevelRushPurchaseRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 5882;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PURCHASED = 2;
+        MCOIN_LACK = 3;
+    }
+}

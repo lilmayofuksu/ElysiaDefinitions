@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "WeekDayActivityStageCompensation.proto";
+message GetWeekDayActivityCompensationInfoRsp {
+    required Retcode retcode = 1;
+    repeated WeekDayActivityStageCompensation stage_compensation_list = 2;
+    optional bool has_taken_compensation = 3;
+
+    enum CmdId {
+        CMD_ID = 1667;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

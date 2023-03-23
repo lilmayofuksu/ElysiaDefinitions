@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ExchangeHcoinByMcoinRsp {
+    required Retcode retcode = 1;
+    optional string product_name = 2;
+    optional uint32 pay_hcoin = 3;
+    optional uint32 free_hcoin = 4;
+
+    enum CmdId {
+        CMD_ID = 835;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_MCOIN = 2;
+        PRODUCT_INVALID = 3;
+    }
+}

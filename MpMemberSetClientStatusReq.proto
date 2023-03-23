@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "MpMemberClientStatus.proto";
+message MpMemberSetClientStatusReq {
+    optional MpMemberClientStatus status = 1;
+
+    enum CmdId {
+        CMD_ID = 375;
+    }
+}

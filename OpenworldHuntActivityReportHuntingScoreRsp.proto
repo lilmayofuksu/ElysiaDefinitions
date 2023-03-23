@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message OpenworldHuntActivityReportHuntingScoreRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4614;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_MAP = 2;
+        MAP_NOT_OPEN = 3;
+    }
+}

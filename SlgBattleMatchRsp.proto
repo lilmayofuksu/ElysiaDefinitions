@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message SlgBattleMatchRsp {
+    required Retcode retcode = 1;
+    optional uint32 battle_id = 2;
+    optional uint32 battle_schedule_id = 3;
+
+    enum CmdId {
+        CMD_ID = 6054;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_BATTLE_AVAILABLE = 2;
+    }
+}

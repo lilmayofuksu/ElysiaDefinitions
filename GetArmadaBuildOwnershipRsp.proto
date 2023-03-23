@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message GetArmadaBuildOwnershipRsp {
+    required Retcode retcode = 1;
+    optional uint32 build_owner = 2;
+    optional uint32 build_ownership_time = 3;
+
+    enum CmdId {
+        CMD_ID = 2686;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_GRANTED = 2;
+        NOT_IN_ARMADA = 3;
+    }
+}

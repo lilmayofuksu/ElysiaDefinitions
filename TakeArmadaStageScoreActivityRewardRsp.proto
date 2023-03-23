@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "ArmadaStageScorePlayerScore.proto";
+import "RewardData.proto";
+import "ArmadaStageScoreActivityRewardType.proto";
+message TakeArmadaStageScoreActivityRewardRsp {
+    required Retcode retcode = 1;
+    optional ArmadaStageScoreActivityRewardType type = 2;
+    repeated RewardData reward_list = 3;
+    repeated ArmadaStageScorePlayerScore score_list = 4;
+
+    enum CmdId {
+        CMD_ID = 2824;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HAS_TAKE = 3;
+        NOT_FINISH_STAGE = 4;
+    }
+}

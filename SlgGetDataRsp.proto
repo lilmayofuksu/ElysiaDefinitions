@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+import "SlgEnrollData.proto";
+import "SlgBriefBattleData.proto";
+import "SlgBattleData.proto";
+message SlgGetDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 next_battle_begin_time = 3;
+    required SlgBattleData battle_data = 4;
+    optional uint32 activity_stamina_num = 5;
+    optional uint32 last_recover_activity_stamina_time = 6;
+    optional uint32 begin_time = 7;
+    optional uint32 end_time = 8;
+    repeated uint32 unlock_story_id_list = 9;
+    repeated SlgBriefBattleData history_battle_data_list = 10;
+    optional uint32 battle_schedule_id = 11;
+    required SlgEnrollData current_enroll_data = 12;
+    repeated uint32 taken_score_reward_id_list = 13;
+    optional uint32 total_score = 14;
+
+    enum CmdId {
+        CMD_ID = 6051;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        BATTLE_NOT_FOUND = 3;
+        NOT_IN_BATTLE = 4;
+        FEATURE_CLOSED = 5;
+    }
+}

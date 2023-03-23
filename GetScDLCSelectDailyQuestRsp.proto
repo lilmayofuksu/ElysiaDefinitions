@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message GetScDLCSelectDailyQuestRsp {
+    required Retcode retcode = 1;
+    repeated OpenworldQuest quest_list = 2;
+
+    enum CmdId {
+        CMD_ID = 6317;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

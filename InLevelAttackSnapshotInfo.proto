@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "InLevelAttackSnapshot.proto";
+import "InLevelContext.proto";
+message InLevelAttackSnapshotInfo {
+    required InLevelContext context = 1;
+    repeated InLevelAttackSnapshot snapshot_list = 2;
+}

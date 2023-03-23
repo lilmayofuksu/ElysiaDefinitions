@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "OpenworldEndlessItem.proto";
+message FinishOpenworldEndlessInvasionMonsterRsp {
+    required Retcode retcode = 1;
+    optional uint32 sub_score = 2;
+    optional uint32 id = 3;
+    repeated OpenworldEndlessItem clear_item_list = 4;
+    optional uint32 score = 5;
+    optional uint32 battle_id = 6;
+    optional string transaction_str = 7;
+
+    enum CmdId {
+        CMD_ID = 3431;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ENDLESS_STATUS_ERROR = 2;
+        NOT_JOIN = 3;
+        NO_INVASION = 4;
+    }
+}

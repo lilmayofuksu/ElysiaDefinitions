@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message LobbyTimeoutNoLeaderNotify {
+
+    enum CmdId {
+        CMD_ID = 1033;
+    }
+}

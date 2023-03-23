@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "MatrixGridPos.proto";
+message MatrixSetDiceDestinationReq {
+    required MatrixGridPos target_pos = 1;
+
+    enum CmdId {
+        CMD_ID = 2347;
+    }
+}

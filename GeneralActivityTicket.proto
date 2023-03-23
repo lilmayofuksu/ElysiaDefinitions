@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message GeneralActivityTicket {
+    optional uint32 material_id = 1;
+    optional uint32 add_num = 2;
+}

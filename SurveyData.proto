@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message SurveyData {
+    optional uint32 id = 1;
+    optional string url = 2;
+}

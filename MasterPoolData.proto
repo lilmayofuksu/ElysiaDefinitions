@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "Material.proto";
+message MasterPoolData {
+    repeated Material material_list = 1;
+}

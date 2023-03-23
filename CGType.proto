@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum CGType {
+    CG_NONE = 0;
+    CG_START = 1;
+    CG_SEVEN_CHAPTER = 2;
+}

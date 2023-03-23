@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message SelectDLCTalentAffixReq {
+    optional uint32 avatar_id = 1;
+    optional uint32 talent_id = 2;
+    optional bool is_select = 3;
+
+    enum CmdId {
+        CMD_ID = 3584;
+    }
+}

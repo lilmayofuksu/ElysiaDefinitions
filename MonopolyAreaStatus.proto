@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MonopolyAreaStatus {
+    MONOPOLY_AREA_STATUS_NONE = 0;
+    MONOPOLY_AREA_STATUS_LOCKED = 1;
+    MONOPOLY_AREA_STATUS_UNLOCKED = 2;
+}

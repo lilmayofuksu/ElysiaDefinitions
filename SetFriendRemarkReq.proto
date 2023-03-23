@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message SetFriendRemarkReq {
+    optional uint32 uid = 1;
+    optional string new_remark = 2;
+    optional string old_remark = 3;
+
+    enum CmdId {
+        CMD_ID = 972;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeDLCTowerRankRewardNotify {
+    required RewardData reward_data = 1;
+    optional uint32 rank = 2;
+    optional uint32 score = 3;
+
+    enum CmdId {
+        CMD_ID = 3573;
+    }
+}

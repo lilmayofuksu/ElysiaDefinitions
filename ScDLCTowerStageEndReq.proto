@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "ScDLCTowerAvatarInfo.proto";
+import "StageEndStatus.proto";
+message ScDLCTowerStageEndReq {
+    required StageEndStatus end_status = 1;
+    optional uint32 floor = 2;
+    optional uint32 score = 3;
+    repeated ScDLCTowerAvatarInfo avatar_info_list = 4;
+    repeated DropItem drop_item_list = 5;
+    optional uint32 sc_dlc_fever_score = 6;
+    optional uint32 sc_dlc_climax_score = 7;
+    optional string report_ext = 8;
+
+    enum CmdId {
+        CMD_ID = 6336;
+    }
+}

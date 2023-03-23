@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message MonsterCardLearnRandomTalentRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 unique_id = 3;
+    optional uint32 cost_material_id = 4;
+    optional uint32 talent_index = 5;
+    optional uint32 old_talent_id = 6;
+    optional uint32 new_talent_id = 7;
+
+    enum CmdId {
+        CMD_ID = 5927;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        MATERIAL_ERROR = 3;
+        INDEX_ERROR = 4;
+        NEED_TO_CONFIRM = 5;
+    }
+}

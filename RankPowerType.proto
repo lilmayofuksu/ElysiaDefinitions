@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+enum RankPowerType {
+    AVATAR_SSS_NUM = 101;
+    AVATAR_SS_NUM = 102;
+    AVATAR_S_NUM = 103;
+    AVATAR_A_NUM = 104;
+    WEAPON_5STAR_NUM = 201;
+    WEAPON_4STAR_NUM = 202;
+    WEAPON_3STAR_NUM = 203;
+    STIGMATA_5STAR_NUM = 301;
+    STIGMATA_4STAR_NUM = 302;
+    STIGMATA_3STAR_NUM = 303;
+}

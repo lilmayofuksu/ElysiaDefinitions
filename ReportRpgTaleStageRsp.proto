@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ReportRpgTaleStageRsp {
+    required Retcode retcode = 1;
+    optional uint32 stage_id = 2;
+    optional uint32 cur_floor = 3;
+    optional uint32 tale_id = 4;
+    optional uint32 score = 5;
+
+    enum CmdId {
+        CMD_ID = 2375;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

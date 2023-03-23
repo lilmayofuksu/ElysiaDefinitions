@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message RanchSetBattleMonsterRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated uint32 unique_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 5852;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MONSTER_NOT_EXIST = 2;
+    }
+}

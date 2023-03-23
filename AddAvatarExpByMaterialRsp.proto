@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message AddAvatarExpByMaterialRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 36;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        AVATAR_LEVEL_FULL = 3;
+        MATERAIL_NOT_ENOUGH = 4;
+        MATERAIL_CAN_NOT_ADD_EXP = 5;
+    }
+}

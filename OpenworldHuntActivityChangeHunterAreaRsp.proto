@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message OpenworldHuntActivityChangeHunterAreaRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4612;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_MAP = 3;
+        MAP_ERROR = 4;
+        TARGET_AREA_ERROR = 5;
+        HUNTER_ERROR = 6;
+    }
+}

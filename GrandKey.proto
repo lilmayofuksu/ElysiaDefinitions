@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "GrandKeySkill.proto";
+message GrandKey {
+    optional uint32 id = 1;
+    optional uint32 end_time = 2;
+    optional uint32 unlock_level = 3;
+    optional uint32 scoin_num = 4;
+    optional uint32 level = 5;
+    optional uint32 breach_level = 6;
+    optional uint32 activate_level = 7;
+    required GrandKeySkill skill = 8;
+}

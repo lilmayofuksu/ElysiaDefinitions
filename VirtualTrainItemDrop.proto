@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "Material.proto";
+message VirtualTrainItemDrop {
+    optional uint32 item_id = 1;
+    optional uint32 item_num = 2;
+    repeated Material split_material_list = 3;
+}

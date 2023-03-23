@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message SingleRaidActivity {
+    optional uint32 cur_step_stage_id = 1;
+    optional uint32 last_done_challenge_stage_id = 2;
+    optional uint32 step_stage_remain_enter_times = 3;
+}

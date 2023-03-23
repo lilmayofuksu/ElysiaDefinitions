@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "NinjaSlot.proto";
+message NinjaActivityNotify {
+    repeated NinjaSlot slot_list = 1;
+
+    enum CmdId {
+        CMD_ID = 4404;
+    }
+}

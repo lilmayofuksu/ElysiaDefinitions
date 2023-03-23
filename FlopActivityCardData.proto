@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message FlopActivityCardData {
+    optional uint32 id = 1;
+    optional uint32 state = 2;
+    optional uint32 card_number = 3;
+}

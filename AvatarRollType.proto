@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum AvatarRollType {
+    AVATAR_ROLL_AVATAR = 1;
+    AVATAR_ROLL_STIGMATA = 2;
+    AVATAR_ROLL_ERROR = 100;
+}

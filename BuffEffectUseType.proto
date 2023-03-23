@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum BuffEffectUseType {
+    BUFF_EFFECT_USE_STAGE = 1;
+    BUFF_EFFECT_USE_MISSION = 2;
+    BUFF_EFFECT_USE_VIRTUAL_EQUIPMENT = 3;
+}

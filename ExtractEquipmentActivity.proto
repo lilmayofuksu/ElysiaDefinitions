@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ExtractEquipmentActivity {
+    repeated OpenExtractWeapon extract_weapon_list = 4;
+    repeated uint32 mainid_black_list = 5;
+    optional bool is_reforge = 6;
+    repeated uint32 reforge_main_id_list = 7;
+    optional uint32 reforge_times = 8;
+    optional uint32 powerup_material_ratio = 10;
+    optional uint32 reforge_init_level = 11;
+    optional uint32 remain_reforge_times = 12;
+    message OpenExtractWeapon {
+        required uint32 quality = 1;
+        required uint32 base_type = 2;
+    }
+}

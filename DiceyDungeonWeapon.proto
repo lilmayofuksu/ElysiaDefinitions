@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message DiceyDungeonWeapon {
+    optional uint32 weapon_id = 1;
+    optional uint32 level = 2;
+}

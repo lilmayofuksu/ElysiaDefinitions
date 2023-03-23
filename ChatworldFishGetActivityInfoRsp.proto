@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ChatworldFishInfo.proto";
+message ChatworldFishGetActivityInfoRsp {
+    required Retcode retcode = 1;
+    required ChatworldFishInfo fish_info = 2;
+
+    enum CmdId {
+        CMD_ID = 2446;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

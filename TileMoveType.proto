@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum TileMoveType {
+    TILE_MOVE_WALK = 0;
+    TILE_MOVE_TELEPORT = 1;
+    TILE_MOVE_KNOCK_OFF = 2;
+}

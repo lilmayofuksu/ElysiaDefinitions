@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "QCandyBattleInfo.proto";
+import "QCandyBattleEntity.proto";
+message QCandyBattleDataNotify {
+    optional uint64 cur_time_ms_u64 = 1;
+    repeated QCandyBattleEntity update_entity_list = 2;
+    repeated QCandyBattleEntity delete_entity_list = 3;
+    repeated QCandyBattleInfo battle_info_list = 4;
+
+    enum CmdId {
+        CMD_ID = 6572;
+    }
+}

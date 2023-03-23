@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+enum AvatarSuiteSelectionStep {
+    STEP_NONE = 0;
+    STEP_AVATAR = 1;
+    STEP_WEAPON = 2;
+    STEP_STIGMATA_UP = 3;
+    STEP_STIGMATA_MID = 4;
+    STEP_STIGMATA_DOWN = 5;
+    STEP_SKILL = 6;
+}

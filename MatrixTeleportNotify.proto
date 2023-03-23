@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "MatrixGridPos.proto";
+message MatrixTeleportNotify {
+    required MatrixGridPos from_pos = 1;
+    required MatrixGridPos to_pos = 2;
+
+    enum CmdId {
+        CMD_ID = 2338;
+    }
+}

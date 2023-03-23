@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message GetMyCardAuthCodeRsp {
+    required Retcode retcode = 1;
+    optional string auth_code = 2;
+    optional string trade_seq = 3;
+    optional string product_name = 4;
+    optional string transaction_url = 5;
+
+    enum CmdId {
+        CMD_ID = 369;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

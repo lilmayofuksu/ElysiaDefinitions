@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ChallengeMissionStep.proto";
+message ChallengeMissionData {
+    optional bool is_unlock = 1;
+    repeated ChallengeMissionStep step_list = 2;
+}

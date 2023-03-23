@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message LotteryUseBoxReq {
+
+    enum CmdId {
+        CMD_ID = 4179;
+    }
+}

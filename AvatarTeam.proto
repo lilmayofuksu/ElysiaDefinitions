@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message AvatarTeam {
+    required uint32 stage_type = 1;
+    repeated uint32 avatar_id_list = 2;
+}

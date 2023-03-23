@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TileGetTowerReq {
+    optional uint32 tower_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4904;
+    }
+}

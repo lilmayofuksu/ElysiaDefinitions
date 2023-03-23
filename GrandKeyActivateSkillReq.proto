@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "GrandKeySkill.proto";
+message GrandKeyActivateSkillReq {
+    repeated GrandKeySkill key_list = 1;
+
+    enum CmdId {
+        CMD_ID = 759;
+    }
+}

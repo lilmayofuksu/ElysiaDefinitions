@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message WaveRushGetRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 stage_id = 2;
+    optional uint32 rank = 3;
+    optional uint32 rank_percent = 4;
+    required RankShowData rank_data = 5;
+
+    enum CmdId {
+        CMD_ID = 5964;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

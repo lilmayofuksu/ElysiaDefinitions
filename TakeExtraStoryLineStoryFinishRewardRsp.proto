@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeExtraStoryLineStoryFinishRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 line_id = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 837;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_FINISH = 2;
+        HAS_TAKEN = 3;
+    }
+}

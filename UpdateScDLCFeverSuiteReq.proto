@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message UpdateScDLCFeverSuiteReq {
+    optional uint32 suite_id = 1;
+    optional string suite_name = 2;
+    repeated uint32 skill_chip_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 6304;
+    }
+}

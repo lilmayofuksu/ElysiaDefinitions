@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "ArmadaMatrixArmadaOverview.proto";
+import "ArmadaMatrixPlayerOverview.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetOverviewRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    required ArmadaMatrixPlayerOverview player_overview = 2;
+    required ArmadaMatrixArmadaOverview armada_overview = 3;
+
+    enum CmdId {
+        CMD_ID = 2783;
+    }
+}

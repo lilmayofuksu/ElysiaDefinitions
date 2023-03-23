@@ -1,0 +1,38 @@
+syntax = "proto2";
+
+import "ScDLCMpAvatar.proto";
+import "OpenworldBossMp.proto";
+import "ReclaimMpAvatar.proto";
+import "LobbyClientStatus.proto";
+import "LobbyMemberStatus.proto";
+import "MpTeamMemberInfo.proto";
+import "MpSkill.proto";
+message MpTeamMember {
+    optional uint32 index = 1;
+    optional uint32 uid = 2;
+    optional uint32 mp_exp = 3;
+    optional uint32 stamina = 4;
+    repeated MpSkill skill_list = 5;
+    optional uint32 head_avatar_id = 6;
+    optional uint32 dress_id = 7;
+    optional uint32 punish_end_time = 8;
+    optional uint32 voice_id = 9;
+    required MpTeamMemberInfo member_info = 11;
+    optional LobbyMemberStatus status = 12;
+    optional LobbyClientStatus client_status = 13;
+    optional uint32 avatar_trial_id = 14;
+    optional bool is_wild = 15;
+    required ReclaimMpAvatar reclaim_avatar_info = 17;
+    optional string region_name = 18;
+    required OpenworldBossMp openworld_boss_info = 19;
+    optional uint32 frame_id = 20;
+    optional uint32 enter_type = 21;
+    optional uint32 custom_head_id = 22;
+    optional uint32 newbie_id = 23;
+    optional uint32 data_version = 24;
+    optional uint32 season_id = 25;
+    optional uint32 season_group_id = 26;
+    optional uint32 season_level = 27;
+    optional uint32 extra_skill_id = 28;
+    required ScDLCMpAvatar sc_dlc_avatar_info = 29;
+}

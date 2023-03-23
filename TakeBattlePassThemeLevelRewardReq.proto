@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TakeBattlePassThemeLevelRewardReq {
+
+    enum CmdId {
+        CMD_ID = 3762;
+    }
+}

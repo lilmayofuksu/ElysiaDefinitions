@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "AdventureAvatar.proto";
+message PlayerAdventureData {
+    optional uint32 adventure_group_level = 1;
+    repeated AdventureAvatar adventure_avatar_list = 2;
+}

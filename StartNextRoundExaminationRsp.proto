@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message StartNextRoundExaminationRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4328;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_FINISHED = 2;
+    }
+}

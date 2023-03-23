@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message BindAccountRsp {
+    required Retcode retcode = 1;
+    optional uint32 account_type = 2;
+    optional string account_uid = 3;
+
+    enum CmdId {
+        CMD_ID = 120;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACCOUNT_TYPE_ERROR = 2;
+        ACCOUNT_VERIFY_FAILED = 3;
+        ACCOUNT_BIND_TO_OTHER_UID = 4;
+        REPEAT_BIND = 5;
+    }
+}

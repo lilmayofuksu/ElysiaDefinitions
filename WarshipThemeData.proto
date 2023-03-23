@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "WarshipComponent.proto";
+message WarshipThemeData {
+    optional uint32 warship_id = 1;
+    repeated WarshipComponent component_list = 2;
+    optional uint32 bgm_play_mode = 3;
+    optional bool is_weather_fixed = 4;
+    optional uint32 weather_idx = 5;
+}

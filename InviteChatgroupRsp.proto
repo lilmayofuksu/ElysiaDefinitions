@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+message InviteChatgroupRsp {
+    required Retcode retcode = 1;
+    repeated uint32 succ_uid_list = 2;
+    repeated uint32 succ_stranger_uid_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2203;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_CREATER = 2;
+        EXCEED_MAX_MEMBER_NUM = 3;
+        GROUP_NOT_FOUND = 4;
+        NOT_IN_GROUP = 5;
+        UID_NOT_EXIST = 6;
+        FRIEND_ERROR = 7;
+        MASTER_PUPIL_ERROR = 8;
+        FEATURE_LIMIT = 9;
+        FEATURE_CLOSED = 10;
+    }
+}

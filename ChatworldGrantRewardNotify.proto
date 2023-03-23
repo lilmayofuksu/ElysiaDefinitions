@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ChatworldGrantRewardNotify {
+    optional uint32 activity_type = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 reward_id = 3;
+    optional uint32 extra_int = 4;
+    required RewardData reward_data = 5;
+
+    enum CmdId {
+        CMD_ID = 2455;
+    }
+}

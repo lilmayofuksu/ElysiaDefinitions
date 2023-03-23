@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message ChatForbidNotify {
+    optional uint32 forbid_finish_time = 1;
+    optional ForbidType forbid_type = 2;
+
+    enum CmdId {
+        CMD_ID = 1154;
+    }
+    enum ForbidType {
+        FORBID_COMMON = 0;
+        REPEAT_CHAT = 1;
+    }
+}

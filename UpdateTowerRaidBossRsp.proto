@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message UpdateTowerRaidBossRsp {
+    required Retcode retcode = 1;
+    optional uint32 stage_id = 2;
+    optional uint32 boss_left_hp = 3;
+
+    enum CmdId {
+        CMD_ID = 4190;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_BEGIN = 2;
+        STAGE_ERROR = 3;
+    }
+}

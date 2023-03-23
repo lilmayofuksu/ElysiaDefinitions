@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum GeneralActivityScoreRewardType {
+    GENERAL_ACTIVITY_SCORE_REWARD_AUTO = 1;
+    GENERAL_ACTIVITY_SCORE_REWARD_MANUAL = 2;
+}

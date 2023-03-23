@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeOverlapActivityRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 id = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 4218;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HAS_TAKEN = 3;
+        NOT_FINISH = 4;
+    }
+}

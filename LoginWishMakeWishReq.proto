@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message LoginWishMakeWishReq {
+    optional uint32 activity_id = 1;
+    optional uint32 login_day = 2;
+    optional uint32 choose_reward_id = 3;
+
+    enum CmdId {
+        CMD_ID = 1613;
+    }
+}

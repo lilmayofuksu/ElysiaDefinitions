@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum ExtraStoryActType {
+    EXTRA_STORY_ACT_MAIN = 1;
+    EXTRA_STORY_ACT_HIDDEN = 2;
+    EXTRA_STORY_ACT_ENTROPY = 3;
+    EXTRA_STORY_ACT_ACTIVITY = 4;
+    EXTRA_STORY_ACT_FANTASY = 5;
+    EXTRA_STORY_ACT_ROGUE = 6;
+}

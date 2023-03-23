@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message AiCyberRefreshTicketRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 ticket_material_id = 3;
+    optional uint32 add_num = 4;
+
+    enum CmdId {
+        CMD_ID = 6659;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

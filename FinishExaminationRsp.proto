@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message FinishExaminationRsp {
+    required Retcode retcode = 1;
+    optional uint32 examination_id = 2;
+    optional bool is_finished = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 4326;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_FINISHED = 2;
+        NOT_CUR_EXAMINATION = 3;
+    }
+}

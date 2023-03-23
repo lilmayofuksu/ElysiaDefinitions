@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message SelectNewStigmataRuneRsp {
+    required Retcode retcode = 1;
+    optional uint32 select_unique_id = 2;
+    optional bool is_select = 3;
+
+    enum CmdId {
+        CMD_ID = 196;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STIGMATA_NOT_EXIST = 2;
+        NO_NEW_RUNE = 3;
+        SELECT_EMPTY = 4;
+        NOT_OPEN = 5;
+        TOO_FAST = 6;
+    }
+}

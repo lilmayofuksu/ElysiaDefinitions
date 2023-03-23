@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum TeamAssaultActivityScoreType {
+    TEAM_ASSAULT_ACTIVITY_SCORE_ACCUM = 1;
+    TEAM_ASSAULT_ACTIVITY_SCORE_MAX = 2;
+}

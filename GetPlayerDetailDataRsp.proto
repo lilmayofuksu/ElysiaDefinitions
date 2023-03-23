@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "PlayerDetailData.proto";
+message GetPlayerDetailDataRsp {
+    required Retcode retcode = 1;
+    required PlayerDetailData detail = 2;
+
+    enum CmdId {
+        CMD_ID = 73;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TARGET_NOT_EXIST = 2;
+    }
+}

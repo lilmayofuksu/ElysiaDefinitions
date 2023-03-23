@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GrandKeyLevelUpReq {
+    optional uint32 key_id = 1;
+
+    enum CmdId {
+        CMD_ID = 753;
+    }
+}

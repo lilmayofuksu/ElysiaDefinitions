@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message RogueBuff {
+    optional uint32 id = 1;
+    optional uint32 level = 2;
+    optional Type type = 3;
+
+    enum Type {
+        NORMAL = 1;
+        SUPPORT_AVATAR = 2;
+    }
+}

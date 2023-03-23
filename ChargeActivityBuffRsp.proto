@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ChargeActivityBuffRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_buff_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1606;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_FOUND = 2;
+        NOT_ALLOWED = 3;
+        FULL_CHARGED = 4;
+        MATERIAL_LACK = 5;
+    }
+}

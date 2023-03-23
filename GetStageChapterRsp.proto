@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "StageChapterInfo.proto";
+message GetStageChapterRsp {
+    required Retcode retcode = 1;
+    repeated StageChapterInfo chapter_list = 2;
+
+    enum CmdId {
+        CMD_ID = 966;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

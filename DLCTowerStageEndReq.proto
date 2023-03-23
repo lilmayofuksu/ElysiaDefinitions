@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "DLCTowerAvatarInfo.proto";
+import "StageEndStatus.proto";
+message DLCTowerStageEndReq {
+    required StageEndStatus end_status = 1;
+    repeated DLCTowerAvatarInfo avatar_info_list = 2;
+    optional uint32 progress = 3;
+    optional uint32 stage_pass_time = 4;
+    repeated DropItem drop_item_list = 6;
+
+    enum CmdId {
+        CMD_ID = 3565;
+    }
+}

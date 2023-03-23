@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum DialogType {
+    DIALOG_TYPE_NONE = 0;
+    DIALOG_TYPE_CONTENT = 1;
+    DIALOG_TYPE_SELECT = 2;
+    DIALOG_TYPE_HIDE = 3;
+}

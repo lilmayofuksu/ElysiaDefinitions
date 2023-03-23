@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message SelectControllableBoxGachaSelectableGroupItemReq {
+    optional uint32 gacha_id = 1;
+    optional uint32 group_id = 2;
+    optional uint32 select_item_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4718;
+    }
+}

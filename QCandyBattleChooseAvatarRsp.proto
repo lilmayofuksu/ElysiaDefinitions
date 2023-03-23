@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message QCandyBattleChooseAvatarRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 old_avatar_id = 3;
+    optional uint32 new_avatar_id = 4;
+
+    enum CmdId {
+        CMD_ID = 6605;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        OLD_AVATAR_MISMATCH = 2;
+        NEW_AVATAR_LOCKED = 3;
+        IN_MATCH_STATUS = 4;
+        IN_READY_STATUS = 5;
+    }
+}

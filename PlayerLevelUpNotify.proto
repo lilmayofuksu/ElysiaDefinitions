@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message PlayerLevelUpNotify {
+    optional uint32 old_level = 1;
+    optional uint32 new_level = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 976;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GetPhotoDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 type = 2;
+    repeated uint32 photo_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1192;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

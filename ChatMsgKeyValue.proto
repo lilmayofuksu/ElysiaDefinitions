@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChatMsgKeyValue {
+    optional string key = 1;
+    optional string value = 2;
+}

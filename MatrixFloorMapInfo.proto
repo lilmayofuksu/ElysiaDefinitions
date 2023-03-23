@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "MatrixBuff.proto";
+import "MatrixLottery.proto";
+import "MatrixGridPos.proto";
+import "MatrixGrid.proto";
+message MatrixFloorMapInfo {
+    optional uint32 floor_id = 1;
+    repeated MatrixGrid grid_list = 2;
+    optional uint32 width = 3;
+    optional uint32 height = 4;
+    optional uint32 map_id = 5;
+    required MatrixGridPos current_pos = 6;
+    repeated MatrixGrid event_grid_list = 7;
+    optional uint32 step_num = 8;
+    optional uint32 dice_point = 9;
+    repeated MatrixLottery lottery_list = 10;
+    repeated MatrixBuff buff_list = 11;
+}

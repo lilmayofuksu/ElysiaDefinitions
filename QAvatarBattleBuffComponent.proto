@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "QAvatarBattleBuff.proto";
+message QAvatarBattleBuffComponent {
+    repeated QAvatarBattleBuff buff_list = 1;
+}

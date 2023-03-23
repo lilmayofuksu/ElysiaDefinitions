@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum AvatarType {
+    AVATAR_TRIAL_TYPE = 1;
+    AVATAR_LIMIT_TYPE = 2;
+    AVATAR_FORMAL_TYPE = 3;
+}

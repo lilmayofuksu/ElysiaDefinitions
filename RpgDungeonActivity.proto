@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RpgDungeonBuffPool.proto";
+import "RpgDungeonBuff.proto";
+import "RpgDungeonQuest.proto";
+message RpgDungeonActivity {
+    optional uint32 id = 1;
+    repeated RpgDungeonQuest quest_list = 2;
+    repeated uint32 candidate_buff_id_list = 3;
+    repeated RpgDungeonBuff buff_list = 4;
+    repeated RpgDungeonBuffPool pool_list = 5;
+}

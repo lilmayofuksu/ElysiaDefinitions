@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message UltraEndlessEnterSiteRsp {
+    required Retcode retcode = 1;
+    optional uint32 site_id = 2;
+
+    enum CmdId {
+        CMD_ID = 5212;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+        PRE_NOT_FINISH = 3;
+        ALREADY_FINISH = 4;
+    }
+}

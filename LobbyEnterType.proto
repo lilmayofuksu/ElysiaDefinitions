@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum LobbyEnterType {
+    LOBBY_ENTER_TYPE_NONE = 0;
+    LOBBY_ENTER_TYPE_PRIVATE = 1;
+    LOBBY_ENTER_TYPE_ENTER = 2;
+    LOBBY_ENTER_TYPE_FAST = 3;
+}

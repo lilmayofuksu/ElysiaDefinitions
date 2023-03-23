@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message OpenworldChapterDigSiteStartReq {
+    optional uint32 map_id = 1;
+    optional uint32 main_id = 2;
+    optional uint32 program_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4665;
+    }
+}

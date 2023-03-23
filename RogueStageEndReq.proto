@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RogueStageBuff.proto";
+import "DropItem.proto";
+import "RogueStageAvatar.proto";
+import "StageEndStatus.proto";
+message RogueStageEndReq {
+    required StageEndStatus end_status = 1;
+    repeated RogueStageAvatar avatar_list = 2;
+    repeated DropItem drop_item_list = 3;
+    optional uint32 energy = 4;
+    repeated RogueStageBuff buff_list = 5;
+    optional uint32 stage_pass_time = 6;
+
+    enum CmdId {
+        CMD_ID = 283;
+    }
+}

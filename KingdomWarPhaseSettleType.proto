@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum KingdomWarPhaseSettleType {
+    KINGDOM_WAR_PHASE_SETTLE_TYPE_NONE = 0;
+    KINGDOM_WAR_PHASE_SETTLE_TYPE_FAME = 1;
+    KINGDOM_WAR_PHASE_SETTLE_TYPE_BELIEF = 2;
+}

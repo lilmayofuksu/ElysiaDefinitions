@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "RogueStageAvatarProp.proto";
+message RogueStageAvatar {
+    required uint32 avatar_id = 1;
+    optional uint32 position = 2;
+    optional uint32 hp_percent = 3;
+    optional uint32 sp_percent = 4;
+    repeated RogueStageAvatarProp prop_list = 5;
+}

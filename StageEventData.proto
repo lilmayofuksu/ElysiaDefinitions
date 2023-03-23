@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message StageEventData {
+    optional uint32 begin_time = 1;
+    optional uint32 end_time = 2;
+    optional uint32 chapter_id = 3;
+    optional uint32 unlock_level = 4;
+}

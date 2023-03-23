@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ArmadaMatrixExchangeExplorePowerReq {
+    optional uint32 stamina = 1;
+
+    enum CmdId {
+        CMD_ID = 2758;
+    }
+}

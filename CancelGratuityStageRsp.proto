@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message CancelGratuityStageRsp {
+    required Retcode retcode = 1;
+    optional uint32 stage_unique_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4107;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACCEPTOR = 2;
+    }
+}

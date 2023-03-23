@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GodWarAvatarExpUp {
+    optional uint32 begin_time = 1;
+    optional uint32 end_time = 2;
+    repeated uint32 avatar_id_list = 3;
+    optional uint32 up_ratio = 4;
+    optional uint32 schedule_id = 5;
+}

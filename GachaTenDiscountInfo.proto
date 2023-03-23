@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GachaTenDiscountInfo {
+    optional uint32 activity_id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 ticket_cost_num = 4;
+    optional bool is_used = 5;
+    repeated uint32 gacha_type_list = 6;
+}

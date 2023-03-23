@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetArmadaStageScoreActivityReq {
+
+    enum CmdId {
+        CMD_ID = 2821;
+    }
+}

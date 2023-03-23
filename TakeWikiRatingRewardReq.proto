@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message TakeWikiRatingRewardReq {
+    required uint32 rating_id = 1;
+    optional uint32 rating_score = 2;
+    repeated uint32 cg_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1195;
+    }
+}

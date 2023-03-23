@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "QAvatarBattleMember.proto";
+import "Material.proto";
+import "QAvatarBattleFightInfo.proto";
+import "QAvatarBattleEndReason.proto";
+message QAvatarBattleSettleNotify {
+    optional QAvatarBattleEndReason end_reason = 1;
+    optional uint32 tale_id = 2;
+    optional uint32 site_id = 3;
+    optional uint32 lobby_id = 4;
+    optional uint32 battle_start_time = 5;
+    optional uint32 previous_score = 6;
+    optional uint32 cur_score = 8;
+    repeated QAvatarBattleFightInfo fight_info_list = 9;
+    repeated Material get_material_list = 10;
+    repeated QAvatarBattleMember member_list = 11;
+
+    enum CmdId {
+        CMD_ID = 5551;
+    }
+}

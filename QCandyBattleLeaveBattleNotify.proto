@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message QCandyBattleLeaveBattleNotify {
+    optional uint32 uid = 1;
+
+    enum CmdId {
+        CMD_ID = 6594;
+    }
+}

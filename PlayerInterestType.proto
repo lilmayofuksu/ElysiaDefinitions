@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+enum PlayerInterestType {
+    INTEREST_NONE = 0;
+    INTEREST_ANIMATION = 1;
+    INTEREST_COMIC = 2;
+    INTEREST_GAME = 3;
+    INTEREST_MUSIC = 4;
+    INTEREST_DANCING = 5;
+    INTEREST_KITIKU = 6;
+    INTEREST_MMD = 7;
+    INTEREST_TOKUSATSU = 8;
+}

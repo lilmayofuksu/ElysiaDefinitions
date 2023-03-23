@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ArmadaMatrixUseTempBuffRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2792;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_ALLOW = 2;
+        BUFF_USED_UP = 3;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RaffleTicket.proto";
+message Raffle {
+    optional uint32 id = 1;
+    optional uint32 draw_begin_time = 3;
+    optional uint32 draw_end_time = 4;
+    optional uint32 reward_begin_time = 5;
+    optional uint32 mission_id = 6;
+    optional uint32 total_ticket_num = 7;
+    repeated RaffleTicket ticket_list = 8;
+}

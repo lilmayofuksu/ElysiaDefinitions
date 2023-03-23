@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TakeTradingCardRewardReq {
+
+    enum CmdId {
+        CMD_ID = 4264;
+    }
+}

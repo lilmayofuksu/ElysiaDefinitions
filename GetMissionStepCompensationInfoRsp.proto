@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "MissionStepCompensation.proto";
+message GetMissionStepCompensationInfoRsp {
+    required Retcode retcode = 1;
+    repeated MissionStepCompensation challenge_mission_compensation_list = 2;
+    required MissionStepCompensation mainline_misssion_compensation = 3;
+    optional bool has_take_reward = 4;
+
+    enum CmdId {
+        CMD_ID = 1633;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_REWARD = 2;
+    }
+}

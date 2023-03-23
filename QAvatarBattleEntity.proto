@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "QAvatarBattleFightInfo.proto";
+import "QAvatarBattleComponentSet.proto";
+import "QAvatarBattleEntityType.proto";
+message QAvatarBattleEntity {
+    optional uint32 entity_id = 1;
+    optional QAvatarBattleEntityType type = 2;
+    optional uint32 entity_name_id = 3;
+    optional uint64 entity_expire_time_ms_u64 = 4;
+    required QAvatarBattleComponentSet component_set = 5;
+    required QAvatarBattleFightInfo fight_info = 7;
+    optional uint32 owner_id = 8;
+}

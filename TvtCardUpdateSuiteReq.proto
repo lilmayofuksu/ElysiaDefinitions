@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "TvtCardSuite.proto";
+message TvtCardUpdateSuiteReq {
+    repeated TvtCardSuite suite_list = 1;
+    optional uint32 selected_suite_idx = 2;
+
+    enum CmdId {
+        CMD_ID = 3313;
+    }
+}

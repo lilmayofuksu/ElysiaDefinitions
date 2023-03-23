@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "InviteFriendRewardData.proto";
+message InviteActivityData {
+    optional uint32 begin_time = 1;
+    optional uint32 end_time = 2;
+    optional uint32 has_invite_num = 3;
+    repeated InviteFriendRewardData my_invite_reward_list = 4;
+}

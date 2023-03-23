@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ReplayType {
+    REPLAY_NONE = 0;
+    REPLAY_EXBOSS = 1;
+    REPLAY_TVT = 2;
+}

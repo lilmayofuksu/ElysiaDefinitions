@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "AvatarDetailData.proto";
+message PlayerCardAvatarData {
+    optional uint32 index = 1;
+    required AvatarDetailData avatar = 2;
+}

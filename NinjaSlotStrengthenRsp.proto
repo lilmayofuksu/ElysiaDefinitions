@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "NinjaSlot.proto";
+message NinjaSlotStrengthenRsp {
+    required Retcode retcode = 1;
+    required NinjaSlot slot = 2;
+
+    enum CmdId {
+        CMD_ID = 4403;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_NOT_ENOUGH = 2;
+        LOCKED = 3;
+        NOT_OPEN = 4;
+        LEVEL_MAX = 5;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+enum EndlessSinType {
+    ENDLESS_SIN_NORMAL = 1;
+    ENDLESS_SIN_ANGRY = 2;
+    ENDLESS_SIN_NTR = 3;
+    ENDLESS_SIN_GREED = 4;
+    ENDLESS_SIN_SLOTH = 5;
+    ENDLESS_SIN_PRIDE = 6;
+    ENDLESS_SIN_GLUTTONY = 7;
+    ENDLESS_SIN_ENVY = 8;
+}

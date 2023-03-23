@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message MonsterCardCardBriefData {
+    optional uint32 unique_id = 1;
+    optional uint32 star = 2;
+    optional uint32 level = 3;
+    repeated uint32 talent_list = 4;
+}

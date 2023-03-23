@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChooseReclaimGachaReq {
+    optional uint32 item_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1179;
+    }
+}

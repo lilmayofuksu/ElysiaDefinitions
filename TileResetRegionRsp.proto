@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message TileResetRegionRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4918;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

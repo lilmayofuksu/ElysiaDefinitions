@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message GrandKeyLevelUpRsp {
+    required Retcode retcode = 1;
+    optional uint32 key_id = 2;
+    optional uint32 level = 3;
+
+    enum CmdId {
+        CMD_ID = 754;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        WEAPON_LEVEL_LIMIT = 2;
+        MATERIAL_LIMIT = 3;
+        MAX_LEVEL = 4;
+        PLAYER_LEVEL_LIMIT = 5;
+    }
+}

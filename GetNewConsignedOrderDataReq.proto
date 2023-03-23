@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetNewConsignedOrderDataReq {
+
+    enum CmdId {
+        CMD_ID = 517;
+    }
+}

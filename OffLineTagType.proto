@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum OffLineTagType {
+    OFFLINE_TAG_TYPE_NORMAL = 0;
+    OFFLINE_TAG_TYPE_SMURF = 1;
+}

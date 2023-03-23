@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum AvatarRecommendSource {
+    AVATAR_RECOMMEND_SOURCE_NONE = 0;
+    AVATAR_RECOMMEND_SOURCE_DB = 1;
+    AVATAR_RECOMMEND_SOURCE_DESIGN_DATA = 2;
+}

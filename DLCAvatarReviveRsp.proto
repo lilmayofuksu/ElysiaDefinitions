@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "DLCAvatarReviveCostType.proto";
+message DLCAvatarReviveRsp {
+    required Retcode retcode = 1;
+    optional uint32 revive_times = 2;
+    optional DLCAvatarReviveCostType cost_type = 3;
+
+    enum CmdId {
+        CMD_ID = 3570;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        TIMES_LACK = 3;
+        NOT_IN_STAGE = 4;
+        MAP_ERROR = 5;
+        AVATAR_ERROR = 6;
+    }
+}

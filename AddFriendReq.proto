@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "AddFriendAction.proto";
+message AddFriendReq {
+    required AddFriendAction action = 1;
+    repeated uint32 target_uid_list = 2;
+
+    enum CmdId {
+        CMD_ID = 66;
+    }
+}

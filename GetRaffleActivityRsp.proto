@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RaffleActivity.proto";
+message GetRaffleActivityRsp {
+    required Retcode retcode = 1;
+    required RaffleActivity raffle_activity = 2;
+
+    enum CmdId {
+        CMD_ID = 3899;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_RAFFLE = 2;
+        NOT_OPEN = 3;
+    }
+}

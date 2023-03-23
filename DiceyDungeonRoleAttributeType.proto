@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum DiceyDungeonRoleAttributeType {
+    DICEY_DUNGEON_ROLE_ATTR_STRENGTH = 1;
+    DICEY_DUNGEON_ROLE_ATTR_AGILITY = 2;
+    DICEY_DUNGEON_ROLE_ATTR_INTELLIGENCE = 3;
+}

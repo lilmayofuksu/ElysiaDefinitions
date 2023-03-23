@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message OpenworldBossMp {
+    optional uint32 boss_id = 1;
+    optional uint32 left_hp = 2;
+    optional uint32 mp_left_hp = 3;
+    repeated uint32 buff_list = 4;
+}

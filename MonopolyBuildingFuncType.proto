@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum MonopolyBuildingFuncType {
+    MONOPOLY_BUILDING_FUNC_PRODUCT = 1;
+    MONOPOLY_BUILDING_FUNC_BUFF = 2;
+}

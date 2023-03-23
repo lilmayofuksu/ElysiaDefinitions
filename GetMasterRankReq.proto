@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetMasterRankReq {
+
+    enum CmdId {
+        CMD_ID = 662;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum QAvatarShapeType {
+    QAVATAR_SHAPE_NONE = 0;
+    QAVATAR_SHAPE_AABB = 1;
+    QAVATAR_SHAPE_CIRCLE = 2;
+    QAVATAR_SHAPE_OAB = 3;
+}

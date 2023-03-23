@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ControllableBoxGachaSelectableGroup {
+    optional uint32 group_id = 1;
+    optional uint32 select_drop_id = 2;
+    repeated uint32 drop_id_list = 3;
+}

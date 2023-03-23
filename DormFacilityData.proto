@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "DormPowerBonus.proto";
+import "DormFacility.proto";
+message DormFacilityData {
+    repeated DormFacility facility_list = 1;
+    optional uint32 level_up_facility_type = 2;
+    optional uint32 level_up_end_time = 3;
+    optional uint32 store_stamina = 4;
+    optional bool is_can_store_stamina = 5;
+    optional uint32 power = 10;
+    optional uint32 power_recover_left_time = 11;
+    optional uint32 power_recover_config_time = 12;
+    optional uint32 power_limit = 13;
+    optional uint32 base_power_limit = 14;
+    repeated DormPowerBonus limit_bonus_list = 15;
+    optional uint32 power_recovery = 16;
+    optional uint32 base_power_recovery = 17;
+    optional uint32 bonus_power_recovery = 18;
+}

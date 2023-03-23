@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message TakeBattlePassPhaseExpRsp {
+    required Retcode retcode = 1;
+    optional uint32 add_exp = 2;
+    optional uint32 add_theme_exp = 3;
+
+    enum CmdId {
+        CMD_ID = 3759;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HAS_TAKE = 3;
+    }
+}

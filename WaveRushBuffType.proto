@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum WaveRushBuffType {
+    WAVE_RUSH_CORE_BUFF = 1;
+    WAVE_RUSH_NORMAL_BUFF = 2;
+    WAVE_RUSH_WEATHER_BUFF = 3;
+    WAVE_RUSH_ATTR_BUFF = 4;
+}

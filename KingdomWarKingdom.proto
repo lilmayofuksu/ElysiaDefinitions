@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message KingdomWarKingdom {
+    optional uint32 kingdom_id = 1;
+    optional uint32 player_num = 2;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ClientMailStyleInfo {
+    optional uint32 mail_style = 1;
+    optional uint32 untaken_num = 2;
+}

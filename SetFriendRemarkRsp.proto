@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message SetFriendRemarkRsp {
+    required Retcode retcode = 1;
+    optional uint32 uid = 2;
+    optional string remark = 3;
+    optional uint32 set_friend_remark_cd_end_time = 4;
+
+    enum CmdId {
+        CMD_ID = 973;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_FRIEND = 2;
+        FORMAT_ERROR = 3;
+        SENSITIVE_WORDS = 4;
+        SAME_REMARK = 5;
+        FEATURE_CLOSED = 6;
+        IN_AUDIT = 7;
+        IN_CD = 8;
+    }
+}

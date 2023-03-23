@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message GetStaminaExchangeInfoRsp {
+    required Retcode retcode = 1;
+    required uint32 usable_times = 2;
+    required uint32 total_times = 3;
+    required uint32 hcoin_cost = 4;
+    required uint32 stamina_get = 5;
+
+    enum CmdId {
+        CMD_ID = 17;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

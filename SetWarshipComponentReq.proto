@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "WarshipComponent.proto";
+message SetWarshipComponentReq {
+    optional uint32 warship_id = 1;
+    repeated WarshipComponent component_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5458;
+    }
+}

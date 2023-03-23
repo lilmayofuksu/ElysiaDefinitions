@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message TowerRaidBossStage {
+    optional uint32 stage_id = 1;
+    optional uint32 boss_left_hp = 2;
+}

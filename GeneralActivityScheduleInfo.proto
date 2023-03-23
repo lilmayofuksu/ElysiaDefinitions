@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message GeneralActivityScheduleInfo {
+    optional uint32 activity_id = 1;
+    optional uint32 show_time = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 settle_time = 4;
+    optional uint32 end_time = 5;
+    optional uint32 begin_day_time = 6;
+    optional uint32 end_day_time = 7;
+    optional uint32 left_times = 8;
+    optional uint32 schedule_id = 9;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeGobackScoreRewardReq {
+    optional uint32 score_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1448;
+    }
+}

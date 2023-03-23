@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message TownBuff {
+    optional uint32 buff_id = 1;
+    optional uint32 buff_num = 2;
+    optional uint32 left_duration_num = 3;
+}

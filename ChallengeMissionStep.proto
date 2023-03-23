@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message ChallengeMissionStep {
+    optional uint32 step_id = 1;
+    optional StepStatus status = 2;
+    optional bool has_take_bonus = 3;
+
+    enum StepStatus {
+        UNLOCK = 0;
+        DOING = 1;
+        REWARDING = 2;
+        FINISH = 3;
+    }
+}

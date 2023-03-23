@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message AssistantFrozen {
+    required uint32 uid = 1;
+    required uint32 left_frozen_time = 2;
+    optional uint32 left_assistant_times = 3;
+}

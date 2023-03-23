@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message BindHoyolabAccountReq {
+    optional uint32 hoyolab_channel_id = 1;
+    optional string hoyolab_account_uid = 2;
+    optional string hoyolab_token = 3;
+
+    enum CmdId {
+        CMD_ID = 1658;
+    }
+}

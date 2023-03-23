@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeShareRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 share_id = 2;
+    repeated RewardData reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4238;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        INVALID_SHARE_ID = 2;
+        HAVE_TAKEN = 3;
+    }
+}

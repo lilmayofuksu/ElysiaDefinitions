@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldChapterOpenHeroTreasureRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4599;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PART_FAIL = 2;
+    }
+}

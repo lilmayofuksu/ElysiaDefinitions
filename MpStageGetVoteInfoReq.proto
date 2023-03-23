@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message MpStageGetVoteInfoReq {
+
+    enum CmdId {
+        CMD_ID = 1036;
+    }
+}

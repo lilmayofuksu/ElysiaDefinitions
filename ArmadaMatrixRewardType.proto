@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaMatrixRewardType {
+    ARMADA_MATRIX_REWARD_TYPE_NONE = 0;
+    ARMADA_MATRIX_REWARD_TYPE_PERSONAL = 1;
+    ARMADA_MATRIX_REWARD_TYPE_ARMADA = 2;
+}

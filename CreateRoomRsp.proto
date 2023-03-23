@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "RoomMode.proto";
+message CreateRoomRsp {
+    required Retcode retcode = 1;
+    optional RoomMode room_mode = 2;
+
+    enum CmdId {
+        CMD_ID = 3154;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SERVER_BUSY = 2;
+        IS_IN_ROOM = 3;
+        NO_SCHEDULE = 4;
+        IS_IN_BATTLE = 5;
+        TOO_FREQUENT = 6;
+        PLAYER_LEVEL_LACK = 7;
+        ALREADY_IN_MP = 8;
+        EQUIPMENT_FULL = 9;
+        EQUIPMENT_MATERIAL_LIMIT = 10;
+        EQUIPMENT_FRAGMENT_LIMIT = 11;
+        FEATURE_LIMIT = 12;
+        TIMES_LACK = 13;
+        STAGE_NOT_IN_SCHEDULE = 14;
+        PUNISHED = 15;
+        PRE_REQUIRE_LIMIT = 16;
+    }
+}

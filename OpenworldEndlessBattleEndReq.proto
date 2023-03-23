@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+import "EndlessType.proto";
+import "StageInnerElfData.proto";
+import "StageInnerAvatarData.proto";
+import "StageEndStatus.proto";
+message OpenworldEndlessBattleEndReq {
+    optional uint32 battle_id = 1;
+    optional uint32 group_level = 2;
+    optional uint32 invasion_id = 3;
+    optional uint32 invasion_buff_num = 4;
+    optional uint32 cost_time = 5;
+    optional StageEndStatus end_status = 6;
+    repeated StageInnerAvatarData avatar_list = 7;
+    optional uint32 monster_group_id = 8;
+    optional uint32 environment_id = 9;
+    optional uint32 layer_number = 10;
+    optional string transaction_str = 11;
+    optional string monster_str = 12;
+    repeated StageInnerElfData elf_list = 13;
+    optional EndlessType type = 14;
+    optional string quantum_string = 15;
+    optional string wave_string = 16;
+    optional string aoe_string = 17;
+
+    enum CmdId {
+        CMD_ID = 3440;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "ChatworldDishReward.proto";
+message ChatworldGetDishInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional bool is_prepare_reward_taken = 3;
+    repeated ChatworldDishReward dish_reward_list = 4;
+    repeated uint32 taken_dish_limited_reward_list = 5;
+
+    enum CmdId {
+        CMD_ID = 2457;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

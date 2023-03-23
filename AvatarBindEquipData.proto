@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message AvatarBindEquipData {
+    optional uint32 avatar_id = 1;
+    optional uint32 weapon_uid = 2;
+    repeated uint32 stigmata_uid_list = 3;
+}

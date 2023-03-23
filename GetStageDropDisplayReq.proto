@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetStageDropDisplayReq {
+    repeated uint32 stage_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 60;
+    }
+}

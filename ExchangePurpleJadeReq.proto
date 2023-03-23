@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ExchangePurpleJadeReq {
+    optional uint32 hcoin_num = 1;
+    optional uint32 mcoin_num = 2;
+
+    enum CmdId {
+        CMD_ID = 1367;
+    }
+}

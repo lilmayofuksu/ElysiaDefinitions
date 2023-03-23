@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityBuildRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+
+    enum CmdId {
+        CMD_ID = 6455;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        INVALID_BRICK = 2;
+        BLUEPRINT_ERROR = 3;
+        INVALID_POSITION = 4;
+        LIMIT = 5;
+    }
+}

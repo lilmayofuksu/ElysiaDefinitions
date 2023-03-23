@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "TowerRaidRating.proto";
+import "RewardData.proto";
+message TakeTowerRaidRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 activity_id = 3;
+    optional uint32 hard_level = 4;
+    repeated RewardData reward_list = 5;
+    optional TowerRaidRating rating = 6;
+    repeated DropItem drop_item_list = 7;
+
+    enum CmdId {
+        CMD_ID = 4188;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAVE_TAKE = 2;
+        NOT_FINISH = 3;
+    }
+}

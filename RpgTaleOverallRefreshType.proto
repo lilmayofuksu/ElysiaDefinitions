@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum RpgTaleOverallRefreshType {
+    RPG_TALE_OVERALL_REFRESH_NONE = 0;
+    RPG_TALE_OVERALL_REFRESH_DAILY = 1;
+    RPG_TALE_OVERALL_REFRESH_WEEKLY = 2;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "ArmadaSystemChatMsg.proto";
+import "ChatMsg.proto";
+message EnterArmadaChatroomRsp {
+    required Retcode retcode = 1;
+    repeated ChatMsg his_chat_msg_list = 2;
+    repeated ArmadaSystemChatMsg his_system_chat_msg_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2658;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+    }
+}

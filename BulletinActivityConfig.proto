@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+message BulletinActivityConfig {
+    optional uint32 activity_id = 1;
+    optional uint32 activity_type = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+    optional uint32 bulletin_id = 5;
+    repeated uint32 mission_ids = 6;
+    repeated uint32 type_param_list = 7;
+    optional string type_param_str = 8;
+    optional uint32 min_player_level = 9;
+    optional uint32 max_player_level = 10;
+    repeated uint32 item_list = 11;
+    optional string title_name = 12;
+    optional string title_image = 13;
+    optional string image_path = 14;
+    optional string link_button = 15;
+    optional string description = 16;
+    optional uint32 weight = 17;
+    optional string background_path = 18;
+    optional string text_image_path = 19;
+    repeated uint32 currency_list = 20;
+    optional string unlock_param_str = 21;
+}

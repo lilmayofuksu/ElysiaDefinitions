@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum TownPropType {
+    TOWN_NONE = 0;
+    TOWN_AVATAR = 1;
+    TOWN_MONSTER = 2;
+}

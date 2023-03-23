@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message MpMatchInfo {
+    optional uint32 stage_id = 1;
+    optional uint32 start_match_time = 2;
+}

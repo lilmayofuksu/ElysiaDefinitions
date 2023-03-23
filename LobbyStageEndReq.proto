@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message LobbyStageEndReq {
+    required uint32 lobby_id = 1;
+    optional uint32 client_data = 2;
+
+    enum CmdId {
+        CMD_ID = 313;
+    }
+}

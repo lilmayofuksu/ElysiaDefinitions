@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+enum EndlessType {
+    ENDLESS_TYPE_NONE = 0;
+    ENDLESS_TYPE_NORMAL = 1;
+    ENDLESS_TYPE_OPENWORLD = 2;
+    ENDLESS_TYPE_QUANTUM = 3;
+    ENDLESS_TYPE_ULTRA = 4;
+    ENDLESS_TYPE_GREEDY = 5;
+    ENDLESS_TYPE_FRONT = 6;
+}

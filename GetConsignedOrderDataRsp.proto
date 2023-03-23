@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "ConsignedOrder.proto";
+message GetConsignedOrderDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 progress = 2;
+    repeated ConsignedOrder order_list = 3;
+    optional uint32 cd_finish_time = 4;
+    optional uint32 finish_order_times = 5;
+    optional uint32 total_order_times = 6;
+    optional uint32 armada_finish_times = 7;
+    optional uint32 apply_order_times = 8;
+    optional uint32 total_apply_times = 9;
+    optional uint32 my_credit = 10;
+    optional bool is_reward_taken = 11;
+
+    enum CmdId {
+        CMD_ID = 2640;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+    }
+}

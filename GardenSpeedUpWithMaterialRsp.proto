@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "GardenActivityData.proto";
+message GardenSpeedUpWithMaterialRsp {
+    required Retcode retcode = 1;
+    required GardenActivityData garden = 2;
+
+    enum CmdId {
+        CMD_ID = 4292;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        MATERIAL_NOT_ENOUGH = 3;
+        SITE_FULL = 4;
+    }
+}

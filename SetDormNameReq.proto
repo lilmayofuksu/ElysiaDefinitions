@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message SetDormNameReq {
+    optional uint32 house_id = 1;
+    optional uint32 room_id = 2;
+    optional string name = 3;
+
+    enum CmdId {
+        CMD_ID = 615;
+    }
+}

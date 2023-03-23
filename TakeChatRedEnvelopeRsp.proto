@@ -1,0 +1,37 @@
+syntax = "proto2";
+
+import "Material.proto";
+import "DropItem.proto";
+message TakeChatRedEnvelopeRsp {
+    required Retcode retcode = 1;
+    optional uint32 channel = 2;
+    optional uint32 sender_uid = 3;
+    optional string sender_nickname = 4;
+    optional uint32 item_id = 5;
+    optional uint32 take_scoin = 6;
+    repeated DropItem drop_item_list = 7;
+    optional string msg = 8;
+    optional uint32 red_envelope_id = 9;
+    optional uint32 drop_id = 10;
+    optional uint32 take_hcoin = 11;
+    optional bool is_sender_npc = 12;
+    required Material take_material = 13;
+    optional bool is_take_over = 14;
+
+    enum CmdId {
+        CMD_ID = 1166;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKEN = 2;
+        OVER = 3;
+        LACK_TIMES = 4;
+        LACK_LEVEL = 5;
+        EXPIRE_TIME = 6;
+        TAKE_BY_OTHERS = 7;
+        NO_CHATROOM = 8;
+        NOT_IN_ARMADA = 9;
+        NOT_IN_WORLD_CHATROOM = 10;
+    }
+}

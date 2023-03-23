@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message GetArmadaStageRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 hp_1_percent = 2;
+    optional uint32 hp_2_percent = 3;
+    optional uint32 hp_3_percent = 4;
+    optional bool is_take = 5;
+    optional uint32 kill_reward_material_id = 6;
+    optional uint32 kill_reward_material_num = 7;
+    optional uint32 last_damage_rate = 8;
+
+    enum CmdId {
+        CMD_ID = 2674;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+    }
+}

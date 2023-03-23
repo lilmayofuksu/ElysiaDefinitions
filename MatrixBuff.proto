@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message MatrixBuff {
+    optional uint32 buff_id = 1;
+    optional uint32 buff_type = 2;
+    optional uint32 buff_para_int = 3;
+}

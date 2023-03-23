@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeGobackLoginRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 take_days = 2;
+    repeated RewardData reward_list = 3;
+    optional uint32 reward_type = 4;
+    repeated uint32 reward_id_list = 5;
+
+    enum CmdId {
+        CMD_ID = 367;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+        LOGIN_DAYS_LACK = 3;
+        NOT_GOBACK = 4;
+        REWARD_TYPE_ERROR = 5;
+        SELECT_REWARD_ERROR = 6;
+    }
+}

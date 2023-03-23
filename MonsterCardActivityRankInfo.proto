@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "MonsterCardCardBriefData.proto";
+message MonsterCardActivityRankInfo {
+    repeated MonsterCardCardBriefData team_brief_data_list = 1;
+    optional uint32 collection_level = 2;
+    optional uint32 floor = 3;
+}

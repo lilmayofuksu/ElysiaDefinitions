@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message QAvatarBattleEndSkillRsp {
+    required Retcode retcode = 1;
+    optional uint32 skill_type = 2;
+    optional uint32 skill_id = 3;
+
+    enum CmdId {
+        CMD_ID = 5608;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

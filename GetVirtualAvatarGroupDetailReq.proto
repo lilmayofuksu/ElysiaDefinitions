@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetVirtualAvatarGroupDetailReq {
+    optional uint32 group_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3502;
+    }
+}

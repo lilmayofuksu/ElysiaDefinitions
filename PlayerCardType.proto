@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum PlayerCardType {
+    CARD_ALL = 0;
+    CARD_AVATAR = 1;
+    CARD_MEDAL = 2;
+    CARD_MESSAGE = 3;
+    CARD_MSG_CONFIG = 4;
+    CARD_ELF = 5;
+}

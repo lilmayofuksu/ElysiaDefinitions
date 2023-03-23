@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SetTransferPwdReq {
+    required string transfer_pwd = 1;
+
+    enum CmdId {
+        CMD_ID = 245;
+    }
+}

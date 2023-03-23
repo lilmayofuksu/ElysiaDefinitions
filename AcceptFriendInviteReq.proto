@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "InviteeActivityType.proto";
+message AcceptFriendInviteReq {
+    optional string invite_code = 1;
+    optional InviteeActivityType invite_type = 2;
+    optional uint32 schedule_id = 3;
+
+    enum CmdId {
+        CMD_ID = 227;
+    }
+}

@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GodWarEventInfo {
+    optional uint32 event_id = 1;
+    optional uint32 event_type = 2;
+    optional EventSettleStatus event_settle_status = 3;
+    repeated uint32 event_param_list = 4;
+    optional uint32 source_event_id = 5;
+    repeated RewardData reward_data_list = 6;
+    optional uint32 fingerprint = 7;
+    repeated uint32 extra_param_list = 8;
+    optional uint32 source_type = 9;
+    repeated ParamMap event_param_map_list = 10;
+
+    enum EventSettleStatus {
+        EFFECT = 0;
+        FLAG_NOT_VALID = 1;
+        SETTLE_FAIL = 2;
+        SETTLE_REPEATED = 3;
+        TALE_NOT_FOUND = 4;
+        TRIGGER_PARAM_NOT_VALID = 5;
+        CANDIDATE_EMPTY = 6;
+        FORCE_SETTLE = 7;
+    }
+    message ParamMap {
+        optional uint32 key = 1;
+        optional uint32 value = 2;
+    }
+}

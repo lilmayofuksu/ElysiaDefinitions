@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ChangeArmadaNameReq {
+    required string name = 1;
+    optional bool is_scoin_lack = 2;
+    optional bool is_hcoin_lack = 3;
+
+    enum CmdId {
+        CMD_ID = 2691;
+    }
+}

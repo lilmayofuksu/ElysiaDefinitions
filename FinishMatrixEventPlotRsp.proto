@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message FinishMatrixEventPlotRsp {
+    required Retcode retcode = 1;
+    optional uint32 plot_id = 2;
+    optional uint32 dialog_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2337;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

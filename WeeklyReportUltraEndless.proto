@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "LineupBriefInfo.proto";
+message WeeklyReportUltraEndless {
+    optional uint32 schedule_id = 1;
+    optional uint32 group_level = 2;
+    optional uint32 max_stage_score = 3;
+    optional uint32 group_member_num = 4;
+    optional uint32 rank = 5;
+    optional uint32 cup_num_before_schedule_begin = 6;
+    optional uint32 cup_num_after_schedule_settle = 7;
+    optional uint32 top_rank = 8;
+    optional uint32 top_rank_reward_id = 9;
+    optional uint32 group_level_reward_id = 10;
+    required LineupBriefInfo lineup_info = 11;
+    optional uint32 max_mission_num = 12;
+    optional uint32 finished_mission_num = 13;
+    repeated uint32 mission_reward_list = 14;
+    optional uint32 begin_time = 15;
+    optional uint32 end_time = 16;
+    optional uint32 battle_config_id = 17;
+}

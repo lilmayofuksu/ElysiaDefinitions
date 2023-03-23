@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message GetRecommendFriendListReq {
+    optional uint32 level = 1;
+    repeated uint32 filter_uid_list = 2;
+    repeated uint32 recommend_uid_list = 3;
+    repeated uint32 mp_recommend_uid_list = 4;
+
+    enum CmdId {
+        CMD_ID = 76;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message KickChatgroupMemberRsp {
+    required Retcode retcode = 1;
+    optional uint32 chatgroup_id = 2;
+    optional uint32 target_uid = 3;
+
+    enum CmdId {
+        CMD_ID = 2213;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_CREATER = 2;
+        KICK_SELF = 3;
+        NOT_MEMBER = 4;
+    }
+}

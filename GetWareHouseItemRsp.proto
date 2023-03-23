@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "WareHouseStatus.proto";
+message GetWareHouseItemRsp {
+    required Retcode retcode = 1;
+    optional uint32 demand_id = 2;
+    optional WareHouseStatus status = 3;
+    optional uint32 cd_finish_time = 4;
+
+    enum CmdId {
+        CMD_ID = 2656;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        STATUS_ERROR = 3;
+    }
+}

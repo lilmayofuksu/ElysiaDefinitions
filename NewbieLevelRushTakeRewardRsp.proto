@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message NewbieLevelRushTakeRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5884;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

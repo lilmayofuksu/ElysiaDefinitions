@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message TimeLimitAddUpReward {
+    required uint32 add_up_value_need = 1;
+    required uint32 reward_id = 2;
+    optional bool is_reward_get = 3;
+}

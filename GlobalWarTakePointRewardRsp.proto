@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GlobalWarTakePointRewardRsp {
+    required Retcode retcode = 1;
+    repeated uint32 point_id_list = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 3953;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        POINT_NOT_FINISH = 2;
+        CURRENCY_LACK = 3;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum RaffleRewardGrade {
+    RAFFLE_REWARD_NONE = 0;
+    RAFFLE_REWARD_FIRST = 1;
+    RAFFLE_REWARD_SECOND = 2;
+    RAFFLE_REWARD_THIRD = 3;
+}

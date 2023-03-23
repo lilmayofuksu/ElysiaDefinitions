@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+enum AvatarClassType {
+    AVATAR_KIANA = 1;
+    AVATAR_MEI = 2;
+    AVATAR_BRONYA = 3;
+    AVATAR_HIMEKO = 4;
+    AVATAR_THERESA = 5;
+    AVATAR_FUKA = 6;
+    AVATAR_RITA = 7;
+    AVATAR_DURANDAL = 8;
+    AVATAR_FISCHL = 9;
+    AVATAR_PARDOFELIS = 10;
+}

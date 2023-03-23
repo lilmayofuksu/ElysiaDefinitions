@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message MpKickFromTeamRsp {
+    required Retcode retcode = 1;
+    optional uint32 member_uid = 2;
+
+    enum CmdId {
+        CMD_ID = 355;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+    }
+}

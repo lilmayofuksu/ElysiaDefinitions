@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message LoginWishTakeLoginRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 login_day = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 1610;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        DAY_LACK = 2;
+        ALREADY_TAKEN = 3;
+    }
+}

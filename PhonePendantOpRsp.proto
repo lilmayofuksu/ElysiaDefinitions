@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "PhonePendantOpType.proto";
+message PhonePendantOpRsp {
+    required Retcode retcode = 1;
+    optional PhonePendantOpType op = 2;
+    optional uint32 on_id = 3;
+    optional uint32 off_id = 4;
+
+    enum CmdId {
+        CMD_ID = 1200;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_OWN = 2;
+        EXPIRED = 3;
+        OFF_ID_ERROR = 4;
+    }
+}

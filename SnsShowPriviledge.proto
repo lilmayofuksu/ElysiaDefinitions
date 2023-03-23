@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message SnsShowPriviledge {
+    optional uint32 sns_show_type = 1;
+    optional uint32 sns_show_priviledge_state = 2;
+}

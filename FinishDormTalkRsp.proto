@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message FinishDormTalkRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    repeated DropItem drop_item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 642;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        PLOT_ERROR = 2;
+        PLOT_FINISHED = 3;
+    }
+}

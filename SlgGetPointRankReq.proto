@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SlgGetPointRankReq {
+    optional uint32 point_id = 1;
+
+    enum CmdId {
+        CMD_ID = 6064;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RpgDungeonActivity.proto";
+message RpgDungeonGetActivityRsp {
+    required Retcode retcode = 1;
+    required RpgDungeonActivity activity = 2;
+    optional uint32 dungeon_id = 3;
+
+    enum CmdId {
+        CMD_ID = 5501;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message OpenworldChapterBuilding {
+    optional uint32 main_id = 1;
+    optional uint32 level = 2;
+    optional uint32 level_up_finish_time = 3;
+}

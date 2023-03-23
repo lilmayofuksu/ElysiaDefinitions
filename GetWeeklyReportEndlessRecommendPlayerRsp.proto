@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "EndlessType.proto";
+import "RankShowData.proto";
+message GetWeeklyReportEndlessRecommendPlayerRsp {
+    required Retcode retcode = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 group_level = 3;
+    required RankShowData rank_data = 4;
+    optional EndlessType endless_type = 5;
+
+    enum CmdId {
+        CMD_ID = 5103;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

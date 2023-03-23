@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum DormDataType {
+    DORM_DATA_ALL = 0;
+    DORM_DATA_DECORATION = 1;
+    DORM_DATA_EVENT = 3;
+    DORM_DATA_SNS = 4;
+}

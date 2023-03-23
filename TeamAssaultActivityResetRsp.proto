@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message TeamAssaultActivityResetRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4029;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        LACK_TIMES = 4;
+        NOT_NEED = 5;
+    }
+}

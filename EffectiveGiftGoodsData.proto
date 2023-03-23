@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EffectiveGiftGoodsData {
+    optional uint32 goods_id = 1;
+    optional uint32 expire_time = 2;
+}

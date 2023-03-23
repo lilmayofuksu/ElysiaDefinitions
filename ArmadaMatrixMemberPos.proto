@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixMemberPos {
+    optional uint32 uid = 1;
+    required ArmadaMatrixGridPos pos = 2;
+    optional uint32 avatar_id = 3;
+    optional uint32 cur_level = 4;
+    optional uint32 ask_supply_time = 5;
+    optional uint32 cur_supply = 6;
+    optional uint32 explore_value = 7;
+    optional uint32 boom_item_num = 8;
+    optional uint32 supply_item_num = 9;
+    optional uint32 monster_defeat = 10;
+    optional uint32 armada_boss_defeat = 11;
+    optional uint32 collect_item_num = 12;
+    optional uint32 collect_buff_num = 13;
+}

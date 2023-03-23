@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ArmadaMatrixTakeFatigueRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 reward_num = 2;
+    optional uint32 item_id = 3;
+    optional uint32 item_count = 4;
+
+    enum CmdId {
+        CMD_ID = 2794;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_REWARD = 2;
+        NOT_OPEN = 3;
+    }
+}

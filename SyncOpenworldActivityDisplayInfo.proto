@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message SyncOpenworldActivityDisplayInfo {
+    optional uint32 add_base_activity_exp = 1;
+    optional uint32 add_buff_activity_exp = 2;
+}

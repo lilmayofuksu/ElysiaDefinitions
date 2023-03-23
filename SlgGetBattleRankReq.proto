@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SlgGetBattleRankReq {
+    optional uint32 country_id = 1;
+
+    enum CmdId {
+        CMD_ID = 6062;
+    }
+}

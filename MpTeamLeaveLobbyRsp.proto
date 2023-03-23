@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message MpTeamLeaveLobbyRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 374;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_LEADER = 2;
+        NOT_IN_TEAM = 3;
+        NOT_IN_LOBBY = 4;
+        LEADER_IS_WILD = 5;
+    }
+}

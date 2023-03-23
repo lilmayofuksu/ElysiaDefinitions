@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "CreditAccount.proto";
+message CreditAccountGetRsp {
+    required Retcode retcode = 1;
+    required CreditAccount account = 2;
+
+    enum CmdId {
+        CMD_ID = 6003;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

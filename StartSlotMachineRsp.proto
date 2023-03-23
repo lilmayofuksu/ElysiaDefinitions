@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message StartSlotMachineRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 box_item_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4318;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        MATERIAL_LACK = 3;
+    }
+}

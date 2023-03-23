@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message ExBossStageBeginReq {
+    repeated uint32 avatar_id_list = 1;
+    optional uint32 boss_id = 2;
+    optional bool is_training = 3;
+    repeated uint32 elf_id_list = 4;
+    optional bool is_turbo = 5;
+
+    enum CmdId {
+        CMD_ID = 529;
+    }
+}

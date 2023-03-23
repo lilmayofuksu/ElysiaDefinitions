@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message QCandyBattleChooseAvatarReq {
+    optional uint32 activity_id = 1;
+    optional uint32 old_avatar_id = 2;
+    optional uint32 new_avatar_id = 3;
+
+    enum CmdId {
+        CMD_ID = 6604;
+    }
+}

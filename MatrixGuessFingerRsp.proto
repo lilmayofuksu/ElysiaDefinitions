@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "MatrixFingerType.proto";
+message MatrixGuessFingerRsp {
+    required Retcode retcode = 1;
+    optional MatrixFingerType player_finger_type = 2;
+    optional MatrixFingerType robot_finger_type = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 2350;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_WIN = 2;
+    }
+}

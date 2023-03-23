@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message AvatarReviveReq {
+    optional bool is_retry = 1;
+    optional uint32 revive_use_id = 2;
+
+    enum CmdId {
+        CMD_ID = 106;
+    }
+}

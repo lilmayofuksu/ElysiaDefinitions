@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetGuideRewardReq {
+    required uint32 guide_id = 1;
+
+    enum CmdId {
+        CMD_ID = 185;
+    }
+}

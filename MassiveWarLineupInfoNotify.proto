@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "LineupBriefInfo.proto";
+message MassiveWarLineupInfoNotify {
+    optional uint32 battle_uniq_id = 1;
+    required LineupBriefInfo lineup_info = 2;
+
+    enum CmdId {
+        CMD_ID = 4811;
+    }
+}

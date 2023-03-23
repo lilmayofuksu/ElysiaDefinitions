@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message QAvatarBattleKillNotify {
+    optional uint32 killer_uid = 1;
+    optional uint32 killed_uid = 2;
+    optional uint32 killer_streak_num = 3;
+    optional uint32 battle_total_kill_num = 4;
+
+    enum CmdId {
+        CMD_ID = 5621;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "ChallengeModeArea.proto";
+message GetExtraStoryChallengeModeDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 choose_difficulty = 2;
+    optional bool is_can_reset = 3;
+    repeated ChallengeModeArea challenge_area_list = 4;
+    optional uint32 chapter_id = 5;
+
+    enum CmdId {
+        CMD_ID = 503;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        EXTRA_STORY_NOT_OPEN = 3;
+    }
+}

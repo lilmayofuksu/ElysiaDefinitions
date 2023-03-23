@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message ReplayGetFileTokenRsp {
+    required Retcode retcode = 1;
+    optional string token = 2;
+    optional string token_url = 3;
+
+    enum CmdId {
+        CMD_ID = 5411;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LIMIT = 2;
+        INVALID_PARAM = 3;
+        HAS_UPLOAD = 4;
+        HAS_DELETE = 5;
+        DAILY_LIMIT = 6;
+    }
+}

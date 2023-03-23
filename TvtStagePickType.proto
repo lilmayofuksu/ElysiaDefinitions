@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum TvtStagePickType {
+    TVT_STAGE_PICK_NONE = 0;
+    TVT_STAGE_PICK_FREE = 1;
+    TVT_STAGE_PICK_RANDOM = 2;
+}

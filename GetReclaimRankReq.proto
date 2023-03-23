@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetReclaimRankReq {
+
+    enum CmdId {
+        CMD_ID = 1175;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChatworldBattleUseItemReq {
+    optional uint32 item_id = 1;
+
+    enum CmdId {
+        CMD_ID = 2422;
+    }
+}

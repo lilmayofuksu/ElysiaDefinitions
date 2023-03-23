@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message GetExBossScheduleRsp {
+    required Retcode retcode = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 min_level = 4;
+    optional string image_path = 5;
+    optional uint32 schedule_id = 6;
+    optional uint32 rank_id = 7;
+
+    enum CmdId {
+        CMD_ID = 509;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FEATURE_CLOSED = 2;
+    }
+}

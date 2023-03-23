@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MatrixGridPos.proto";
+message MatrixSetDiceDestinationRsp {
+    required Retcode retcode = 1;
+    required MatrixGridPos target_pos = 2;
+
+    enum CmdId {
+        CMD_ID = 2348;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_PATH = 2;
+    }
+}

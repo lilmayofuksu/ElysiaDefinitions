@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ChapterActivityTakeDailyRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 chapter_id = 2;
+    required RewardData daily_reward = 3;
+
+    enum CmdId {
+        CMD_ID = 4351;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+        ACTIVITY_NOT_OPEN = 3;
+    }
+}

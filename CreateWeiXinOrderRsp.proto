@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message CreateWeiXinOrderRsp {
+    required Retcode retcode = 1;
+    optional string prepay_id = 2;
+    optional string partner_id = 3;
+    optional string nonce_str = 4;
+    optional string timestamp = 5;
+    optional string sign = 6;
+    optional string qr_code_url = 7;
+
+    enum CmdId {
+        CMD_ID = 208;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

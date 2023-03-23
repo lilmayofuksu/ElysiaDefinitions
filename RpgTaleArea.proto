@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message RpgTaleArea {
+    optional uint32 area_id = 1;
+}

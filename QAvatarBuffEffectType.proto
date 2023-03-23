@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum QAvatarBuffEffectType {
+    QAVATAR_BUFF_EFFECT_NONE = 0;
+    QAVATAR_BUFF_EFFECT_HP_GREATER = 1;
+    QAVATAR_BUFF_EFFECT_HP_LESS = 2;
+    QAVATAR_BUFF_EFFECT_OUT_OF_BATTLE = 3;
+}

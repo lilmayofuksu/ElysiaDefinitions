@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ExBossSweepReq {
+    optional uint32 boss_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1655;
+    }
+}

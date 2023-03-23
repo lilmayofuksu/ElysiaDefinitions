@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "BuffAssistBuffSlot.proto";
+message BuffAssistBuffPool {
+    optional uint32 pool_id = 1;
+    optional uint32 unique_id = 2;
+    optional uint32 producer_uid = 3;
+    optional string producer_nickname = 4;
+    repeated BuffAssistBuffSlot buff_slot_list = 5;
+    optional uint32 expire_time = 6;
+    repeated uint32 assist_word_id_list = 7;
+    optional uint32 buff_schedule_id = 8;
+    optional uint32 producer_type = 9;
+    optional uint32 producer_head_id = 10;
+    optional uint32 producer_assist_level = 11;
+}

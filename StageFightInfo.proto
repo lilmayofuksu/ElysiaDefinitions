@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message StageFightInfo {
+    optional uint32 damage = 1;
+    optional uint32 elf_damage = 2;
+    optional uint32 score = 3;
+}

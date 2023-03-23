@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "TvtMember.proto";
+import "TvtBattleInfo.proto";
+message TvtBattleBeginNotify {
+    optional uint32 battle_id = 1;
+    optional uint32 battle_stage_id = 2;
+    optional string transaction_str = 3;
+    required TvtBattleInfo battle_info = 4;
+    repeated TvtMember lhs_member_list = 5;
+    repeated TvtMember rhs_member_list = 6;
+    optional bool is_robot_match = 7;
+
+    enum CmdId {
+        CMD_ID = 3352;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message RpgDungeonGetActivityReq {
+    optional uint32 dungeon_id = 1;
+
+    enum CmdId {
+        CMD_ID = 5500;
+    }
+}

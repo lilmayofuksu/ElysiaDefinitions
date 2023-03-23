@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "ArmadaMatrixSyncNotifyType.proto";
+import "ArmadaMatrixMapInfo.proto";
+message ArmadaMatrixSyncNotify {
+    required ArmadaMatrixMapInfo matrix_map_info = 1;
+    optional ArmadaMatrixSyncNotifyType notify_type = 2;
+    optional uint32 schedule_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2744;
+    }
+}

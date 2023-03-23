@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SupportActivitySupportReq {
+
+    enum CmdId {
+        CMD_ID = 4334;
+    }
+}

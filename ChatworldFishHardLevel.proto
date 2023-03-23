@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum ChatworldFishHardLevel {
+    CHATWORLD_FISH_HARD_LEVEL_NONE = 0;
+    CHATWORLD_FISH_HARD_LEVEL_EASY = 1;
+    CHATWORLD_FISH_HARD_LEVEL_NORMAL = 2;
+    CHATWORLD_FISH_HARD_LEVEL_HARD = 3;
+}

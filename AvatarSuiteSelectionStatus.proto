@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum AvatarSuiteSelectionStatus {
+    SELECTION_NONE = 0;
+    SELECTION_ING = 1;
+    SELECTION_FINSH = 2;
+}

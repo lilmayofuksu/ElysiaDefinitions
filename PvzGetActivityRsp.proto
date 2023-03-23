@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "PvzActivity.proto";
+message PvzGetActivityRsp {
+    required Retcode retcode = 1;
+    required PvzActivity pvz_activity = 2;
+
+    enum CmdId {
+        CMD_ID = 6551;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

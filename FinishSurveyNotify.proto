@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message FinishSurveyNotify {
+    optional uint32 survey_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4243;
+    }
+}

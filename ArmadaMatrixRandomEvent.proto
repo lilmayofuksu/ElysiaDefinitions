@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixOuterItem.proto";
+import "ArmadaMatrixTemporaryDeposit.proto";
+import "ArmadaMatrixEventType.proto";
+message ArmadaMatrixRandomEvent {
+    optional uint32 event_id = 1;
+    optional ArmadaMatrixEventType event_type = 2;
+    optional int32 param = 3;
+    required ArmadaMatrixTemporaryDeposit deposit = 4;
+    required ArmadaMatrixOuterItem outer_item = 5;
+}

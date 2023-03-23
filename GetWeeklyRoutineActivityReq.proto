@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetWeeklyRoutineActivityReq {
+
+    enum CmdId {
+        CMD_ID = 4229;
+    }
+}

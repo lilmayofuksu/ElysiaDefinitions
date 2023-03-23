@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message GlobalPollingSupportRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 5814;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        TARGET_ID_INVALID = 3;
+        IN_CD = 4;
+    }
+}

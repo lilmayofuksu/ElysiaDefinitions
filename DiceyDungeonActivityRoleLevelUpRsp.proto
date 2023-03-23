@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message DiceyDungeonActivityRoleLevelUpRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+
+    enum CmdId {
+        CMD_ID = 6503;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        ROLE_NOT_EXIST = 3;
+        MATERIAL_LACK = 4;
+        SITE_LOCK = 5;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "SpecificRankType.proto";
+message GetSpecificRankReq {
+    optional SpecificRankType type = 1;
+    optional uint32 param = 2;
+
+    enum CmdId {
+        CMD_ID = 1684;
+    }
+}

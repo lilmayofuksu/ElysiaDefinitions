@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetDLCTowerRankReq {
+
+    enum CmdId {
+        CMD_ID = 3571;
+    }
+}

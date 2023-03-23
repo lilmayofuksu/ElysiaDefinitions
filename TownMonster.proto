@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TownMonster {
+    optional uint32 unique_id = 1;
+    optional uint32 monster_id = 2;
+    optional uint32 position = 3;
+    optional uint32 strength = 4;
+    optional uint32 left_hp_ratio = 5;
+}

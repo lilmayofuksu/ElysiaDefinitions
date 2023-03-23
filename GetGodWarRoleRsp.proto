@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "GodWarRoleInfo.proto";
+message GetGodWarRoleRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    required GodWarRoleInfo role_info = 7;
+
+    enum CmdId {
+        CMD_ID = 6196;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

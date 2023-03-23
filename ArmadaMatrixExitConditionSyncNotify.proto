@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ArmadaMatrixExitCondition.proto";
+message ArmadaMatrixExitConditionSyncNotify {
+    required ArmadaMatrixExitCondition exit_condition = 1;
+
+    enum CmdId {
+        CMD_ID = 2790;
+    }
+}

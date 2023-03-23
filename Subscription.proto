@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message Subscription {
+    optional uint32 subs_id = 1;
+    optional uint32 expires_time = 2;
+}

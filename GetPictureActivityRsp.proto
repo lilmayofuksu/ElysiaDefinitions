@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "PictureStep.proto";
+message GetPictureActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated PictureStep step_list = 3;
+    optional bool is_share = 4;
+    optional bool is_take_share_reward = 5;
+    optional uint32 score = 6;
+
+    enum CmdId {
+        CMD_ID = 4267;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ChatworldChangeAvatarRsp {
+    required Retcode retcode = 1;
+    optional uint32 avatar_id = 2;
+    optional uint32 scene_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2410;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_CHATWORLD = 2;
+        AVATAR_LOCK = 3;
+        SCENE_NOT_EXIST = 4;
+    }
+}

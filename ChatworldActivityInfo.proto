@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChatworldActivityInfo {
+    optional uint32 treasure_schedule_id = 1;
+    optional bool is_has_npc_red_envelope = 2;
+}

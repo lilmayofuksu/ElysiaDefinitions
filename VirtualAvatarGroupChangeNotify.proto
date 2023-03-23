@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "VirtualAvatarGroup.proto";
+message VirtualAvatarGroupChangeNotify {
+    required VirtualAvatarGroup virtual_avatar_group = 1;
+
+    enum CmdId {
+        CMD_ID = 3512;
+    }
+}

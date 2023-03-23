@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "SyncOpenworldActivityDisplayInfo.proto";
+import "OpenworldActivity.proto";
+message SyncOpenworldActivityNotify {
+    required OpenworldActivity activity_data = 1;
+    required SyncOpenworldActivityDisplayInfo display_info = 2;
+
+    enum CmdId {
+        CMD_ID = 4535;
+    }
+}

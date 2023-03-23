@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+import "ArmadaMatrixStageConfig.proto";
+message ArmadaMatrixStageBattleNotify {
+    required ArmadaMatrixStageConfig stage_config = 1;
+    required ArmadaMatrixGridPos pos = 2;
+    optional uint32 boss_lose_hp_percent = 3;
+
+    enum CmdId {
+        CMD_ID = 2745;
+    }
+}

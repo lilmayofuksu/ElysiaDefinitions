@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message SelectAdventureQuestReq {
+    optional uint32 pool_id = 1;
+    repeated uint32 avatar_list = 2;
+    optional uint32 elf_id = 3;
+
+    enum CmdId {
+        CMD_ID = 3902;
+    }
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message FriendBondNotify {
+    optional uint32 friend_uid = 1;
+    optional uint32 bond = 2;
+
+    enum CmdId {
+        CMD_ID = 394;
+    }
+}

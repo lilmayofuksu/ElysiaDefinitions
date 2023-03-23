@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "MasterPupilEventData.proto";
+import "MasterPupilEventType.proto";
+message MasterPupilMsgNotify {
+    optional uint32 target_uid = 1;
+    optional MasterPupilEventType event = 2;
+    required MasterPupilEventData data = 3;
+
+    enum CmdId {
+        CMD_ID = 589;
+    }
+}

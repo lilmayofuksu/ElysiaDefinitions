@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "ElfTalent.proto";
+import "ElfFragment.proto";
+import "Elf.proto";
+message GetElfDataRsp {
+    required Retcode retcode = 1;
+    repeated Elf elf_list = 2;
+    repeated ElfFragment elf_fragment_list = 3;
+    repeated ElfTalent elf_talent_list = 4;
+    optional bool is_take_compensation = 5;
+
+    enum CmdId {
+        CMD_ID = 2101;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message BuyControllableBoxGachaTicketReq {
+    optional uint32 gacha_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4712;
+    }
+}

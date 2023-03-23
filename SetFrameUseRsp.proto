@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message SetFrameUseRsp {
+    required Retcode retcode = 1;
+    optional uint32 frame_id = 2;
+
+    enum CmdId {
+        CMD_ID = 593;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

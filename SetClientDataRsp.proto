@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "ClientDataType.proto";
+message SetClientDataRsp {
+    required Retcode retcode = 1;
+    optional ClientDataType type = 2;
+    optional uint32 id = 3;
+
+    enum CmdId {
+        CMD_ID = 1589;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SIZE_LIMIT = 2;
+        UNKNOWN_ID = 3;
+    }
+}

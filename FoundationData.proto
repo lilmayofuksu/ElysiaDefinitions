@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message FoundationData {
+    optional string product_name = 1;
+    repeated uint32 has_take_reward_level_list = 2;
+}

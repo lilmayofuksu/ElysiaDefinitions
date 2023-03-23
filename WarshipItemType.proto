@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum WarshipItemType {
+    WARSHIP_ITEM_TYPE_NONE = 0;
+    WARSHIP_ITEM_TYPE_WARSHIP = 1;
+    WARSHIP_ITEM_TYPE_BGM = 2;
+}

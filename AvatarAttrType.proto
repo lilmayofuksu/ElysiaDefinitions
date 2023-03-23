@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum AvatarAttrType {
+    AVATAR_HP = 1;
+    AVATAR_SP = 2;
+    AVATAR_ATTACK = 3;
+    AVATAR_DEFENSE = 4;
+    AVATAR_CRITICAL = 5;
+}

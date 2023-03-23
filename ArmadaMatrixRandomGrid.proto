@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixRandomGrid {
+    required ArmadaMatrixGridPos pos = 1;
+    optional uint32 grid_type = 2;
+    optional uint32 expire_time = 3;
+}

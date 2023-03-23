@@ -1,0 +1,35 @@
+syntax = "proto2";
+
+import "FastPassParaWeekday.proto";
+import "FastPassParaOw.proto";
+import "DropItem.proto";
+message FinishFastPassRsp {
+    required Retcode retcode = 1;
+    optional uint32 fast_pass_type = 2;
+    repeated DropItem drop_item_list = 4;
+    required FastPassParaOw fast_pass_para_ow = 5;
+    required FastPassParaWeekday fast_pass_para_weekday = 6;
+    optional uint32 player_exp_reward = 7;
+    optional uint32 scoin_reward = 8;
+    optional uint32 exp_convert_scoin = 9;
+
+    enum CmdId {
+        CMD_ID = 1491;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+        MATERIAL_LACK = 3;
+        QUEST_NOT_EXIST = 4;
+        QUEST_NOT_DOING = 5;
+        MAP_NOT_FOUND = 6;
+        NO_USE_TIMES = 7;
+        STAGE_NOT_EXIST = 8;
+        STAGE_CANT_FAST_PASS = 9;
+        NO_ENTER_TIMES = 10;
+        STAMINA_LACK = 11;
+        EQUIPMENT_FULL = 12;
+        GENERATE_DROP_FAILED = 13;
+    }
+}

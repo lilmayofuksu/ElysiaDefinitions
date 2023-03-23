@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message QCandyBattleMember {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 rank_score = 3;
+    optional uint32 team_id = 4;
+    optional uint32 avatar_id = 5;
+    optional uint32 entity_id = 6;
+}

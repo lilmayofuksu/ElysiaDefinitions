@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message UnlockFurnitureRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 681;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        UNLOCK_FORBID = 2;
+        HAS_UNLOCK = 3;
+        HCOIN_LACK = 4;
+        SCOIN_LACK = 5;
+        MATERIAL_LACK = 6;
+    }
+}

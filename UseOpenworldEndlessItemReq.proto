@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "OpenworldInvasionItem.proto";
+message UseOpenworldEndlessItemReq {
+    optional uint32 item_id = 1;
+    optional uint32 target_uid = 2;
+    required OpenworldInvasionItem invasion = 3;
+    optional uint32 item_num = 4;
+
+    enum CmdId {
+        CMD_ID = 3422;
+    }
+}

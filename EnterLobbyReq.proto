@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "MpTeamMember.proto";
+message EnterLobbyReq {
+    required uint32 stage_id = 1;
+    required uint32 lobby_id = 2;
+    required bool is_friend_invitation = 3;
+    optional uint32 level = 4;
+    optional uint32 client_rtt = 6;
+    optional bool has_leader_stamina = 7;
+    required MpTeamMember member = 8;
+    optional bool has_leader_enter_times = 9;
+    optional uint32 device_score = 10;
+    optional uint32 report_num = 11;
+    optional bool has_leader_theme_wanted_ticket = 12;
+
+    enum CmdId {
+        CMD_ID = 303;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message LeaveChatroomNotify {
+    optional uint32 new_chatroom_id = 1;
+
+    enum CmdId {
+        CMD_ID = 2233;
+    }
+}

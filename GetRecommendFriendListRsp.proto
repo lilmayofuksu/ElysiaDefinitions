@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "PlayerFriendBriefData.proto";
+message GetRecommendFriendListRsp {
+    required Retcode retcode = 1;
+    repeated PlayerFriendBriefData recommend_list = 2;
+
+    enum CmdId {
+        CMD_ID = 77;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TOO_OFTEN = 2;
+    }
+}

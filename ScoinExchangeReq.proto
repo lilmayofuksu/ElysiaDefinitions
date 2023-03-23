@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ScoinExchangeReq {
+    optional uint32 purple_jade_num = 1;
+
+    enum CmdId {
+        CMD_ID = 14;
+    }
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message AvatarStarUpRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 30;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        FRAGMENT_LACK = 3;
+        STAR_FULL = 4;
+        FEATURE_CLOSED = 5;
+    }
+}

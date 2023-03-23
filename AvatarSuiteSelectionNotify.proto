@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "AvatarSuiteSelection.proto";
+message AvatarSuiteSelectionNotify {
+    required AvatarSuiteSelection avatar_selection = 1;
+
+    enum CmdId {
+        CMD_ID = 582;
+    }
+}

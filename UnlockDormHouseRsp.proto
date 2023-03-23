@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "DormHouse.proto";
+message UnlockDormHouseRsp {
+    required Retcode retcode = 1;
+    required DormHouse house = 2;
+
+    enum CmdId {
+        CMD_ID = 610;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        REPEAT_UNLOCK = 2;
+        MATERIAL_LIMIT = 3;
+        LEVEL_LIMIT = 4;
+    }
+}

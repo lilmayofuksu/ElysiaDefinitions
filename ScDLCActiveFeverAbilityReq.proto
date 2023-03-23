@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ScDLCActiveFeverAbilityReq {
+    repeated uint32 ability_group_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 6345;
+    }
+}

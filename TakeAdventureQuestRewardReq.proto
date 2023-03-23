@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeAdventureQuestRewardReq {
+    optional uint32 pool_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3904;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GetWikiDataRsp {
+    required Retcode retcode = 1;
+    repeated uint32 has_take_rating_reward_list = 2;
+    repeated uint32 has_take_activity_suit_reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1194;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

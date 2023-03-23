@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ClaimScoinRsp {
+    required Retcode retcode = 1;
+    optional uint32 add_scoin = 2;
+    optional bool is_extra = 3;
+
+    enum CmdId {
+        CMD_ID = 3911;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SCOIN_FULL = 2;
+    }
+}

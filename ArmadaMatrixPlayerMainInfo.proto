@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ArmadaMatrixPlayerMainInfo {
+    optional uint32 explore_power = 1;
+    optional uint32 explore_value = 2;
+    optional uint32 honkai_energy = 3;
+    optional uint32 total_explore_value = 4;
+    optional uint32 take_fatigue_reward_days = 5;
+    optional uint32 cur_supply = 6;
+}

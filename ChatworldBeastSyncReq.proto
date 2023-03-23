@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ChatworldBeastSyncReq {
+    optional uint64 beast_unique_id_u64 = 1;
+    optional uint32 cost_hp = 2;
+
+    enum CmdId {
+        CMD_ID = 2463;
+    }
+}

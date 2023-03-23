@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "VirtualTrainRole.proto";
+import "VirtualAvatar.proto";
+message VirtualAvatarGroup {
+    optional uint32 group_id = 1;
+    repeated VirtualAvatar virtual_avatar_list = 2;
+    repeated uint32 virtual_weapon_id_list = 3;
+    repeated uint32 virtual_stigmata_id_list = 4;
+    repeated uint32 virtual_avatar_team_list = 5;
+    repeated VirtualTrainRole virtual_role_list = 6;
+    optional bool is_locked = 7;
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message TileEnterRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4907;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LOCKED = 2;
+    }
+}

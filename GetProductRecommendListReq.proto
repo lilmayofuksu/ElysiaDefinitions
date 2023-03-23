@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetProductRecommendListReq {
+
+    enum CmdId {
+        CMD_ID = 1478;
+    }
+}

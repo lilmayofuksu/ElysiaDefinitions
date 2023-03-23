@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message UpdateLobbyLineupRsp {
+    required Retcode retcode = 1;
+    optional uint32 avatar_id = 2;
+    optional uint32 avatar_trial_id = 3;
+    optional uint32 reclaim_avatar_id = 4;
+    optional uint32 elf_id = 5;
+    repeated uint32 backup_avatar_id_list = 6;
+
+    enum CmdId {
+        CMD_ID = 308;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_LOBBY = 2;
+        AVATAR_NOT_EXIST = 3;
+        STATUS_ERROR = 4;
+        SERVER_BUSY = 5;
+        ELF_NOT_EXIST = 6;
+    }
+}

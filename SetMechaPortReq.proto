@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "MechaSlot.proto";
+message SetMechaPortReq {
+    optional MechaSlot slot = 1;
+    optional uint32 mecha_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4518;
+    }
+}

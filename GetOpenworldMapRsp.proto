@@ -1,0 +1,38 @@
+syntax = "proto2";
+
+import "OpenworldAreaEntityState.proto";
+import "OpenworldAreaInfo.proto";
+import "OpenworldBossHunt.proto";
+import "OpenworldActivity.proto";
+import "OpenworldTechData.proto";
+import "OpenworldQuestData.proto";
+import "OpenworldStat.proto";
+import "OpenworldOverView.proto";
+import "OpenworldEvent.proto";
+message GetOpenworldMapRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 cycle = 3;
+    repeated OpenworldEvent event_list = 4;
+    optional uint32 event_random_seed = 5;
+    optional string spawn_point = 6;
+    repeated OpenworldOverView over_view_list = 7;
+    repeated OpenworldStat stat_list = 8;
+    optional uint32 status = 9;
+    required OpenworldQuestData quest_data = 11;
+    required OpenworldTechData tech_data = 12;
+    optional uint32 has_take_finish_reward_cycle = 13;
+    required OpenworldActivity activity_data = 14;
+    required OpenworldBossHunt boss_hunt = 15;
+    repeated OpenworldAreaInfo area_info_list = 16;
+    repeated OpenworldAreaEntityState area_entity_state_list = 17;
+    repeated uint32 finish_once_event_list = 19;
+
+    enum CmdId {
+        CMD_ID = 4499;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

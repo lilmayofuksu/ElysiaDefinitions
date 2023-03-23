@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum RaffleActivityType {
+    RAFFLE_ACTIVITY_NONE = 0;
+    RAFFLE_ACTIVITY_MONOPOLY = 1;
+}

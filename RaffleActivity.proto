@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "Raffle.proto";
+message RaffleActivity {
+    optional uint32 cur_schedule_id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    repeated Raffle raffle_list = 4;
+}

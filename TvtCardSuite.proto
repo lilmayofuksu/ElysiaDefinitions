@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message TvtCardSuite {
+    repeated uint32 card_id_list = 1;
+}

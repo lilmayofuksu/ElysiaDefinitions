@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message OpenworldChapterAccelerateLevelUpBuildingRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4640;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        BUILDING_ERROR = 3;
+        NOT_IN_PROGRESS = 4;
+        MATERIAL_ERROR = 5;
+        MATERIAL_LACK = 6;
+    }
+}

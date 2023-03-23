@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum CookEffectType {
+    COOK_ADD_BUFFER = 1;
+    COOK_REVIVE = 2;
+    COOK_RECOVER_ONE_HP = 3;
+    COOK_RECOVER_ALL_HP = 4;
+    COOK_RECOVER_ONE_SP = 5;
+    COOK_RECOVER_ALL_SP = 6;
+}

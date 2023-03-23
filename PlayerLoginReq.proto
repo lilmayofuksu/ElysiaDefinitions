@@ -1,0 +1,34 @@
+syntax = "proto2";
+
+import "DeviceType.proto";
+message PlayerLoginReq {
+    optional uint32 last_server_packet_id = 2;
+    optional string cps = 3;
+    optional string check_sum = 4;
+    optional string device_uuid = 5;
+    optional string android_signatures = 6;
+    optional string language = 7;
+    optional string advertiser_id = 8;
+    optional bytes security_cmd_reply = 9;
+    optional uint32 last_login_version = 10;
+    optional uint32 account_type = 11;
+    optional string account_uid = 12;
+    optional DeviceType device_type = 13;
+    optional uint32 user_type = 14;
+    optional string user_ip = 15;
+    optional uint32 tag = 16;
+    optional string client_version = 17;
+    optional string client_device = 18;
+    optional string system_info = 19;
+    optional string android_sign = 20;
+    optional uint32 limit_level = 21;
+    optional uint32 black_list_end_time = 22;
+    optional bool is_bind_access = 23;
+    optional uint32 login_session_token = 25;
+    optional string hoyolab_account_uid = 26;
+    optional uint32 user_port = 27;
+
+    enum CmdId {
+        CMD_ID = 6;
+    }
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RpgTaleFlag.proto";
+message RpgTaleLevelUpAbilityRsp {
+    required Retcode retcode = 1;
+    optional uint32 tale_id = 2;
+    optional uint32 ability_id = 3;
+    repeated RpgTaleFlag limit_flag_list = 4;
+
+    enum CmdId {
+        CMD_ID = 2383;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TARGET_LEVEL_ERROR = 2;
+        MATERIAL_LACK = 3;
+        FLAG_LIMIT = 4;
+        ABILITY_ERROR = 5;
+    }
+}

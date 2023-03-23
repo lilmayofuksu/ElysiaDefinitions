@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "FarmProduceMaterialDetail.proto";
+import "FarmSlotDetail.proto";
+message FarmActivityNotify {
+    optional uint32 farm_level = 1;
+    optional uint32 farm_exp = 2;
+    repeated FarmSlotDetail slot_detail_list = 3;
+    repeated FarmProduceMaterialDetail produce_material_list = 4;
+
+    enum CmdId {
+        CMD_ID = 1395;
+    }
+}

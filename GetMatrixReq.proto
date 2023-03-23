@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetMatrixReq {
+
+    enum CmdId {
+        CMD_ID = 2320;
+    }
+}

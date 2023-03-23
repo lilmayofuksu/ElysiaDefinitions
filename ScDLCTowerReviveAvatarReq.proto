@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ScDLCTowerReviveAvatarReq {
+    optional string report_ext = 1;
+
+    enum CmdId {
+        CMD_ID = 6343;
+    }
+}

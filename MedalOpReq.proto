@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "MedalOpType.proto";
+message MedalOpReq {
+    optional MedalOpType op = 1;
+    optional uint32 on_id = 2;
+    optional uint32 off_id = 3;
+
+    enum CmdId {
+        CMD_ID = 451;
+    }
+}

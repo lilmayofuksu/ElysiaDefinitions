@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "RestaurantOrder.proto";
+import "RestaurantRoom.proto";
+message GetRestaurantActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 facility_level = 3;
+    repeated RestaurantRoom room_list = 4;
+    repeated RestaurantOrder order_list = 5;
+    optional uint32 weather_id = 6;
+
+    enum CmdId {
+        CMD_ID = 5861;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

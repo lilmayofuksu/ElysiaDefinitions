@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum GodWarBitmapType {
+    GOD_WAR_BITMAP_EVENT = 1;
+}

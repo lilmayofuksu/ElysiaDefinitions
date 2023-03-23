@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "FishRewardSrc.proto";
+message ChatworldFishRewardNotify {
+    optional FishRewardSrc reward_src = 1;
+    optional uint32 fish_id = 2;
+    optional uint32 add_currency_num = 3;
+    optional uint32 cur_daily_get_currency_num = 4;
+    required RewardData extra_reward_data = 5;
+
+    enum CmdId {
+        CMD_ID = 2441;
+    }
+}

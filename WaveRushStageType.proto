@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum WaveRushStageType {
+    WAVE_RUSH_STAGE_MAINLINE = 1;
+    WAVE_RUSH_STAGE_DAILY = 2;
+    WAVE_RUSH_STAGE_TOWER = 3;
+}

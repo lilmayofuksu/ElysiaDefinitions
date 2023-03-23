@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message UpdateOpenworldBossStatusReq {
+    optional uint32 map_id = 1;
+    optional uint32 left_hp = 2;
+    optional uint32 battle_time = 3;
+    optional uint32 location_idx = 4;
+    optional string report_ext = 5;
+
+    enum CmdId {
+        CMD_ID = 4522;
+    }
+}

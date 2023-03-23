@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ChooseReclaimGachaRsp {
+    required Retcode retcode = 1;
+    optional uint32 item_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1180;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_CANDIDATE = 2;
+        ITEM_ERROR = 3;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message SlgEnrollRsp {
+    required Retcode retcode = 1;
+    optional uint32 battle_schedule_id = 2;
+
+    enum CmdId {
+        CMD_ID = 6056;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        BATTLE_SCHEDULE_ID_ERROR = 2;
+        HAS_ENROLL = 3;
+        TOO_FREQUENT = 4;
+        FEATURE_CLOSED = 5;
+    }
+}

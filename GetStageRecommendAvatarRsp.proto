@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "StageRecommendAvatar.proto";
+message GetStageRecommendAvatarRsp {
+    required Retcode retcode = 1;
+    repeated StageRecommendAvatar stage_recommend_avatar_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1542;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ID_TOO_MUCH = 2;
+    }
+}

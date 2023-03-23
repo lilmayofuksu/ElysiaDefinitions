@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "StageCheatData.proto";
+message EndlessSingleModeActivityFinishFloorReq {
+    optional uint32 stage_id = 1;
+    optional uint32 floor = 2;
+    optional uint32 score = 3;
+    optional uint32 cost_time = 4;
+    repeated StageCheatData cheat_data_list = 5;
+
+    enum CmdId {
+        CMD_ID = 4038;
+    }
+}

@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message DiceyDungeonActivitySelectOrnamentRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional bool is_abandon = 3;
+
+    enum CmdId {
+        CMD_ID = 6517;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        SELECT_ORNAMENT_ERROR = 3;
+        REPLACE_ORNAMENT_ERROR = 4;
+        DUNGEON_NOT_BEGIN = 5;
+        DUNGEON_ROOM_ERROR = 6;
+        ROLE_ERROR = 7;
+        WEAPON_ERROR = 8;
+        NO_REPLACE_ORNAMENT = 9;
+    }
+}

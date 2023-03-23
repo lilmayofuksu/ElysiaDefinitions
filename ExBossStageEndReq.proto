@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "StageCheatData.proto";
+import "StageEndStatus.proto";
+message ExBossStageEndReq {
+    required StageEndStatus end_status = 1;
+    optional uint32 cheat_type = 2;
+    repeated StageCheatData cheat_data_list = 3;
+    optional uint32 boss_id = 4;
+    optional uint32 score = 5;
+
+    enum CmdId {
+        CMD_ID = 531;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldWeeklySettleNotify {
+    optional uint32 map_id = 1;
+    optional uint32 quest_level = 2;
+    required RewardData reward = 3;
+
+    enum CmdId {
+        CMD_ID = 4451;
+    }
+}

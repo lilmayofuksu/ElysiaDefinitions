@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "TimeLimitAddUpType.proto";
+message TimeLimitAddUpRewardGrantNotify {
+    required TimeLimitAddUpType type = 1;
+    required uint32 add_up_value_need = 2;
+    required RewardData reward = 3;
+
+    enum CmdId {
+        CMD_ID = 257;
+    }
+}

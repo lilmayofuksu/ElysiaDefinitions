@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "FinishedExBossInfo.proto";
+message WeeklyReportExBossGroup {
+    optional uint32 boss_group_id = 1;
+    required FinishedExBossInfo finished_boss_info = 2;
+}

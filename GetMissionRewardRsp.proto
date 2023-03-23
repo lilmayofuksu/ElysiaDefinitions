@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GetMissionRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+    repeated uint32 mission_id_list = 3;
+    optional uint32 reward_unlock_time = 4;
+
+    enum CmdId {
+        CMD_ID = 115;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MISSION_ID_ERROR = 2;
+        MISSION_STATUS_ERROR = 3;
+        EQUIPMENT_FULL = 4;
+        EQUIPMENT_MATERIAL_LIMIT = 5;
+        EQUIPMENT_FRAGMENT_LIMIT = 6;
+        FEATURE_CLOSED = 7;
+        EQUIPMENT_ELF_FRAGMENT_LIMIT = 8;
+        TIME_LIMIT = 9;
+    }
+}

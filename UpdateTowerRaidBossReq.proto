@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message UpdateTowerRaidBossReq {
+    optional uint32 stage_id = 1;
+    optional uint32 boss_left_hp = 2;
+
+    enum CmdId {
+        CMD_ID = 4189;
+    }
+}

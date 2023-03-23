@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+enum TimeLimitAddUpType {
+    ADD_UP_VIP_POINT_ALL = 1;
+    ADD_UP_HCOIN_COST = 2;
+    ADD_UP_SCOIN_COST = 3;
+    ADD_UP_STAMINA_COST = 4;
+    ADD_UP_HCOIN_GACHA = 5;
+    ADD_UP_EXP = 6;
+    ADD_UP_VIP_POINT = 7;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "OpenworldChapterFurnaceWorkStatus.proto";
+message OpenworldChapterFurnaceWork {
+    optional uint32 unique_id = 1;
+    optional uint32 formula_id = 2;
+    optional OpenworldChapterFurnaceWorkStatus status = 5;
+    optional uint32 finish_time = 6;
+}

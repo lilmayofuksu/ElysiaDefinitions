@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message MpTeamLeaveLobbyReq {
+
+    enum CmdId {
+        CMD_ID = 373;
+    }
+}

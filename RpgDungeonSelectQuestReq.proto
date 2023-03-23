@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message RpgDungeonSelectQuestReq {
+    optional uint32 dungeon_id = 1;
+    optional uint32 quest_id = 2;
+    repeated uint32 avatar_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 5502;
+    }
+}

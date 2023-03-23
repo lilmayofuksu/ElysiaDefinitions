@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "GratuityStage.proto";
+message AssistGratuityStageRsp {
+    required Retcode retcode = 1;
+    required GratuityStage stage = 2;
+    optional uint32 relation_tag = 3;
+
+    enum CmdId {
+        CMD_ID = 4105;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+        STAGE_EXPIRED = 3;
+        STAGE_FINISH = 4;
+        HAVE_ASSIST = 5;
+        PLAYER_FULL = 6;
+        ASSIST_FULL = 7;
+        IS_SELF = 8;
+        ASSIST_STAMINA_LACK = 9;
+    }
+}

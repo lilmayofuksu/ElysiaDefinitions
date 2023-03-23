@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RoomInfo.proto";
+import "RoomMember.proto";
+import "PlayerRoomStatus.proto";
+message RoomGetStatusRsp {
+    required Retcode retcode = 1;
+    required PlayerRoomStatus player_room_status = 2;
+    repeated RoomMember member_list = 3;
+    required RoomInfo room_info = 4;
+
+    enum CmdId {
+        CMD_ID = 3182;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TOO_FREQUENT = 2;
+        ROOM_NOT_EXIST = 3;
+    }
+}

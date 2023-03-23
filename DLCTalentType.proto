@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum DLCTalentType {
+    DLC_TALENT_TYPE_NONE = 0;
+    DLC_TALENT_TYPE_AUTO = 1;
+    DLC_TALENT_TYPE_ACTIVE = 2;
+    DLC_TALENT_TYPE_PASSIVE = 3;
+    DLC_TALENT_TYPE_REFRESHABLE = 4;
+}

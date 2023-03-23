@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message ProtectEntry {
+    repeated DropItem possible_item_list = 1;
+    optional uint32 total_times = 2;
+    optional uint32 drop_times = 3;
+}

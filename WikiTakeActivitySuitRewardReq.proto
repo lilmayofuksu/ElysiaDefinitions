@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message WikiTakeActivitySuitRewardReq {
+    optional uint32 suit_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1592;
+    }
+}

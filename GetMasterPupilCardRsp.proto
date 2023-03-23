@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "MasterPupilCard.proto";
+import "MasterPupilRetcode.proto";
+message GetMasterPupilCardRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    required MasterPupilCard card = 2;
+
+    enum CmdId {
+        CMD_ID = 588;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetNinjaActivityReq {
+
+    enum CmdId {
+        CMD_ID = 4400;
+    }
+}

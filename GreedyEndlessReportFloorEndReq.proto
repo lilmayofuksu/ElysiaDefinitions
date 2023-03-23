@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "StageCheatData.proto";
+import "StageEndStatus.proto";
+import "LineupBriefInfo.proto";
+message GreedyEndlessReportFloorEndReq {
+    optional uint32 floor = 1;
+    repeated uint32 finish_challenge_id_list = 3;
+    optional uint32 score = 4;
+    optional uint32 extra_score = 5;
+    required LineupBriefInfo lineup_info = 6;
+    optional uint32 stage_cost_time = 7;
+    optional StageEndStatus end_status = 8;
+    repeated StageCheatData cheat_data_list = 9;
+
+    enum CmdId {
+        CMD_ID = 3455;
+    }
+}

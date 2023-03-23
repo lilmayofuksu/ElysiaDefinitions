@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "ClientMailKey.proto";
+message DelClientMailRsp {
+    optional Retcode retcode = 1;
+    required ClientMailKey mail_key = 2;
+    optional bool is_one_click_delete = 3;
+
+    enum CmdId {
+        CMD_ID = 3807;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAIL_NOT_EXIST = 2;
+        MAIL_NOT_DELETE = 3;
+    }
+}

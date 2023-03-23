@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixTreasure.proto";
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixTreasureNotify {
+    required ArmadaMatrixGridPos pos = 1;
+    required ArmadaMatrixTreasure treasure = 2;
+
+    enum CmdId {
+        CMD_ID = 2771;
+    }
+}

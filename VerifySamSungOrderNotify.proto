@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message VerifySamSungOrderNotify {
+    optional string purchase_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1581;
+    }
+}

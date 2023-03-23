@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldChapterTakeRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    required RewardData reward_data = 3;
+    optional uint32 max_reward_take_num = 4;
+
+    enum CmdId {
+        CMD_ID = 4572;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

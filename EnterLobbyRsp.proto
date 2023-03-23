@@ -1,0 +1,39 @@
+syntax = "proto2";
+
+message EnterLobbyRsp {
+    optional Retcode retcode = 1;
+    optional int32 sub_retcode = 2;
+    optional uint32 lobby_id = 3;
+    optional uint32 stage_id = 4;
+    optional uint32 avatar_id = 5;
+
+    enum CmdId {
+        CMD_ID = 304;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LOBBY_FULL = 2;
+        LEVEL_NOT_SATISFY = 3;
+        ALREADY_IN_LOBBY = 4;
+        LOBBY_FIGHTING = 5;
+        LOBBY_NOT_EXIST = 6;
+        NO_LOBBY = 7;
+        STAGE_ERROR = 8;
+        SERVER_BUSY = 9;
+        BAD_NETWORK = 10;
+        CLIENT_VERSION_ERROR = 11;
+        IN_MATCH_QUEUE = 12;
+        MATCH_STAGE_EXCEED_MAX = 13;
+        ALREADY_IN_MATCH = 14;
+        NO_AVAILABLE_AVATAR = 15;
+        NOT_ALLOW_CROSS_REGION = 16;
+        IN_SQUAD = 17;
+        IN_SQUAD_MATCH = 18;
+        IN_ROOM = 19;
+        FEATURE_LIMIT = 20;
+        NOT_IN_SAME_ARMADA = 21;
+        DATA_VERSION_CONFLICT = 22;
+        FEATURE_CLOSED = 23;
+    }
+}

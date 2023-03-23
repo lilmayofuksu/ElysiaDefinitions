@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum MatrixTriggerType {
+    MATRIX_TRIGGER_NONE = 0;
+    MATRIX_TRIGGER_STEP_NUM_GE = 1;
+    MATRIX_TRIGGER_POSITION = 2;
+    MATRIX_TRIGGER_STEP_NUM_LE = 3;
+}

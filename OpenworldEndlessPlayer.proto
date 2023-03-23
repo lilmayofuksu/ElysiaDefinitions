@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "OpenworldEndlessItem.proto";
+import "LineupBriefInfo.proto";
+import "OpenworldEndlessPlayerInvasionData.proto";
+message OpenworldEndlessPlayer {
+    optional uint32 uid = 1;
+    optional uint32 score = 2;
+    optional uint32 score_time = 3;
+    repeated OpenworldEndlessPlayerInvasionData invasion_list = 4;
+    required LineupBriefInfo last_lineup_info = 5;
+    repeated OpenworldEndlessItem effect_item_list = 6;
+    optional uint32 max_score = 7;
+    optional uint32 reward_progress = 8;
+    optional uint32 group_level = 9;
+    optional uint32 unfinished_monster_max_progress = 10;
+    required LineupBriefInfo max_score_lineup_info = 11;
+    optional uint32 greedy_max_finish_floor = 12;
+}

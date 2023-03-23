@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum QCandyBattleTriggerEventType {
+    QCANDY_BATTLE_TRIGGER_EVENT_TYPE_ADD_SCORE = 1;
+    QCANDY_BATTLE_TRIGGER_EVENT_TYPE_SUB_SKILL_USE_TIMES = 2;
+}

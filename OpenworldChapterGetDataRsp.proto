@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "OpenworldChapter.proto";
+message OpenworldChapterGetDataRsp {
+    required Retcode retcode = 1;
+    required OpenworldChapter chapter_data = 2;
+
+    enum CmdId {
+        CMD_ID = 4566;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

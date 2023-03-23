@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "VirtualGacha.proto";
+message VirtualGachaRsp {
+    required Retcode retcode = 1;
+    optional uint32 item_id = 2;
+    repeated uint32 candidate_item_id_list = 3;
+    required VirtualGacha gacha_status = 4;
+
+    enum CmdId {
+        CMD_ID = 3509;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        WAIT_CHOOSE = 2;
+        MATERIAL_LACK = 3;
+        EMPTY = 4;
+    }
+}

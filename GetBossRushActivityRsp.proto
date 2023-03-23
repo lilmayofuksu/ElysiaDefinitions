@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "BossRushBuff.proto";
+message GetBossRushActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 phase_id = 3;
+    repeated BossRushBuff buff_list = 4;
+
+    enum CmdId {
+        CMD_ID = 497;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        ACTIVITY_ERROR = 3;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum StageDifficulty {
+    STAGE_DIFFICULTY_NORMAL = 1;
+    STAGE_DIFFICULTY_HARD = 2;
+    STAGE_DIFFICULTY_HELL = 3;
+}

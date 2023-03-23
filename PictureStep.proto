@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message PictureStep {
+    optional uint32 step_id = 1;
+    optional uint32 choice_id = 2;
+}

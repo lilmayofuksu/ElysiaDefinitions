@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum GobackLoginRewardType {
+    GOBACK_LOGIN_REWARD_COMMON = 1;
+    GOBACK_LOGIN_REWARD_BONUS = 2;
+}

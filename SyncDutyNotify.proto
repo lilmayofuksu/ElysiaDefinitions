@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message SyncDutyNotify {
+    optional uint32 daily_duty_point = 1;
+    repeated uint32 has_take_daily_duty_id_list = 2;
+    optional uint32 weekly_duty_point = 3;
+    repeated uint32 has_take_weekly_duty_id_list = 4;
+
+    enum CmdId {
+        CMD_ID = 969;
+    }
+}

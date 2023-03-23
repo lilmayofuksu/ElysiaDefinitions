@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "MonopolyFloor.proto";
+import "MonopolyAreaStatus.proto";
+message MonopolyArea {
+    optional uint32 area_id = 1;
+    optional MonopolyAreaStatus status = 2;
+    repeated MonopolyFloor floor_list = 3;
+}

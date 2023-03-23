@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "SealedModeUseItem.proto";
+message SealedModeReceiveItemNotify {
+    required SealedModeUseItem item = 1;
+
+    enum CmdId {
+        CMD_ID = 712;
+    }
+}

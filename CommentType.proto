@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum CommentType {
+    COMMENT_OK = 1;
+    COMMENT_CANCEL = 2;
+    COMMENT_IGNORE = 3;
+}

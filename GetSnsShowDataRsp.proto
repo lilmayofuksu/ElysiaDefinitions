@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+import "SnsShowTowerRaidData.proto";
+import "PlayerDetailData.proto";
+import "PlayerCardData.proto";
+import "WikiDetailData.proto";
+import "SnsShowExBossData.proto";
+import "SnsShowEndlessData.proto";
+message GetSnsShowDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 sns_show_type = 2;
+    optional uint32 target_uid = 3;
+    required SnsShowEndlessData sns_show_endless_data = 4;
+    required SnsShowExBossData sns_show_ex_boss_data = 5;
+    repeated WikiDetailData wiki_detail_data_list = 6;
+    required PlayerCardData card_data = 7;
+    required PlayerDetailData player_data = 8;
+    optional uint32 target_uid_level = 9;
+    required SnsShowTowerRaidData sns_show_tower_raid_data = 10;
+
+    enum CmdId {
+        CMD_ID = 1267;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_PRIVILEDGE = 2;
+    }
+}

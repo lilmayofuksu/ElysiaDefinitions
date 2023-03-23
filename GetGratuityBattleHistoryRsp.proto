@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "GratuityBattle.proto";
+message GetGratuityBattleHistoryRsp {
+    required Retcode retcode = 1;
+    repeated GratuityBattle battle_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4109;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

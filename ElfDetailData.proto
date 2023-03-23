@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ElfSkillDetailData.proto";
+import "ElfTalentDetailData.proto";
+message ElfDetailData {
+    optional uint32 elf_id = 1;
+    optional uint32 level = 2;
+    optional uint32 star = 3;
+    repeated ElfTalentDetailData equip_talent_list = 4;
+    repeated ElfSkillDetailData skill_list = 5;
+}

@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message EndlessWarInfo {
+    optional uint32 uid = 1;
+    optional uint32 target_uid = 2;
+    optional uint32 item_id = 3;
+    optional Type type = 4;
+
+    enum Type {
+        USE_ITEM = 1;
+        BOMB_CANCEL = 2;
+        BOMB_BURST = 3;
+    }
+}

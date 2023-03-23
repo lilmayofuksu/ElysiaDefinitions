@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "EndlessRewardType.proto";
+import "LineupBriefInfo.proto";
+import "EndlessType.proto";
+message WeeklyReportEndless {
+    optional EndlessType endless_type = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 group_level = 3;
+    optional uint32 final_boss_id = 4;
+    optional uint32 score = 6;
+    required LineupBriefInfo lineup_info = 7;
+    optional uint32 reward_progress = 8;
+    optional EndlessRewardType reward_type = 9;
+    optional uint32 single_mode_score = 10;
+    optional uint32 battle_config_id = 11;
+    optional uint32 single_mode_activity_id = 12;
+    optional uint32 end_time = 13;
+    required RewardData greedy_reward_data = 14;
+    optional uint32 greedy_max_finish_floor = 15;
+}

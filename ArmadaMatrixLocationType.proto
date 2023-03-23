@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaMatrixLocationType {
+    ARMADA_MATRIX_LOCATION_NONE = 0;
+    ARMADA_MATRIX_LOCATION_PLAYER = 1;
+    ARMADA_MATRIX_LOCATION_MONSTER = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum DropLimitType {
+    DROP_LIMIT_STAGE = 1;
+    DROP_LIMIT_DLC = 2;
+    DROP_LIMIT_GOD_WAR = 3;
+    DROP_LIMIT_SC_DLC = 4;
+    DROP_LIMIT_CHAPTER_OW = 5;
+    DROP_LIMIT_CHAPTER_OW_MOON_TOWER = 6;
+}

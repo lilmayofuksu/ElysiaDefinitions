@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message QCandyBattleUnlockAvatarRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 avatar_id = 3;
+
+    enum CmdId {
+        CMD_ID = 6607;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        RANK_SCORE_LACK = 3;
+    }
+}

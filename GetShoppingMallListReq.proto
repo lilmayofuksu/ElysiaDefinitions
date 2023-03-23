@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetShoppingMallListReq {
+
+    enum CmdId {
+        CMD_ID = 1157;
+    }
+}

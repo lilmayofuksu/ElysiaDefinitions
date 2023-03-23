@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "KingdomWarPhasePlayerData.proto";
+import "KingdomWarPhaseKingdomData.proto";
+import "KingdomWarPoint.proto";
+message KingdomWarPhase {
+    optional uint32 phase_id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    optional uint32 today_begin_time = 4;
+    optional uint32 today_end_time = 5;
+    repeated KingdomWarPoint point_list = 6;
+    repeated KingdomWarPhaseKingdomData kingdom_list = 7;
+    required KingdomWarPhasePlayerData player_data = 8;
+    optional uint32 assist_point = 9;
+    optional uint32 last_refresh_time = 10;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message AiCyberTakePuzzleRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 area_id = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 6653;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_REWARD = 2;
+    }
+}

@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message RoomChatParam {
+    optional bool is_broadcast_msg = 1;
+}

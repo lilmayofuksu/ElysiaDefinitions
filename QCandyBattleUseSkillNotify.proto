@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "PlayerSkill.proto";
+message QCandyBattleUseSkillNotify {
+    required PlayerSkill player_use_skill = 1;
+
+    enum CmdId {
+        CMD_ID = 6587;
+    }
+}

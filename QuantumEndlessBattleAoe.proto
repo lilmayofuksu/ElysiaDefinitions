@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message QuantumEndlessBattleAoe {
+    optional uint32 aoe_num = 1;
+    optional uint32 evade_num = 2;
+}

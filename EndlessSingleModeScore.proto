@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EndlessSingleModeScore {
+    optional uint32 floor = 1;
+    optional uint32 score = 2;
+}

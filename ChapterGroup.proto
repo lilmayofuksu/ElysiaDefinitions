@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ChapterGroupSite.proto";
+message ChapterGroup {
+    optional uint32 id = 1;
+    repeated ChapterGroupSite site_list = 2;
+}

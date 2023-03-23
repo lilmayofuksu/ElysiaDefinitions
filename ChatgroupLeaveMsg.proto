@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ChatgroupLeaveMsg {
+    optional uint32 operator_uid = 1;
+    optional uint32 leave_uid = 2;
+}

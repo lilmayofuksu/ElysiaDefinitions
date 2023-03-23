@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message OpenworldHuntActivityTalentUpgradeRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4607;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        TALENT_LEVEL_ERROR = 3;
+        PRE_TALENT_LACK = 4;
+        MAP_NOT_OPEN = 5;
+        MAP_PROGRESS_LACK = 6;
+        MATERIAL_LACK = 7;
+    }
+}

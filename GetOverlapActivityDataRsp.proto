@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "OverlapActivityData.proto";
+message GetOverlapActivityDataRsp {
+    required Retcode retcode = 1;
+    required OverlapActivityData activity_data = 2;
+
+    enum CmdId {
+        CMD_ID = 4216;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

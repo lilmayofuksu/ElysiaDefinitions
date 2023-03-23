@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "Question.proto";
+message ArmadaMatrixAnswerQuestionRsp {
+    required Retcode retcode = 1;
+    required Question question = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 2833;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAVE_ANSWER = 2;
+        NOT_QUESTION = 3;
+    }
+}

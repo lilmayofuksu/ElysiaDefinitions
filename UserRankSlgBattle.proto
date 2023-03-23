@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message UserRankSlgBattle {
+    optional uint32 country_id = 1;
+}

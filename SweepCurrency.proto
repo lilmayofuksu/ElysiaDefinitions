@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message SweepCurrency {
+    optional uint32 point_id = 1;
+    optional uint32 add_num = 2;
+}

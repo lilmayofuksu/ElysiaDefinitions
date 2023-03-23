@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "KingdomWarOccupyRecord.proto";
+message KingdomWarPhaseKingdomData {
+    optional uint32 kingdom_id = 1;
+    optional uint32 fame = 2;
+    optional uint64 score_u64 = 3;
+    optional uint32 rank = 4;
+    optional uint32 status = 5;
+    optional uint32 bonus_point = 6;
+    optional uint32 last_fame = 7;
+    repeated KingdomWarOccupyRecord record_list = 8;
+    optional uint32 belief = 9;
+    optional uint32 last_belief = 10;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message KingdomWarExchangeCurrencyRsp {
+    required Retcode retcode = 1;
+    optional uint32 point_id = 2;
+    optional uint32 currency_num = 3;
+
+    enum CmdId {
+        CMD_ID = 3063;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        POINT_ERROR = 3;
+        COST_MATERIAL_LACK = 4;
+    }
+}

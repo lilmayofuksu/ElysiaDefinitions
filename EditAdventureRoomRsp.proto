@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message EditAdventureRoomRsp {
+    required Retcode retcode = 1;
+    optional uint32 slot_id = 2;
+
+    enum CmdId {
+        CMD_ID = 3921;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SLOT_UNLOCK = 2;
+        FURNITURE_LACK = 3;
+        FURNITURE_TYPE_ERROR = 4;
+        COLLECTION_TYPE_ERROR = 5;
+    }
+}

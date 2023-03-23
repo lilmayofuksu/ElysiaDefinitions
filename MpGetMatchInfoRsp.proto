@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "MpMatchInfo.proto";
+message MpGetMatchInfoRsp {
+    required Retcode retcode = 1;
+    repeated MpMatchInfo match_info_list = 2;
+    optional uint32 battle_begin_time = 3;
+    optional uint32 lobby_idx = 4;
+
+    enum CmdId {
+        CMD_ID = 467;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_MATCH_ROOM = 2;
+    }
+}

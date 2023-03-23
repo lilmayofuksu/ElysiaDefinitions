@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum NinjaSiteType {
+    NINJA_SITE_NORMAL = 1;
+    NINJA_SITE_BOSS = 2;
+    NINJA_SITE_CHALLENGE = 3;
+}

@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum SpecialArmadaMatrixGenericItem {
+    ARMADA_MATRIX_GENERIC_ITEM_CANDY = 7002;
+}

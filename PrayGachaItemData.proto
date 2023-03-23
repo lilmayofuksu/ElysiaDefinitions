@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message PrayGachaItemData {
+    optional uint32 id = 1;
+    optional uint32 total_num = 2;
+    optional uint32 gacha_num = 3;
+}

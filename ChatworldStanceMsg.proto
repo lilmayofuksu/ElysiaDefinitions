@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "ChatworldStance.proto";
+message ChatworldStanceMsg {
+    repeated ChatworldStance stance_list = 1;
+}

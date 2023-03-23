@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message GachaSortItem {
+    optional uint32 item_id = 1;
+    optional uint32 level = 2;
+    optional uint32 num = 3;
+}

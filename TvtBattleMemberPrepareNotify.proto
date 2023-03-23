@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TvtBattleMemberPrepareNotify {
+    optional bool is_cancel_prepare = 1;
+
+    enum CmdId {
+        CMD_ID = 3351;
+    }
+}

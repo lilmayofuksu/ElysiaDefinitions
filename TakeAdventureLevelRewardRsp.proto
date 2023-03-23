@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeAdventureLevelRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 has_take_reward_level = 2;
+    repeated RewardData reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3909;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+    }
+}

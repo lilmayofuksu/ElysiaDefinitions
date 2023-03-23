@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ChatgroupPosition {
+    CHATGROUP_POSITION_NONE = 0;
+    CHATGROUP_POSITION_CREATER = 1;
+    CHATGROUP_POSITION_MEMBER = 2;
+}

@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "StageEndStatus.proto";
+message RogueStageEndRsp {
+    required Retcode retcode = 1;
+    optional StageEndStatus end_status = 2;
+    repeated DropItem drop_item_list = 3;
+    optional uint32 progress = 4;
+    optional uint32 max_next_hard_level = 5;
+
+    enum CmdId {
+        CMD_ID = 284;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_BEGIN = 2;
+        AVATAR_ERROR = 3;
+        DROP_ERROR = 4;
+        NOT_INIT = 5;
+        ITEM_LACK = 6;
+    }
+}

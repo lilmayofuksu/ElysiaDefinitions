@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message QCandyBattleStartTimeLineNotify {
+    optional uint32 battle_begin_time = 1;
+    optional uint32 battle_end_time = 2;
+
+    enum CmdId {
+        CMD_ID = 6595;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message TeamAssaultActivityBossEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 boss_idx = 2;
+    optional uint32 score = 3;
+    optional uint32 activity_score = 4;
+
+    enum CmdId {
+        CMD_ID = 4027;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        ORDER_ERROR = 3;
+        CHEAT_ERROR = 4;
+    }
+}

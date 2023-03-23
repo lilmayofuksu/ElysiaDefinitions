@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeScDLCDailyQuestRewardReq {
+    optional uint32 quest_id = 1;
+
+    enum CmdId {
+        CMD_ID = 6324;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "UserRankData.proto";
+message RankShowData {
+    optional uint32 my_rank_type = 1;
+    optional uint32 my_rank = 2;
+    repeated UserRankData rank_list = 3;
+    optional uint32 my_score = 4;
+}

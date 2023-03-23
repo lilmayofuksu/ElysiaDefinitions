@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum OptionalBuffType {
+    OPTIONAL_BUFF_NONE = 0;
+    OPTIONAL_BUFF_DEBUFF = 1;
+    OPTIONAL_BUFF_RESTRICT = 2;
+}

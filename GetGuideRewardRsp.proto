@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GetGuideRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 186;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        GUIDE_ERROR = 2;
+        REWARD_EMPTY = 3;
+    }
+}

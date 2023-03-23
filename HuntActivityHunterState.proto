@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum HuntActivityHunterState {
+    HUNTER_STATE_NONE = 0;
+    HUNTER_STATE_PARTOL = 1;
+    HUNTER_STATE_CHASE = 2;
+    HUNTER_STATE_BATTLE = 3;
+    HUNTER_STATE_DEAD = 4;
+}

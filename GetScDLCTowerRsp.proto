@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "ScDLCTowerAvatarInfo.proto";
+message GetScDLCTowerRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 cur_floor = 3;
+    optional uint32 max_floor = 4;
+    repeated ScDLCTowerAvatarInfo avatar_info_list = 5;
+    optional uint32 max_score = 6;
+    optional uint32 avatar_revive_times = 7;
+    optional uint32 sc_dlc_fever_score = 8;
+    optional uint32 sc_dlc_climax_score = 9;
+    optional uint32 max_can_sweep_floor = 10;
+
+    enum CmdId {
+        CMD_ID = 6333;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

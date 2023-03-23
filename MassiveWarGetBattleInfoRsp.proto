@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "MassiveWarBattleInfo.proto";
+message MassiveWarGetBattleInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 battle_uniq_id = 2;
+    required MassiveWarBattleInfo battle_info = 3;
+
+    enum CmdId {
+        CMD_ID = 4803;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_EXIST = 2;
+    }
+}

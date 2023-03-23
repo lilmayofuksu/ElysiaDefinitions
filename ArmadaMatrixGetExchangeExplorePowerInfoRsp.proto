@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetExchangeExplorePowerInfoRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    optional uint32 stamina_exchanged = 2;
+
+    enum CmdId {
+        CMD_ID = 2761;
+    }
+}

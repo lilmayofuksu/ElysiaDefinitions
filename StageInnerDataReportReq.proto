@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "StageInnerElfData.proto";
+import "StageInnerMonsterData.proto";
+import "StageInnerAvatarData.proto";
+message StageInnerDataReportReq {
+    repeated StageInnerAvatarData avatar_list = 1;
+    repeated StageInnerMonsterData monster_list = 2;
+    optional uint32 rotate_camera_times = 3;
+    repeated StageInnerElfData elf_list = 4;
+    optional uint32 stage_id = 5;
+
+    enum CmdId {
+        CMD_ID = 131;
+    }
+}

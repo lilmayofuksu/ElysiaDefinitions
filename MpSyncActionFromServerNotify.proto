@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "MpAction.proto";
+message MpSyncActionFromServerNotify {
+    optional uint32 uid = 1;
+    optional MpAction action = 2;
+
+    enum CmdId {
+        CMD_ID = 1580;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "MpTeamStatus.proto";
+message GetTeamBriefInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 team_id = 2;
+    optional MpTeamStatus status = 3;
+    optional uint32 stage_id = 4;
+    optional bool is_friend_invitation = 5;
+
+    enum CmdId {
+        CMD_ID = 353;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        TEAM_NOT_EXIST = 2;
+    }
+}

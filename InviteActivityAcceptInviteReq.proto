@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message InviteActivityAcceptInviteReq {
+    optional string invite_code = 1;
+
+    enum CmdId {
+        CMD_ID = 1696;
+    }
+}

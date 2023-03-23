@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "JigsawBlockData.proto";
+message JigsawData {
+    optional uint32 jigsaw_id = 1;
+    repeated JigsawBlockData block_list = 2;
+    repeated uint32 waiting_piece_id_list = 3;
+    repeated uint32 taken_reward_group_id_list = 4;
+    optional bool is_finish_reward_taken = 5;
+    optional bool is_finished = 6;
+}

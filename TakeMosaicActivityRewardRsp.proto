@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeMosaicActivityRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4343;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+        NOT_FINISHED = 3;
+        NOT_OPEN = 4;
+    }
+}

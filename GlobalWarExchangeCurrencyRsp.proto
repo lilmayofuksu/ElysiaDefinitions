@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message GlobalWarExchangeCurrencyRsp {
+    required Retcode retcode = 1;
+    optional uint32 add_currency_num = 2;
+
+    enum CmdId {
+        CMD_ID = 3956;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        POINT_NOT_ACTIVE = 2;
+        MATERIAL_LACK = 3;
+        CURRENCY_FULL = 4;
+        AREA_NOT_FINISH = 5;
+        STAMINA_LACK = 6;
+    }
+}

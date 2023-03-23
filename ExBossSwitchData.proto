@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ExBossSwitchData {
+    optional uint32 boss_group_id = 1;
+}

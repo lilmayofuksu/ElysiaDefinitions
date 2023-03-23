@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message MonsterCardLearnRandomTalentReq {
+    optional uint32 activity_id = 1;
+    optional uint32 unique_id = 2;
+    optional uint32 cost_material_id = 3;
+    optional uint32 talent_index = 4;
+
+    enum CmdId {
+        CMD_ID = 5926;
+    }
+}

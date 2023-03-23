@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetRecommendMissionPanelListReq {
+
+    enum CmdId {
+        CMD_ID = 1519;
+    }
+}

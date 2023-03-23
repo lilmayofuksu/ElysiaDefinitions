@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+import "ScDLCAchievement.proto";
+import "ScDLCDailyQuestData.proto";
+import "ScDLCSupportNPC.proto";
+import "ScDLCAvatar.proto";
+import "ScDLCFever.proto";
+message GetScDLCRsp {
+    required Retcode retcode = 1;
+    required ScDLCFever fever = 2;
+    repeated ScDLCAvatar avatar_list = 3;
+    repeated ScDLCSupportNPC npc_list = 4;
+    required ScDLCDailyQuestData daily_quest_data = 5;
+    optional string name = 6;
+    repeated ScDLCAchievement achievement_list = 7;
+    optional uint32 max_challenge_reward_take_progress = 8;
+    repeated uint32 active_fever_ability_group_id_list = 9;
+    optional uint32 max_active_fever_ability_group_num = 10;
+
+    enum CmdId {
+        CMD_ID = 6301;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

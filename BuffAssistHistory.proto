@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message BuffAssistHistory {
+    optional uint32 assist_type = 1;
+    optional string peer_nickname = 2;
+    optional uint32 peer_assist_level = 3;
+    optional uint32 assist_stage_id = 4;
+    repeated uint32 assist_word_id_list = 5;
+}

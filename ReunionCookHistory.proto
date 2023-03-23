@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ReunionCookHistory {
+    optional uint32 book_id = 1;
+    optional uint32 daily_num = 2;
+    optional uint32 total_num = 3;
+}

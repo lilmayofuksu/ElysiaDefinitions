@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum DLCAvatarReviveCostType {
+    DLC_AVATAR_REVIVE_COST_TYPE_NONE = 0;
+    DLC_AVATAR_REVIVE_COST_TYPE_REVIVE_COIN = 1;
+    DLC_AVATAR_REVIVE_COST_TYPE_COIN = 2;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ExchangeRaffleMaterialReq {
+
+    enum CmdId {
+        CMD_ID = 3890;
+    }
+}

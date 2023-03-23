@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message GetDormVoteDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional Status status = 3;
+    optional uint32 end_time = 4;
+    optional string url = 5;
+
+    enum CmdId {
+        CMD_ID = 1139;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+    enum Status {
+        NOT_START = 0;
+        VOTING = 1;
+        REVIEWING = 2;
+        DISPLAYING = 3;
+    }
+}

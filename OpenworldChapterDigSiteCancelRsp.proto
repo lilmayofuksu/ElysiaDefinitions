@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message OpenworldChapterDigSiteCancelRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4668;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        NOT_IN_PROGRESS = 3;
+        BUILDING_ERROR = 4;
+        PROGRAM_FINISHED = 5;
+    }
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum PlotType {
+    PLOT_TYPE_NORMAL = 0;
+    PLOT_TYPE_DORM = 1;
+    PLOT_TYPE_MATRIX = 2;
+    PLOT_TYPE_RPG = 3;
+    PLOT_TYPE_ISLAND = 4;
+    PLOT_TYPE_CITY_ACTIVITY = 5;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum GeneralStageActivityScoreType {
+    GENERAL_ACTIVITY_SCORE_ACCUM = 1;
+    GENERAL_ACTIVITY_SCORE_TOP = 2;
+    GENERAL_ACTIVITY_SCORE_SINGLE_TOP = 3;
+    GENERAL_ACTIVITY_SCORE_MATERIAL_NUM = 4;
+}

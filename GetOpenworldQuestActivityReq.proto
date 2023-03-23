@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetOpenworldQuestActivityReq {
+
+    enum CmdId {
+        CMD_ID = 4546;
+    }
+}

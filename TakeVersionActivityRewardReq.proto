@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeVersionActivityRewardReq {
+    optional uint32 id = 1;
+
+    enum CmdId {
+        CMD_ID = 4225;
+    }
+}

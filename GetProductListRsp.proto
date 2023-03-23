@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "FoundationData.proto";
+import "Product.proto";
+message GetProductListRsp {
+    required Retcode retcode = 1;
+    repeated Product product_list = 2;
+    optional uint32 next_random_box_product_refresh_time = 3;
+    optional uint32 next_limit_product_refresh_time = 4;
+    repeated FoundationData foundation_list = 5;
+
+    enum CmdId {
+        CMD_ID = 99;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        DEVICE_ERROR = 2;
+    }
+}

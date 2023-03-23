@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "SlgBattlePointBossData.proto";
+import "SlgBattlePointCountryData.proto";
+message SlgBattlePointData {
+    optional uint32 point_id = 1;
+    optional uint32 occupy_country_id = 2;
+    repeated SlgBattlePointCountryData point_country_data_list = 3;
+    required SlgBattlePointBossData boss_data = 4;
+    repeated uint32 occupied_country_list = 5;
+}

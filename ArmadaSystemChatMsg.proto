@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+import "ArmadaPosition.proto";
+import "ArmadaCabinType.proto";
+import "GachaType.proto";
+import "ArmadaSystemChatMsgType.proto";
+message ArmadaSystemChatMsg {
+    optional ArmadaSystemChatMsgType type = 1;
+    optional uint32 uid = 2;
+    optional string nickname = 3;
+    optional uint32 avatar_id = 4;
+    optional uint32 dress_id = 5;
+    optional uint32 time = 6;
+    optional GachaType gacha_type = 7;
+    optional uint32 item_id = 8;
+    optional uint32 target_avatar_id = 9;
+    optional uint32 mission_id = 10;
+    optional uint32 armada_level = 11;
+    optional ArmadaCabinType cabin_type = 12;
+    optional uint32 cabin_level = 13;
+    optional ArmadaPosition position = 14;
+    optional uint32 target_uid = 15;
+    optional uint32 popl_cost = 16;
+    optional string old_name = 17;
+    optional string new_name = 18;
+    optional string text_map = 19;
+}

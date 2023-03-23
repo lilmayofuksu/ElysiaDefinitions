@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityBuildReq {
+    required TownCommonHead head = 1;
+    optional uint32 use_brick_index = 2;
+    optional uint32 use_brick_position = 3;
+    optional uint32 target_building_id = 4;
+    optional uint32 target_building_position = 5;
+    optional uint32 direction = 6;
+    repeated uint32 consume_building_unique_id_list = 7;
+
+    enum CmdId {
+        CMD_ID = 6454;
+    }
+}

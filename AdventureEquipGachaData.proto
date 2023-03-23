@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message AdventureEquipGachaData {
+    optional uint32 ticket_hcoin_cost = 1;
+    optional uint32 ticket_material_id = 2;
+    optional bool is_enable_baodi = 3;
+    optional uint32 gacha_times = 4;
+    optional uint32 new_protect_equip_prob = 5;
+    optional uint32 next_assure_new_equip_need_times = 6;
+}

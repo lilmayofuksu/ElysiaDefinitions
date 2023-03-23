@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "BattlePassTicketType.proto";
+message BuyBattlePassTicketReq {
+    optional BattlePassTicketType type = 1;
+
+    enum CmdId {
+        CMD_ID = 3752;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "SnsShowPriviledge.proto";
+message GetOtherPlayerClientSettingRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    optional uint32 client_setting_type = 3;
+    optional bool is_weekly_guide_switch_on = 4;
+    repeated SnsShowPriviledge sns_show_priviledge_list = 5;
+
+    enum CmdId {
+        CMD_ID = 1274;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

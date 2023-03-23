@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "SlgBattleBuffData.proto";
+message SlgBattleCountryData {
+    optional uint32 country_id = 1;
+    optional uint32 take_down_boss_num = 2;
+    repeated SlgBattleBuffData buff_list = 3;
+    optional uint32 country_score = 4;
+}

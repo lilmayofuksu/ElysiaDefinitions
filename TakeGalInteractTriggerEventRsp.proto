@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message TakeGalInteractTriggerEventRsp {
+    required Retcode retcode = 1;
+    optional uint32 avatar_id = 2;
+    optional uint32 event_id = 3;
+    required RewardData reward_data = 4;
+    required DropItem drop_item = 5;
+
+    enum CmdId {
+        CMD_ID = 816;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_SUCH_AVATAR = 2;
+        EVENT_ID_ERROR = 3;
+    }
+}

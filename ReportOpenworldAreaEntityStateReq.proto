@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message ReportOpenworldAreaEntityStateReq {
+    optional uint32 map_id = 1;
+    optional uint32 area_id = 2;
+    optional uint32 entity_id = 3;
+    optional uint32 entity_state = 4;
+
+    enum CmdId {
+        CMD_ID = 4542;
+    }
+}

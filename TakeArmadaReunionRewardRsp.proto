@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "ChatworldDishReward.proto";
+import "RewardData.proto";
+message TakeArmadaReunionRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 reward_id = 2;
+    required RewardData reward_data = 3;
+    repeated ChatworldDishReward reward_list = 4;
+
+    enum CmdId {
+        CMD_ID = 2838;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        NOT_IN_ARMADA = 3;
+        HAVE_TAKEN = 4;
+        QUIT_SHORT = 5;
+        IN_CD_TIME = 6;
+    }
+}

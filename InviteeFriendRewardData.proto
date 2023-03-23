@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message InviteeFriendRewardData {
+    optional uint32 level = 1;
+    repeated RewardData reward_list = 2;
+}

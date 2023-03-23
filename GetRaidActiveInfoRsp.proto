@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RaidActiveType.proto";
+message GetRaidActiveInfoRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional RaidActiveType active_type = 3;
+    optional bool has_daily_raid_activity = 4;
+
+    enum CmdId {
+        CMD_ID = 1623;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

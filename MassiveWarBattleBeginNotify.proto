@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "MassiveWarBattleInfo.proto";
+message MassiveWarBattleBeginNotify {
+    optional uint32 stage_id = 1;
+    optional uint32 battle_uniq_id = 2;
+    optional string transaction_str = 3;
+    required MassiveWarBattleInfo battle_info = 4;
+
+    enum CmdId {
+        CMD_ID = 4806;
+    }
+}

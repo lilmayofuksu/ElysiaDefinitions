@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetChallengeStepRewardReq {
+    optional uint32 step_id = 1;
+
+    enum CmdId {
+        CMD_ID = 536;
+    }
+}

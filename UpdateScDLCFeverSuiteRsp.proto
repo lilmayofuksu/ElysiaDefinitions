@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message UpdateScDLCFeverSuiteRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 6305;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SENSITIVE_WORDS = 2;
+        SLOT_LACK = 3;
+        INVALID_SKILL_CHIP = 4;
+        NAME_FORMAT_ERROR = 5;
+    }
+}

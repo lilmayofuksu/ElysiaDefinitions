@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ResetGodWarChallengeReq {
+    optional uint32 god_war_id = 1;
+    optional uint32 tale_id = 2;
+    optional ResetChannel channel = 3;
+
+    enum CmdId {
+        CMD_ID = 6157;
+    }
+    enum ResetChannel {
+        USER_OPERATION = 1;
+        FORCE_SETTLE = 2;
+    }
+}

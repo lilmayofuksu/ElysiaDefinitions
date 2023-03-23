@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityMaterialUseReq {
+    required TownCommonHead head = 1;
+    optional uint32 material_id = 2;
+    optional uint32 target_param = 3;
+
+    enum CmdId {
+        CMD_ID = 6470;
+    }
+}

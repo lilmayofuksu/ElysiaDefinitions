@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ElfTalentDetailData {
+    optional uint32 elf_talent_id = 1;
+    optional uint32 talent_level = 2;
+}

@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum RankScheduleType {
+    RANK_SCHEDULE_DORM = 1;
+}

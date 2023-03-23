@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message TvtActivity {
+    optional uint32 cur_schedule_id = 1;
+    optional uint32 open_time = 2;
+    optional uint32 close_time = 3;
+    optional uint32 tvt_division = 6;
+    optional uint32 tvt_star = 7;
+    optional uint32 win_streak = 8;
+    repeated uint32 has_take_division_up_reward_list = 9;
+    optional uint32 total_battle_num = 10;
+    optional uint32 total_win = 11;
+    optional uint32 max_win_streak = 12;
+    optional uint32 mvp_num = 13;
+    repeated uint32 has_take_mission_group_reward_list = 14;
+    repeated OpenTimePeriod open_time_period_list = 15;
+    optional uint32 type = 16;
+    message OpenTimePeriod {
+        optional uint32 open_day_time = 1;
+        optional uint32 close_day_time = 2;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "MatrixGridPos.proto";
+message SyncMatrixCurEventNotify {
+    required MatrixGridPos pos = 1;
+    optional uint32 event_id = 2;
+    optional uint32 real_event_param = 3;
+
+    enum CmdId {
+        CMD_ID = 2334;
+    }
+}

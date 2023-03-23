@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message FinishRpgTaleStagePlotRsp {
+    required Retcode retcode = 1;
+    optional uint32 plot_id = 2;
+    optional uint32 dialog_id = 3;
+    optional uint32 tale_id = 4;
+
+    enum CmdId {
+        CMD_ID = 2371;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

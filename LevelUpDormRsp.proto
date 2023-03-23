@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message LevelUpDormRsp {
+    required Retcode retcode = 1;
+    optional uint32 level_up_house_id = 2;
+    optional uint32 level_up_end_time = 3;
+
+    enum CmdId {
+        CMD_ID = 614;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        BUSY = 2;
+        HOUSE_NOT_EXIST = 3;
+        LEVEL_ERROR = 4;
+        COMFORT_LIMIT = 5;
+        MATERIAL_LIMIT = 6;
+    }
+}

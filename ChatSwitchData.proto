@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ChatSwitchData {
+    optional uint32 chat_switch_channel_type = 1;
+}

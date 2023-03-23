@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "ChatworldPosition.proto";
+message ChatworldMsgMove {
+    required ChatworldPosition target_position = 1;
+}

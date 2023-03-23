@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ElfFragmentSwitchData {
+    optional uint32 elf_id = 1;
+}

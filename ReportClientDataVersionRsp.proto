@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ReportClientDataVersionRsp {
+    optional uint32 server_version = 1;
+
+    enum CmdId {
+        CMD_ID = 399;
+    }
+}

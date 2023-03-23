@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message TileMapCell {
+    optional uint32 cell_id = 1;
+    required CellLayer ground = 2;
+    required CellLayer decoration = 3;
+    optional uint32 barrier = 4;
+    optional uint32 fog = 5;
+    optional uint32 terrain = 6;
+    message CellLayer {
+        optional uint32 model_id = 1;
+        optional uint32 direction = 2;
+    }
+}

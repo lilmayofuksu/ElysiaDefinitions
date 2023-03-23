@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message ChatworldBeastTakeTreasureRsp {
+    required Retcode retcode = 1;
+    repeated DropItem drop_item_list = 2;
+    optional uint32 beast_id = 3;
+    optional uint32 treasure_rank_id = 4;
+
+    enum CmdId {
+        CMD_ID = 2472;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+        DAILY_LIMIT = 3;
+        NOT_EXIST = 4;
+        NO_RIGHT = 5;
+        NOT_OPEN = 6;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message WaveRushBuffSuite {
+    optional uint32 suite_id = 1;
+    optional string suite_name = 2;
+    repeated uint32 buff_id_list = 3;
+}

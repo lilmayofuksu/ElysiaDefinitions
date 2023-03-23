@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "FarmProduceMaterialDetail.proto";
+import "FarmSlotDetail.proto";
+message GetFarmActivityDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 farm_level = 3;
+    optional uint32 farm_exp = 4;
+    repeated FarmSlotDetail slot_detail_list = 5;
+    repeated FarmProduceMaterialDetail produce_material_list = 6;
+
+    enum CmdId {
+        CMD_ID = 1386;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+    }
+}

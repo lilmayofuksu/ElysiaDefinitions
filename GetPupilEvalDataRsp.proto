@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "MasterPupilEvalMsg.proto";
+import "MasterPupilRetcode.proto";
+message GetPupilEvalDataRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    required MasterPupilEvalMsg eval_msg = 2;
+
+    enum CmdId {
+        CMD_ID = 660;
+    }
+}

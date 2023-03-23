@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TvtCardTransformMaterialReq {
+    repeated uint32 material_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 3317;
+    }
+}

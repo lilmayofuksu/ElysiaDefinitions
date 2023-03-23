@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetStageChapterReq {
+
+    enum CmdId {
+        CMD_ID = 965;
+    }
+}

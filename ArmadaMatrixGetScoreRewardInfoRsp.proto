@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetScoreRewardInfoRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    repeated uint32 reward_granted_id_list = 2;
+    repeated uint32 armada_reward_granted_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2779;
+    }
+}

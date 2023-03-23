@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message BulletinScoreActivity {
+    optional uint32 activity_id = 1;
+    optional uint32 score = 2;
+    repeated uint32 has_take_reward_list = 3;
+    repeated uint32 has_take_reward_progress_list = 4;
+}

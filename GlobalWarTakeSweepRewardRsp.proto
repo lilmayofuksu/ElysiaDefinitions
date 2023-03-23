@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "SweepCurrency.proto";
+message GlobalWarTakeSweepRewardRsp {
+    required Retcode retcode = 1;
+    repeated SweepCurrency sweep_currency_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3960;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        POINT_NOT_FINISH = 2;
+        SWEEP_MATERIAL_CD = 3;
+    }
+}

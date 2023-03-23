@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum EventType {
+    EVENT_TYPE_ISLAND = 1;
+    EVENT_TYPE_CITY_ACTIVITY = 2;
+}

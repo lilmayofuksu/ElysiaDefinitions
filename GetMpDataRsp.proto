@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+import "MpSkill.proto";
+import "MpSkillPoint.proto";
+import "MpDataType.proto";
+message GetMpDataRsp {
+    required Retcode retcode = 1;
+    optional MpDataType data_type = 2;
+    optional OpType op_type = 3;
+    optional uint32 mp_level = 4;
+    optional uint32 mp_exp = 5;
+    repeated MpSkillPoint skill_point_list = 6;
+    repeated MpSkill skill_list = 7;
+    optional uint32 team_avatar_id = 8;
+    optional uint32 punish_end_time = 9;
+
+    enum CmdId {
+        CMD_ID = 341;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+    enum OpType {
+        INIT_DATA = 0;
+        ADD_DATA = 1;
+        UPDATE_DATA = 2;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message OpenworldStory {
+    optional uint32 story_id = 1;
+    optional uint32 story_progress = 2;
+    optional uint32 accept_time = 3;
+}

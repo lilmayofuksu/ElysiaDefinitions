@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message Bulletin {
+    optional uint32 id = 1;
+    optional uint32 type = 2;
+    optional uint32 weight = 3;
+    optional string title_button = 4;
+    optional string title = 5;
+    optional string banner_path = 6;
+    optional string event_date_str = 7;
+    optional string content = 8;
+    optional uint32 mark = 9;
+    optional uint32 begin_time = 10;
+    optional uint32 end_time = 11;
+    optional uint32 update_time = 12;
+    optional uint32 show_config_id = 13;
+}

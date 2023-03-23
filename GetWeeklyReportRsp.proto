@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "WeeklyReportBlockZone.proto";
+import "WeeklyReportUltraEndless.proto";
+import "WeeklyReportEndless.proto";
+import "WeeklyReportExBoss.proto";
+message GetWeeklyReportRsp {
+    required Retcode retcode = 1;
+    repeated WeeklyReportExBoss ex_boss_data_list = 2;
+    repeated WeeklyReportEndless endless_data_list = 3;
+    repeated WeeklyReportUltraEndless ultra_endless_list = 4;
+    required WeeklyReportBlockZone block_zone = 5;
+    optional uint32 target_uid = 6;
+
+    enum CmdId {
+        CMD_ID = 5101;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

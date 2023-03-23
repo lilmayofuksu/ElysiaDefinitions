@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message CreditAccount {
+    optional uint32 id = 1;
+    optional uint32 score = 2;
+}

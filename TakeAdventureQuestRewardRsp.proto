@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message TakeAdventureQuestRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 pool_id = 2;
+    repeated DropItem drop_item_list = 3;
+    optional uint32 quest_id = 4;
+
+    enum CmdId {
+        CMD_ID = 3905;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_QUEST = 2;
+        HAS_TAKE = 3;
+        NOT_END = 4;
+    }
+}

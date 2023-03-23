@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ShareRewardType {
+    SHARE_REWARD_TYPE_NONE = 0;
+    SHARE_REWARD_TYPE_ONCE = 1;
+    SHARE_REWARD_TYPE_DAILY = 2;
+}

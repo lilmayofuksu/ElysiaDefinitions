@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message MpCreateTeamRsp {
+    required Retcode retcode = 1;
+    optional uint32 team_id = 2;
+
+    enum CmdId {
+        CMD_ID = 349;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ALREADY_IN_TEAM = 2;
+        CLIENT_VERSION_ERROR = 3;
+        SERVER_BUSY = 4;
+        IN_SQUAD = 5;
+        IN_SQUAD_MATCH = 6;
+        IN_ROOM = 7;
+        FEATURE_LIMIT = 8;
+    }
+}

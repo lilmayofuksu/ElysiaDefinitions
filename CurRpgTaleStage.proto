@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message CurRpgTaleStage {
+    optional uint32 stage_id = 1;
+    optional uint32 cur_floor = 2;
+    repeated uint32 avatar_list = 3;
+    optional string client_data = 4;
+}

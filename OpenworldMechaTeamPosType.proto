@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum OpenworldMechaTeamPosType {
+    MECHA_TEAM_POS_1 = 1;
+    MECHA_TEAM_POS_2 = 2;
+    MECHA_TEAM_POS_3 = 3;
+    MECHA_TEAM_POS_4 = 4;
+    MECHA_TEAM_POS_5 = 5;
+}

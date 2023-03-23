@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum ArmadaPosition {
+    ARMADA_POSITION_NONE = 0;
+    ARMADA_POSITION_LEADER = 1;
+    ARMADA_POSITION_VICELEADER = 2;
+    ARMADA_POSITION_MEMBER = 3;
+}

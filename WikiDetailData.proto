@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message WikiDetailData {
+    optional uint32 wiki_detail_type = 1;
+    optional uint32 wiki_detail_num_get = 2;
+    optional uint32 wiki_detail_score = 3;
+    optional uint32 wiki_detail_num_total = 4;
+}

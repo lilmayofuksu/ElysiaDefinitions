@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeMissionThemeRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 theme_id = 2;
+    optional uint32 mission_id = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 4210;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MISSION_NOT_FINISH = 2;
+        ALREADY_TAKEN = 3;
+        EQUIPMENT_FULL = 4;
+        EQUIPMENT_MATERIAL_LIMIT = 5;
+        EQUIPMENT_FRAGMENT_LIMIT = 6;
+    }
+}

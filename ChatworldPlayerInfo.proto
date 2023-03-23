@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "ChatworldBattle.proto";
+import "Medal.proto";
+import "ChatworldBuff.proto";
+import "CommonChatworldRedEnvelope.proto";
+import "ChatworldPosition.proto";
+message ChatworldPlayerInfo {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 avatar_id = 3;
+    optional uint32 chat_dress_id = 4;
+    required ChatworldPosition position = 5;
+    optional uint32 chat_avatar_id = 6;
+    optional uint32 chat_frame_id = 7;
+    repeated uint32 holding_list = 8;
+    optional uint32 level = 9;
+    optional string armada_name = 10;
+    optional uint32 mp_level = 11;
+    optional uint32 on_medal_id = 12;
+    optional uint32 action_id = 13;
+    repeated CommonChatworldRedEnvelope chatworld_red_envelope_list = 14;
+    optional bool is_all_info = 15;
+    optional uint32 left_hp = 16;
+    optional uint32 next_reborn_time = 17;
+    repeated ChatworldBuff buff_list = 18;
+    optional uint32 runtime_tag = 20;
+    optional uint32 custom_head_id = 22;
+    required Medal on_medal = 23;
+    required ChatworldBattle battle_info = 32;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ArmadaMatrixBuffData {
+    optional uint32 id = 1;
+    optional uint32 num = 2;
+    optional bool activated = 3;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message QuickApplyJoinArmadaRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2733;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+        ALREADY_IN_ARMADA = 3;
+        NO_QUICK_APPLY_ARMADA = 4;
+        IN_CD_TIME = 5;
+        IN_LOW_POPL_CD_TIME = 6;
+        FEATURE_CLOSED = 7;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ClaimStaminaRsp {
+    required Retcode retcode = 1;
+    optional uint32 stamina = 2;
+
+    enum CmdId {
+        CMD_ID = 650;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FACILITY_LOCK = 2;
+        STORE_LACK = 3;
+        POWER_LACK = 4;
+        STAMINA_EXCEED = 5;
+    }
+}

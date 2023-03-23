@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+import "CommonChatworldRedEnvelope.proto";
+import "ChatworldEntity.proto";
+message EnterCommonChatworldRsp {
+    required Retcode retcode = 1;
+    optional uint32 chatworld_id = 2;
+    repeated ChatworldEntity player_info_list = 3;
+    required ChatworldEntity self_info = 4;
+    repeated CommonChatworldRedEnvelope npc_red_envelope_list = 5;
+    optional uint32 time = 6;
+    optional uint32 scene_id = 7;
+
+    enum CmdId {
+        CMD_ID = 2401;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CHATWORLD_ID_ERROR = 2;
+        ENTER_ERROR = 3;
+        CHATWORLD_FULL = 4;
+        LACK_LEVEL = 5;
+        NO_QAVATAR = 6;
+        NOT_JOIN_ACTIVITY = 7;
+        SCENE_NOT_EXIST = 8;
+        NOT_OPEN = 9;
+        IS_ENTERING = 10;
+        NOT_IN_ARMADA = 11;
+    }
+}

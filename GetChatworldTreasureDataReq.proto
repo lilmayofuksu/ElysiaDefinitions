@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GetChatworldTreasureDataReq {
+    optional uint32 chatworld_id = 1;
+    optional uint32 cur_treasure_schedule_id = 2;
+
+    enum CmdId {
+        CMD_ID = 2415;
+    }
+}

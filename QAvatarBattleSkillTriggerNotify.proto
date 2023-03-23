@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "QAvatarBattleSkillInfo.proto";
+import "QAvatarBattleEntity.proto";
+message QAvatarBattleSkillTriggerNotify {
+    optional uint32 trigger_entity_id = 1;
+    required QAvatarBattleEntity trigger_entity = 2;
+    required QAvatarBattleSkillInfo skill_info = 3;
+
+    enum CmdId {
+        CMD_ID = 5610;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "StageCheatData.proto";
+import "CreditType.proto";
+message CreditReportDataReq {
+    optional CreditType type = 1;
+    repeated StageCheatData cheat_data_list = 2;
+
+    enum CmdId {
+        CMD_ID = 6000;
+    }
+}

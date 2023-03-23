@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TvtBattleEndNotify {
+
+    enum CmdId {
+        CMD_ID = 3353;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ChatMsg.proto";
+message GetChatgroupHistoryChatMsgRsp {
+    required Retcode retcode = 1;
+    optional uint32 chatgroup_id = 2;
+    repeated ChatMsg chat_msg_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2219;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

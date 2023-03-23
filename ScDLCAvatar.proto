@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ScDLCTalent.proto";
+message ScDLCAvatar {
+    optional uint32 avatar_id = 1;
+    optional uint32 level = 2;
+    repeated ScDLCTalent talent_list = 3;
+    repeated uint32 equip_talent_list = 4;
+}

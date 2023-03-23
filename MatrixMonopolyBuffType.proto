@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum MatrixMonopolyBuffType {
+    MATRIX_MONOPOLY_BUFF_NONE = 0;
+    MATRIX_MONOPOLY_BUFF_DICE = 1;
+    MATRIX_MONOPOLY_BUFF_STAGE = 2;
+    MATRIX_MONOPOLY_BUFF_DROP = 3;
+}

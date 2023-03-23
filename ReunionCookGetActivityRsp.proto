@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ReunionCookActivity.proto";
+message ReunionCookGetActivityRsp {
+    required Retcode retcode = 1;
+    required ReunionCookActivity reunion_cook_activity = 2;
+
+    enum CmdId {
+        CMD_ID = 4381;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

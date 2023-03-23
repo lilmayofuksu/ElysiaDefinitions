@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message AddAvatarExpByMaterialReq {
+    required uint32 avatar_id = 1;
+    required uint32 material_id = 2;
+    required uint32 material_num = 3;
+
+    enum CmdId {
+        CMD_ID = 35;
+    }
+}

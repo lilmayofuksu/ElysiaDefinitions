@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ChatworldBattleUseItemRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2423;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_CHATWORLD = 2;
+        NOT_EXIST = 3;
+    }
+}

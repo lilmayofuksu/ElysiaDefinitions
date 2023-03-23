@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message EquipScDLCAvatarTalentReq {
+    optional uint32 avatar_id = 1;
+    repeated uint32 equip_talent_list = 2;
+
+    enum CmdId {
+        CMD_ID = 6314;
+    }
+}

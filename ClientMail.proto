@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "MailAttachment.proto";
+import "ClientMailKey.proto";
+message ClientMail {
+    required ClientMailKey key = 1;
+    optional string title = 2;
+    optional string content = 3;
+    optional string sender = 4;
+    optional uint32 time = 5;
+    required MailAttachment attachment = 6;
+    optional bool is_attachment_got = 7;
+    optional uint32 expire_time = 8;
+    repeated string content_param_list = 9;
+    optional uint32 template_id = 10;
+    optional bool is_read = 11;
+    optional uint32 mail_style = 12;
+    optional string img_path = 13;
+}

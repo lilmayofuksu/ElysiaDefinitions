@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ChatReportRsp {
+    required Retcode retcode = 1;
+    optional uint32 cd_left_time = 2;
+
+    enum CmdId {
+        CMD_ID = 1151;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CHAT_BLOCKED = 2;
+        IN_REPORT_CD = 3;
+        SENSITIVE_WORDS = 4;
+    }
+}

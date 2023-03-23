@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message DiceyDungeonOrnament {
+    optional uint32 ornament_id = 1;
+    optional uint32 level = 2;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message MpTeamChangeLeaderRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 363;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+        NOT_LEADER = 3;
+        NOT_ENOUGH_STAMINA = 4;
+        NOT_ENOUGH_ENTER_TIMES = 5;
+        NOT_ALLOW_CHANGE_LEADER = 6;
+    }
+}

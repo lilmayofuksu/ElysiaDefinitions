@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ElfFragmentTransformReq {
+    optional uint32 elf_fragment_id = 1;
+    optional uint32 elf_fragment_num = 2;
+
+    enum CmdId {
+        CMD_ID = 2121;
+    }
+}

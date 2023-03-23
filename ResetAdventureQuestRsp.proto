@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ResetAdventureQuestRsp {
+    required Retcode retcode = 1;
+    optional uint32 pool_id = 2;
+
+    enum CmdId {
+        CMD_ID = 3925;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_QUEST = 2;
+        NO_TIMES = 3;
+        HAS_FINISHED = 4;
+        HAS_SELECTED = 5;
+    }
+}

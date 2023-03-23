@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message VirtualGachaPool {
+    optional uint32 pool_id = 1;
+    optional uint32 gacha_times = 2;
+    optional uint32 total_times = 3;
+}

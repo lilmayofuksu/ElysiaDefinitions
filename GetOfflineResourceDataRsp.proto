@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "OfflineResource.proto";
+message GetOfflineResourceDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 cur_schedule_id = 2;
+    repeated OfflineResource offline_resource_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4212;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+    }
+}

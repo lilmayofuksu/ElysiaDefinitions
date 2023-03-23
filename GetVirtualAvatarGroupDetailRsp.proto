@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "VirtualAvatarGroup.proto";
+message GetVirtualAvatarGroupDetailRsp {
+    required Retcode retcode = 1;
+    required VirtualAvatarGroup virtual_avatar_group = 2;
+
+    enum CmdId {
+        CMD_ID = 3503;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

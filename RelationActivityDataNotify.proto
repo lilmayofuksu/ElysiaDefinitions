@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message RelationActivityDataNotify {
+    optional uint32 limit_type = 1;
+    optional uint32 limit_num = 2;
+    optional uint32 got_material_num = 3;
+    optional uint32 relation_type = 4;
+    optional uint32 drop_material_id = 5;
+
+    enum CmdId {
+        CMD_ID = 1373;
+    }
+}

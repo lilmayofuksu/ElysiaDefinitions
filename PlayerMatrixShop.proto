@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message PlayerMatrixShop {
+    optional uint32 shop_id = 1;
+    repeated MatrixGoods goods_list = 2;
+    message MatrixGoods {
+        optional uint32 id = 1;
+        optional uint32 num = 2;
+        optional bool is_sold = 3;
+    }
+}

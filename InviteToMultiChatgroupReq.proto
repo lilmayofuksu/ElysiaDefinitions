@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message InviteToMultiChatgroupReq {
+    optional uint32 target_uid = 1;
+    repeated uint32 chatgroup_id_list = 2;
+    optional bool is_has_relation = 3;
+
+    enum CmdId {
+        CMD_ID = 2216;
+    }
+}

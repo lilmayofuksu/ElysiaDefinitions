@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message SwitchDynamicHardLvRsp {
+    required Retcode retcode = 1;
+    optional bool is_dynamic_hard_lv = 2;
+
+    enum CmdId {
+        CMD_ID = 240;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldChapterFurnaceFormulaUseHistory {
+    optional uint32 formula_id = 1;
+    optional uint32 use_times = 2;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message SetWarshipComponentRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 5459;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        WARSHIP_NOT_EXIST = 2;
+        COMPONENT_TYPE_ERROR = 3;
+        COMPONENT_NOT_EXIST = 4;
+        WARSHIP_ERROR = 5;
+    }
+}

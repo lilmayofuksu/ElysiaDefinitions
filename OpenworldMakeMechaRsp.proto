@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message OpenworldMakeMechaRsp {
+    required Retcode retcode = 1;
+    optional uint32 mecha_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4517;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        LEVEL_UNLOCK = 3;
+        NOT_OPEN = 4;
+    }
+}

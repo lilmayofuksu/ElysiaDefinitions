@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message BuyGodWarShopGoodsReq {
+    optional uint32 god_war_id = 1;
+    optional uint32 tale_id = 2;
+    optional uint32 goods_idx = 3;
+
+    enum CmdId {
+        CMD_ID = 6185;
+    }
+}

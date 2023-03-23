@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TakeNewbiePrivilegeRewardReq {
+
+    enum CmdId {
+        CMD_ID = 1640;
+    }
+}

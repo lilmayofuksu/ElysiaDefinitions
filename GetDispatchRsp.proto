@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message GetDispatchRsp {
+
+    enum CmdId {
+        CMD_ID = 134;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CLIENT_VERSION_ERROR = 2;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message BuyBattlePassThemeLevelRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3765;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HCOIN_LACK = 3;
+        LEVEL_ERROR = 4;
+        HCOIN_ERROR = 5;
+        FEATURE_CLOSED = 6;
+    }
+}

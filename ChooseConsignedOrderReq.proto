@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ConsignedOrder.proto";
+message ChooseConsignedOrderReq {
+    required uint32 index = 1;
+    required ConsignedOrder choosen_order = 2;
+
+    enum CmdId {
+        CMD_ID = 2641;
+    }
+}

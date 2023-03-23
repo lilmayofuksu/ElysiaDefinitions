@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GetChallengeStepBonusRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1044;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STEP_ID_ERROR = 2;
+        BONUS_HAS_TAKEN = 3;
+        STEP_NOT_FINISH = 4;
+        EQUIPMENT_FULL = 5;
+        EQUIPMENT_MATERIAL_LIMIT = 6;
+        EQUIPMENT_FRAGMENT_LIMIT = 7;
+        EQUIPMENT_ELF_FRAGMENT_LIMIT = 8;
+    }
+}

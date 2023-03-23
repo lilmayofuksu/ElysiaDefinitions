@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RegionUidRange.proto";
+message GetRegionUidRangeRsp {
+    required Retcode retcode = 1;
+    optional string local_region_name = 2;
+    repeated RegionUidRange region_uid_range_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1381;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message InLevelAvatarSkillInfo {
+    optional string skill_name = 1;
+    optional float cd = 2;
+    optional float cost_sp = 3;
+    optional float need_sp = 4;
+    optional float cd_timer = 5;
+    optional uint32 max_charges_count = 6;
+    optional uint32 charges_counter = 7;
+    optional bool can_hold = 8;
+    optional string instant_trigger_anim_event_id = 9;
+}

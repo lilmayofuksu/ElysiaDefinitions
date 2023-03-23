@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message CityActivityRole {
+    optional uint32 role_id = 1;
+    optional uint32 affinity = 2;
+    optional uint32 affinity_level = 3;
+    optional bool is_like_type_gift_received = 4;
+    optional bool is_favourite_gift_received = 5;
+}

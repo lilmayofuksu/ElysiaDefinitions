@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "GenericItemNum.proto";
+import "RewardData.proto";
+import "TownChallenge.proto";
+import "TownCommonHead.proto";
+message TownActivityEndNotify {
+    required TownCommonHead head = 1;
+    optional Status status = 2;
+    repeated TownChallenge challenge_list = 3;
+    required RewardData challenge_reward_data = 4;
+    required GenericItemNum talent_point_item = 5;
+
+    enum CmdId {
+        CMD_ID = 6464;
+    }
+    enum Status {
+        WIN = 0;
+        LOSE = 1;
+        ABANDON = 2;
+    }
+}

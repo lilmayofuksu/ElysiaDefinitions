@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "LobbyEnterType.proto";
+import "MpTeamMember.proto";
+import "LobbyStatus.proto";
+import "MpTeamStatus.proto";
+message MpTeamData {
+    optional uint32 team_id = 1;
+    optional uint32 leader_uid = 2;
+    optional MpTeamStatus status = 3;
+    optional LobbyStatus lobby_status = 4;
+    repeated MpTeamMember member_list = 5;
+    optional uint32 min_level = 6;
+    optional LobbyEnterType lobby_enter_type = 7;
+    optional uint32 stage_id = 8;
+    optional string team_name = 9;
+    optional uint32 max_level = 11;
+}

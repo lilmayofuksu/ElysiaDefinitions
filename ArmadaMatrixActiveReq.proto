@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ArmadaMatrixActiveReq {
+
+    enum CmdId {
+        CMD_ID = 2808;
+    }
+}

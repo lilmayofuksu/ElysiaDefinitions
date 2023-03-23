@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "ArmadaMatrixGridPos.proto";
+message ArmadaMatrixChoosePathRsp {
+    required Retcode retcode = 1;
+    required ArmadaMatrixGridPos target_pos = 2;
+
+    enum CmdId {
+        CMD_ID = 2828;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        INVALID_START = 2;
+        INVALID_PATH = 3;
+        CONDITION_LACK = 4;
+        ENTER_LIMIT = 5;
+    }
+}

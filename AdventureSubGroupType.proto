@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum AdventureSubGroupType {
+    ADVENTURE_SUB_GROUP_NORMAL = 0;
+    ADVENTURE_SUB_GROUP_S_AVATAR = 1;
+    ADVENTURE_SUB_GROUP_A_AVATAR = 2;
+}

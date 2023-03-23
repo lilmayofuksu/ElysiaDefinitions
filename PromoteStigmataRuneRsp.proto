@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message PromoteStigmataRuneRsp {
+    required Retcode retcode = 1;
+    repeated uint32 wait_select_stgimata_list = 5;
+
+    enum CmdId {
+        CMD_ID = 333;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STIGMATA_NOT_EXIST = 2;
+        MATERIAL_LACK = 3;
+        STIGMATA_NOT_IDENTIFY = 4;
+        CAN_NOT_PROMOTE = 5;
+        TIMES_LIMIT = 6;
+        LEVEL_LACK = 7;
+        TOO_MANY_WAIT_RUNE = 8;
+    }
+}

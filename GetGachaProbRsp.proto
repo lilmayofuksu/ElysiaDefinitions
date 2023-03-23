@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "GachaDetailProb.proto";
+import "GachaTotalProb.proto";
+message GetGachaProbRsp {
+    required Retcode retcode = 1;
+    optional uint32 gacha_type = 2;
+    repeated GachaTotalProb total_prob_list = 3;
+    repeated GachaDetailProb detail_prob_list = 4;
+    repeated GachaDetailProb baodi_prob_list = 5;
+
+    enum CmdId {
+        CMD_ID = 4709;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

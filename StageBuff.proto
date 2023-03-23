@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message StageBuff {
+    optional uint32 stage_id = 1;
+    repeated uint32 gen_buff_id_list = 2;
+    repeated uint32 hold_buff_id_list = 3;
+    optional bool is_new = 4;
+    repeated uint32 carry_buff_id_list = 5;
+}

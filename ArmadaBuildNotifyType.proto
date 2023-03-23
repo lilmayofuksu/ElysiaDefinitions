@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum ArmadaBuildNotifyType {
+    ARMADA_BUILD_NOTIFY_START = 1;
+    ARMADA_BUILD_NOTIFY_CANCEL = 2;
+    ARMADA_BUILD_NOTIFY_FINISH = 3;
+    ARMADA_BUILD_NOTIFY_MOVE = 4;
+}

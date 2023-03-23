@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "Material.proto";
+message BuyGoodsCost {
+    optional uint32 hcoin_cost = 1;
+    optional uint32 scoin_cost = 2;
+    optional uint32 mcoin_cost = 3;
+    repeated Material cost_item_list = 4;
+}

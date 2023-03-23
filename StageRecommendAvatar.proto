@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "AvatarRecommendType.proto";
+import "RecommendAvatar.proto";
+message StageRecommendAvatar {
+    optional string id = 1;
+    repeated RecommendAvatar recommend_avatar_list = 2;
+    optional AvatarRecommendType type = 3;
+}

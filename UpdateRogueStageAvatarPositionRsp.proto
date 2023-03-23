@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message UpdateRogueStageAvatarPositionRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 287;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_JOIN_ARMADA = 2;
+        NOT_INIT = 3;
+        AVATAR_ERROR = 4;
+    }
+}

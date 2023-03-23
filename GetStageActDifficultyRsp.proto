@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "StageActDifficultyInfo.proto";
+message GetStageActDifficultyRsp {
+    required Retcode retcode = 1;
+    repeated StageActDifficultyInfo act_difficulty_list = 2;
+
+    enum CmdId {
+        CMD_ID = 457;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

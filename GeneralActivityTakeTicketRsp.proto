@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "GeneralActivityTicket.proto";
+message GeneralActivityTakeTicketRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated GeneralActivityTicket ticket_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4061;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

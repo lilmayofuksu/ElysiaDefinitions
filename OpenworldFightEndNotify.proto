@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "OpenworldFightEndStatus.proto";
+import "OpenworldStageType.proto";
+message OpenworldFightEndNotify {
+    optional uint32 map_id = 1;
+    optional uint32 area_id = 2;
+    optional OpenworldStageType stage_type = 3;
+    optional string monster_kill_info = 4;
+    optional uint32 revive_times = 5;
+    optional OpenworldFightEndStatus fight_end_status = 6;
+    optional uint32 cost_time = 7;
+    optional string sub_area_name = 8;
+    optional string report_ext = 9;
+
+    enum CmdId {
+        CMD_ID = 4541;
+    }
+}

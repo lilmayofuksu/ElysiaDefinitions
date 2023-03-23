@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeOpenworldQuestRewardRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_list = 2;
+    repeated RewardData day_reward_list = 3;
+    optional uint32 add_star = 4;
+    optional uint32 challenge_score = 5;
+    optional uint32 old_quest_level = 6;
+
+    enum CmdId {
+        CMD_ID = 4483;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_FINISH = 2;
+        MAP_NOT_FOUND = 3;
+        QUEST_NOT_FOUND = 4;
+    }
+}

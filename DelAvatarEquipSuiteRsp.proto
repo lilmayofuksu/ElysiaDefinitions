@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message DelAvatarEquipSuiteRsp {
+    required Retcode retcode = 1;
+    optional uint32 avatar_id = 2;
+    optional uint32 suite_id = 3;
+
+    enum CmdId {
+        CMD_ID = 1621;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_LOCK = 2;
+        SUITE_NOT_EXIST = 3;
+        SUITE_ID_LIMIT = 4;
+    }
+}

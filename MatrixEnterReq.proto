@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message MatrixEnterReq {
+    optional uint32 floor_id = 1;
+
+    enum CmdId {
+        CMD_ID = 2324;
+    }
+}

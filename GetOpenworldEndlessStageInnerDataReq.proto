@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetOpenworldEndlessStageInnerDataReq {
+    optional uint32 area_id = 1;
+
+    enum CmdId {
+        CMD_ID = 3426;
+    }
+}

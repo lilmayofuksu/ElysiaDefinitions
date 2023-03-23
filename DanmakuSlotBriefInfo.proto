@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message DanmakuSlotBriefInfo {
+    optional uint32 danmaku_slot = 1;
+    optional uint32 danmaku_slot_status = 2;
+    optional uint32 danmaku_num = 3;
+}

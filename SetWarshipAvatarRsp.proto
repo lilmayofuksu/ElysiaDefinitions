@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message SetWarshipAvatarRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 1493;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        AVATAR_NOT_TWINS = 3;
+    }
+}

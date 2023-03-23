@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message PublishGratuityStageRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    optional uint32 stage_unique_id = 3;
+    optional uint32 relation_tag = 4;
+
+    enum CmdId {
+        CMD_ID = 4115;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_ACCEPTOR = 2;
+    }
+}

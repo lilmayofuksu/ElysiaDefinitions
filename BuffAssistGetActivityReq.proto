@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message BuffAssistGetActivityReq {
+
+    enum CmdId {
+        CMD_ID = 5941;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MassiveWarActivity.proto";
+message MassiveWarGetActivityRsp {
+    required Retcode retcode = 1;
+    required MassiveWarActivity massive_war_activity = 2;
+
+    enum CmdId {
+        CMD_ID = 4801;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

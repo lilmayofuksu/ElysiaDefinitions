@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldChapterFinishChallengeRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 group_id = 3;
+    optional uint32 challenge_index = 4;
+    required RewardData reward_data = 5;
+
+    enum CmdId {
+        CMD_ID = 4596;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        SCHEDULE_NOT_OPEN = 3;
+        GROUP_NOT_OPEN = 4;
+        GROUP_NOT_MEET_CONDITION = 5;
+        CHALLENGE_INDEX_ERROR = 6;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message ActivityBuff {
+    optional uint32 id = 1;
+    repeated uint32 candidate_buff_id_list = 2;
+    repeated Buff buff_list = 3;
+    optional uint32 charge_value = 4;
+    optional uint32 buff_charged_times = 5;
+    message Buff {
+        optional uint32 buff_id = 1;
+        optional uint32 buff_num = 2;
+    }
+}

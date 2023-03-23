@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message UnlockRpgTaleSiteReq {
+    optional uint32 site_id = 1;
+    optional uint32 tale_id = 2;
+    optional bool is_only_check = 3;
+
+    enum CmdId {
+        CMD_ID = 2307;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum MasterPupilStatus {
+    MASTER_PUPIL_STATUS_NONE = 0;
+    MASTER_PUPIL_STATUS_DURING = 1;
+    MASTER_PUPIL_STATUS_FINISH = 2;
+    MASTER_PUPIL_STATUS_DISMISS = 3;
+}

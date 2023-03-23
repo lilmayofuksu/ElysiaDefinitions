@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "DiceType.proto";
+message MatrixThrowDiceReq {
+    optional DiceType dice_type = 1;
+    optional uint32 dice_point = 2;
+
+    enum CmdId {
+        CMD_ID = 2345;
+    }
+}

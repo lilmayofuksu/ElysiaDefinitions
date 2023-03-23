@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message LotteryData {
+    optional uint32 lottery_id = 1;
+    repeated uint32 lottery_number = 2;
+    repeated uint32 reward_taken_lottery_number = 3;
+    optional uint32 draw_number_begin_time = 4;
+    optional uint32 draw_number_end_time = 5;
+    optional uint32 take_reward_begin_time = 6;
+    optional uint32 first_reward_id = 7;
+    optional string first_reward_number_str = 8;
+    optional uint32 second_reward_id = 9;
+    optional string second_reward_number_str = 10;
+    optional uint32 third_reward_id = 11;
+    optional uint32 max_draw_times = 12;
+    optional uint32 special_number = 13;
+}

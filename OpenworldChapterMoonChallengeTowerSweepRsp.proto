@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "Material.proto";
+message OpenworldChapterMoonChallengeTowerSweepRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 tower_id = 3;
+    required Material score_drop_material = 4;
+
+    enum CmdId {
+        CMD_ID = 4680;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        TOWER_ERROR = 3;
+        DAILY_TIMES_LACK = 4;
+        SWEEP_LOCK = 5;
+        FLOOR_ERROR = 6;
+    }
+}

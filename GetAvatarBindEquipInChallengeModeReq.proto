@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetAvatarBindEquipInChallengeModeReq {
+    repeated uint32 avatar_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 809;
+    }
+}

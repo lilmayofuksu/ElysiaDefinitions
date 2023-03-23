@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message TileResetRegionReq {
+    optional uint32 tower_id = 1;
+    optional uint32 floor_id = 2;
+    optional uint32 reset_tag = 3;
+
+    enum CmdId {
+        CMD_ID = 4917;
+    }
+}

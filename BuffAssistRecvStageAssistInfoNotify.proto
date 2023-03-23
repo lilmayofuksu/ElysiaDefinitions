@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "BuffAssistStageAssistInfo.proto";
+message BuffAssistRecvStageAssistInfoNotify {
+    optional uint32 activity_id = 1;
+    required BuffAssistStageAssistInfo assist_info = 2;
+
+    enum CmdId {
+        CMD_ID = 5950;
+    }
+}

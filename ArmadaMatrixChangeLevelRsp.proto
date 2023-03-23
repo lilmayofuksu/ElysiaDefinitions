@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixChangeLevelRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    optional uint32 level = 2;
+
+    enum CmdId {
+        CMD_ID = 2773;
+    }
+}

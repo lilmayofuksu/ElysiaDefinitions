@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "ChatworldTreasure.proto";
+message ChatworldTreasureMsg {
+    optional uint32 cur_treasure_schedule_id = 1;
+    repeated ChatworldTreasure new_treasure_list = 2;
+    repeated ChatworldTreasure update_treasure_list = 3;
+    repeated ChatworldTreasure delete_treasure_list = 4;
+}

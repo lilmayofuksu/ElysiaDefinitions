@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "EquipmentItem.proto";
+message DonateWareHouseItemReq {
+    required EquipmentItem item = 1;
+    required uint32 target_uid = 2;
+    required uint32 demand_id = 3;
+
+    enum CmdId {
+        CMD_ID = 2653;
+    }
+}

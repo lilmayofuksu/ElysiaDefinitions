@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ArmadaBriefData.proto";
+message GetRecommendArmadaRsp {
+    required Retcode retcode = 1;
+    repeated ArmadaBriefData armada_list = 2;
+
+    enum CmdId {
+        CMD_ID = 2618;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+    }
+}

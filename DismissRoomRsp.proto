@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message DismissRoomRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3184;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ROOM = 2;
+        NOT_LEADER = 3;
+    }
+}

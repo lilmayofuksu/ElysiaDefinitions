@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message RpgTaleStageEnterTimesLimit {
+    optional uint32 limit_id = 1;
+    optional uint32 enter_times = 2;
+}

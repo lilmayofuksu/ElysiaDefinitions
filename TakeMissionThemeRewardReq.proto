@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message TakeMissionThemeRewardReq {
+    optional uint32 theme_id = 1;
+    optional uint32 mission_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4209;
+    }
+}

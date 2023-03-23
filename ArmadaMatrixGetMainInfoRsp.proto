@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "ArmadaMatrixLevelBrief.proto";
+import "ArmadaMatrixExitCondition.proto";
+import "ArmadaMatrixSettleInfo.proto";
+import "ArmadaMatrixPlayerMainInfo.proto";
+import "ArmadaMatrixMapInfo.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetMainInfoRsp {
+    required ArmadaMatrixRetcode.Retcode retcode = 1;
+    required ArmadaMatrixMapInfo matrix_map_info = 2;
+    required ArmadaMatrixPlayerMainInfo player_main_info = 3;
+    required ArmadaMatrixSettleInfo settle_info = 4;
+    required ArmadaMatrixExitCondition exit_condition = 5;
+    repeated ArmadaMatrixLevelBrief level_brief_list = 6;
+    optional uint32 map_cycle_id = 7;
+
+    enum CmdId {
+        CMD_ID = 2737;
+    }
+}

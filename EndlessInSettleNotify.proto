@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message EndlessInSettleNotify {
+
+    enum CmdId {
+        CMD_ID = 3452;
+    }
+}

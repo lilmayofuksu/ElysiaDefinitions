@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ModifyDLCNameRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3558;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FORMAT_ERROR = 2;
+        SENSITIVE_WORDS = 3;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message MonopolyRewardNotify {
+    optional uint32 behavior_id = 1;
+    required RewardData reward = 2;
+
+    enum CmdId {
+        CMD_ID = 3860;
+    }
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message OpenworldActivity {
+    optional uint32 activity_id = 1;
+    optional uint32 phase_id = 2;
+    optional uint32 activity_level = 3;
+    optional uint32 activity_exp = 4;
+    repeated uint32 activity_reward_taken_level_list = 5;
+    repeated uint32 activity_treasure_taken_list = 6;
+}

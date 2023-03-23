@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message VirtualTrainCustom {
+    optional uint32 custom_id = 1;
+    optional uint32 level = 2;
+    optional uint32 choosed_index = 3;
+    optional uint32 max_index = 4;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaMatrixAvatarState {
+    ARMADA_MATRIX_AVATAR_STATE_INVALID = 0;
+    ARMADA_MATRIX_AVATAR_STATE_LIVE = 1;
+    ARMADA_MATRIX_AVATAR_STATE_DEAD = 2;
+}

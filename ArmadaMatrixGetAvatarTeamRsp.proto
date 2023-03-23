@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ArmadaMatrixPlayerAvatarInfo.proto";
+import "ArmadaMatrixTeamInfo.proto";
+import "ArmadaMatrixRetcode.proto";
+message ArmadaMatrixGetAvatarTeamRsp {
+    optional ArmadaMatrixRetcode.Retcode retcode = 1;
+    repeated ArmadaMatrixTeamInfo team_list = 2;
+    repeated ArmadaMatrixPlayerAvatarInfo avatar_list = 3;
+    optional uint32 cur_team_index = 4;
+
+    enum CmdId {
+        CMD_ID = 2749;
+    }
+}

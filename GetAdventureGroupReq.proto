@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetAdventureGroupReq {
+
+    enum CmdId {
+        CMD_ID = 3900;
+    }
+}

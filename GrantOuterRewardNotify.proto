@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GrantOuterRewardNotify {
+    optional uint32 event_type = 1;
+    optional uint32 event_id = 2;
+    required RewardData reward_data = 3;
+    optional string ticket = 4;
+
+    enum CmdId {
+        CMD_ID = 4247;
+    }
+}

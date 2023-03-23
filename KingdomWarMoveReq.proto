@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message KingdomWarMoveReq {
+    optional uint32 target_point = 1;
+
+    enum CmdId {
+        CMD_ID = 3052;
+    }
+}

@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "OverlapGrid.proto";
+message OverlapActivitySummonRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    required OverlapGrid grid = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 4220;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_NOT_ENOUGH = 2;
+        NOT_OPEN = 3;
+        FULL = 4;
+    }
+}

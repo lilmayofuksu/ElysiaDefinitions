@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message OpenworldChapterEndlessChallengeBeginRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4633;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CHALLENGE_ERROR = 2;
+        MAP_ERROR = 3;
+        PRE_CHALLENGE_NOT_FINISH = 4;
+        MATERIAL_LACK = 5;
+    }
+}

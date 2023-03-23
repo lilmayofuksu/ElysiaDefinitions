@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "RoomInfo.proto";
+import "RoomMember.proto";
+import "RoomMode.proto";
+message EnterRoomReq {
+    optional RoomMode room_mode = 1;
+    optional uint32 room_id = 2;
+    required RoomMember member_data = 3;
+    required RoomInfo room_info = 4;
+
+    enum CmdId {
+        CMD_ID = 3155;
+    }
+}

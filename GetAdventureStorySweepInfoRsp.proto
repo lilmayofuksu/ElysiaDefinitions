@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "IslandStorySweepData.proto";
+message GetAdventureStorySweepInfoRsp {
+    required Retcode retcode = 1;
+    repeated IslandStorySweepData story_sweep_list = 2;
+    optional uint32 used_stamina = 3;
+
+    enum CmdId {
+        CMD_ID = 3915;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

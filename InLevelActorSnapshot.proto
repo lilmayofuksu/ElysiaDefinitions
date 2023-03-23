@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "InLevelEntityProperty.proto";
+import "InLevelBaseActorSnapshot.proto";
+import "InLevelMonsterActorSnapshot.proto";
+import "InLevelAvatarActorSnapshot.proto";
+message InLevelActorSnapshot {
+    required InLevelAvatarActorSnapshot avatar_snapshot = 1;
+    required InLevelMonsterActorSnapshot monster_snapshot = 2;
+    required InLevelBaseActorSnapshot base_snapshot = 3;
+    repeated InLevelEntityProperty property_list = 4;
+}

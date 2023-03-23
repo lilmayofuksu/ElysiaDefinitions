@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetExBossInfoReq {
+
+    enum CmdId {
+        CMD_ID = 510;
+    }
+}

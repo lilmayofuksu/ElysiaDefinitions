@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "MonsterCardRandomTalentConfirmType.proto";
+message MonsterCardConfirmRandomTalentReq {
+    optional uint32 activity_id = 1;
+    optional MonsterCardRandomTalentConfirmType type = 2;
+
+    enum CmdId {
+        CMD_ID = 5933;
+    }
+}

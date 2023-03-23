@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ScratchTicketPoint {
+    optional uint32 x_pos = 1;
+    optional uint32 y_pos = 2;
+    optional uint32 ticket_item_id = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message DebugHotPatchFileNotify {
+    optional string file_url = 1;
+
+    enum CmdId {
+        CMD_ID = 1600;
+    }
+}

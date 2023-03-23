@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "LobbyTeamPlayerNum.proto";
+message LobbyStat {
+    optional uint32 stage_id = 1;
+    repeated LobbyTeamPlayerNum in_team_player_num_list = 2;
+    optional uint32 wait_player_num = 3;
+}

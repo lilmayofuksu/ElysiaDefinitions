@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "MonsterCardRandomTalentConfirmData.proto";
+import "MonsterCard.proto";
+message MonsterCardGetActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated MonsterCard card_list = 3;
+    optional uint32 has_take_daily_reward_times = 4;
+    required MonsterCardRandomTalentConfirmData random_talent_confirm_data = 5;
+
+    enum CmdId {
+        CMD_ID = 5921;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

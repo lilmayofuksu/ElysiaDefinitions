@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "VirtualAvatar.proto";
+message DressVirtualEquipmentRsp {
+    required Retcode retcode = 1;
+    optional uint32 group_id = 2;
+    required VirtualAvatar virtual_avatar = 3;
+
+    enum CmdId {
+        CMD_ID = 3507;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        EQUIP_NOT_EXIST = 3;
+        HAVE_DRESSED = 4;
+    }
+}

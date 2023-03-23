@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message ArmadaMatrixPlayerOverview {
+    optional uint32 monster_defeated = 1;
+    optional uint32 boss_defeated = 2;
+    optional uint32 honkai_energy = 3;
+    optional uint32 treasure_found = 4;
+    optional uint32 item_gathered = 5;
+    optional uint32 buff_got = 6;
+    optional uint32 shop_found = 7;
+    optional uint32 region_marked = 8;
+    optional uint32 explore_value = 9;
+}

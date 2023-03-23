@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message FinishClearStageActivityNotify {
+    optional uint32 stage_id = 1;
+    repeated RewardData reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 455;
+    }
+}

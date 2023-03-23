@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message SetArmadaPositionRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2622;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_GRANTED = 2;
+        NOT_IN_ARMADA = 3;
+        TARGET_NOT_IN_ARMADA = 4;
+        OFFICER_FULL = 5;
+    }
+}

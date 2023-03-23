@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message JigsawExchangePieceRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 jigsaw_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4276;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        JIGSAW_NOT_BEGIN = 3;
+        PRE_JIGSAW_NOT_FINISHED = 4;
+        ITEMS_LACK = 5;
+        NO_PIECE = 6;
+    }
+}

@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ChatworldBoxTakeRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+    optional uint32 box_series_id = 4;
+    optional uint32 schedule_id = 5;
+    optional uint32 stage_id = 6;
+    optional uint32 box_unique_id = 7;
+    repeated uint64 open_box_unique_id_u64_list = 8;
+    optional uint32 chatworld_id = 9;
+    optional uint32 scene_id = 10;
+
+    enum CmdId {
+        CMD_ID = 2470;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_OPEN = 2;
+        HAS_TAKE = 3;
+        DAILY_LIMIT = 4;
+        BOX_NOT_EXIST = 5;
+        FINISH = 6;
+    }
+}

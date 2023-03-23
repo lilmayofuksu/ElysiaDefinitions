@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "AiCyberActivity.proto";
+message AiCyberGetActivityRsp {
+    required Retcode retcode = 1;
+    required AiCyberActivity ai_cyber_activity = 2;
+    optional string bless = 3;
+
+    enum CmdId {
+        CMD_ID = 6651;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

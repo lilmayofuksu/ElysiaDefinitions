@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "ChatworldMsgInteract.proto";
+message ChatworldInteractRsp {
+    required Retcode retcode = 1;
+    required ChatworldMsgInteract interact_msg = 2;
+
+    enum CmdId {
+        CMD_ID = 2414;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_CHATWORLD = 3;
+        HELD_BY_OTHER = 4;
+        NOT_HOLD = 5;
+    }
+}

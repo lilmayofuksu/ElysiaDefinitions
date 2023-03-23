@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message ThemeWantedBuyExtraDropRsp {
+    required Retcode retcode = 1;
+    repeated DropItem drop_item_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5793;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        ACTIVITY_NOT_OPEN = 3;
+        FEATURE_CLOSED = 4;
+    }
+}

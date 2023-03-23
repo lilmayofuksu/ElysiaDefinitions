@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message GodWarScoreEventSettle {
+    optional uint32 score_event_id = 1;
+    optional uint32 settle_times = 2;
+    optional uint32 total_score = 3;
+}

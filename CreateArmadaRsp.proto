@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+message CreateArmadaRsp {
+    required Retcode retcode = 1;
+    optional uint32 armada_id = 2;
+    optional string armada_name = 3;
+    optional string audit_armada_name = 4;
+
+    enum CmdId {
+        CMD_ID = 2604;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+        SCOIN_LACK = 3;
+        HCOIN_LACK = 4;
+        IN_ARMADA = 5;
+        IN_APPLYING = 6;
+        NAME_REPEAT = 7;
+        NAME_FORMAT_ERROR = 8;
+        NAME_SENSITIVE_WORDS = 9;
+        IN_CD_TIME = 10;
+        ACCOUNT_NONE = 11;
+        IN_LOW_POPL_CD_TIME = 12;
+        LABEL_ERROR = 13;
+        IN_AUDIT = 14;
+    }
+}

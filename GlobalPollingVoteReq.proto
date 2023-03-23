@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GlobalPollingVoteReq {
+    optional uint32 target_id = 1;
+    optional uint32 num = 2;
+
+    enum CmdId {
+        CMD_ID = 5815;
+    }
+}

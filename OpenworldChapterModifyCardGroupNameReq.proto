@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message OpenworldChapterModifyCardGroupNameReq {
+    optional uint32 map_id = 1;
+    optional uint32 group_idx = 2;
+    optional string group_name = 3;
+
+    enum CmdId {
+        CMD_ID = 4587;
+    }
+}

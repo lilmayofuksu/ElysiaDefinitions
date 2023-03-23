@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "FinishedExBossInfo.proto";
+message UserRankWeeklyReportExBoss {
+    repeated FinishedExBossInfo finished_boss_info_list = 1;
+    optional uint32 rank_percent = 2;
+}

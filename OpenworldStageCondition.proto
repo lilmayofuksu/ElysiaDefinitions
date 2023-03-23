@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum OpenworldStageCondition {
+    OPENWORLD_STAGE_COND_LD_SP = 1;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum WebActivityShowType {
+    WEB_ACTIVITY_SHOW_TYPE_NONE = 0;
+    WEB_ACTIVITY_SHOW_TYPE_TRACK_POINT = 1;
+    WEB_ACTIVITY_SHOW_TYPE_FINISH = 2;
+    WEB_ACTIVITY_SHOW_TYPE_HIDE = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "MasterPoolData.proto";
+import "MasterPupilRetcode.proto";
+message MasterPupilEvalRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    optional uint32 uid = 2;
+    optional uint32 star = 3;
+    optional uint32 step_id = 4;
+    optional string comment = 5;
+    required MasterPoolData pool_reward = 6;
+    optional uint32 master_score = 7;
+
+    enum CmdId {
+        CMD_ID = 575;
+    }
+}

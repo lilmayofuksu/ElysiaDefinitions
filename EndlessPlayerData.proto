@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "LineupBriefInfo.proto";
+import "EndlessWaitBurstBomb.proto";
+import "EndlessWaitEffectItem.proto";
+message EndlessPlayerData {
+    required uint32 uid = 1;
+    optional uint32 progress = 2;
+    required uint32 progress_time = 3;
+    repeated EndlessWaitEffectItem wait_effect_item_list = 4;
+    optional uint32 hidden_expire_time = 5;
+    optional uint32 max_progress = 6;
+    repeated EndlessWaitBurstBomb wait_burst_bomb_list = 7;
+    optional bool is_just_bomb_burst = 8;
+    optional uint32 hidden_item_id = 9;
+    optional uint32 reward_progress = 10;
+    required LineupBriefInfo last_lineup_info = 11;
+    optional uint32 group_level = 12;
+}

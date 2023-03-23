@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message QCandyBattleTriggerEntityRsp {
+    required Retcode retcode = 1;
+    optional uint32 entity_id = 2;
+    optional uint32 cur_state = 3;
+
+    enum CmdId {
+        CMD_ID = 6581;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ENTITY_NOT_EXIST = 2;
+        STATE_ERROR = 3;
+    }
+}

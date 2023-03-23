@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message FriendsPointGachaData {
+    optional uint32 friends_point_cost = 2;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum QCandyBattlePropType {
+    QCANDY_BATTLE_PROP_TYPE_NONE = 0;
+    QCANDY_BATTLE_PROP_TYPE_HAS_CD = 1;
+    QCANDY_BATTLE_PROP_TYPE_AUTO_RECOVER = 2;
+}

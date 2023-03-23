@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaMatrixStageDropItem {
+    optional uint32 matrix_material_id = 1;
+    optional uint32 matrix_material_num = 2;
+}

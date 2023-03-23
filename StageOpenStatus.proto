@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum StageOpenStatus {
+    STAGE_NOT_OPEN = 1;
+    STAGE_OPENED = 2;
+    STAGE_CLOSED = 3;
+}

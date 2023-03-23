@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message ChooseConsignedRewardRsp {
+    required Retcode retcode = 1;
+    repeated uint32 optional_reward_list = 2;
+
+    enum CmdId {
+        CMD_ID = 522;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        ITEM_NOT_EXIST = 3;
+    }
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message ArmadaMemberDiscovery {
+    required uint32 uid = 1;
+    optional uint32 week_discovery = 2;
+}

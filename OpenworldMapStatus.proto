@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum OpenworldMapStatus {
+    OPENWORLD_MAP_STATUS_NONE = 0;
+    OPENWORLD_MAP_STATUS_ACTIVATE = 1;
+    OPENWORLD_MAP_STATUS_AUTO_ACTIVATE = 2;
+    OPENWORLD_MAP_STATUS_LOCK = 3;
+}

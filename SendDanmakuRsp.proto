@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "DanmakuContent.proto";
+message SendDanmakuRsp {
+    required Retcode retcode = 1;
+    optional uint32 danmaku_slot = 2;
+    required DanmakuContent content = 3;
+    optional uint32 blacklist_expire_time = 4;
+
+    enum CmdId {
+        CMD_ID = 1544;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SENSITIVE_WORDS = 2;
+        CHAT_FORBIDEN = 3;
+        TOO_FREQUENT = 4;
+        DANMAKU_CLOSED = 5;
+        IN_BLACKLIST = 6;
+        NUM_LIMIT = 7;
+        LENGTH_LIMIT = 8;
+    }
+}

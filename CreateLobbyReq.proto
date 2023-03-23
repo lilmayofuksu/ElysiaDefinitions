@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "MpTeamMember.proto";
+import "CabinTechAddAttr.proto";
+import "LobbyEnterType.proto";
+message CreateLobbyReq {
+    required uint32 stage_id = 1;
+    optional uint32 min_level = 2;
+    optional LobbyEnterType lobby_enter_type = 3;
+    optional uint32 max_player_num = 4;
+    repeated CabinTechAddAttr cabin_attr = 5;
+    optional uint32 client_rtt = 6;
+    required MpTeamMember member = 7;
+    repeated uint32 avatar_trial_list = 8;
+    optional bool is_allow_cross_region = 10;
+    optional string team_name = 11;
+    optional bool is_team_name_default = 13;
+    optional uint32 max_level = 14;
+
+    enum CmdId {
+        CMD_ID = 301;
+    }
+}

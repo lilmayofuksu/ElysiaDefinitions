@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "BuffEffect.proto";
+message GetBuffEffectRsp {
+    required Retcode retcode = 1;
+    repeated BuffEffect effect_list = 2;
+    repeated uint32 aura_effect_list = 3;
+
+    enum CmdId {
+        CMD_ID = 477;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ADD_FAIL = 2;
+    }
+}

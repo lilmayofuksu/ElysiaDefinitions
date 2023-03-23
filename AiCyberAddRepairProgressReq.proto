@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message AiCyberAddRepairProgressReq {
+    optional uint32 activity_id = 1;
+    optional uint32 target_progress = 2;
+
+    enum CmdId {
+        CMD_ID = 6654;
+    }
+}

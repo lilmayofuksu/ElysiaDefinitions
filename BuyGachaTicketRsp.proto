@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message BuyGachaTicketRsp {
+    required Retcode retcode = 1;
+    optional uint32 material_id = 2;
+    optional uint32 num = 3;
+    optional uint32 hcoin_cost = 4;
+
+    enum CmdId {
+        CMD_ID = 4705;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_ID_ERROR = 2;
+        HCOIN_LACK = 3;
+        EQUIPMENT_MATERIAL_LIMIT = 4;
+    }
+}

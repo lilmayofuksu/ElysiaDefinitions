@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message LoginActivityData {
+    optional uint32 id = 1;
+    optional uint32 login_days = 2;
+    repeated uint32 has_take_days_reward_list = 3;
+    repeated uint32 has_take_days_bonus_reward_list = 4;
+    optional uint32 accept_time = 5;
+    optional uint32 duration_end_time = 6;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message GreedyEndlessTakeRankRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 group_level = 2;
+    optional uint32 rank_percent = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 3461;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+        NO_REWARD = 3;
+    }
+}

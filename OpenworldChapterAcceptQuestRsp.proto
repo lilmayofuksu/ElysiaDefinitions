@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message OpenworldChapterAcceptQuestRsp {
+    required Retcode retcode = 1;
+    required OpenworldQuest quest = 2;
+    optional uint32 map_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4648;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        QUEST_ERROR = 2;
+        STAMINA_LACK = 3;
+        ACCEPT_TIMES_LACK = 4;
+        SLOT_LACK = 5;
+        MAP_ERROR = 6;
+        BUILDING_LOCKED = 7;
+    }
+}

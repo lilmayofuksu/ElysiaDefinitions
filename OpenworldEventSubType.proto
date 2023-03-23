@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+enum OpenworldEventSubType {
+    OPENWORLD_EVENT_SUB_TREASURE = 50;
+}

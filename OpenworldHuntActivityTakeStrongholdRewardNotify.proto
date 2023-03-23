@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message OpenworldHuntActivityTakeStrongholdRewardNotify {
+    optional uint32 map_id = 1;
+    optional uint32 stronghold_id = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 4610;
+    }
+}

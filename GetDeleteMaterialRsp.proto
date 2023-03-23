@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "GenericItemNum.proto";
+import "Material.proto";
+message GetDeleteMaterialRsp {
+    required Retcode retcode = 1;
+    repeated Material materials = 2;
+    repeated GenericItemNum return_item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 501;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

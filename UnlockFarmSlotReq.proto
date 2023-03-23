@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message UnlockFarmSlotReq {
+    optional uint32 slot_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1387;
+    }
+}

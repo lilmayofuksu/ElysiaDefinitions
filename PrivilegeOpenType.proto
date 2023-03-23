@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum PrivilegeOpenType {
+    PRIVILEGE_OPEN_NORMAL = 0;
+    PRIVILEGE_OPEN_SCHEDULED = 1;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "AvatarBindEquipData.proto";
+message GetAvatarBindEquipInChallengeModeRsp {
+    required Retcode retcode = 1;
+    repeated AvatarBindEquipData avatar_equip_list = 2;
+
+    enum CmdId {
+        CMD_ID = 810;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum TvtBattleMemberStatus {
+    TVT_BATTLE_MEMBER_STATUS_NONE = 0;
+    TVT_BATTLE_MEMBER_STATUS_ONLINE = 1;
+    TVT_BATTLE_MEMBER_STATUS_OFFLINE = 2;
+}

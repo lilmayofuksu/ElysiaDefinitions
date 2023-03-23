@@ -1,0 +1,61 @@
+syntax = "proto2";
+
+message TvtBattleStageMessage {
+    optional uint32 message_id = 1;
+    optional uint32 from_uid = 2;
+    required ItemMessage item_msg = 11;
+    required AvatarHpMesssage avatar_hp_msg = 12;
+    required PlayerMessage player_msg = 13;
+    required BossDamageMessage boss_damage_msg = 14;
+    required StageScoinMessage stage_scoin_msg = 15;
+    required ClientDefineMessage client_define_msg = 16;
+    required RoundScoreMessage round_score_msg = 17;
+
+    enum MessageType {
+        MESSAGE_ITEM = 1;
+        MESSAGE_AVATAR_HP = 2;
+        MESSAGE_PLAYER_WAVE = 3;
+        MESSAGE_BOSS_DAMAGE = 4;
+        MESSAGE_STAGE_SCOIN = 5;
+        MESSAGE_CLIENT_DEFINE = 6;
+        MESSAGE_ROUND_SCORE = 7;
+    }
+    message ItemMessage {
+        optional uint32 item_id = 1;
+        repeated uint32 target_uid_list = 2;
+        optional uint32 level = 3;
+    }
+    message AvatarHpMesssage {
+        repeated uint32 avatar_hp_list = 1;
+        repeated uint32 avatar_id_list = 2;
+    }
+    message PlayerMessage {
+        optional uint32 player_value = 1;
+        optional uint32 progress = 2;
+    }
+    message BossDamageMessage {
+        optional uint32 client_add_damage = 1;
+        optional uint32 client_total_damage = 2;
+        optional uint32 client_set_left_hp = 3;
+        optional uint32 server_set_lhs_boss_hp = 4;
+        optional uint32 server_set_rhs_boss_hp = 5;
+        optional uint32 lhs_final_kill_player_uid = 6;
+        optional uint32 rhs_final_kill_player_uid = 7;
+    }
+    message StageScoinMessage {
+        optional uint32 client_add_scoin = 1;
+        optional uint32 client_total_scoin = 2;
+    }
+    message ClientDefineMessage {
+        optional uint32 type = 1;
+        repeated uint32 para_uint_list = 2;
+    }
+    message RoundScoreMessage {
+        optional uint32 client_add_score = 1;
+        optional uint32 left_total_score = 2;
+        optional uint32 right_total_score = 3;
+        optional uint32 left_win_times = 4;
+        optional uint32 right_win_times = 5;
+        optional uint32 round = 6;
+    }
+}

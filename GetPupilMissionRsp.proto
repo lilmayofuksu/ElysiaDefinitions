@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "MasterPoolData.proto";
+import "Mission.proto";
+import "MasterPupilRetcode.proto";
+message GetPupilMissionRsp {
+    required MasterPupilRetcode.Retcode retcode = 1;
+    optional uint32 uid = 2;
+    optional uint32 step_id = 3;
+    repeated Mission mission_list = 4;
+    required MasterPoolData pool_reward = 5;
+    optional uint32 time = 6;
+
+    enum CmdId {
+        CMD_ID = 652;
+    }
+}

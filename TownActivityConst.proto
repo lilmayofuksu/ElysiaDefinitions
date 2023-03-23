@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum TownActivityConst {
+    TOWN_ACTIVITY_ROUND_PER_SECOND = 50;
+    TOWN_ACTIVITY_STEP_PER_TILE_CELL = 10000;
+    TOWN_ACTIVITY_MAX_HP_RATIO = 100000;
+}

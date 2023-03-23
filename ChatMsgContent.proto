@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "ChatMsgItem.proto";
+message ChatMsgContent {
+    repeated ChatMsgItem items = 1;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ChatworldFishJoinSpotRsp {
+    required Retcode retcode = 1;
+    optional uint32 fish_spot_id = 2;
+    optional uint32 seat_idx = 3;
+
+    enum CmdId {
+        CMD_ID = 2430;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SPOT_FULL = 2;
+        CURRENCY_LIMIT = 3;
+    }
+}

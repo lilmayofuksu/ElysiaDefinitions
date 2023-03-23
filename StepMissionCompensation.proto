@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message StepMissionCompensation {
+    optional uint32 mission_id = 1;
+    optional uint32 reward_id = 2;
+}

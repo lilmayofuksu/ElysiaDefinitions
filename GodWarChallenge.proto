@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "GodWarBonus.proto";
+import "GodWarPunishBuff.proto";
+import "GodWarChallengeAvatar.proto";
+message GodWarChallenge {
+    optional bool is_challenge_fail = 1;
+    repeated GodWarChallengeAvatar avatar_list = 2;
+    repeated uint32 support_avatar_id_list = 3;
+    optional uint32 elf_id = 4;
+    optional uint32 extra_item_id = 5;
+    optional uint32 refresh_teleport_times = 6;
+    repeated GodWarPunishBuff punish_buff_list = 7;
+    optional uint32 challenge_score = 8;
+    optional uint32 random_seed = 9;
+    optional uint32 step_level = 10;
+    repeated uint32 punish_buff_id_list = 11;
+    optional bool is_use_virtual_avatar = 12;
+    repeated uint32 boon_buff_id_list = 13;
+    optional uint32 gain_coin_num = 14;
+    optional uint32 refresh_teleport_times_limit = 15;
+    optional uint32 assistant_extra_item_id = 16;
+    repeated GodWarBonus bonus_list = 17;
+}

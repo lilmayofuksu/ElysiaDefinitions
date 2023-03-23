@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message WishCostEquip {
+    optional uint32 cost_equip_id = 1;
+    optional uint32 cost_equip_num = 2;
+}

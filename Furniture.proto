@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message Furniture {
+    optional uint32 id = 1;
+    optional uint32 pos_x = 2;
+    optional uint32 pos_y = 3;
+    optional uint32 direction = 4;
+    optional uint32 location = 5;
+}

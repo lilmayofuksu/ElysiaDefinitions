@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message GetSignInRewardStatusRsp {
+    required Retcode retcode = 1;
+    required bool is_need_sign_in = 2;
+    optional uint32 next_sign_in_day = 3;
+    optional uint32 next_sign_in_reward_id = 4;
+
+    enum CmdId {
+        CMD_ID = 122;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

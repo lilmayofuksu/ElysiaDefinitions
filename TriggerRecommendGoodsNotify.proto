@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message TriggerRecommendGoodsNotify {
+    optional uint32 recommend_id = 1;
+    repeated uint32 shop_goods_schedule_id_list = 2;
+    optional uint32 trigger_recommend_goods_time = 3;
+
+    enum CmdId {
+        CMD_ID = 1538;
+    }
+}

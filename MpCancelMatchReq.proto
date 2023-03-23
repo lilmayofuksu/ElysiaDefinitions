@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message MpCancelMatchReq {
+
+    enum CmdId {
+        CMD_ID = 468;
+    }
+}

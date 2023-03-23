@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message UpgradeMissionThemeReq {
+    optional uint32 theme_id = 1;
+
+    enum CmdId {
+        CMD_ID = 4207;
+    }
+}

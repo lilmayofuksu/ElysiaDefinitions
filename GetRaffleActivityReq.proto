@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetRaffleActivityReq {
+    repeated uint32 raffle_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 3898;
+    }
+}

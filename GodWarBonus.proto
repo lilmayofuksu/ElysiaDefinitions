@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "GodWarBuff.proto";
+message GodWarBonus {
+    optional uint32 bonus_id = 1;
+    optional uint32 count_down = 2;
+    required GodWarBuff buff = 3;
+}

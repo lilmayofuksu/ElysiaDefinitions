@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "MatrixAdvancePath.proto";
+import "MatrixGridPos.proto";
+message MatrixAdvanceReq {
+    required MatrixGridPos from_pos = 1;
+    required MatrixGridPos to_pos = 2;
+    repeated MatrixAdvancePath path_list = 3;
+
+    enum CmdId {
+        CMD_ID = 2326;
+    }
+}

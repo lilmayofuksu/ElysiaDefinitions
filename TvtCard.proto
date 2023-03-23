@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message TvtCard {
+    optional uint32 card_id = 1;
+    optional uint32 card_level = 2;
+}

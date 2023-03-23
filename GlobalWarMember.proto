@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message GlobalWarMember {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 level = 3;
+    optional uint32 head_avatar_id = 4;
+    optional uint32 frame_id = 5;
+    optional uint32 dress_id = 6;
+    optional uint32 custom_head_id = 7;
+    optional uint32 global_war_point_id = 8;
+    optional uint32 global_war_add_currency = 9;
+    optional uint32 global_war_add_time = 10;
+}

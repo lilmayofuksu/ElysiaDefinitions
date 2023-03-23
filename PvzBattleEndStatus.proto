@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum PvzBattleEndStatus {
+    PVZ_BATTLE_END_NONE = 0;
+    PVZ_BATTLE_END_SUCC = 1;
+    PVZ_BATTLE_END_FAIL = 2;
+    PVZ_BATTLE_END_QUIT = 3;
+}

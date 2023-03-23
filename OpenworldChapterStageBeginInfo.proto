@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message OpenworldChapterStageBeginInfo {
+    optional uint32 location_id = 1;
+    optional uint32 story_mode = 2;
+    optional uint32 story_serial = 3;
+    optional bool is_quick_start = 4;
+}

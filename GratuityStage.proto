@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "GratuityPlayer.proto";
+import "GratuityMonster.proto";
+message GratuityStage {
+    optional uint32 stage_unique_id = 1;
+    optional uint32 expire_time = 2;
+    optional uint32 accept_uid = 3;
+    optional uint32 stage_id = 4;
+    optional uint32 stage_group = 5;
+    repeated GratuityMonster monster_list = 6;
+    repeated GratuityPlayer player_list = 7;
+    optional uint32 publish_time = 8;
+}

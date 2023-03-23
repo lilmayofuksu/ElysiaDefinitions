@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum PlayerOnlineStatus {
+    PLAYER_ONLINE_STATUS_NONE = 0;
+    PLAYER_ONLINE_STATUS_ONLINE = 1;
+    PLAYER_ONLINE_STATUS_WAIT_SAVE = 2;
+    PLAYER_ONLINE_STATUS_OFFLINE = 3;
+}

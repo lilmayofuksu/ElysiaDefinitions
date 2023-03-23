@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message VerifyGoogleOrderNotify {
+    optional GoogleType channel = 1;
+    optional string param = 2;
+
+    enum CmdId {
+        CMD_ID = 247;
+    }
+    enum GoogleType {
+        GOOGLE_JAPAN = 1;
+        GOOGLE_TW = 2;
+        GOOGLE_KR = 3;
+        GOOGLE_OVERSEAS = 4;
+        GOOGLE_GLOBAL = 5;
+    }
+}

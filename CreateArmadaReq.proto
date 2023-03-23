@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ArmadaLabel.proto";
+message CreateArmadaReq {
+    required string name = 1;
+    required ArmadaLabel label = 2;
+
+    enum CmdId {
+        CMD_ID = 2603;
+    }
+}

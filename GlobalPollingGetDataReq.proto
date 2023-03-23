@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GlobalPollingGetDataReq {
+
+    enum CmdId {
+        CMD_ID = 5811;
+    }
+}

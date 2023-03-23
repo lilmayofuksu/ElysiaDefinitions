@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "SwitchData.proto";
+import "FeatureSwitchOpType.proto";
+message SwitchChangeDataNotify {
+    optional FeatureSwitchOpType op_type = 1;
+    repeated SwitchData data_list = 2;
+
+    enum CmdId {
+        CMD_ID = 3701;
+    }
+}

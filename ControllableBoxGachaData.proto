@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "SettingDict.proto";
+import "ControllableBoxGachaItemData.proto";
+message ControllableBoxGachaData {
+    required ControllableBoxGachaItemData show_gacha_data = 2;
+    optional uint32 ticket_hcoin_cost = 3;
+    optional uint32 ticket_material_id = 4;
+    repeated uint32 ticket_material_num_list = 5;
+    repeated uint32 hcoin_cost_list = 6;
+    required SettingDict display_setting_dict = 9;
+}

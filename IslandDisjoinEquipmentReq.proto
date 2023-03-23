@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "DisjoinType.proto";
+import "EquipmentType.proto";
+message IslandDisjoinEquipmentReq {
+    optional EquipmentType type = 1;
+    repeated uint32 unique_id_list = 2;
+    optional DisjoinType disjoin_type = 3;
+
+    enum CmdId {
+        CMD_ID = 179;
+    }
+}

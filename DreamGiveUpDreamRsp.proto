@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message DreamGiveUpDreamRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 5755;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+        DREAM_NOT_EXIST = 3;
+    }
+}

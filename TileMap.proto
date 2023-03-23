@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "TileMark.proto";
+import "TileEntity.proto";
+import "TileTrigger.proto";
+import "TileMapCell.proto";
+message TileMap {
+    optional uint32 map_id = 1;
+    optional uint32 width = 2;
+    optional uint32 height = 3;
+    repeated TileMapCell cell_list = 5;
+    repeated TileTrigger trigger_list = 6;
+    repeated TileEntity entity_list = 7;
+    repeated TileMark mark_list = 8;
+}

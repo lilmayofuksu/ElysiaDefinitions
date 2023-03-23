@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message QuitArmadaReq {
+
+    enum CmdId {
+        CMD_ID = 2627;
+    }
+}

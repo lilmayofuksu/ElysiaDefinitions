@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "ArmadaLabel.proto";
+message SetArmadaLabelRsp {
+    required Retcode retcode = 1;
+    required ArmadaLabel label = 2;
+
+    enum CmdId {
+        CMD_ID = 2841;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        NOT_LEADER = 3;
+        LABEL_ERROR = 4;
+        PREFIX_ERROR = 5;
+        FORMAT_ERROR = 6;
+        HEXIE_OPEN = 7;
+        SENSITIVE_WORDS = 8;
+    }
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum KingdomWarKingdomStatus {
+    KINGDOM_WAR_KINGDOM_NONE = 0;
+    KINGDOM_WAR_KINGDOM_DEFENSE = 1;
+    KINGDOM_WAR_KINGDOM_ATTACK = 2;
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetTimeLimitAddUpDataReq {
+
+    enum CmdId {
+        CMD_ID = 255;
+    }
+}

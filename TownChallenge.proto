@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message TownChallenge {
+    optional uint32 challenge_id = 1;
+    optional Status status = 2;
+    optional uint32 value = 3;
+    optional uint32 tower_id = 4;
+
+    enum Status {
+        NONE = 0;
+        DOING = 1;
+        FINISH = 2;
+        CLOSE = 3;
+    }
+}

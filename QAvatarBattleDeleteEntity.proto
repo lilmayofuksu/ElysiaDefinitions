@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "QAvatarBattleEntityDeleteReasonType.proto";
+message QAvatarBattleDeleteEntity {
+    optional QAvatarBattleEntityDeleteReasonType delete_reason = 1;
+    optional uint32 entity_id = 2;
+}

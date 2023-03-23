@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "GachaExFragment.proto";
+import "GachaType.proto";
+message ChooseOptionalGachaRsp {
+    required Retcode retcode = 1;
+    optional GachaType gacha_type = 2;
+    optional uint32 sub_gacha_id = 3;
+    required GachaExFragment ex_fragment = 4;
+
+    enum CmdId {
+        CMD_ID = 4717;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

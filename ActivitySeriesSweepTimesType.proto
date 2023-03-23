@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ActivitySeriesSweepTimesType {
+    ACTIVITY_SERIES_SWEEP_TIMES_NONE = 0;
+    ACTIVITY_SERIES_SWEEP_TIMES_DAILY = 1;
+    ACTIVITY_SERIES_SWEEP_TIMES_WEEKLY = 2;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum PvzSiteType {
+    PVZ_SITE_NORMAL = 1;
+    PVZ_SITE_DAILY = 2;
+    PVZ_SITE_CHALLENGE = 3;
+}

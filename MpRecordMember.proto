@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message MpRecordMember {
+    optional uint32 uid = 1;
+    optional uint32 avatar_id = 2;
+    optional uint32 dress_id = 3;
+    optional bool is_mvp = 4;
+    optional bool is_leader = 5;
+    optional string nick_name = 6;
+    optional uint32 avatar_level = 7;
+    optional uint32 avatar_star_level = 8;
+    optional string region_name = 9;
+}

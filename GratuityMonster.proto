@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message GratuityMonster {
+    optional uint32 monster_id = 1;
+    optional uint32 left_hp = 2;
+}

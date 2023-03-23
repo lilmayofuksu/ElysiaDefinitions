@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "ReplayExtInfo.proto";
+import "ReplayCommonInfo.proto";
+import "ReplayType.proto";
+message Replay {
+    optional uint64 replay_id_u64 = 1;
+    optional ReplayType replay_type = 2;
+    required ReplayCommonInfo common_info = 3;
+    required ReplayExtInfo ext_info = 4;
+}

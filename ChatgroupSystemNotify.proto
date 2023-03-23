@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+import "ChatgroupInvite.proto";
+import "ChatgroupSettingMsg.proto";
+import "ChatgroupLeaveMsg.proto";
+import "ChatgroupJoinMsg.proto";
+import "Chatgroup.proto";
+import "ChatgroupSystemNotifyType.proto";
+message ChatgroupSystemNotify {
+    optional ChatgroupSystemNotifyType type = 1;
+    optional uint32 chatgroup_id = 2;
+    required Chatgroup chatgroup = 3;
+    required ChatgroupJoinMsg join_msg = 4;
+    required ChatgroupLeaveMsg leave_msg = 5;
+    required ChatgroupSettingMsg setting_msg = 6;
+    required ChatgroupInvite invite = 7;
+    repeated uint32 target_uid_list = 8;
+    optional string chatgroup_name = 9;
+    optional uint32 time = 10;
+
+    enum CmdId {
+        CMD_ID = 2211;
+    }
+}

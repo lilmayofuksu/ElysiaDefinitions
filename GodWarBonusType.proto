@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GodWarBonusType {
+    GOD_WAR_BONUS_APPEND = 1;
+    GOD_WAR_BONUS_ADD = 2;
+    GOD_WAR_BONUS_REFRESH = 3;
+}

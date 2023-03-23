@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "RanchSkillWiki.proto";
+import "RanchMonsterWiki.proto";
+message RanchGetMonsterWikiRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    repeated RanchMonsterWiki monster_wiki_list = 3;
+    repeated RanchSkillWiki skill_wiki_list = 4;
+    optional uint32 collection_point = 5;
+
+    enum CmdId {
+        CMD_ID = 5846;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message TakeChapterActivityLevelRewardReq {
+    optional uint32 chapter_id = 1;
+    optional uint32 level = 2;
+    optional bool is_take_all = 3;
+
+    enum CmdId {
+        CMD_ID = 4202;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ReportBirthdayRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 300;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACCOUNT_ERROR = 2;
+        INVALID_BIRTHDAY = 3;
+    }
+}

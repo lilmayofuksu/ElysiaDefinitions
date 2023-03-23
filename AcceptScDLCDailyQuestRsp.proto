@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message AcceptScDLCDailyQuestRsp {
+    required Retcode retcode = 1;
+    required OpenworldQuest quest = 2;
+
+    enum CmdId {
+        CMD_ID = 6321;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        QUEST_ERROR = 2;
+        STAMINA_LACK = 3;
+        ACCEPT_TIMES_LACK = 4;
+        SLOT_LACK = 5;
+    }
+}

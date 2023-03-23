@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum JiguangTagType {
+    TAG_NONE = 0;
+    TAG_PLAYER_LEVEL = 1;
+    TAG_VIP_LEVEL = 2;
+    TAG_BATTLE_PASS = 3;
+    TAG_GACHA = 4;
+}

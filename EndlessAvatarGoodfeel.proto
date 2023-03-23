@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message EndlessAvatarGoodfeel {
+    required uint32 avatar_id = 1;
+    optional uint32 goodfeel_value = 2;
+}

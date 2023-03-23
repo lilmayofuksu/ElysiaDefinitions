@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "Replay.proto";
+import "ReplayOp.proto";
+message ReplayGetFileTokenReq {
+    optional ReplayOp op = 1;
+    required Replay replay = 2;
+
+    enum CmdId {
+        CMD_ID = 5410;
+    }
+}

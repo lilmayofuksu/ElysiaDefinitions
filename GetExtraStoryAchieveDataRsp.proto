@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ExtraStoryAchieve.proto";
+message GetExtraStoryAchieveDataRsp {
+    required Retcode retcode = 1;
+    repeated ExtraStoryAchieve achieve_list = 2;
+
+    enum CmdId {
+        CMD_ID = 236;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CHAPTER_NOT_EXIST = 2;
+    }
+}

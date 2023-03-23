@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum RanchNotifyType {
+    RANCH_NOTIFY_UNKNOWN = 0;
+    RANCH_NOTIFY_SYNTHESIS = 1;
+    RANCH_NOTIFY_STAGE_END = 2;
+    RANCH_NOTIFY_LOCK = 3;
+}

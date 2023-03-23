@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ReplayRecommendBriefKey.proto";
+message ReplayRecommendBrief {
+    required ReplayRecommendBriefKey key = 1;
+    optional uint32 num = 2;
+}

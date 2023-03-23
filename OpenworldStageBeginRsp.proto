@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+message OpenworldStageBeginRsp {
+    required Retcode retcode = 1;
+    repeated uint32 can_sp_recover_avatar_list = 2;
+    optional uint32 map_id = 3;
+    repeated uint32 dlc_support_avatar_list = 4;
+
+    enum CmdId {
+        CMD_ID = 4463;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CYCLE_NOT_OPEN = 2;
+        AVATAR_ERROR = 3;
+        NOT_OPEN = 4;
+        AREA_NOT_EXIST = 5;
+        AREA_NOT_OPEN = 6;
+        EQUIPMENT_USED = 7;
+        AVATAR_USED = 8;
+        ELF_ERROR = 9;
+        ELF_CARRY_LEVEL_LIMIT = 10;
+        FEATURE_LIMIT = 11;
+        HONKAI_ENERGY_FULL = 12;
+        FEATURE_CLOSED = 13;
+    }
+}

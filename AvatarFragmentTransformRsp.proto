@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message AvatarFragmentTransformRsp {
+    required Retcode retcode = 1;
+    optional uint32 return_id = 2;
+    optional uint32 return_num = 3;
+
+    enum CmdId {
+        CMD_ID = 828;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NEED_SSS = 2;
+        LACK = 3;
+        FULL = 4;
+        FEATURE_CLOSED = 5;
+    }
+}

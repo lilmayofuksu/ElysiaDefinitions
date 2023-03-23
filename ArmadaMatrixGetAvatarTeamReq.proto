@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message ArmadaMatrixGetAvatarTeamReq {
+
+    enum CmdId {
+        CMD_ID = 2748;
+    }
+}

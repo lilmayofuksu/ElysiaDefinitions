@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "WorldMapData.proto";
+message GetWorldMapDataRsp {
+    required Retcode retcode = 1;
+    repeated WorldMapData world_map_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1013;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

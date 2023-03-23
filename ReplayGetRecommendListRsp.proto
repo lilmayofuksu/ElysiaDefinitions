@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "Replay.proto";
+import "ReplayType.proto";
+message ReplayGetRecommendListRsp {
+    required Retcode retcode = 1;
+    optional ReplayType type = 2;
+    optional uint32 stage_or_boss_id = 3;
+    optional uint32 rank = 4;
+    optional uint32 start_idx = 5;
+    optional uint32 end_idx = 6;
+    repeated Replay replay_list = 7;
+    optional bool is_random = 8;
+
+    enum CmdId {
+        CMD_ID = 5417;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

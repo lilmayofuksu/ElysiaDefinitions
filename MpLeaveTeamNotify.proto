@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message MpLeaveTeamNotify {
+    optional int32 reason = 1;
+
+    enum CmdId {
+        CMD_ID = 1101;
+    }
+}

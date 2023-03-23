@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ArmadaMatrixAskSupplyRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2811;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SUPPLY_LIMIT = 2;
+        HAVE_ASK = 3;
+    }
+}

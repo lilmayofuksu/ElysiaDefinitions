@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "RewardData.proto";
+message WeekDayActivitySweepRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+    repeated DropItem drop_item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 1665;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

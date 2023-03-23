@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message MonopolyBuildingConstructRsp {
+    required Retcode retcode = 1;
+    optional uint32 area_id = 2;
+    optional uint32 building_type = 3;
+
+    enum CmdId {
+        CMD_ID = 3855;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_MATERIAL = 2;
+        ANOTHER_TYPE_EXIST = 3;
+        NUM_LIMIT = 4;
+        LEVEL_MAX = 5;
+        NO_LOCATION = 6;
+        WAIT_SELECT = 7;
+        STATUS_ERROR = 8;
+    }
+}

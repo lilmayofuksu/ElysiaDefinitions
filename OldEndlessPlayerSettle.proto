@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message OldEndlessPlayerSettle {
+    optional uint32 uid = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 endless_type = 3;
+    optional uint32 group_level = 4;
+}

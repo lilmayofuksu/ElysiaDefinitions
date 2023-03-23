@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message MonopolyAddMonsterReq {
+    optional uint32 area_id = 1;
+    optional uint32 floor_id = 2;
+    optional uint32 monster_id = 3;
+    optional uint32 position = 4;
+    optional uint32 direction = 5;
+
+    enum CmdId {
+        CMD_ID = 3867;
+    }
+}

@@ -1,0 +1,46 @@
+syntax = "proto2";
+
+import "EndlessWarInfo.proto";
+import "EndlessItemFrozenInfo.proto";
+import "EndlessItem.proto";
+import "PlayerFriendBriefData.proto";
+import "EndlessPlayerData.proto";
+message GetEndlessDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 group_id = 2;
+    optional uint32 group_level = 3;
+    optional uint32 begin_time = 4;
+    optional uint32 end_time = 5;
+    optional uint32 close_time = 6;
+    repeated EndlessPlayerData endless_data_list = 7;
+    repeated PlayerFriendBriefData brief_data_list = 8;
+    repeated EndlessItem item_list = 9;
+    repeated EndlessItemFrozenInfo item_frozen_list = 10;
+    repeated EndlessWarInfo war_info_list = 11;
+    optional uint32 uid = 12;
+    optional uint32 nodeserver_session_id = 13;
+    optional uint32 is_just_join = 14;
+    repeated uint32 cur_progress_avatar_id_list = 15;
+    repeated uint32 cur_progress_item_id_list = 16;
+    optional uint32 random_seed = 17;
+    optional uint32 cur_top_group_level = 18;
+    optional uint32 top_group_player_num = 19;
+    optional uint32 top_group_promote_unlock_player_num = 20;
+    optional uint32 sin_type = 21;
+    optional uint32 burst_bomb_num = 22;
+    optional uint32 bombed_num = 23;
+    repeated EndlessItem target_item_list = 24;
+    optional uint32 avg_player_level = 25;
+    optional uint32 hard_level = 26;
+
+    enum CmdId {
+        CMD_ID = 3401;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LEVEL_LACK = 2;
+        NO_ENDLESS = 3;
+        URGENCY_STOP = 4;
+    }
+}

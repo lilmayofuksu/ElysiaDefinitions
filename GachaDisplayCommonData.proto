@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+import "GachaFreeInfo.proto";
+import "GachaSortItem.proto";
+import "StigmataDetailData.proto";
+import "WeaponDetailData.proto";
+message GachaDisplayCommonData {
+    optional string title_image = 1;
+    optional string supply_image = 2;
+    optional string title = 3;
+    optional string content = 4;
+    repeated uint32 up_avatar_list = 5;
+    repeated WeaponDetailData up_weapon_list = 6;
+    repeated StigmataDetailData up_stigmata_list = 7;
+    optional string rule = 8;
+    optional string content_detail = 9;
+    repeated uint32 up_item_list = 10;
+    optional string content_url = 11;
+    optional string btn_image_path = 12;
+    repeated GachaSortItem sort_item_list = 13;
+    optional bool is_enable_prompt = 14;
+    optional uint32 gacha_id = 15;
+    optional uint32 data_begin_time = 16;
+    optional uint32 data_end_time = 17;
+    repeated uint32 up_elf_list = 18;
+    optional string display_ext = 19;
+    optional uint32 free_gacha_times = 20;
+    repeated GachaFreeInfo free_info_list = 21;
+}

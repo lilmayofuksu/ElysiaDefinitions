@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message BuyFurnitureRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 622;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LOCK = 2;
+        HCOIN_LACK = 3;
+        SCOIN_LACK = 4;
+        MATERIAL_LACK = 5;
+        KEEP_LIMIT = 6;
+    }
+}

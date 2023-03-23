@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GmTalkRsp {
+    required Retcode retcode = 1;
+    optional string msg = 2;
+    optional string retmsg = 3;
+
+    enum CmdId {
+        CMD_ID = 23;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

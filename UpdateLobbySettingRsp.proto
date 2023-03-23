@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message UpdateLobbySettingRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 1366;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_LOBBY = 2;
+        NOT_LEADER = 3;
+        TEAM_NAME_ERROR = 4;
+    }
+}

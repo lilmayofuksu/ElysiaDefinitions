@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message OpenworldChapterModifyCardGroupNameRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 4588;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FORMAT_ERROR = 2;
+        SENSITIVE_WORDS = 3;
+        MAP_ERROR = 4;
+        GROUP_ERROR = 5;
+    }
+}

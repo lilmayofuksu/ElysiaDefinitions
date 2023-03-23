@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message LoginMissionActivity {
+    optional uint32 id = 1;
+    repeated uint32 has_finished_mission_list = 2;
+    optional uint32 unlock_days = 3;
+    optional uint32 login_days = 4;
+}

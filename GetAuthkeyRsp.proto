@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message GetAuthkeyRsp {
+    required Retcode retcode = 1;
+    optional string authkey = 2;
+    optional string auth_appid = 3;
+    optional uint32 sign_type = 4;
+    optional uint32 authkey_ver = 5;
+
+    enum CmdId {
+        CMD_ID = 5011;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SIGN_TYPE_ERROR = 2;
+        AUTHKEY_VER_ERROR = 3;
+    }
+}

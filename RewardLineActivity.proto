@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message RewardLineActivity {
+    optional uint32 id = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 score = 3;
+    optional uint32 last_taken_reward_score = 4;
+}

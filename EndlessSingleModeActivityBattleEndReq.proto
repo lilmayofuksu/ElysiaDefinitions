@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "StageInnerElfData.proto";
+import "StageInnerAvatarData.proto";
+import "StageEndStatus.proto";
+message EndlessSingleModeActivityBattleEndReq {
+    optional uint32 activity_id = 1;
+    optional uint32 map_id = 2;
+    optional uint32 area_id = 3;
+    optional uint32 battle_id = 4;
+    optional uint32 monster_group_id = 5;
+    optional uint32 score = 6;
+    optional uint32 cost_time = 7;
+    optional StageEndStatus end_status = 8;
+    repeated StageInnerAvatarData avatar_list = 9;
+    optional uint32 environment_id = 10;
+    optional uint32 layer_number = 11;
+    repeated StageInnerElfData elf_list = 12;
+
+    enum CmdId {
+        CMD_ID = 4044;
+    }
+}

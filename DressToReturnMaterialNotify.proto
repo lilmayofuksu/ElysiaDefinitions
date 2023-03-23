@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message DressToReturnMaterialNotify {
+    optional uint32 dress_id = 1;
+    optional uint32 num = 2;
+    optional uint32 scoin = 3;
+    optional uint32 return_material_id = 4;
+    optional uint32 return_material_num = 5;
+
+    enum CmdId {
+        CMD_ID = 250;
+    }
+}

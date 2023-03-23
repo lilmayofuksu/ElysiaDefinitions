@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message OpenworldChapterSlotEquipBuffRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 slot_id = 3;
+    optional uint32 buff_id = 4;
+
+    enum CmdId {
+        CMD_ID = 4568;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        BUFF_NOT_EXIST = 2;
+        BUFF_USED = 3;
+        SLOT_LOCKED = 4;
+        OVER_COST = 5;
+        SLOT_NOT_SUIT = 6;
+    }
+}

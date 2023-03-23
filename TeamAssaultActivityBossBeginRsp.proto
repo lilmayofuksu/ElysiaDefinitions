@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message TeamAssaultActivityBossBeginRsp {
+    required Retcode retcode = 1;
+    optional string client_data = 2;
+
+    enum CmdId {
+        CMD_ID = 4025;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        ORDER_ERROR = 3;
+        AVATAR_ERROR = 4;
+        AVATAR_RESTRICT = 5;
+    }
+}

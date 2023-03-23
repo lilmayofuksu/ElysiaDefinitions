@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+enum UserType {
+    USER_TYPE_NONE = 0;
+    USER_TYPE_ANDROID = 1;
+    USER_TYPE_IOS = 2;
+    USER_TYPE_PC = 3;
+    USER_TYPE_CHANNEL = 4;
+    USER_TYPE_WEGAME = 5;
+    USER_TYPE_STEAM = 6;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "OpenworldEndlessItem.proto";
+import "OpenworldEndlessBattle.proto";
+message GetOpenworldEndlessStageInnerDataRsp {
+    required Retcode retcode = 1;
+    repeated OpenworldEndlessBattle battle_list = 2;
+    repeated OpenworldEndlessItem effect_item_list = 3;
+
+    enum CmdId {
+        CMD_ID = 3427;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

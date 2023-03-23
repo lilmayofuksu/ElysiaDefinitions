@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message AdventureGroupAvatar {
+    optional uint32 avatar_id = 1;
+    repeated uint32 finished_record_list = 2;
+}

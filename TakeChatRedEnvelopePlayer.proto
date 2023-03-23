@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "Material.proto";
+import "DropItem.proto";
+message TakeChatRedEnvelopePlayer {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 scoin_num = 3;
+    required DropItem drop_item = 4;
+    required Material material = 5;
+}

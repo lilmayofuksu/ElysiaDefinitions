@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message CancelRoomMatchReq {
+
+    enum CmdId {
+        CMD_ID = 3167;
+    }
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message SealedModeStartNewSelectionRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 728;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        IS_SELECTING = 2;
+        IS_FINISH = 3;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "EquipmentItemList.proto";
+message ForgeEquipmentReq {
+    optional uint32 forge_id = 1;
+    required EquipmentItemList consume_item_list = 2;
+    optional uint32 keep_rune_equip_unique_id = 4;
+    required EquipmentItemList keep_rune_cost_item_list = 5;
+
+    enum CmdId {
+        CMD_ID = 3652;
+    }
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "SlgScoreRewardType.proto";
+message SlgTakeScoreRewardReq {
+    optional SlgScoreRewardType score_reward_type = 1;
+
+    enum CmdId {
+        CMD_ID = 6059;
+    }
+}

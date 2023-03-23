@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message PublishGratuityStageReq {
+    optional uint32 stage_unique_id = 1;
+    optional uint32 target_uid = 2;
+    optional uint32 relation_tag = 3;
+
+    enum CmdId {
+        CMD_ID = 4114;
+    }
+}

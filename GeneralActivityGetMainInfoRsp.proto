@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "GeneralActivity.proto";
+message GeneralActivityGetMainInfoRsp {
+    required Retcode retcode = 1;
+    repeated GeneralActivity activity_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4006;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

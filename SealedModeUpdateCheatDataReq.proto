@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "StageCheatData.proto";
+message SealedModeUpdateCheatDataReq {
+    optional uint32 stage_id = 1;
+    optional uint32 event_id = 2;
+    repeated StageCheatData cheat_data_list = 3;
+
+    enum CmdId {
+        CMD_ID = 734;
+    }
+}

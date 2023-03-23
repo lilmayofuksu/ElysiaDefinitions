@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "UltraEndlessSite.proto";
+message UltraEndlessMainData {
+    optional uint32 schedule_id = 1;
+    optional uint32 effect_time = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+    optional uint32 close_time = 5;
+    optional uint32 last_schedule_id = 6;
+    repeated UltraEndlessSite site_list = 8;
+    optional uint32 last_settle_top_rank_schedule_id = 10;
+    optional uint32 cur_season_id = 11;
+    optional uint32 last_settle_season_id = 12;
+}

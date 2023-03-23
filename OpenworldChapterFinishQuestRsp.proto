@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message OpenworldChapterFinishQuestRsp {
+    required Retcode retcode = 1;
+    optional uint32 quest_id = 2;
+    optional uint32 cost_time = 3;
+
+    enum CmdId {
+        CMD_ID = 4650;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        QUEST_NOT_EXIST = 2;
+        QUEST_NOT_DOING = 3;
+        MAP_ERROR = 4;
+    }
+}

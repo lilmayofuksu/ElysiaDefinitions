@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message MpLikePlayerReq {
+    optional uint32 target_uid = 1;
+
+    enum CmdId {
+        CMD_ID = 392;
+    }
+}

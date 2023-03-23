@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "GachaType.proto";
+import "RewardData.proto";
+message WishWellRsp {
+    required Retcode retcode = 1;
+    optional uint32 wish_id = 2;
+    repeated RewardData reward_list = 3;
+    optional GachaType gacha_type = 4;
+
+    enum CmdId {
+        CMD_ID = 4711;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        EQUIP_NUM_ERROR = 2;
+        MATERIAL_NOT_ENOUGH = 3;
+        WISH_TIMES_LIMIT = 4;
+        DEVICE_ERROR = 5;
+        MATERIAL_ERROR = 6;
+    }
+}

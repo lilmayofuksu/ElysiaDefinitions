@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message OpenworldTechData {
+    optional uint32 map_id = 1;
+    optional uint32 level = 2;
+    optional uint32 exp = 3;
+    optional uint32 next_collect_time = 4;
+    optional uint32 skill_point = 5;
+    repeated uint32 unlock_skill_list = 6;
+}

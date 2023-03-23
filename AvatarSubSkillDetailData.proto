@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message AvatarSubSkillDetailData {
+    required uint32 sub_skill_id = 1;
+    required uint32 level = 2;
+    optional bool is_mask = 3;
+}

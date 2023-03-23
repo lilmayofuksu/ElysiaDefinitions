@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "RecommendGoods.proto";
+message GetSpecificRecommendGoodsRsp {
+    required Retcode retcode = 1;
+    repeated RecommendGoods recommend_goods_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1278;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

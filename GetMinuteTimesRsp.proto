@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GetMinuteTimesRsp {
+    required Retcode retcode = 1;
+    optional uint32 left_times = 2;
+    optional uint32 recover_time = 3;
+
+    enum CmdId {
+        CMD_ID = 545;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

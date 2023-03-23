@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message SwitchExtraStoryLineEnhanceRsp {
+    required Retcode retcode = 1;
+    optional bool is_open_enhance = 2;
+
+    enum CmdId {
+        CMD_ID = 1040;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

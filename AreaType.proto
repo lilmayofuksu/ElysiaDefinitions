@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum AreaType {
+    AREA_CN = 1;
+    AREA_JP = 2;
+    AREA_ASIA = 3;
+    AREA_WEST = 4;
+    AREA_KR = 5;
+    AREA_OVERSEAS = 6;
+}

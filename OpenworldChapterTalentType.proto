@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum OpenworldChapterTalentType {
+    OPENWORLD_CHAPTER_NORMAL_TALENT = 1;
+    OPENWORLD_CHAPTER_ACTIVE_TALENT = 2;
+    OPENWORLD_CHAPTER_DIG_TALENT = 3;
+}

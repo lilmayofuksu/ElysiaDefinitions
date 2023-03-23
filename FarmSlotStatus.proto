@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum FarmSlotStatus {
+    FARM_SLOT_NONE = 0;
+    FARM_SLOT_LOCKED = 1;
+    FARM_SLOT_FREE = 2;
+    FARM_SLOT_IN_PRODUCE = 3;
+    FARM_SLOT_FINISH_PRODUCE = 4;
+}

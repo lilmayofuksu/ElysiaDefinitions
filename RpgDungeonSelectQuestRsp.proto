@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message RpgDungeonSelectQuestRsp {
+    required Retcode retcode = 1;
+    optional uint32 dungeon_id = 2;
+
+    enum CmdId {
+        CMD_ID = 5503;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_MEET_TAG = 2;
+        AVATAR_NOT_EXIST = 3;
+        LOCKED = 4;
+        SELECTED = 5;
+    }
+}

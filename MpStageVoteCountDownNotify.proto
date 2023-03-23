@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message MpStageVoteCountDownNotify {
+    optional uint32 count_down_time = 1;
+
+    enum CmdId {
+        CMD_ID = 1029;
+    }
+}

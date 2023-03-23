@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "ProductType.proto";
+message Product {
+    required string name = 1;
+    required string desc = 2;
+    required ProductType type = 3;
+    required uint32 pay_hcoin = 4;
+    required uint32 free_hcoin = 5;
+    required uint32 price = 6;
+    optional uint32 left_buy_times = 7;
+    optional uint32 card_daily_hcoin = 8;
+    optional uint32 card_left_days = 9;
+    optional bool is_forbid_by_itunes_small_order = 10;
+    repeated RewardData box_reward_list = 11;
+    optional bool is_itunes_box_subscription = 12;
+    optional uint32 card_activity_daily_hcoin = 13;
+    optional bool is_add_hcoin = 14;
+    optional uint32 end_time = 15;
+    optional uint32 sort_priority = 16;
+    optional bool is_show_pic = 17;
+    optional string pic_path = 18;
+    optional string detail = 19;
+    optional uint32 id = 20;
+    optional uint32 mcoin = 21;
+    optional uint32 product_goods_id = 22;
+    optional string price_tier = 23;
+}

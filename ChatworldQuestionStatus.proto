@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum ChatworldQuestionStatus {
+    CHATWORLD_QUESTION_NONE = 0;
+    CHATWORLD_QUESTION_PREPARE = 1;
+    CHATWORLD_QUESTION_ANSWER = 2;
+    CHATWORLD_QUESTION_RESULT = 3;
+    CHATWORLD_QUESTION_CD = 4;
+}

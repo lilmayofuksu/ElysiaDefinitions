@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message DropItem {
+    optional uint32 item_id = 1;
+    optional uint32 level = 2;
+    optional uint32 num = 3;
+    optional uint32 rarity = 4;
+    optional bool is_baodi = 5;
+    optional bool is_rare_drop = 6;
+    optional uint32 gift_item_id = 7;
+    optional uint32 gift_level = 8;
+    optional uint32 gift_num = 9;
+    optional bool is_treasure = 10;
+    optional bool is_equip_drop = 11;
+    optional bool is_stage_clear_drop = 12;
+    optional bool is_avatar_drop = 13;
+    optional bool is_theme_wanted_double_drop = 14;
+}

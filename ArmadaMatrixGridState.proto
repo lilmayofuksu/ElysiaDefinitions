@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ArmadaMatrixGridState {
+    ARMADA_MATRIX_GRID_STATE_NONE = 0;
+    ARMADA_MATRIX_GRID_STATE_FOG = 1;
+    ARMADA_MATRIX_GRID_STATE_VISBLE = 2;
+}

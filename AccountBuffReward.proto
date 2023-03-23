@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message AccountBuffReward {
+    optional uint32 scoin_reward = 1;
+    optional uint32 avatar_exp_reward = 2;
+    optional uint32 player_exp_reward = 3;
+}

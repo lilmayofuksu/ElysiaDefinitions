@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GreedyEndlessEnrollReq {
+
+    enum CmdId {
+        CMD_ID = 3453;
+    }
+}

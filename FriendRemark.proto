@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message FriendRemark {
+    optional uint32 uid = 1;
+    optional string remark = 2;
+}

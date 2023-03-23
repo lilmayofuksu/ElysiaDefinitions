@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "ConsignedRewardLog.proto";
+message GetConsignedRewardLogRsp {
+    required Retcode retcode = 1;
+    repeated ConsignedRewardLog reward_log_list = 2;
+
+    enum CmdId {
+        CMD_ID = 526;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RaidActiveType.proto";
+message ActiveRaidRsp {
+    required Retcode retcode = 1;
+    optional RaidActiveType active_type = 2;
+
+    enum CmdId {
+        CMD_ID = 1625;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        ALREADY_ACTIVED = 3;
+        TYPE_ERROR = 4;
+    }
+}

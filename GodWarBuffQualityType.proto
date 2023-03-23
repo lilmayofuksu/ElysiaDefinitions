@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum GodWarBuffQualityType {
+    GOD_WAR_BUFF_QUALITY_BASE = 1;
+    GOD_WAR_BUFF_QUALITY_CORE_ARTIFACT = 2;
+    GOD_WAR_BUFF_QUALITY_CORE = 3;
+    GOD_WAR_BUFF_QUALITY_AVATAR_SPECIAL = 4;
+}

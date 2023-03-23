@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message RefreshGodWarTeleportEventReq {
+    optional uint32 god_war_id = 1;
+    optional uint32 tale_id = 2;
+    optional uint32 random = 3;
+
+    enum CmdId {
+        CMD_ID = 6163;
+    }
+}

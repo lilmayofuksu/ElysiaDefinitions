@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ElfSkillLevelUpReq {
+    optional uint32 elf_id = 1;
+    optional uint32 elf_skill_id = 2;
+
+    enum CmdId {
+        CMD_ID = 2123;
+    }
+}

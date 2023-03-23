@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message QAvatarBattleStartSkillReq {
+    optional uint32 skill_type = 1;
+    optional float rotation_x = 2;
+    optional float rotation_y = 3;
+
+    enum CmdId {
+        CMD_ID = 5604;
+    }
+}

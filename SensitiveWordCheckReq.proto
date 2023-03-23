@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message SensitiveWordCheckReq {
+    optional string content = 1;
+
+    enum CmdId {
+        CMD_ID = 5005;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message KingdomWarPhasePlayerData {
+    optional uint32 cur_point_id = 1;
+    optional uint32 today_step = 2;
+    optional bool is_take_phase_reward = 3;
+    optional uint32 vote_point = 4;
+    optional uint32 yesterday_score = 5;
+    optional uint32 today_finish_stage_num_ = 6;
+    optional uint32 last_point_id = 7;
+    optional uint32 today_score = 8;
+    optional uint32 change_stage_num = 9;
+}

@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum EquipmentForgeType {
+    EQUIPMENT_FORGE_TIMES = 1;
+    EQUIPMENT_FORGE_PACKAGE_NUM = 2;
+}

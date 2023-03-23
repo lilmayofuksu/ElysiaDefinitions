@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "MatrixGridType.proto";
+import "MatrixGridPos.proto";
+message MatrixGrid {
+    required MatrixGridPos pos = 1;
+    optional MatrixGridType type = 2;
+    optional uint32 grid_id = 3;
+    optional uint32 event_id = 4;
+}

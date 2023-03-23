@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum PlayerGenderType {
+    GENDER_NONE_TYPE = 0;
+    GENDER_MALE_TYPE = 1;
+    GENDER_FEMALE_TYPE = 2;
+}

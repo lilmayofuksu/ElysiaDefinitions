@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum MedalOpType {
+    MEDAL_WEAR = 1;
+    MEDAL_OFF = 2;
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "BackEquipmentActivity.proto";
+import "ExtractEquipmentActivity.proto";
+message GetExtractReforgeActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+    required ExtractEquipmentActivity extract_equipment_activity = 4;
+    required BackEquipmentActivity back_equipment_activity = 5;
+
+    enum CmdId {
+        CMD_ID = 3660;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

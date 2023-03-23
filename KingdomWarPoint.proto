@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "KingdomWarPointKingdomData.proto";
+message KingdomWarPoint {
+    optional uint32 point_id = 1;
+    optional uint32 cur_kingdom_id = 2;
+    repeated KingdomWarPointKingdomData kingdom_list = 3;
+    optional uint32 score = 4;
+    optional uint32 last_kingdom_id = 5;
+    optional uint32 finished_num = 6;
+    optional uint32 stage_id = 7;
+    optional uint32 today_score = 8;
+    optional bool is_open = 9;
+}

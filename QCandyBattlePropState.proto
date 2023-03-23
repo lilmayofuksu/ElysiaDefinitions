@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum QCandyBattlePropState {
+    QCANDY_BATTLE_PROP_CANNOT_TRIGGER = 0;
+    QCANDY_BATTLE_PROP_CAN_TRIGGER = 1;
+}

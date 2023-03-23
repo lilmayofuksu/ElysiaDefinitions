@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "EndlessSingleModeItem.proto";
+import "EndlessSingleModeMonsterScore.proto";
+import "EndlessSingleModeScore.proto";
+message EndlessSingleModeActivity {
+    optional uint32 cur_floor = 1;
+    repeated EndlessSingleModeScore floor_score_list = 2;
+    optional bool is_settled = 3;
+    optional uint32 reset_times = 4;
+    optional uint32 monster_random_id = 5;
+    optional uint32 activity_type = 6;
+    repeated EndlessSingleModeMonsterScore ow_monster_score_list = 7;
+    repeated EndlessSingleModeItem ow_item_list = 8;
+}

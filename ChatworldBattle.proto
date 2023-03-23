@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ChatworldCollectBattleItem.proto";
+message ChatworldBattle {
+    optional uint32 score = 1;
+    optional uint32 kill_num = 2;
+    optional uint32 kill_streak = 3;
+    optional uint32 legendary_times = 4;
+    repeated ChatworldCollectBattleItem collect_battle_item_list = 5;
+}

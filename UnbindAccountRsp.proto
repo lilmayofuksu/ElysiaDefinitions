@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message UnbindAccountRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 962;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACCOUNT_VERIFY_ERROR = 2;
+        ACCOUNT_TYPE_ERROR = 3;
+        NOT_BIND = 4;
+        IS_LOGIN = 5;
+    }
+}

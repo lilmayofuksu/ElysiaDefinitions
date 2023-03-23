@@ -1,0 +1,36 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "Material.proto";
+import "GodWarScoreEventSettle.proto";
+import "GodWarBuff.proto";
+import "GodWarChallengeAvatar.proto";
+message ResetGodWarChallengeRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    optional uint32 tale_id = 3;
+    repeated GodWarChallengeAvatar avatar_list = 4;
+    repeated GodWarBuff buff_list = 5;
+    optional bool is_challenge_succ = 6;
+    optional uint32 challenge_score = 7;
+    repeated GodWarScoreEventSettle score_id_settle_times_list = 8;
+    optional uint32 punish_level = 9;
+    optional uint32 total_score = 11;
+    optional uint32 grade = 12;
+    repeated Material reward_material_list = 13;
+    optional uint32 site_idx = 14;
+    repeated RewardData first_win_reward_list = 15;
+    optional bool is_use_virtual_avatar = 16;
+    optional uint32 challenge_cost_time = 17;
+
+    enum CmdId {
+        CMD_ID = 6158;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FEATURE_CLOSE = 2;
+        FORCE_SETTLE = 3;
+        NOT_OPEN = 4;
+    }
+}

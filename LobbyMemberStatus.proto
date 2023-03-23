@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum LobbyMemberStatus {
+    LOBBY_MEMBER_UNREADY = 1;
+    LOBBY_MEMBER_READY = 2;
+    LOBBY_MEMBER_FIGHTING = 3;
+}

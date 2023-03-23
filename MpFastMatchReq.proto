@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "MpTeamMember.proto";
+import "MpMatchStage.proto";
+message MpFastMatchReq {
+    repeated uint32 stage_id_list = 1;
+    optional uint32 device_score = 2;
+    repeated MpMatchStage match_stage_list = 3;
+    optional uint32 level = 4;
+    optional uint32 client_rtt = 5;
+    required MpTeamMember member = 6;
+    optional uint32 report_num = 7;
+
+    enum CmdId {
+        CMD_ID = 1247;
+    }
+}

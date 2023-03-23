@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ChatworldBattleCollectItemRsp {
+    required Retcode retcode = 1;
+    optional uint32 item_id = 2;
+    optional uint32 item_unique_id = 3;
+    required RewardData reward_data = 4;
+
+    enum CmdId {
+        CMD_ID = 2426;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_CHATWORLD = 2;
+        NOT_EXIST = 3;
+        CAMP_INVALID = 4;
+        LACK_TIMES = 5;
+        ITEM_NOT_USED = 6;
+        ITEM_LIMIT = 7;
+    }
+}

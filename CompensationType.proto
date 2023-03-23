@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum CompensationType {
+    COMPENSATION_NONE = 0;
+    COMPENSATION_ISLAND = 1;
+    COMPENSATION_DORM = 2;
+}

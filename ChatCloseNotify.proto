@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message ChatCloseNotify {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2239;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FEATURE_CLOSE = 2;
+        LEVEL_LIMIT = 3;
+    }
+}

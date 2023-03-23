@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GreedyEndlessFloorType {
+    GREEDY_ENDLESS_FLOOR_DEMOTE = 1;
+    GREEDY_ENDLESS_FLOOR_NORMAL = 2;
+    GREEDY_ENDLESS_FLOOR_PROMOTE = 3;
+}

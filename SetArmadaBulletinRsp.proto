@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+message SetArmadaBulletinRsp {
+    required Retcode retcode = 1;
+    optional string bulletin = 2;
+    optional string old_bulletin = 3;
+    optional string audit_bulletin = 4;
+    optional uint32 cd_end_time = 5;
+
+    enum CmdId {
+        CMD_ID = 2616;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_GRANTED = 2;
+        FORMAT_ERROR = 3;
+        SENSITIVE_WORDS = 4;
+        NOT_IN_ARMADA = 5;
+        IN_CD = 6;
+        IN_AUDIT = 7;
+    }
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message ArmadaMatrixActiveRsp {
+    required Retcode retcode = 1;
+    optional uint32 active_days = 2;
+    optional uint32 supply_add = 3;
+    optional uint32 cur_supply = 4;
+
+    enum CmdId {
+        CMD_ID = 2809;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_SUPPLY = 2;
+    }
+}

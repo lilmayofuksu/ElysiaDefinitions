@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum InviterActivityType {
+    INVITER_ACTIVITY_TYPE_NONE = 0;
+    INVITER_ACTIVITY_TYPE_NORMAL = 1;
+    INVITER_ACTIVITY_TYPE_LIMIT_TIME = 2;
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message InheritStigmataTitleRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 329;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STIGMATA_NOT_EXIST = 2;
+        MATERIAL_LACK = 3;
+        SCOIN_LACK = 4;
+        LEVEL_ERROR = 5;
+        TARGET_LEVEL_ERROR = 6;
+        LEVEL_LACK = 7;
+    }
+}

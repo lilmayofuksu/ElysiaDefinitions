@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "GodWarRoleInfo.proto";
+import "GodWarChapter.proto";
+import "GodWarTalent.proto";
+import "GodWarTale.proto";
+message GodWar {
+    optional uint32 god_war_id = 1;
+    repeated GodWarTale tale_list = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+    repeated GodWarTalent talent_list = 5;
+    optional uint32 max_support_point = 6;
+    optional uint32 lobby_id = 9;
+    repeated GodWarChapter chapter_list = 14;
+    optional uint32 cur_chapter_id = 15;
+    required GodWarRoleInfo role_info = 16;
+}

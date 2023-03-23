@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message StageActDifficultyInfo {
+    optional uint32 act_id = 1;
+    optional uint32 difficulty = 2;
+    repeated uint32 has_take_challenge_num_index = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message OpenworldChapterBuff {
+    optional uint32 buff_id = 1;
+    optional uint32 level = 2;
+
+    enum Type {
+        SKILL = 3;
+    }
+}

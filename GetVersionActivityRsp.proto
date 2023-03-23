@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "VersionActivityData.proto";
+message GetVersionActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 id = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+    optional uint32 score = 5;
+    optional uint32 reward_score = 6;
+    repeated VersionActivityData version_activity_list = 7;
+
+    enum CmdId {
+        CMD_ID = 4224;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

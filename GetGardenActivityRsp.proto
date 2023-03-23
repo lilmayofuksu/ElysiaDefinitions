@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "GardenActivityData.proto";
+message GetGardenActivityRsp {
+    required Retcode retcode = 1;
+    required GardenActivityData garden = 2;
+
+    enum CmdId {
+        CMD_ID = 4288;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

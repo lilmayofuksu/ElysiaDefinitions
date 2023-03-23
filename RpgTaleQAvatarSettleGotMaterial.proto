@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message RpgTaleQAvatarSettleGotMaterial {
+    optional uint32 material_id = 1;
+    optional uint32 material_num = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message CancelRestaurantWorkReq {
+    optional uint32 activity_id = 1;
+    optional uint32 room_id = 2;
+
+    enum CmdId {
+        CMD_ID = 5866;
+    }
+}

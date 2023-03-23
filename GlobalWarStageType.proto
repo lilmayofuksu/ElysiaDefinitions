@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum GlobalWarStageType {
+    GLOBAL_WAR_STAGE_FOR_NONE = 0;
+    GLOBAL_WAR_STAGE_FOR_POINT = 1;
+    GLOBAL_WAR_STAGE_FOR_ISOLATE_POINT = 2;
+}

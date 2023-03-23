@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum TownBuffDurationType {
+    TOWN_BUFF_DURATION_PERMANENT = 0;
+    TOWN_BUFF_DURATION_BATTLE = 1;
+    TOWN_BUFF_DURATION_STEP = 2;
+    TOWN_BUFF_DURATION_BOSS = 3;
+}

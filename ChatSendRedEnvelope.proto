@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ChatSendRedEnvelope {
+    optional uint32 item_id = 1;
+    optional string msg = 2;
+    optional uint32 red_envelope_id = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ArmadaActivity.proto";
+message GetArmadaActivityListRsp {
+    required Retcode retcode = 1;
+    repeated ArmadaActivity activity_list = 2;
+
+    enum CmdId {
+        CMD_ID = 2826;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

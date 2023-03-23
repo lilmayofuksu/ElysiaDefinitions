@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message SellAvatarFragmentRsp {
+    required Retcode retcode = 1;
+    optional uint32 scoin_add = 2;
+
+    enum CmdId {
+        CMD_ID = 103;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FRAGMENT_NOT_ENOUGH = 2;
+    }
+}

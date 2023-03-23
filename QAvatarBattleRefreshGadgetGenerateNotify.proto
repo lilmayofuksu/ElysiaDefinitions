@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "QAvatarBattleRefreshGadget.proto";
+message QAvatarBattleRefreshGadgetGenerateNotify {
+    optional uint32 refresh_id = 1;
+    repeated QAvatarBattleRefreshGadget refresh_gadget_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5623;
+    }
+}

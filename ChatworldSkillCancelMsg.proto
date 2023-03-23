@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message ChatworldSkillCancelMsg {
+    optional uint32 skill_unique_id = 1;
+}

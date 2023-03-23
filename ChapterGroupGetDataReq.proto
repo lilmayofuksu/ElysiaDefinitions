@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChapterGroupGetDataReq {
+    optional uint32 chapter_group_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1660;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum ExaminationTagType {
+    EXAMINATION_TYPE_NONE = 0;
+    EXAMINATION_TYPE_AVATAR = 1;
+    EXAMINATION_TYPE_ELF = 2;
+    EXAMINATION_TYPE_MONSTER = 3;
+    EXAMINATION_TYPE_COMMON = 4;
+}

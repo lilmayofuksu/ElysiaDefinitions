@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message RoomInfo {
+    optional uint32 sub_type = 1;
+    optional uint32 stage_id = 2;
+}

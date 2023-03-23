@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum SupportActivityType {
+    ACTIVITY_TYPE_GLOBAL_SUPPORT = 0;
+    ACTIVITY_TYPE_NORMAL = 1;
+}

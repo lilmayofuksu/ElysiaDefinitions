@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message BbqActivityCookRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    required RewardData reward_data = 3;
+    optional uint32 bbq_level = 4;
+    optional uint32 bbq_exp = 5;
+    optional uint32 can_use_bbq_count = 6;
+
+    enum CmdId {
+        CMD_ID = 4253;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        ITEMS_LACK = 3;
+    }
+}

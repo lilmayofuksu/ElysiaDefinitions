@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message GardenSite {
+    optional uint32 site_id = 1;
+    optional uint32 crop_id = 2;
+    optional uint32 delay_begin_time = 3;
+}

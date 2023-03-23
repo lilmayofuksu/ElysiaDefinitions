@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message GetFastPassDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 fast_pass_type = 2;
+    optional uint32 use_times = 3;
+
+    enum CmdId {
+        CMD_ID = 1556;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_EXIST = 2;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message DormFacility {
+    optional uint32 type = 1;
+    optional uint32 level = 2;
+    optional uint32 id = 3;
+    optional uint32 begin_time = 4;
+}

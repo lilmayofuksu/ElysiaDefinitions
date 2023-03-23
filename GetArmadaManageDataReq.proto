@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetArmadaManageDataReq {
+
+    enum CmdId {
+        CMD_ID = 2611;
+    }
+}

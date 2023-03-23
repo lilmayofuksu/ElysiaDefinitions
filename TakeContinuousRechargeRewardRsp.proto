@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeContinuousRechargeRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward = 2;
+
+    enum CmdId {
+        CMD_ID = 4170;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        PROGRESS_LACK = 3;
+        HAS_TAKE = 4;
+    }
+}

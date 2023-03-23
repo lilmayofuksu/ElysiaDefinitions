@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message ScoinExchangeRsp {
+    required Retcode retcode = 1;
+    optional uint32 hcoin_cost = 2;
+    optional uint32 scoin_get = 3;
+    optional uint32 boost_rate = 4;
+    optional uint32 purple_jade_cost = 5;
+
+    enum CmdId {
+        CMD_ID = 15;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HCOIN_LACK = 2;
+        TIMES_LACK = 3;
+        LACK_PURPLE_JADE = 4;
+    }
+}

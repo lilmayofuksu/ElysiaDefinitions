@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "DiceyDungeonActivity.proto";
+message DiceyDungeonActivityGetDataRsp {
+    required Retcode retcode = 1;
+    required DiceyDungeonActivity dungeon_activity = 2;
+
+    enum CmdId {
+        CMD_ID = 6501;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ACTIVITY_NOT_EXIST = 2;
+    }
+}

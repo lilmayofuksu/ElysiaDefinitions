@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum OpenworldDataType {
+    OPENWORLD_DATA_ALL = 0;
+    OPENWORLD_DATA_COOK = 1;
+    OPENWORLD_DATA_TECH = 2;
+    OPENWORLD_DATA_MECHA = 3;
+}

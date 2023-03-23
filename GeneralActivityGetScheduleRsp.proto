@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "GeneralActivityScheduleInfo.proto";
+message GeneralActivityGetScheduleRsp {
+    required Retcode retcode = 1;
+    repeated GeneralActivityScheduleInfo schedule_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4004;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "NinjaSlot.proto";
+message NinjaSlotChooseEffectRsp {
+    required Retcode retcode = 1;
+    required NinjaSlot slot = 2;
+
+    enum CmdId {
+        CMD_ID = 4406;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LOCKED = 2;
+    }
+}

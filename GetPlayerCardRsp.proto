@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+import "Medal.proto";
+import "PlayerCardMsgData.proto";
+import "PlayerCardType.proto";
+message GetPlayerCardRsp {
+    required Retcode retcode = 1;
+    optional PlayerCardType type = 2;
+    repeated uint32 avatar_id_list = 3;
+    repeated uint32 medal_id_list = 4;
+    optional uint32 msg_config = 5;
+    required PlayerCardMsgData msg_data = 6;
+    optional uint32 last_read_msg_index = 7;
+    optional uint32 mp_like_num = 8;
+    optional uint32 island_like_num = 9;
+    repeated uint32 elf_id_list = 10;
+    optional uint32 campaign_like_num = 11;
+    repeated Medal medal_list = 12;
+
+    enum CmdId {
+        CMD_ID = 481;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

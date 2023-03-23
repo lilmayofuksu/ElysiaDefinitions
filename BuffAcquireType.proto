@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum BuffAcquireType {
+    BUFF_ACQUIRE_GOBACK = 1;
+    BUFF_ACQUIRE_ITEMUSE = 3;
+}

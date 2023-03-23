@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message QAvatarBattlePositionComponent {
+    optional float x = 1;
+    optional float y = 2;
+    optional float rotation_x = 3;
+    optional float rotation_y = 4;
+}

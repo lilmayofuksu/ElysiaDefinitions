@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message OpenworldHuntActivityTalentUpgradeReq {
+    optional uint32 activity_id = 1;
+    optional uint32 talent_id = 2;
+    optional string report_ext = 3;
+
+    enum CmdId {
+        CMD_ID = 4606;
+    }
+}

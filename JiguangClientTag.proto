@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "JiguangTagType.proto";
+message JiguangClientTag {
+    optional JiguangTagType tag_type = 1;
+    repeated uint32 para_list = 2;
+}

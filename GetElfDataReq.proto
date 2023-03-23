@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetElfDataReq {
+
+    enum CmdId {
+        CMD_ID = 2100;
+    }
+}

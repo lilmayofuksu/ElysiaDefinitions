@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message CreateChatgroupReq {
+    optional string name = 1;
+    optional string notice = 2;
+    optional uint32 icon_id = 3;
+    repeated uint32 label_id_list = 4;
+
+    enum CmdId {
+        CMD_ID = 2200;
+    }
+}

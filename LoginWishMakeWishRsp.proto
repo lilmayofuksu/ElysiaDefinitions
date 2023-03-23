@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message LoginWishMakeWishRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 login_day = 3;
+    optional uint32 choose_reward_id = 4;
+
+    enum CmdId {
+        CMD_ID = 1614;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        DAY_LACK = 3;
+        REWARD_TAKEN = 4;
+    }
+}

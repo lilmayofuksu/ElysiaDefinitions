@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum MatrixFingerType {
+    MATRIX_FINGER_NONE = 0;
+    MATRIX_FINGER_SCISSORS = 1;
+    MATRIX_FINGER_STONE = 2;
+    MATRIX_FINGER_CLOTH = 3;
+}

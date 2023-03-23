@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message MpStageDamageInfo {
+    optional uint32 hit_damage_1 = 1;
+    optional uint32 hit_damage_2 = 2;
+    optional uint32 hit_damage_3 = 3;
+}

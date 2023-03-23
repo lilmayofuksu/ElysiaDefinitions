@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "OpenworldMechaTeamMember.proto";
+message OpenworldSetMechaTeamReq {
+    optional uint32 team_index = 1;
+    repeated OpenworldMechaTeamMember mecha_list = 2;
+    optional bool set_as_battle_team = 3;
+
+    enum CmdId {
+        CMD_ID = 4506;
+    }
+}

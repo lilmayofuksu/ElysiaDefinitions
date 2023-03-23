@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message AvatarFragmentSwitchData {
+    optional uint32 avatar_id = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ChatRedEnvelopeTakeOver {
+    optional uint32 sender_uid = 1;
+    optional string sender_nickname = 2;
+    optional uint32 item_id = 3;
+    optional string msg = 4;
+    optional uint32 red_envelope_id = 5;
+}

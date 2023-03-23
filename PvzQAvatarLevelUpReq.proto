@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message PvzQAvatarLevelUpReq {
+    optional uint32 activity_id = 1;
+    optional uint32 qavatar_id = 2;
+    optional uint32 target_level = 3;
+
+    enum CmdId {
+        CMD_ID = 6556;
+    }
+}

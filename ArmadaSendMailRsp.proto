@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message ArmadaSendMailRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 2690;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_GRANTED = 2;
+        NOT_IN_ARMADA = 3;
+        FORMAT_ERROR = 4;
+        SENSITIVE_WORDS = 5;
+        SEND_CD = 6;
+    }
+}

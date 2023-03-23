@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetGardenScheduleReq {
+
+    enum CmdId {
+        CMD_ID = 4295;
+    }
+}

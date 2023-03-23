@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ChatMsgSensitiveCheckResult {
+    optional int32 shield_type = 1;
+    optional int32 number_check = 2;
+    optional string rewrite_text = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "LobbyEnterType.proto";
+message MpTeamEnterLobbyReq {
+    required uint32 stage_id = 1;
+    optional LobbyEnterType lobby_enter_type = 2;
+    optional uint32 min_level = 3;
+    optional string team_name = 4;
+    optional bool is_team_name_default = 6;
+    optional uint32 max_level = 7;
+
+    enum CmdId {
+        CMD_ID = 356;
+    }
+}

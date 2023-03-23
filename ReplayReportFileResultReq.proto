@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ReplayReportFileResultReq {
+    optional string token = 1;
+
+    enum CmdId {
+        CMD_ID = 5412;
+    }
+}

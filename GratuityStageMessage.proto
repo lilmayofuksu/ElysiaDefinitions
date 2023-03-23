@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message GratuityStageMessage {
+    optional MessageType message_type = 1;
+    optional uint32 from_uid = 2;
+    repeated MonsterDamage monster_damage_list = 3;
+
+    enum MessageType {
+        MESSAGE_NONE = 0;
+        MESSAGE_MONSTER_DAMAGE = 1;
+    }
+    message MonsterDamage {
+        optional uint32 monster_id = 1;
+        optional uint32 cost_hp = 2;
+    }
+}

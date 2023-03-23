@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message KingdomWarJoinData {
+    optional uint32 combat_power = 1;
+    optional uint32 last_kingdom_id = 2;
+}

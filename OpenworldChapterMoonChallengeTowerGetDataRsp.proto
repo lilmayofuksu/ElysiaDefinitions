@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "OpenworldChapterMoonChallengeTower.proto";
+message OpenworldChapterMoonChallengeTowerGetDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 daily_challenge_times = 3;
+    repeated OpenworldChapterMoonChallengeTower challenge_tower_list = 4;
+
+    enum CmdId {
+        CMD_ID = 4674;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+    }
+}

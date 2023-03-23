@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "UniqueGachaSelectItemPool.proto";
+message UniqueGachaData {
+    required uint32 ticket_hcoin_cost = 2;
+    required uint32 ticket_material_id = 3;
+    optional uint32 left_gacha_times = 7;
+    required UniqueGachaSelectItemPool select_item_pool = 8;
+}

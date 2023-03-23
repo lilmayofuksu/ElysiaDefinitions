@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "QAvatarBattleMember.proto";
+message QAvatarBattleBeginNotify {
+    optional uint32 tale_id = 1;
+    optional uint32 site_id = 2;
+    optional uint32 fightserver_ip = 3;
+    optional uint32 fightserver_port = 4;
+    optional uint32 chatworld_id = 5;
+    optional uint32 scene_id = 6;
+    optional uint32 lobby_id = 10;
+    optional uint32 battle_id = 11;
+    optional uint32 battle_start_time = 12;
+    repeated QAvatarBattleMember member_list = 13;
+
+    enum CmdId {
+        CMD_ID = 5550;
+    }
+}

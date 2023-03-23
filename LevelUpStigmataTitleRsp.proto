@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message LevelUpStigmataTitleRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 325;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STIGMATA_NOT_EXIST = 2;
+        EXP_FULL = 3;
+        MATERIAL_ERROR = 4;
+        LEVEL_LACK = 5;
+    }
+}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "GodWarChallengeStigmata.proto";
+message GodWarChallengeAvatar {
+    optional uint32 avatar_id = 1;
+    optional uint32 hp_percent = 2;
+    optional bool is_virtual = 3;
+    optional uint32 weapon_id = 4;
+    optional uint32 weapon_level = 5;
+    required GodWarChallengeStigmata stigmata_1 = 6;
+    required GodWarChallengeStigmata stigmata_2 = 7;
+    required GodWarChallengeStigmata stigmata_3 = 8;
+}

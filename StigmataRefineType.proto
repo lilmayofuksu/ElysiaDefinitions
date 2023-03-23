@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum StigmataRefineType {
+    STIGMATA_REFINE_NORMAL = 1;
+    STIGMATA_REFINE_ADD_SLOT = 2;
+    STIGMATA_REFINE_SPECIAL = 3;
+    STIGMATA_REFINE_LOCK = 4;
+}

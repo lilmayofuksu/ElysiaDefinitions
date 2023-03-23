@@ -1,0 +1,43 @@
+syntax = "proto2";
+
+import "StigmataRuneGroup.proto";
+import "StigmataRefineTimesType.proto";
+import "StigmataRune.proto";
+message RefineStigmataRuneRsp {
+    required Retcode retcode = 1;
+    repeated StigmataRune rune_list = 2;
+    optional StigmataRefineTimesType times_type = 3;
+    repeated StigmataRuneGroup rune_group_list = 4;
+    repeated uint32 wait_select_stgimata_list = 5;
+
+    enum CmdId {
+        CMD_ID = 194;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STIGMATA_NOT_EXIST = 2;
+        STIGMATA_NOT_IDENTIFY = 3;
+        STIGMATA_CAN_NOT_REFINE = 4;
+        STIGMATA_WAIT_RUNE_EXIST = 5;
+        CONSUME_ITEM_NOT_EXIST = 6;
+        CONSUME_ITEM_IN_USE = 7;
+        CONSUME_ITEM_REPEAT = 8;
+        CONSUME_ITEM_UN_NECESSARY = 9;
+        CONSUME_ITEM_LACK = 10;
+        ITEM_IN_CONSUME_ITEM_LIST = 11;
+        CONSUME_ITEM_PROTECTED = 12;
+        COST_GACHA_TICKET = 13;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 14;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 15;
+        LEVEL_LACK = 16;
+        CONSUME_ITEM_IN_FACILITY = 17;
+        CONSUME_ITEM_GRAND_KEY = 18;
+        SLOT_LACK = 19;
+        TRIGGER_MATERIAL_LACK = 20;
+        LOCK_INDEX_ERROR = 21;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 22;
+        NOT_OPEN = 23;
+        TOO_MANY_WAIT_RUNE = 24;
+    }
+}

@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message ScDLCTowerStageBeginRsp {
+    required Retcode retcode = 1;
+    optional uint32 cur_floor = 2;
+
+    enum CmdId {
+        CMD_ID = 6335;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_BEGIN = 2;
+        PROGRESS_FULL = 3;
+        AVATAR_ERROR = 4;
+        AVATAR_DIE = 5;
+        NOT_OPEN = 6;
+        SUPPORT_AVATAR_ERROR = 7;
+        FLOOR_ERROR = 8;
+        STORY_NOT_FINISH = 9;
+    }
+}

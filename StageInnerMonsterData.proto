@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message StageInnerMonsterData {
+    required string monster_name = 1;
+    required string monster_type = 2;
+    required uint32 monster_level = 3;
+    required uint32 monster_num = 4;
+    required uint32 avg_output = 5;
+    required uint32 avg_live_time = 6;
+    required uint32 dps = 7;
+    required uint32 hit_avatar_times = 8;
+    required uint32 break_avatar_times = 9;
+}

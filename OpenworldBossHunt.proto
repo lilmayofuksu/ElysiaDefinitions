@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "OpenworldBoss.proto";
+message OpenworldBossHunt {
+    optional uint32 map_id = 1;
+    optional uint32 cur_boss_id = 2;
+    repeated OpenworldBoss boss_list = 3;
+    optional uint32 last_choose_boss_time = 4;
+    repeated uint32 have_take_rating_reward_list = 5;
+    optional bool is_call_boss = 6;
+    repeated uint32 killed_boss_id_list = 7;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum RoomExitReason {
+    ROOM_EXIT_NONE = 0;
+    ROOM_EXIT_KICK = 1;
+    ROOM_EXIT_DISMISSED = 2;
+}

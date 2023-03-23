@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RefreshGodWarTicketInfo.proto";
+message RefreshGodWarTicketRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    repeated RefreshGodWarTicketInfo ticket_refresh_list = 3;
+
+    enum CmdId {
+        CMD_ID = 6190;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FEATURE_CLOSE = 2;
+    }
+}

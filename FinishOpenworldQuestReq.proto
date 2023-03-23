@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message FinishOpenworldQuestReq {
+    optional uint32 map_id = 1;
+    required uint32 quest_id = 2;
+    optional uint32 cost_time = 3;
+    repeated uint32 finish_challenge_list = 4;
+    optional uint32 mecha_id = 5;
+    optional string report_ext = 6;
+
+    enum CmdId {
+        CMD_ID = 4488;
+    }
+}

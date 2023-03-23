@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "EquipmentItem.proto";
+message DonateWareHouseItemRsp {
+    required Retcode retcode = 1;
+    required EquipmentItem item = 2;
+    optional uint32 demand_id = 3;
+    repeated RewardData reward_list = 4;
+
+    enum CmdId {
+        CMD_ID = 2654;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ARMADA = 2;
+        TARGET_NOT_IN_ARMADA = 3;
+        STATUS_ERROR = 4;
+        CONSUME_ITEM_NOT_EXIST = 5;
+        CONSUME_ITEM_IN_USE = 6;
+        CONSUME_ITEM_REPEAT = 7;
+        CONSUME_ITEM_PROTECTED = 8;
+        COST_GACHA_TICKET = 9;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 10;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 11;
+        DONATE_ITEM_LACK = 12;
+        DONATE_TIMES_LACK = 13;
+        CONSUME_ITEM_IN_FACILITY = 14;
+        CONSUME_ITEM_GRAND_KEY = 15;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 16;
+    }
+}

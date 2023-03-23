@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message ApplyJoinArmadaReq {
+    required uint32 armada_id = 1;
+    optional uint32 level = 2;
+
+    enum CmdId {
+        CMD_ID = 2607;
+    }
+}

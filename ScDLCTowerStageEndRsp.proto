@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message ScDLCTowerStageEndRsp {
+    required Retcode retcode = 1;
+    required RewardData reward_data = 2;
+    optional uint32 score = 3;
+    optional uint32 floor = 4;
+    optional uint32 settle_floor = 5;
+
+    enum CmdId {
+        CMD_ID = 6337;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_BEGIN = 2;
+        FLOOR_ERROR = 3;
+        AVATAR_ERROR = 4;
+    }
+}

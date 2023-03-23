@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message MinuteStage {
+    optional uint32 minute_id = 1;
+    optional StageState state = 2;
+
+    enum StageState {
+        LOCKED = 0;
+        UNLOCK = 1;
+        FINISH = 2;
+    }
+}

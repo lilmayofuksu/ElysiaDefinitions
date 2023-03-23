@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetChatReportInfoReq {
+
+    enum CmdId {
+        CMD_ID = 1159;
+    }
+}

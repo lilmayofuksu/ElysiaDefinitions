@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "MatrixGridPos.proto";
+message MatrixAdvancePath {
+    required MatrixGridPos path_from = 1;
+    required MatrixGridPos path_to = 2;
+}

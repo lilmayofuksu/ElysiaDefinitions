@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message AvatarFragment {
+    required uint32 fragment_id = 1;
+    required uint32 num = 2;
+}

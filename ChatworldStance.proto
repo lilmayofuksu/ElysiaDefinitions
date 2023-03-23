@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ChatworldPosition.proto";
+message ChatworldStance {
+    optional uint32 stance_id = 1;
+    required ChatworldPosition position = 2;
+    optional uint32 holding_stance_camp_tag = 3;
+    optional uint32 camp_1_stance_progress = 4;
+    optional uint32 camp_2_stance_progress = 5;
+}

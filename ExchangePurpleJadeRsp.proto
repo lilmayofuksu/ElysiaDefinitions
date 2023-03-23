@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message ExchangePurpleJadeRsp {
+    required Retcode retcode = 1;
+    optional uint32 hcoin_cost = 2;
+    optional uint32 purple_jade_added = 3;
+    optional uint32 mcoin_cost = 4;
+
+    enum CmdId {
+        CMD_ID = 1368;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_HCOIN = 2;
+        CAN_NOT_EXCHANGE = 3;
+        LIMIT_FOR_EXCHANGE = 4;
+        LACK_EXCHANGE_NUM = 5;
+        LACK_MCOIN = 6;
+    }
+}

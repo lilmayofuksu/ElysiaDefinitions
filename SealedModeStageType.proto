@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SealedModeStageType {
+    SEALED_MODE_PRACTICE = 1;
+    SEALED_MODE_SP = 2;
+    SEALED_MODE_MP = 3;
+}

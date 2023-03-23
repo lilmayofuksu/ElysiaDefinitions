@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum AdventureQuestResult {
+    ADVENTURE_QUEST_RESULT_NONE = 0;
+    ADVENTURE_QUEST_RESULT_FAIL = 1;
+    ADVENTURE_QUEST_RESULT_SUCC = 2;
+    ADVENTURE_QUEST_RESULT_BIG_SUCC = 3;
+}

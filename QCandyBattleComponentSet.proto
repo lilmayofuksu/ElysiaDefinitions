@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "QCandyBattleComponentPosition.proto";
+message QCandyBattleComponentSet {
+    required QCandyBattleComponentPosition position_component = 1;
+}

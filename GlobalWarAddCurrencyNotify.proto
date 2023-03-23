@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "GlobalWarMember.proto";
+message GlobalWarAddCurrencyNotify {
+    optional uint32 point_id = 1;
+    required GlobalWarMember global_war_member = 2;
+
+    enum CmdId {
+        CMD_ID = 3954;
+    }
+}

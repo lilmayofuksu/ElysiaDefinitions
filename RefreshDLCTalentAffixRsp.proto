@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message RefreshDLCTalentAffixRsp {
+    required Retcode retcode = 1;
+    optional uint32 new_affix_set_id = 2;
+
+    enum CmdId {
+        CMD_ID = 3581;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_ERROR = 2;
+        NOT_REFRESHABLE_TALENT = 3;
+        MATERIAL_LACK = 4;
+        WAIT_SELECT_AFFIX_SET_NOT_EMPTY = 5;
+    }
+}

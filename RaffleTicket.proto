@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "RaffleRewardGrade.proto";
+message RaffleTicket {
+    optional uint32 ticket_num = 1;
+    optional uint32 draw_idx = 2;
+    optional RaffleRewardGrade reward_grade = 3;
+    optional bool is_reward_taken = 4;
+}

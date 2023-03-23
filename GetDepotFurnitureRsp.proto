@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "DepotFurniture.proto";
+message GetDepotFurnitureRsp {
+    required Retcode retcode = 1;
+    repeated DepotFurniture depot_furniture_list = 2;
+
+    enum CmdId {
+        CMD_ID = 608;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

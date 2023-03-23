@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message GetRoomDataRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3151;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

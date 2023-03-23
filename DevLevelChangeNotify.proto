@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message DevLevelChangeNotify {
+    optional string dev_level_msg = 1;
+
+    enum CmdId {
+        CMD_ID = 1619;
+    }
+}

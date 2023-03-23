@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message InitRogueStageRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 278;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_JOIN_ARMADA = 2;
+        NOT_RESET = 3;
+        AVATAR_NUM_ERROR = 4;
+        AVATAR_NOT_EXIST = 5;
+        HARD_LEVEL_ERROR = 6;
+        LEVEL_LACK = 7;
+        NOT_OPEN = 8;
+    }
+}

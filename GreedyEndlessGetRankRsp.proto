@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message GreedyEndlessGetRankRsp {
+    required Retcode retcode = 1;
+    required RankShowData rank_data = 2;
+
+    enum CmdId {
+        CMD_ID = 3459;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_RANK = 2;
+    }
+}

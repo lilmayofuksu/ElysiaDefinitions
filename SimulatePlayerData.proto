@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SimulatePlayerData {
+    optional uint32 uid = 1;
+    optional uint32 level = 2;
+    optional string nickname = 3;
+    optional uint32 avatar_trial_id = 4;
+}

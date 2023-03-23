@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+enum CreditBehavior {
+    CREDIT_UNCONFIRM = 1;
+    CREDIT_ON_HOOK = 2;
+    CREDIT_TEAM_MATCH = 3;
+    CREDIT_WIN = 4;
+    CREDIT_LOSE = 5;
+    CREDIT_DAILY_REFRESH = 99;
+}

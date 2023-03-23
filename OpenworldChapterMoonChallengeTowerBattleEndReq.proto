@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "MoonChallengeTowerBattleEndStatus.proto";
+message OpenworldChapterMoonChallengeTowerBattleEndReq {
+    optional uint32 map_id = 1;
+    optional uint32 tower_id = 2;
+    optional uint32 end_floor = 3;
+    optional uint32 score = 4;
+    optional MoonChallengeTowerBattleEndStatus battle_end_status = 5;
+    optional uint32 cost_time = 6;
+
+    enum CmdId {
+        CMD_ID = 4677;
+    }
+}

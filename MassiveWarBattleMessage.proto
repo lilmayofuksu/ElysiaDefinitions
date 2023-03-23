@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "MassiveWarFieldActionType.proto";
+message MassiveWarBattleMessage {
+    optional uint32 message_id = 1;
+    required DamageMessage damage_msg = 11;
+    required FieldMessage field_msg = 12;
+
+    enum MassiveWarMessageType {
+        MASSIVE_WAR_MESSAGE_NONE = 0;
+        MASSIVE_WAR_MESSAGE_BOSS_DAMAGE = 1;
+        MASSIVE_WAR_MESSAGE_FIELD = 2;
+    }
+    message DamageMessage {
+        optional uint64 add_damage = 1;
+        optional uint64 total_damage = 2;
+    }
+    message FieldMessage {
+        optional MassiveWarFieldActionType action_type = 1;
+        optional uint32 buff_progress = 2;
+    }
+}

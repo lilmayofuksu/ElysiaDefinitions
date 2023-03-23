@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message TakeChallengeStepCompensationReq {
+    optional uint32 compensation_id = 1;
+
+    enum CmdId {
+        CMD_ID = 1678;
+    }
+}

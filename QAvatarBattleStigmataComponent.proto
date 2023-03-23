@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "QAvatarBattleStigmata.proto";
+message QAvatarBattleStigmataComponent {
+    repeated QAvatarBattleStigmata stigmata_list = 1;
+}

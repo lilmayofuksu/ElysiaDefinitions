@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "AvatarRecommendSource.proto";
+import "LineupBriefInfo.proto";
+message RecommendAvatar {
+    required LineupBriefInfo lineup_info = 1;
+    optional uint32 battle_times = 2;
+    optional float battle_rate = 3;
+    optional AvatarRecommendSource source = 5;
+    optional string ext_info = 8;
+    optional uint32 recommend_style = 9;
+    optional uint32 rank = 10;
+    optional bool is_has_course_info = 11;
+}

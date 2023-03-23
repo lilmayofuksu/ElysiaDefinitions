@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GetMasterPupilDataReq {
+    optional uint32 type = 1;
+    optional uint32 time = 2;
+
+    enum CmdId {
+        CMD_ID = 568;
+    }
+}

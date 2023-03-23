@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "OldEndlessPlayerSettle.proto";
+message UltraEndlessSettleInfo {
+    optional uint32 schedule_id = 1;
+    optional uint32 group_level = 2;
+    optional uint32 max_stage_score = 3;
+    optional uint32 group_member_num = 4;
+    optional uint32 rank = 5;
+    optional uint32 cup_num_before = 6;
+    optional uint32 cup_num_after_schedule_settle = 7;
+    optional uint32 cup_num_after_season_settle = 8;
+    optional uint32 cup_num_before_season_settle = 9;
+    optional uint32 cup_num = 10;
+    repeated OldEndlessPlayerSettle old_endless_settle_list = 11;
+    optional uint32 mmr_score = 12;
+    optional uint32 buffer_cup_before_schedule_settle = 13;
+    optional uint32 buffer_cup = 15;
+}

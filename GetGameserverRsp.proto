@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message GetGameserverRsp {
+
+    enum CmdId {
+        CMD_ID = 3;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        SERVER_STOP = 2;
+        VERSION_ERROR = 3;
+        FORCE_UPDATE = 4;
+    }
+}

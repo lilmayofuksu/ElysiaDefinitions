@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+import "EndlessRewardType.proto";
+message GetLastEndlessRewardDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 group_level = 3;
+    optional uint32 rank = 4;
+    optional uint32 progress_or_score = 5;
+    optional EndlessRewardType reward_type = 6;
+    optional uint32 reward_id = 7;
+    repeated RewardData reward_list = 8;
+    optional uint32 cur_group_level = 9;
+    optional uint32 type = 10;
+
+    enum CmdId {
+        CMD_ID = 3407;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_JOIN = 2;
+    }
+}

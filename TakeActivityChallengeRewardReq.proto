@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message TakeActivityChallengeRewardReq {
+    optional uint32 activity_id = 1;
+    optional uint32 challenge_num_index = 2;
+
+    enum CmdId {
+        CMD_ID = 460;
+    }
+}

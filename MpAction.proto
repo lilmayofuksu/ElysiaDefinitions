@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MpAction {
+    MP_ACTION_ERROR = 0;
+    MP_ACTION_CLOSE_MVP_PAGE = 1;
+    MP_ACTION_CLOSE_LIKE_PAGE = 2;
+}

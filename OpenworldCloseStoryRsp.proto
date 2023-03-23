@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+message OpenworldCloseStoryRsp {
+    required Retcode retcode = 1;
+    repeated uint32 story_id_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4574;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

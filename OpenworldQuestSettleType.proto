@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum OpenworldQuestSettleType {
+    OPENWORLD_QUEST_SETTLE_DEFAULT = 0;
+    OPENWORLD_QUEST_SETTLE_CHALLENGE = 1;
+}

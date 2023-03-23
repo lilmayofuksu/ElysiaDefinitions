@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "DiceType.proto";
+message MatrixThrowDiceRsp {
+    required Retcode retcode = 1;
+    optional DiceType dice_type = 2;
+    optional uint32 dice_point = 3;
+    optional uint32 bonus_dice_point = 4;
+
+    enum CmdId {
+        CMD_ID = 2346;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NO_DICE = 2;
+        IN_FLOOR_EVENT = 3;
+        WAIT_CHOOSE = 4;
+        HAVE_EVENT = 5;
+        LACK_DICE = 6;
+    }
+}

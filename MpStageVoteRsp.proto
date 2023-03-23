@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "MpStageVoteOption.proto";
+message MpStageVoteRsp {
+    required Retcode retcode = 1;
+    optional MpStageVoteOption option = 2;
+
+    enum CmdId {
+        CMD_ID = 1031;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+        NOT_VOTING = 3;
+    }
+}

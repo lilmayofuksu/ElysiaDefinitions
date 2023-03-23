@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+message MpFastMatchRsp {
+    required Retcode retcode = 1;
+    repeated uint32 stage_id_list = 2;
+    optional uint32 lobby_id = 3;
+
+    enum CmdId {
+        CMD_ID = 1248;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STAGE_ERROR = 2;
+        CLIENT_VERSION_ERROR = 3;
+        BAD_NETWORK = 4;
+        SERVER_BUSY = 5;
+        ALREADY_IN_TEAM = 6;
+        MATCH_STAGE_EXCEED_MAX = 7;
+        IN_SQUAD = 8;
+        IN_SQUAD_MATCH = 9;
+        IN_ROOM = 10;
+    }
+}

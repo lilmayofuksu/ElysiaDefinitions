@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message BuffAssistRefreshWaitSelectBuffPoolReq {
+
+    enum CmdId {
+        CMD_ID = 5943;
+    }
+}

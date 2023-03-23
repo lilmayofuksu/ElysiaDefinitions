@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message SlgGetActivityStaminaRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_stamina_num = 2;
+    optional uint32 last_recover_activity_stamina_time = 3;
+
+    enum CmdId {
+        CMD_ID = 6058;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+    }
+}

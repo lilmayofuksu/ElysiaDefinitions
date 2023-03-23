@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum SnsShowType {
+    SNS_NONE = 0;
+    SNS_MAIN = 1;
+    SNS_WAR_HISTORY = 2;
+    SNS_WIKI = 3;
+    SNS_MSG_CARD = 4;
+}

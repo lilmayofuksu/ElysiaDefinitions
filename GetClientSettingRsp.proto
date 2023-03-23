@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "MasterPupilTagSwitch.proto";
+import "AvatarArtifactSwitch.proto";
+import "SnsShowPriviledge.proto";
+message GetClientSettingRsp {
+    required Retcode retcode = 1;
+    optional uint32 client_setting_type = 2;
+    optional bool is_weekly_guide_switch_on = 3;
+    repeated SnsShowPriviledge sns_show_priviledge_list = 4;
+    repeated AvatarArtifactSwitch avatar_artifact_switch_list = 5;
+    repeated MasterPupilTagSwitch master_pupil_tag_switch_list = 6;
+
+    enum CmdId {
+        CMD_ID = 1272;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

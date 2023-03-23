@@ -1,0 +1,33 @@
+syntax = "proto2";
+
+import "IslandStorySweepData.proto";
+message AdventureStorySweepRsp {
+    required Retcode retcode = 1;
+    required IslandStorySweepData sweep_data = 2;
+    optional uint32 used_stamina = 3;
+
+    enum CmdId {
+        CMD_ID = 3913;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_MEET_RESTRICT = 2;
+        HAS_TAKEN = 3;
+        LACK_MATERIAL = 4;
+        STAMINA_LACK = 5;
+        EQUIPMENT_FULL = 6;
+        EQUIPMENT_MATERIAL_LIMIT = 7;
+        EQUIPMENT_FRAGMENT_LIMIT = 8;
+        ENTER_TIMES_LACK = 9;
+        NOT_MEET_FAST = 10;
+        EXCEED_STAMINA = 11;
+        NOT_FINISH_CHALLENGE = 12;
+        AVATAR_SWEEPING = 13;
+        TEAM_LIMIT = 14;
+        AVATAR_ERROR = 15;
+        STAGE_NOT_EXIST = 16;
+        ACTIVITY_ENTER_TIMES_LACK = 17;
+        LEVEL_LACK = 18;
+    }
+}

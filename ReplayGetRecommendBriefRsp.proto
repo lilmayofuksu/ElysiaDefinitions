@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "ReplayRecommendBrief.proto";
+message ReplayGetRecommendBriefRsp {
+    required Retcode retcode = 1;
+    repeated ReplayRecommendBrief brief_list = 2;
+
+    enum CmdId {
+        CMD_ID = 5419;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

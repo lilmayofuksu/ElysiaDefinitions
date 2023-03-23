@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum GachaUniqueType {
+    GACHA_UNIQUE_NONE = 0;
+    GACHA_UNIQUE_WEAPON = 1;
+    GACHA_UNIQUE_STIGMATA = 2;
+    GACHA_UNIQUE_EQUIP = 3;
+}

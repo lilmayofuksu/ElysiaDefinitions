@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message AcceptOpenworldStoryReq {
+    optional uint32 story_id = 1;
+    optional string report_ext = 2;
+
+    enum CmdId {
+        CMD_ID = 4452;
+    }
+}

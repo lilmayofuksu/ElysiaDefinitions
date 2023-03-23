@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "Goods.proto";
+message RecommendGoods {
+    optional uint32 shop_id = 1;
+    required Goods goods = 2;
+    optional string banner_bg = 3;
+    optional uint32 accurate_deliver_schedule_id = 4;
+}

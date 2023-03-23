@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum DanmakuChannelType {
+    DANMAKU_CHANNEL_NONE = 0;
+    DANMAKU_CHANNEL_NORMAL = 1;
+    DANMAKU_CHANNEL_KINGDOM = 2;
+}

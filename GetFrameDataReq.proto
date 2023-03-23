@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetFrameDataReq {
+
+    enum CmdId {
+        CMD_ID = 590;
+    }
+}

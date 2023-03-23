@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message GetEquipmentDataReq {
+    repeated uint32 weapon_unique_id_list = 1;
+    repeated uint32 stigmata_unique_id_list = 2;
+    repeated uint32 material_id_list = 3;
+    repeated uint32 mecha_unique_id_list = 4;
+
+    enum CmdId {
+        CMD_ID = 26;
+    }
+}

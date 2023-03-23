@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetPhotoDataReq {
+    optional uint32 type = 1;
+
+    enum CmdId {
+        CMD_ID = 1191;
+    }
+}

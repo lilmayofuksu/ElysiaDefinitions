@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "OpenworldChapterFurnaceWork.proto";
+import "OpenworldChapterFurnaceFormulaUseHistory.proto";
+message OpenworldChapterFurnace {
+    repeated OpenworldChapterFurnaceFormulaUseHistory formula_use_history_list = 1;
+    repeated OpenworldChapterFurnaceWork furnace_work_list = 2;
+}

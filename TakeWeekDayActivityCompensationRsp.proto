@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeWeekDayActivityCompensationRsp {
+    required Retcode retcode = 1;
+    repeated RewardData reward_data_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1669;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKEN = 2;
+        LEVEL_LACK = 3;
+    }
+}

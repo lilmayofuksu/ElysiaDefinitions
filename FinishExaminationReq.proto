@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message FinishExaminationReq {
+    optional uint32 examination_id = 1;
+    optional uint32 answer_index = 2;
+
+    enum CmdId {
+        CMD_ID = 4325;
+    }
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message SetReclaimAvatarTeamRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 1172;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        AVATAR_NOT_EXIST = 2;
+        AVATAR_REPEATED = 3;
+        AVATAR_EMPTY = 4;
+        TEAM_SIZE_LIMIT = 5;
+    }
+}

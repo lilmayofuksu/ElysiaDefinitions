@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+message VirtualTrainCommon {
+
+    enum GroupType {
+        GROUP_CHAPTER = 1;
+        GROUP_RPG_TALE = 2;
+    }
+    enum ItemType {
+        ITEM_NONE = 0;
+        ITEM_AVATAR = 1;
+        ITEM_WEAPON = 2;
+        ITEM_STIGMATA = 3;
+        ITEM_BUFF = 4;
+    }
+    enum VirtualAvatarType {
+        VIRTUAL_AVATAR_NONE = 0;
+        VIRTUAL_AVATAR_NORMAL = 1;
+        VIRTUAL_AVATAR_QAVATAR = 2;
+    }
+}

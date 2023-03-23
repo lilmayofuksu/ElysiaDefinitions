@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "MpSkillType.proto";
+message MpSkillPoint {
+    required MpSkillType type = 1;
+    required uint32 value = 2;
+}

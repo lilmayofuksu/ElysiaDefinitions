@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "LoginActivityData.proto";
+message GetLoginActivityRsp {
+    required Retcode retcode = 1;
+    repeated LoginActivityData login_list = 2;
+
+    enum CmdId {
+        CMD_ID = 4193;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_BEGIN = 2;
+        LEVEL_LACK = 3;
+    }
+}

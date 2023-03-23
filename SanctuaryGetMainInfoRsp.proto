@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "SanctuaryActivityData.proto";
+message SanctuaryGetMainInfoRsp {
+    required Retcode retcode = 1;
+    required SanctuaryActivityData activity_data = 2;
+    optional uint32 begin_time = 3;
+    optional uint32 end_time = 4;
+
+    enum CmdId {
+        CMD_ID = 4306;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum DishRewardType {
+    DISH_REWARD_TYPE_NONE = 0;
+    DISH_REWARD_TYPE_PREPARE = 1;
+    DISH_REWARD_TYPE_DAILY = 2;
+    DISH_REWARD_TYPE_LIMITED = 3;
+}

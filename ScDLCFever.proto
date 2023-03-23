@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "FeverSkillSuite.proto";
+message ScDLCFever {
+    optional uint32 level = 1;
+    optional uint32 exp = 2;
+    optional uint32 fever_slot_num = 3;
+    optional uint32 has_take_reward_level = 4;
+    repeated FeverSkillSuite skill_suite_list = 5;
+    optional uint32 active_suite_id = 6;
+}

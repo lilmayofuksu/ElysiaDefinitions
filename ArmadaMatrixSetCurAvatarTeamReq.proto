@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ArmadaMatrixSetCurAvatarTeamReq {
+    optional uint32 index = 1;
+
+    enum CmdId {
+        CMD_ID = 2751;
+    }
+}

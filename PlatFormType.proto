@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum PlatFormType {
+    PLATFORM_NONE = 0;
+    PLATFORM_ANDROID = 100001;
+    PLATFORM_IOS = 200002;
+    PLATFORM_PC = 300003;
+}

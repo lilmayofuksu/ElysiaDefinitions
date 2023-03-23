@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MasterPoolData.proto";
+message MasterPupilEvalReq {
+    optional uint32 uid = 1;
+    optional uint32 star = 2;
+    optional uint32 step_id = 3;
+    optional string comment = 4;
+    optional uint32 level = 5;
+    optional string nickname = 6;
+    required MasterPoolData pool_reward = 7;
+
+    enum CmdId {
+        CMD_ID = 574;
+    }
+}

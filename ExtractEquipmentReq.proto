@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "EquipmentType.proto";
+message ExtractEquipmentReq {
+    optional EquipmentType type = 1;
+    optional uint32 unique_id = 2;
+    optional uint32 capsule_id = 3;
+
+    enum CmdId {
+        CMD_ID = 3654;
+    }
+}

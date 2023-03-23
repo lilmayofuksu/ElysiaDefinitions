@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message GrandKeyActivateSkillRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 760;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LIMIT = 2;
+        REPEAT_ACTIVATE = 3;
+        SKILL_LOCK = 4;
+        NUM_LIMIT = 5;
+    }
+}

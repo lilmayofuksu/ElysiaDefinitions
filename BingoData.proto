@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "BingoCard.proto";
+message BingoData {
+    optional uint32 bingo_id = 1;
+    repeated BingoCard card_list = 2;
+    optional uint32 reset_times = 3;
+}

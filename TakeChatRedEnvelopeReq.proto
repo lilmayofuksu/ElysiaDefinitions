@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message TakeChatRedEnvelopeReq {
+    optional uint32 channel = 1;
+    optional uint32 sender_uid = 2;
+    optional uint32 red_envelope_id = 3;
+    optional uint32 item_id = 4;
+    optional uint32 armada_id = 5;
+    optional bool is_sender_npc = 6;
+    optional string nickname = 7;
+
+    enum CmdId {
+        CMD_ID = 1165;
+    }
+}

@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "TileFloor.proto";
+message TileGetTowerRsp {
+    required Retcode retcode = 1;
+    optional uint32 cur_floor_id = 2;
+    repeated uint32 finished_dialog_id_list = 3;
+    repeated uint32 settled_event_id_list = 4;
+    repeated TileFloor floor_list = 5;
+    optional uint32 tower_id = 6;
+
+    enum CmdId {
+        CMD_ID = 4905;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

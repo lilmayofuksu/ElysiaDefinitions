@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message StartFarmProduceReq {
+    optional uint32 slot_id = 1;
+    optional uint32 produce_material_id = 2;
+
+    enum CmdId {
+        CMD_ID = 1389;
+    }
+}

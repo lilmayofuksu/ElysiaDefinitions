@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "OpenworldQuest.proto";
+message OpenworldQuestData {
+    optional uint32 level = 1;
+    optional uint32 star = 2;
+    optional bool is_open = 3;
+    optional uint32 day_open_times = 4;
+    repeated OpenworldQuest quest_list = 5;
+    optional uint32 refresh_left_times = 6;
+    optional uint32 next_refresh_cost = 7;
+    required OpenworldQuest key_quest = 8;
+    optional uint32 max_quest_level = 9;
+    optional bool is_can_abandon = 10;
+    optional uint32 challenge_score = 11;
+    repeated uint32 finish_key_quest_list = 12;
+    optional bool is_quest_finish = 13;
+    optional uint32 open_quest_time = 14;
+}

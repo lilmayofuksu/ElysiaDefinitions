@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+import "LineupBriefInfo.proto";
+import "TvtCard.proto";
+message TvtMember {
+    optional uint32 uid = 1;
+    optional string region_name = 2;
+    optional string nickname = 3;
+    optional uint32 level = 4;
+    optional uint32 head_avatar_id = 5;
+    optional uint32 frame_id = 6;
+    optional uint32 dress_id = 7;
+    optional uint32 division = 8;
+    optional uint32 division_star = 9;
+    optional uint32 win_streak = 10;
+    optional double elo_score = 11;
+    optional double elo_score_para = 12;
+    optional uint32 battle_combat = 13;
+    optional uint32 custom_head_id = 14;
+    optional uint32 win_add_star = 15;
+    optional uint32 lose_del_star = 16;
+    repeated TvtCard card_list = 17;
+    required LineupBriefInfo lineup_info = 18;
+    optional bool is_robot = 19;
+    optional uint32 robot_match_prob = 20;
+    optional uint32 voice_id = 21;
+    optional uint32 lane_order = 22;
+    optional uint32 last_lane_order = 23;
+}

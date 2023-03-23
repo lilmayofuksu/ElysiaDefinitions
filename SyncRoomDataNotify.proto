@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "RoomInfo.proto";
+import "RoomMember.proto";
+import "PlayerRoomStatus.proto";
+message SyncRoomDataNotify {
+    required PlayerRoomStatus player_room_status = 1;
+    repeated RoomMember member_list = 2;
+    required RoomInfo room_info = 3;
+
+    enum CmdId {
+        CMD_ID = 3152;
+    }
+}

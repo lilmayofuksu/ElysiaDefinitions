@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "TvtActivity.proto";
+message GetTvtActivityRsp {
+    required Retcode retcode = 1;
+    repeated TvtActivity tvt_activity_list = 2;
+    optional uint32 cur_season_id = 3;
+    optional uint32 season_begin_time = 4;
+    optional uint32 season_end_time = 5;
+    optional uint32 punish_end_time = 6;
+
+    enum CmdId {
+        CMD_ID = 3301;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_SCHEDULE = 2;
+        NOT_OPEN = 3;
+        PLAYER_LEVEL_LACK = 4;
+    }
+}

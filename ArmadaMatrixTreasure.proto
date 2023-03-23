@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+message ArmadaMatrixTreasure {
+    optional uint32 treasure_id = 1;
+    required DropItem treasure_item = 2;
+}

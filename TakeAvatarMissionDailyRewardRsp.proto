@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeAvatarMissionDailyRewardRsp {
+    required Retcode retcode = 1;
+    required RewardData reward = 2;
+
+    enum CmdId {
+        CMD_ID = 3005;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        HAVE_TAKEN = 3;
+        LACK_CONTRACT_POINT = 4;
+    }
+}

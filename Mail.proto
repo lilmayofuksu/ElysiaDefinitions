@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "MailAttachment.proto";
+import "MailType.proto";
+message Mail {
+    required uint32 id = 1;
+    required MailType type = 2;
+    required string title = 3;
+    required string content = 4;
+    required string sender = 5;
+    optional uint32 time = 6;
+    required MailAttachment attachment = 7;
+    optional bool is_attachment_got = 8;
+    optional uint32 expire_time = 9;
+    repeated string content_param_list = 10;
+}

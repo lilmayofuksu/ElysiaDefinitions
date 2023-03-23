@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RecommendMissionPanel.proto";
+message GetRecommendMissionPanelListRsp {
+    required Retcode retcode = 1;
+    repeated RecommendMissionPanel recommend_mission_panel_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1520;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

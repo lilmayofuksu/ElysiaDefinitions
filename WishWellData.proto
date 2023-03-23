@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message WishWellData {
+    optional uint32 left_times = 1;
+    optional uint32 set_id = 2;
+    optional uint32 material_id = 3;
+    optional uint32 material_num = 4;
+    optional uint32 equip_need_num = 5;
+    repeated Equip equip_list = 6;
+    optional uint32 max_wish_times = 7;
+    message Equip {
+        optional uint32 equip_id = 1;
+        optional uint32 equip_level = 2;
+    }
+}

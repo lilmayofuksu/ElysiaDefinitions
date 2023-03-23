@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivityHealAvatarRsp {
+    required Retcode retcode = 1;
+    required TownCommonHead head = 2;
+
+    enum CmdId {
+        CMD_ID = 6461;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

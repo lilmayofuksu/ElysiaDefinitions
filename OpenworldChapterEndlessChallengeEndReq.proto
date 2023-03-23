@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message OpenworldChapterEndlessChallengeEndReq {
+    optional uint32 map_id = 1;
+    optional uint32 challenge_id = 2;
+    optional uint32 score = 3;
+    optional string report_ext = 4;
+
+    enum CmdId {
+        CMD_ID = 4634;
+    }
+}

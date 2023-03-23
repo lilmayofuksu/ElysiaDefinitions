@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message RanchLockMonsterSkillRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 unique_id = 3;
+    repeated uint32 lock_skill_idx_list = 4;
+
+    enum CmdId {
+        CMD_ID = 5850;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MONSTER_NOT_EXIST = 2;
+        LOCK_NUM_LIMIT = 3;
+    }
+}

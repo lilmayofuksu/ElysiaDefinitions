@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message GetOtherPlayerClientSettingReq {
+    optional uint32 target_uid = 1;
+    optional uint32 client_setting_type = 2;
+
+    enum CmdId {
+        CMD_ID = 1273;
+    }
+}

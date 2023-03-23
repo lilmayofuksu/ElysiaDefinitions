@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message TakeAvatarMissionDailyRewardReq {
+
+    enum CmdId {
+        CMD_ID = 3004;
+    }
+}

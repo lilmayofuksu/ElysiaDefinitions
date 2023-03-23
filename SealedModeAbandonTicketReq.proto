@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SealedModeAbandonTicketReq {
+
+    enum CmdId {
+        CMD_ID = 742;
+    }
+}

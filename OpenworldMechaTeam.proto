@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+import "OpenworldMechaTeamMember.proto";
+message OpenworldMechaTeam {
+    repeated OpenworldMechaTeamMember mecha_list = 1;
+}

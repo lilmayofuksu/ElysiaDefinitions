@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SealedSuiteSelectionStatus {
+    SEALED_SUITE_SELECTION_STATUS_NONE = 0;
+    SEALED_SUITE_SELECTION_STATUS_ING = 1;
+    SEALED_SUITE_SELECTION_STATUS_FINISH = 2;
+}

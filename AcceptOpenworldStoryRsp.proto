@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message AcceptOpenworldStoryRsp {
+    required Retcode retcode = 1;
+    optional uint32 story_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4453;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CYCLE_NOT_MATCH = 2;
+        PRE_STORY_NOT_FINISH = 3;
+        STORY_NOT_BEGIN = 4;
+        QUEST_LEVEL_LIMIT = 5;
+        STORY_DOING = 6;
+        STORY_DONE = 7;
+        TECH_LEVEL_LIMIT = 8;
+        CONDITION_NOT_MEET = 9;
+    }
+}

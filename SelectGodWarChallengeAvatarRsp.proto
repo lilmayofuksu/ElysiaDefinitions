@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+message SelectGodWarChallengeAvatarRsp {
+    required Retcode retcode = 1;
+    optional uint32 god_war_id = 2;
+    optional uint32 tale_id = 3;
+
+    enum CmdId {
+        CMD_ID = 6153;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        ALREADY_SELECTED = 2;
+        AVATAR_ERROR = 3;
+        SUPPORT_AVATAR_ERROR = 4;
+        ELF_ERROR = 5;
+        AVATAR_SCHEDULE_ERROR = 6;
+        PUNISH_BUFF_ERROR = 7;
+        FEATURE_CLOSE = 8;
+        FORCE_SETTLE = 9;
+        NOT_OPEN = 10;
+        BOON_BUFF_ERROR = 11;
+        AVATAR_MISSION_NOT_FINISH = 12;
+        EXTRA_ITEM_ERROR = 13;
+    }
+}

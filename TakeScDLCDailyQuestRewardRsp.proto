@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeScDLCDailyQuestRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 quest_id = 2;
+    required RewardData reward_data = 3;
+
+    enum CmdId {
+        CMD_ID = 6325;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        QUEST_NOT_EXIST = 2;
+        NOT_FINISH = 3;
+    }
+}

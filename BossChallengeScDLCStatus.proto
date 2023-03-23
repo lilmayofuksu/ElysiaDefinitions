@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message BossChallengeScDLCStatus {
+    optional uint32 sc_dlc_fever_score = 1;
+    optional uint32 sc_dlc_climax_score = 2;
+}

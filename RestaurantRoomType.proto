@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum RestaurantRoomType {
+    RESTAURANT_ROOM_STORE = 1;
+    RESTAURANT_ROOM_KITCHEN = 2;
+    RESTAURANT_ROOM_CHECKOUT = 3;
+}

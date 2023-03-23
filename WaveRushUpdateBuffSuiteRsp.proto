@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message WaveRushUpdateBuffSuiteRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 5968;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        BUFF_ERROR = 2;
+        SLOT_LACK = 3;
+        SENSITIVE_WORDS = 4;
+        NAME_FORMAT_ERROR = 5;
+        SUITE_ID_ERROR = 6;
+    }
+}

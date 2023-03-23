@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetDepotFurnitureReq {
+    repeated uint32 furniture_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 607;
+    }
+}

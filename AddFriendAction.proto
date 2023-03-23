@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum AddFriendAction {
+    ADD_FRIEND_ACTION_ASK = 1;
+    ADD_FRIEND_ACTION_AGREE = 2;
+    ADD_FRIEND_ACTION_REJECT = 3;
+}

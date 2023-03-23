@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "ChatworldFisher.proto";
+message ChatworldFishSpot {
+    optional uint32 fish_spot_id = 1;
+    repeated ChatworldFisher fisher_list = 2;
+}

@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message FriendCabin {
+    required uint32 type = 1;
+    required uint32 level = 2;
+    required uint32 extend_grade = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+import "StageDropDisplayInfo.proto";
+message GetStageDropDisplayRsp {
+    required Retcode retcode = 1;
+    repeated StageDropDisplayInfo stage_drop_list = 2;
+
+    enum CmdId {
+        CMD_ID = 61;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        STAGE_NOT_EXIST = 2;
+        STAGE_TOO_MUCH = 3;
+    }
+}

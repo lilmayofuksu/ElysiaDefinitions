@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message DelMissionNotify {
+    required uint32 mission_id = 1;
+
+    enum CmdId {
+        CMD_ID = 116;
+    }
+}

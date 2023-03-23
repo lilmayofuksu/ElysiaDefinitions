@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+enum MpStageMemberLimitType {
+    MP_MEMBER_LIMIT_NONE = 0;
+    MP_MEMBER_LIMIT_MASTER_ONLY = 1;
+    MP_MEMBER_LIMIT_PUPIL_ONLY = 2;
+    MP_MEMBER_LIMIT_ARMADA_ONLY = 3;
+    MP_MEMBER_LIMIT_NEWBIE_ONLY = 4;
+}

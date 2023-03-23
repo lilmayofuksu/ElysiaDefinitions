@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "JiguangClientTag.proto";
+message JiguangUpdateTagReq {
+    repeated JiguangClientTag add_tag_list = 1;
+    repeated JiguangClientTag del_tag_list = 2;
+
+    enum CmdId {
+        CMD_ID = 1590;
+    }
+}

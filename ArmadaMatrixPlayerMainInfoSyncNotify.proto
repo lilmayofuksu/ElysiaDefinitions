@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "ArmadaMatrixPlayerMainInfo.proto";
+message ArmadaMatrixPlayerMainInfoSyncNotify {
+    required ArmadaMatrixPlayerMainInfo player_main_info = 1;
+
+    enum CmdId {
+        CMD_ID = 2757;
+    }
+}

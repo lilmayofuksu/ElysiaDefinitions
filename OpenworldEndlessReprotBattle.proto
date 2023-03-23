@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message OpenworldEndlessReprotBattle {
+    optional uint32 battle_id = 1;
+    optional uint32 scene_gear = 2;
+}

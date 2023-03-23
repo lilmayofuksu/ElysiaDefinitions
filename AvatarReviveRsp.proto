@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message AvatarReviveRsp {
+    required Retcode retcode = 1;
+    optional uint32 revive_times = 2;
+
+    enum CmdId {
+        CMD_ID = 107;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HCOIN_LACK = 2;
+        TIMES_LACK = 3;
+        NOT_IN_STAGE = 4;
+        MATERIAL_LACK = 5;
+    }
+}

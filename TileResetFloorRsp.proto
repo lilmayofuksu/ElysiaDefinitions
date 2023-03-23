@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message TileResetFloorRsp {
+    required Retcode retcode = 1;
+    optional uint32 tower_id = 2;
+    repeated uint32 floor_id_list = 3;
+
+    enum CmdId {
+        CMD_ID = 4913;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

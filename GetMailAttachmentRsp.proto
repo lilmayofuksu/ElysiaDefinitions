@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "MailAttachment.proto";
+import "MailKey.proto";
+message GetMailAttachmentRsp {
+    required Retcode retcode = 1;
+    repeated MailKey succ_mail_key_list = 2;
+    optional bool is_show_attachment = 3;
+    required MailAttachment mail_attachment = 4;
+
+    enum CmdId {
+        CMD_ID = 87;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

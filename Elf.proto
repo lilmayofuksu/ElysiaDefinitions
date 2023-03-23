@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "ElfSkill.proto";
+message Elf {
+    optional uint32 elf_id = 1;
+    optional uint32 star = 2;
+    optional uint32 level = 3;
+    optional uint32 exp = 4;
+    repeated uint32 equip_talent_id_list = 5;
+    repeated ElfSkill skill_list = 6;
+    optional uint32 compensate_level = 7;
+    optional uint32 total_compensate_exp = 8;
+}

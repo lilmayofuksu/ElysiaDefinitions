@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "StageEndStatus.proto";
+message OpenworldStageEndRsp {
+    required Retcode retcode = 1;
+    optional StageEndStatus end_status = 2;
+    optional uint32 map_id = 3;
+
+    enum CmdId {
+        CMD_ID = 4465;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CYCLE_NOT_OPEN = 2;
+        NOT_BEGIN = 3;
+        STAGE_ERROR = 4;
+        STAGE_FAIL = 5;
+        AVATAR_ERROR = 6;
+        NOT_OPEN = 7;
+        MECHA_ERROR = 8;
+    }
+}

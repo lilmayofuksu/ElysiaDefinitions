@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+import "MoonChallengeTowerBattleEndStatus.proto";
+import "Material.proto";
+message OpenworldChapterMoonChallengeTowerBattleEndRsp {
+    required Retcode retcode = 1;
+    optional uint32 map_id = 2;
+    optional uint32 tower_id = 3;
+    optional uint32 end_floor = 4;
+    optional uint32 score = 5;
+    optional uint32 old_max_score = 6;
+    optional uint32 save_point_floor = 7;
+    required Material score_drop_material = 8;
+    required Material save_point_drop_material = 9;
+    optional uint32 save_point_drop_terminal_exp = 10;
+    optional MoonChallengeTowerBattleEndStatus battle_end_status = 11;
+
+    enum CmdId {
+        CMD_ID = 4678;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MAP_ERROR = 2;
+        TOWER_ERROR = 3;
+        DAILY_TIMES_LACK = 4;
+        FLOOR_ERROR = 5;
+        SCORE_ERROR = 6;
+    }
+}

@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message RogueTowerLevelupSupportAvatarReq {
+    optional uint32 id = 1;
+    optional uint32 support_avatar_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4374;
+    }
+}

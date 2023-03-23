@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message MonopolyResetFloorRsp {
+    required Retcode retcode = 1;
+    optional uint32 area_id = 2;
+    optional uint32 floor_id = 3;
+    optional uint32 tile_tower_id = 4;
+
+    enum CmdId {
+        CMD_ID = 3866;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

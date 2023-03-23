@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+message SendChatRedEnvelopeRsp {
+    required Retcode retcode = 1;
+    optional uint32 item_id = 2;
+    optional uint32 channel = 3;
+    optional string msg = 4;
+    optional uint32 red_envelope_id = 5;
+    optional uint32 expire_time = 6;
+
+    enum CmdId {
+        CMD_ID = 1164;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        LACK_ITEM = 2;
+        LACK_TIMES = 3;
+        CHAT_FORBIDEN = 4;
+        LACK_CD = 5;
+        LACK_LEVEL = 6;
+        NOT_IN_CHATWORLD = 7;
+        NOT_IN_ARMADA = 8;
+        NOT_IN_WORLD_CHATROOM = 9;
+        SENSITIVE_WORDS = 10;
+    }
+}

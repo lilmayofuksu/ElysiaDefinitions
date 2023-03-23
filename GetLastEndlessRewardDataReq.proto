@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetLastEndlessRewardDataReq {
+
+    enum CmdId {
+        CMD_ID = 3406;
+    }
+}

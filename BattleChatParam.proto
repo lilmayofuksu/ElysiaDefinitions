@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+import "BattleMode.proto";
+message BattleChatParam {
+    optional BattleMode battle_mode = 1;
+    optional uint32 battle_para = 2;
+}

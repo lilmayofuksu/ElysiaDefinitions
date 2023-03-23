@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum PvzQAvatarType {
+    PVZ_QAVATAR_ATTACK = 1;
+    PVZ_QAVATAR_ASSIST = 2;
+}

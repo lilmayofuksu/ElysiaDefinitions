@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeRpgTaleCollectionRewardRsp {
+    required Retcode retcode = 1;
+    repeated uint32 collection_count_list = 2;
+    repeated RewardData reward_data_list = 3;
+    repeated uint32 reward_taken_collection_count_list = 4;
+    optional uint32 tale_id = 5;
+
+    enum CmdId {
+        CMD_ID = 2310;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NUM_LACK = 2;
+        NO_REWARD = 3;
+        TIME_LIMIT = 4;
+        HAVE_TAKE = 5;
+    }
+}

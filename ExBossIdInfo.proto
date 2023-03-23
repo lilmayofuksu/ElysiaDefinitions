@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message ExBossIdInfo {
+    optional uint32 boss_id = 1;
+    repeated uint32 avatar_id_list = 3;
+    repeated uint32 weapon_id_list = 4;
+    repeated uint32 stigmata_id_list = 5;
+    optional uint32 score = 6;
+    repeated uint32 last_avatar_id_list = 7;
+    optional uint32 boss_times_score = 8;
+}

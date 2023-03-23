@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "ChatworldBrief.proto";
+message GetChatworldListRsp {
+    required Retcode retcode = 1;
+    repeated ChatworldBrief chatworld_list = 2;
+    optional uint32 show_max_id = 3;
+    optional uint32 scene_id = 4;
+    repeated uint32 redis_chatworld_list = 5;
+
+    enum CmdId {
+        CMD_ID = 2412;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message SlgGetActivityStaminaReq {
+
+    enum CmdId {
+        CMD_ID = 6057;
+    }
+}

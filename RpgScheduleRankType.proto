@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum RpgScheduleRankType {
+    RPG_SCHEDULE_RANK_COLLECTION = 1;
+    RPG_SCHEDULE_RANK_GENERAL = 2;
+}

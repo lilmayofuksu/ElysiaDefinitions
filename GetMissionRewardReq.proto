@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetMissionRewardReq {
+    repeated uint32 mission_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 114;
+    }
+}

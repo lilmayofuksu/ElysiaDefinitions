@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message AccelerateRestaurantWorkRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 room_id = 3;
+    optional uint32 num = 4;
+
+    enum CmdId {
+        CMD_ID = 5873;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        ROOM_NOT_EXIST = 3;
+        WORK_NOT_DOING = 4;
+        TICKET_LACK = 5;
+        STOCK_LIMIT = 6;
+        AVATAR_INVALID = 7;
+    }
+}

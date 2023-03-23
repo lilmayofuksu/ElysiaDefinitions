@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "StageEndStatus.proto";
+message QuantumEndlessBattleWave {
+    optional uint32 wave_id = 1;
+    optional StageEndStatus end_status = 2;
+    optional uint32 cost_time = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message LobbyEnterFightErrorNotify {
+    required uint32 lobby_id = 1;
+    optional Retcode retcode = 2;
+    repeated uint32 uid_list = 3;
+    optional uint32 sub_retcode = 4;
+
+    enum CmdId {
+        CMD_ID = 321;
+    }
+    enum Retcode {
+        SUCC = 0;
+        CONNECT_TIMEOUT = 1;
+        BEGIN_STAGE_FAIL = 2;
+    }
+}

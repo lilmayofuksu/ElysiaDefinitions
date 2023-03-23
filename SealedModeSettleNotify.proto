@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "SealedSettleInfo.proto";
+message SealedModeSettleNotify {
+    repeated SealedSettleInfo settle_info_list = 1;
+    optional uint32 round = 2;
+
+    enum CmdId {
+        CMD_ID = 717;
+    }
+}

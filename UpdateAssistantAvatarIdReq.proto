@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message UpdateAssistantAvatarIdReq {
+    required uint32 avatar_id = 1;
+
+    enum CmdId {
+        CMD_ID = 271;
+    }
+}

@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+import "MasterPoolData.proto";
+message PupilStep {
+    optional uint32 step_id = 1;
+    optional uint32 master_id = 2;
+    optional uint32 star = 3;
+    optional string comment = 4;
+    optional uint32 level = 5;
+    required MasterPoolData pool_reward = 6;
+    repeated uint32 exam_mission_id_list = 7;
+}

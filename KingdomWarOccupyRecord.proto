@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message KingdomWarOccupyRecord {
+    optional uint32 begin_time = 1;
+    repeated uint32 occupy_point_list = 2;
+    optional uint32 player_score = 3;
+}

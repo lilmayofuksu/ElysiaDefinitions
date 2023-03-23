@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetTeamStatusReq {
+    repeated uint32 team_id_list = 1;
+
+    enum CmdId {
+        CMD_ID = 1553;
+    }
+}

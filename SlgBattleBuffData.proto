@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "SlgBuffType.proto";
+message SlgBattleBuffData {
+    optional uint32 buff_id = 1;
+    optional SlgBuffType type = 2;
+    optional uint32 num = 3;
+}

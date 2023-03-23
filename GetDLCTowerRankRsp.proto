@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message GetDLCTowerRankRsp {
+    required Retcode retcode = 1;
+    required RankShowData rank_data = 2;
+
+    enum CmdId {
+        CMD_ID = 3572;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

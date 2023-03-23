@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message MpReportPlayerRsp {
+    required Retcode retcode = 1;
+    optional uint32 target_uid = 2;
+    optional bool report_success = 3;
+    optional uint32 judge_term = 4;
+
+    enum CmdId {
+        CMD_ID = 382;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_TEAM = 2;
+        ALREADY_REPORT = 3;
+    }
+}

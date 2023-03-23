@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message QAvatarBattleStartSkillNotify {
+    optional uint32 src_entity_id = 1;
+    optional uint32 skill_type = 2;
+    optional uint32 skill_id = 3;
+
+    enum CmdId {
+        CMD_ID = 5606;
+    }
+}

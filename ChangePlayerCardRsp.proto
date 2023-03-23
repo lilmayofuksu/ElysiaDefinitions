@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+import "PlayerCardMsgConfig.proto";
+import "PlayerCardSlot.proto";
+import "PlayerCardType.proto";
+message ChangePlayerCardRsp {
+    required Retcode retcode = 1;
+    optional PlayerCardType type = 2;
+    repeated PlayerCardSlot slot_list = 3;
+    optional PlayerCardMsgConfig msg_config = 4;
+
+    enum CmdId {
+        CMD_ID = 483;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

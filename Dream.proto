@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message Dream {
+    optional uint32 dream_id = 1;
+    optional uint32 unlock_id = 2;
+    optional bool is_open = 3;
+    optional uint32 selected_dream_reward_id = 4;
+    optional uint32 score = 5;
+    optional bool is_reward_taken = 6;
+    optional uint32 exchange_score_times = 7;
+}

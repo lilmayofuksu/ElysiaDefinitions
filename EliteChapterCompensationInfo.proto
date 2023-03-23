@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "EliteChapterActCompensation.proto";
+import "EliteChapterStageCompensation.proto";
+message EliteChapterCompensationInfo {
+    optional uint32 chapter_id = 1;
+    repeated EliteChapterStageCompensation stage_compensation_list = 2;
+    repeated EliteChapterActCompensation act_compensation_list = 3;
+    optional bool has_taken_compensation = 4;
+}

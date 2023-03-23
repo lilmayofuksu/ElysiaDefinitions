@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message LevelUpDLCAvatarTalentReq {
+    optional uint32 talent_id = 1;
+    optional uint32 target_level = 2;
+
+    enum CmdId {
+        CMD_ID = 3552;
+    }
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message NicknameModifyRsp {
+    required Retcode retcode = 1;
+    optional uint32 cd_end_time = 2;
+
+    enum CmdId {
+        CMD_ID = 21;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        FORMAT_ERROR = 2;
+        SENSITIVE_WORDS = 3;
+        IN_AUDIT = 4;
+        IN_CD = 5;
+    }
+}

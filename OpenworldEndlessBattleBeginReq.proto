@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "EndlessType.proto";
+message OpenworldEndlessBattleBeginReq {
+    optional uint32 battle_id = 1;
+    optional uint32 group_level = 2;
+    optional uint32 monster_group_id = 3;
+    optional uint32 layer_number = 4;
+    optional string transaction_str = 5;
+    optional EndlessType type = 6;
+
+    enum CmdId {
+        CMD_ID = 3438;
+    }
+}

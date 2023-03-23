@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message GetGodWarReq {
+    optional uint32 god_war_id = 1;
+
+    enum CmdId {
+        CMD_ID = 6150;
+    }
+}

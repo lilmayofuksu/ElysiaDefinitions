@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum CustomHeadType {
+    CUSTOM_HEAD_TYPE_NONE = 0;
+    CUSTOM_HEAD_TYPE_AVATAR = 1;
+    CUSTOM_HEAD_TYPE_DRESS = 2;
+    CUSTOM_HEAD_TYPE_NORMAL = 3;
+}

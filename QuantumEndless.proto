@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message QuantumEndless {
+    optional uint32 cur_monster_group = 1;
+    optional uint32 monster_progress = 2;
+    optional uint32 finish_monster_num = 3;
+}

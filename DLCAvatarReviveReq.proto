@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+import "DropItem.proto";
+import "DLCAvatarReviveCostType.proto";
+message DLCAvatarReviveReq {
+    optional DLCAvatarReviveCostType cost_type = 1;
+    optional uint32 map_id = 3;
+    optional uint32 avatar_id = 4;
+    repeated DropItem drop_item_list = 5;
+
+    enum CmdId {
+        CMD_ID = 3569;
+    }
+}

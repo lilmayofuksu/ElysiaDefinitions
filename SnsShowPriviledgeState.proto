@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum SnsShowPriviledgeState {
+    SNS_SHOW_NONE = 0;
+    SNS_SHOW_OPEN_TO_PUBLIC = 1;
+    SNS_SHOW_OPEN_TO_FRIENDS = 2;
+    SNS_SHOW_OPEN_TO_SELF = 3;
+}

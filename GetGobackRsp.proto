@@ -1,0 +1,28 @@
+syntax = "proto2";
+
+import "GobackGrowUpActivity.proto";
+import "GobackFund.proto";
+import "GobackActivityLoginReward.proto";
+import "GobackActivity.proto";
+message GetGobackRsp {
+    required Retcode retcode = 1;
+    optional uint32 goback_end_time = 2;
+    optional uint32 login_days = 3;
+    repeated uint32 has_take_days_reward_list = 4;
+    repeated uint32 has_take_days_bonus_reward_list = 5;
+    repeated GobackActivity goback_activity_list = 6;
+    optional uint32 score = 7;
+    repeated uint32 has_take_score_reward_list = 8;
+    optional uint32 schedule_id = 9;
+    repeated GobackActivityLoginReward login_reward_list = 10;
+    required GobackFund fund = 11;
+    required GobackGrowUpActivity goback_grow_up_activity = 12;
+
+    enum CmdId {
+        CMD_ID = 365;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "GachaType.proto";
+message ChooseOptionalGachaReq {
+    optional GachaType gacha_type = 1;
+    optional uint32 sub_gacha_id = 2;
+
+    enum CmdId {
+        CMD_ID = 4716;
+    }
+}

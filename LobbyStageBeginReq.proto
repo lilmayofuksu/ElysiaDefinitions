@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message LobbyStageBeginReq {
+
+    enum CmdId {
+        CMD_ID = 311;
+    }
+}

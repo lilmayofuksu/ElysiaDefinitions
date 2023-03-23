@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message OpenworldHuntActivityChangeHunterAreaReq {
+    optional uint32 map_id = 1;
+    optional uint32 hunter_id = 2;
+    optional string spawn_point = 3;
+
+    enum CmdId {
+        CMD_ID = 4611;
+    }
+}

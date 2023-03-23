@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "CommonChatworldRedEnvelope.proto";
+message CommonChatworldRedEnvelopeMsg {
+    optional uint32 sender_uid = 1;
+    optional uint32 channel = 2;
+    optional bool is_sender_npc = 3;
+    required CommonChatworldRedEnvelope chatworld_red_envelope = 4;
+    optional string msg = 5;
+}

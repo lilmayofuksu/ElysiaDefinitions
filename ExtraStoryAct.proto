@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message ExtraStoryAct {
+    required uint32 act_id = 1;
+    optional uint32 begin_time = 2;
+    optional uint32 end_time = 3;
+}

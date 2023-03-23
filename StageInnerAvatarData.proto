@@ -1,0 +1,41 @@
+syntax = "proto2";
+
+message StageInnerAvatarData {
+    required uint32 avatar_id = 1;
+    required uint32 avatar_level = 2;
+    required uint32 avatar_star = 3;
+    required uint32 total_output = 4;
+    required uint32 no_restrict_output = 5;
+    required uint32 do_restrict_output = 6;
+    required uint32 be_restrict_output = 7;
+    required uint32 total_input = 8;
+    required float battle_time = 9;
+    required float total_time = 10;
+    required uint32 enter_times = 11;
+    required uint32 leave_times = 12;
+    required uint32 do_break_times = 13;
+    required uint32 be_break_times = 14;
+    required uint32 do_hit_times = 15;
+    required uint32 be_hit_times = 16;
+    required uint32 exskill_times = 17;
+    required uint32 evade_times = 18;
+    required uint32 evade_effect_times = 19;
+    required uint32 attack_sp_recover = 20;
+    required uint32 total_sp_recover = 21;
+    required uint32 dps = 22;
+    optional uint32 special_attack_times = 23;
+    optional uint32 evade_success_times = 24;
+    optional uint32 weapon_active_skill = 25;
+    optional uint32 stage_id = 26;
+    optional uint32 normal_output = 27;
+    optional uint32 ultra_output = 28;
+    optional uint32 switchin_output = 29;
+    optional uint32 branch_output = 30;
+    optional uint32 charge_output = 31;
+    optional uint32 hp_cost = 32;
+    optional uint32 hp_recover = 33;
+    optional uint32 sp_cost = 34;
+    optional uint32 shield_damage = 35;
+    optional uint32 avatar_sub_star = 36;
+    optional bool is_player_avatar = 37;
+}

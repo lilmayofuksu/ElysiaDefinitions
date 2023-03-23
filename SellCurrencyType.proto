@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum SellCurrencyType {
+    SELL_CURRENCY_TYPE_NONE = 0;
+    SELL_CURRENCY_TYPE_SCOIN = 1;
+    SELL_CURRENCY_TYPE_PURPLE_JADE = 5;
+}

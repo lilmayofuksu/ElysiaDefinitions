@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message LevelUpScDLCTalentReq {
+    optional uint32 avatar_id = 1;
+    optional uint32 talent_id = 2;
+
+    enum CmdId {
+        CMD_ID = 6312;
+    }
+}

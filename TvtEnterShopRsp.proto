@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message TvtEnterShopRsp {
+    required Retcode retcode = 1;
+    optional uint32 enter_shop_order = 2;
+
+    enum CmdId {
+        CMD_ID = 3360;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_BATTLE = 2;
+    }
+}

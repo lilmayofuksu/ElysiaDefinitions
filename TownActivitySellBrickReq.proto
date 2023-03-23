@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "TownCommonHead.proto";
+message TownActivitySellBrickReq {
+    required TownCommonHead head = 1;
+    optional uint32 sell_brick_index = 2;
+
+    enum CmdId {
+        CMD_ID = 6462;
+    }
+}

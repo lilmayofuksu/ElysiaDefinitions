@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum MassiveWarFieldActionType {
+    MASSIVE_WAR_FIELD_ACTION_NONE = 0;
+    MASSIVE_WAR_FIELD_ACTION_JOIN = 1;
+    MASSIVE_WAR_FIELD_ACTION_LEAVE = 2;
+}

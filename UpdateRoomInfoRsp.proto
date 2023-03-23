@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message UpdateRoomInfoRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 3172;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_IN_ROOM = 2;
+        IN_MATCH = 3;
+        NOT_LEADER = 4;
+        STAGE_NOT_IN_SCHEDULE = 5;
+        TOO_FREQUENT = 6;
+    }
+}

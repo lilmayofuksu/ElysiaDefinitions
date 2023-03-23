@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message QCandyBattleAvatarStateServerNotify {
+    optional uint32 entity_id = 1;
+    optional uint32 state = 2;
+    optional bool is_move = 3;
+    optional uint32 sub_state = 4;
+
+    enum CmdId {
+        CMD_ID = 6589;
+    }
+}

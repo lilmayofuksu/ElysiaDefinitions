@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum HuntActivityEntityType {
+    HUNT_ACTIVITY_TYPE_NONE = 0;
+    HUNT_ACTIVITY_TYPE_HUNTER = 1;
+    HUNT_ACTIVITY_TYPE_STRONGHOLD = 2;
+    HUNT_ACTIVITY_TYPE_MACHINE = 3;
+}

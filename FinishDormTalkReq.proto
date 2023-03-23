@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message FinishDormTalkReq {
+    optional uint32 plot_id = 1;
+    repeated uint32 avatar_id_list = 2;
+
+    enum CmdId {
+        CMD_ID = 641;
+    }
+}

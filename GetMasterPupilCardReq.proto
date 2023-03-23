@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetMasterPupilCardReq {
+
+    enum CmdId {
+        CMD_ID = 587;
+    }
+}

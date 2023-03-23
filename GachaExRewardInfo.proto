@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+message GachaExRewardInfo {
+    repeated ExReward ex_reward_list = 15;
+    optional uint32 display_ex_reward_item = 16;
+    optional uint32 display_ex_reward_type = 17;
+    repeated ExRewardDisplayDetail display_ex_reward_detail_list = 18;
+    message ExReward {
+        optional uint32 need_gacha_times = 1;
+        optional uint32 reward_id = 2;
+        optional bool is_taken = 3;
+    }
+    message ExRewardDisplayDetail {
+        optional uint32 need_gacha_times = 1;
+        optional uint32 item_id = 2;
+        optional uint32 item_num = 3;
+        optional bool is_taken = 4;
+        optional bool is_display_shining = 5;
+    }
+}

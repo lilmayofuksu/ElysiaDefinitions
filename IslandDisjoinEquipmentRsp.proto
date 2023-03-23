@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+message IslandDisjoinEquipmentRsp {
+    required Retcode retcode = 1;
+    repeated uint32 disjoin_unique_id_list = 2;
+
+    enum CmdId {
+        CMD_ID = 180;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        CABIN_TECH_NOT_ADD = 2;
+        CONSUME_ITEM_NOT_EXIST = 3;
+        CONSUME_ITEM_IN_USE = 4;
+        CONSUME_ITEM_PROTECTED = 5;
+        SCOIN_LACK = 6;
+        EQUIPMENT_FULL = 7;
+        COST_SENIOR_EQUIP_FROM_NEW_DEVICE = 8;
+        COST_SENIOR_EQUIP_CANCEL_PROTECT_TOO_SOON = 9;
+        TITLE_LEVEL_ERROR = 10;
+        BATCH_NUM = 11;
+        LEVEL_LACK = 12;
+        CONSUME_ITEM_REPEAT = 13;
+        COST_GACHA_TICKET = 14;
+        CONSUME_ITEM_GRAND_KEY = 15;
+        CONSUME_ITEM_IN_FACILITY = 16;
+        EX_DISJOIN_CURRENCY_LACK = 17;
+        CONSUME_ITEM_PROTECTED_BY_SECURITY_PASSWORD = 18;
+    }
+}

@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+import "MonsterCardActivityRankInfo.proto";
+import "RankShowData.proto";
+message MonsterCardGetTowerRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 activity_id = 2;
+    optional uint32 num = 3;
+    required RankShowData rank_data = 4;
+    optional uint32 rank_percent = 5;
+    required MonsterCardActivityRankInfo self_rank_data = 6;
+
+    enum CmdId {
+        CMD_ID = 5930;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

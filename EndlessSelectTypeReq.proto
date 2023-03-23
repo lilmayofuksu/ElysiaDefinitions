@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "EndlessType.proto";
+message EndlessSelectTypeReq {
+    optional EndlessType endless_type = 1;
+    optional uint32 level = 2;
+
+    enum CmdId {
+        CMD_ID = 3462;
+    }
+}

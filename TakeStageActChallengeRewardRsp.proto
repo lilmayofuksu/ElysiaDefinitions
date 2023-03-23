@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "RewardData.proto";
+message TakeStageActChallengeRewardRsp {
+    required Retcode retcode = 1;
+    optional uint32 act_id = 2;
+    optional uint32 difficulty = 3;
+    optional uint32 challenge_num_index = 4;
+    repeated RewardData reward_list = 5;
+    repeated uint32 succ_challenge_num_index_list = 6;
+    repeated uint32 fail_challenge_num_index_list = 7;
+
+    enum CmdId {
+        CMD_ID = 459;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        HAS_TAKE = 2;
+        CHALLENGE_NUM_LACK = 3;
+        PART_FAIL = 4;
+    }
+}

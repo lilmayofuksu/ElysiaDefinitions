@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+import "OpenworldEndlessTrap.proto";
+message OpenworldEndlessBattle {
+    optional uint32 battle_id = 1;
+    repeated OpenworldEndlessTrap trap_list = 2;
+    optional uint32 scene_gear = 3;
+}

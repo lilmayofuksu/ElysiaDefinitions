@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message MatrixSetLotteryNumReq {
+    optional uint32 lottery_num = 1;
+
+    enum CmdId {
+        CMD_ID = 2351;
+    }
+}

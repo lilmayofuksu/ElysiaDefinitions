@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+enum MpSkillType {
+    MP_SKILL_NONE = 0;
+    MP_SKILL_ATTACK = 1;
+    MP_SKILL_DEFENCE = 2;
+    MP_SKILL_OTHER = 3;
+}

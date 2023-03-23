@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+import "GachaType.proto";
+message GachaDailyTimesLimit {
+    optional GachaType type = 1;
+    optional uint32 group_daily_times = 2;
+    optional uint32 group_daily_limit_times = 3;
+    optional string group_limit_display_ext = 4;
+}

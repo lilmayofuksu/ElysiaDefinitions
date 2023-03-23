@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "StageEndStatus.proto";
+message ExBossStageEndRsp {
+    required Retcode retcode = 1;
+    optional StageEndStatus end_status = 2;
+    optional uint32 boss_id = 3;
+
+    enum CmdId {
+        CMD_ID = 532;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_BEGIN = 3;
+        NOT_OPEN = 4;
+    }
+}

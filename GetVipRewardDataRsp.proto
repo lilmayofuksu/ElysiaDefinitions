@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "VipReward.proto";
+message GetVipRewardDataRsp {
+    required Retcode retcode = 1;
+    optional uint32 total_pay_hcoin = 2;
+    repeated VipReward vip_reward_list = 3;
+
+    enum CmdId {
+        CMD_ID = 198;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

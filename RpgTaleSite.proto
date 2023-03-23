@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RpgTaleFlag.proto";
+import "RpgTaleProgress.proto";
+import "RpgTaleSiteContentType.proto";
+import "RpgTaleSiteStatus.proto";
+message RpgTaleSite {
+    optional uint32 site_id = 1;
+    optional uint32 area_id = 2;
+    optional RpgTaleSiteStatus status = 3;
+    optional RpgTaleSiteContentType content_type = 4;
+    optional string content_param = 5;
+    repeated uint32 finished_matrix_event_id_list = 6;
+    optional uint32 event_type = 7;
+    optional uint32 event_param = 8;
+    required RpgTaleProgress cur_progress = 9;
+    optional uint32 pass_times = 10;
+    optional uint32 status_end_time = 11;
+    optional uint32 close_time = 12;
+    repeated RpgTaleFlag unlock_limit_flag_list = 13;
+}

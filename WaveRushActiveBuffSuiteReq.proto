@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message WaveRushActiveBuffSuiteReq {
+    optional uint32 suite_id = 1;
+
+    enum CmdId {
+        CMD_ID = 5969;
+    }
+}

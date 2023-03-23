@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+import "LobbyEnterType.proto";
+message UpdateLobbySettingReq {
+    optional string team_name = 1;
+    optional uint32 min_level = 3;
+    optional LobbyEnterType lobby_enter_type = 4;
+    optional uint32 max_level = 5;
+
+    enum CmdId {
+        CMD_ID = 1365;
+    }
+}

@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+import "QCandyBattleSettleInfo.proto";
+message QCandyBattleMemberSettleInfo {
+    optional uint32 uid = 1;
+    optional string nickname = 2;
+    optional uint32 avatar_id = 3;
+    optional uint32 cur_rank_score = 4;
+    optional bool is_abandoned = 5;
+    required QCandyBattleSettleInfo settle_info = 6;
+}

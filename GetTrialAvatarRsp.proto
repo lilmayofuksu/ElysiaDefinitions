@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+import "TrialAvatar.proto";
+message GetTrialAvatarRsp {
+    required Retcode retcode = 1;
+    repeated TrialAvatar avatar_list = 2;
+    optional bool is_all_update = 3;
+
+    enum CmdId {
+        CMD_ID = 586;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+    }
+}

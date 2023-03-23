@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+import "TowerRaidBossStage.proto";
+import "TowerRaidAvatar.proto";
+message GetTowerRaidActivityRsp {
+    required Retcode retcode = 1;
+    optional uint32 schedule_id = 2;
+    optional uint32 activity_id = 3;
+    optional uint32 hard_level = 4;
+    optional uint32 enter_times = 5;
+    optional bool is_settled = 6;
+    repeated TowerRaidAvatar avatar_list = 7;
+    repeated TowerRaidBossStage boss_stage_list = 8;
+
+    enum CmdId {
+        CMD_ID = 4186;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+    }
+}

@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message GetLoginActivityReq {
+
+    enum CmdId {
+        CMD_ID = 4192;
+    }
+}

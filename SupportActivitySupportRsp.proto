@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+message SupportActivitySupportRsp {
+    required Retcode retcode = 1;
+    optional uint32 support_index = 2;
+
+    enum CmdId {
+        CMD_ID = 4335;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        IN_CD_TIME = 3;
+        HAS_SUPPORT = 4;
+    }
+}

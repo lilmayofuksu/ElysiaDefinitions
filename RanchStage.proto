@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+import "RanchMonster.proto";
+message RanchStage {
+    optional uint32 stage_id = 1;
+    optional uint32 take_challenge_reward_times = 2;
+    optional uint32 max_challenge_score = 3;
+    repeated RanchMonster drop_monster_list = 4;
+    repeated uint32 unique_id_list = 5;
+}

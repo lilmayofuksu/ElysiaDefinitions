@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message SetArmadaApplyReq {
+    required uint32 apply_level = 1;
+    required bool auto_pass = 2;
+    required uint32 auto_pass_level = 3;
+
+    enum CmdId {
+        CMD_ID = 2613;
+    }
+}

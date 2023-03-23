@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+import "RankShowData.proto";
+message GetArmadaStageScoreRankRsp {
+    required Retcode retcode = 1;
+    optional uint32 stage_id = 2;
+    required RankShowData rank_data = 3;
+
+    enum CmdId {
+        CMD_ID = 2843;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        NOT_OPEN = 2;
+        STAGE_ERROR = 3;
+    }
+}

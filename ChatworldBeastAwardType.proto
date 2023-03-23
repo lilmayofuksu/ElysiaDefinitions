@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum ChatworldBeastAwardType {
+    CHATWORLD_BEAST_AWARD_HP_RATIO = 1;
+    CHATWORLD_BEAST_AWARD_SCORE = 2;
+}

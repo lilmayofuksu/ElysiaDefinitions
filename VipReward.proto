@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message VipReward {
+    required uint32 vip_level = 1;
+    required uint32 pay_hcoin = 2;
+    repeated uint32 reward_id_list = 3;
+    required uint32 reward_batch = 4;
+    repeated uint32 special_reward_id_list = 5;
+    repeated uint32 is_special_shine_list = 6;
+    repeated uint32 taken_reward_id_list = 7;
+}

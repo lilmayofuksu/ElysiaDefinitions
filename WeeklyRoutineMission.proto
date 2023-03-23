@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message WeeklyRoutineMission {
+    optional uint32 mission_id = 1;
+    optional uint32 cur_contribution = 2;
+    optional uint32 weekly_contribution = 3;
+    optional uint32 mission_finish_times = 4;
+}

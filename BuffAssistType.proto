@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+enum BuffAssistType {
+    BUFF_ASSIST_PRODUCER = 1;
+    BUFF_ASSIST_CONSUMER = 2;
+}

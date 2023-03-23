@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+enum ChatworldBuffType {
+    CHATWORLD_BUFF_TYPE_NONE = 0;
+    CHATWORLD_BUFF_TYPE_DAMAGE_FREE = 1;
+    CHATWORLD_BUFF_TYPE_SPEED = 2;
+}

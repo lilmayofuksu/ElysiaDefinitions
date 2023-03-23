@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+import "VirtualAvatar.proto";
+message QAvatarBattleMember {
+    optional uint32 uid = 1;
+    optional string region_name = 2;
+    optional string nickname = 3;
+    optional uint32 level = 4;
+    optional uint32 frame_id = 5;
+    optional uint32 custom_head_id = 6;
+    optional uint32 division = 7;
+    optional uint32 elo_score = 8;
+    required VirtualAvatar choose_virtual_avatar = 9;
+    optional uint32 camp_id = 10;
+}

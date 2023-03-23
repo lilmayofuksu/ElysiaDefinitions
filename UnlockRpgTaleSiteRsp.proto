@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+import "RpgTaleFlag.proto";
+message UnlockRpgTaleSiteRsp {
+    required Retcode retcode = 1;
+    optional uint32 site_id = 2;
+    optional uint32 tale_id = 5;
+    repeated RpgTaleFlag limit_flag_list = 6;
+    optional bool is_only_check = 7;
+
+    enum CmdId {
+        CMD_ID = 2308;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        UNLOCKED = 2;
+        MATERIAL_NOT_ENOUGH = 3;
+        FLAG_LIMIT = 4;
+    }
+}

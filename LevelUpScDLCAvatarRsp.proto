@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+message LevelUpScDLCAvatarRsp {
+    required Retcode retcode = 1;
+
+    enum CmdId {
+        CMD_ID = 6311;
+    }
+    enum Retcode {
+        SUCC = 0;
+        FAIL = 1;
+        MATERIAL_LACK = 2;
+        AVATAR_NOT_EXIST = 3;
+        FEVER_LEVEL_LACK = 4;
+    }
+}
